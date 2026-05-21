@@ -1,0 +1,126 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 2
+chapter_title: Python Language for Bioinformatics (Biopython for Bioinformatics)
+lesson_no: 1.0
+lesson_title: BioPython Introduction
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/2. Python Language for Bioinformatics (Biopython for Bioinformatics)/1. BioPython Introduction.srt
+duration_minutes: 10.0
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# BioPython Introduction
+
+因此,如果你熟悉 Python 中使用的生物信息学,你应该了解
+BioPython 库。
+所以 BioPython 是 Python 中用于生物信息学数据分析的一个库。
+因此,我们将在课程中使用 BioPython 进行数据处理和
+数据学习。
+因此,BioPython 是一个功能强大且易于使用的生物信息学库,允许开发人员执行
+与序列分析、数据库搜索等相关的复杂任务。
+因此,生物信息学库(即 BioPython)可以做的第一件事就是序列操作。
+因此 BioPython 为您提供了处理生物序列的强大而有效的方法
+例如DNA、RNA和蛋白质测序。
+它可以轻松完成表扬、索引、序列操作、子集等任务
+翻译和反向互补。
+还有文件的措辞和格式。
+BioPython 支持各种生物信息学文件格式,如 FASTA、
+GenBank、PDB、BLAST、PDX、VCF 等等。
+它的功能简化了从
+不同的数据库和工具。
+因此,序列比对和分析,BioPython 通常提供成对和
+我们将在序列分析部分执行多重序列比对。
+我们还可以使用 BioPython 进行系统发育、结构分析、BLAST 整合、生物信息学
+算法开发和数据检索。
+BioPython 的特点。
+因此 BioPython 通常具有处理 DNA、RNA 和蛋白质序列的序列对象,
+您的分析和可视化任务,例如成对比对、蛋白质结构
+分析和系统发育。
+树的数据库搜索。
+BioPython 可用于搜索各种 bioPython,各种可用的数据库
+互联网及其与 PDB、scikit-learn 等其他工具的集成
+其他图书馆也是如此。
+因此序列对象。
+因此 DNA 序列对象、RNA 序列对象和蛋白质序列对象基本上是
+用于你的 BioPython 库中。
+使用序列和比对,你可以使用任何
+文件格式如 FastIH 和 BANQ,也可以使用不同的库来编写。
+提供像 Needleman 和 Winchoo 算法这样的成对序列比对工具。
+BioPython 通常提供多种方法进行多重比对,例如 GlastrilW
+算法,并且 BioPython 有许多方法可以执行常见任务,例如反向
+补充测序、将 DNA 转化为蛋白质等等。
+数据库搜索。
+BioPython 的 intros 模块介绍了如何搜索 PubMed 等在线数据库,
+核苷酸、蛋白质和其他的数量。
+因此,NCBI 的基本局部比对工具 Glast 也用于比较测序
+找到它们之间的同源性。
+并可轻松实现爆炸搜索的自动化。
+SwishProt 是一个高质量的序列数据库。
+BioPython 提供了一个用于搜索、swishprot 和下载序列的模块。
+因此可以使用 BioPython 中使用的工具和模块。
+我们可以使用的常见例子有SecIo、Pylo、Proteomics等。
+结论是,BioPython 是一个强大而灵活的信息学库,它使它
+轻松进行DNA、RNA和蛋白质序列分析。
+开发人员可以访问各种生物数据库和功能
+使用库中可用的分析。
+随着新功能和更新的添加,该库的未来前景是
+对于生物信息学界来说,这是一个光明而令人兴奋的消息。
+这就是我们可以进行的文学和讨论。
+如果我们转到 VS 代码部分,我们首先可以看到
+合作。
+我们可以将我们的序列导入到我们的 BioPython 库中。
+首先,我们可以从 bio 中做什么,bio 是我们的 bioPython 模块。
+那么我们如何安装bioPython?
+所以很简单,我们只需要在系统中安装 Python,然后编写 pip install
+bioPython。
+bioPython 将安装在您的系统中。
+从那里您可以导入您的 bio 库,然后导入 SeqIO。
+Sec.io 是一个与序列、序列输入或输出一起工作的模块。
+BioSec 已记录在 BioSec。
+您可以从这里以及书中找到各种指南。
+首先,我们可以做的是,我们想要做的是打开一个序列文件,
+它由sequence.faster命名。
+让我进入我存放所有这些文件的文件夹,然后搜索
+序列。
+更快。
+这里提供了这个序列。
+所以我只需加载它并将其命名为文件sequence.faster。
+为了记录,我要按一个更快格式的文件名,然后
+打印该序列。
+这是序列,您可以看到它是一个蛋白质序列。
+那么我们如何才能对一个序列进行反向补充呢?
+你知道我们可以反向补充我们的序列。
+例如,如果我们有腺嘌呤碱基,我们可以把它变成硫胺素,如果我们有硫胺素
+那么我们可以把它改为腺嘌呤。
+因此我们将从 bio.sec 模块导入我们的序列对象和序列类。
+然后我们就可以创建一个 DNA 序列。
+所以我只需输入 adg cg 并导入任何你想要的东西然后创建一个函数
+反向互补,然后我们将反向互补该序列
+然后点击转动按钮,然后我们就可以
+将得到我们的反向补码。
+在这里你可以看到它是该序列的反向补充。
+因此转录将 DNA 转变为 RNA。
+因此,就像转录反向互补一样,你可以创建你的 DNA 序列
+之后你将得到 RNA 序列,然后它会变成 DNA 序列,
+然后将其转录为RNA。
+所以在这里你可以看到腺嘌呤是腺嘌呤,而硫胺素正在转变为尿素。
+因此翻译就是将你的 DNA 和 RNA 转变为你的蛋白质。
+在这里你可以看到我们刚刚创建了我们的 DNA 序列,如果我们运行它,它
+将我们的 DNA 和 RNA 序列改变为我们的蛋白质序列。
+因此序列比对。
+所以这只是 biopython 的基本整体功能。
+因此,通过导入对齐类和对齐模块,您可以创建一个对象对齐点
+成对比对之后,你只需点击并输入你的第一个序列,然后输入第二个序列
+之后你要对齐序列 1 和序列 2,然后你
+将要打印你的对齐情况,在这里你可以看到你将得到如下结果。
+您还可以比较 biopython 中的序列,就像您刚才从 biopython 库中比较序列一样。
+必须导入成对模块,然后导入序列模块
+因为我们按顺序工作,然后我们将得到序列 1,然后是序列
+2 之后我们可以进行成对全局比对,然后我们将
+打印我们的全局比对,在这里你可以看到我们比较了这两个序列,
+分数可以在这里查看。
+这就是 biopython 的介绍,你不必担心编写
+所有这些代码都供你练习,你可以从我的 github 库中下载这个笔记本
+我会在描述中或其他地方给你。
+非常感谢您的关注,我们在序列分析视频中再见。

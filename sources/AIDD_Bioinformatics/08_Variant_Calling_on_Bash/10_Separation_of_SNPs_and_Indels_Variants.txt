@@ -1,0 +1,85 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 8
+chapter_title: Variant Calling on Bash
+lesson_no: 10.0
+lesson_title: Separation of SNP's and Indels Variants
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/8. Variant Calling on Bash/10. Separation of SNP's and Indels Variants.srt
+duration_minutes: 5.3
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# Separation of SNP's and Indels Variants
+
+现在我们已经有了 VCF 文件,例如在我们的文件夹中,你可以看到我已经创建了一个文件
+结果文件夹。
+在这个结果中,我得到了 VCF 文件、VFC 文件。
+所以我将转到结果
+文件夹。
+然后查看文件是否存在。
+是的,如果我们恰好可以读取我们的文件,
+是的,它包含了现在所呈现的所有信息。
+所以在这里我们可以看到,
+这里有我们在 VCF 文件中看到的所有类型的信息。
+当我们查看
+课程介绍。
+现在你可以看到我们已经得到了文件,我们有了 VCF 文件,
+现在我们有了变体。
+那么如何区分这些变体,如何区分两端
+从 SMP 开始,我们如何创建这个文件。
+所以这个特定的管道你必须
+实现。
+所以如果你看到索引之后,我们可以提取 endel。
+那又怎么样呢
+是 endel,你知道插入和删除序列存在。
+所以我们必须
+设计、实施和合成 endel。
+因此,对于 endel 的分离,我们只需要使用
+VCF 工具视图减 V 是用于查看我们的 VCF 文件中的结尾的功能。
+所以我们只需要处理 VCF,我们有 VCF 文件,只需要查看结尾。
+是的。
+现在你可以看到这里只有末端被分开了,你可以看到末端
+和结尾。
+因此,我要创建一个新文件和 delts dot VCF 文件。
+现在
+我们可以,如果我们可以看到文件是否已创建。
+是的,endels dot VCF 文件已创建 cat
+并执行点 VCF。
+现在您可以看到所有文件都包含插入和删除的结尾
+这里存在突变。
+因此,从我们的 VCF 文件中提取了一种变体
+Myla。
+接下来,如果我们想知道有多少
+你的参考序列中有多少个 endel,有多少个
+结尾出现在 VCF 文件中。
+因此,通过使用相同的命令,通过使用相同的
+命令,你可以直接获取数量,所以有 43,231 个 endels 突变
+在我们的 VCF 文件中。
+我们的 SNP 文件也是如此。
+在这里我们可以看到,如果我们得到了我们的
+单核苷酸多态性变异。
+那么我们如何通过再次使用 SNP 来区分它们
+像我们一样查看系统,我们可以从这里分离 SNP,你可以看到我们刚刚
+把 SNP 从 SNP 文件中分离出来,现在我要为它创建一个新的 SNP 文件
+点 VCF。
+所以是的,文件已创建,我得到了 SNP 点 VCF 文件,并且确实有点 VCF 文件。
+两种类型的
+成功提取了突变。
+所以我认为这是我们讲座的主要目标
+调用变体,然后提取变体。
+现在剩下的部分是如何
+可视化这些变体,我们如何可视化这些变体。
+因此复制数字变体
+有不同类型的变异,它们也可以利用人类基因组。
+所以如果你想
+要做到这一点,你只需要复制相同的内容并按照那样的方式进行。
+因此对于可视化变体,
+我们只需要引用这些文件。
+例如,如果我们要可视化
+变体,例如,我们要可视化我们提取的变体,我们需要
+目前主要使用这两个工具。
+因此可以使用这两个工具查看变体调用的结果
+比如论坛、IGV 或 UCSC 浏览器。
+我只想说一句,我认为我们应该在下一讲中讲到这一点。
+因此,对于本次讲座来说,分离 SNP 和末端就足够了。

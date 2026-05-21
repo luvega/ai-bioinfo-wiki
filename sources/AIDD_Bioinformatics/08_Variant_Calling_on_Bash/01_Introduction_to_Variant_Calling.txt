@@ -1,0 +1,61 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 8
+chapter_title: Variant Calling on Bash
+lesson_no: 1.0
+lesson_title: Introduction to Variant Calling
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/8. Variant Calling on Bash/1. Introduction to Variant Calling.srt
+duration_minutes: 3.8
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# Introduction to Variant Calling
+
+大家好,欢迎来到使用 Linux 操作系统的变异调用课程。
+在本课程中,我们将处理用于分析
+基因组数据,我们将从 SRA 表格或 FASTQ 表格中获取读取文件并将其转换为变体
+文件。
+所以基本上所有这些添加的内容就是变异调用,什么是变异,如何
+处理变体,数学管道是什么,以及这一切的基本原理是什么
+课程主要讲的是。
+所以划分这个课程,如果你熟悉NGS数据,你就知道下一个
+一代测序数据会产生大量的文件,通过这些文件我们可以分析
+基因组变异,比如上一个时代定义的变化
+现在已在参考基因组中定义。
+例如,如果我们的参考基因组包含我们基因组中发生改变的硫胺素位点
+参考文件到腺嘌呤,然后变体调用就是所谓的变体调用
+这就是我们所说的变体。
+因此,为了从 NGS 数据中调用变体,我们需要特定的 Linux 管道。
+所以我们也必须使用 Linux 操作系统。
+因此,如果您使用 Windows,我也会创建一个 Windows 子系统。
+我还将为你提供一整段生物信息学命令行
+准备好你的 Linux 操作系统。
+因此,我们将检索一些 NGS 文件。
+检索完 NGS 文件后,我们将检索
+它的一些变体。
+通过检索此类变体,我们将分析该数据。
+我们还将检查我们数据的质量。
+我们还将调整质量,以便从
+NGS 文件。
+讨论我们课程的目录,我们的内容主要在NGS上
+以基于数据为例,我们将处理变异调用的基本内容。
+我也会对此进行一次讲座。
+那么我们使用的背景和元数据是什么,了解数据集和超静音
+能力和访问读取质量,例如,快速检查质量,你看
+调整质量,对数据应用快速质量控制,应用较差的工作
+您的数据也是如此。
+获得此类数据后,我们将涉及一些变异调用步骤
+管道,我们也将开发管道。
+我已经为你们开发了代码。
+因此,您只需复制所有代码步骤并在 Linux 终端上运行。
+因此,我们也将讨论我们将要使用的工具。
+所以这也包括在内。
+这就是我们课程的简短介绍,基本上,变异调用
+如何调用变体以及本课程的标题基本上是什么。
+如果你有兴趣了解变异调用,如果你有兴趣了解
+了解你的阅读,如何从你的阅读中提取特征,如何提取变体
+来自您的文件,来自您的NGS文件的变体。
+所以本课程适合您,本课程将帮助您理解。
+我希望这对于我的介绍视频来说已经足够了。
+这就是本课的内容。

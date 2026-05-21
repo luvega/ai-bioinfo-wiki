@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------
+# AI_Course · .gitignore
+# 详细决策见 memory.md §2 项目决策 D-007
+# ---------------------------------------------------------------
+
+# === 大文件 / 版权敏感 ===
+# 原始 PDF 是商业书籍，仅个人收藏，不入 git
+pdf_originals/
+
+# === PDF→Markdown 转换产物（可由脚本重建） ===
+# 这部分**保留入 git**，因为 wiki sources/PDF_Library 已经引用它们
+# 如果觉得太大，可以取消下一行注释
+# sources/PDF_Library/
+
+# === Python 缓存 ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === Jupyter ===
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# === R / RStudio ===
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+renv/library/
+renv/python/
+renv/staging/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# === Editors / IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*~
+
+# === Obsidian · 仅忽略本机工作区状态，保留团队级配置 ===
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/graph.json.bak
+
+# === 学生 AI 协作日志（可能含 PII） ===
+# 教师本地可有，但不要入 git
+ai_logs/
+**/ai_logs/
+
+# === 学生项目目录（同上） ===
+projects/
+
+# === 临时 / 输出 ===
+*.log
+*.bak
+*.tmp
+/tmp/

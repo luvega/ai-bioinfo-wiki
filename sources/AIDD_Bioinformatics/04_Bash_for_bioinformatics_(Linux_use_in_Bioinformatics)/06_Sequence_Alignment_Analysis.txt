@@ -1,0 +1,89 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 4
+chapter_title: Bash for bioinformatics (Linux use in Bioinformatics)
+lesson_no: 6.0
+lesson_title: Sequence Alignment Analysis
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/4. Bash for bioinformatics (Linux use in Bioinformatics)/6. Sequence Alignment Analysis.srt
+duration_minutes: 6.0
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# Sequence Alignment Analysis
+
+在这节课中,我们将讨论序列比对。
+那么什么是序列比对?
+基本上,当你有两个或多个序列并想对齐它们时,例如这里
+在这个文本文件中,我得到了一些我想要对齐的序列。
+所以首先,我们需要一个序列比对工具。
+因此我们选择的序列比对工具是 cluster omega。
+让我们看一下吧。
+因此,cluster omega 是一种先进的多序列比对程序
+设计用于更高精度对准。
+因此它可用于多重测序的精确比对,
+确保可靠的进化和功能分析。
+因此您可以对序列进行对齐以进行序列比对。
+之后,你可以利用这种比对来确保进化分析的准确性,
+即系统发育树的构建。
+所以首先,我们需要安装序列比对工具。
+所以我们需要一个终端。
+加载终端后,我们将安装此工具。
+sudo apt get 安装集群 o。
+sudo 是管理性的。
+恰当使用应用程序。
+Get 是获取设置,install 是安装集群 omega 的命令。
+我们需要一个密码。
+输入密码之后,我们看到clusteromega已经是最新版本了。
+那么下一步议程是什么?
+所以安装命令就是我们最近使用的这个。
+因此使用这个命令,我们可以安装这个工具。
+检查工具是否已安装。
+那么我们怎样检查呢?
+因此我们将输入 cluster 然后它会输入 cluster o。
+没有提供序列输入。
+所以我们可以使用帮助命令。
+hd lp 帮助。
+这些就是您可以在此工具中使用的所有命令。
+所以我们需要的是,我们需要有一个序列输入。
+之后,我们需要一个聚类算法。
+这些是其中已经提供的算法。
+此后,我们可以得到对齐输出。
+所以我们需要的是,我们需要一堆序列。
+因此,我创建了一个包含序列的目录。
+因此,在转到下载之后,我们转到下载,然后转到安全对齐。
+所以在这个文件夹中,我有一个名为sec.txt的文本文件。
+这是我下载的要对齐的所有序列。
+因此我也将在 GitHub 存储库中提供此序列文件供您使用。
+所以我们现在需要的是,我们需要一个命令来对齐这些工具。
+因此我们需要对齐序列。
+我们正在运行集群 omega 工具。
+之后,我们需要对齐命令。
+这是对齐命令。
+首先,我们有工具名称,即 cluster omega。
+I 用于输入,out 用于输出,对齐点更快。
+并且输出格式是更快的文件。
+所以我们要复制这个命令并将其粘贴到这里。
+所以现在我们将使用输入文件将其替换为序列点txt。
+并且输出将以更快的速度输出斜线对齐点,并且输出格式将是更快的文件。
+然后我们点击回车,需要一些时间来对齐序列。
+只需三到四秒即可完成。
+现在我们来检查一下生成了多少个文件。
+因此有一个文本文件更快的文件,它没有按照我们刚才的要求对齐。
+因此我们将更快地打开它来对齐点。
+在这里我们可以看到对齐已经完成。
+所以我们也可以利用这种比对来构建文件遗传树。
+我也将在下一个命令中向您展示这一点。
+所以这里我们也可以在GUI目录中看到它。
+如果我们移动到第二行工具并单击它,它将打开一堆文件。
+在这里您可以看到我们的调整已经完成,并且这些是所使用的间隙和惩罚。
+因此,您可以随意使用此工具。
+但如果你只想要教程,他们已经为你提供了
+您还可以使用 GitHub 存储库。
+这里是未对齐的序列,这里是对齐的序列。
+这些就是了。
+这就是如何使用序列比对。
+您也可以使用它。
+这就是在
+Linux 中的 bash 操作系统。
+非常感谢您参加本次讲座。

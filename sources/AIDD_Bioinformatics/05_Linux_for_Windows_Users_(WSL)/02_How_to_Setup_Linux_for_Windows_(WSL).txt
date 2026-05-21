@@ -1,0 +1,89 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 5
+chapter_title: Linux for Windows Users (WSL)
+lesson_no: 2.0
+lesson_title: How to Setup Linux for Windows (WSL)
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/5. Linux for Windows Users (WSL)/2. How to Setup Linux for Windows (WSL).srt
+duration_minutes: 5.1
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# How to Setup Linux for Windows (WSL)
+
+这是本讲座和本模块中最重要的视频。
+所以基本上我们要在 Windows 中安装 Linux 子系统。
+因此,首先,打开你的笔记本电脑,然后转到这台电脑。
+打开此 PC 文件夹或此 PC,然后去安装或更改程序。
+再次打开,只需打开此 PC 程序
+然后移至卸载程序更改程序并单击它。
+单击后,您将进入应用程序和功能页面。
+在右侧,你会看到相关的设置按钮,还有
+列出了程序和功能。
+因此,我们将点击列出的程序和功能,它将带我们
+到这个页面我们可以卸载或者更改任何程序。
+所以我们要打开一个窗口功能,
+该功能正在为 Linux 安装子系统。
+因此,在点击打开或关闭 Windows 功能后,
+我们将向您展示此 Windows 功能图标。
+滚动到页面底部
+将成为 Linux 的 Windows 子系统的一个选项。
+点击后,点击确定后,将会有一个小更新,你的
+重启后子系统也会重新启动。
+当您的命令提示符打开时,打开命令提示符。
+只需在其中输入 bash。
+当输入 bash 时,它会显示
+Linux 的 Windows 子系统尚未安装发行版。
+因此可以通过访问来安装发行版
+Microsoft Store 或提供的链接。
+因此按任意键继续。
+按下任意键后,您将进入 Microsoft Store。
+如果由于任何原因,Microsoft Store 和 Microsoft Store 没有选项
+没有打开,请转到您的 Internet 浏览器,输入 Ubuntu 下载 Microsoft Store。
+当输入完 Ubuntu 下载 Microsoft Store 后,只需单击“确定”即可。
+输入后,您将获得 Ubuntu Microsoft Store 第一个链接,然后单击
+然后点击该网站,你将被带到 Microsoft Store
+它会说 Ubuntu Canoleo Group Limited 开发者工具大于实用程序。
+所以之后,就会出现一个符号,表示它是免费的,你可以得到它。
+因此,点击获取按钮后,
+您将开始将 Ubuntu 下载到您的操作系统中。
+大约是 420 兆字节。
+Windows 上的 Ubuntu 允许您使用 Ubuntu
+终端并运行 Ubuntu 行实用程序,包括批量 SSH、Git、APT 等等。
+因此,当我们等待下载时,
+下载后,您将看到如下窗口。
+安装可能需要几分钟。
+安装完成后,系统将要求您选择任何 Ubuntu 系统。
+这可能需要几分钟。
+请创建一个默认的 Unix 用户或 Linux 用户帐户。
+该用户与您的 Windows 用户名不匹配。
+这句话非常重要。
+用户名不需要与您的 Windows 操作系统匹配。
+所以基本上就是说 Windows
+我们现在使用的用户名,比如我的情况,操作系统名称是
+阿卜杜勒,所以我们不必再使用阿卜杜勒。
+我们可以使用任何其他词。
+就像我在那里输入狮子、猫,就像我最喜欢的动物一样。
+所以之后,我在那里输入代码。
+它会要求我们输入一个新的 Unix 密码。
+所以我们必须输入一个 Unix 密码,
+它不会显示在我们的操作系统中,也不会显示在我们的终端中。
+所以如果你要输入密码,
+你必须记住它,因为当你
+你输入它。
+这样之后,你的安装过程就成功了。
+您的密码将成功更新,以便以管理员身份运行任何内容。
+来吧,使用 sudo 或 main sudo 了解详细信息,就像任何事情一样。
+就是这样了。
+这就是您为 Linux 的 Windows 子系统创建、安装和创建用户的方法。
+如果你们在使用这个操作系统时遇到任何问题,如果你们有任何
+问题是你的电脑或你的
+Windows 版本,所以你仍然可以问我你是否已经是 Linux 用户,并且你
+在Linux上学习这个,不需要制作子系统。
+您只需打开一个终端即可与我们一起工作。
+因此在下一讲中,我们将讨论 Linux 操作系统的命令
+系统。
+这也将是实用的。
+所以我们将要使用的命令我们也将执行它。
+因此请继续关注。

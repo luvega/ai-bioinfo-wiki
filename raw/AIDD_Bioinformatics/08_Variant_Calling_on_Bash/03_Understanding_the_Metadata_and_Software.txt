@@ -1,0 +1,72 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 8
+chapter_title: Variant Calling on Bash
+lesson_no: 3.0
+lesson_title: Understanding the Metadata and Software
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/8. Variant Calling on Bash/3. Understanding the Metadata and Software.srt
+duration_minutes: 5.3
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# Understanding the Metadata and Software
+
+那么,当我们处理变体调用过程时,我们将在什么样的操作系统上工作。
+所以我们需要一个 Linux 操作系统,或者如果你使用 Windows 操作系统,
+你只需要为你的 Windows 操作系统提供 WSL 终端。
+在上一节中,我想你应该已经了解了 WSL 的介绍,
+如何在您的操作系统上安装以及如何为 Linux 制作 Windows 子系统。
+如果您使用的是 Linux,则您不必执行任何操作。
+继续我们现在要做的流程。
+那么,变体调用过程需要哪些软件和设置呢?
+因此,需要列出系统和软件。
+所以我们第一个需要的软件是集成到我们终端的Wget或curl系统。
+因此我们需要为我们的接口安装 Wget 或命令行进程。
+例如,我们需要Wget或curl命令行工具来访问互联网上的资源。
+因此它们的命令行界面略有不同。
+例如,我认为 curl 适用于 bash 操作系统。
+我们还需要使用 curl,您可以在 iMac 上进行所有网页抓取。
+我认为 Mac 操作系统是这样的。
+所以我们需要的第二个工具是 FastQC。
+因此,您可以使用 APT 系统安装 FastQC,这也是命令行上的伪 APT install whatever,
+因为 FastQC 是标准软件包档案,就像为这份糟糕的工作所见一样。
+因此,我们将使用较差的工作来进行质量修剪。
+那么质量是什么?
+我也将对此进行解释。
+所以我们要使用的主要工具是 samtools。
+Sam 工具也可在 APT 系统、伪 APT 安装、samtools和 bcftools上使用。
+我们将要使用的一个主要工具也可在 Ubuntu 操作系统上使用。
+因此您可以使用 bcftools,伪 APT 安装。
+那么,NGIS 调用分析或变异调用分析需要的基本工作流程是什么?
+所以我们需要原始读取,然后我们需要质量控制,然后我们需要数据的质量修剪。
+质量修剪后,我们需要与参考基因组进行比对。
+为了对齐目的,我们需要参考注释和参考基因组,其中包含快速驱动序列。
+然后我们需要计算深度和覆盖率。
+此后,我们将开始计时。
+这就是工作流程的基本介绍。
+现在了解我们将要使用的数据集。
+哪种数据用于变异调用分析以及该过程中的超可变性是什么?
+因此测序数据来自 Illumina 测序仪。
+Illumina 是一家进行所有测序分析的公司,它使用流动池,将流动池分成多个通道,每个通道也将分成多个图块。
+我们稍后将使用快速队列文件作为有关车道砖位置的信息。
+记住这一点。
+我们还将看到更快的队列文件。
+然后我将解释我们是有关瓷砖、泳道和流动池的信息。
+熟悉数据的一般组织结构很有用,如显示的确切数量和图块的布局。
+它自己处理大量数据。
+这里有高安全流的八个细胞通道。
+您可以看到一个通道包含一百二十个图块,而一个图块在高安全性四千上每个流动槽包含多达五十亿个读数。
+我说四千是我们在NGS中所做的尼尔森类型。
+那么我们使用的元数据是什么?
+因此,我们将研究该实验中第三代菌株的三个样本事件,一个来自第五代,一个来自一万五千代,一个来自五万代。
+在实验过程中,人口发生了很大变化。
+所以,我们将通过我们的使命来解释 sit mutant 和 hypermulet hypermulety 的突变进化过程。
+所以这是一种超级可变性。
+如何检查超级数据中的突变。
+现在我们已经讨论了数据、基本工作流程和所有内容。
+首先,我们将继续将 RR 纳入我们的系统,如何获取我们需要的所有 RR,如何检索 RR,如何使用 SRA 工具。
+因此我们将在下一篇中进行分析。
+我想是下一堂课。
+是的,在下一讲中我们将检索读数。
+这就是本次讲座的全部内容。

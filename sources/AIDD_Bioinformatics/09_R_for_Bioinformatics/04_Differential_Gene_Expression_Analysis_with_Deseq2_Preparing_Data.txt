@@ -1,0 +1,92 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 9
+chapter_title: R for Bioinformatics
+lesson_no: 4.0
+lesson_title: Differential Gene Expression Analysis with Deseq2 Preparing Data
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/9. R for Bioinformatics/4. Differential Gene Expression Analysis with Deseq2 Preparing Data.srt
+duration_minutes: 5.4
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# Differential Gene Expression Analysis with Deseq2 Preparing Data
+
+那么让我们来谈谈 RNA-seq或差异基因表达。
+差异基因表达分析对于识别您的
+治疗和病情分析。
+那么差异基因表达或
+我们在哪里可以得到差异基因表达数据?
+那么当我们做 RNA
+DESeq2 分析或单细胞分析或微阵列数据分析,我们得到这种
+FPKM 值是我们从中获得的每个轴突片段的值。
+因此,当我们获得 RNA-seq数据时,我们利用这种数据来分析我们的 RNA-seq分析。
+我们所做的就是得到广泛使用的 DESeq2 数据,DESeq2
+广泛用于 RNA-seq分析的软件包。
+因此,如果你想
+了解有关 RNA-seq的更多信息,您可以获得这个,也可以获得课程。
+现在我们将逐步学习如何使用 DESeq2 来分析你的差异基因
+表达式分析。
+首先,你必须在你的
+计算机系统。
+之后,我们首先确保安装了 DESeq2。
+这样,我们
+只需使用 install.packages 命令,然后安装 DESeq2。
+安装 DESeq2 后,
+我们使用库文件加载 DESeq2 包。
+然后我们继续导入我们的 RNA-seq数据。
+我之前说过,NGS 分析或 RNA-seq可以给我们提供某种
+数据。
+因此,我们导入计数数据,我们得到的计数数据是我们从我们的
+样本。
+然后我们将 RNA-seq 数据导入我们的 R 环境,其中基因表示为行,
+我们的样本以列表示,然后我们删除任何不属于的不需要的列
+所有分析。
+接下来,我们创建一个 DESeq2 数据集对象,然后保存计数数据,然后
+使用相关元数据来定义我们的实验和组条件。
+所以我
+我也会向你展示这些数据。
+接下来进入第三步,探索性数据分析。
+因此,探索性数据分析有助于我们了解数据的结构和质量。
+有一些
+特殊步骤是包括的初始和必要步骤。
+首先,
+所以我给你一个详细的例子,说明我们将如何做,在下一个视频中,
+我要讲一下我们正在使用的代码。
+我将利用这些代码向你们展示我们如何
+也可以分析这些数据。
+所以首先,我们获取数据,然后导入,
+我们将对这些数据进行归一化。
+因此,我们执行 DMM 归一化(如果需要),使用
+来自 Lima 包的 Womb 函数,它是 m 值的修剪平均值,也称为
+数据标准化。
+之后,我们使用一些 QC 图评估样本质量,并删除
+低质量和异常样本。
+然后我们过滤掉低表达并降低噪音
+并重点关注更重要的基因。
+因此,继续步骤编号代码,我们估计大小
+因子和离散度。
+因此,DESeq2 估计了大小因子来解释测序深度。
+区分测序深度和校正文库大小至关重要。
+它还模拟
+离差,表示计数的方差。
+因此,通过运行我们
+向你展示,我们也可以分散命令。
+那么继续第五步,
+这是负的生物名词泛化,也称为差异基因表达
+和差异表达分析。
+我们将使用负二项式广义线性
+模型来确定差异表达。
+之后,我们将拟合模型并进行测试
+使用 DESeq2 函数计算差异表达式。
+然后我们将指定
+两组条件。
+然后我们将它与构造论证进行比较
+在结果中。
+之后,我们将进入可视化部分,
+有多种方法可供使用。
+例如,我们可以使用火山图,它是
+也主要用于分析。
+然后我们还要制作热图。
+所以我们主要要用我将要展示的代码来创建一个火山图
+在 DESeq2 分析的下一个教程部分中。

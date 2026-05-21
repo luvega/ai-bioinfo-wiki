@@ -1,0 +1,39 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 8
+chapter_title: Variant Calling on Bash
+lesson_no: 11.0
+lesson_title: Visualizing Variants Using IGV and UCSC Browser
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/8. Variant Calling on Bash/11. Visualizing Variants Using IGV and UCSC Browser.srt
+duration_minutes: 3.6
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# Visualizing Variants Using IGV and UCSC Browser
+
+为了可视化我们刚刚调用的变体(我们刚刚制作了变体调用文件),我们需要使用板载 IGV 或 UCSC 基因组浏览器。
+因此,UCSC 基因组浏览器可在线使用,并且 Board IGV 是可以在系统中安装的开源软件。
+因此在获得 IGV 工具后,IGV 是一个独立的浏览器,它的优点是可以在本地安装并提供快速访问基于 Web 的基因组浏览器,就像示例或 UCSC 浏览器一样,速度较慢,但​​功能更多。
+因此,它们不仅允许长期和灵活的可视化,而且还可以轻松访问丰富的注释和外部数据源。
+因此,如果我们要使用 IGV 查看器可视化我们的文件,我们需要加载我们的参考基因组文件,我们需要加载我们的 BAM 文件,然后我们需要加载我们的变体调用文件。
+那么加载所有这些之后,我们如何才能像这样解释结果。
+在这里您可以看到,我们刚才所说的 S&P 的突变就在这里。
+因此,这里存在的基因的 Refsec 数是人类基因组中呈现的标准普尔数。
+这就是刚才所说的变体。
+这就是 IGV 部分的内容。
+因此对于 UCSC 基因组浏览器,您只需在浏览器上使用 UCSC 基因组浏览器变体调用查询,然后变体和注释整合器就会在这里显示。
+然后您就可以添加您的 VCF 自定义曲目和所有类似的东西。
+您可以添加所有 VCF 文件以及类似内容,例如,我们只需在此处添加我们的文件。
+如果他们可以看一下,如果我们提交了文件。
+因此,如果提交了自定义轨道,那么我们可以转到其注释,在这里我们可以看到 S&P DNPs 的结果,然后我们可以选择它,然后刷新所有这些,然后我们就可以看到这里显示的 DNPs。
+用户轨迹我的用户轨迹没有加载,所以他们的基因组浏览器会出现问题之类的。
+但对于变异,我们只能在这里进行可视化,我们可以展示 S&P 基因组变异,并且我们还可以看到 S&P 存在于这里。
+因此,我们可以在基因组浏览器上做很多其他事情。
+这里我将对这一切进行简短的描述。
+因此,常见的 DNPs 和 S&P 都在这里表示。
+这就是可视化部分的全部内容。
+我认为这对于本课程来说已经足够了。
+或者您可以提取变体,或者您可以调用所有变体,然后您可以可视化这些变体。
+所以我希望你现在对变体调用有了更好的理解,对于代码部分,我会将所有这些代码上传到一个文件中,然后你可以使用它来分析你自己的数据。
+这就是本次讲座的全部内容。

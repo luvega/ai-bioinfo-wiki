@@ -1,0 +1,110 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 7
+chapter_title: NGS data Analysis on Bash (Gene Expression Using Command Line)
+lesson_no: 6.0
+lesson_title: Checking the Quality of Data
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/7. NGS data Analysis on Bash (Gene Expression Using Command Line)/6. Checking the Quality of Data.srt
+duration_minutes: 8.0
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# Checking the Quality of Data
+
+现在我们已经检索了 FastQ 文件,现在我们完成了第一个
+部分是原始读数,现在我们要进行质量控制,质量
+控制我们的原始读数。
+现在你知道了 NGS 数据来自其他几个测序平台,比如 Anomina,
+Biopac 和其他测序公司都喜欢这样。
+PacBio 就是其中之一。
+所以我们要检查我们的数据是否正确。
+我们的数据包含需要进一步处理以进行数据分析的质量,或者不处理
+进一步进行数据分析。
+那么继续讨论质量控制的本质。
+首先我们要学习什么是 FastQ 文件,因为在上一讲中我们稍后会
+把它留在这里。
+在这里您可以看到 FastQ 文件包含这样的读取。
+我们也可以在我们的文件上看到它。
+我们可以在 FastQ 中获取文件,您可以看到有一个会话编号,
+长度,有序列。
+这里还提到了长度。
+继续往下看,你还可以看到还有其他不同的流动槽 ID
+使用了哪个,并对我们使用的通道进行排序,它来自哪个瓷砖,
+坐标它包含什么,读取的碱基是什么,我们的读取碱基分数是多少。
+另外还有可选的重复标题分隔符。
+我们的 FastQ 文件中也包含这些类型的文件。
+这就是 FastQ 文件格式。
+那么什么是质量控制?
+那么哪个工具为我们提供了 FastQC 的主要描述。
+因此,FastQC 提供了一种对原始测序数据进行一些质量控制检查的简单方法
+来自高通量测序流程、高通量测序公司。
+它为我们提供了一组模块化分析,可以快速了解您的数据是否
+存在任何问题,在做进一步分析之前你应该意识到。
+例如,如果我们的数据包含重复项,或者我们的数据包含大量序列
+我们会检查是否可以处理不同的变体,或者是否
+不是,而且有很多采用者被添加到我们的测序数据中。
+所以我们会用 FastQC 检查这些东西。
+那么我们使用的FastQC主要功能有哪些呢?
+所以我们要将数据导入 SAM、BAM 或 FastQ 文件,任何我们可以使用的形式。
+因此,我们将快速检查一下,我们将快速了解哪些区域有
+问题。
+因此,我们将创建数据的图表和表格等摘要,然后可以导出
+结果。
+那么,如何进行这种质量检查呢?
+例如,我们有 FastQ 文件,我们要检查,我们要安装 FastQC 工具,我们
+有 FastQ 文件,我们将检查质量控制,我们将进行一些质量控制
+FastQ 文件。
+为此,我们需要一个工具,即 FastQC。
+所以 FastQC 是一种进行质量检查的简单方法。
+我们将安装我们的工具,即 FastQC 工具,然后我们将进行一些质量控制
+FastQC 的数据。
+这是我们用来安装和更新我们的
+系统。
+转到我们的文本文件,我将把它粘贴到这里。
+Pseudo-APT-GET-UPDATE,我将更新我的系统,然后我将安装 Pseudo-APT-GET-INSTALL-FASTQC。
+这就是我们的 FastQC 工具的安装过程。
+现在已经安装了 FastQC 工具,我们需要一些文件来进行数据分析。
+例如,我们需要 FastQC 文件.FastQC,我们已经有我们的文件.FastQC。
+FastQC 是一个我们需要的工具 FastQC。
+我要检查一下,是的,它已安装,FastQC 工具已安装。
+它需要查看一些 Java 文件并检查其质量,现在我们
+在这个文件夹中,我们有文件.FastQC。
+我们将检查我们的数据质量。
+我们要创建一个目录,mkdir,我将其命名为 data,现在我要检查一下,是的,
+数据文件夹已创建。
+我要应用 FastQC,FastQC 工具,然后我要写一个快速
+概述一下,然后我会检查我们的文件 file.FastQC,然后我会生成一个输出
+进入数据文件夹,d8data 和正斜杠。
+因此可以看到文件 .FastQC 的分析已完成。
+因此可以看到文件 .FastQC 的分析已经完成。
+我觉得我做错了什么。
+我应该把那些数据包括进去。
+是的,抱歉,我应该包括 O,但我在那里包括了 0。
+所以这是我们造成的真正问题。
+所以我们在文件夹中得到了 FastQC 质量控制。
+现在我要 ls 并转到数据文件夹。
+移动数据,我要检查,是的,文件。
+FastQC HTML 是我们需要的结果。
+进入这个文件夹,我们就有数据了。
+在这里您可以看到文件.FastQC。
+因此我们使用的文件名是 file.FastQC。
+它具有常规的基本单元。
+因此,编码是通过 Sanger 测序完成的,使用了Illumina 平台 1.9。
+我们覆盖的序列总数为 2,序列长度为 72 个碱基。
+因为它是一个演示测试,所以它是一个演示序列。
+那里只有两个序列。
+所以gg含量不够。
+我们的基本数据已经足够了。
+我们的电力基础序列质量还可以。
+而且我们的电力基础序列代码也不好,因为我们包含的数据太多了,
+数据。
+所以我们的基本序列含量不够,碱基含量、gc含量也不够。
+并且过度代表测序,也没有命中。
+还有适配器,也没有找到适配器。
+所以我们不需要修剪。
+但是我们也将进行修剪,因为我们可以在您的数据中使用此管道。
+所以您需要或者您需要知道如何在您的 FastQC 文件上应用修剪过程。
+这就是 FastQC 报告的全部内容。
+现在您知道如何检查数据的质量控制了。
+本次讲座的内容就是这样的。

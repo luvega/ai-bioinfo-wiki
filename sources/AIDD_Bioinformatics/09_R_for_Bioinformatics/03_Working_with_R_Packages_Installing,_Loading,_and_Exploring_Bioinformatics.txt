@@ -1,0 +1,120 @@
+---
+course: AIDD Bioinformatics
+chapter_no: 9
+chapter_title: R for Bioinformatics
+lesson_no: 3.0
+lesson_title: Working with R Packages Installing, Loading, and Exploring Bioinformatics
+source_subtitle: G:/医药数据处理与可视化/AIDD Bioinformatics/Bioinformatics Data Analysis Crash Course Python R and Linux/9. R for Bioinformatics/3. Working with R Packages Installing, Loading, and Exploring Bioinformatics.srt
+duration_minutes: 9.6
+language: zh-CN
+cleaning: WEBVTT timecodes removed; professional terminology corrections applied; sentences reflowed.
+---
+
+# Working with R Packages Installing, Loading, and Exploring Bioinformatics
+
+那么,让我们来讨论一下 R 包。
+R 是一种广泛使用的编程语言,我们讨论过它用于统计和数据
+分析。
+因此,您可以在屏幕上看到我为安装编写的几行代码
+包。
+因此,在本视频中,我们将探讨使用以下方法安装 R 包的不同方法:
+综合 R 存档网络,从本地文件安装,获取包
+GitHub 并利用 Bioconductor 存储库。
+因此,包是 R 编程中核心可重用性的基本概念。
+包是函数、示例数据和文档的集合,它描述了如何使用
+使用它们。
+那么,如何探索一个简单的 R 包。
+因此,请前往现在就应该打开的火车数据库。
+因此,当我们打开综合 R 档案网络时,会发现很多工具和库
+可在此处获取。
+因此让我们搜索 R 到 R 项目。
+因此我们可以搜索 Biostring 包。
+让我们搜索 Biostring。
+在这里您可以看到很多可用的 R 编码代码。
+因此,为了具体使用包,我们也可以单击包选项卡。
+在这里你可以看到我们可以打开档案来包含所有可用的包
+这里。
+在这里您可以看到代码以及这些代码的索引。
+因此,CRAN 是 R 托管数千个软件包的主要软件包存储库。
+要从 CRAN 安装包,通常只需打开 R studio。
+您可以在这里看到简单的代码。
+我们必须读取我们要使用的 excel 文件。
+所以你可以看到,如果我点击这里,他们会说我已经安装了它
+他们说可以读取 Excel。
+就你的情况来说,它不应该显示这一点。
+因此我们只需输入 install .package 然后点击 Enter 然后输入
+读取 excel 的名称。
+因此,只需在我的 GitHub 存储库中获取这些代码,然后单击“控制”+“输入”即可
+那么他们会说一个或多个包裹即将到来。
+所以我要点击否,因为我已经读过我目前正在使用的 excel
+这样读出来的 excel 就已经可用了。
+因此,通过这种方式,您可以下载并安装,或者仅安装您的 CRAN 包。
+因此,通过安装本地文件,您可以下载任何文件,有时您必须使用 R 包
+您必须下载本地存储的数据,然后从其他来源下载
+或者您只需自己开发代码部分。
+因此你必须安装它。
+因此,在我的例子中,我将再次使用该命令安装 .packages,然后找到位置
+我的包裹已经到货了。
+所以我要使用这个命令,然后我要安装字符串 R
+已经可供我使用了。
+因此字符串 R 用于基因组数据操作。
+这就是你可以使用以下方法从本地文件下载并安装软件包的方法
+GitHub 存储库。
+你知道这里提供的很多工具都被其他很多开发人员使用
+正在生成这些内容。
+因此,使用该 GitHub 链接,您也可以下载并安装您的软件包,例如 shiny。
+Shiny 是一个用于创建可视化应用程序的库。
+例如,我创建了一个名为 Bioarray Explorer 的应用程序,我可以使用它来操作
+代谢组学、基因组学、蛋白质组学和转录组学的元数据。
+这里您可以看到我的名字是 Rahman 等人。
+因此您也可以使用它进行分析,很快就会在线提供。
+然后您也可以使用这个 Shiny 来开发您的应用程序。
+因此首先你必须加载shiny的库。
+为此,您只需在系统上安装 Shiny。
+我已经有了,所以当你加载闪亮文件时会出现错误。
+因此您必须安装远程包。
+下载并安装远程包后,您可以使用远程包
+下载并从您的 GitHub 个人资料中下载的 Shiny 并安装到您的系统中。
+这就是您使用 GitHub 存储库的方式。
+所以是生物导体。
+使用 Bio Conductor,你可以下载并安装针对你的
+计算生物学、生物信息学和基因组学领域。
+因此您必须首先下载 Bio Manager。
+Bio C Manager 是用于安装 Bio Conductor 包的工具。
+为此,你必须安装 Bio C Manager,然后使用你拥有的 Bio C Manager
+安装一些工具。
+为此,我们将安装 Bio Strings 工具。
+因此我们只需等待它运行 Bio String。
+因此 Bio String 用于 DNA 字符串,就像你想要反向互补一样
+或补充动物或植物的DNA序列。
+因此我将使用我已经退出的 Bio C 管理器来安装 Bio 字符串
+命令,然后我们将等待安装包需要多长时间。
+因此这是一个简单的过程,理解不同的方法可能很难
+你。
+但问题是您只需安装软件包即可处理您的文件。
+例如,在我们的案例中,我们正在安装 Bio String 以与 DNA String 配合使用
+我们将进行反向补充。
+因此,我们等待它下载并安装软件包。
+因此我们只需等待它是否安装即可。
+我将退出该命令。
+如果我要查看 Bio String 已经可用。
+因此加载包 x 向量以下是构建的包。
+所以我已经有了 Bio String 包。
+所以我只需单击 DNA 字符串,然后反向补充它。
+在这里你可以看到它是反向补充的。
+因此,腺嘌呤会转变为硫胺素或胞嘧啶,而鸟嘌呤则会转变为硫胺素
+这就是你得到反向互补的 11 个字母 DNA 字符串对象的方法
+进入你原来的 DNA 字符串。
+这就是你的主要生物信息学知识以及最初使用 R 的方法
+R 包。
+那么如果您必须删除一个包该怎么办呢?
+因此,就像安装包一样,您只需输入remove.packages。
+这就是您可以使用删除对象来删除任何您想要的包的方法。
+此外,还有一个可用的帮助选项卡。
+因此,如果你想搜索安装工具,你也可以这样做,这就是你
+可以从 R 工作室开发公司获得帮助。
+通过这份全面的指南,您可以轻松安装 R 包并解锁
+您在数据分析和统计工作中可能遇到的新情况。
+这就是本期视频的全部内容。
+在下一个视频中,我们将进行 RNA 可视化的生物信息学分析和
+继续讨论 WGCNA 单细胞,以及我们即将推出的更多内容
