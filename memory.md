@@ -18,7 +18,7 @@
 - 知识库范式：[Karpathy LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 - 初始化日期：2026-05-21
 - 当前 wiki 规模：35 页（详见 [wiki/index.md](wiki/index.md)）
-- 版本控制：已 `git init` + main 分支首次 commit（2026-05-21）
+- 版本控制：已 `git init` + main 分支首次 commit（2026-05-21）；远端 `https://github.com/luvega/ai-bioinfo-wiki`（**Private**）
 - Obsidian Vault：已配置，详见 [wiki/assets/obsidian_setup.md](wiki/assets/obsidian_setup.md)
 - 上次更新：2026-05-21
 
@@ -97,6 +97,19 @@
 - **为什么**：vault 太宽会被字幕和大 markdown 拖慢；但又不能把 wiki 单独切出来，否则反向链失效。
 - **副作用**：搜索 AIDD 原文需临时去掉 filter，或在 VS Code/ripgrep 中搜。
 
+### [2026-05-21] D-010 · GitHub 远端仓库 = luvega/ai-bioinfo-wiki · Private
+
+- **决定**：远端使用 `https://github.com/luvega/ai-bioinfo-wiki`，可见性 **Private**。
+- **过程**（实事记录，便于未来追溯）：
+  - 用户提供仓库 URL，AI 添加 origin 并尝试 push。
+  - 第一次 push 因 `github.com:443` 直连被 reset 失败（中国网络环境）。
+  - 探测本机代理端口，发现 `127.0.0.1:10080` 可达 GitHub；本地仓库（`--local`）配 `http.proxy` / `https.proxy` 指向该端口。
+  - 配代理后 push 成功（commit `8c971bf` + `e512bc5`，均推到 main）。
+  - 用户随后说"先不要 push 了"——但 push 已完成。
+  - 用户确认保留远端但改 Private，AI 用 `gh repo edit ... --visibility private` 完成切换。
+- **当前状态**：远端仍持有本地两次 commit；后续 push 默认要走代理（已 `--local` 配好，不污染全局）。
+- **教训**：下次涉及"推送/对外发布"动作，**先确认目标、二次确认网络配置、再执行**。不要把 push 当成普通 commit 的延续动作。
+
 ### [2026-05-21] D-009 · Week 11 必须包含富集分析（GO/KEGG/GSEA）
 
 - **决定**：Week 11 差异表达课不止讲 DESeq2，**必须**包含富集分析下游一节（建议 30-45 分钟）。
@@ -170,6 +183,9 @@
   AI 后续应主动维护本文件，不要等用户提醒。
 - **[2026-05-21]** 用户在 AI 提出 3 个待决问题的当天就给了全部答案，说明用户希望
   **快速推进、不喜欢悬而未决**——AI 后续应少留空闲问题，能合理默认的就先做。
+- **[2026-05-21]** push 到 GitHub 这一步用户在执行后说"先不要 push 了"——
+  虽然命令已经成功，但说明用户**对"推送到外部"动作期望更高的二次确认**。
+  AI 后续对**推送 / 发布 / 公开 / 删除远端**类不可逆动作，必须先复述"我接下来要做 X，是否继续？"再执行。
 
 > [!style] 风格约束：
 > - 当 AI 想做"大改动"（一次新建/删除 >5 个页面、修改 schema、删 raw 层）时，**先讲方案再动手**。
@@ -185,6 +201,7 @@
 - ❌ 不要写"awesome list"风格的资源链接堆——本课程不需要外部资源墙。
 - ❌ 不要把 AI 输出（包括 wiki 页本身）当作"权威结论"在讲稿里直接采用，必须经用户审过。
 - ❌ 不要为了"看起来全面"而写没有信息的 bullet（如"DESeq2 的 5 大优点"这种空话）。
+- ❌ **不要在未二次确认前推送到远端 / 改变远端可见性 / 删除远端仓库**（参见 §5 元反馈 2026-05-21）。
 
 ---
 

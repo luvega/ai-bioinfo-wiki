@@ -69,3 +69,12 @@
 - 更新：`README.md`（Obsidian 入口指引）
 - 配置要点：vault 根 = `e:\AI_Course\`；userIgnoreFilters 排除 raw 层重量级目录；Graph View 5 色分组。
 - 触发：用户同意配 .obsidian（memory.md D-008）。
+
+## [2026-05-21] infra | 推送 GitHub + 改为 Private
+
+- 远端：`https://github.com/luvega/ai-bioinfo-wiki`（**Private**）
+- 推送：commit `8c971bf` + `e512bc5` 已 push 到 origin/main
+- 配置：本地仓库 `--local` 配 `http.proxy=http://127.0.0.1:10080`（仅本仓库，不污染全局；用户的 Clash/v2rayN 监听端口）
+- 重要事件：push 完成后用户立即说"先不要 push 了"——push 已成功，
+  随后用户决定保留远端但改为 Private，AI 用 `gh repo edit --visibility private` 完成切换。
+- 教训记入 `memory.md` D-010 与 §5、§6（**后续推送/远端可见性/删除动作必须二次确认**）。
