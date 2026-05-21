@@ -88,7 +88,7 @@
 
 ## 🗃 Assets（模板 / 图表 / 共享资源）
 
-- *暂无*
+- [obsidian_setup](assets/obsidian_setup.md) — Vault 配置、推荐插件、Graph View 分色 · stable · `obsidian, setup`
 
 ---
 

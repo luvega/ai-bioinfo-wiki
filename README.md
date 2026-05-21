@@ -105,8 +105,9 @@ e:\AI_Course\
 
 ## 推荐外部工具
 
-- **[Obsidian](https://obsidian.md/)**：作为 wiki 浏览器（开 Graph View 看连通性）
-- **Git + GitHub Private Repo**：给本目录加版本控制
+- **[Obsidian](https://obsidian.md/)**：作为 wiki 浏览器。Vault 配置已开箱即用——
+  把 `e:\AI_Course\` 作为 vault 打开即可。详见 [wiki/assets/obsidian_setup.md](wiki/assets/obsidian_setup.md)。
+- **Git**：已初始化为 main 分支，详见 `.gitignore`（pdf_originals/ 等大文件已排除）。
 - **[qmd](https://github.com/tobi/qmd)**：当 wiki 大到 ~100 sources 时，作为本地 BM25+向量搜索引擎（可选）
 
 ## 参考

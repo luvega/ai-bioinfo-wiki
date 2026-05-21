@@ -17,7 +17,9 @@
 - 项目：医药数据处理与可视化（36 课时·AI 前置版）课程知识库
 - 知识库范式：[Karpathy LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 - 初始化日期：2026-05-21
-- 当前 wiki 规模：33 页（详见 [wiki/index.md](wiki/index.md)）
+- 当前 wiki 规模：35 页（详见 [wiki/index.md](wiki/index.md)）
+- 版本控制：已 `git init` + main 分支首次 commit（2026-05-21）
+- Obsidian Vault：已配置，详见 [wiki/assets/obsidian_setup.md](wiki/assets/obsidian_setup.md)
 - 上次更新：2026-05-21
 
 ---
@@ -32,11 +34,8 @@
 - **[2026-05-21] 节奏偏好**：先把骨架搭起来 + 少量示范页，不要一次性 ingest 全部素材；用户希望先**审过结构**再决定后续 ingest 顺序。
 - **[2026-05-21] 文件命名**：中文页名可以直接出现在路径里（`第N周`、`概念名`），不强求 ASCII slug。
 - **[2026-05-21] 链接风格**：使用标准 Markdown 链接语法（`[文本](path)`），**不用** Obsidian 的双中括号 `[[]]`，保持跨工具通用性。
-
-> [!todo] 待确认（用户上次没明确表态的）：
->
-> - 是否使用 Obsidian 作为日常浏览器？（影响是否要给 wiki 配 .obsidian 工作区文件）
-> - 是否要把整个 `e:\AI_Course\` 加 git？（影响 `.gitignore` 是否要忽略 `pdf_originals/` 等大文件）
+- **[2026-05-21] 浏览器**：用 **Obsidian** 作为日常 wiki 浏览器。Vault 根 = `e:\AI_Course\`（不是 wiki 子目录），以便从 wiki 跳回 raw 原文。
+- **[2026-05-21] 版本控制**：项目用 **Git**，main 分支。`pdf_originals/`、`ai_logs/`、`projects/`、`.obsidian/workspace.json` 不入 git；`sources/PDF_Library/*.md` 入 git（可读、可 diff）。
 
 ---
 
@@ -80,6 +79,32 @@
 - **决定**：两个文件并列放在项目根，不放进 `wiki/`。
 - **为什么**：它们是 AI 协作的"元数据"，不是知识本身；放在 wiki/ 内会污染知识网络。
 
+### [2026-05-21] D-007 · git 仓库范围与 .gitignore
+
+- **决定**：
+  - 项目根 `git init -b main`，整个 `e:\AI_Course\` 是一个 git 仓库。
+  - **入 git**：`AGENTS.md`、`memory.md`、`README.md`、`.gitignore`、`doc/`、`raw/`、`scripts/`、`sources/`（含 PDF_Library 的 markdown）、`wiki/`、`.obsidian/`（除 workspace.json 等本机状态）。
+  - **不入 git**：`pdf_originals/`（大文件 + 版权敏感）、`ai_logs/`（潜在 PII）、`projects/`（学生项目，PII）、`.obsidian/workspace.json`（本机状态）、各类缓存。
+- **备选**：(a) 不加 git；(b) 只把 wiki/ 加 git；(c) 把 PDF 也入。
+- **为什么**：用户希望整个目录可追溯；同时避免 PDF 商业版权风险与 PII 风险。`sources/PDF_Library/*.md` 体积约 4 MB，对 git 可接受。
+
+### [2026-05-21] D-008 · Obsidian Vault 边界与索引排除
+
+- **决定**：
+  - Vault 根 = `e:\AI_Course\`，不是 `e:\AI_Course\wiki\`，以保证 wiki 中 `../sources/...` 类反向链接可用。
+  - 通过 `.obsidian/app.json` 的 `userIgnoreFilters` 排除 raw 层重量级目录（`pdf_originals/`、`sources/PDF_Library/`、`raw/AIDD_Bioinformatics/`、`sources/AIDD_Bioinformatics/`），让 Quick Switcher / Search / Graph View 保持干净。
+  - Graph View 配 5 色分组（sources/entities/concepts/topics/synthesis）。
+- **为什么**：vault 太宽会被字幕和大 markdown 拖慢；但又不能把 wiki 单独切出来，否则反向链失效。
+- **副作用**：搜索 AIDD 原文需临时去掉 filter，或在 VS Code/ripgrep 中搜。
+
+### [2026-05-21] D-009 · Week 11 必须包含富集分析（GO/KEGG/GSEA）
+
+- **决定**：Week 11 差异表达课不止讲 DESeq2，**必须**包含富集分析下游一节（建议 30-45 分钟）。
+- **备选**：富集分析挪到 Week 12 或 Week 16。
+- **为什么**：差异表达基因列表常达千级，不做富集学生根本读不出生物学意义；这是 AIDD 课程缺失的内容，本课程要补。
+- **已建**：[`wiki/concepts/富集分析_GO_KEGG.md`](wiki/concepts/富集分析_GO_KEGG.md)（ORA / GSEA / clusterProfiler + 解释陷阱 + 45 分钟教学路径）。
+- **后续**：建 Week 11 topic 页时直接引用此 concept 页。
+
 ---
 
 ## 3. 跨会话状态卡 / 当前阻塞
@@ -90,25 +115,29 @@
 
 - 三层架构搭建完成。
 - `AGENTS.md`、`README.md`、`memory.md` 已建。
-- wiki 33 页骨架完成，所有内部链接已 lint 通过。
+- wiki 35 页骨架完成（含富集分析 GO/KEGG），所有内部链接已 lint 通过。
 - 首次 ingest 涵盖 8 份 source，建立了核心 entity / concept 页。
+- **Git 仓库已初始化**（main 分支，196 文件首次 commit）。
+- **Obsidian Vault 已配置**（`.obsidian/` 含 app/appearance/core-plugins/community-plugins/graph/hotkeys；
+  详见 [`wiki/assets/obsidian_setup.md`](wiki/assets/obsidian_setup.md)）。
 
 ### 下一步建议（按优先级）
 
 1. **Week 03 - Week 18 的 topic 页**（最大宗工作，16 周 × ~150 行 ≈ 5-7 次会话）
-2. **第 11 周相关展开**：Microarray / scRNA-seq / 多重检验校正三个 concept 页（教学需求最迫切）
-3. **AI 协作记录模板**写到 `wiki/assets/ai_log_template.md`（学生作业要用）
-4. **pandas / scipy.stats 入门 concept 页**（第 5-8 周教学需要）
+   - 优先 Week 11（DESeq2 + 富集分析）— 教学素材已就绪，可率先完成。
+2. **第 14-15 周相关展开**：scRNA-seq / Microarray 两个 concept 页（教学需求迫切）。
+3. **多重检验校正 concept 页**（从 ISLP Ch.13 抽，第 8、11 周共用）。
+4. **AI 协作记录模板**写到 `wiki/assets/ai_log_template.md`（学生作业要用）。
+5. **pandas / scipy.stats 入门 concept 页**（第 5-8 周教学需要）。
 
 完整待办清单见 [`wiki/synthesis/知识缺口与后续素材.md`](wiki/synthesis/知识缺口与后续素材.md)。
 
 ### 当前阻塞 / 等用户回答的问题
 
-- [ ] **2026-05-21** — Week 11 差异表达课要不要包含 GO/KEGG 富集分析？（影响 `wiki/concepts/富集分析_GO_KEGG.md` 是否要写）
-- [ ] **2026-05-21** — 是否把目录加 git？目前没有 `.git/` 也没有 `.gitignore`。
-- [ ] **2026-05-21** — 是否需要给 wiki 写一个 `.obsidian/` 配置，开箱推荐主题/插件？
-
-> AI 在下次会话时**可以主动提一次这些问题**，但不要反复追问；用户没主动回答就先按默认推进。
+> 暂无未决问题。上轮三个问题已全部回答并落到决策中：
+> - ~~Week 11 是否含富集分析？~~ → D-009 ✅
+> - ~~是否加 git？~~ → D-007 ✅
+> - ~~是否配 .obsidian？~~ → D-008 ✅
 
 ---
 
@@ -127,6 +156,7 @@
 | 「三阶段边界」 | 第 1-2 / 3-11 / 12-18 周的 AI 协作三阶段 |
 | 「三红线」 | AI 不可逾越的 3 条：医学结论 / 未读懂代码 / 真实临床数据 |
 | 「Raw 层」 | `pdf_originals/` `doc/` `raw/` `sources/` 四目录（不可变） |
+| 「Vault」 | Obsidian 视角下的工作区，本项目里 = `e:\AI_Course\` 根 |
 
 ---
 
@@ -138,6 +168,8 @@
   AI 落地时采用了"骨架 + 少量示范"策略，规模约 33 页，用户后续如要扩展可按需 ingest。
 - **[2026-05-21]** 用户主动提议补 `memory.md`，说明用户对**跨会话状态管理**有需求；
   AI 后续应主动维护本文件，不要等用户提醒。
+- **[2026-05-21]** 用户在 AI 提出 3 个待决问题的当天就给了全部答案，说明用户希望
+  **快速推进、不喜欢悬而未决**——AI 后续应少留空闲问题，能合理默认的就先做。
 
 > [!style] 风格约束：
 > - 当 AI 想做"大改动"（一次新建/删除 >5 个页面、修改 schema、删 raw 层）时，**先讲方案再动手**。

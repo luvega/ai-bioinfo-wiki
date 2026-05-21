@@ -43,3 +43,29 @@
 - 更新：`README.md` —— 顶层目录与"4 个核心操作"前置三件事
 - 触发：用户提议"是不是还应该有一个 memory.md 文件"。
 - 备注：本文件记录"事实时间线"；偏好/决策/状态卡演化记录已迁移到 `memory.md`，两者各司其职。
+
+## [2026-05-21] ingest | 富集分析 GO/KEGG/GSEA
+
+- 新增：`wiki/concepts/富集分析_GO_KEGG.md`（ORA / GSEA / clusterProfiler + 45 分钟教学路径 + 5 个常见坑）
+- 更新：`wiki/concepts/差异表达分析.md`（Week 11 位置补充富集链接）
+- 更新：`wiki/topics/课程主页_36课时.md`（Week 11 行）
+- 更新：`wiki/synthesis/AIDD与36课时映射.md`（标注 AIDD 未涉及此节）
+- 更新：`wiki/synthesis/知识缺口与后续素材.md`（划掉条目）
+- 更新：`wiki/index.md`（concept 计数 8→9）
+- 触发：用户决定 Week 11 必须含富集分析（memory.md D-009）。
+
+## [2026-05-21] infra | git 初始化
+
+- 新增：`.gitignore`（排除 pdf_originals/、ai_logs/、projects/、.obsidian/workspace.json、Python/R 缓存等）
+- 执行：`git init -b main` + 首次 commit（196 files, 41,064 insertions）
+- commit 哈希：`8c971bf`
+- 触发：用户同意加 git（memory.md D-007）。
+
+## [2026-05-21] infra | Obsidian Vault 配置
+
+- 新增：`.obsidian/`（app/appearance/core-plugins/community-plugins/graph/hotkeys）
+- 新增：`wiki/assets/obsidian_setup.md`（vault 边界、推荐插件、Graph 分色说明）
+- 更新：`wiki/index.md`（assets 区新增条目）
+- 更新：`README.md`（Obsidian 入口指引）
+- 配置要点：vault 根 = `e:\AI_Course\`；userIgnoreFilters 排除 raw 层重量级目录；Graph View 5 色分组。
+- 触发：用户同意配 .obsidian（memory.md D-008）。
