@@ -17,7 +17,7 @@
 | 11 | [week_11](week_11/) | 科研图表规范与 SCI 图表表达 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-11 |
 | 12 | [week_12](week_12/) | 高维数据与数学直觉 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-12 |
 | 13 | [week_13](week_13/) | PCA、聚类与热图 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-13 |
-| 14 | [week_14](week_14/) | 转录组数据分析基础 | 说明 RNA-seq 的目标是测量基因表达水平。 | first_round | courseware, week-14 |
+| 14 | [week_14](week_14/) | 转录组数据分析基础 | 说明 RNA-seq 的目标是测量基因表达水平。 | pilot_ready | courseware, week-14 |
 | 15 | [week_15](week_15/) | 差异表达分析与功能解读 | 说明差异表达分析的输入、输出和统计问题。 | pilot_ready | courseware, week-15 |
 | 16 | [week_16](week_16/) | 单细胞转录组可视化 | 区分 bulk RNA-seq 与 scRNA-seq 的数据含义。 | pilot_ready | courseware, week-16 |
 | 17 | [week_17](week_17/) | 综合项目工作坊：AI 协作分析与结果核验 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-17 |

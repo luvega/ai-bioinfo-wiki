@@ -85,10 +85,16 @@
 - 新增 Week 03、Week 15、Week 16 三份试点评审记录，用于把 `pilot_ready` 从结构状态推进到人工质量评审状态。
 - 后续进入 PPT 前，优先处理每份试评记录中的“进入 PPT 前需处理”项。
 
+### [2026-05-31] D-021 · Week 14 进入可授课试点
+
+- Week 14 已从 `first_round` 提升为 `pilot_ready`，定位为 Week 15 差异表达分析的上游铺垫。
+- Week 14 补齐 count matrix、metadata、总 counts 核验、12 页页级大纲、2 学时授课流程和 rubric 试评。
+- Week 14 进入 PPT 前仍需核对 AIDD 上游流程中的命令名、软件名和文件格式表述。
+
 ## 3. 当前状态
 
 - `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md`。
-- 样板周优先级：Week 03、Week 15、Week 16 已进入可授课试点；Week 14 仍待后续打磨。
+- 样板周优先级：Week 03、Week 14、Week 15、Week 16 已进入可授课试点。
 - 课程质量 rubric 已新增，位置为 `course/evaluation/courseware_rubric.md`。
 - 新增维护目标：索引/断链/Week 11-15 对齐检查，以及样板周质量区块检查。
 - 暂不全量生成 18 周 PPT；先做 Week 03、Week 15、Week 16 三套试点。
@@ -97,7 +103,7 @@
 
 1. 维护 `course/weeks/_index.md`、`materials/markdown/_index.md` 和 `knowledge/*/_index.md`。
 2. 通过 `course_quality_check.py` 检查所有周次三件套和样板周必备区块。
-3. 继续打磨 Week 14，并把 Week 03、15、16 从 Markdown 试点稿推进到 PPT 样稿。
+3. 把 Week 03、14、15、16 从 Markdown 试点稿推进到 PPT 样稿。
 4. 按 `course/evaluation/` 中的试评记录逐项处理 PPT 前置问题。
 5. 进入 PPT 试点前，先人工复核文字溢出、空页、乱码、页码、图表引用和讲稿备注。
 

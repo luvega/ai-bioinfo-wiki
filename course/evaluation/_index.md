@@ -6,5 +6,6 @@
 |---|---|---|
 | [courseware_rubric.md](courseware_rubric.md) | 课程周次材料、PPT 大纲、授课脚本的人工评分标准 | active |
 | [week_03_pilot_review.md](week_03_pilot_review.md) | Week 03 可授课试点的 rubric 试评 | draft-review |
+| [week_14_pilot_review.md](week_14_pilot_review.md) | Week 14 可授课试点的 rubric 试评 | draft-review |
 | [week_15_pilot_review.md](week_15_pilot_review.md) | Week 15 可授课试点的 rubric 试评 | draft-review |
 | [week_16_pilot_review.md](week_16_pilot_review.md) | Week 16 可授课试点的 rubric 试评 | draft-review |

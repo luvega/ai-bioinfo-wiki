@@ -3,7 +3,7 @@ type: course-week
 week: 14
 title: 转录组数据分析基础
 hours: 2
-status: first_round
+status: pilot_ready
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 14 周：转录组数据分析基础 · 素材映射
@@ -47,6 +47,34 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 | GeneA | 120 | 98 | 240 | 260 |
 | GeneB | 30 | 42 | 28 | 35 |
 | GeneC | 500 | 520 | 410 | 390 |
+
+## 课堂 metadata 示例
+
+| sample_id | group | batch |
+|---|---|---|
+| Ctrl_1 | control | B1 |
+| Ctrl_2 | control | B2 |
+| Drug_1 | drug | B1 |
+| Drug_2 | drug | B2 |
+
+## 试点课交付清单
+
+- 课堂核心问题：学生能否说明 count matrix 从何而来，并在进入 DESeq2 前检查样本名、分组和总 counts。
+- 课堂数据：使用上方 3 基因 x 4 样本 count matrix 和 metadata，不要求运行上游命令。
+- 讲授材料：12 页 PPT 大纲、2 学时授课脚本、文件角色对照表、样本对齐检查表。
+- 课堂产物：样本名对齐检查、每个样本总 counts、标准化必要性解释、AI 流程表审计记录。
+- 验收标准：学生能说出 FASTQ、SAM/BAM、count matrix、metadata 的角色，并解释为什么原始 counts 不能直接跨样本比较。
+
+## 课堂预期输出
+
+| sample_id | group | total_counts | 核验说明 |
+|---|---|---:|---|
+| Ctrl_1 | control | 650 | `120 + 30 + 500` |
+| Ctrl_2 | control | 660 | `98 + 42 + 520` |
+| Drug_1 | drug | 678 | `240 + 28 + 410` |
+| Drug_2 | drug | 685 | `260 + 35 + 390` |
+
+预期解释：四个样本总 counts 不同，说明测序深度或文库规模可能不同。进入差异表达分析前，不能直接用原始 counts 下结论，需要标准化和统计模型处理。
 
 ## 进入 PPT 前需核验
 
