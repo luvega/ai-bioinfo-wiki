@@ -73,10 +73,16 @@
 - `F:\AI_Course\` 已删除，避免后续 Codex/Obsidian/Git 操作分叉。
 - 后续结构提交前，先完成迁移边界核对清单和样板周质量检查。
 
+### [2026-05-31] D-019 · Week 03/15/16 进入可授课试点
+
+- Week 03、Week 15、Week 16 的 `materials.md`、`outline.md`、`script.md` 已统一标记为 `pilot_ready`。
+- 三周均补齐试点交付清单、12 页页级大纲、2 学时授课流程、课堂预期答案和 AI 协作边界。
+- 试点周仍不等于最终 PPT；进入 PPT 前还需要人工复核图表授权、文字溢出、示例图来源和课堂运行节奏。
+
 ## 3. 当前状态
 
 - `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md`。
-- 样板周优先级：Week 03、Week 14、Week 15、Week 16。
+- 样板周优先级：Week 03、Week 15、Week 16 已进入可授课试点；Week 14 仍待后续打磨。
 - 新增维护目标：索引/断链/Week 11-15 对齐检查，以及样板周质量区块检查。
 - 暂不全量生成 18 周 PPT；先做 Week 03、Week 15、Week 16 三套试点。
 
@@ -84,7 +90,7 @@
 
 1. 维护 `course/weeks/_index.md`、`materials/markdown/_index.md` 和 `knowledge/*/_index.md`。
 2. 通过 `course_quality_check.py` 检查所有周次三件套和样板周必备区块。
-3. 继续打磨 Week 03、14、15、16 的授课脚本和 PPT 页级大纲。
+3. 继续打磨 Week 14，并把 Week 03、15、16 从 Markdown 试点稿推进到 PPT 样稿。
 4. 进入 PPT 试点前，先人工复核文字溢出、空页、乱码、页码、图表引用和讲稿备注。
 
 ## 5. 不要做的事
@@ -94,4 +100,3 @@
 - 不写 awesome list 式资源堆砌。
 - 不在未确认前 push、公开、删除远端仓库。
 - 不再引用或恢复 `F:\AI_Course\`。
-

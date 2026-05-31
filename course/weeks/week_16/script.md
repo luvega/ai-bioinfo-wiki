@@ -3,7 +3,7 @@ type: course-week
 week: 16
 title: 单细胞转录组可视化
 hours: 2
-status: first_round
+status: pilot_ready
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 16 周：单细胞转录组可视化 · 授课脚本
@@ -23,6 +23,28 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 第二类重点是降维和聚类图。在 UMAP 图上，每个点通常代表一个细胞，颜色可以代表 cluster、样本来源或 marker 表达。UMAP 帮助我们观察结构，但它不是严格的定量距离图。两个 cluster 在图上看起来近，不一定能直接解释为生物学距离近。
 
 第三类重点是 marker gene。某个 cluster 高表达某些 marker，可以支持细胞类型注释。但注释必须回到文献、数据库和研究背景。AI 可以帮我们整理 marker 候选和常见解释，但不能直接给出最终细胞类型结论。
+
+## 试点授课流程（2 学时）
+
+| 时间 | 教师动作 | 学生活动 | 产物/检查点 |
+|---:|---|---|---|
+| 0-10 分钟 | 用 bulk 平均表达导入细胞异质性 | 说出平均表达的两种可能来源 | 导入问题回答 |
+| 10-25 分钟 | 对比 bulk 与 scRNA-seq 数据结构 | 标出矩阵中行列含义 | 数据结构草图 |
+| 25-40 分钟 | 讲 `QC -> marker` 总流程 | 在流程图上标出可视化节点 | 流程旁注 |
+| 40-60 分钟 | 拆解 QC 指标 | 判断低质量、受损、双细胞风险 | QC 判读表 |
+| 60-75 分钟 | 讲 PCA、UMAP/t-SNE | 说明 UMAP 点和颜色含义 | 图形元素解释 |
+| 75-90 分钟 | 讲 clustering 与 resolution | 讨论 cluster 不等于细胞类型 | 参数敏感性清单 |
+| 90-105 分钟 | 讲 marker gene 证据链 | 写候选注释的谨慎表述 | marker 核验表 |
+| 105-120 分钟 | 用 AI 整理流程并审计输出 | 删除直接下结论的语句 | AI 输出审计记录 |
+
+## 课堂预期答案
+
+- QC 判读至少包含 `nFeature_RNA`、`nCount_RNA`、`percent.mt` 三类指标。
+- UMAP 图上每个点通常代表一个细胞，颜色可能代表 cluster、样本来源或 marker 表达。
+- Cluster 是算法分组，不自动等于真实细胞类型。
+- Marker 表达支持候选注释，但单个 marker 不能单独证明细胞类型。
+- 必须列出的参数敏感点：过滤阈值、PCA 维度、聚类 resolution、marker 选择。
+- 合格表述示例：“cluster 2 高表达某 marker，支持某候选细胞类型注释，但需结合 marker 组合、数据库、文献和实验背景核验。”
 
 ## 课堂互动
 
