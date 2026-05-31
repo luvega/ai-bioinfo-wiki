@@ -91,11 +91,19 @@
 - Week 14 补齐 count matrix、metadata、总 counts 核验、12 页页级大纲、2 学时授课流程和 rubric 试评。
 - Week 14 进入 PPT 前仍需核对 AIDD 上游流程中的命令名、软件名和文件格式表述。
 
+### [2026-05-31] D-022 · Week 03 PPT 试点样稿
+
+- 新增 `scripts/courseware/build_week03_pilot_ppt.py`，可从 Week 03 试点稿生成 12 页可编辑 PPTX。
+- 新增 `scripts/courseware/export_pptx_preview.ps1`，用本机 PowerPoint COM 将 PPTX 导出为 PNG 预览。
+- Week 03 样稿输出到 `outputs/ppt/week_03_pilot/`，不入 Git；验证记录写入 `docs/week03_ppt_trial.md`。
+- 首轮视觉检查发现第 12 页文字截断，已修复脚本并重新导出验证。
+
 ## 3. 当前状态
 
 - `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md`。
 - 样板周优先级：Week 03、Week 14、Week 15、Week 16 已进入可授课试点。
 - 课程质量 rubric 已新增，位置为 `course/evaluation/courseware_rubric.md`。
+- Week 03 已有 PPT 试点样稿生成脚本和真实 PNG 页面验证记录。
 - 新增维护目标：索引/断链/Week 11-15 对齐检查，以及样板周质量区块检查。
 - 暂不全量生成 18 周 PPT；先做 Week 03、Week 15、Week 16 三套试点。
 
@@ -103,7 +111,7 @@
 
 1. 维护 `course/weeks/_index.md`、`materials/markdown/_index.md` 和 `knowledge/*/_index.md`。
 2. 通过 `course_quality_check.py` 检查所有周次三件套和样板周必备区块。
-3. 把 Week 03、14、15、16 从 Markdown 试点稿推进到 PPT 样稿。
+3. 以 Week 03 PPT 试点为模板，继续把 Week 15、16 从 Markdown 试点稿推进到 PPT 样稿。
 4. 按 `course/evaluation/` 中的试评记录逐项处理 PPT 前置问题。
 5. 进入 PPT 试点前，先人工复核文字溢出、空页、乱码、页码、图表引用和讲稿备注。
 
