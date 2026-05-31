@@ -1,0 +1,19 @@
+---
+import type { Week } from '../data/weeks';
+import { getWeekLabel } from '../data/weeks';
+
+type Props = {
+  week: Week;
+};
+
+const { week } = Astro.props;
+---
+
+<a class="week-card" href={`/weeks/${week.slug}`}>
+  <span class="week-kicker">{getWeekLabel(week.week)}</span>
+  <h3>{week.title}</h3>
+  <p>{week.question}</p>
+  <ul class="tag-list" aria-label="关键词">
+    {week.keywords.slice(0, 3).map((keyword) => <li>{keyword}</li>)}
+  </ul>
+</a>

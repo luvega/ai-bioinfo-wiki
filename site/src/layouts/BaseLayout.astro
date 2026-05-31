@@ -1,0 +1,53 @@
+---
+import '../styles/global.css';
+
+type Props = {
+  title: string;
+  description?: string;
+};
+
+const { title, description = '医药数据处理与可视化课程网站' } = Astro.props;
+
+const navItems = [
+  { href: '/', label: '首页' },
+  { href: '/syllabus', label: '课程大纲' },
+  { href: '/weeks', label: '18 周' },
+  { href: '/coursebook', label: 'Coursebook' },
+  { href: '/resources', label: '资源索引' },
+  { href: '/ai-collaboration', label: 'AI 协作规范' }
+];
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | 医药数据处理与可视化</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="返回首页">
+        <img src="/assets/sysu/sysu-logo-wordmark-white.png" alt="中山大学 Sun Yat-sen University" />
+        <span>医药数据处理与可视化</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div>
+        <strong>博学 审问 慎思 明辨 笃行</strong>
+        <p>课程主线来自 36 课时 AI 前置版大纲；Coursebook 吸收本项目已整理的参考资源、概念页和编程案例。</p>
+      </div>
+      <div class="footer-meta">
+        <span>SYSU Blue Beamer-inspired course site</span>
+        <span>Built from local course materials</span>
+      </div>
+    </footer>
+  </body>
+</html>

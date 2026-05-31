@@ -1,0 +1,42 @@
+{
+  "site": {
+    "title": "连享会 T5/T6 · 五一专题课课前资料",
+    "brand": "连享会 · T5/T6",
+    "brand_sub": "五一课前资料",
+    "lang": "zh-CN",
+    "hero_title": "T5 / T6 课前打包资料",
+    "hero_leads": [
+      "连享会 2026 五一专题课 · 五月四日 · 讲师 李学恒（中山大学岭南学院）",
+      "主题：AI 辅助学术科研实战培训"
+    ],
+    "hero_meta": ["共 6 份资料", "建议按顺序学习", "课前预习用"],
+    "section_title": "课前资料 · 按顺序阅读",
+    "card_label": "资料",
+    "sidebar_foot": ["讲师 李学恒", "中山大学岭南学院"],
+    "footer": [
+      "2026 连享会 · 五一专题课 T5/T6",
+      "课程主页：<a href=\"https://www.lianxh.cn/Paper.html\">www.lianxh.cn/Paper.html</a>"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "01-course-outline",
+      "title": "T5+T6 课程内容大纲",
+      "nav_title": "课程内容大纲",
+      "short": "课程整体规划与流程",
+      "source": "../../../SynologyDrive/教学/AI应用系列/2026年五一连享会/五一正式课程T5T6/课前打包资料/1_T5T6课程内容大纲.md"
+    },
+    {
+      "slug": "02-plugin-dev",
+      "title": "安装 plugin-dev 教程",
+      "short": "Claude Code 插件开发环境",
+      "source": "../../../SynologyDrive/教学/AI应用系列/2026年五一连享会/五一正式课程T5T6/课前打包资料/2_安装plugin-dev教程.md"
+    }
+  ],
+  "_help": {
+    "site": "All site-level fields are optional except 'title'. 'footer' lines may contain inline HTML (links).",
+    "pages": "Each page needs slug (URL-safe), title, source (path relative to config file or absolute). Optional: nav_title (shorter label for sidebar), short (one-line subtitle).",
+    "ordering": "Pages render in array order. Sidebar shows them numbered 01, 02, ...",
+    "publishing": "After build, the site can be published with publish-page skill: pass --name <slug>_YYYYMMDD and the output directory."
+  }
+}

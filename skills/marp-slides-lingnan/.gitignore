@@ -1,0 +1,11 @@
+# Marp output
+*.html
+*.pdf
+*.pptx
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db

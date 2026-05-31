@@ -1,0 +1,219 @@
+/* @theme lingnan */
+
+@charset "UTF-8";
+@import 'default';
+
+/* ===== 中山大学岭南学院 Marp 主题 ===== */
+
+/* === 基础设置 === */
+:root {
+  --color-lingnan-red: #AC1B20;
+  --color-lingnan-footer-gray: #DCDDDF;
+}
+
+section {
+  background-color: #fff;
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+  font-size: 28px;
+  color: #333;
+  padding: 42px 50px 0 50px;
+  /* 顶部红色装饰线 */
+  border-top: 4px solid var(--color-lingnan-red);
+  /* 内容顶部对齐（覆盖Marp默认居中） */
+  justify-content: flex-start !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* === 标题 === */
+h1 {
+  color: var(--color-lingnan-red);
+  font-size: 1.6em;
+  margin-top: 0.4em;
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  color: #222;
+  font-size: 1.3em;
+  margin-top: 0.3em;
+  margin-bottom: 0.2em;
+}
+
+h3 {
+  color: #444;
+  font-size: 1.1em;
+}
+
+h4, h5, h6 {
+  color: #555;
+}
+
+/* === 段落和列表 === */
+p {
+  margin: 0.3em 0;
+  line-height: 1.5;
+}
+
+ul, ol {
+  margin-left: 1.2em;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.25em;
+  line-height: 1.5;
+}
+
+/* === 粗体强调 === */
+strong {
+  color: #222;
+}
+
+/* === 引用块 === */
+blockquote {
+  border-left: 4px solid var(--color-lingnan-red);
+  padding-left: 1em;
+  margin: 0.5em 0;
+  color: #555;
+  background: transparent;
+}
+
+/* === 代码 === */
+code {
+  background-color: #f5f5f5;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 0.8em;
+  border-radius: 4px;
+}
+
+/* === 表格 === */
+table {
+  border-collapse: collapse;
+  margin: 0.5em auto;
+}
+
+table thead {
+  background-color: var(--color-lingnan-red);
+  color: #fff;
+}
+
+table thead th {
+  padding: 0.4em 0.8em;
+}
+
+table tbody td {
+  padding: 0.3em 0.8em;
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* === 图片居中 === */
+/* 不用 !important — 让 YAML style 块的 class 覆盖能生效（如 .contact-right img） */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* === 图片/表格居中覆盖 === */
+section table {
+  display: table !important;
+  width: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ===== 页脚 ===== */
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  padding: 0;
+  background-color: var(--color-lingnan-footer-gray);
+  /* 底部红色装饰线 */
+  border-bottom: 4px solid var(--color-lingnan-red);
+  /* 左侧品牌标识: 校徽+院徽+文字 */
+  background-image: url('../images/logo-red5.png'), url('../images/aacsb-logo.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 18px center, calc(100% - 18px) center;
+  background-size: auto 42px, auto 32px;
+  /* 隐藏footer文字 */
+  color: transparent;
+  font-size: 0;
+  text-align: left;
+}
+
+/* ===== 页码 ===== */
+section::after {
+  font-size: 0.55em;
+  color: #999;
+  bottom: 8px;
+  right: 50px;
+  position: absolute;
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+}
+
+/* ===== 特殊页面类型 ===== */
+
+/* 标题页 */
+section.title {
+  justify-content: center !important;
+  text-align: center;
+}
+
+section.title h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+section.title p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* 分隔页（章节过渡） */
+section.divider {
+  justify-content: center !important;
+  text-align: center;
+  background: linear-gradient(to bottom, #fff 0%, #f9f0f0 100%);
+}
+
+section.divider h1 {
+  font-size: 2em;
+}
+
+/* 致谢页 */
+section.thanks {
+  justify-content: center !important;
+  text-align: center;
+}
+
+section.thanks h1 {
+  font-size: 2.2em;
+}
+
+/* 引导页 */
+section.lead {
+  justify-content: center !important;
+  text-align: center;
+}
+
+section.lead h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.3em;
+}
+
+section.lead p {
+  color: #555;
+}

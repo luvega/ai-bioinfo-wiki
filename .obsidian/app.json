@@ -1,26 +1,28 @@
-{
-  "readableLineLength": true,
-  "defaultViewMode": "preview",
-  "livePreview": true,
-  "showLineNumber": true,
-  "showInlineTitle": true,
-  "showViewHeader": true,
-  "showUnsupportedFiles": false,
-  "useMarkdownLinks": true,
-  "newLinkFormat": "relative",
-  "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "wiki/assets",
-  "useTab": false,
-  "tabSize": 2,
-  "promptDelete": true,
-  "trashOption": "system",
-  "userIgnoreFilters": [
-    "pdf_originals/",
-    "sources/PDF_Library/",
-    "sources/AIDD_Bioinformatics/",
-    "raw/AIDD_Bioinformatics/",
-    ".git/",
-    "__pycache__/",
-    "scripts/__pycache__/"
-  ]
+﻿{
+    "readableLineLength":  true,
+    "defaultViewMode":  "preview",
+    "livePreview":  true,
+    "showLineNumber":  true,
+    "showInlineTitle":  true,
+    "showViewHeader":  true,
+    "showUnsupportedFiles":  false,
+    "useMarkdownLinks":  true,
+    "newLinkFormat":  "relative",
+    "alwaysUpdateLinks":  true,
+    "attachmentFolderPath":  "knowledge/assets",
+    "useTab":  false,
+    "tabSize":  2,
+    "promptDelete":  true,
+    "trashOption":  "system",
+    "userIgnoreFilters":  [
+                              "materials/raw/pdf_originals/",
+                              "materials/markdown/pdf_library_legacy/",
+                              "materials/markdown/pdf_library_mineru/",
+                              "materials/markdown/aidd_bioinformatics/",
+                              "materials/raw/aidd_bioinformatics/",
+                              ".git/",
+                              "__pycache__/",
+                              "scripts/**/__pycache__/",
+                              "outputs/"
+                          ]
 }

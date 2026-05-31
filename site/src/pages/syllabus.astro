@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { phases, weeks } from '../data/weeks';
+---
+
+<BaseLayout title="课程大纲" description="医药数据处理与可视化 36 课时 AI 前置课程大纲">
+  <PageHeader
+    eyebrow="Syllabus"
+    title="课程大纲"
+    intro="正式课程以 36 课时、18 周组织。网站以大纲为课堂主线，同时把 Coursebook 作为更完整的扩展学习层。"
+  />
+
+  <section class="section">
+    <div class="section-inner split">
+      <div class="info-panel">
+        <h2>课程目标</h2>
+        <p>
+          帮助药学专业学生建立“医药问题 - 数据结构 - 统计方法 - 可视化表达 - AI 协作核验”的完整工作链条，而不是只学习单个软件操作。
+        </p>
+      </div>
+      <div class="info-panel">
+        <h2>AI 前置原则</h2>
+        <p>
+          AI 从第 1 周进入课堂，但它的角色是解释、辅助、检查和润色。数据质量、统计前提、医学意义和结果边界必须由人负责。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Phases</p>
+        <h2>三阶段课程结构</h2>
+      </div>
+      <div class="phase-grid">
+        {phases.map((phase) => (
+          <article class="phase-card">
+            <h3>{phase.name}</h3>
+            <p>{phase.summary}</p>
+            <ul class="tag-list">
+              {phase.weeks.map((week) => <li>Week {String(week).padStart(2, '0')}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">18 Weeks</p>
+        <h2>周次总表</h2>
+        <p>周次标题以本项目正式大纲为准，AI 边界来自课程讲稿和每周教学设计。</p>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>周次</th>
+            <th>主题</th>
+            <th>阶段</th>
+            <th>AI 使用边界</th>
+          </tr>
+        </thead>
+        <tbody>
+          {weeks.map((week) => (
+            <tr>
+              <td><a href={`/weeks/${week.slug}`}>Week {String(week.week).padStart(2, '0')}</a></td>
+              <td>{week.title}</td>
+              <td>{week.phase}</td>
+              <td>{week.aiBoundary}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</BaseLayout>

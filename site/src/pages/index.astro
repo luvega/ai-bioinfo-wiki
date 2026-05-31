@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WeekCard from '../components/WeekCard.astro';
+import { phases, weeks } from '../data/weeks';
+
+const featuredWeeks = [weeks[2], weeks[13], weeks[14], weeks[15]];
+const pathway = [
+  ['01', '医药问题', '从真实药学和生命科学问题出发，明确对象、变量和证据边界。'],
+  ['02', '数据结构', '把问题落到临床表格、表达矩阵、metadata 和项目目录。'],
+  ['03', '统计方法', '在分布、推断、回归、分类和高维探索中选择合适方法。'],
+  ['04', '可视化表达', '用规范图表表达数据、统计结果、组学模式和项目证据。'],
+  ['05', 'AI 协作核验', '把 Prompt、输出、人工核验、修改和风险反思留痕。']
+];
+---
+
+<BaseLayout title="首页" description="医药数据处理与可视化课程门户">
+  <section class="hero">
+    <div class="hero-content">
+      <p class="motto">博学 审问 慎思 明辨 笃行</p>
+      <h1>医药数据处理与可视化</h1>
+      <p class="hero-lede">
+        AI 前置的 36 课时课程门户，面向药学本科生，围绕医药问题、数据结构、统计方法、可视化表达和 AI 协作核验组织学习。
+      </p>
+      <div class="hero-actions">
+        <a class="button secondary" href="/syllabus">查看课程大纲</a>
+        <a class="button ghost" href="/weeks">进入 18 周地图</a>
+        <a class="button ghost" href="/ai-collaboration">AI 协作规范</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Course Spine</p>
+        <h2>一条从问题到证据表达的学习链条</h2>
+        <p>课程主线不是软件清单，而是可复现的数据分析工作链。每个工具和案例都服务于这条链条。</p>
+      </div>
+      <div class="pathway">
+        {pathway.map(([number, title, text]) => (
+          <div class="pathway-item">
+            <span>{number}</span>
+            <h3>{title}</h3>
+            <p>{text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Three Phases</p>
+        <h2>36 课时按三阶段推进</h2>
+        <p>从 AI 边界和复现规范开始，再进入编程、清洗、统计和图表，最后转向高维组学和综合项目。</p>
+      </div>
+      <div class="phase-grid">
+        {phases.map((phase) => (
+          <article class="phase-card">
+            <h3>{phase.name}</h3>
+            <p>{phase.summary}</p>
+            <ul class="tag-list">
+              {phase.weeks.map((week) => <li>Week {String(week).padStart(2, '0')}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner split">
+      <div>
+        <div class="section-title">
+          <p class="section-label">Coursebook</p>
+          <h2>课程教材不受课堂时间限制</h2>
+          <p>
+            18 周页面服务课堂节奏，Coursebook 则吸收本项目所有可用参考资源：AIDD 生物信息学、ISLP/ISLR、AI 辅助 Python、生成式 AI 数据分析、知识页和编程案例。
+          </p>
+        </div>
+        <div class="button-row">
+          <a class="button" href="/coursebook">查看 Coursebook 规划</a>
+          <a class="button secondary" href="/resources">浏览资源索引</a>
+        </div>
+      </div>
+      <figure class="image-panel">
+        <img src="/assets/sysu/campus-mountain.jpg" alt="中山大学校园照片" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Featured Weeks</p>
+        <h2>当前优先课程内容</h2>
+        <p>这些周次已有首轮内容或与组学扩展关系最紧密，可作为后续 Coursebook 和案例库的优先入口。</p>
+      </div>
+      <div class="week-grid">
+        {featuredWeeks.map((week) => <WeekCard week={week} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

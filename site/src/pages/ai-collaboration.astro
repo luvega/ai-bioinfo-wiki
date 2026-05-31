@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const rules = [
+  ['可用', '解释概念、解释报错、生成局部代码、优化图形脚本、润色已核验图注、梳理分析流程。'],
+  ['慎用', '统计方法建议、参数选择、基因功能解释、项目结论措辞，必须附人工核验。'],
+  ['禁止', '编造数据、伪造文献、替代作业结论、隐藏 AI 使用过程、把相关写成因果。']
+];
+
+const stages = [
+  ['Week 1-2', '只用于解释概念、解释报错和建立复现规范。'],
+  ['Week 3-6', '可生成局部代码和调试建议，但必须用小数据手算或人工检查。'],
+  ['Week 7-11', '可优化图形脚本和图注语言，不得增加样本量、P 值或统计方法。'],
+  ['Week 12-16', '可梳理高维与组学流程，参数、注释和功能解释必须人工核验。'],
+  ['Week 17-18', '可辅助报告表达和反思总结，但不能美化过程或替代答辩。']
+];
+
+const motto = [
+  ['博学', '广泛理解工具、数据和医学问题，而不是只复制代码。'],
+  ['审问', '追问 AI 输出依据、变量含义、统计前提和不确定性。'],
+  ['慎思', '在改动数据、选择方法和解释结果前先判断风险。'],
+  ['明辨', '分辨事实、推测、编造和需要文献核验的内容。'],
+  ['笃行', '运行代码、复查结果、记录过程，并把核验落实到提交物。']
+];
+---
+
+<BaseLayout title="AI 协作规范" description="医药数据处理与可视化课程 AI 协作规范">
+  <PageHeader
+    eyebrow="AI Collaboration"
+    title="AI 协作规范"
+    intro="AI 是学习和分析的协作工具，不是责任主体。本课程要求每一次关键 AI 使用都留下 Prompt、输出、核验、修改和风险反思。"
+  />
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Boundaries</p>
+        <h2>使用边界</h2>
+      </div>
+      <div class="rules-grid">
+        {rules.map(([title, text]) => (
+          <article class="rule-card">
+            <h3>{title}</h3>
+            <p>{text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Weekly Control</p>
+        <h2>分阶段 AI 使用要求</h2>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>阶段</th>
+            <th>边界</th>
+          </tr>
+        </thead>
+        <tbody>
+          {stages.map(([stage, text]) => (
+            <tr>
+              <td>{stage}</td>
+              <td>{text}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner split">
+      <article class="info-panel">
+        <h2>记录模板</h2>
+        <table class="data-table">
+          <tbody>
+            <tr><th>任务</th><td>本次希望 AI 协助完成什么</td></tr>
+            <tr><th>Prompt</th><td>输入给 AI 的原始提示词</td></tr>
+            <tr><th>AI 输出摘要</th><td>AI 给出了什么代码、解释或建议</td></tr>
+            <tr><th>人工核验</th><td>检查了哪些变量、函数、统计前提和输出结果</td></tr>
+            <tr><th>修改记录</th><td>根据核验做了哪些改动</td></tr>
+            <tr><th>风险反思</th><td>AI 输出可能存在哪些错误或过度解释</td></tr>
+          </tbody>
+        </table>
+      </article>
+      <article class="info-panel">
+        <h2>校训映射</h2>
+        <ul class="content-list">
+          {motto.map(([word, text]) => <li><strong>{word}：</strong>{text}</li>)}
+        </ul>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

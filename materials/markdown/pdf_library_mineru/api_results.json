@@ -1,0 +1,144 @@
+[
+  {
+    "batch_id": "74a7cd41-a8be-4fb8-9339-519d4c951f38",
+    "data": {
+      "batch_id": "74a7cd41-a8be-4fb8-9339-519d4c951f38",
+      "extract_result": [
+        {
+          "data_id": "An_Introduction_to_Statistical_Learning_with_Applications_Python_part_001",
+          "file_name": "An_Introduction_to_Statistical_Learning_with_Applications_Python.part_001.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/6661be08-0336-4d11-b010-34d8e87d5496.zip"
+        },
+        {
+          "data_id": "An_Introduction_to_Statistical_Learning_with_Applications_Python_part_002",
+          "file_name": "An_Introduction_to_Statistical_Learning_with_Applications_Python.part_002.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/723aa61c-e0e3-4e6c-ac8d-f7b0ae370afc.zip"
+        },
+        {
+          "data_id": "An_Introduction_to_Statistical_Learning_with_Applications_Python_part_003",
+          "file_name": "An_Introduction_to_Statistical_Learning_with_Applications_Python.part_003.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/aee09c08-78e8-49ad-ab46-fe593c28e3c4.zip"
+        },
+        {
+          "data_id": "An_Introduction_to_Statistical_Learning_with_Applications_Python_part_004",
+          "file_name": "An_Introduction_to_Statistical_Learning_with_Applications_Python.part_004.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/2e4f068e-fb04-4e01-a3ee-50c1180e611b.zip"
+        },
+        {
+          "data_id": "An_Introduction_to_Statistical_Learning_with_Applications_R_part_001",
+          "file_name": "An_Introduction_to_Statistical_Learning_with_Applications_R.part_001.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/07a53469-c89f-4045-8379-6a6d4d131da6.zip"
+        },
+        {
+          "data_id": "An_Introduction_to_Statistical_Learning_with_Applications_R_part_002",
+          "file_name": "An_Introduction_to_Statistical_Learning_with_Applications_R.part_002.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/88ebb0a8-205b-49d1-a320-a5ae746930e3.zip"
+        },
+        {
+          "data_id": "An_Introduction_to_Statistical_Learning_with_Applications_R_part_003",
+          "file_name": "An_Introduction_to_Statistical_Learning_with_Applications_R.part_003.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/ac86ef39-1e88-4dee-b2fa-735c1edb119f.zip"
+        },
+        {
+          "data_id": "Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210_part_001",
+          "file_name": "Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210.part_001.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/64a4f5ff-2945-4d9f-8149-9156ff71b104.zip"
+        },
+        {
+          "data_id": "Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210_part_002",
+          "file_name": "Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210.part_002.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/23e3187b-51d7-4c52-b07f-34e19baf8a88.zip"
+        },
+        {
+          "data_id": "R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_L_part_001",
+          "file_name": "R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_L.part_001.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/604df5e3-ceee-4a2c-904c-a9dccfc2e36e.zip"
+        }
+      ]
+    }
+  },
+  {
+    "batch_id": "a07369da-3f41-4ef4-bc2e-b88b4dc4cc1f",
+    "data": {
+      "batch_id": "a07369da-3f41-4ef4-bc2e-b88b4dc4cc1f",
+      "extract_result": [
+        {
+          "data_id": "R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_L_part_002",
+          "file_name": "R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_L.part_002.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/b031298f-312e-44e5-af5e-ea609fc2c3dc.zip"
+        },
+        {
+          "data_id": "Pythonppt_part_001",
+          "file_name": "Pythonppt.part_001.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/2ed61e3a-a0f3-49b7-8e17-09346ed6bf7d.zip"
+        },
+        {
+          "data_id": "Pythonppt_part_002",
+          "file_name": "Pythonppt.part_002.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/a6269dff-8a97-4864-be7e-7da6ab600f4f.zip"
+        },
+        {
+          "data_id": "Pythonppt_part_003",
+          "file_name": "Pythonppt.part_003.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/11da9fc9-936e-4e3b-9f19-df1224227008.zip"
+        },
+        {
+          "data_id": "Pythonppt_part_004",
+          "file_name": "Pythonppt.part_004.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/59b479c3-9cd0-4689-9fd1-46ec4d8d3897.zip"
+        },
+        {
+          "data_id": "Pythonppt_part_005",
+          "file_name": "Pythonppt.part_005.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/7eb74a59-aff1-4747-812d-6e39ffe4118d.zip"
+        },
+        {
+          "data_id": "Pythonppt_part_006",
+          "file_name": "Pythonppt.part_006.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/64b832c3-b513-4867-81cf-86a5d89e7e6d.zip"
+        },
+        {
+          "data_id": "Pythonppt_part_007",
+          "file_name": "Pythonppt.part_007.pdf",
+          "state": "done",
+          "err_msg": "",
+          "full_zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-05-24/38bbd881-b813-461a-b767-ef3e2e01da46.zip"
+        }
+      ]
+    }
+  }
+]

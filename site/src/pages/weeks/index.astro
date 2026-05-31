@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import WeekCard from '../../components/WeekCard.astro';
+import { phases, weeks } from '../../data/weeks';
+---
+
+<BaseLayout title="18 周页面" description="医药数据处理与可视化 18 周课程地图">
+  <PageHeader
+    eyebrow="Weekly Map"
+    title="18 周课程地图"
+    intro="每周页面包含课程定位、学习目标、课堂提纲、实践任务、AI 协作边界和 Coursebook 延伸阅读。"
+  />
+
+  {phases.map((phase) => (
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-title">
+          <p class="section-label">{phase.weeks.map((week) => `Week ${String(week).padStart(2, '0')}`).join(' / ')}</p>
+          <h2>{phase.name}</h2>
+          <p>{phase.summary}</p>
+        </div>
+        <div class="week-grid">
+          {weeks.filter((week) => phase.weeks.includes(week.week)).map((week) => <WeekCard week={week} />)}
+        </div>
+      </div>
+    </section>
+  ))}
+</BaseLayout>

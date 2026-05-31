@@ -8,23 +8,23 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:wiki/sources/",
+      "query": "path:knowledge/sources/",
       "color": { "a": 1, "rgb": 5275647 }
     },
     {
-      "query": "path:wiki/entities/",
+      "query": "path:knowledge/entities/",
       "color": { "a": 1, "rgb": 16737843 }
     },
     {
-      "query": "path:wiki/concepts/",
+      "query": "path:knowledge/concepts/",
       "color": { "a": 1, "rgb": 5294200 }
     },
     {
-      "query": "path:wiki/topics/",
+      "query": "path:knowledge/topics/",
       "color": { "a": 1, "rgb": 16766720 }
     },
     {
-      "query": "path:wiki/synthesis/",
+      "query": "path:knowledge/synthesis/",
       "color": { "a": 1, "rgb": 14315734 }
     }
   ],

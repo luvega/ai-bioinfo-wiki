@@ -5,12 +5,21 @@
 
 # === 大文件 / 版权敏感 ===
 # 原始 PDF 是商业书籍，仅个人收藏，不入 git
-pdf_originals/
+materials/raw/pdf_originals/
+materials/raw/external_ppt/
 
 # === PDF→Markdown 转换产物（可由脚本重建） ===
 # 这部分**保留入 git**，因为 wiki sources/PDF_Library 已经引用它们
 # 如果觉得太大，可以取消下一行注释
 # sources/PDF_Library/
+
+# MinerU API zip、原始解压输出和旧分片缓存可重建；只保留清单和提升出的 Markdown
+materials/markdown/pdf_library_mineru/api_upload_parts/
+materials/markdown/pdf_library_mineru/api_zips/
+materials/markdown/pdf_library_mineru/api_raw/
+materials/markdown/pdf_library_mineru/_smoke/
+materials/markdown/pdf_library_mineru/**/images/
+materials/markdown/pdf_library_mineru/**/*.zip
 
 # === Python 缓存 ===
 __pycache__/
@@ -18,6 +27,7 @@ __pycache__/
 *$py.class
 *.so
 .venv/
+.venv*/
 venv/
 env/
 .Python
@@ -72,4 +82,13 @@ projects/
 *.log
 *.bak
 *.tmp
+skills.zip
 /tmp/
+tmp/
+outputs/
+
+# === Course website build/runtime artifacts ===
+site/node_modules/
+site/dist/
+site/.astro/
+site/.vite*/

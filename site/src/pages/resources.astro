@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { resources } from '../data/resources';
+
+const groups = Array.from(new Set(resources.map((resource) => resource.type)));
+---
+
+<BaseLayout title="资源索引" description="课程资源、参考书、AIDD 素材、工具和规范模板索引">
+  <PageHeader
+    eyebrow="Resources"
+    title="资源索引"
+    intro="资源索引按课程任务组织素材，避免空泛堆链接。每个条目都标注来源路径、对应周次、用途和课程化状态。"
+  />
+
+  {groups.map((group) => (
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-title">
+          <p class="section-label">{group}</p>
+          <h2>{group}</h2>
+        </div>
+        <div class="resource-grid">
+          {resources.filter((resource) => resource.type === group).map((resource) => (
+            <article class="resource-card">
+              <span class="status-pill">{resource.status}</span>
+              <h3>{resource.title}</h3>
+              <p>{resource.use}</p>
+              <ul class="content-list">
+                <li><strong>对应周次：</strong>{resource.weeks}</li>
+                <li><strong>来源路径：</strong><code>{resource.source}</code></li>
+              </ul>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+</BaseLayout>

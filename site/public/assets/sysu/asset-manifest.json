@@ -1,0 +1,32 @@
+{
+  "source_repo": "https://github.com/luvega/codex_ppt_skill",
+  "source_style": "strict-sysu-official-blue",
+  "source_asset_manifest": "templates/assets/strict-sysu-official-blue/asset-manifest.json",
+  "copied_at": "2026-05-25",
+  "assets": [
+    {
+      "site_file": "sysu-logo-wordmark-white.png",
+      "source_file": "templates/assets/strict-sysu-official-blue/media/image6-430180b6fb.png",
+      "category": "logo-wordmark-emblem",
+      "use": "site header wordmark"
+    },
+    {
+      "site_file": "campus-lighthouse.jpeg",
+      "source_file": "templates/assets/strict-sysu-official-blue/media/image14-a516ab5898.jpeg",
+      "category": "campus-photo-or-background",
+      "use": "home hero background"
+    },
+    {
+      "site_file": "campus-mountain.jpg",
+      "source_file": "templates/assets/strict-sysu-official-blue/media/image26-6f1da03f78.jpg",
+      "category": "campus-photo-or-background",
+      "use": "coursebook/home image"
+    },
+    {
+      "site_file": "campus-wide.jpeg",
+      "source_file": "templates/assets/strict-sysu-official-blue/media/image29-640c3d2245.jpeg",
+      "category": "campus-photo-or-background",
+      "use": "week page background and coursebook image"
+    }
+  ]
+}

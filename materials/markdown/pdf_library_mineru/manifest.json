@@ -1,0 +1,37 @@
+[
+  {
+    "title": "An Introduction to Statistical Learning_ with Applications Python",
+    "pdf_path": "materials/raw/pdf_originals/An Introduction to Statistical Learning_ with Applications Python.pdf",
+    "slug": "An_Introduction_to_Statistical_Learning_with_Applications_Python",
+    "pages": 613,
+    "size_mb": 19.12
+  },
+  {
+    "title": "An Introduction to Statistical Learning_ with Applications R--",
+    "pdf_path": "materials/raw/pdf_originals/An Introduction to Statistical Learning_ with Applications R--.pdf",
+    "slug": "An_Introduction_to_Statistical_Learning_with_Applications_R",
+    "pages": 436,
+    "size_mb": 10.35
+  },
+  {
+    "title": "Starting Data Analytics with Generative AI and Python 9781633437210",
+    "pdf_path": "materials/raw/pdf_originals/Starting Data Analytics with Generative AI and Python 9781633437210.pdf",
+    "slug": "Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210",
+    "pages": 362,
+    "size_mb": 15.49
+  },
+  {
+    "title": "【R240】Learn AI-Assisted Python Programming With GitHub Copilot and ChatGPT (2023)【Leo Porter, Daniel Zingaro】",
+    "pdf_path": "materials/raw/pdf_originals/【R240】Learn AI-Assisted Python Programming With GitHub Copilot and ChatGPT (2023)【Leo Porter, Daniel Zingaro】.pdf",
+    "slug": "R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro",
+    "pages": 298,
+    "size_mb": 8.83
+  },
+  {
+    "title": "Pythonppt",
+    "pdf_path": "materials/raw/external_ppt/嵩天Python/Pythonppt.pdf",
+    "slug": "Pythonppt",
+    "pages": 1287,
+    "size_mb": 32.9
+  }
+]

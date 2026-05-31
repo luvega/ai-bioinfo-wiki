@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getWeekLabel, weeks } from '../../data/weeks';
+
+export function getStaticPaths() {
+  return weeks.map((week) => ({
+    params: { slug: week.slug },
+    props: { week }
+  }));
+}
+
+const { week } = Astro.props;
+const previous = weeks.find((item) => item.week === week.week - 1);
+const next = weeks.find((item) => item.week === week.week + 1);
+---
+
+<BaseLayout title={`${getWeekLabel(week.week)} ${week.title}`} description={week.question}>
+  <section class="week-hero">
+    <div class="section-inner">
+      <p class="section-label">{getWeekLabel(week.week)} · {week.phase}</p>
+      <h1>{week.title}</h1>
+      <p>{week.question}</p>
+      <ul class="tag-list">
+        {week.keywords.map((keyword) => <li>{keyword}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner split">
+      <article class="info-panel">
+        <h2>学习目标</h2>
+        <ul class="content-list">
+          {week.goals.map((goal) => <li>{goal}</li>)}
+        </ul>
+      </article>
+      <article class="info-panel">
+        <h2>AI 协作边界</h2>
+        <p>{week.aiBoundary}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner split">
+      <article class="info-panel">
+        <h2>课堂提纲</h2>
+        <ol class="content-list">
+          {week.outline.map((item) => <li>{item}</li>)}
+        </ol>
+      </article>
+      <article class="info-panel">
+        <h2>实践任务</h2>
+        <p>{week.practice}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Materials</p>
+        <h2>本周材料与延伸阅读</h2>
+        <p>首期页面展示本地来源路径和 Coursebook 主题，后续会接入自动内容导入脚本。</p>
+      </div>
+      <div class="resource-grid">
+        <article class="resource-card">
+          <h3>本地材料</h3>
+          <ul class="content-list">
+            {week.sourcePaths.map((path) => <li><code>{path}</code></li>)}
+          </ul>
+        </article>
+        <article class="resource-card">
+          <h3>Coursebook 延伸</h3>
+          <ul class="content-list">
+            {week.coursebook.map((item) => <li>{item}</li>)}
+          </ul>
+        </article>
+        <article class="resource-card">
+          <h3>核验提示</h3>
+          <p>所有 AI 生成解释、代码、图注和结果摘要都需要记录 Prompt、输出、人工核验和修改说明。</p>
+        </article>
+      </div>
+      <nav class="next-prev" aria-label="周次导航">
+        {previous ? <a href={`/weeks/${previous.slug}`}>← {getWeekLabel(previous.week)} {previous.title}</a> : <a href="/weeks">← 返回周次总览</a>}
+        {next ? <a href={`/weeks/${next.slug}`}>{getWeekLabel(next.week)} {next.title} →</a> : <a href="/weeks">返回周次总览 →</a>}
+      </nav>
+    </div>
+  </section>
+</BaseLayout>
