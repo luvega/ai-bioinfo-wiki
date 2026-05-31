@@ -98,12 +98,19 @@
 - Week 03 样稿输出到 `outputs/ppt/week_03_pilot/`，不入 Git；验证记录写入 `docs/week03_ppt_trial.md`。
 - 首轮视觉检查发现第 12 页文字截断，已修复脚本并重新导出验证。
 
+### [2026-05-31] D-023 · 讲义深度标准与 Week 03 扩写样本
+
+- 新增 `course/evaluation/lecture_script_standard.md`，将每周讲义分为 `scaffold`、`pilot-script`、`full-lecture` 三个深度等级。
+- 新增 `scripts/maintenance/course_script_depth.py`，用于报告 18 周 `script.md` 的汉字量和深度标签。
+- Week 03 `script.md` 已从试讲提示扩写为 `pilot-script` 样本，补充完整讲述话术、互动追问、误区纠偏、AI 审计和评分点。
+
 ## 3. 当前状态
 
 - `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md`。
 - 样板周优先级：Week 03、Week 14、Week 15、Week 16 已进入可授课试点。
 - 课程质量 rubric 已新增，位置为 `course/evaluation/courseware_rubric.md`。
 - Week 03 已有 PPT 试点样稿生成脚本和真实 PNG 页面验证记录。
+- Week 03 已有 `pilot-script` 级完整讲义；其余周次仍需按新标准分批扩写。
 - 新增维护目标：索引/断链/Week 11-15 对齐检查，以及样板周质量区块检查。
 - 暂不全量生成 18 周 PPT；先做 Week 03、Week 15、Week 16 三套试点。
 
@@ -112,8 +119,9 @@
 1. 维护 `course/weeks/_index.md`、`materials/markdown/_index.md` 和 `knowledge/*/_index.md`。
 2. 通过 `course_quality_check.py` 检查所有周次三件套和样板周必备区块。
 3. 以 Week 03 PPT 试点为模板，继续把 Week 15、16 从 Markdown 试点稿推进到 PPT 样稿。
-4. 按 `course/evaluation/` 中的试评记录逐项处理 PPT 前置问题。
-5. 进入 PPT 试点前，先人工复核文字溢出、空页、乱码、页码、图表引用和讲稿备注。
+4. 按 `lecture_script_standard.md` 分批扩写 Week 14、15、16 和其余 draft 周讲义。
+5. 按 `course/evaluation/` 中的试评记录逐项处理 PPT 前置问题。
+6. 进入 PPT 试点前，先人工复核文字溢出、空页、乱码、页码、图表引用和讲稿备注。
 
 ## 5. 不要做的事
 
