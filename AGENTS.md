@@ -30,6 +30,23 @@ E:\Codex_Projects\AI_Course\
 
 `course/syllabus/` 优先级最高。`knowledge/` 只做备课辅助；如果和 `course/syllabus/` 冲突，以 `course/syllabus/` 为准，并修正 stale 说明。
 
+## 技能加载与路由
+
+本项目采用“双层技能体系”：
+
+- 全局技能白名单提供通用科研、写作、审查和 Office/PPT 能力；来源与版本记录在 `docs/skill_loading_manifest_2026-06-03.md`。
+- 项目本地 `skills/course-*` 负责把全局能力约束到 AI_Course 的课件生产闭环。
+
+处理课程任务时优先使用：
+
+1. `course-skill-router`：判断任务属于讲义扩写、PPT storyboard、证据审查、素材入库还是维护。
+2. `course-lecture-expand`：扩写每周 `script.md`，目标是 `pilot-script` 或更高。
+3. `course-ppt-storyboard`：生成 PPTX 前先产出可审查 storyboard/brief。
+4. `course-evidence-review`：检查统计、生物学、图形和 AI 输出的 claim-evidence 边界。
+5. `course-update-vault`：运行索引、断链、周次映射、讲义深度和技能清单维护。
+
+全局技能可以辅助，但不能决定写入位置、状态标签或课程事实主线。若全局技能输出与 `course/syllabus/` 或 `course/weeks/` 冲突，以课程主线为准。
+
 ## 周次产物标准
 
 每个 `course/weeks/week_XX/` 必须具备：
@@ -39,6 +56,13 @@ E:\Codex_Projects\AI_Course\
 - `script.md`
 
 样板周 `week_03`、`week_14`、`week_15`、`week_16` 必须包含教学目标、药学场景、核心数据结构、课堂任务、AI协作边界、课后练习、素材来源和待核验点。
+
+状态语义必须分层判断：
+
+- `script.md` 的 `status: formal_ready` 和 `depth: full-lecture` 只代表讲义深度达标。
+- `materials.md` 与 `outline.md` 的 `status` 才代表周次素材/大纲准备度；非样板周可保持 `draft`。
+- PPT 状态单独按 storyboard、evidence review、PPTX 生成和 PNG/contact sheet 视觉 QA 判断。
+- 不得因为某周 `script.md` 已 `formal_ready` 就自动生成 PPT 或宣称整周已正式可发布。
 
 ## 硬规则
 
@@ -58,8 +82,9 @@ E:\Codex_Projects\AI_Course\
 python scripts/maintenance/course_km_index.py --write
 python scripts/maintenance/course_km_index.py --check
 python scripts/maintenance/course_quality_check.py --check
+python scripts/maintenance/course_script_depth.py --write docs/course_script_depth_report.md
+python scripts/maintenance/course_skill_inventory.py --check
 python -m pytest -q
 ```
 
 若新增、移动、重命名课程/知识/素材 Markdown，先更新索引，再检查断链和样板周质量。
-

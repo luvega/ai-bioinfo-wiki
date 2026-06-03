@@ -33,6 +33,8 @@ def build_report(root: Path) -> str:
     rows = [
         "# Course Script Depth Report",
         "",
+        "This report only measures `script.md` frontmatter status and CJK character depth. It does not promote the whole week to `pilot_ready` or `formal_ready`; `materials.md`, `outline.md`, storyboard review, evidence review, and PPT visual QA are tracked separately.",
+        "",
         "| Week | Status | CJK chars | Depth | Path |",
         "|---:|---|---:|---|---|",
     ]

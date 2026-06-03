@@ -104,13 +104,35 @@
 - 新增 `scripts/maintenance/course_script_depth.py`，用于报告 18 周 `script.md` 的汉字量和深度标签。
 - Week 03 `script.md` 已从试讲提示扩写为 `pilot-script` 样本，补充完整讲述话术、互动追问、误区纠偏、AI 审计和评分点。
 
+### [2026-06-03] D-024 · 双层技能体系落地
+
+- 全局技能采用最小白名单，不全量安装外部 skill 仓库。
+- 已确认或安装：`building-llm-wiki`、`academic-chinese-style`、`scientific-critical-thinking`、`peer-review`、`scientific-writing`、`scientific-slides`、`scientific-visualization`、`statistical-analysis`、`markdown-mermaid-writing`、`academic-presentation-teaching`、`biomedical-research-framework`、`office-academic-skill`、`research-writing-skill`。
+- 新增项目本地 `course-skill-router`、`course-lecture-expand`、`course-ppt-storyboard`、`course-evidence-review`、`course-update-vault`。
+- 新增 `docs/skill_loading_manifest_2026-06-03.md` 和 `scripts/maintenance/course_skill_inventory.py`，将全局白名单、本地 wrapper 和 README 数量纳入机器检查。
+
+### [2026-06-03] D-025 · 18 周讲义扩写到 full-lecture
+
+- Week 01-18 的 `script.md` 均已标记为 `formal_ready`，并达到 `full-lecture` 字数深度。
+- `docs/course_script_depth_report.md` 只衡量 `script.md` frontmatter 状态和汉字量；它不自动把整周 `materials.md`、`outline.md` 或 PPT 状态提升为正式完成。
+- Week 03/14/15/16 仍是当前样板周；其余周次虽然讲义深度足够，但 `materials.md` 和 `outline.md` 仍保持 `draft`，需要后续按周提升。
+
+### [2026-06-03] D-026 · 技能与状态收口基线
+
+- 项目采用 `course-skill-router` + `course-update-vault` 作为第一阶段技能与状态收口入口。
+- 全局 13 个白名单技能和项目本地 5 个 `course-*` workflow skills 由 `docs/skill_loading_manifest_2026-06-03.md`、`skills/README.md` 和 `scripts/maintenance/course_skill_inventory.py` 三方共同约束。
+- Week 15 已完成 PPT storyboard、evidence review、SYSU 官方蓝模板 PPTX、PowerPoint COM PNG 导出和 contact sheet QA；PPT 产物保留在 `outputs/`，不进入 Git。
+- 本轮 Git 改动按四组审计：技能体系、18 周讲义扩写、Week 15 PPT 试点、项目说明/状态文档。
+
 ## 3. 当前状态
 
 - `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md`。
 - 样板周优先级：Week 03、Week 14、Week 15、Week 16 已进入可授课试点。
 - 课程质量 rubric 已新增，位置为 `course/evaluation/courseware_rubric.md`。
 - Week 03 已有 PPT 试点样稿生成脚本和真实 PNG 页面验证记录。
-- Week 03 已有 `pilot-script` 级完整讲义；其余周次仍需按新标准分批扩写。
+- Week 01-18 的 `script.md` 均已达到 `formal_ready/full-lecture`；其中非样板周的 `materials.md` 与 `outline.md` 仍为 `draft`，不能据此直接进入 PPT。
+- Week 15 已有官方蓝模板 PPT 试点：storyboard 和 evidence review 入 Git，PPTX/PNG/contact sheet 输出保留在 `outputs/ppt/sysu_official_blue/week_15/`。
+- 项目本地 `skills/` 已新增 course workflow 入口；全局技能白名单记录在 `docs/skill_loading_manifest_2026-06-03.md`。
 - 新增维护目标：索引/断链/Week 11-15 对齐检查，以及样板周质量区块检查。
 - 暂不全量生成 18 周 PPT；先做 Week 03、Week 15、Week 16 三套试点。
 
@@ -118,8 +140,8 @@
 
 1. 维护 `course/weeks/_index.md`、`materials/markdown/_index.md` 和 `knowledge/*/_index.md`。
 2. 通过 `course_quality_check.py` 检查所有周次三件套和样板周必备区块。
-3. 以 Week 03 PPT 试点为模板，继续把 Week 15、16 从 Markdown 试点稿推进到 PPT 样稿。
-4. 按 `lecture_script_standard.md` 分批扩写 Week 14、15、16 和其余 draft 周讲义。
+3. 保持三层状态语义：讲义深度、周次 `materials/outline` 状态、PPT 生产线状态分开判断。
+4. 以 Week 03 和 Week 15 PPT 试点为模板，后续再推进 Week 16 storyboard/PPT；本阶段不全量生成 18 周 PPT。
 5. 按 `course/evaluation/` 中的试评记录逐项处理 PPT 前置问题。
 6. 进入 PPT 试点前，先人工复核文字溢出、空页、乱码、页码、图表引用和讲稿备注。
 
