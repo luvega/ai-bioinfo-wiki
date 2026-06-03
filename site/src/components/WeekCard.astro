@@ -1,6 +1,7 @@
 ---
 import type { Week } from '../data/weeks';
 import { getWeekLabel } from '../data/weeks';
+import { withBase } from '../lib/paths';
 
 type Props = {
   week: Week;
@@ -9,7 +10,7 @@ type Props = {
 const { week } = Astro.props;
 ---
 
-<a class="week-card" href={`/weeks/${week.slug}`}>
+<a class="week-card" href={withBase(`/weeks/${week.slug}`)}>
   <span class="week-kicker">{getWeekLabel(week.week)}</span>
   <h3>{week.title}</h3>
   <p>{week.question}</p>

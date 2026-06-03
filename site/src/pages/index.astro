@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import WeekCard from '../components/WeekCard.astro';
 import { phases, weeks } from '../data/weeks';
+import { withBase } from '../lib/paths';
 
 const featuredWeeks = [weeks[2], weeks[13], weeks[14], weeks[15]];
 const pathway = [
@@ -22,9 +23,9 @@ const pathway = [
         AI 前置的 36 课时课程门户，面向药学本科生，围绕医药问题、数据结构、统计方法、可视化表达和 AI 协作核验组织学习。
       </p>
       <div class="hero-actions">
-        <a class="button secondary" href="/syllabus">查看课程大纲</a>
-        <a class="button ghost" href="/weeks">进入 18 周地图</a>
-        <a class="button ghost" href="/ai-collaboration">AI 协作规范</a>
+        <a class="button secondary" href={withBase('/syllabus')}>查看课程大纲</a>
+        <a class="button ghost" href={withBase('/weeks')}>进入 18 周地图</a>
+        <a class="button ghost" href={withBase('/ai-collaboration')}>AI 协作规范</a>
       </div>
     </div>
   </section>
@@ -80,12 +81,12 @@ const pathway = [
           </p>
         </div>
         <div class="button-row">
-          <a class="button" href="/coursebook">查看 Coursebook 规划</a>
-          <a class="button secondary" href="/resources">浏览资源索引</a>
+          <a class="button" href={withBase('/coursebook')}>查看 Coursebook 规划</a>
+          <a class="button secondary" href={withBase('/resources')}>浏览资源索引</a>
         </div>
       </div>
       <figure class="image-panel">
-        <img src="/assets/sysu/campus-mountain.jpg" alt="中山大学校园照片" />
+        <img src={withBase('/assets/sysu/campus-mountain.jpg')} alt="中山大学校园照片" />
       </figure>
     </div>
   </section>

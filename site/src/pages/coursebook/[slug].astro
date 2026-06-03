@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { coursebookChapters, sampleChapters } from '../../data/coursebook';
+import { getWeekLabel } from '../../data/weeks';
+import { withBase } from '../../lib/paths';
+
+export function getStaticPaths() {
+  return sampleChapters.map((chapter) => ({
+    params: { slug: chapter.slug },
+    props: { chapter }
+  }));
+}
+
+const { chapter } = Astro.props;
+const sample = chapter.sample;
+if (!sample) {
+  throw new Error(`Coursebook chapter ${chapter.slug} is not a readable sample.`);
+}
+const previousSample = sampleChapters.filter((item) => item.week < chapter.week).at(-1);
+const nextSample = sampleChapters.find((item) => item.week > chapter.week);
+const catalogPrevious = coursebookChapters.find((item) => item.week === chapter.week - 1);
+const catalogNext = coursebookChapters.find((item) => item.week === chapter.week + 1);
+---
+
+<BaseLayout title={`${getWeekLabel(chapter.week)} 教材样章`} description={chapter.summary}>
+  <section class="week-hero sample-hero">
+    <div class="section-inner">
+      <p class="section-label">Coursebook Sample · {getWeekLabel(chapter.week)} · {chapter.phase}</p>
+      <h1>{chapter.title}</h1>
+      <p>{chapter.summary}</p>
+      <ul class="tag-list">
+        {chapter.coursebookTopics.map((topic) => <li>{topic}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner split">
+      <article class="info-panel">
+        <h2>导入问题</h2>
+        <p>{sample.introQuestion}</p>
+      </article>
+      <article class="info-panel">
+        <h2>状态</h2>
+        <ul class="content-list">
+          <li><strong>教材状态：</strong>{chapter.status}</li>
+          <li><strong>审查状态：</strong>{chapter.reviewStatus}</li>
+          <li><strong>PPT 状态：</strong>{chapter.pptStatus}</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner split">
+      <article class="info-panel">
+        <h2>学习目标</h2>
+        <ul class="content-list">
+          {sample.learningObjectives.map((goal) => <li>{goal}</li>)}
+        </ul>
+      </article>
+      <article class="info-panel">
+        <h2>课堂案例</h2>
+        <h3>{sample.classroomCase.title}</h3>
+        <p>{sample.classroomCase.description}</p>
+        <ol class="content-list spaced-list">
+          {sample.classroomCase.steps.map((step) => <li>{step}</li>)}
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Concepts</p>
+        <h2>核心概念</h2>
+      </div>
+      <div class="concept-grid">
+        {sample.coreConcepts.map((concept) => (
+          <article class="concept-card">
+            <h3>{concept.term}</h3>
+            <p>{concept.explanation}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner split">
+      <article class="info-panel">
+        <h2>AI 协作边界</h2>
+        <h3>可以使用</h3>
+        <ul class="content-list">
+          {sample.aiBoundary.allowed.map((item) => <li>{item}</li>)}
+        </ul>
+        <h3 class="subhead">不能替代</h3>
+        <ul class="content-list">
+          {sample.aiBoundary.forbidden.map((item) => <li>{item}</li>)}
+        </ul>
+      </article>
+      <article class="info-panel">
+        <h2>待核验点</h2>
+        <ul class="content-list">
+          {sample.verificationPoints.map((item) => <li>{item}</li>)}
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner split">
+      <article class="info-panel">
+        <h2>来源</h2>
+        <h3>周次事实文件</h3>
+        <ul class="content-list source-list">
+          {chapter.sourceWeekFiles.map((path) => <li><code>{path}</code></li>)}
+        </ul>
+        <h3 class="subhead">知识支持层</h3>
+        <ul class="content-list source-list">
+          {chapter.knowledgeSources.map((path) => <li><code>{path}</code></li>)}
+        </ul>
+        <h3 class="subhead">素材支持层</h3>
+        <ul class="content-list source-list">
+          {chapter.materialSources.map((path) => <li><code>{path}</code></li>)}
+        </ul>
+      </article>
+      <article class="info-panel">
+        <h2>PPT storyboard 生成入口说明</h2>
+        <p>{sample.pptBridge.status}</p>
+        <p><strong>入口：</strong><code>{sample.pptBridge.entry}</code></p>
+        <ol class="content-list spaced-list">
+          {sample.pptBridge.nextActions.map((action) => <li>{action}</li>)}
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner">
+      <nav class="next-prev" aria-label="教材样章导航">
+        {previousSample ? <a href={withBase(previousSample.page)}>← {getWeekLabel(previousSample.week)} {previousSample.title}</a> : <a href={withBase('/coursebook')}>← 返回 Coursebook 目录</a>}
+        {nextSample ? <a href={withBase(nextSample.page)}>{getWeekLabel(nextSample.week)} {nextSample.title} →</a> : <a href={withBase('/coursebook')}>返回 Coursebook 目录 →</a>}
+      </nav>
+      <nav class="next-prev compact-nav" aria-label="课程周次导航">
+        {catalogPrevious ? <a href={withBase(`/weeks/${catalogPrevious.slug}`)}>课堂上一周：{getWeekLabel(catalogPrevious.week)}</a> : <a href={withBase('/weeks')}>课堂周次总览</a>}
+        {catalogNext ? <a href={withBase(`/weeks/${catalogNext.slug}`)}>课堂下一周：{getWeekLabel(catalogNext.week)}</a> : <a href={withBase('/weeks')}>课堂周次总览</a>}
+      </nav>
+    </div>
+  </section>
+</BaseLayout>

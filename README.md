@@ -119,14 +119,18 @@ python scripts/maintenance/course_km_index.py --check
 python scripts/maintenance/course_quality_check.py --check
 python scripts/maintenance/course_script_depth.py --write docs/course_script_depth_report.md
 python scripts/maintenance/course_skill_inventory.py --check
+python scripts/maintenance/course_online_book_check.py
 python -m pytest -q
+Push-Location site; npm run build; Pop-Location
 ```
 
 通过标准：
 
 - `course_km_index.py --check` 输出 `OK`。
 - `course_quality_check.py --check` 输出 `OK`。
+- `course_online_book_check.py` 输出 `OK`。
 - `pytest` 全部通过。
+- `site` 的 `npm run build` 完成 Astro 构建和 Pagefind 索引。
 - 样板周通过质量区块检查；非样板周允许保持 draft，但必须有三件套。
 
 ## 当前节奏
@@ -137,8 +141,13 @@ python -m pytest -q
 2. 通过 `course_skill_inventory.py` 固定全局白名单和本地 `course-*` workflow。
 3. 区分讲义深度、周次材料/大纲状态和 PPT 生产线状态。
 4. 保留 Week 03 与 Week 15 PPT 试点作为样例；Week 16 后续先做 storyboard，再生成 PPT。
-5. 用维护脚本检查周次三件套、断链、索引、Week 11/15 历史错位和样板周质量区块。
+5. 用在线 Coursebook 先承载 Week 03/14/15/16 样章，其余 14 章只显示目录、来源和状态。
+6. 用维护脚本检查周次三件套、断链、索引、Week 11/15 历史错位、样板周质量区块和在线教材映射。
+
+## 在线预览
+
+站点通过 GitHub Actions 构建 `site/` 并发布到 GitHub Pages。发布地址为 `https://luvega.github.io/ai-bioinfo-wiki/`，工作流见 `.github/workflows/deploy-site.yml`。
 
 下一轮执行计划见 [AI_Course 下一轮工作计划](docs/next_round_work_plan_2026-05-31.md)。
 
-暂不全量生成 18 周 PPT，不 push，不修改远端。
+暂不全量生成 18 周 PPT；远端动作仅限课程站点的 GitHub Pages 发布。

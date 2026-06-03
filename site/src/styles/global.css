@@ -143,7 +143,7 @@ img {
   inset: 0;
   background-image:
     linear-gradient(90deg, rgba(6, 38, 55, 0.86), rgba(6, 38, 55, 0.54) 48%, rgba(6, 38, 55, 0.2)),
-    url("/assets/sysu/campus-lighthouse.jpeg");
+    var(--campus-lighthouse-image);
   background-size: cover;
   background-position: center;
 }
@@ -314,7 +314,10 @@ img {
 .week-grid,
 .resource-grid,
 .rules-grid,
-.coursebook-grid {
+.coursebook-grid,
+.chapter-grid,
+.concept-grid,
+.metric-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
@@ -325,7 +328,11 @@ img {
 .resource-card,
 .rule-card,
 .coursebook-card,
+.chapter-card,
+.concept-card,
+.metric-card,
 .info-panel {
+  min-width: 0;
   min-height: 100%;
   padding: 22px;
   border: 1px solid var(--border);
@@ -342,6 +349,8 @@ img {
 .resource-card h3,
 .rule-card h3,
 .coursebook-card h3,
+.chapter-card h3,
+.concept-card h3,
 .info-panel h2,
 .info-panel h3 {
   margin: 0 0 10px;
@@ -353,6 +362,8 @@ img {
 .resource-card p,
 .rule-card p,
 .coursebook-card p,
+.chapter-card p,
+.concept-card p,
 .info-panel p {
   margin: 0;
   color: var(--muted);
@@ -363,7 +374,9 @@ img {
 }
 
 .week-card:hover,
-.week-card:focus-visible {
+.week-card:focus-visible,
+.chapter-card:hover,
+.chapter-card:focus-visible {
   transform: translateY(-2px);
   border-color: var(--sysu-blue-2);
   box-shadow: var(--shadow);
@@ -381,6 +394,7 @@ img {
 
 .tag-list li,
 .status-pill {
+  max-width: 100%;
   padding: 5px 8px;
   border-radius: 6px;
   background: var(--surface);
@@ -388,6 +402,105 @@ img {
   font-size: 12px;
   font-weight: 700;
   line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.metric-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 26px;
+}
+
+.metric-card {
+  background: var(--surface);
+}
+
+.metric-card strong {
+  display: block;
+  color: var(--sysu-blue);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.metric-card span {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.chapter-card,
+.concept-card {
+  display: block;
+  background: #fff;
+}
+
+.chapter-table-wrap {
+  overflow-x: auto;
+}
+
+.chapter-table td p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.text-link {
+  color: var(--sysu-blue);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.muted-text {
+  color: var(--muted);
+}
+
+.sample-hero {
+  background:
+    linear-gradient(90deg, rgba(7, 56, 78, 0.94), rgba(7, 56, 78, 0.72)),
+    var(--campus-mountain-image);
+  background-size: cover;
+  background-position: center;
+}
+
+.concept-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.concept-card {
+  border-top: 5px solid var(--sysu-green);
+}
+
+.subhead {
+  margin-top: 22px !important;
+}
+
+.source-list code {
+  overflow-wrap: anywhere;
+}
+
+.content-list li,
+.info-panel p,
+.resource-card p,
+.chapter-card p,
+.concept-card p,
+code {
+  overflow-wrap: anywhere;
+}
+
+.spaced-list {
+  margin-top: 12px;
+}
+
+.compact-nav {
+  margin-top: 12px;
 }
 
 .split {
@@ -441,7 +554,7 @@ img {
   color: #fff;
   background:
     linear-gradient(90deg, rgba(7, 56, 78, 0.94), rgba(7, 56, 78, 0.72)),
-    url("/assets/sysu/campus-wide.jpeg");
+    var(--campus-wide-image);
   background-size: cover;
   background-position: center;
 }
@@ -527,6 +640,9 @@ img {
   .resource-grid,
   .rules-grid,
   .coursebook-grid,
+  .chapter-grid,
+  .concept-grid,
+  .metric-row,
   .split {
     grid-template-columns: 1fr;
   }

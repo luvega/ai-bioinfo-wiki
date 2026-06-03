@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { withBase } from '../lib/paths';
 
 type Props = {
   title: string;
@@ -16,6 +17,12 @@ const navItems = [
   { href: '/resources', label: '资源索引' },
   { href: '/ai-collaboration', label: 'AI 协作规范' }
 ];
+
+const bodyStyle = [
+  `--campus-lighthouse-image: url("${withBase('/assets/sysu/campus-lighthouse.jpeg')}")`,
+  `--campus-mountain-image: url("${withBase('/assets/sysu/campus-mountain.jpg')}")`,
+  `--campus-wide-image: url("${withBase('/assets/sysu/campus-wide.jpeg')}")`
+].join('; ');
 ---
 
 <!doctype html>
@@ -26,14 +33,14 @@ const navItems = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | 医药数据处理与可视化</title>
   </head>
-  <body>
+  <body style={bodyStyle}>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="返回首页">
-        <img src="/assets/sysu/sysu-logo-wordmark-white.png" alt="中山大学 Sun Yat-sen University" />
+      <a class="brand" href={withBase('/')} aria-label="返回首页">
+        <img src={withBase('/assets/sysu/sysu-logo-wordmark-white.png')} alt="中山大学 Sun Yat-sen University" />
         <span>医药数据处理与可视化</span>
       </a>
       <nav class="site-nav" aria-label="主导航">
-        {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+        {navItems.map((item) => <a href={withBase(item.href)}>{item.label}</a>)}
       </nav>
     </header>
     <main>

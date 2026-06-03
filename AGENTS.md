@@ -84,7 +84,9 @@ python scripts/maintenance/course_km_index.py --check
 python scripts/maintenance/course_quality_check.py --check
 python scripts/maintenance/course_script_depth.py --write docs/course_script_depth_report.md
 python scripts/maintenance/course_skill_inventory.py --check
+python scripts/maintenance/course_online_book_check.py
 python -m pytest -q
+Push-Location site; npm run build; Pop-Location
 ```
 
-若新增、移动、重命名课程/知识/素材 Markdown，先更新索引，再检查断链和样板周质量。
+若新增、移动、重命名课程/知识/素材 Markdown，先更新索引，再检查断链、样板周质量和在线教材映射。
