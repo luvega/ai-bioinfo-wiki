@@ -1,7 +1,7 @@
 ---
 type: trial-teaching-pack
 week: 5
-title: 数据读取与整形 · 试讲包 v1
+title: 数据读取与整理 · 试讲包 v1
 status: trial_ready_pack_v1
 updated: 2026-06-04
 audience: 药学本科生

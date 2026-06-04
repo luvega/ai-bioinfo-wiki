@@ -87,13 +87,13 @@ const coursebookChapter = getCoursebookChapterByWeek(week.week);
           <h3>在线教材</h3>
           {coursebookChapter?.sample ? (
             <>
-              <p>本周已有首期 Coursebook 样章，可作为后续教案归纳和 PPT storyboard 的入口。</p>
+              <p>本周已有 Coursebook 样章、教材扩写稿和 40 页主干 storyboard，可作为后续教案归纳和 PPTX 裁剪入口。</p>
               <p><a class="text-link" href={withBase(coursebookChapter.page)}>打开 {getWeekLabel(week.week)} 教材样章</a></p>
             </>
           ) : (
             <>
-              <p>本周已纳入 Coursebook 目录映射，但尚未生成样章正文。</p>
-              <p><a class="text-link" href={withBase(`/coursebook#week-${String(week.week).padStart(2, '0')}`)}>查看教材目录状态</a></p>
+              <p>本周已有 Coursebook 教材扩写稿和 40 页主干 storyboard，后续可继续精修代码、样例、知识图谱和示意图。</p>
+              <p><a class="text-link" href={withBase(coursebookChapter?.page ?? `/coursebook/week-${String(week.week).padStart(2, '0')}`)}>打开 {getWeekLabel(week.week)} 教材扩写稿</a></p>
             </>
           )}
         </article>

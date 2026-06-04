@@ -1,0 +1,14 @@
+flowchart LR
+    accTitle: Week 16 单细胞转录组可视化
+    accDescr: QC -> UMAP/cluster -> marker -> spatial -> 边界。
+    n1["QC"]
+    n2["UMAP/cluster"]
+    n3["marker"]
+    n4["spatial"]
+    n5["边界"]
+    n1 --> n2
+    n2 --> n3
+    n3 --> n4
+    n4 --> n5
+    ai["AI 审计"] -.-> n1
+    boundary["证据边界"] -.-> n5

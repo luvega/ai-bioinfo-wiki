@@ -1,0 +1,5 @@
+cell_id,cluster,nFeature,percent_mt,marker,spatial_region
+Cell01,0,2100,4.2,GeneA,Region1
+Cell02,0,2050,5.1,GeneA,Region1
+Cell03,1,1800,9.8,GeneC,Region2
+Cell04,1,900,22.0,GeneC,Region2

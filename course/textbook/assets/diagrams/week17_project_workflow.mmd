@@ -1,0 +1,14 @@
+flowchart LR
+    accTitle: Week 17 综合项目工作坊：AI 协作分析与结果核验
+    accDescr: 项目问题 -> 素材溯源 -> 图表 -> AI 审计 -> storyboard。
+    n1["项目问题"]
+    n2["素材溯源"]
+    n3["图表"]
+    n4["AI 审计"]
+    n5["storyboard"]
+    n1 --> n2
+    n2 --> n3
+    n3 --> n4
+    n4 --> n5
+    ai["AI 审计"] -.-> n1
+    boundary["证据边界"] -.-> n5

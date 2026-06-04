@@ -1,12 +1,12 @@
 ---
 type: course-week
 week: 5
-title: 数据读取与整形
+title: 数据读取与整理
 hours: 2
 status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
-# 第 05 周：数据读取与整形 · PPT 大纲
+# 第 05 周：数据读取与整理 · PPT 大纲
 
 ## 教学目标
 

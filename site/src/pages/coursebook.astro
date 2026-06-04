@@ -12,7 +12,7 @@ const sampleCount = sampleChapters.length;
   <PageHeader
     eyebrow="Coursebook"
     title="在线教材目录"
-    intro="Coursebook 以 18 周课堂为骨架，按课堂主素材、支撑素材、拓展素材和教师备课素材分层组织。当前开放 Week 03、14、15、16 四个样章，Week 13 已推进为试点候选，其余章节显示来源、标签和状态。"
+    intro="Coursebook 以 18 周课堂为骨架，按课堂主素材、支撑素材、拓展素材和教师备课素材分层组织。当前 18 章均已扩写为教材源稿，并同步开放 40 页主干 storyboard。"
   />
 
   <section class="section">
@@ -34,22 +34,29 @@ const sampleCount = sampleChapters.length;
           </div>
           <div class="metric-card">
             <strong>{sampleCount}</strong>
-            <span>个样章/候选入口</span>
+            <span>个样章/试讲入口</span>
           </div>
           <div class="metric-card">
             <strong>Local</strong>
             <span>本地构建优先</span>
           </div>
         </div>
+        <p>
+          <a class="text-link" href={withBase('/coursebook/review')}>打开 Storyboard 人工精修审核台</a>
+        </p>
       </div>
       <article class="info-panel">
         <h2>状态解释</h2>
         <ul class="content-list">
+          <li><strong>状态词典：</strong><code>docs/course_status_dictionary.md</code> 统一解释 `textbook_status`、`ppt_status` 和 `review_status` 三条状态轴。</li>
           <li><strong>目录占位：</strong>只表示已登记教材章节和来源，不表示正文完成。</li>
+          <li><strong>全书初稿：</strong>表示已有 Markdown 章节正文和可入库素材资产，但仍需后续精修和人工复核。</li>
+          <li><strong>教材扩写稿：</strong>表示章节正文已按 40 页主干 storyboard 同步扩写，适合继续精修和后续 PPTX 裁剪。</li>
           <li><strong>样章候选：</strong>表示页面可读，但仍需补齐 evidence review、教学素材或 PPT 生产检查。</li>
           <li><strong>试点候选：</strong>表示 storyboard 与 evidence review 已通过，可进入试讲或 PPTX 设计前置准备。</li>
           <li><strong>样章可读：</strong>表示页面具备导入问题、目标、概念、案例、AI 边界、来源和 PPT 衔接。</li>
-          <li><strong>PPT 状态：</strong>独立记录 storyboard、evidence review、PPTX 和视觉 QA，不由讲稿状态自动推导。</li>
+          <li><strong>PPT 状态：</strong>独立记录 storyboard、evidence review、PPTX 和视觉 QA，不由讲稿状态自动推导；当前 18 周为 <code>storyboard_expanded</code>。</li>
+          <li><strong>审核入口：</strong><a class="text-link" href={withBase('/coursebook/review')}>Storyboard 人工精修审核台</a> 用于检查 Student action、Timing 和去模板化风险。</li>
         </ul>
       </article>
     </div>
@@ -62,8 +69,8 @@ const sampleCount = sampleChapters.length;
         <h2>状态流水线</h2>
         <p>
           Coursebook 状态采用显式流水线：
-          <code>catalog_only</code> -> <code>sample_candidate</code> -> <code>pilot_candidate</code> -> <code>sample_ready</code> -> <code>storyboard</code> -> <code>evidence_review_assets_pending</code> -> <code>evidence_review_pass</code> -> <code>pptx_trial_done</code>。
-          其中 <code>evidence_review_assets_pending</code> 表示公开素材或图形授权尚未关闭；当前 Week 14/16 已改用自绘或自生成教学示意图策略，因此推进到 <code>evidence_review_pass</code>，但仍未宣称 PPTX 完成。
+          <code>catalog_only</code> -> <code>textbook_full_draft</code> -> <code>textbook_expanded_draft</code> -> <code>sample_candidate</code> -> <code>pilot_candidate</code> -> <code>pilot_ready</code> -> <code>sample_ready</code> -> <code>storyboard</code> -> <code>storyboard_expanded</code> -> <code>evidence_review_assets_pending</code> -> <code>evidence_review_pass</code> -> <code>pptx_trial_done</code>。
+          当前 18 周统一推进到 <code>storyboard_expanded</code>：表示 40 页主干源稿完成，不表示 PPTX 或视觉 QA 完成。
         </p>
       </div>
     </div>
@@ -74,7 +81,7 @@ const sampleCount = sampleChapters.length;
       <div class="section-title">
         <p class="section-label">Readable Samples</p>
         <h2>样章与候选样章</h2>
-        <p>样章来自当前样板周和 Week 13 试点候选章，适合后续归纳教案、生成 storyboard 和推进 PPT 试点。</p>
+        <p>样章来自当前样板周和 Week 13 试讲就绪章；所有章节已开放扩写稿和 40 页主干 storyboard，适合继续积累代码、样例、知识图谱和示意图。</p>
       </div>
       <div class="chapter-grid">
         {sampleChapters.map((chapter) => (
@@ -98,7 +105,7 @@ const sampleCount = sampleChapters.length;
       <div class="section-title">
         <p class="section-label">Chapter Map</p>
         <h2>18 章教材映射</h2>
-        <p>每章固定绑定一个周次，来源以周次三件套为准。点击样章可进入正文，其余章节停留在目录锚点。</p>
+        <p>每章固定绑定一个周次，来源以周次三件套、教材扩写稿和 40 页 storyboard 为准。18 章均可打开，样章仅表示审查深度更高。</p>
       </div>
       <div class="chapter-table-wrap">
         <table class="data-table chapter-table">
@@ -131,11 +138,7 @@ const sampleCount = sampleChapters.length;
                 <td><span class="status-pill">{chapter.reviewStatus}</span></td>
                 <td><span class="status-pill">{chapter.pptStatus}</span></td>
                 <td>
-                  {chapter.sample ? (
-                    <a class="text-link" href={withBase(chapter.page)}>打开样章</a>
-                  ) : (
-                    <span class="muted-text">目录占位</span>
-                  )}
+                  <a class="text-link" href={withBase(chapter.page)}>{chapter.sample ? '打开样章' : '打开初稿'}</a>
                 </td>
               </tr>
             ))}

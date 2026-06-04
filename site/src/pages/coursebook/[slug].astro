@@ -1,11 +1,22 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { coursebookChapters, sampleChapters } from '../../data/coursebook';
+import { existsSync, readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
+import {
+  coursebookChapters,
+  sampleChapters,
+  textbookAssetSources,
+  textbookChapterSource,
+  textbookStoryboardSource
+} from '../../data/coursebook';
 import { getWeekLabel } from '../../data/weeks';
 import { withBase } from '../../lib/paths';
+import { renderSimpleMarkdown } from '../../lib/simpleMarkdown';
+import { parseStoryboardRows, storyboardReviewMetrics } from '../../lib/storyboard';
 
 export function getStaticPaths() {
-  return sampleChapters.map((chapter) => ({
+  return coursebookChapters.map((chapter) => ({
     params: { slug: chapter.slug },
     props: { chapter }
   }));
@@ -13,19 +24,32 @@ export function getStaticPaths() {
 
 const { chapter } = Astro.props;
 const sample = chapter.sample;
-if (!sample) {
-  throw new Error(`Coursebook chapter ${chapter.slug} is not a readable sample.`);
-}
 const previousSample = sampleChapters.filter((item) => item.week < chapter.week).at(-1);
 const nextSample = sampleChapters.find((item) => item.week > chapter.week);
+const previousChapter = coursebookChapters.filter((item) => item.week < chapter.week).at(-1);
+const nextChapter = coursebookChapters.find((item) => item.week > chapter.week);
 const catalogPrevious = coursebookChapters.find((item) => item.week === chapter.week - 1);
 const catalogNext = coursebookChapters.find((item) => item.week === chapter.week + 1);
+const repoRoot = fileURLToPath(new URL('../../../../', import.meta.url));
+const chapterSource = chapter.chapterSource ?? textbookChapterSource(chapter.week);
+const assetSources = chapter.assetSources ?? textbookAssetSources(chapter.week);
+const storyboardSource = chapter.storyboardSource ?? textbookStoryboardSource(chapter.week);
+const storyboardPages = chapter.storyboardPages ?? 40;
+const chapterPath = resolve(repoRoot, chapterSource);
+const chapterMarkdown = existsSync(chapterPath)
+  ? readFileSync(chapterPath, 'utf-8')
+  : `# ${chapter.title}\n\n本章教材源稿尚未生成。`;
+const chapterHtml = renderSimpleMarkdown(chapterMarkdown);
+const storyboardPath = resolve(repoRoot, storyboardSource);
+const storyboardMarkdown = existsSync(storyboardPath) ? readFileSync(storyboardPath, 'utf-8') : '';
+const storyboardRows = parseStoryboardRows(storyboardMarkdown);
+const storyboardMetrics = storyboardReviewMetrics(storyboardRows);
 ---
 
-<BaseLayout title={`${getWeekLabel(chapter.week)} 教材样章`} description={chapter.summary}>
+<BaseLayout title={`${getWeekLabel(chapter.week)} 教材章节`} description={chapter.summary}>
   <section class="week-hero sample-hero">
     <div class="section-inner">
-      <p class="section-label">Coursebook Sample · {getWeekLabel(chapter.week)} · {chapter.phase}</p>
+      <p class="section-label">Coursebook · {getWeekLabel(chapter.week)} · {chapter.phase}</p>
       <h1>{chapter.title}</h1>
       <p>{chapter.summary}</p>
       <ul class="tag-list">
@@ -35,6 +59,77 @@ const catalogNext = coursebookChapters.find((item) => item.week === chapter.week
     </div>
   </section>
 
+  <section class="section">
+    <div class="section-inner split">
+      <article class="info-panel">
+        <h2>教材源稿</h2>
+        <p><strong>教材状态：</strong>{chapter.textbookStatus ?? 'expanded_draft'}</p>
+        <p><strong>PPT 状态：</strong>{chapter.pptStatus}</p>
+        <p><strong>源文件：</strong><code>{chapterSource}</code></p>
+        <p><strong>Storyboard：</strong><code>{storyboardSource}</code></p>
+        <p><strong>页数：</strong>{storyboardPages} 页主干源稿</p>
+      </article>
+      <article class="info-panel">
+        <h2>素材资产</h2>
+        <ul class="content-list source-list">
+          {assetSources.map((path) => <li><code>{path}</code></li>)}
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner">
+      <article class="info-panel textbook-body">
+        <h2>教材正文</h2>
+        <div class="markdown-body" set:html={chapterHtml} />
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Storyboard Review</p>
+        <h2>Storyboard 审核表</h2>
+        <p>
+          本表直接解析 <code>{storyboardSource}</code>。当前共 {storyboardMetrics.rowCount} 页，
+          学生动作 {storyboardMetrics.completeStudentActions}/40，时间预算 {storyboardMetrics.totalMinutes} min。
+          该表用于人工去模板化审查，不表示 PPTX 或视觉 QA 完成。
+        </p>
+      </div>
+      <div class="chapter-table-wrap">
+        <table class="data-table chapter-table review-table">
+          <thead>
+            <tr>
+              <th>页</th>
+              <th>模块</th>
+              <th>Action title</th>
+              <th>Student action</th>
+              <th>Timing</th>
+              <th>证据来源</th>
+              <th>风险边界</th>
+            </tr>
+          </thead>
+          <tbody>
+            {storyboardRows.map((row) => (
+              <tr>
+                <td>{row.slide}</td>
+                <td>{row.module}</td>
+                <td><strong>{row.actionTitle}</strong></td>
+                <td>{row.studentAction}</td>
+                <td>{row.timing}</td>
+                <td><code>{row.evidenceSourceNote}</code></td>
+                <td>{row.riskBoundaryNote}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  {sample && (
   <section class="section">
     <div class="section-inner split">
       <article class="info-panel">
@@ -51,7 +146,9 @@ const catalogNext = coursebookChapters.find((item) => item.week === chapter.week
       </article>
     </div>
   </section>
+  )}
 
+  {sample && (
   <section class="section alt">
     <div class="section-inner split">
       <article class="info-panel">
@@ -70,7 +167,9 @@ const catalogNext = coursebookChapters.find((item) => item.week === chapter.week
       </article>
     </div>
   </section>
+  )}
 
+  {sample && (
   <section class="section">
     <div class="section-inner">
       <div class="section-title">
@@ -87,7 +186,9 @@ const catalogNext = coursebookChapters.find((item) => item.week === chapter.week
       </div>
     </div>
   </section>
+  )}
 
+  {sample && (
   <section class="section alt">
     <div class="section-inner split">
       <article class="info-panel">
@@ -109,8 +210,9 @@ const catalogNext = coursebookChapters.find((item) => item.week === chapter.week
       </article>
     </div>
   </section>
+  )}
 
-  {sample.candidateChecks && (
+  {sample?.candidateChecks && (
     <section class="section">
       <div class="section-inner">
         <article class="info-panel">
@@ -142,10 +244,12 @@ const catalogNext = coursebookChapters.find((item) => item.week === chapter.week
       </article>
       <article class="info-panel">
         <h2>PPT storyboard 生成入口说明</h2>
-        <p>{sample.pptBridge.status}</p>
-        <p><strong>入口：</strong><code>{sample.pptBridge.entry}</code></p>
+        <p>本章已生成 40 页主干 storyboard 源稿，可用于后续 PPTX 裁剪、教师备课和教材同步精修；这不表示 PPTX、PNG 预览或 contact sheet QA 已完成。</p>
+        <p><strong>入口：</strong><code>{storyboardSource}</code></p>
         <ol class="content-list spaced-list">
-          {sample.pptBridge.nextActions.map((action) => <li>{action}</li>)}
+          <li>先围绕 storyboard 主干页继续核对案例、代码、图表和证据边界。</li>
+          <li>进入 PPTX 前应重新做 evidence review，并决定正式投屏页的裁剪范围。</li>
+          <li>不得由 40 页源稿完成自动推断 PPTX 完成。</li>
         </ol>
       </article>
     </div>
@@ -153,10 +257,16 @@ const catalogNext = coursebookChapters.find((item) => item.week === chapter.week
 
   <section class="section alt">
     <div class="section-inner">
-      <nav class="next-prev" aria-label="教材样章导航">
-        {previousSample ? <a href={withBase(previousSample.page)}>← {getWeekLabel(previousSample.week)} {previousSample.title}</a> : <a href={withBase('/coursebook')}>← 返回 Coursebook 目录</a>}
-        {nextSample ? <a href={withBase(nextSample.page)}>{getWeekLabel(nextSample.week)} {nextSample.title} →</a> : <a href={withBase('/coursebook')}>返回 Coursebook 目录 →</a>}
+      <nav class="next-prev" aria-label="教材章节导航">
+        {previousChapter ? <a href={withBase(previousChapter.page)}>← {getWeekLabel(previousChapter.week)} {previousChapter.title}</a> : <a href={withBase('/coursebook')}>← 返回 Coursebook 目录</a>}
+        {nextChapter ? <a href={withBase(nextChapter.page)}>{getWeekLabel(nextChapter.week)} {nextChapter.title} →</a> : <a href={withBase('/coursebook')}>返回 Coursebook 目录 →</a>}
       </nav>
+      {sample && (
+        <nav class="next-prev compact-nav" aria-label="教材样章导航">
+          {previousSample ? <a href={withBase(previousSample.page)}>上一样章：{getWeekLabel(previousSample.week)}</a> : <a href={withBase('/coursebook')}>样章目录</a>}
+          {nextSample ? <a href={withBase(nextSample.page)}>下一样章：{getWeekLabel(nextSample.week)}</a> : <a href={withBase('/coursebook')}>样章目录</a>}
+        </nav>
+      )}
       <nav class="next-prev compact-nav" aria-label="课程周次导航">
         {catalogPrevious ? <a href={withBase(`/weeks/${catalogPrevious.slug}`)}>课堂上一周：{getWeekLabel(catalogPrevious.week)}</a> : <a href={withBase('/weeks')}>课堂周次总览</a>}
         {catalogNext ? <a href={withBase(`/weeks/${catalogNext.slug}`)}>课堂下一周：{getWeekLabel(catalogNext.week)}</a> : <a href={withBase('/weeks')}>课堂周次总览</a>}

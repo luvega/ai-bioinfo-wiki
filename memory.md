@@ -124,26 +124,36 @@
 - Week 15 已完成 PPT storyboard、evidence review、SYSU 官方蓝模板 PPTX、PowerPoint COM PNG 导出和 contact sheet QA；PPT 产物保留在 `outputs/`，不进入 Git。
 - 本轮 Git 改动按四组审计：技能体系、18 周讲义扩写、Week 15 PPT 试点、项目说明/状态文档。
 
+### [2026-06-04] D-027 · 18 周教材扩写稿与 40 页 storyboard 审核基线
+
+- Week 01-18 均已生成 `course/weeks/week_XX/ppt_storyboard.md`，当前 `ppt_status: storyboard_expanded`。
+- Week 01-18 均已生成 `course/textbook/chapters/chapter_XX.md`，当前 `textbook_status: expanded_draft`。
+- `storyboard_expanded` 只表示 40 页主干源稿完成，不表示 PPTX、PNG、contact sheet 或视觉 QA 完成。
+- 下一阶段 Coursebook 用作人工精修审核入口，重点检查 `Student action`、`Timing`、教师讲解重复度、证据 note 具体性和去模板化质量。
+- Week 03/05/08/11/12/13/15/16/18 是 storyboard 去模板化重点精修周。
+
 ## 3. 当前状态
 
-- `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md`。
-- 样板周优先级：Week 03、Week 14、Week 15、Week 16 已进入可授课试点。
+- `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md` 和 40 页主干 `ppt_storyboard.md`。
+- `course/textbook/chapters/chapter_01.md` 到 `chapter_18.md` 已进入 `expanded_draft`，并与 40 页 storyboard 建立对应表。
+- 样板周优先级：Week 03、Week 14、Week 15、Week 16 已进入可授课试点；Week 13 已进入试讲就绪样章。
 - 课程质量 rubric 已新增，位置为 `course/evaluation/courseware_rubric.md`。
 - Week 03 已有 PPT 试点样稿生成脚本和真实 PNG 页面验证记录。
 - Week 01-18 的 `script.md` 均已达到 `formal_ready/full-lecture`；其中非样板周的 `materials.md` 与 `outline.md` 仍为 `draft`，不能据此直接进入 PPT。
 - Week 15 已有官方蓝模板 PPT 试点：storyboard 和 evidence review 入 Git，PPTX/PNG/contact sheet 输出保留在 `outputs/ppt/sysu_official_blue/week_15/`。
 - 项目本地 `skills/` 已新增 course workflow 入口；全局技能白名单记录在 `docs/skill_loading_manifest_2026-06-03.md`。
 - 新增维护目标：索引/断链/Week 11-15 对齐检查，以及样板周质量区块检查。
-- 暂不全量生成 18 周 PPT；先做 Week 03、Week 15、Week 16 三套试点。
+- 暂不批量生成 18 周 PPTX；当前 18 周仅推进到 40 页主干 storyboard 和教材扩写稿。
+- Coursebook 下一步作为人工精修审核台，重点处理 Student action、Timing、重复讲解、过短页和证据 note 泛化问题。
 
 ## 4. 下一步
 
 1. 维护 `course/weeks/_index.md`、`materials/markdown/_index.md` 和 `knowledge/*/_index.md`。
 2. 通过 `course_quality_check.py` 检查所有周次三件套和样板周必备区块。
 3. 保持三层状态语义：讲义深度、周次 `materials/outline` 状态、PPT 生产线状态分开判断。
-4. 以 Week 03 和 Week 15 PPT 试点为模板，后续再推进 Week 16 storyboard/PPT；本阶段不全量生成 18 周 PPT。
+4. 使用 Coursebook 审核视图逐周精修 40 页 storyboard，先处理 Week 03/05/08/11/12/13/15/16/18。
 5. 按 `course/evaluation/` 中的试评记录逐项处理 PPT 前置问题。
-6. 进入 PPT 试点前，先人工复核文字溢出、空页、乱码、页码、图表引用和讲稿备注。
+6. 进入 PPTX 试点前，先人工复核文字溢出、空页、乱码、页码、图表引用、学生动作和讲稿备注。
 
 ## 5. 不要做的事
 

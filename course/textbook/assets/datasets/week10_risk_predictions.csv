@@ -1,0 +1,6 @@
+patient_id,predicted_risk,observed_event
+P01,0.20,no
+P02,0.45,yes
+P03,0.62,yes
+P04,0.70,no
+P05,0.82,yes

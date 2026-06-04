@@ -5,29 +5,47 @@ chapters:
   - chapter: 1
     week: 1
     title: 课程导论与医药数据特征
-    page: /coursebook#week-01
+    page: /coursebook/week-01
+    chapter_source: course/textbook/chapters/chapter_01.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_01/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week01_glucose_contract.csv
+      - course/textbook/assets/code/week01_glucose_contract.py
+      - course/textbook/assets/diagrams/week01_evidence_chain.mmd
     source_week_files:
       - course/weeks/week_01/materials.md
       - course/weeks/week_01/outline.md
       - course/weeks/week_01/script.md
       - course/weeks/week_01/teaching_pack_v1.md
+      - course/weeks/week_01/ppt_storyboard.md
     knowledge_sources:
       - knowledge/concepts/医药数据特征.md
       - knowledge/concepts/工具分工_Python_R_Bash.md
       - knowledge/concepts/AI协作边界.md
     material_sources:
       - course/syllabus/课程教学讲稿-医药数据处理与可视化-36课时-AI前置调整版.md
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 2
     week: 2
     title: 数据分析流程、复现规范与人机协作规范
-    page: /coursebook#week-02
+    page: /coursebook/week-02
+    chapter_source: course/textbook/chapters/chapter_02.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_02/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week02_project_manifest.csv
+      - course/textbook/assets/code/week02_project_manifest.py
+      - course/textbook/assets/diagrams/week02_reproducible_workflow.mmd
     source_week_files:
       - course/weeks/week_02/materials.md
       - course/weeks/week_02/outline.md
       - course/weeks/week_02/script.md
       - course/weeks/week_02/teaching_pack_v1.md
+      - course/weeks/week_02/ppt_storyboard.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/concepts/AI协作边界.md
@@ -40,16 +58,25 @@ chapters:
       - materials/markdown/openwaterfoundation_learning/git/README.md
       - materials/markdown/openwaterfoundation_learning/windows_shell/README.md
       - materials/markdown/openwaterfoundation_learning/linux_shell/README.md
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 3
     week: 3
     title: AI 辅助编程与 Python 快速入门
     page: /coursebook/week-03
+    chapter_source: course/textbook/chapters/chapter_03.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_03/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week03_glucose_values.csv
+      - course/textbook/assets/code/week03_glucose_filter.py
+      - course/textbook/assets/diagrams/week03_python_audit_loop.mmd
     source_week_files:
       - course/weeks/week_03/materials.md
       - course/weeks/week_03/outline.md
       - course/weeks/week_03/script.md
+      - course/weeks/week_03/ppt_storyboard.md
     knowledge_sources:
       - knowledge/entities/Python.md
       - knowledge/entities/Biopython.md
@@ -60,17 +87,26 @@ chapters:
       - materials/markdown/openwaterfoundation_learning/git/README.md
       - materials/markdown/pdf_library_mineru/Pythonppt
       - materials/markdown/pdf_library_mineru/R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro
-    ppt_status: pptx_trial_done
+    ppt_status: storyboard_expanded
     review_status: sample_ready
   - chapter: 4
     week: 4
     title: R 基础语法、数据框操作与 AI 代码核验
-    page: /coursebook#week-04
+    page: /coursebook/week-04
+    chapter_source: course/textbook/chapters/chapter_04.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_04/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week04_marker_table.csv
+      - course/textbook/assets/code/week04_marker_summary.R
+      - course/textbook/assets/diagrams/week04_r_dataframe_layers.mmd
     source_week_files:
       - course/weeks/week_04/materials.md
       - course/weeks/week_04/outline.md
       - course/weeks/week_04/script.md
       - course/weeks/week_04/teaching_pack_v1.md
+      - course/weeks/week_04/ppt_storyboard.md
     knowledge_sources:
       - knowledge/entities/R.md
       - knowledge/entities/ggplot2.md
@@ -78,116 +114,179 @@ chapters:
     material_sources:
       - materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 5
     week: 5
-    title: 数据读取与整形
-    page: /coursebook#week-05
+    title: 数据读取与整理
+    page: /coursebook/week-05
+    chapter_source: course/textbook/chapters/chapter_05.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_05/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week05_raw_glucose_table.csv
+      - course/textbook/assets/code/week05_dictionary_check.py
+      - course/textbook/assets/diagrams/week05_table_reshape.mmd
     source_week_files:
       - course/weeks/week_05/materials.md
       - course/weeks/week_05/outline.md
       - course/weeks/week_05/script.md
       - course/weeks/week_05/teaching_pack_v1.md
+      - course/weeks/week_05/ppt_storyboard.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/sources/Starting_Data_Analytics_GenAI.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/aidd.course_index.md
       - materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 6
     week: 6
     title: 缺失值、异常值处理与分组汇总
-    page: /coursebook#week-06
+    page: /coursebook/week-06
+    chapter_source: course/textbook/chapters/chapter_06.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_06/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week06_cleaning_cases.csv
+      - course/textbook/assets/code/week06_cleaning_log.py
+      - course/textbook/assets/diagrams/week06_cleaning_decision.mmd
     source_week_files:
       - course/weeks/week_06/materials.md
       - course/weeks/week_06/outline.md
       - course/weeks/week_06/script.md
       - course/weeks/week_06/teaching_pack_v1.md
+      - course/weeks/week_06/ppt_storyboard.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/sources/Starting_Data_Analytics_GenAI.md
     material_sources:
       - materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 7
     week: 7
     title: 描述统计与分布可视化
-    page: /coursebook#week-07
+    page: /coursebook/week-07
+    chapter_source: course/textbook/chapters/chapter_07.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_07/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week07_concentration_distribution.csv
+      - course/textbook/assets/code/week07_descriptive_stats.py
+      - course/textbook/assets/diagrams/week07_distribution_reading.mmd
     source_week_files:
       - course/weeks/week_07/materials.md
       - course/weeks/week_07/outline.md
       - course/weeks/week_07/script.md
       - course/weeks/week_07/teaching_pack_v1.md
+      - course/weeks/week_07/ppt_storyboard.md
     knowledge_sources:
       - knowledge/entities/ggplot2.md
       - knowledge/sources/Starting_Data_Analytics_GenAI.md
     material_sources:
       - materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 8
     week: 8
     title: 统计推断基础
-    page: /coursebook#week-08
+    page: /coursebook/week-08
+    chapter_source: course/textbook/chapters/chapter_08.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_08/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week08_inference_result.csv
+      - course/textbook/assets/code/week08_inference_language.py
+      - course/textbook/assets/diagrams/week08_inference_boundary.mmd
     source_week_files:
       - course/weeks/week_08/materials.md
       - course/weeks/week_08/outline.md
       - course/weeks/week_08/script.md
       - course/weeks/week_08/teaching_pack_v1.md
+      - course/weeks/week_08/ppt_storyboard.md
     knowledge_sources:
       - knowledge/sources/ISLP.md
       - knowledge/sources/ISLR.md
     material_sources:
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 9
     week: 9
     title: 相关分析与线性回归
-    page: /coursebook#week-09
+    page: /coursebook/week-09
+    chapter_source: course/textbook/chapters/chapter_09.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_09/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week09_dose_response.csv
+      - course/textbook/assets/code/week09_regression_check.py
+      - course/textbook/assets/diagrams/week09_correlation_causation.mmd
     source_week_files:
       - course/weeks/week_09/materials.md
       - course/weeks/week_09/outline.md
       - course/weeks/week_09/script.md
       - course/weeks/week_09/teaching_pack_v1.md
+      - course/weeks/week_09/ppt_storyboard.md
     knowledge_sources:
       - knowledge/sources/ISLP.md
       - knowledge/sources/ISLR.md
     material_sources:
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 10
     week: 10
     title: 分类问题与逻辑回归
-    page: /coursebook#week-10
+    page: /coursebook/week-10
+    chapter_source: course/textbook/chapters/chapter_10.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_10/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week10_risk_predictions.csv
+      - course/textbook/assets/code/week10_confusion_matrix.py
+      - course/textbook/assets/diagrams/week10_threshold_tradeoff.mmd
     source_week_files:
       - course/weeks/week_10/materials.md
       - course/weeks/week_10/outline.md
       - course/weeks/week_10/script.md
       - course/weeks/week_10/teaching_pack_v1.md
+      - course/weeks/week_10/ppt_storyboard.md
     knowledge_sources:
       - knowledge/sources/ISLP.md
       - knowledge/sources/ISLR.md
     material_sources:
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 11
     week: 11
     title: 科研图表规范与 SCI 图表表达
-    page: /coursebook#week-11
+    page: /coursebook/week-11
+    chapter_source: course/textbook/chapters/chapter_11.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_11/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week11_figure_claims.csv
+      - course/textbook/assets/code/week11_caption_audit.py
+      - course/textbook/assets/diagrams/week11_figure_evidence.mmd
     source_week_files:
       - course/weeks/week_11/materials.md
       - course/weeks/week_11/outline.md
       - course/weeks/week_11/script.md
+      - course/weeks/week_11/ppt_storyboard.md
     knowledge_sources:
       - knowledge/entities/ggplot2.md
       - knowledge/sources/ISLR.md
@@ -198,16 +297,25 @@ chapters:
       - materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md
       - materials/markdown/sc_best_practices/scbp.course_index.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 12
     week: 12
     title: 高维数据与数学直觉
-    page: /coursebook#week-12
+    page: /coursebook/week-12
+    chapter_source: course/textbook/chapters/chapter_12.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_12/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week12_expression_matrix.csv
+      - course/textbook/assets/code/week12_standardize_matrix.py
+      - course/textbook/assets/diagrams/week12_matrix_bridge.mmd
     source_week_files:
       - course/weeks/week_12/materials.md
       - course/weeks/week_12/outline.md
       - course/weeks/week_12/script.md
+      - course/weeks/week_12/ppt_storyboard.md
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
@@ -217,12 +325,20 @@ chapters:
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
       - materials/markdown/aidd_bioinformatics/aidd.course_index.md
       - materials/markdown/sc_best_practices/scbp.course_index.md
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 13
     week: 13
     title: PCA、聚类与热图
     page: /coursebook/week-13
+    chapter_source: course/textbook/chapters/chapter_13.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_13/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week13_expression_matrix.csv
+      - course/textbook/assets/code/week13_high_dimensional_figures.py
+      - course/textbook/assets/diagrams/week13_high_dimensional_reading.mmd
     source_week_files:
       - course/weeks/week_13/materials.md
       - course/weeks/week_13/outline.md
@@ -244,12 +360,20 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
-    ppt_status: storyboard_reviewed
+    ppt_status: storyboard_expanded
     review_status: pilot_ready
   - chapter: 14
     week: 14
     title: 转录组数据分析基础
     page: /coursebook/week-14
+    chapter_source: course/textbook/chapters/chapter_14.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_14/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week14_count_matrix.csv
+      - course/textbook/assets/code/week14_count_matrix_qc.py
+      - course/textbook/assets/diagrams/week14_rnaseq_pipeline.mmd
     source_week_files:
       - course/weeks/week_14/materials.md
       - course/weeks/week_14/outline.md
@@ -268,12 +392,20 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/chapter.source.md
       - materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
-    ppt_status: storyboard
+    ppt_status: storyboard_expanded
     review_status: evidence_review_pass
   - chapter: 15
     week: 15
     title: 差异表达分析与功能解读
     page: /coursebook/week-15
+    chapter_source: course/textbook/chapters/chapter_15.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_15/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week15_deseq2_results.csv
+      - course/textbook/assets/code/week15_de_filter.py
+      - course/textbook/assets/diagrams/week15_de_interpretation.mmd
     source_week_files:
       - course/weeks/week_15/materials.md
       - course/weeks/week_15/outline.md
@@ -292,12 +424,20 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.source.md
       - materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
-    ppt_status: storyboard_reviewed_and_pptx_trial_done
+    ppt_status: storyboard_expanded
     review_status: evidence_review_pass
   - chapter: 16
     week: 16
     title: 单细胞转录组可视化
     page: /coursebook/week-16
+    chapter_source: course/textbook/chapters/chapter_16.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_16/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week16_single_cell_figures.csv
+      - course/textbook/assets/code/week16_single_cell_audit.py
+      - course/textbook/assets/diagrams/week16_single_cell_spatial.mmd
     source_week_files:
       - course/weeks/week_16/materials.md
       - course/weeks/week_16/outline.md
@@ -316,17 +456,26 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/chapter.source.md
       - materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
-    ppt_status: storyboard
+    ppt_status: storyboard_expanded
     review_status: evidence_review_pass
   - chapter: 17
     week: 17
     title: 综合项目工作坊：AI 协作分析与结果核验
-    page: /coursebook#week-17
+    page: /coursebook/week-17
+    chapter_source: course/textbook/chapters/chapter_17.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_17/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week17_project_package_check.csv
+      - course/textbook/assets/code/week17_project_package_audit.py
+      - course/textbook/assets/diagrams/week17_project_workflow.mmd
     source_week_files:
       - course/weeks/week_17/materials.md
       - course/weeks/week_17/outline.md
       - course/weeks/week_17/script.md
       - course/weeks/week_17/teaching_pack_v1.md
+      - course/weeks/week_17/ppt_storyboard.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/entities/GitHub.md
@@ -343,17 +492,26 @@ chapters:
       - course/templates/ai_use_statement_template.md
       - course/templates/ppt_storyboard_template.md
       - course/evaluation/student_project_rubric.md
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate
   - chapter: 18
     week: 18
     title: 综合项目汇报与课程总结
-    page: /coursebook#week-18
+    page: /coursebook/week-18
+    chapter_source: course/textbook/chapters/chapter_18.md
+    textbook_status: expanded_draft
+    storyboard_source: course/weeks/week_18/ppt_storyboard.md
+    storyboard_pages: 40
+    asset_sources:
+      - course/textbook/assets/datasets/week18_presentation_rubric.csv
+      - course/textbook/assets/code/week18_rubric_summary.py
+      - course/textbook/assets/diagrams/week18_course_closure.mmd
     source_week_files:
       - course/weeks/week_18/materials.md
       - course/weeks/week_18/outline.md
       - course/weeks/week_18/script.md
       - course/weeks/week_18/teaching_pack_v1.md
+      - course/weeks/week_18/ppt_storyboard.md
     knowledge_sources:
       - knowledge/concepts/AI协作边界.md
       - knowledge/entities/GitHub.md
@@ -364,5 +522,5 @@ chapters:
       - course/templates/ai_use_statement_template.md
       - course/templates/ppt_storyboard_template.md
       - course/evaluation/student_project_rubric.md
-    ppt_status: not_started
+    ppt_status: storyboard_expanded
     review_status: pilot_candidate

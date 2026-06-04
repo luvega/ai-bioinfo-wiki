@@ -73,7 +73,7 @@ export const weeks: Week[] = [
   {
     week: 5,
     slug: 'week-05',
-    title: '数据读取与整形',
+    title: '数据读取与整理',
     phase: '编程、清洗、统计与图表',
     keywords: ['CSV', 'Excel', '长宽表', '数据类型'],
     question: '如何把原始文件整理成适合统计和绘图的分析表？',

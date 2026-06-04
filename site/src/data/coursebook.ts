@@ -1,4 +1,4 @@
-export type CoursebookStatus = '目录占位' | '样章候选' | '试点候选' | '样章可读';
+export type CoursebookStatus = '目录占位' | '样章候选' | '试点候选' | '样章可读' | '全书初稿' | '教材扩写稿';
 
 export type CoursebookSample = {
   introQuestion: string;
@@ -36,6 +36,11 @@ export type CoursebookChapter = {
   status: CoursebookStatus;
   reviewStatus: string;
   pptStatus: string;
+  textbookStatus?: string;
+  chapterSource?: string;
+  assetSources?: string[];
+  storyboardSource?: string;
+  storyboardPages?: number;
   sourceWeekFiles: string[];
   knowledgeSources: string[];
   materialSources: string[];
@@ -50,28 +55,62 @@ const baseWeekFiles = (week: number) => [
   `course/weeks/week_${String(week).padStart(2, '0')}/script.md`
 ];
 
+export const textbookChapterSource = (week: number) =>
+  `course/textbook/chapters/chapter_${String(week).padStart(2, '0')}.md`;
+
+export const textbookStoryboardSource = (week: number) =>
+  `course/weeks/week_${String(week).padStart(2, '0')}/ppt_storyboard.md`;
+
+export const textbookAssetSources = (week: number) => {
+  const prefix = `course/textbook/assets`;
+  const assetMap: Record<number, string[]> = {
+    1: ['datasets/week01_glucose_contract.csv', 'code/week01_glucose_contract.py', 'diagrams/week01_evidence_chain.mmd'],
+    2: ['datasets/week02_project_manifest.csv', 'code/week02_project_manifest.py', 'diagrams/week02_reproducible_workflow.mmd'],
+    3: ['datasets/week03_glucose_values.csv', 'code/week03_glucose_filter.py', 'diagrams/week03_python_audit_loop.mmd'],
+    4: ['datasets/week04_marker_table.csv', 'code/week04_marker_summary.R', 'diagrams/week04_r_dataframe_layers.mmd'],
+    5: ['datasets/week05_raw_glucose_table.csv', 'code/week05_dictionary_check.py', 'diagrams/week05_table_reshape.mmd'],
+    6: ['datasets/week06_cleaning_cases.csv', 'code/week06_cleaning_log.py', 'diagrams/week06_cleaning_decision.mmd'],
+    7: ['datasets/week07_concentration_distribution.csv', 'code/week07_descriptive_stats.py', 'diagrams/week07_distribution_reading.mmd'],
+    8: ['datasets/week08_inference_result.csv', 'code/week08_inference_language.py', 'diagrams/week08_inference_boundary.mmd'],
+    9: ['datasets/week09_dose_response.csv', 'code/week09_regression_check.py', 'diagrams/week09_correlation_causation.mmd'],
+    10: ['datasets/week10_risk_predictions.csv', 'code/week10_confusion_matrix.py', 'diagrams/week10_threshold_tradeoff.mmd'],
+    11: ['datasets/week11_figure_claims.csv', 'code/week11_caption_audit.py', 'diagrams/week11_figure_evidence.mmd'],
+    12: ['datasets/week12_expression_matrix.csv', 'code/week12_standardize_matrix.py', 'diagrams/week12_matrix_bridge.mmd'],
+    13: ['datasets/week13_expression_matrix.csv', 'code/week13_high_dimensional_figures.py', 'diagrams/week13_high_dimensional_reading.mmd'],
+    14: ['datasets/week14_count_matrix.csv', 'code/week14_count_matrix_qc.py', 'diagrams/week14_rnaseq_pipeline.mmd'],
+    15: ['datasets/week15_deseq2_results.csv', 'code/week15_de_filter.py', 'diagrams/week15_de_interpretation.mmd'],
+    16: ['datasets/week16_single_cell_figures.csv', 'code/week16_single_cell_audit.py', 'diagrams/week16_single_cell_spatial.mmd'],
+    17: ['datasets/week17_project_package_check.csv', 'code/week17_project_package_audit.py', 'diagrams/week17_project_workflow.mmd'],
+    18: ['datasets/week18_presentation_rubric.csv', 'code/week18_rubric_summary.py', 'diagrams/week18_course_closure.mmd']
+  };
+  return (assetMap[week] ?? []).map((path) => `${prefix}/${path}`);
+};
+
 export const coursebookStatusPipeline = [
   'catalog_only',
+  'textbook_full_draft',
+  'textbook_expanded_draft',
   'sample_candidate',
   'pilot_candidate',
   'pilot_ready',
   'sample_ready',
   'storyboard',
+  'storyboard_expanded',
   'evidence_review_assets_pending',
   'evidence_review_pass',
   'pptx_trial_done'
 ];
 
-export const coursebookChapters: CoursebookChapter[] = [
+const rawCoursebookChapters: CoursebookChapter[] = [
   {
     chapter: 1,
     week: 1,
     slug: 'week-01',
     title: '课程导论与医药数据特征',
-    page: '/coursebook#week-01',
+    page: '/coursebook/week-01',
     phase: 'AI 边界、流程与复现',
     summary: '建立医药问题、数据结构、工具分工和 AI 协作边界的课程地图。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(1), 'course/weeks/week_01/teaching_pack_v1.md'],
@@ -85,10 +124,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 2,
     slug: 'week-02',
     title: '数据分析流程、复现规范与人机协作规范',
-    page: '/coursebook#week-02',
+    page: '/coursebook/week-02',
     phase: 'AI 边界、流程与复现',
     summary: '把课程项目拆成原始数据、处理脚本、结果、报告和 AI 协作记录。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(2), 'course/weeks/week_02/teaching_pack_v1.md'],
@@ -154,10 +193,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 4,
     slug: 'week-04',
     title: 'R 基础语法、数据框操作与 AI 代码核验',
-    page: '/coursebook#week-04',
+    page: '/coursebook/week-04',
     phase: '编程、清洗、统计与图表',
     summary: '把 Python 数据结构直觉迁移到 R 的向量、数据框、因子和 ggplot2 图层。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(4), 'course/weeks/week_04/teaching_pack_v1.md'],
@@ -170,11 +209,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     chapter: 5,
     week: 5,
     slug: 'week-05',
-    title: '数据读取与整形',
-    page: '/coursebook#week-05',
+    title: '数据读取与整理',
+    page: '/coursebook/week-05',
     phase: '编程、清洗、统计与图表',
     summary: '从 CSV、Excel、TSV 和字段说明进入可分析表，强调长宽表和数据字典。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(5), 'course/weeks/week_05/teaching_pack_v1.md'],
@@ -188,10 +227,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 6,
     slug: 'week-06',
     title: '缺失值、异常值处理与分组汇总',
-    page: '/coursebook#week-06',
+    page: '/coursebook/week-06',
     phase: '编程、清洗、统计与图表',
     summary: '把缺失、异常和重复识别写成可追溯清洗规则和分组汇总表。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(6), 'course/weeks/week_06/teaching_pack_v1.md'],
@@ -205,10 +244,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 7,
     slug: 'week-07',
     title: '描述统计与分布可视化',
-    page: '/coursebook#week-07',
+    page: '/coursebook/week-07',
     phase: '编程、清洗、统计与图表',
     summary: '用统计量和图形共同描述数据分布，避免只报告一个均值。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(7), 'course/weeks/week_07/teaching_pack_v1.md'],
@@ -222,10 +261,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 8,
     slug: 'week-08',
     title: '统计推断基础',
-    page: '/coursebook#week-08',
+    page: '/coursebook/week-08',
     phase: '编程、清洗、统计与图表',
     summary: '用样本、总体、不确定性、置信区间和 P 值解释统计推断边界。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(8), 'course/weeks/week_08/teaching_pack_v1.md'],
@@ -239,10 +278,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 9,
     slug: 'week-09',
     title: '相关分析与线性回归',
-    page: '/coursebook#week-09',
+    page: '/coursebook/week-09',
     phase: '编程、清洗、统计与图表',
     summary: '用散点图、相关系数、回归系数和残差训练变量关系解释边界。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(9), 'course/weeks/week_09/teaching_pack_v1.md'],
@@ -256,10 +295,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 10,
     slug: 'week-10',
     title: '分类问题与逻辑回归',
-    page: '/coursebook#week-10',
+    page: '/coursebook/week-10',
     phase: '编程、清洗、统计与图表',
     summary: '把二分类结局、概率、阈值和混淆矩阵转成克制的模型解释。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(10), 'course/weeks/week_10/teaching_pack_v1.md'],
@@ -273,10 +312,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 11,
     slug: 'week-11',
     title: '科研图表规范与 SCI 图表表达',
-    page: '/coursebook#week-11',
+    page: '/coursebook/week-11',
     phase: '编程、清洗、统计与图表',
     summary: '用数据来源、视觉编码、统计标注和结论边界四层阅读科研图表，并训练 AI 图注改写的证据边界。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: baseWeekFiles(11),
@@ -290,10 +329,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 12,
     slug: 'week-12',
     title: '高维数据与数学直觉',
-    page: '/coursebook#week-12',
+    page: '/coursebook/week-12',
     phase: '高维、组学与综合项目',
     summary: '把临床表格桥接到样本 x 指标矩阵、表达矩阵、PCA、聚类和热图，建立 Week 13 的高维图形入口。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: baseWeekFiles(12),
@@ -518,10 +557,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 17,
     slug: 'week-17',
     title: '综合项目工作坊：AI 协作分析与结果核验',
-    page: '/coursebook#week-17',
+    page: '/coursebook/week-17',
     phase: '高维、组学与综合项目',
     summary: '把项目整理成 README、素材溯源、AI 使用声明、PPT storyboard、可解释图表和证据边界自查包。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(17), 'course/weeks/week_17/teaching_pack_v1.md'],
@@ -535,10 +574,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     week: 18,
     slug: 'week-18',
     title: '综合项目汇报与课程总结',
-    page: '/coursebook#week-18',
+    page: '/coursebook/week-18',
     phase: '高维、组学与综合项目',
     summary: '用统一 rubric 检查数据来源、图表表达、证据边界、AI 使用和可复现记录，完成项目汇报。',
-    status: '试点候选',
+    status: '全书初稿',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: [...baseWeekFiles(18), 'course/weeks/week_18/teaching_pack_v1.md'],
@@ -548,6 +587,24 @@ export const coursebookChapters: CoursebookChapter[] = [
     badges: ['汇报验收', '试讲包 v1']
   }
 ];
+
+export const coursebookChapters: CoursebookChapter[] = rawCoursebookChapters.map((chapter) => {
+  const storyboardSource = textbookStoryboardSource(chapter.week);
+  const sourceWeekFiles = Array.from(new Set([...chapter.sourceWeekFiles, storyboardSource]));
+  const badges = Array.from(new Set([...(chapter.badges ?? []), '40 页主干 storyboard']));
+  return {
+    ...chapter,
+    status: '教材扩写稿',
+    pptStatus: 'storyboard_expanded',
+    textbookStatus: 'expanded_draft',
+    chapterSource: chapter.chapterSource ?? textbookChapterSource(chapter.week),
+    assetSources: chapter.assetSources ?? textbookAssetSources(chapter.week),
+    storyboardSource,
+    storyboardPages: 40,
+    sourceWeekFiles,
+    badges
+  };
+});
 
 export const sampleChapters = coursebookChapters.filter((chapter) => chapter.sample);
 

@@ -1,0 +1,127 @@
+source,relation,target,note
+Week 01,maps_to,Chapter 01,课程导论与医药数据特征
+Chapter 01,uses_dataset,Dataset 01,week01_glucose_contract.csv
+Chapter 01,uses_code,Code 01,week01_glucose_contract.py
+Chapter 01,uses_diagram,Diagram 01,week01_evidence_chain.mmd
+Chapter 01,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 01,teaches,医药数据,core concept
+Chapter 01,teaches,证据边界,core concept
+Week 02,maps_to,Chapter 02,数据分析流程、复现规范与人机协作规范
+Chapter 02,uses_dataset,Dataset 02,week02_project_manifest.csv
+Chapter 02,uses_code,Code 02,week02_project_manifest.py
+Chapter 02,uses_diagram,Diagram 02,week02_reproducible_workflow.mmd
+Chapter 02,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 02,teaches,可复现,core concept
+Chapter 02,teaches,项目目录,core concept
+Week 03,maps_to,Chapter 03,AI 辅助编程与 Python 快速入门
+Chapter 03,uses_dataset,Dataset 03,week03_glucose_values.csv
+Chapter 03,uses_code,Code 03,week03_glucose_filter.py
+Chapter 03,uses_diagram,Diagram 03,week03_python_audit_loop.mmd
+Chapter 03,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 03,teaches,变量,core concept
+Chapter 03,teaches,列表,core concept
+Week 04,maps_to,Chapter 04,R 基础语法、数据框操作与 AI 代码核验
+Chapter 04,uses_dataset,Dataset 04,week04_marker_table.csv
+Chapter 04,uses_code,Code 04,week04_marker_summary.R
+Chapter 04,uses_diagram,Diagram 04,week04_r_dataframe_layers.mmd
+Chapter 04,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 04,teaches,data.frame,core concept
+Chapter 04,teaches,factor,core concept
+Week 05,maps_to,Chapter 05,数据读取与整理
+Chapter 05,uses_dataset,Dataset 05,week05_raw_glucose_table.csv
+Chapter 05,uses_code,Code 05,week05_dictionary_check.py
+Chapter 05,uses_diagram,Diagram 05,week05_table_reshape.mmd
+Chapter 05,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 05,teaches,原始表,core concept
+Chapter 05,teaches,数据字典,core concept
+Week 06,maps_to,Chapter 06,缺失值、异常值处理与分组汇总
+Chapter 06,uses_dataset,Dataset 06,week06_cleaning_cases.csv
+Chapter 06,uses_code,Code 06,week06_cleaning_log.py
+Chapter 06,uses_diagram,Diagram 06,week06_cleaning_decision.mmd
+Chapter 06,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 06,teaches,缺失值,core concept
+Chapter 06,teaches,异常值,core concept
+Week 07,maps_to,Chapter 07,描述统计与分布可视化
+Chapter 07,uses_dataset,Dataset 07,week07_concentration_distribution.csv
+Chapter 07,uses_code,Code 07,week07_descriptive_stats.py
+Chapter 07,uses_diagram,Diagram 07,week07_distribution_reading.mmd
+Chapter 07,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 07,teaches,中心趋势,core concept
+Chapter 07,teaches,离散程度,core concept
+Week 08,maps_to,Chapter 08,统计推断基础
+Chapter 08,uses_dataset,Dataset 08,week08_inference_result.csv
+Chapter 08,uses_code,Code 08,week08_inference_language.py
+Chapter 08,uses_diagram,Diagram 08,week08_inference_boundary.mmd
+Chapter 08,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 08,teaches,总体,core concept
+Chapter 08,teaches,置信区间,core concept
+Week 09,maps_to,Chapter 09,相关分析与线性回归
+Chapter 09,uses_dataset,Dataset 09,week09_dose_response.csv
+Chapter 09,uses_code,Code 09,week09_regression_check.py
+Chapter 09,uses_diagram,Diagram 09,week09_correlation_causation.mmd
+Chapter 09,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 09,teaches,相关系数,core concept
+Chapter 09,teaches,回归系数,core concept
+Week 10,maps_to,Chapter 10,分类问题与逻辑回归
+Chapter 10,uses_dataset,Dataset 10,week10_risk_predictions.csv
+Chapter 10,uses_code,Code 10,week10_confusion_matrix.py
+Chapter 10,uses_diagram,Diagram 10,week10_threshold_tradeoff.mmd
+Chapter 10,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 10,teaches,逻辑回归,core concept
+Chapter 10,teaches,阈值,core concept
+Week 11,maps_to,Chapter 11,科研图表规范与 SCI 图表表达
+Chapter 11,uses_dataset,Dataset 11,week11_figure_claims.csv
+Chapter 11,uses_code,Code 11,week11_caption_audit.py
+Chapter 11,uses_diagram,Diagram 11,week11_figure_evidence.mmd
+Chapter 11,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 11,teaches,视觉编码,core concept
+Chapter 11,teaches,图注,core concept
+Week 12,maps_to,Chapter 12,高维数据与数学直觉
+Chapter 12,uses_dataset,Dataset 12,week12_expression_matrix.csv
+Chapter 12,uses_code,Code 12,week12_standardize_matrix.py
+Chapter 12,uses_diagram,Diagram 12,week12_matrix_bridge.mmd
+Chapter 12,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 12,teaches,矩阵,core concept
+Chapter 12,teaches,标准化,core concept
+Week 13,maps_to,Chapter 13,PCA、聚类与热图
+Chapter 13,uses_dataset,Dataset 13,week13_expression_matrix.csv
+Chapter 13,uses_code,Code 13,week13_high_dimensional_figures.py
+Chapter 13,uses_diagram,Diagram 13,week13_high_dimensional_reading.mmd
+Chapter 13,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 13,teaches,PCA,core concept
+Chapter 13,teaches,聚类,core concept
+Week 14,maps_to,Chapter 14,转录组数据分析基础
+Chapter 14,uses_dataset,Dataset 14,week14_count_matrix.csv
+Chapter 14,uses_code,Code 14,week14_count_matrix_qc.py
+Chapter 14,uses_diagram,Diagram 14,week14_rnaseq_pipeline.mmd
+Chapter 14,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 14,teaches,FASTQ,core concept
+Chapter 14,teaches,count matrix,core concept
+Week 15,maps_to,Chapter 15,差异表达分析与功能解读
+Chapter 15,uses_dataset,Dataset 15,week15_deseq2_results.csv
+Chapter 15,uses_code,Code 15,week15_de_filter.py
+Chapter 15,uses_diagram,Diagram 15,week15_de_interpretation.mmd
+Chapter 15,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 15,teaches,log2FoldChange,core concept
+Chapter 15,teaches,pvalue,core concept
+Week 16,maps_to,Chapter 16,单细胞转录组可视化
+Chapter 16,uses_dataset,Dataset 16,week16_single_cell_figures.csv
+Chapter 16,uses_code,Code 16,week16_single_cell_audit.py
+Chapter 16,uses_diagram,Diagram 16,week16_single_cell_spatial.mmd
+Chapter 16,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 16,teaches,cell x gene matrix,core concept
+Chapter 16,teaches,QC 指标,core concept
+Week 17,maps_to,Chapter 17,综合项目工作坊：AI 协作分析与结果核验
+Chapter 17,uses_dataset,Dataset 17,week17_project_package_check.csv
+Chapter 17,uses_code,Code 17,week17_project_package_audit.py
+Chapter 17,uses_diagram,Diagram 17,week17_project_workflow.mmd
+Chapter 17,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 17,teaches,README,core concept
+Chapter 17,teaches,data_sources,core concept
+Week 18,maps_to,Chapter 18,综合项目汇报与课程总结
+Chapter 18,uses_dataset,Dataset 18,week18_presentation_rubric.csv
+Chapter 18,uses_code,Code 18,week18_rubric_summary.py
+Chapter 18,uses_diagram,Diagram 18,week18_course_closure.mmd
+Chapter 18,checks,AI 协作边界,AI assists but does not replace evidence review
+Chapter 18,teaches,rubric,core concept
+Chapter 18,teaches,答辩记录,core concept

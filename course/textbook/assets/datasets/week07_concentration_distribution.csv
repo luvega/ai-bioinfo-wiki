@@ -1,0 +1,7 @@
+sample_id,group,concentration
+S01,Control,1.2
+S02,Control,1.5
+S03,Control,4.8
+S04,Drug,2.0
+S05,Drug,2.2
+S06,Drug,2.4

@@ -1,0 +1,14 @@
+flowchart LR
+    accTitle: Week 15 差异表达分析与功能解读
+    accDescr: count matrix -> DE 结果 -> 图表 -> 功能候选 -> 核验。
+    n1["count matrix"]
+    n2["DE 结果"]
+    n3["图表"]
+    n4["功能候选"]
+    n5["核验"]
+    n1 --> n2
+    n2 --> n3
+    n3 --> n4
+    n4 --> n5
+    ai["AI 审计"] -.-> n1
+    boundary["证据边界"] -.-> n5

@@ -1,0 +1,14 @@
+flowchart LR
+    accTitle: Week 14 转录组数据分析基础
+    accDescr: FASTQ -> QC -> alignment/counting -> count matrix -> metadata。
+    n1["FASTQ"]
+    n2["QC"]
+    n3["alignment/counting"]
+    n4["count matrix"]
+    n5["metadata"]
+    n1 --> n2
+    n2 --> n3
+    n3 --> n4
+    n4 --> n5
+    ai["AI 审计"] -.-> n1
+    boundary["证据边界"] -.-> n5

@@ -1,0 +1,5 @@
+ID,Group,Glu_pre,Glu_post,Unit
+P01,Ctrl,8.1,8.0,mmol/L
+P02,Ctrl,7.5,7.7,mmol/L
+P03,Drug,8.4,6.9,mmol/L
+P04,Drug,9.1,7.2,mmol/L
