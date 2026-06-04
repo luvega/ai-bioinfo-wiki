@@ -1,4 +1,4 @@
-export type CoursebookStatus = '目录占位' | '样章可读';
+export type CoursebookStatus = '目录占位' | '样章候选' | '样章可读';
 
 export type CoursebookSample = {
   introQuestion: string;
@@ -289,10 +289,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     page: '/coursebook/week-13',
     phase: '高维、组学与综合项目',
     summary: '把 PCA、聚类、热图和 UMAP 作为高维探索图形，区分 bulk、single-cell、spatial 的观测单位和误读风险。',
-    status: '样章可读',
+    status: '样章候选',
     reviewStatus: 'sample_candidate',
-    pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(13),
+    pptStatus: 'storyboard',
+    sourceWeekFiles: [...baseWeekFiles(13), 'course/weeks/week_13/ppt_storyboard.md'],
     knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python'],
     coursebookTopics: ['PCA', '聚类', '热图', '现代组学拓展'],
@@ -328,9 +328,9 @@ export const coursebookChapters: CoursebookChapter[] = [
       },
       verificationPoints: ['教学矩阵和示意图必须标注为课堂模拟。', 'SCBP/OSCA/OSTA 只作为现代组学拓展来源，不作为学生必跑流程。', 'UMAP、cluster、marker 和 spatial domain 解释必须保留候选状态。', '任何图形分离都不能直接写成疾病机制、药效机制或临床建议。'],
       pptBridge: {
-        status: 'Week 13 当前为在线教材样章候选；尚未生成 storyboard、PPTX 或 PNG/contact sheet QA。',
-        entry: 'course/weeks/week_13/outline.md',
-        nextActions: ['补充可公开展示的教学矩阵和高维图形示意。', '完成 Week 13 storyboard 草案。', '对 PCA/cluster/UMAP 解释做 evidence review 后再决定是否生成 PPTX。']
+        status: 'Week 13 当前为在线教材样章候选，已生成 storyboard；尚未完成 evidence review、PPTX 或 PNG/contact sheet QA。',
+        entry: 'course/weeks/week_13/ppt_storyboard.md',
+        nextActions: ['补充可公开展示的教学矩阵和高维图形示意。', '对 PCA/cluster/UMAP 解释做 evidence review。', '通过后再决定是否生成 PPTX。']
       }
     }
   },
@@ -343,7 +343,7 @@ export const coursebookChapters: CoursebookChapter[] = [
     phase: '高维、组学与综合项目',
     summary: '解释 RNA-seq 从 FASTQ 到 count matrix 的链条，并用 SCBP/OSCA/OSTA 对照现代组学数据结构。',
     status: '样章可读',
-    reviewStatus: 'evidence_review_pending',
+    reviewStatus: 'evidence_review_assets_pending',
     pptStatus: 'storyboard',
     sourceWeekFiles: [...baseWeekFiles(14), 'course/weeks/week_14/ppt_storyboard.md'],
     knowledgeSources: ['knowledge/concepts/RNA-seq上游流程.md', 'knowledge/concepts/差异表达分析.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
@@ -380,9 +380,9 @@ export const coursebookChapters: CoursebookChapter[] = [
       },
       verificationPoints: ['上游流程图中的软件名和文件格式进入 PPT 前需回查。', 'SCBP/OSCA/OSTA 图形或 workflow 只作为结构对照，进入 PPT 前需核来源和授权。', 'count matrix 示例必须和 metadata 样本名严格对齐。', '总 counts 计算要能现场复核。'],
       pptBridge: {
-        status: 'Week 14 已生成 storyboard，等待 evidence review；尚未生成 PPTX 或 PNG/contact sheet QA。',
+        status: 'Week 14 已完成 storyboard evidence review，仍需核对可公开展示素材；尚未生成 PPTX 或 PNG/contact sheet QA。',
         entry: 'course/weeks/week_14/ppt_storyboard.md',
-        nextActions: ['核对 AIDD 上游流程中的命令名、软件名和文件格式。', '完成 storyboard evidence review。', '通过后再决定是否进入 SYSU 蓝模板 PPTX 生成。']
+        nextActions: ['核对 AIDD 上游流程中的命令名、软件名和文件格式。', '补齐可公开展示图表或教学模拟图。', '素材核验通过后再决定是否进入 SYSU 蓝模板 PPTX 生成。']
       }
     }
   },
@@ -448,7 +448,7 @@ export const coursebookChapters: CoursebookChapter[] = [
     phase: '高维、组学与综合项目',
     summary: '用 QC、UMAP、cluster、marker 和空间组学图训练现代组学可视化解读和参数敏感性意识。',
     status: '样章可读',
-    reviewStatus: 'evidence_review_pending',
+    reviewStatus: 'evidence_review_assets_pending',
     pptStatus: 'storyboard',
     sourceWeekFiles: [...baseWeekFiles(16), 'course/weeks/week_16/ppt_storyboard.md'],
     knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
@@ -485,9 +485,9 @@ export const coursebookChapters: CoursebookChapter[] = [
       },
       verificationPoints: ['公开展示图需确认数据来源和授权。', 'UMAP 距离、cluster 含义、marker 注释和 spatial domain 需避免过度解释。', 'SCBP/OSCA/OSTA workflow 不作为学生必跑任务。', '参数敏感性必须在讲稿和后续 storyboard 中明示。'],
       pptBridge: {
-        status: 'Week 16 已生成 storyboard，等待 evidence review；尚未生成 PPTX 或 PNG/contact sheet QA。',
+        status: 'Week 16 已完成 storyboard evidence review，仍需核对可公开展示素材；尚未生成 PPTX 或 PNG/contact sheet QA。',
         entry: 'course/weeks/week_16/ppt_storyboard.md',
-        nextActions: ['准备可公开展示的 QC/UMAP/marker 示例图并核授权。', '完成 storyboard evidence review。', '通过后再进入 PPTX 生成。']
+        nextActions: ['准备可公开展示的 QC/UMAP/marker 示例图并核授权。', '补齐参数敏感性说明对应图例。', '素材核验通过后再进入 PPTX 生成。']
       }
     }
   },

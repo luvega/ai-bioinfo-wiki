@@ -182,8 +182,13 @@ chapters:
     knowledge_sources:
       - knowledge/entities/ggplot2.md
       - knowledge/sources/ISLR.md
+      - knowledge/sources/Single_Cell_Best_Practices.md
+      - knowledge/sources/OSCA.md
+      - knowledge/sources/OSTA.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md
+      - materials/markdown/sc_best_practices/scbp.course_index.md
+      - materials/markdown/bioconductor_books/workflow_case_catalog.md
     ppt_status: not_started
     review_status: catalog_only
   - chapter: 12
@@ -197,8 +202,12 @@ chapters:
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
+      - knowledge/sources/Single_Cell_Best_Practices.md
+      - knowledge/sources/OSCA.md
     material_sources:
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
+      - materials/markdown/aidd_bioinformatics/aidd.course_index.md
+      - materials/markdown/sc_best_practices/scbp.course_index.md
     ppt_status: not_started
     review_status: catalog_only
   - chapter: 13
@@ -209,6 +218,7 @@ chapters:
       - course/weeks/week_13/materials.md
       - course/weeks/week_13/outline.md
       - course/weeks/week_13/script.md
+      - course/weeks/week_13/ppt_storyboard.md
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
@@ -222,7 +232,7 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
-    ppt_status: not_started
+    ppt_status: storyboard
     review_status: sample_candidate
   - chapter: 14
     week: 14
@@ -247,7 +257,7 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
     ppt_status: storyboard
-    review_status: evidence_review_pending
+    review_status: evidence_review_assets_pending
   - chapter: 15
     week: 15
     title: 差异表达分析与功能解读
@@ -295,7 +305,7 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
     ppt_status: storyboard
-    review_status: evidence_review_pending
+    review_status: evidence_review_assets_pending
   - chapter: 17
     week: 17
     title: 综合项目工作坊：AI 协作分析与结果核验

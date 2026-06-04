@@ -57,6 +57,15 @@ PROJECT_WEEK_TERMS = {
     17: ("Git/GitHub", "素材溯源", "AI 使用声明", "storyboard", "图表证据边界"),
     18: ("数据来源", "图表表达", "证据边界", "AI 使用", "可复现记录"),
 }
+REQUIRED_SUPPORT_FILES = (
+    "course/evaluation/learning_outcome_matrix.md",
+    "course/evaluation/student_project_rubric.md",
+    "course/evaluation/week_14_ppt_evidence_review.md",
+    "course/evaluation/week_16_ppt_evidence_review.md",
+    "course/templates/ai_use_statement_template.md",
+    "course/weeks/week_11_13_micro_project.md",
+    "course/weeks/week_13/ppt_storyboard.md",
+)
 
 
 class Issue(NamedTuple):
@@ -151,10 +160,18 @@ def check_map(root: Path) -> list[Issue]:
     for chapter in chapters:
         week = chapter.get("week")
         page = str(chapter.get("page", ""))
+        review_status = str(chapter.get("review_status", ""))
+        ppt_status = str(chapter.get("ppt_status", ""))
         if week in SAMPLE_WEEKS and page != f"/coursebook/week-{int(week):02d}":
             issues.append(Issue("BAD_SAMPLE_ROUTE", MAP_PATH, f"Week {week:02d} should route to /coursebook/week-{int(week):02d}"))
         if week not in SAMPLE_WEEKS and not page.startswith("/coursebook#week-"):
             issues.append(Issue("BAD_CATALOG_ROUTE", MAP_PATH, f"Week {week} should route to a Coursebook catalog anchor"))
+        if week == 13 and review_status != "sample_candidate":
+            issues.append(Issue("BAD_WEEK13_STATUS", MAP_PATH, "Week 13 should remain sample_candidate until evidence review passes"))
+        if week == 13 and ppt_status != "storyboard":
+            issues.append(Issue("BAD_WEEK13_PPT_STATUS", MAP_PATH, "Week 13 should expose storyboard without claiming PPTX completion"))
+        if week in {14, 16} and review_status != "evidence_review_assets_pending":
+            issues.append(Issue("BAD_EVIDENCE_STATUS", MAP_PATH, f"Week {week:02d} should remain evidence_review_assets_pending until public assets are verified"))
 
         for field in ("source_week_files", "knowledge_sources", "material_sources"):
             values = chapter.get(field, [])
@@ -203,7 +220,7 @@ def check_site_data(root: Path) -> list[Issue]:
         issues.append(Issue("RAW_SOURCE_REFERENCE", SITE_DATA, "Site data must not reference raw sources"))
     if re.search(r"script\.md.*formal_ready.*PPT", text, flags=re.S):
         issues.append(Issue("STATUS_CONFLATION", SITE_DATA, "Do not infer PPT readiness from script formal_ready status"))
-    for required_text in ("现代组学拓展", "样章候选", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
+    for required_text in ("现代组学拓展", "样章候选", "evidence_review_assets_pending", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
         if required_text not in text:
             issues.append(Issue("MISSING_MODERN_OMICS_DATA", SITE_DATA, f"Site data should expose {required_text}"))
     for required_text in ("可复现工作流", "OWF_Learn_Git"):
@@ -266,7 +283,12 @@ def check_routes() -> list[Issue]:
 
 
 def run_check(root: Path = ROOT) -> list[Issue]:
-    return [*check_map(root), *check_site_data(root), *check_routes(), *check_course_week_files(root)]
+    issues: list[Issue] = []
+    for relative_path in REQUIRED_SUPPORT_FILES:
+        candidate = root / relative_path
+        if not candidate.exists():
+            issues.append(Issue("MISSING_SUPPORT_FILE", candidate, f"Required support file is missing: {relative_path}"))
+    return [*issues, *check_map(root), *check_site_data(root), *check_routes(), *check_course_week_files(root)]
 
 
 def print_issues(root: Path, issues: list[Issue]) -> None:

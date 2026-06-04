@@ -3,7 +3,7 @@ type: course-week
 week: 13
 title: PCA、聚类与热图
 hours: 2
-status: draft
+status: sample_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 13 周：PCA、聚类与热图 · 素材映射
@@ -49,3 +49,9 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - 课堂主线先从 6 samples x 5 genes 的教学矩阵进入 PCA、聚类和热图，再用 SCBP/OSCA/OSTA 图形说明现代组学图形为什么更依赖参数记录。
 - 必须清楚区分 bulk expression matrix、single-cell cell x gene matrix、spatial spot x gene matrix。
 - 待核验：UMAP/cluster/marker/spatial domain 均不得被直接写成最终细胞类型、药效机制或病理区域事实。
+
+## 连续微项目接口
+
+- 本周是 [Week 11-13 连续微项目](../week_11_13_micro_project.md) 的第 3 步。
+- 课堂交付物：高维图形四栏表，固定填写输入矩阵、图上观察、候选解释、待核验点。
+- 样章候选验收：必须保留教学矩阵、图形误读示例、AI 审查 Prompt、SCBP/OSCA/OSTA 拓展来源和“不能证明机制”的边界说明。

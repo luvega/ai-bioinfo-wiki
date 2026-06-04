@@ -42,3 +42,9 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - AIDD count matrix、DESeq2 metadata、ISLP/ISLR 高维直觉作为支撑素材；AnnData/SCE 只作数据容器预告。
 - 学生需要能指出：行是什么观测单位，列是什么变量，metadata 如何与矩阵对齐，为什么标准化会改变距离和热图颜色。
 - 待核验：任何真实表达矩阵示例进入课堂前必须确认来源、单位、是否 log/normalized、样本分组含义。
+
+## 连续微项目接口
+
+- 本周是 [Week 11-13 连续微项目](../week_11_13_micro_project.md) 的第 2 步。
+- 课堂交付物：矩阵结构说明表，至少包含观测单位、变量、metadata、缺失/尺度问题和标准化必要性。
+- 与 Week 13 的衔接：同一个教学矩阵进入 PCA、聚类和热图解释，避免学生每周重新理解一个新案例。
