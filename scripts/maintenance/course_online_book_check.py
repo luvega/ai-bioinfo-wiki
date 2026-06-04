@@ -15,6 +15,8 @@ COURSEBOOK_INDEX = ROOT / "site" / "src" / "pages" / "coursebook.astro"
 COURSEBOOK_ROUTE = ROOT / "site" / "src" / "pages" / "coursebook" / "[slug].astro"
 WEEK_ROUTE = ROOT / "site" / "src" / "pages" / "weeks" / "[slug].astro"
 SAMPLE_WEEKS = {3, 13, 14, 15, 16}
+MINIMUM_REVIEW_STATUSES = {"pilot_candidate", "sample_ready", "evidence_review_pass"}
+MINIMUM_WEEK_FILE_STATUSES = {"pilot_candidate", "pilot_ready"}
 MODERN_OMICS_EXPECTATIONS = {
     13: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
     14: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
@@ -65,6 +67,7 @@ REQUIRED_SUPPORT_FILES = (
     "course/evaluation/week_13_ppt_evidence_review.md",
     "course/evaluation/week_14_ppt_evidence_review.md",
     "course/evaluation/week_16_ppt_evidence_review.md",
+    "course/evaluation/full_week_pilot_candidate_review.md",
     "course/templates/ai_use_statement_template.md",
     "course/templates/project_readme_template.md",
     "course/templates/data_sources_template.md",
@@ -174,6 +177,8 @@ def check_map(root: Path) -> list[Issue]:
             issues.append(Issue("BAD_SAMPLE_ROUTE", MAP_PATH, f"Week {week:02d} should route to /coursebook/week-{int(week):02d}"))
         if week not in SAMPLE_WEEKS and not page.startswith("/coursebook#week-"):
             issues.append(Issue("BAD_CATALOG_ROUTE", MAP_PATH, f"Week {week} should route to a Coursebook catalog anchor"))
+        if review_status not in MINIMUM_REVIEW_STATUSES:
+            issues.append(Issue("LOW_REVIEW_STATUS", MAP_PATH, f"Week {week:02d} review_status should be at least pilot_candidate, found {review_status}"))
         if week == 13 and review_status != "pilot_candidate":
             issues.append(Issue("BAD_WEEK13_STATUS", MAP_PATH, "Week 13 should be pilot_candidate after evidence review, without claiming pilot_ready"))
         if week == 13 and ppt_status != "storyboard_reviewed":
@@ -228,6 +233,10 @@ def check_site_data(root: Path) -> list[Issue]:
         issues.append(Issue("RAW_SOURCE_REFERENCE", SITE_DATA, "Site data must not reference raw sources"))
     if re.search(r"script\.md.*formal_ready.*PPT", text, flags=re.S):
         issues.append(Issue("STATUS_CONFLATION", SITE_DATA, "Do not infer PPT readiness from script formal_ready status"))
+    if re.search(r"reviewStatus:\s*['\"]catalog_only", text):
+        issues.append(Issue("LOW_REVIEW_STATUS", SITE_DATA, "Coursebook data should not leave any week at catalog_only after full-week pilot candidate review"))
+    if re.search(r"status:\s*['\"]目录占位", text):
+        issues.append(Issue("LOW_DISPLAY_STATUS", SITE_DATA, "Coursebook data should display full-week pilot candidate status, not catalog placeholders"))
     for required_text in ("现代组学拓展", "试点候选", "pilot_candidate", "storyboard_reviewed", "evidence_review_assets_pending", "evidence_review_pass", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
         if required_text not in text:
             issues.append(Issue("MISSING_MODERN_OMICS_DATA", SITE_DATA, f"Site data should expose {required_text}"))
@@ -256,6 +265,11 @@ def check_course_week_files(root: Path) -> list[Issue]:
                 continue
             path_text = read_text(path)
             week_text_parts.append(path_text)
+            if path.name in {"materials.md", "outline.md"}:
+                status_match = re.search(r"^status:\s*(\S+)", path_text, flags=re.M)
+                status_value = status_match.group(1).strip("'\"") if status_match else ""
+                if status_value not in MINIMUM_WEEK_FILE_STATUSES:
+                    issues.append(Issue("LOW_WEEK_FILE_STATUS", path, f"{path.name} should be pilot_candidate or pilot_ready, found {status_value or 'missing'}"))
             if has_forbidden_raw_reference(path_text):
                 issues.append(Issue("RAW_SOURCE_REFERENCE", path, "Course week files must not reference materials/raw"))
         week_text = "\n".join(week_text_parts)

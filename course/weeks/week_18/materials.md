@@ -3,7 +3,7 @@ type: course-week
 week: 18
 title: 综合项目汇报与课程总结
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 18 周：综合项目汇报与课程总结 · 素材映射
@@ -50,3 +50,10 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - [数据与素材来源模板](../../templates/data_sources_template.md)：检查展示图表是否有来源、字段和授权说明。
 - [AI 使用声明模板](../../templates/ai_use_statement_template.md)：检查 AI 使用是否透明、可审计。
 - [PPT Storyboard 模板](../../templates/ppt_storyboard_template.md)：检查最终 PPT 是否逐页保留证据来源和 risk note。
+
+## 试点候选审查依据（2026-06-04）
+
+- 课堂任务：按 rubric 完成 6 到 8 分钟项目汇报，并回答数据来源、图表表达、证据边界、AI 使用和可复现记录相关问题。
+- 评价证据：提交最终归档清单、汇报 rubric、互评记录、答辩问题记录和 AI 使用反思。
+- AI 协作边界：允许 AI 帮助压缩汇报语言和生成自查问题；禁止 AI 美化失败、补写未核验结论或替代学生现场答辩。
+- 待核验点：归档前需确认数据来源、授权、图表可复现性、AI 使用透明度和未解决问题列表。

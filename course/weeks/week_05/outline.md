@@ -3,7 +3,7 @@ type: course-week
 week: 5
 title: 数据读取与整形
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 05 周：数据读取与整形 · PPT 大纲
@@ -25,3 +25,11 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 - 课程主讲稿：[课程教学讲稿](../../syllabus/课程教学讲稿-医药数据处理与可视化-36课时-AI前置调整版.md)
 - 知识层候选页：待从 [knowledge/index](../../../knowledge/index.md) 映射。
+
+## 试点候选课堂接口（2026-06-04）
+
+- 药学场景：把来自 CSV/Excel/TSV 的药物反应记录整理成可分析表，并区分字段、单位和样本编号。
+- 课堂任务：完成读取、列名清理、类型识别和长宽表选择，生成字段字典。
+- 评价证据：提交整理前后表格、字段字典、代码输出和 3 条素材来源或字段核验记录。
+- AI 协作边界：AI 可建议字段说明和类型检查；不得虚构来源、自动删除字段或替代单位核对。
+- 课后练习：为一个公开教学小表补齐 `data_dictionary` 和数据读取说明。

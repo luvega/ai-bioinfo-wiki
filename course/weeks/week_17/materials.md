@@ -3,7 +3,7 @@ type: course-week
 week: 17
 title: 综合项目工作坊：AI 协作分析与结果核验
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 17 周：综合项目工作坊：AI 协作分析与结果核验 · 素材映射
@@ -57,3 +57,10 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - [AI 使用声明模板](../../templates/ai_use_statement_template.md)：用于记录 Prompt、AI 输出用途、人工修改、不采纳理由和核验方式。
 - [PPT Storyboard 模板](../../templates/ppt_storyboard_template.md)：用于 Week 18 汇报前审查每页 action title、图表、证据来源和风险边界。
 - [学生项目 Rubric](../../evaluation/student_project_rubric.md)：Week 17 课堂互评和 Week 18 终评使用同一评价标准。
+
+## 试点候选审查依据（2026-06-04）
+
+- 课堂任务：把小组项目整理成最低交付包，逐项补齐 README、素材溯源、AI 使用声明、PPT storyboard 和可解释图表。
+- 评价证据：提交项目文件树、`data_sources.md`、`ai_use_statement.md`、`ppt_storyboard.md` 和图表证据边界自查表。
+- AI 协作边界：允许 AI 审查交付包完整性、生成答辩风险问题和检查图注越界；禁止 AI 替学生补做分析、伪造来源或隐藏失败记录。
+- 待核验点：进入 Week 18 前需确认公开素材授权、Git/GitHub 记录可追溯、图表结果可复现。

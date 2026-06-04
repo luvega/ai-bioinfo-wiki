@@ -3,7 +3,7 @@ type: course-week
 week: 2
 title: 数据分析流程、复现规范与人机协作规范
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 02 周：数据分析流程、复现规范与人机协作规范 · 素材映射
@@ -42,3 +42,10 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - 示例表格：待定。
 - 代码片段：待定。
 - AI 提示词：待定。
+
+## 试点候选审查依据（2026-06-04）
+
+- 课堂任务：学生建立最小项目目录，写入 `README.md`、`data/`、`scripts/`、`outputs/`、`ai_logs/` 的用途说明，并用 Git/Shell 记录一次小步修改。
+- 评价证据：提交目录截图或文本树、一次 `git status` / `git log --oneline` 记录、1 条 Prompt 记录和人工修订理由。
+- AI 协作边界：允许 AI 检查目录命名、解释命令错误和整理日志；禁止 AI 替代学生决定清洗规则、隐藏失败尝试或补写未完成分析。
+- 待核验点：正式演示前需核对 Windows PowerShell 命令、GitHub 隐私设置和课堂网络环境。

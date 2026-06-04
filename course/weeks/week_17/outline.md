@@ -3,7 +3,7 @@ type: course-week
 week: 17
 title: 综合项目工作坊：AI 协作分析与结果核验
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 17 周：综合项目工作坊：AI 协作分析与结果核验 · PPT 大纲
@@ -46,3 +46,10 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 ## 课后练习
 
 提交项目交付包 v1，并附一条 Git 提交记录截图或文本记录，说明本次修改解决了哪个核验问题。
+
+## 试点候选课堂接口（2026-06-04）
+
+- 药学场景：项目工作坊要求学生把一个真实或教学数据问题整理为可复现、可审计、可汇报的分析包。
+- 评价证据：最低交付包包括 README、数据与素材来源表、AI 使用声明、PPT storyboard、图表证据边界表和 Git/GitHub 记录。
+- AI 协作边界：AI 可审查完整性和提出答辩问题；不得补写未完成分析、伪造素材溯源或隐藏失败记录。
+- 待核验点：Week 18 前检查公开素材授权、字段定义、图表可复现、AI 使用透明度和 unresolved questions。

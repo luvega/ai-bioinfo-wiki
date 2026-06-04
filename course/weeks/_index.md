@@ -4,21 +4,21 @@
 
 | Week | Path | Topic | Summary | Status | Tags |
 |:---:|:---|:---|:---|:---|:---|
-| 01 | [week_01](week_01/) | 课程导论与医药数据特征 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-01 |
-| 02 | [week_02](week_02/) | 数据分析流程、复现规范与人机协作规范 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-02 |
+| 01 | [week_01](week_01/) | 课程导论与医药数据特征 | 待从课程主讲稿和素材卡中提炼。 | pilot_candidate | courseware, week-01 |
+| 02 | [week_02](week_02/) | 数据分析流程、复现规范与人机协作规范 | 待从课程主讲稿和素材卡中提炼。 | pilot_candidate | courseware, week-02 |
 | 03 | [week_03](week_03/) | AI 辅助编程与 Python 快速入门 | 识别 Python 变量、列表、字典、条件和循环在医药数据处理中的作用。 | pilot_ready | courseware, week-03 |
-| 04 | [week_04](week_04/) | R 基础语法、数据框操作与 AI 代码核验 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-04 |
-| 05 | [week_05](week_05/) | 数据读取与整理 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-05 |
-| 06 | [week_06](week_06/) | 缺失值、异常值处理与分组汇总 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-06 |
-| 07 | [week_07](week_07/) | 描述统计与分布可视化 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-07 |
-| 08 | [week_08](week_08/) | 统计推断基础 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-08 |
-| 09 | [week_09](week_09/) | 相关分析与线性回归 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-09 |
-| 10 | [week_10](week_10/) | 分类问题与逻辑回归 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-10 |
+| 04 | [week_04](week_04/) | R 基础语法、数据框操作与 AI 代码核验 | 待从课程主讲稿和素材卡中提炼。 | pilot_candidate | courseware, week-04 |
+| 05 | [week_05](week_05/) | 数据读取与整理 | 待从课程主讲稿和素材卡中提炼。 | pilot_candidate | courseware, week-05 |
+| 06 | [week_06](week_06/) | 缺失值、异常值处理与分组汇总 | 待从课程主讲稿和素材卡中提炼。 | pilot_candidate | courseware, week-06 |
+| 07 | [week_07](week_07/) | 描述统计与分布可视化 | 待从课程主讲稿和素材卡中提炼。 | pilot_candidate | courseware, week-07 |
+| 08 | [week_08](week_08/) | 统计推断基础 | 待从课程主讲稿和素材卡中提炼。 | pilot_candidate | courseware, week-08 |
+| 09 | [week_09](week_09/) | 相关分析与线性回归 | 待从课程主讲稿和素材卡中提炼。 | pilot_candidate | courseware, week-09 |
+| 10 | [week_10](week_10/) | 分类问题与逻辑回归 | 待从课程主讲稿和素材卡中提炼。 | pilot_candidate | courseware, week-10 |
 | 11 | [week_11](week_11/) | 科研图表规范与 SCI 图表表达 | 识别科研图表中的轴、单位、图例、样本量、统计方法和图注边界。 | pilot_candidate | courseware, week-11 |
 | 12 | [week_12](week_12/) | 高维数据与数学直觉 | 解释临床表格、样本 x 指标矩阵、表达矩阵之间的关系。 | pilot_candidate | courseware, week-12 |
 | 13 | [week_13](week_13/) | PCA、聚类与热图 | 说明高维数据为什么需要降维、聚类和热图辅助观察。 | pilot_candidate | courseware, week-13 |
 | 14 | [week_14](week_14/) | 转录组数据分析基础 | 说明 RNA-seq 的目标是测量基因表达水平。 | pilot_ready | courseware, week-14 |
 | 15 | [week_15](week_15/) | 差异表达分析与功能解读 | 说明差异表达分析的输入、输出和统计问题。 | pilot_ready | courseware, week-15 |
 | 16 | [week_16](week_16/) | 单细胞转录组可视化 | 区分 bulk RNA-seq 与 scRNA-seq 的数据含义。 | pilot_ready | courseware, week-16 |
-| 17 | [week_17](week_17/) | 综合项目工作坊：AI 协作分析与结果核验 | 组织一个可复现的课程项目文件夹，并能用 Git/GitHub 记录关键版本。 | draft | courseware, week-17 |
-| 18 | [week_18](week_18/) | 综合项目汇报与课程总结 | 使用统一 rubric 完成课程项目汇报和答辩。 | draft | courseware, week-18 |
+| 17 | [week_17](week_17/) | 综合项目工作坊：AI 协作分析与结果核验 | 组织一个可复现的课程项目文件夹，并能用 Git/GitHub 记录关键版本。 | pilot_candidate | courseware, week-17 |
+| 18 | [week_18](week_18/) | 综合项目汇报与课程总结 | 使用统一 rubric 完成课程项目汇报和答辩。 | pilot_candidate | courseware, week-18 |

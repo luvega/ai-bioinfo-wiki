@@ -40,6 +40,17 @@ def test_online_book_check_current_repo():
     assert module.run_check(ROOT) == []
 
 
+def test_full_week_pilot_candidate_statuses_are_enforced():
+    module = load_module()
+    chapters = module.parse_map(ROOT / "course" / "textbook" / "coursebook_map.yml")
+    assert all(chapter["review_status"] in module.MINIMUM_REVIEW_STATUSES for chapter in chapters)
+    for week in range(1, 19):
+        week_dir = ROOT / "course" / "weeks" / f"week_{week:02d}"
+        for name in ("materials.md", "outline.md"):
+            text = (week_dir / name).read_text(encoding="utf-8")
+            assert any(f"status: {status}" in text for status in module.MINIMUM_WEEK_FILE_STATUSES)
+
+
 def test_online_book_check_flags_missing_source(tmp_path):
     module = load_module()
     map_path = tmp_path / "course" / "textbook" / "coursebook_map.yml"
