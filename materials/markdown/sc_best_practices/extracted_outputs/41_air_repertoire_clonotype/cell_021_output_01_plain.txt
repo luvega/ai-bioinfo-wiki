@@ -1,0 +1,2 @@
+  IR_VJ_1_junction_aa IR_VDJ_1_junction_aa receptor_subtype  n_cells
+0     CAVSVVRNNNARLMF   CASSARGASGERTDTQYF          TRA+TRB       71

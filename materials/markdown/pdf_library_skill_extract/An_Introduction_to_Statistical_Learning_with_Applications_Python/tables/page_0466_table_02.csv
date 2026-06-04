@@ -1,0 +1,11 @@
+class LSTMModel(nn.Module):
+"def __init__(self, input_size):"
+"super(LSTMModel, self).__init__()"
+"self.embedding = nn.Embedding(input_size, 32)"
+"self.lstm = nn.LSTM(input_size=32,"
+"hidden_size=32,"
+batch_first=True)
+"self.dense = nn.Linear(32, 1)"
+"def forward(self, x):"
+"val, (h_n, c_n) = self.lstm(self.embedding(x))"
+"return torch.flatten(self.dense(val[:,-1]))"

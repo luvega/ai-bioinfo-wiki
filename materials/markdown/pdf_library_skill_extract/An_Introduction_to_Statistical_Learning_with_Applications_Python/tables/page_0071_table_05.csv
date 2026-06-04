@@ -1,0 +1,2 @@
+fig = ax.figure
+fig.savefig('horsepower_mpg.png');

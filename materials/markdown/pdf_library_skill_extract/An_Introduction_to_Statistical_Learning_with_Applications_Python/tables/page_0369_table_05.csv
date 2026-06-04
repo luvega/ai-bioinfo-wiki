@@ -1,0 +1,2 @@
+yhat_test = bart_boston.predict(X_test.astype(np.float32))
+np.mean((y_test - yhat_test)**2)

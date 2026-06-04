@@ -1,0 +1,12 @@
+"def evalMSE(terms,"
+"response,"
+"train,"
+test):
+""
+mm = MS(terms)
+X_train = mm.fit_transform(train)
+y_train = train[response]
+""
+X_test = mm.transform(test)
+y_test = test[response]
+""

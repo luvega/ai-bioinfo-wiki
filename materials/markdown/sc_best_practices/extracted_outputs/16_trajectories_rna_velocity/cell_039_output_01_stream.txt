@@ -1,0 +1,3 @@
+recovering dynamics (using 8/8 cores)
+    finished (0:02:11) --> added 
+    'fit_pars', fitted parameters for splicing dynamics (adata.var)

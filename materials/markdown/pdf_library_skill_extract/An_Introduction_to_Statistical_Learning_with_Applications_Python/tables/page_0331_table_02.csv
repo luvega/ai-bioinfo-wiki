@@ -1,0 +1,4 @@
+gam_logit = LogisticGAM(age_term +
+"l_gam(1, lam=0) +"
+"f_gam(2, lam=0))"
+"gam_logit.fit(Xgam, high_earn)"

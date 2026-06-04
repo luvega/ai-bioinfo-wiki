@@ -1,0 +1,13 @@
+"mse_fig, ax = subplots(figsize=(8,8))"
+"insample_mse = ((Yhat_in - Y[:,None])**2).mean(0)"
+n_steps = insample_mse.shape[0]
+"ax.plot(np.arange(n_steps),"
+"insample_mse,"
+"'k', # color black"
+label='In-sample')
+"ax.set_ylabel('MSE',"
+fontsize=20)
+"ax.set_xlabel('# steps of forward stepwise',"
+fontsize=20)
+ax.set_xticks(np.arange(n_steps)[::2])
+ax.legend()

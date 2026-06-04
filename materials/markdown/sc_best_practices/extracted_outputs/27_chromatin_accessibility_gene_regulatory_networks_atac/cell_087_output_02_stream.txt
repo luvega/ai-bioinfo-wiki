@@ -1,0 +1,6 @@
+Getting peak x motif matches ..
+Determining background peaks ..
+Using  50  iterations ..
+
+Testing  626  TFs
+Testing  47  DORCs

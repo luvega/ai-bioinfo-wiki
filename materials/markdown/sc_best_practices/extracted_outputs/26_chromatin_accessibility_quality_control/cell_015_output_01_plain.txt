@@ -1,0 +1,18 @@
+OverloadedDict, wrapping:
+	OrderedDict([('atac', {'peak_annotation':                                peak  distance peak_type
+gene_name                                              
+MIR1302-2HG         chr1:9763-10648    -18906    distal
+AL627309.1       chr1:115270-116168      4764    distal
+AL627309.5       chr1:181107-181768     -7246    distal
+AL627309.5       chr1:183973-184845    -10112    distal
+AL627309.5       chr1:191237-192111    -17376    distal
+...                             ...       ...       ...
+AC213203.2   KI270713.1:21361-22256     10272    distal
+AC213203.2   KI270713.1:29645-30508      2020    distal
+AC213203.2   KI270713.1:32401-33088         0  promoter
+AC213203.1   KI270713.1:34369-35136      -271  promoter
+AC213203.1   KI270713.1:36970-37884      1564    distal
+
+[196633 rows x 3 columns]}), ('files', {'fragments': 'resources/cellranger_out/atac_fragments.tsv.gz'})])
+With overloaded keys:
+	['neighbors'].

@@ -7,7 +7,8 @@ publisher: Manning
 isbn: 9781633437210
 raw_path:
   - materials/raw/pdf_originals/Starting Data Analytics with Generative AI and Python 9781633437210.pdf
-  - materials/markdown/pdf_library_legacy/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210.md
+  - materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210/book.mineru.md
+  - materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210/book.course.md
 ingested: 2026-05-21
 language: en
 kind: textbook
@@ -64,3 +65,7 @@ tags: [generative-ai, data-analytics, python, prompt-engineering, eda]
 - 同类书：[Learn AI-Assisted Python Programming](Learn_AI_Assisted_Python_Programming.md)
 - 概念：[AI 协作边界](../concepts/AI协作边界.md)
 - 课程总线：[36 课时讲稿](36课时讲稿.md)
+
+## 勘误 / 注意
+
+- MinerU 转换结果以 `book.mineru.md` 为完整解析层，`book.course.md` 为备课整理层；旧版轻量转换已退役。

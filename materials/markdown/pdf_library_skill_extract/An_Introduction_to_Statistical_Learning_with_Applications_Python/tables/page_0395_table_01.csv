@@ -1,0 +1,5 @@
+"fig, ax = subplots(figsize=(8,8))"
+"plot_svm(X,"
+"y,"
+"svm_linear,"
+ax=ax)

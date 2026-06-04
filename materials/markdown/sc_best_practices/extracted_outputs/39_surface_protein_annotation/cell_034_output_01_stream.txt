@@ -1,0 +1,7 @@
+[94m•[0m please hit CTRL + s to save the notebook in your editor ... [92m✓[0m
+[93m![0m cells [(0, 2)] were not run consecutively
+[93m![0m returning transform  with same hash & key: Transform(uid='BnpvfJLWjHuE0004', key='annotation.ipynb', description='Annotation', kind='notebook', hash='wGPLIESjWMSUD0apYkREXQ', reference=None, reference_type=None, environment=None, plan=None, branch_id=1, created_on_id=1, space_id=1, created_by_id=7, created_at=2026-04-10 17:10:35 UTC, is_locked=False, version_tag=None, is_latest=False)
+[94m•[0m new latest Transform version is: BnpvfJLWjHuE0004
+[92m→[0m finished Run('QEKKxvVQBGXwIHKf') after 48s at 2026-04-10 17:38:44 UTC
+[92m→[0m go to: https://lamin.ai/theislab/sc-best-practices/transform/BnpvfJLWjHuE0004
+[92m→[0m to update your notebook from the CLI, run: lamin save /groups/nils/members/javier/single-cell-best-practices/jupyter-book/surface_protein/annotation.ipynb

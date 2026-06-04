@@ -1,0 +1,5 @@
+"((8645, 15),"
+"Index(['season', 'mnth', 'day', 'hr', 'holiday', 'weekday',"
+"'workingday', 'weathersit', 'temp', 'atemp', 'hum',"
+"'windspeed', 'casual', 'registered', 'bikers'],"
+dtype='object'))

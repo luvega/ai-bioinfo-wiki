@@ -1,0 +1,70 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .flip-card-q3 {
+            background-color: transparent;
+            width: 290px;
+            height: 170px;
+            perspective: 1000px;
+            display: inline-block;
+            margin: 8px;
+            text-align: center;
+            padding: 8px;
+        }
+        .flip-card-inner-q3 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            transform-origin: center;
+        }
+        .flip-card-q3:hover .flip-card-inner-q3 {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front-q3, .flip-card-back-q3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            min-height: 170px;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            padding: 14px;
+            border-radius: 12px;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-align: center;
+        }
+        .flip-card-front-q3 {
+            background-color: #3965a3;
+            font-size: 17px;
+        }
+        .flip-card-back-q3 {
+            background-color: #a8d480;
+            transform: rotateY(180deg);
+            font-size: 15px;
+        }
+    </style>
+
+    <div class="flip-card-q3">
+        <div class="flip-card-inner-q3">
+            <div class="flip-card-front-q3">
+                What is the 'multiple testing' problem and how can it be eluded?
+            </div>
+            <div class="flip-card-back-q3">
+                Testing thousands of genes simultaneously increases the likelihood of false positives. To address this, corrections like the Benjamini-Hochberg procedure are applied to control the false discovery rate.
+            </div>
+        </div>
+    </div>
+    <noscript>
+        <p><strong>Q:</strong> What is the 'multiple testing' problem and how can it be eluded?</p>
+        <p><strong>Answer:</strong> Testing thousands of genes simultaneously increases the likelihood of false positives. To address this, corrections like the Benjamini-Hochberg procedure are applied to control the false discovery rate.</p>
+    </noscript>
+    

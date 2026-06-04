@@ -1,0 +1,65 @@
+                           is_cell high_confidence multi_chain extra_chains  \
+cell_id                                                                       
+AAACCTGAGAAACCTA-MH9179824    True            True       False           []   
+AAACCTGAGAACAATC-MH9143324    True            True       False           []   
+AAACCTGAGAACTCGG-MH8919329    True            True       False           []   
+AAACCTGAGAAGCCCA-MH9143373    True            True       False           []   
+AAACCTGAGAAGGACA-MH9143274    True            True       False           []   
+
+                           IR_VJ_1_c_call IR_VJ_2_c_call IR_VDJ_1_c_call  \
+cell_id                                                                    
+AAACCTGAGAAACCTA-MH9179824           TRAC            NaN           TRBC2   
+AAACCTGAGAACAATC-MH9143324            NaN            NaN           TRBC1   
+AAACCTGAGAACTCGG-MH8919329           TRAC            NaN           TRBC2   
+AAACCTGAGAAGCCCA-MH9143373           TRAC            NaN             NaN   
+AAACCTGAGAAGGACA-MH9143274           TRAC            NaN           TRBC2   
+
+                           IR_VDJ_2_c_call  IR_VJ_1_consensus_count  \
+cell_id                                                               
+AAACCTGAGAAACCTA-MH9179824             NaN                    960.0   
+AAACCTGAGAACAATC-MH9143324             NaN                      NaN   
+AAACCTGAGAACTCGG-MH8919329             NaN                   5122.0   
+AAACCTGAGAAGCCCA-MH9143373             NaN                  25914.0   
+AAACCTGAGAAGGACA-MH9143274             NaN                   3212.0   
+
+                            IR_VJ_2_consensus_count  ...  \
+cell_id                                              ...   
+AAACCTGAGAAACCTA-MH9179824                      NaN  ...   
+AAACCTGAGAACAATC-MH9143324                      NaN  ...   
+AAACCTGAGAACTCGG-MH8919329                      NaN  ...   
+AAACCTGAGAAGCCCA-MH9143373                      NaN  ...   
+AAACCTGAGAAGGACA-MH9143274                      NaN  ...   
+
+                            Status_on_day_collection  \
+cell_id                                                
+AAACCTGAGAAACCTA-MH9179824                   Ward_O2   
+AAACCTGAGAACAATC-MH9143324                   Ward_O2   
+AAACCTGAGAACTCGG-MH8919329             ITU_intubated   
+AAACCTGAGAAGCCCA-MH9143373                   Ward_O2   
+AAACCTGAGAAGGACA-MH9143274                    ITU_O2   
+
+                            Status_on_day_collection_summary Days_from_onset  \
+cell_id                                                                        
+AAACCTGAGAAACCTA-MH9179824                          Moderate               8   
+AAACCTGAGAACAATC-MH9143324                          Moderate              16   
+AAACCTGAGAACTCGG-MH8919329                          Critical               5   
+AAACCTGAGAAGCCCA-MH9143373                         Non_covid               3   
+AAACCTGAGAAGGACA-MH9143274                            Severe              21   
+
+                           time_after_LPS Worst_Clinical_Status Outcome  \
+cell_id                                                                   
+AAACCTGAGAAACCTA-MH9179824            NaN              Moderate    Home   
+AAACCTGAGAACAATC-MH9143324            NaN              Moderate    Home   
+AAACCTGAGAACTCGG-MH8919329            NaN                 Death   Death   
+AAACCTGAGAAGCCCA-MH9143373            NaN             Non-covid    Home   
+AAACCTGAGAAGGACA-MH9143274            NaN                Severe    Home   
+
+                            initial_clustering   study_id  AgeRange  Age  
+cell_id                                                                   
+AAACCTGAGAAACCTA-MH9179824                 CD8  COVID-014  (50, 59]   54  
+AAACCTGAGAACAATC-MH9143324                 gdT  COVID-029  (20, 29]   26  
+AAACCTGAGAACTCGG-MH8919329                Treg  COVID-045  (70, 79]   77  
+AAACCTGAGAAGCCCA-MH9143373                 CD4  COVID-060  (50, 59]   54  
+AAACCTGAGAAGGACA-MH9143274                 CD4  COVID-037  (50, 59]   59  
+
+[5 rows x 63 columns]

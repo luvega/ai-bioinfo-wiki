@@ -1,0 +1,2 @@
+"ax = Auto.plot.scatter('horsepower', 'mpg');"
+ax.set_title('Horsepower vs. MPG')

@@ -1,0 +1,10 @@
+import numpy as np
+import pandas as pd
+from matplotlib.pyplot import subplots
+from statsmodels.api import OLS
+import sklearn.model_selection as skm
+import sklearn.linear_model as skl
+from sklearn.preprocessing import StandardScaler
+from ISLP import load_data
+from ISLP.models import ModelSpec as MS
+from functools import partial

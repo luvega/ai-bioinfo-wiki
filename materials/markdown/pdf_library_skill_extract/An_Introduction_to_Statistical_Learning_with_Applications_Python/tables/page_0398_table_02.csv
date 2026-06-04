@@ -1,0 +1,5 @@
+"fig, ax = subplots(figsize=(8,8))"
+"plot_svm(X_train,"
+"y_train,"
+"svm_rbf,"
+ax=ax)

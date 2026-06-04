@@ -1,0 +1,2 @@
+/Users/seohyon/miniconda3/envs/rna_velocity/lib/python3.11/site-packages/scvelo/preprocessing/utils.py:705: DeprecationWarning: `log1p` is deprecated since scVelo v0.3.0 and will be removed in a future version. Please use `log1p` from `scanpy.pp` instead.
+  log1p(adata)

@@ -1,0 +1,4 @@
+"scaler = StandardScaler(with_mean=True, with_std=True)"
+"lasso = Lasso(warm_start=True, max_iter=30000)"
+"standard_lasso = Pipeline(steps=[('scaler', scaler),"
+"('lasso', lasso)])"

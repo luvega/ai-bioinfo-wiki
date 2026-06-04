@@ -1,0 +1,3 @@
+Xhat = Xna.copy()
+"Xbar = np.nanmean(Xhat, axis=0)"
+"Xhat[r_idx, c_idx] = Xbar[c_idx]"

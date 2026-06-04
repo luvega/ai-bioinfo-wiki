@@ -1,0 +1,3 @@
+[92m→[0m creating new artifact version for key 'surface-protein/cite_annotation.h5mu' in storage 's3://lamin-eu-central-1/VPwcjx3CDAa2'
+... uploading OyfKOZw9TXUQXeOp0002.h5mu: 100.0%
+[94m•[0m replacing the existing cache path /var/cache/user/marchena/.cache/lamindb/lamin-eu-central-1/VPwcjx3CDAa2/surface-protein/cite_annotation.h5mu

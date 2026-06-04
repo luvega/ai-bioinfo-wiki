@@ -1,0 +1,18 @@
+{
+  "order": 46,
+  "part": "Outlook",
+  "toc_file": "outlook",
+  "title": "Outlook",
+  "source_type": "md",
+  "upstream_path": "jupyter-book/outlook.md",
+  "environment": "_config",
+  "week_mapping": [],
+  "code_cell_count": 0,
+  "dataset_reference_count": 1,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/46_outlook",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/46_outlook/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/46_outlook/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/46_outlook/code_index.md"
+  }
+}

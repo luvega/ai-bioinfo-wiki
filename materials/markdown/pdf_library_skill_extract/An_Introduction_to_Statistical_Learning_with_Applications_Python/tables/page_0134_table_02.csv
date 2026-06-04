@@ -1,0 +1,4 @@
+"X = MS([poly('lstat', degree=2), 'age']).fit_transform(Boston)"
+"model3 = sm.OLS(y, X)"
+results3 = model3.fit()
+summarize(results3)

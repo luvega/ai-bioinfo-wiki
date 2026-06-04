@@ -1,0 +1,6 @@
+resnet_model = resnet50(weights=ResNet50_Weights.DEFAULT)
+"summary(resnet_model,"
+"input_data=imgs,"
+"col_names=['input_size',"
+"'output_size',"
+'num_params'])

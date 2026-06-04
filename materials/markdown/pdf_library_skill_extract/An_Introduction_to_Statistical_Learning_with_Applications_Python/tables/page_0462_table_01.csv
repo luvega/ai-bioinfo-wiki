@@ -1,0 +1,5 @@
+"(imdb_seq_train,"
+imdb_seq_test) = load_sequential(root='data/IMDB')
+padded_sample = np.asarray(imdb_seq_train.tensors[0][0])
+sample_review = padded_sample[padded_sample > 0][:12]
+sample_review[:12]

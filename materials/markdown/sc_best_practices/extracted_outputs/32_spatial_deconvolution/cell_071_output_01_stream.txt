@@ -1,0 +1,7 @@
+computing neighbors
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:27)
+running Leiden clustering
+    finished: found 11 clusters and added
+    'leiden', the cluster labels (adata.obs, categorical) (0:00:01)

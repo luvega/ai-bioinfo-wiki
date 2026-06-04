@@ -1,0 +1,18 @@
+{
+  "order": 42,
+  "part": "Adaptive immune receptor repertoire",
+  "toc_file": "air_repertoire/specificity",
+  "title": "Specificity analysis",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/air_repertoire/specificity.ipynb",
+  "environment": null,
+  "week_mapping": [],
+  "code_cell_count": 58,
+  "dataset_reference_count": 20,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/42_air_repertoire_specificity",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/42_air_repertoire_specificity/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/42_air_repertoire_specificity/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/42_air_repertoire_specificity/code_index.md"
+  }
+}

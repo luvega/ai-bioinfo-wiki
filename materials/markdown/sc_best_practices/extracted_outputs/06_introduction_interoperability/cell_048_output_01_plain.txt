@@ -1,0 +1,3 @@
+<rpy2.robjects.vectors.FloatMatrix object at 0x154c0f210> [14]
+R classes: ('matrix', 'array')
+[494.804552, 494.804552, 0.000000, 494.804552, ..., 1039.501040, 519.750520, 519.750520, 0.000000]

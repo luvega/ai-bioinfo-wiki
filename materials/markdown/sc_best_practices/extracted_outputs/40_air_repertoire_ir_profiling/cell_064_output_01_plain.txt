@@ -1,0 +1,9 @@
+single pair        1489
+orphan VJ           312
+extra VJ             46
+ambiguous            31
+orphan VDJ           25
+two full chains       6
+extra VDJ             4
+no IR                 1
+Name: chain_pairing, dtype: int64

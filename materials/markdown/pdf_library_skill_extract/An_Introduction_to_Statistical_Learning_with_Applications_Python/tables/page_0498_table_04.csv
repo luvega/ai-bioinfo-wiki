@@ -1,0 +1,4 @@
+modal_df = pd.DataFrame(
+[modal_data.iloc[0] for _ in range(len(levels))])
+modal_df['diagnosis'] = levels
+modal_df

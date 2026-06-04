@@ -1,0 +1,14 @@
+        cell_type
+Cell_0          B
+Cell_1          T
+Cell_2   Monocyte
+Cell_3          B
+Cell_4   Monocyte
+...           ...
+Cell_95         T
+Cell_96         B
+Cell_97         B
+Cell_98         T
+Cell_99         B
+
+[100 rows x 1 columns]

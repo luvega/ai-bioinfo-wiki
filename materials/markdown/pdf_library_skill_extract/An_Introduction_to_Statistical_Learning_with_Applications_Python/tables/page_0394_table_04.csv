@@ -1,0 +1,2 @@
+"svm_linear = SVC(C=10, kernel='linear')"
+"svm_linear.fit(X, y)"

@@ -1,0 +1,20 @@
+{
+  "order": 45,
+  "part": "Multimodal integration",
+  "toc_file": "multimodal_integration/advanced_integration",
+  "title": "Advanced integration",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/multimodal_integration/advanced_integration.ipynb",
+  "environment": "advanced-integration",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 103,
+  "dataset_reference_count": 7,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/45_multimodal_integration_advanced_integration",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/45_multimodal_integration_advanced_integration/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/45_multimodal_integration_advanced_integration/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/45_multimodal_integration_advanced_integration/code_index.md"
+  }
+}

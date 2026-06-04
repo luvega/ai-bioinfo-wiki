@@ -1,0 +1,4 @@
+"minus_age = Boston.columns.drop(['medv', 'age'])"
+Xma = MS(minus_age).fit_transform(Boston)
+"model1 = sm.OLS(y, Xma)"
+summarize(model1.fit())

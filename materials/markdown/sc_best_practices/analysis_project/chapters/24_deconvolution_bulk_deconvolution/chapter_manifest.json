@@ -1,0 +1,18 @@
+{
+  "order": 24,
+  "part": "Deconvolution",
+  "toc_file": "deconvolution/bulk_deconvolution",
+  "title": "Bulk deconvolution",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/deconvolution/bulk_deconvolution.ipynb",
+  "environment": null,
+  "week_mapping": [],
+  "code_cell_count": 20,
+  "dataset_reference_count": 3,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/24_deconvolution_bulk_deconvolution",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/24_deconvolution_bulk_deconvolution/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/24_deconvolution_bulk_deconvolution/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/24_deconvolution_bulk_deconvolution/code_index.md"
+  }
+}

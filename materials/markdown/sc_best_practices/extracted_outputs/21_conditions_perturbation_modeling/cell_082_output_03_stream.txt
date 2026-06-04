@@ -1,0 +1,2 @@
+Epoch 26/100:  26%|██▌       | 26/100 [1:28:13<4:11:07, 203.61s/it, v_num=1, train_loss_step=1.06e+3, train_loss_epoch=4.52e+3]
+Monitored metric elbo_validation did not improve in the last 25 records. Best score: 479.507. Signaling Trainer to stop.

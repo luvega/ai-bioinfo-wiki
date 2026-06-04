@@ -28,6 +28,10 @@
 - [AIDD课程结构整理](sources/AIDD课程结构整理.md) — AIDD 课程的人写二手综述 · stable · `aidd, course-structure`
 - [ISLP](sources/ISLP.md) — ISLP《Statistical Learning with Python》 · stable · `statistical-learning, python`
 - [ISLR](sources/ISLR.md) — ISLR《Statistical Learning with R》 · stable · `statistical-learning, r`
+- [Single_Cell_Best_Practices](sources/Single_Cell_Best_Practices.md) — scRNA-seq / multimodal single-cell Jupyter Book，含 notebook、代码、输出和数据入口清单 · generated_draft · `single-cell, scRNA-seq`
+- [OWF_Learn_Git](sources/OWF_Learn_Git.md) — Open Water Foundation Git 教程，固定 commit 入库，服务 Week 02/03/17 的版本控制与复现规范 · source_ingested · `git, version-control`
+- [OWF_Learn_Windows_Shell](sources/OWF_Learn_Windows_Shell.md) — Open Water Foundation Windows shell 教程，服务 Week 02/03/17 的命令行、批处理和故障排查 · source_ingested · `windows-shell, reproducibility`
+- [OWF_Learn_Linux_Shell](sources/OWF_Learn_Linux_Shell.md) — Open Water Foundation Linux shell 教程，服务 Week 02/03/17 的 Bash、脚本和日志参考 · source_ingested · `linux-shell, bash`
 - [Starting_Data_Analytics_GenAI](sources/Starting_Data_Analytics_GenAI.md) — Manning GenAI 数据分析工作流 · stable · `generative-ai, data-analytics`
 - [Learn_AI_Assisted_Python_Programming](sources/Learn_AI_Assisted_Python_Programming.md) — Manning Copilot / ChatGPT 编程教学法 · stable · `copilot, chatgpt, python`
 - [嵩天 Python PPT](sources/嵩天PythonPPT.md) — 中文 Python PPT 外部参考源，待结构化抽取 · draft · `python, slides`
@@ -102,7 +106,7 @@
 
 ## 当前规模
 
-- Knowledge 页：40（含顶层 3、sources 9、entities 11、concepts 9、topics 3、synthesis 4、assets 1）
+- Knowledge 页：46（含顶层 3、sources 15、entities 11、concepts 9、topics 3、synthesis 4、assets 1）
 - Courseware 周目录：18（每周 `outline.md` / `script.md` / `materials.md`）
 - 当前主线：先从 `course/weeks/` 产出 PPT 大纲与脚本，再按需回填 `knowledge/`。
 

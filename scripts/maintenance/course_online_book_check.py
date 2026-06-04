@@ -15,6 +15,17 @@ COURSEBOOK_INDEX = ROOT / "site" / "src" / "pages" / "coursebook.astro"
 COURSEBOOK_ROUTE = ROOT / "site" / "src" / "pages" / "coursebook" / "[slug].astro"
 WEEK_ROUTE = ROOT / "site" / "src" / "pages" / "weeks" / "[slug].astro"
 SAMPLE_WEEKS = {3, 14, 15, 16}
+MODERN_OMICS_EXPECTATIONS = {
+    13: ("Single_Cell_Best_Practices", "OSCA"),
+    14: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
+    15: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
+    16: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
+}
+REPRODUCIBILITY_EXPECTATIONS = {
+    2: ("OWF_Learn_Git", "OWF_Learn_Windows_Shell", "OWF_Learn_Linux_Shell"),
+    3: ("OWF_Learn_Git",),
+    17: ("OWF_Learn_Git", "OWF_Learn_Linux_Shell"),
+}
 REQUIRED_SAMPLE_FIELDS = (
     "introQuestion",
     "learningObjectives",
@@ -138,6 +149,20 @@ def check_map(root: Path) -> list[Issue]:
                 candidate = root / value_text
                 if not candidate.exists():
                     issues.append(Issue("MISSING_SOURCE_PATH", MAP_PATH, f"{field} -> {value_text}"))
+
+        source_text = "\n".join(
+            str(value)
+            for field in ("knowledge_sources", "material_sources")
+            for value in chapter.get(field, [])
+        )
+        if week in MODERN_OMICS_EXPECTATIONS:
+            for marker in MODERN_OMICS_EXPECTATIONS[int(week)]:
+                if marker not in source_text and marker.lower() not in source_text.lower():
+                    issues.append(Issue("MISSING_MODERN_OMICS_SOURCE", MAP_PATH, f"Week {week:02d} should include {marker}"))
+        if week in REPRODUCIBILITY_EXPECTATIONS:
+            for marker in REPRODUCIBILITY_EXPECTATIONS[int(week)]:
+                if marker not in source_text and marker.lower() not in source_text.lower():
+                    issues.append(Issue("MISSING_REPRO_SOURCE", MAP_PATH, f"Week {week:02d} should include {marker}"))
     return issues
 
 
@@ -158,6 +183,30 @@ def check_site_data(root: Path) -> list[Issue]:
         issues.append(Issue("RAW_SOURCE_REFERENCE", SITE_DATA, "Site data must not reference raw sources"))
     if re.search(r"script\.md.*formal_ready.*PPT", text, flags=re.S):
         issues.append(Issue("STATUS_CONFLATION", SITE_DATA, "Do not infer PPT readiness from script formal_ready status"))
+    for required_text in ("现代组学拓展", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
+        if required_text not in text:
+            issues.append(Issue("MISSING_MODERN_OMICS_DATA", SITE_DATA, f"Site data should expose {required_text}"))
+    for required_text in ("可复现工作流", "OWF_Learn_Git"):
+        if required_text not in text:
+            issues.append(Issue("MISSING_REPRO_DATA", SITE_DATA, f"Site data should expose {required_text}"))
+    return issues
+
+
+def check_course_week_files(root: Path) -> list[Issue]:
+    issues: list[Issue] = []
+    course_weeks_dir = root / "course" / "weeks"
+    for week in range(1, 19):
+        week_dir = course_weeks_dir / f"week_{week:02d}"
+        materials_path = week_dir / "materials.md"
+        if not materials_path.exists():
+            issues.append(Issue("MISSING_WEEK_MATERIALS", materials_path, "Week materials.md is missing"))
+            continue
+        materials_text = read_text(materials_path)
+        if "素材分层使用原则（2026-06-04）" not in materials_text:
+            issues.append(Issue("MISSING_MATERIAL_LAYERING", materials_path, "Week materials must include the four-layer source policy"))
+        for path in (materials_path, week_dir / "outline.md", week_dir / "script.md"):
+            if path.exists() and "materials/raw" in read_text(path).replace("\\", "/"):
+                issues.append(Issue("RAW_SOURCE_REFERENCE", path, "Course week files must not reference materials/raw"))
     return issues
 
 
@@ -184,7 +233,7 @@ def check_routes() -> list[Issue]:
 
 
 def run_check(root: Path = ROOT) -> list[Issue]:
-    return [*check_map(root), *check_site_data(root), *check_routes()]
+    return [*check_map(root), *check_site_data(root), *check_routes(), *check_course_week_files(root)]
 
 
 def print_issues(root: Path, issues: list[Issue]) -> None:

@@ -1,0 +1,2 @@
+USArrests = get_rdataset('USArrests').data
+USArrests

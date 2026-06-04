@@ -1,0 +1,13 @@
+## class: SingleCellExperiment 
+## dim: 17483 10368 
+## metadata(0):
+## assays(1): counts
+## rownames(17483): ENSMUSG00000007777 ENSMUSG00000107002 ...
+##   ENSMUSG00000039068 ENSMUSG00000064363
+## rowData names(3): GENEID SYMBOL SEQNAME
+## colnames(10368): W29953 W29954 ... W76335 W76336
+## colData names(12): Seq_batch_ID Amp_batch_ID ... CD34_measurement
+##   FcgR3_measurement
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(0):

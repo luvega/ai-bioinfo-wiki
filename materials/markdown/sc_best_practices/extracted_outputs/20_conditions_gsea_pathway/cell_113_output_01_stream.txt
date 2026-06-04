@@ -1,0 +1,27 @@
+R version 4.1.2 (2021-11-01)
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+Running under: macOS Big Sur 11.6.8
+
+Matrix products: default
+LAPACK: /Users/isaac/miniconda3/envs/pathway/lib/libopenblasp-r0.3.21.dylib
+
+locale:
+[1] C/UTF-8/C/C/C/C
+
+attached base packages:
+[1] stats4    tools     stats     graphics  grDevices utils     datasets 
+[8] methods   base     
+
+other attached packages:
+ [1] SingleCellExperiment_1.16.0 SummarizedExperiment_1.24.0
+ [3] Biobase_2.54.0              GenomicRanges_1.46.1       
+ [5] GenomeInfoDb_1.30.1         IRanges_2.28.0             
+ [7] S4Vectors_0.32.4            BiocGenerics_0.40.0        
+ [9] MatrixGenerics_1.6.0        matrixStats_0.63.0         
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.9             locfit_1.5-9.6         edgeR_3.36.0          
+ [4] lattice_0.20-45        bitops_1.0-7           grid_4.1.2            
+ [7] zlibbioc_1.40.0        XVector_0.34.0         limma_3.50.1          
+[10] Matrix_1.5-3           statmod_1.4.37         RCurl_1.98-1.9        
+[13] DelayedArray_0.20.0    compiler_4.1.2         GenomeInfoDbData_1.2.7

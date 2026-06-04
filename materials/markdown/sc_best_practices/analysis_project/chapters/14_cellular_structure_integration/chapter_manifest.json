@@ -1,0 +1,20 @@
+{
+  "order": 14,
+  "part": "Identifying cellular structure",
+  "toc_file": "cellular_structure/integration",
+  "title": "Data integration",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/cellular_structure/integration.ipynb",
+  "environment": "annotation",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 52,
+  "dataset_reference_count": 10,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/14_cellular_structure_integration",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/14_cellular_structure_integration/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/14_cellular_structure_integration/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/14_cellular_structure_integration/code_index.md"
+  }
+}

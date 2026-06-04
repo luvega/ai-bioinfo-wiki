@@ -1,0 +1,2 @@
+NB = GaussianNB()
+"NB.fit(X_train, L_train)"

@@ -1,0 +1,8 @@
+(continued)
+"strings contain spaces or more than single words (e.g.,"
+"longest_word(['hi there',
+). It’s hard to say what the function should do when given incor-
+' my ', 'friend'])
+rect input and programmers need to decide whether they care about this in larger code
+bases, but we’ll ignore this category of tests in this book because we’ll assume you will
+call your own functions in ways that the functions are designed to handle."

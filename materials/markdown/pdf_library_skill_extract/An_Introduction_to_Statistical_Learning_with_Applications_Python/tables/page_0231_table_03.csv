@@ -1,0 +1,3 @@
+"hp_model.fit(Auto, Auto['mpg'])"
+model_se = summarize(hp_model.results_)['std err']
+model_se

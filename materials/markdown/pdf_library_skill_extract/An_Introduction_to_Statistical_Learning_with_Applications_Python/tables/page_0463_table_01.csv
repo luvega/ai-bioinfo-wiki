@@ -1,0 +1,18 @@
+class IMDBModel(nn.Module):
+""
+"def __init__(self, input_size):"
+"super(IMDBModel, self).__init__()"
+"self.dense1 = nn.Linear(input_size, 16)"
+self.activation = nn.ReLU()
+"self.dense2 = nn.Linear(16, 16)"
+"self.output = nn.Linear(16, 1)"
+""
+"def forward(self, x):"
+val = x
+"for _map in [self.dense1,"
+"self.activation,"
+"self.dense2,"
+"self.activation,"
+self.output]:
+val = _map(val)
+return torch.flatten(val)

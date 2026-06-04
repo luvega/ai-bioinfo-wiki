@@ -1,0 +1,6 @@
+"cifar_trainer = Trainer(deterministic=True,"
+"max_epochs=30,"
+"logger=cifar_logger,"
+callbacks=[ErrorTracker()])
+"cifar_trainer.fit(cifar_module,"
+datamodule=cifar_dm)

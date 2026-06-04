@@ -1,0 +1,4 @@
+AnnData object with n_obs × n_vars = 3375 × 99
+    obs: 'cell_ID', 'fov_labels', 'annotation'
+    uns: 'spatialdata_attrs', 'annotation_colors'
+    obsm: 'spatial'

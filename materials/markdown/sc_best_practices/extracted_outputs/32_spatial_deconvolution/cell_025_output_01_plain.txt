@@ -1,0 +1,7 @@
+                   feature_types  genome feature_name
+gene_ids                                             
+ENSG00000243485  Gene Expression  GRCh38  MIR1302-2HG
+ENSG00000237613  Gene Expression  GRCh38      FAM138A
+ENSG00000186092  Gene Expression  GRCh38        OR4F5
+ENSG00000238009  Gene Expression  GRCh38   AL627309.1
+ENSG00000239945  Gene Expression  GRCh38   AL627309.3

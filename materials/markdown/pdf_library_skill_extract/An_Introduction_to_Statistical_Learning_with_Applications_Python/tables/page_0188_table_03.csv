@@ -1,0 +1,3 @@
+"X_train, X_test = [M.drop(columns=['intercept'])"
+"for M in [X_train, X_test]]"
+"lda.fit(X_train, L_train)"

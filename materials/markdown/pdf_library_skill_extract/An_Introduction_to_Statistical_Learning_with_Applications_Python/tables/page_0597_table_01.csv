@@ -1,0 +1,12 @@
+B = 10000
+Tnull = np.empty(B)
+"D_ = np.hstack([D2[gene_11], D4[gene_11]])"
+n_ = D2[gene_11].shape[0]
+D_null = D_.copy()
+for b in range(B):
+rng.shuffle(D_null)
+"ttest_ = ttest_ind(D_null[:n_],"
+"D_null[n_:],"
+equal_var=True)
+Tnull[b] = ttest_.statistic
+(np.abs(Tnull) > np.abs(observedT)).mean()

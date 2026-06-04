@@ -1,0 +1,7 @@
+"for lag in range(1, 6):"
+for col in cols:
+newcol = np.zeros(X.shape[0]) * np.nan
+newcol[lag:] = X[col].values[:-lag]
+"X.insert(len(X.columns), ""{0}_{1}"".format(col, lag), newcol)"
+"X.insert(len(X.columns), 'train', NYSE['train'])"
+X = X.dropna()

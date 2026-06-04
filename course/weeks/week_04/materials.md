@@ -15,11 +15,19 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## AIDD 候选素材
 
-- 待从 materials/raw/aidd_bioinformatics/ 和 materials/markdown/aidd_bioinformatics/ 抽取。
+- 从 [AIDD 课程索引](../../../materials/markdown/aidd_bioinformatics/aidd.course_index.md) 和相关 `chapter.course.md` 选取；字幕原文只作术语核验，不直接进入课堂。
 
 ## PDF / 外部 PPT 候选素材
 
-- 待从 materials/markdown/pdf_library_legacy/、materials/markdown/pdf_library_mineru/ 和 materials/raw/external_ppt/ 抽取。
+- 从 `materials/markdown/pdf_library_mineru/` 和 `materials/markdown/pdf_library_skill_extract/` 选取已转换 Markdown；原始 PDF/PPT 不直接进入课程引用。
+
+## 素材分层使用原则（2026-06-04）
+
+- 课堂主素材：R 向量、数据框、因子和 AI 代码核验；服务后续 DESeq2 和 ggplot2。
+- 支撑素材：AIDD R for Bioinformatics、ISLR/ISLP 中 R 与统计学习基础。
+- 拓展素材：DESeq2 包名可预告，但不在本周展开差异表达统计。
+- 教师备课素材：整理 R 对象、列名、变量类型、包加载和 AI 代码审查清单。
+- 教材 / PPT 边界：可进 PPT：R 数据框小表、group 因子、列名核验清单。
 
 ## 可进 PPT 的元素
 

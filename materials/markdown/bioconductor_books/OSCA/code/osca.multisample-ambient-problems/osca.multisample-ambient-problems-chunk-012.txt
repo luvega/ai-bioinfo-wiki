@@ -1,0 +1,7 @@
+##           [,1]   [,2]  [,3] [,4]
+## Xkr4       NaN    NaN   NaN  NaN
+## Gm1992     NaN    NaN   NaN  NaN
+## Gm37381    NaN    NaN   NaN  NaN
+## Rp1        NaN    NaN   NaN  NaN
+## Sox17   0.1775 0.1833 0.468    1
+## Gm37323    NaN    NaN   NaN  NaN

@@ -1,0 +1,2 @@
+probs = results.predict()
+probs[:10]

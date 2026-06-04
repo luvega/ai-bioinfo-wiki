@@ -1,0 +1,20 @@
+{
+  "order": 16,
+  "part": "Inferring trajectories",
+  "toc_file": "trajectories/rna_velocity",
+  "title": "RNA velocity",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/trajectories/rna_velocity.ipynb",
+  "environment": "lineage-tracing",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 12,
+  "dataset_reference_count": 1,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/16_trajectories_rna_velocity",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/16_trajectories_rna_velocity/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/16_trajectories_rna_velocity/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/16_trajectories_rna_velocity/code_index.md"
+  }
+}

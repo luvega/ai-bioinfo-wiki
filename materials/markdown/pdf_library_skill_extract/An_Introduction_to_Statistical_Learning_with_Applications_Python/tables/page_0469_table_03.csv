@@ -1,0 +1,2 @@
+"X_rnn = X.to_numpy().reshape((-1,5,3))"
+X_rnn.shape

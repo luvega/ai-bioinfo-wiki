@@ -1,0 +1,7 @@
+[1m{[0m
+[2;32m│   [0m[32m'layer'[0m: [3;35mNone[0m,
+[2;32m│   [0m[32m'batch_key'[0m: [32m'patient'[0m,
+[2;32m│   [0m[32m'labels_key'[0m: [3;35mNone[0m,
+[2;32m│   [0m[32m'categorical_covariate_keys'[0m: [3;35mNone[0m,
+[2;32m│   [0m[32m'continuous_covariate_keys'[0m: [3;35mNone[0m
+[1m}[0m

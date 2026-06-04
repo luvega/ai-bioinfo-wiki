@@ -1,0 +1,18 @@
+{
+  "order": 27,
+  "part": "Chromatin Accessibility",
+  "toc_file": "chromatin_accessibility/gene_regulatory_networks_atac",
+  "title": "Gene regulatory networks",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/chromatin_accessibility/gene_regulatory_networks_atac.ipynb",
+  "environment": "gene-regulatory-networks-atac",
+  "week_mapping": [],
+  "code_cell_count": 69,
+  "dataset_reference_count": 6,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/27_chromatin_accessibility_gene_regulatory_networks_atac",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/27_chromatin_accessibility_gene_regulatory_networks_atac/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/27_chromatin_accessibility_gene_regulatory_networks_atac/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/27_chromatin_accessibility_gene_regulatory_networks_atac/code_index.md"
+  }
+}

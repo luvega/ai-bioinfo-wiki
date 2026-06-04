@@ -1,0 +1,9 @@
+Python modules
+""
+"Python modules expand the capability of the programming language. There are many
+modules in Python, and they can help you do anything from data analysis to creating web-
+sites to writing video games. You can recognize when code wants to use a Python module
+by the statement in the code. Python doesn’t automatically install all the mod-
+import
+ules for you because you likely won’t use most of them. When you want to use a module
+then, you’ll need to install the package containing the module yourself."

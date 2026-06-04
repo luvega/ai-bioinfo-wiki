@@ -1,0 +1,4 @@
+feature_std = pd.DataFrame(
+"X_std,"
+columns=feature_df.columns);
+feature_std.std()

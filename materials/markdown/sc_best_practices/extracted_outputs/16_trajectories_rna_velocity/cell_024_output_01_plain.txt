@@ -1,0 +1,7 @@
+AnnData object with n_obs × n_vars = 3696 × 27998
+    obs: 'clusters_coarse', 'clusters', 'S_score', 'G2M_score'
+    var: 'highly_variable_genes'
+    uns: 'clusters_coarse_colors', 'clusters_colors', 'day_colors', 'neighbors', 'pca'
+    obsm: 'X_pca', 'X_umap'
+    layers: 'spliced', 'unspliced'
+    obsp: 'distances', 'connectivities'

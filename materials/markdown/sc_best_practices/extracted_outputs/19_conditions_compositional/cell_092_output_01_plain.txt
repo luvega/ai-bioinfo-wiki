@@ -1,0 +1,13 @@
+MuData object with n_obs × n_vars = 9842 × 15215
+  2 modalities
+    rna:	9842 x 15215
+      obs:	'batch', 'barcode', 'condition', 'cell_label', 'nhood_ixs_random', 'nhood_ixs_refined', 'nhood_kth_distance'
+      var:	'highly_variable', 'means', 'dispersions', 'dispersions_norm'
+      uns:	'hvg', 'pca', 'neighbors', 'umap', 'condition_colors', 'batch_colors', 'cell_label_colors', 'nhood_neighbors_key', 'milo'
+      obsm:	'X_pca', 'X_umap', 'X_scVI', 'nhoods'
+      varm:	'PCs'
+      layers:	'counts', 'logcounts'
+      obsp:	'distances', 'connectivities', 'milo_distances', 'milo_connectivities'
+    milo_compositional:	10 x 808
+      var:	'index_cell', 'kth_distance'
+      uns:	'sample_col'

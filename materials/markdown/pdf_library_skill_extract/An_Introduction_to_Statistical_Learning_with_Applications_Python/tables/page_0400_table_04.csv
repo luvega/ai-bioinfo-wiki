@@ -1,0 +1,6 @@
+rng = np.random.default_rng(123)
+"X = np.vstack([X, rng.standard_normal((50, 2))])"
+"y = np.hstack([y, [0]*50])"
+"X[y==0,1] += 2"
+"fig, ax = subplots(figsize=(8,8))"
+"ax.scatter(X[:,0], X[:,1], c=y, cmap=cm.coolwarm);"

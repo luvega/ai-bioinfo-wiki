@@ -1,0 +1,2 @@
+img_probs = np.exp(np.asarray(img_preds.detach()))
+"img_probs /= img_probs.sum(1)[:,None]"

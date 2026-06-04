@@ -1,0 +1,18 @@
+<xarray.DataTree>
+Group: /
+├── Group: /scale0
+│       Dimensions:  (c: 1, y: 6432, x: 6432)
+│       Coordinates:
+│         * c        (c) int64 8B 0
+│         * y        (y) float64 51kB 0.5 1.5 2.5 3.5 ... 6.43e+03 6.43e+03 6.432e+03
+│         * x        (x) float64 51kB 0.5 1.5 2.5 3.5 ... 6.43e+03 6.43e+03 6.432e+03
+│       Data variables:
+│           image    (c, y, x) uint16 83MB dask.array<chunksize=(1, 256, 256), meta=np.ndarray>
+└── Group: /scale1
+        Dimensions:  (c: 1, y: 1608, x: 1608)
+        Coordinates:
+          * c        (c) int64 8B 0
+          * y        (y) float64 13kB 2.0 6.0 10.0 14.0 ... 6.422e+03 6.426e+03 6.43e+03
+          * x        (x) float64 13kB 2.0 6.0 10.0 14.0 ... 6.422e+03 6.426e+03 6.43e+03
+        Data variables:
+            image    (c, y, x) uint16 5MB dask.array<chunksize=(1, 256, 256), meta=np.ndarray>

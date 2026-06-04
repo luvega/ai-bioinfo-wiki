@@ -1,0 +1,11 @@
+Event-driven programming
+""
+"Event-driven programming is commonly used for programs that interact with users. At
+a high level, the program sets up a way for the user to interact with the program (e.g., by
+pressing buttons or entering text) and then just sits and waits for the user to do some-
+thing, sometimes updating the state of the game while waiting for the user input. Once
+the human interacts with the game, the code recognizes this interaction as an event and
+each event has code associated with it that should execute when the event occurs. For
+example, when a user presses the Quit Game button, it would trigger the code that needs
+to be executed when the user wants to quit (e.g., saving the state of the game and exiting
+the program)."

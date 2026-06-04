@@ -1,0 +1,20 @@
+{
+  "order": 13,
+  "part": "Identifying cellular structure",
+  "toc_file": "cellular_structure/annotation",
+  "title": "Annotation",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/cellular_structure/annotation.ipynb",
+  "environment": "annotation",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 91,
+  "dataset_reference_count": 7,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/code_index.md"
+  }
+}

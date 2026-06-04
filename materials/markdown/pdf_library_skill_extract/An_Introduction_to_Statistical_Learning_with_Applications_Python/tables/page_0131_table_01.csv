@@ -1,0 +1,4 @@
+"ax.scatter(results.fittedvalues, results.resid)"
+ax.set_xlabel('Fitted value')
+ax.set_ylabel('Residual')
+"ax.axhline(0, c='k', ls='--');"

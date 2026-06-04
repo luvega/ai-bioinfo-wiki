@@ -1,0 +1,5 @@
+Amount of all B cells:				159446
+Amount of B cells with AIR:			159185
+Amount of B cells without doublets:		159185
+Amount of B cells with unique AIR per cell:	153936
+Amount of B cells with single complete AIR:	108395

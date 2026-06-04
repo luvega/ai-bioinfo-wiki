@@ -1,0 +1,20 @@
+{
+  "order": 39,
+  "part": "Surface protein",
+  "toc_file": "surface_protein/annotation",
+  "title": "Annotation",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/surface_protein/annotation.ipynb",
+  "environment": "surface-protein",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 17,
+  "dataset_reference_count": 2,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/39_surface_protein_annotation",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/39_surface_protein_annotation/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/39_surface_protein_annotation/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/39_surface_protein_annotation/code_index.md"
+  }
+}

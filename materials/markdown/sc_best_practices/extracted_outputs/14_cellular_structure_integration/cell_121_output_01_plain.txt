@@ -1,0 +1,1 @@
+<pandas.io.formats.style.Styler at 0x1e9636fd0>

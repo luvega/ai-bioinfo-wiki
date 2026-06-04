@@ -1,0 +1,2 @@
+single pair    196957
+Name: chain_pairing, dtype: int64

@@ -1,0 +1,4 @@
+X_valid = hp_mm.transform(Auto_valid)
+y_valid = Auto_valid['mpg']
+valid_pred = results.predict(X_valid)
+np.mean((y_valid - valid_pred)**2)

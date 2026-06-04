@@ -1,0 +1,4 @@
+"X: torch.Size([256, 1, 28, 28])"
+Y: torch.Size([256])
+"X: torch.Size([256, 1, 28, 28])"
+Y: torch.Size([256])

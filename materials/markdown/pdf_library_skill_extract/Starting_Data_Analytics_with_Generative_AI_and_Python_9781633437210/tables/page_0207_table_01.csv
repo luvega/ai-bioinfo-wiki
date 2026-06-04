@@ -1,0 +1,9 @@
+,The second issue concerns the desired number of generated keywords. It might
+"seem intuitive to set the max_tokens parameter to 20, but this will not work. The",
+model requires more tokens to generate our list effectively. Experimenting with this,
+"parameter will reveal that setting it to anything less than 100, or even 120, results in an",
+"incomplete, truncated list with fewer keywords than desired. This is because the",
+max_tokens parameter in the API call does not directly dictate the number of key-,
+"words to generate; instead, it specifies the maximum number of tokens (words or",
+word pieces) that the model’s response can contain. The final list is the result of pro-,
+cessing this response.,

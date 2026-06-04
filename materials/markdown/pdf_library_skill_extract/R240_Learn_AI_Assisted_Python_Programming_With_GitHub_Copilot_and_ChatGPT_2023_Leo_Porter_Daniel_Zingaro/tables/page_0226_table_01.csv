@@ -1,0 +1,44 @@
+(continued)
+""
+Let’s focus on this line from our program in listing 9.3:
+""
+"result = open(os.path.join(final_dir, report_file), 'wb')"
+""
+"It’s using the function to open a file. Specifically, it’s opening the current
+open report_
+file in the directory. The second argument to here, , means
+file final_dir open 'wb'
+that we want to open the file so we can write to it (that’s the ) and that the file we’re
+'w'
+writing is a binary file (that’s the ), not a text file. If the file doesn’t already exist, then
+'b'
+the we’ve included will result in the file being created. That’s not the dangerous part.
+'w'
+The dangerous part is what happens when the file already exists. In that case, wipes
+'w'
+out its contents and gives us an empty file that we can start writing to. Now, if our pro-
+gram is working correctly and only doing this in our , then we’re OK. But this
+final_dir
+is what we need to carefully verify before letting our program loose."
+""
+"We highly recommend that you first test on a small directory of files that you don’t care
+about. Further, we recommend changing lines of code that open files using or
+'w' 'wb'
+to print a harmless output message instead, so that you can see exactly which files are
+going to be overwritten or created. For example, in our program here, we need to com-
+ment out these two lines:"
+""
+"result = open(os.path.join(final_dir, report_file), 'wb')
+report_writer.write(result)"
+""
+"Instead, we’ll use to print out the file that we would have created or overwritten:
+print"
+""
+"print('Will write', os.path.join(final_dir, report_file))"
+""
+"Then when you run your program, you’ll see the names of files that the program intended
+to write. If the output looks good—that is, the program is operating exactly on the files
+that you wanted it to operate on—then you can uncomment the code that actually does
+the work."
+""
+Exercise caution and always keep backups of your important files!

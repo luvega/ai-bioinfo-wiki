@@ -1,0 +1,6 @@
+imdb_model = IMDBModel(imdb_test.tensors[0].size()[1])
+"summary(imdb_model,"
+"input_size=imdb_test.tensors[0].size(),"
+"col_names=['input_size',"
+"'output_size',"
+'num_params'])

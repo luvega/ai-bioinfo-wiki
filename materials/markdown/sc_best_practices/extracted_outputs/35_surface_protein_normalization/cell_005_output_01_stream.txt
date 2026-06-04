@@ -1,0 +1,4 @@
+[92m→[0m connected lamindb: theislab/sc-best-practices
+[92m→[0m loaded Transform('Z95qTilYUzGh0002', key='normalization.ipynb'), re-started Run('Ygjmj9z9STgZ7fVF') at 2026-04-10 16:46:01 UTC
+[92m→[0m notebook imports: lamindb==2.2.1 matplotlib==3.10.3 muon==0.1.6 pandas==2.3.1 scanpy==1.11.3 seaborn==0.13.2
+[94m•[0m recommendation: to identify the notebook across renames, pass the uid: ln.track("Z95qTilYUzGh")

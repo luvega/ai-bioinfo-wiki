@@ -1,0 +1,1 @@
+[34mINFO    [0m Converted [1;36m1[0m [1;35mPolygon[0m[1m([0ms[1m)[0m with holes to [1;35mMultiPolygon[0m[1m([0ms[1m)[0m for correct rendering.                               

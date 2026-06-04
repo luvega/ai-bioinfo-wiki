@@ -1,0 +1,7 @@
+                     count      freq
+indel                               
+TAATT[219:2D]CGGAG   664.0  0.764977
+CGCCG[111:1I]AAAAAA  584.0  0.672811
+CGCCG[111:1D]AAAAT   504.0  0.580645
+CGCCG[111:2D]AAATG   401.0  0.461982
+AATTC[220:3D]GAGGA   395.0  0.455069

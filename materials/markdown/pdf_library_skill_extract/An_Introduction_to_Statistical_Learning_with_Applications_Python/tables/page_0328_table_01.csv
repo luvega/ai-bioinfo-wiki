@@ -1,0 +1,11 @@
+partial_age = preds.predicted_mean
+center = partial_age.mean()
+partial_age -= center
+bounds_age -= center
+"fig, ax = subplots(figsize=(8,8))"
+"ax.plot(age_grid, partial_age, 'b', linewidth=3)"
+"ax.plot(age_grid, bounds_age[:,0], 'r--', linewidth=3)"
+"ax.plot(age_grid, bounds_age[:,1], 'r--', linewidth=3)"
+ax.set_xlabel('Age')
+ax.set_ylabel('Effect on wage')
+"ax.set_title('Partial dependence of age on wage', fontsize=20);"

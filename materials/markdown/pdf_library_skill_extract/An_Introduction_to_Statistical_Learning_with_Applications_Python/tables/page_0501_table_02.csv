@@ -1,0 +1,5 @@
+"model = MS(['Operators',"
+"'Center',"
+"'Time'],"
+intercept=False)
+X = model.fit_transform(D)

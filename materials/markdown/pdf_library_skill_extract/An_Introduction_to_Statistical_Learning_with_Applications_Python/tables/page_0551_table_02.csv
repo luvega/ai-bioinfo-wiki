@@ -1,0 +1,5 @@
+"fig, ax = plt.subplots(1, 1, figsize=(8, 8))"
+"dendrogram(linkage_comp,"
+"ax=ax,"
+"color_threshold=4,"
+above_threshold_color='black');

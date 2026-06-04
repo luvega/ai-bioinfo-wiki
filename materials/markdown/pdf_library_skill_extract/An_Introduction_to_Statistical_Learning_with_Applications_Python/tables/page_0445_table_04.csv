@@ -1,0 +1,5 @@
+X_s = scaler.fit_transform(X_train)
+n = X_s.shape[0]
+lam_max = np.fabs(X_s.T.dot(Y_train - Y_train.mean())).max() / n
+"param_grid = {'alpha': np.exp(np.linspace(0, np.log(0.01), 100))"
+* lam_max}

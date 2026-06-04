@@ -1,0 +1,6 @@
+"kmeans = KMeans(n_clusters=3,"
+"random_state=3,"
+n_init=20).fit(X)
+"fig, ax = plt.subplots(figsize=(8,8))"
+"ax.scatter(X[:,0], X[:,1], c=kmeans.labels_)"
+"ax.set_title(""K-Means Clustering Results with K=3"");"

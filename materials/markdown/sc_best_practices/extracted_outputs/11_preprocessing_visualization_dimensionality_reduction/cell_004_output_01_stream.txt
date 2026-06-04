@@ -1,0 +1,3 @@
+[92m→[0m connected lamindb: theislab/sc-best-practices
+[92m→[0m loaded Transform('liGMVGre4G5H0000'), re-started Run('ZFh04bqi...') at 2025-05-13 03:27:34 UTC
+[92m→[0m notebook imports: lamindb==1.3.2 scanpy==1.11.1

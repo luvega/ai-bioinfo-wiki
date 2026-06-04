@@ -1,0 +1,4 @@
+An object of class Seurat 
+4000 features across 16046 samples within 1 assay 
+Active assay: originalexp (4000 features, 0 variable features)
+ 1 dimensional reduction calculated: PCA

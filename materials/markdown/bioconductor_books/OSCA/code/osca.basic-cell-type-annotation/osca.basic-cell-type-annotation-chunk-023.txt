@@ -1,0 +1,13 @@
+## class: SingleCellExperiment 
+## dim: 24058 1809 
+## metadata(0):
+## assays(1): counts
+## rownames(24058): 0610005C13Rik 0610007C21Rik ... mt_X57780 tdTomato
+## rowData names(0):
+## colnames(1809): Calb2_tdTpositive_cell_1 Calb2_tdTpositive_cell_2 ...
+##   Rbp4_CTX_250ng_2 Trib2_CTX_250ng_1
+## colData names(12): mouse_line cre_driver_1 ... secondary_type
+##   aibs_vignette_id
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(1): ERCC

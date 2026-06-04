@@ -1,0 +1,4 @@
+M = LinearRegression()
+"M.fit(X[train], Y[train])"
+"M.score(X[ train], Y[ train])
+∼ ∼"

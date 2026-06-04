@@ -1,0 +1,668 @@
+{
+  "generated_at": "2026-06-04T01:52:53+00:00",
+  "source": "OSCA",
+  "page_count": 50,
+  "image_count": 186,
+  "code_chunk_count": 1065,
+  "pages": [
+    {
+      "source": "OSCA",
+      "slug": "osca.basic-marker-detection",
+      "title": "Basics of Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.basic/marker-detection.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.basic-marker-detection.md",
+      "image_count": 6,
+      "code_chunk_count": 40,
+      "week_mapping": [
+        15,
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-grun-mouse-hsc-cel-seq",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/grun-mouse-hsc-cel-seq.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-grun-mouse-hsc-cel-seq.md",
+      "image_count": 5,
+      "code_chunk_count": 25,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca-book-contents",
+      "title": "Orchestrating Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/release/OSCA/book-contents.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca-book-contents.md",
+      "image_count": 0,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-correction-diagnostics",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/correction-diagnostics.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-correction-diagnostics.md",
+      "image_count": 3,
+      "code_chunk_count": 28,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/index.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-lawlor-human-pancreas-smarter",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/lawlor-human-pancreas-smarter.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-lawlor-human-pancreas-smarter.md",
+      "image_count": 5,
+      "code_chunk_count": 22,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "url": "https://bioconductor.org/books/3.23/OSCA.advanced/",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-using-corrected-values",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/using-corrected-values.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-using-corrected-values.md",
+      "image_count": 5,
+      "code_chunk_count": 18,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca-contributors",
+      "title": "Orchestrating Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/release/OSCA/contributors.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca-contributors.md",
+      "image_count": 0,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-differential-abundance",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/differential-abundance.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-differential-abundance.md",
+      "image_count": 2,
+      "code_chunk_count": 33,
+      "week_mapping": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.intro",
+      "title": "Introduction to Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.intro/",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.intro.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.basic-dimensionality-reduction",
+      "title": "Basics of Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.basic/dimensionality-reduction.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.basic-dimensionality-reduction.md",
+      "image_count": 6,
+      "code_chunk_count": 16,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-merged-pancreas",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/merged-pancreas.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-merged-pancreas.md",
+      "image_count": 5,
+      "code_chunk_count": 32,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-grun-human-pancreas-cel-seq2",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/grun-human-pancreas-cel-seq2.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-grun-human-pancreas-cel-seq2.md",
+      "image_count": 4,
+      "code_chunk_count": 24,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.basic",
+      "title": "Basics of Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.basic/",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.basic.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-chimeric-mouse-embryo-10x-genomics",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/chimeric-mouse-embryo-10x-genomics.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-chimeric-mouse-embryo-10x-genomics.md",
+      "image_count": 4,
+      "code_chunk_count": 16,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.intro",
+      "title": "Introduction to Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.intro/index.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.intro.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-nestorowa-mouse-hsc-smart-seq2",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/nestorowa-mouse-hsc-smart-seq2.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-nestorowa-mouse-hsc-smart-seq2.md",
+      "image_count": 7,
+      "code_chunk_count": 28,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-bach-mouse-mammary-gland-10x-genomics",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/bach-mouse-mammary-gland-10x-genomics.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-bach-mouse-mammary-gland-10x-genomics.md",
+      "image_count": 5,
+      "code_chunk_count": 22,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-muraro-human-pancreas-cel-seq",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/muraro-human-pancreas-cel-seq.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-muraro-human-pancreas-cel-seq.md",
+      "image_count": 5,
+      "code_chunk_count": 23,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-hca-human-bone-marrow-10x-genomics",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/hca-human-bone-marrow-10x-genomics.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-hca-human-bone-marrow-10x-genomics.md",
+      "image_count": 6,
+      "code_chunk_count": 23,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.intro-the-singlecellexperiment-class",
+      "title": "Introduction to Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.intro/the-singlecellexperiment-class.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.intro-the-singlecellexperiment-class.md",
+      "image_count": 1,
+      "code_chunk_count": 101,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-unfiltered-human-pbmcs-10x-genomics",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/unfiltered-human-pbmcs-10x-genomics.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-unfiltered-human-pbmcs-10x-genomics.md",
+      "image_count": 6,
+      "code_chunk_count": 27,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-lun-416b-cell-line-smart-seq2",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/lun-416b-cell-line-smart-seq2.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-lun-416b-cell-line-smart-seq2.md",
+      "image_count": 7,
+      "code_chunk_count": 27,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.basic",
+      "title": "Basics of Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.basic/index.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.basic.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca",
+      "title": "Orchestrating Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/release/OSCA/",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-zeisel-mouse-brain-strt-seq",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/zeisel-mouse-brain-strt-seq.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-zeisel-mouse-brain-strt-seq.md",
+      "image_count": 7,
+      "code_chunk_count": 26,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.basic-quality-control",
+      "title": "Basics of Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.basic/quality-control.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.basic-quality-control.md",
+      "image_count": 3,
+      "code_chunk_count": 32,
+      "week_mapping": [
+        14,
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca",
+      "title": "Orchestrating Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA/",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-ambient-problems",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/ambient-problems.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-ambient-problems.md",
+      "image_count": 1,
+      "code_chunk_count": 42,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-segerstolpe-human-pancreas-smart-seq2",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/segerstolpe-human-pancreas-smart-seq2.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-segerstolpe-human-pancreas-smart-seq2.md",
+      "image_count": 8,
+      "code_chunk_count": 28,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.basic-feature-selection",
+      "title": "Basics of Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.basic/feature-selection.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.basic-feature-selection.md",
+      "image_count": 4,
+      "code_chunk_count": 32,
+      "week_mapping": [
+        15,
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-multi-sample-comparisons",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/multi-sample-comparisons.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-multi-sample-comparisons.md",
+      "image_count": 10,
+      "code_chunk_count": 66,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.basic-clustering",
+      "title": "Basics of Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.basic/clustering.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.basic-clustering.md",
+      "image_count": 14,
+      "code_chunk_count": 57,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/index.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.basic-normalization",
+      "title": "Basics of Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.basic/normalization.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.basic-normalization.md",
+      "image_count": 4,
+      "code_chunk_count": 20,
+      "week_mapping": [
+        14,
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.intro-installation",
+      "title": "Introduction to Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.intro/installation.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.intro-installation.md",
+      "image_count": 0,
+      "code_chunk_count": 13,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.intro-analysis-overview",
+      "title": "Introduction to Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.intro/analysis-overview.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.intro-analysis-overview.md",
+      "image_count": 3,
+      "code_chunk_count": 5,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.intro-getting-scrna-seq-datasets",
+      "title": "Introduction to Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.intro/getting-scrna-seq-datasets.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.intro-getting-scrna-seq-datasets.md",
+      "image_count": 0,
+      "code_chunk_count": 24,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-integrating-datasets",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/integrating-datasets.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-integrating-datasets.md",
+      "image_count": 6,
+      "code_chunk_count": 43,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-messmer-hesc",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/messmer-hesc.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-messmer-hesc.md",
+      "image_count": 6,
+      "code_chunk_count": 27,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.basic-cell-type-annotation",
+      "title": "Basics of Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.basic/cell-type-annotation.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.basic-cell-type-annotation.md",
+      "image_count": 8,
+      "code_chunk_count": 45,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.intro-learning-r",
+      "title": "Introduction to Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.intro/learning-r.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.intro-learning-r.md",
+      "image_count": 1,
+      "code_chunk_count": 6,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca",
+      "title": "Orchestrating Single-Cell Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/release/OSCA/index.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-human-pbmcs-10x-genomics",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/human-pbmcs-10x-genomics.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-human-pbmcs-10x-genomics.md",
+      "image_count": 4,
+      "code_chunk_count": 23,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-paul-mouse-hsc-mars-seq",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/paul-mouse-hsc-mars-seq.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-paul-mouse-hsc-mars-seq.md",
+      "image_count": 6,
+      "code_chunk_count": 23,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.multisample-merged-hsc",
+      "title": "Multi-Sample Single-Cell Analyses with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.multisample/merged-hsc.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.multisample-merged-hsc.md",
+      "image_count": 3,
+      "code_chunk_count": 21,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSCA",
+      "slug": "osca.workflows-human-pbmc-with-surface-proteins-10x-genomics",
+      "title": "Single-Cell Analysis Workflows with Bioconductor",
+      "url": "https://bioconductor.org/books/3.23/OSCA.workflows/human-pbmc-with-surface-proteins-10x-genomics.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSCA/pages/osca.workflows-human-pbmc-with-surface-proteins-10x-genomics.md",
+      "image_count": 5,
+      "code_chunk_count": 27,
+      "week_mapping": [
+        16,
+        17
+      ]
+    }
+  ],
+  "extracted_archives": [
+    {
+      "package": "OSCA",
+      "version": "1.22.0",
+      "archive": "materials/raw/bioconductor_books/archives/OSCA_1.22.0.tar.gz",
+      "extracted_to": "materials/raw/bioconductor_books/extracted/OSCA_1.22.0"
+    },
+    {
+      "package": "OSCA.intro",
+      "version": "1.20.0",
+      "archive": "materials/raw/bioconductor_books/archives/OSCA.intro_1.20.0.tar.gz",
+      "extracted_to": "materials/raw/bioconductor_books/extracted/OSCA.intro_1.20.0"
+    },
+    {
+      "package": "OSCA.basic",
+      "version": "1.20.0",
+      "archive": "materials/raw/bioconductor_books/archives/OSCA.basic_1.20.0.tar.gz",
+      "extracted_to": "materials/raw/bioconductor_books/extracted/OSCA.basic_1.20.0"
+    },
+    {
+      "package": "OSCA.multisample",
+      "version": "1.20.0",
+      "archive": "materials/raw/bioconductor_books/archives/OSCA.multisample_1.20.0.tar.gz",
+      "extracted_to": "materials/raw/bioconductor_books/extracted/OSCA.multisample_1.20.0"
+    },
+    {
+      "package": "OSCA.workflows",
+      "version": "1.20.0",
+      "archive": "materials/raw/bioconductor_books/archives/OSCA.workflows_1.20.0.tar.gz",
+      "extracted_to": "materials/raw/bioconductor_books/extracted/OSCA.workflows_1.20.0"
+    }
+  ]
+}

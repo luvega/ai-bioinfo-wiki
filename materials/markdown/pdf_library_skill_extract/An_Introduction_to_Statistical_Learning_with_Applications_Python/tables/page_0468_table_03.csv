@@ -1,0 +1,6 @@
+"Index(['DJ_return_1', 'log_volume_1', 'log_volatility_1',"
+"'DJ_return_2', 'log_volume_2', 'log_volatility_2',"
+"'DJ_return_3', 'log_volume_3', 'log_volatility_3',"
+"'DJ_return_4', 'log_volume_4', 'log_volatility_4',"
+"'DJ_return_5', 'log_volume_5', 'log_volatility_5'],"
+dtype='object')

@@ -31,6 +31,27 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - `materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R/book.course.md`：用于支撑“高维特征、模型、分类/回归”的统计背景。
 - `materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python/book.course.md`：用于补充“模型评估、显著性与预测不是同一件事”的解释。
 
+## Single-cell Best Practices 候选素材
+
+- [Differential gene expression](../../../materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.source.md)：用于对比 bulk DESeq2 主线和 single-cell pseudobulk / cell-level DE 的差异。
+- [GSEA pathway](../../../materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/chapter.source.md)：用于功能解读、通路分析和 gene set 证据边界。
+- [Compositional analysis](../../../materials/markdown/sc_best_practices/analysis_project/chapters/19_conditions_compositional/chapter.source.md)：用于说明“细胞比例变化”和“基因表达变化”不是同一类问题。
+- [Dataset manifest](../../../materials/markdown/sc_best_practices/analysis_project/datasets_manifest.json)：用于回查差异分析和 GSEA 示例数据的下载/blocked/manual 状态。
+
+## OWF Shell 辅助参考
+
+- [OWF Learn Git](../../../materials/markdown/openwaterfoundation_learning/git/README.md)：只用于项目记录、结果表版本管理和协作审阅背景。
+- [OWF Learn Linux Shell](../../../materials/markdown/openwaterfoundation_learning/linux_shell/README.md)：只用于解释脚本运行、日志和退出状态等通用 shell 语义。
+- 使用边界：Week 15 的统计与生物学解释仍以 DESeq2、AIDD R 素材、课程讲稿和数据库/文献核验为主；OWF 教程不作为差异表达或功能解读的事实来源。
+
+## 素材分层使用原则（2026-06-04）
+
+- 课堂主素材：AIDD DESeq2/GEO2R 和课堂 DESeq2 结果表；主线是 bulk 差异表达与功能核验。
+- 支撑素材：SCBP DGE/GSEA/compositional、OSCA marker/multi-sample comparison、OSTA feature testing/signatures/differential spatial patterns。
+- 拓展素材：single-cell 和 spatial 的差异分析只作对比，不替代 bulk DESeq2 教学。
+- 教师备课素材：准备 bulk、single-cell、spatial 三类差异问题的边界表。
+- 教材 / PPT 边界：可进 PPT：result table、火山图、富集解释待核验、三类差异分析对照。
+
 ## 可进 PPT 的元素
 
 - 概念图：`count matrix + metadata -> DESeq2 -> result table -> volcano plot / heatmap -> enrichment / literature check`。

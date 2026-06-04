@@ -155,3 +155,25 @@
 - 决策：当前有效项目根目录迁移为 `E:\Codex_Projects\AI_Course\`。
 - 更新：`AGENTS.md`、`README.md`、`memory.md`、`knowledge/assets/obsidian_setup.md` 和 `docs/superpowers/plans/2026-05-25-project-root-migration.md`。
 - 执行原则：先复制完整项目并校验，暂不删除旧 `F:\AI_Course\`，将其作为短期回退点。
+
+## [2026-06-04] cleanup | 退役旧版 PDF 轻量转换结果
+
+- 删除：`materials/markdown/pdf_library_legacy/` 下 4 个旧版轻量 Markdown。
+- 保留：`materials/markdown/pdf_library_mineru/` 下 5 份 MinerU 完整解析、课程化 Markdown 和结构报告。
+- 更新：4 个 PDF source 页的 `raw_path` 改指向 MinerU 的 `book.mineru.md` 与 `book.course.md`；周次素材占位不再引用旧版目录。
+- 调整：旧 `scripts/convert/pdf_to_markdown.py` 仅作为临时对比工具保留，输出改到 `outputs/pdf_library_legacy/`，不再写入素材主线。
+
+## [2026-06-04] ingest | pdf/markitdown skill 补充提取
+
+- 全局安装：从 `skills.zip` 覆盖安装 `pdf` 与 `markitdown` 到 `C:\Users\xsui\.codex\skills\`；旧全局版本已备份到 `C:\Users\xsui\.codex\skills_backup\AI_Course_pdf_markitdown_20260604_083905\`。
+- 新增：`scripts/convert/pdf_skill_supplement_extract.py`，用 MarkItDown、pdfplumber 和 PyMuPDF 补充提取 5 个 PDF。
+- 输出：`materials/markdown/pdf_library_skill_extract/` 下生成 5 份 `book.markitdown.md`、表格 CSV/索引、图片索引和提取报告；图片二进制保留在 `outputs/pdf_skill_extract/`，不入 Git。
+- 结果：5 个 PDF 均为 `generated`；补充层共提取表格 1268 个、嵌入图片 2517 个。
+
+## [2026-06-04] ingest | Bioconductor OSTA/OSCA 在线书素材入库
+
+- 新增：`scripts/convert/ingest_bioconductor_books.py`，用于发现 Bioconductor books 元数据、下载并校验源包、抽取 HTML Markdown/图片/代码块，并生成 workflow catalog。
+- 来源：OSTA release 站点、OSCA release 站点、Bioconductor 3.23 `PACKAGES` 元数据，以及 `OSCA-source` 7 个公开仓库。
+- 原始层：大型 tarball、完整解压目录、图片镜像和 GitHub clone 缓存限定在 `materials/raw/bioconductor_books/`，通过 `.gitignore` 排除。
+- 素材层：可检索 Markdown、`code_snippets.jsonl`、`image_manifest.csv`、`source_manifest.json`、`workflow_case_catalog.md` 写入 `materials/markdown/bioconductor_books/`。
+- 课程边界：OSTA/OSCA 仅作为 Week 14-17 案例拓展来源，不改变任何周次或 PPT 状态。

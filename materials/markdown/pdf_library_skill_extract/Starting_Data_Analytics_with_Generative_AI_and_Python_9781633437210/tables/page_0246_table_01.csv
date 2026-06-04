@@ -1,0 +1,5 @@
+"come with scores of 5, 3, and 1, which indicate positive, neutral, and negative senti-"
+"ments respectively. The reviews, along with their translations, are presented in table"
+6.1. Also detailed are the results of the sentiment analysis conducted by ChatGPT 4
+"and Gemini Advanced. To achieve similar results, you can use the prompt “What is the"
+sentiment of these reviews?” followed by including the reviews in Portuguese.

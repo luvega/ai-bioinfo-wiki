@@ -1,0 +1,4 @@
+\begin{enumerate*}
+\item 10000
+\item 6224
+\end{enumerate*}

@@ -1,0 +1,3 @@
+"new_df = pd.DataFrame({'lstat':[5, 10, 15]})"
+newX = design.transform(new_df)
+newX

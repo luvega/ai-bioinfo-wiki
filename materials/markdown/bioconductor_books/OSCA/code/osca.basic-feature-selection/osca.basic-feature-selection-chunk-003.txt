@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 33694 4080 
+## metadata(1): Samples
+## assays(2): counts logcounts
+## rownames(33694): RP11-34P13.3 FAM138A ... AC213203.1 FAM231B
+## rowData names(2): ID Symbol
+## colnames(4080): AAACCTGAGAAGGCCT-1 AAACCTGAGACAGACC-1 ...
+##   TTTGTCAGTTAAGACA-1 TTTGTCATCCCAAGAT-1
+## colData names(3): Sample Barcode sizeFactor
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(0):

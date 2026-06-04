@@ -1,0 +1,20 @@
+"year_grid = np.linspace(2003, 2009, 100)"
+"year_grid = np.linspace(Wage['year'].min(),"
+"Wage['year'].max(),"
+100)
+X_year_bh = X_bh.copy()[:100]
+"X_year_bh[:] = X_bh[:].mean(0)[None,:]"
+"X_year_bh[:,4:9] = ns_year.transform(year_grid)"
+preds = gam_bh.get_prediction(X_year_bh)
+bounds_year = preds.conf_int(alpha=0.05)
+partial_year = preds.predicted_mean
+center = partial_year.mean()
+partial_year -= center
+bounds_year -= center
+"fig, ax = subplots(figsize=(8,8))"
+"ax.plot(year_grid, partial_year, 'b', linewidth=3)"
+"ax.plot(year_grid, bounds_year[:,0], 'r--', linewidth=3)"
+"ax.plot(year_grid, bounds_year[:,1], 'r--', linewidth=3)"
+ax.set_xlabel('Year')
+ax.set_ylabel('Effect on wage')
+"ax.set_title('Partial dependence of year on wage', fontsize=20);"

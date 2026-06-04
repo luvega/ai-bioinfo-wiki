@@ -1,0 +1,9 @@
+array(['B cells', 'B-cell lineage', 'Cycling cells', 'DC', 'DC precursor',
+       'Double-negative thymocytes', 'Double-positive thymocytes', 'ETP',
+       'Early MK', 'Endothelial cells', 'Epithelial cells',
+       'Erythrocytes', 'Erythroid', 'Fibroblasts', 'Granulocytes',
+       'HSC/MPP', 'ILC', 'ILC precursor', 'MNP', 'Macrophages',
+       'Mast cells', 'Megakaryocyte precursor',
+       'Megakaryocytes/platelets', 'Mono-mac', 'Monocyte precursor',
+       'Monocytes', 'Myelocytes', 'Plasma cells', 'Promyelocytes',
+       'T cells', 'pDC', 'pDC precursor'], dtype=object)

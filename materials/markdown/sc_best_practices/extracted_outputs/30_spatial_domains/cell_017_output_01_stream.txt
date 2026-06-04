@@ -1,0 +1,2 @@
+/home/icb/anna.schaar/miniconda3/envs/spatial-book/lib/python3.9/site-packages/PIL/Image.py:3167: DecompressionBombWarning: Image size (132748287 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(

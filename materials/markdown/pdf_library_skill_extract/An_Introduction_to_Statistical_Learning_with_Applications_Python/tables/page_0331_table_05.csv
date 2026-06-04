@@ -1,0 +1,7 @@
+only_hs = Wage['education'] == '1. < HS Grad'
+Wage_ = Wage.loc[ only_hs]
+"∼
+Xgam_ = np.column_stack([Wage_['age'],"
+"Wage_['year'],"
+Wage_['education'].cat.codes-1])
+high_earn_ = Wage_['high_earn']

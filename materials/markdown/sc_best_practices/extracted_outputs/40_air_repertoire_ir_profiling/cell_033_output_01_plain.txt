@@ -1,0 +1,41 @@
+                               Centre     Sample patient_id Collection_Day  \
+AAACCTGAGAAACCTA-MH9179824  Newcastle  MH9179824  COVID-014             D0   
+AAACCTGAGAACAATC-MH9143324  Newcastle  MH9143324  COVID-029             D0   
+AAACCTGAGAACTCGG-MH8919329  Newcastle  MH8919329  COVID-045             D0   
+AAACCTGAGAAGCCCA-MH9143373  Newcastle  MH9143373  COVID-060             D0   
+AAACCTGAGAAGGACA-MH9143274  Newcastle  MH9143274  COVID-037             D0   
+
+                               Sex Swab_result     Status      Smoker  \
+AAACCTGAGAAACCTA-MH9179824  Female    Positive      Covid  Non-smoker   
+AAACCTGAGAACAATC-MH9143324    Male    Positive      Covid  Non-smoker   
+AAACCTGAGAACTCGG-MH8919329  Female    Positive      Covid  Non-smoker   
+AAACCTGAGAAGCCCA-MH9143373    Male    Negative  Non_covid      Smoker   
+AAACCTGAGAAGGACA-MH9143274  Female    Positive      Covid  Non-smoker   
+
+                           Status_on_day_collection  \
+AAACCTGAGAAACCTA-MH9179824                  Ward_O2   
+AAACCTGAGAACAATC-MH9143324                  Ward_O2   
+AAACCTGAGAACTCGG-MH8919329            ITU_intubated   
+AAACCTGAGAAGCCCA-MH9143373                  Ward_O2   
+AAACCTGAGAAGGACA-MH9143274                   ITU_O2   
+
+                           Status_on_day_collection_summary Days_from_onset  \
+AAACCTGAGAAACCTA-MH9179824                         Moderate               8   
+AAACCTGAGAACAATC-MH9143324                         Moderate              16   
+AAACCTGAGAACTCGG-MH8919329                         Critical               5   
+AAACCTGAGAAGCCCA-MH9143373                        Non_covid               3   
+AAACCTGAGAAGGACA-MH9143274                           Severe              21   
+
+                           time_after_LPS Worst_Clinical_Status Outcome  \
+AAACCTGAGAAACCTA-MH9179824            NaN              Moderate    Home   
+AAACCTGAGAACAATC-MH9143324            NaN              Moderate    Home   
+AAACCTGAGAACTCGG-MH8919329            NaN                 Death   Death   
+AAACCTGAGAAGCCCA-MH9143373            NaN             Non-covid    Home   
+AAACCTGAGAAGGACA-MH9143274            NaN                Severe    Home   
+
+                           initial_clustering   study_id  AgeRange  Age  
+AAACCTGAGAAACCTA-MH9179824                CD8  COVID-014  (50, 59]   54  
+AAACCTGAGAACAATC-MH9143324                gdT  COVID-029  (20, 29]   26  
+AAACCTGAGAACTCGG-MH8919329               Treg  COVID-045  (70, 79]   77  
+AAACCTGAGAAGCCCA-MH9143373                CD4  COVID-060  (50, 59]   54  
+AAACCTGAGAAGGACA-MH9143274                CD4  COVID-037  (50, 59]   59  

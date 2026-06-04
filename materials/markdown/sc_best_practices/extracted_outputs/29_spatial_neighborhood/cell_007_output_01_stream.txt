@@ -1,0 +1,5 @@
+Creating graph using `grid` coordinates and `None` transform and `1` libraries.
+Adding `adata.obsp['spatial_connectivities']`
+       `adata.obsp['spatial_distances']`
+       `adata.uns['spatial_neighbors']`
+Finish (0:00:01)

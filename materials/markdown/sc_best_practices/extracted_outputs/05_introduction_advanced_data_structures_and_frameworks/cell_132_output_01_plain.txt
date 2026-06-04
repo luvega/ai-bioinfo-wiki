@@ -1,0 +1,14 @@
+SpatialData object, with associated Zarr store: /Users/luisheinzlmeier/Library/Caches/lamindb/lamin-eu-central-1/VPwcjx3CDAa2/introduction/advanced_data_structures_and_frameworks_squidpy.zarr
+├── Images
+│     ├── 'morphology_focus': DataTree[cyx] (1, 25778, 35416), (1, 12889, 17708), (1, 6444, 8854), (1, 3222, 4427), (1, 1611, 2213)
+│     └── 'morphology_mip': DataTree[cyx] (1, 25778, 35416), (1, 12889, 17708), (1, 6444, 8854), (1, 3222, 4427), (1, 1611, 2213)
+├── Points
+│     └── 'transcripts': DataFrame with shape: (<Delayed>, 8) (3D points)
+├── Shapes
+│     ├── 'cell_boundaries': GeoDataFrame shape: (167780, 1) (2D shapes)
+│     └── 'cell_circles': GeoDataFrame shape: (167780, 2) (2D shapes)
+└── Tables
+      └── 'table': AnnData (167780, 313)
+with coordinate systems:
+    ▸ 'global', with elements:
+        morphology_focus (Images), morphology_mip (Images), transcripts (Points), cell_boundaries (Shapes), cell_circles (Shapes)

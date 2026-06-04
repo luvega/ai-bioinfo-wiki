@@ -1,0 +1,6 @@
+Dataset MNIST
+Number of datapoints: 60000
+Root location: data
+Split: Train
+StandardTransform
+Transform: ToTensor()

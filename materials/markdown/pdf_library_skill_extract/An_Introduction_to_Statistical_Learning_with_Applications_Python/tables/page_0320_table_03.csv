@@ -1,0 +1,5 @@
+"models = [MS([poly('age', degree=d)])"
+"for d in range(1, 6)]"
+Xs = [model.fit_transform(Wage) for model in models]
+"anova_lm(*[sm.OLS(y, X_).fit()"
+for X_ in Xs])

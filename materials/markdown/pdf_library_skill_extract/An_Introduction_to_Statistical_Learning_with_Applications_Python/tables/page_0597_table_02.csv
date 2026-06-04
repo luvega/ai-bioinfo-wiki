@@ -1,0 +1,15 @@
+"fig, ax = plt.subplots(figsize=(8,8))"
+"ax.hist(Tnull,"
+"bins=100,"
+"density=True,"
+"facecolor='y',"
+label='Null')
+"xval = np.linspace(-4.2, 4.2, 1001)"
+"ax.plot(xval,"
+"t_dbn.pdf(xval, D_.shape[0]-2),"
+c='r')
+"ax.axvline(observedT,"
+"c='b',"
+label='Observed')
+ax.legend()
+"ax.set_xlabel(""Null Distribution of Test Statistic"");"

@@ -1,0 +1,4 @@
+AnnData object with n_obs × n_vars = 108 × 4412
+    obs: 'condition', 'cell_type', 'patient', 'sample', 'lib_size'
+    uns: 'log1p'
+    layers: 'counts'

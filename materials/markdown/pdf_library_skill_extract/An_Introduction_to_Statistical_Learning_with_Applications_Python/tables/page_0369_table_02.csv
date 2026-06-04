@@ -1,0 +1,2 @@
+y_hat_boost = boost_boston.predict(X_test);
+np.mean((y_test - y_hat_boost)**2)

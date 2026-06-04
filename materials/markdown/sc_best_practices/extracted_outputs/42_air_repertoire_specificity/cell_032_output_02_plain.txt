@@ -1,0 +1,13 @@
+ambiguous       927
+CMV             466
+InfluenzaA      349
+MCMV            143
+SARS-CoV-2       55
+EBV              43
+HomoSapiens      27
+HCV              11
+HIV-1             6
+YFV               3
+HSV-2             1
+Homo sapiens      1
+Name: antigen.species_VJ, dtype: int64

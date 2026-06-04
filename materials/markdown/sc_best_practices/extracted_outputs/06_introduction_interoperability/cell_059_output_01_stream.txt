@@ -1,0 +1,2 @@
+List (26 items)
+<zip object at 0x15d0dc6c0>

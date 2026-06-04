@@ -1,0 +1,7 @@
+cleaned = BrainCancer.dropna()
+"all_MS = MS(cleaned.columns, intercept=False)"
+all_df = all_MS.fit_transform(cleaned)
+"fit_all = coxph().fit(all_df,"
+"'time',"
+'status')
+"fit_all.summary[['coef', 'se(coef)', 'p']]"

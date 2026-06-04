@@ -1,0 +1,9 @@
+K = 5
+"kfold = skm.KFold(K,"
+"random_state=0,"
+shuffle=True)
+"Yhat_cv = skm.cross_val_predict(full_path,"
+"Hitters,"
+"Y,"
+cv=kfold)
+Yhat_cv.shape

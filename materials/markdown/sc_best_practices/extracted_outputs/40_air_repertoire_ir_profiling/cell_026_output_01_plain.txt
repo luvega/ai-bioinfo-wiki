@@ -1,0 +1,2 @@
+True    547630
+Name: full_length, dtype: int64

@@ -1,0 +1,26 @@
+Covariate                 Cell Type            
+condition[T.Hpoly.Day3]   Endocrine                False
+                          Enterocyte               False
+                          Enterocyte.Progenitor    False
+                          Goblet                   False
+                          Stem                     False
+                          TA                       False
+                          TA.Early                 False
+                          Tuft                     False
+condition[T.Hpoly.Day10]  Endocrine                False
+                          Enterocyte                True
+                          Enterocyte.Progenitor    False
+                          Goblet                   False
+                          Stem                     False
+                          TA                       False
+                          TA.Early                 False
+                          Tuft                      True
+condition[T.Salmonella]   Endocrine                False
+                          Enterocyte                True
+                          Enterocyte.Progenitor    False
+                          Goblet                   False
+                          Stem                     False
+                          TA                       False
+                          TA.Early                 False
+                          Tuft                     False
+Name: Final Parameter, dtype: bool

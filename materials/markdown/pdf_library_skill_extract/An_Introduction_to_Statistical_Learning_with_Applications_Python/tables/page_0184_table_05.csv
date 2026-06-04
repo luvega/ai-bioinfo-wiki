@@ -1,0 +1,2 @@
+labels = np.array(['Down']*1250)
+"labels[probs>0.5] = ""Up"""

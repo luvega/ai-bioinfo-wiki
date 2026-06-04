@@ -1,0 +1,6 @@
+ordered_cols = []
+"for lag in range(5,0,-1):"
+for col in cols:
+"ordered_cols.append('{0}_{1}'.format(col, lag))"
+X = X.reindex(columns=ordered_cols)
+X.columns

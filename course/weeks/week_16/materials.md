@@ -29,6 +29,23 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - `materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python/book.course.md`：用于补充 PCA、聚类和高维数据直觉。
 - `materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R/book.course.md`：用于补充 PCA 和 clustering 统计学习背景。
 
+## Single-cell Best Practices 候选素材
+
+- [Quality Control](../../../materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/chapter.source.md)：质控指标、过滤阈值和 QC 图形解释。
+- [Normalization](../../../materials/markdown/sc_best_practices/analysis_project/chapters/09_preprocessing_visualization_normalization/chapter.source.md)：标准化目的、方法差异和跨细胞比较边界。
+- [Feature selection](../../../materials/markdown/sc_best_practices/analysis_project/chapters/10_preprocessing_visualization_feature_selection/chapter.source.md)：高变基因选择与后续 PCA/UMAP 的关系。
+- [Annotation](../../../materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/chapter.source.md)：marker 证据、参考图谱和注释不确定性。
+- [Integration](../../../materials/markdown/sc_best_practices/analysis_project/chapters/14_cellular_structure_integration/chapter.source.md)：batch correction 与整合后解释风险。
+- [Extracted outputs](../../../materials/markdown/sc_best_practices/extracted_outputs/outputs_index.md)：可筛选进入 PPT 的 upstream 发布图形，需核对图注和数据来源。
+
+## 素材分层使用原则（2026-06-04）
+
+- 课堂主素材：SCBP/OSCA/OSTA 图形解读和参数敏感性；AIDD scRNA 作为学生入口。
+- 支撑素材：SCBP QC/normalization/annotation/integration/trajectory/spatial，OSCA QC/clustering/annotation，OSTA spatial domains/deconvolution。
+- 拓展素材：完整 notebook 和 workflow 不进课堂，只抽取图形、流程和风险提示。
+- 教师备课素材：筛选 QC、UMAP、marker、spatial 图形，并标注数据授权和参数来源。
+- 教材 / PPT 边界：可进 PPT：QC/UMAP/cluster/marker 四栏解读表、spatial 可视化拓展框。
+
 ## 可进 PPT 的元素
 
 - 对比图：bulk RNA-seq 测平均表达，scRNA-seq 观察单个细胞表达状态。

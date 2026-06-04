@@ -1,0 +1,20 @@
+          cdr3_a_aa    v_a_gene IR_VJ_1_j_call          cdr3_b_aa  \
+0     CAVKRGNNARLMF   TRAV21*01         TRAJ31      CASSQTGGQPQHF   
+1     CAVGAPGDDKIIF  TRAV8-3*01         TRAJ30    CASRPSGLNTDTQYF   
+2    CAVNSPGGYQKVTF  TRAV8-1*01         TRAJ13  CAISASGGGSSGNTIYF   
+3  CAVSPFNAGGGNKLTF    TRAV3*01         TRAJ10    CASSQTSGGTDTQYF   
+4      CAEAGRDDKIIF    TRAV5*01         TRAJ30     CASSLSGNSYEQYF   
+
+      v_b_gene IR_VDJ_1_j_call chain_pairing patient_id antigen.species  \
+0   TRBV5-1*01         TRBJ1-5   single pair     CV0902             nan   
+1   TRBV7-9*01         TRBJ2-3   single pair     CV0902             nan   
+2  TRBV10-3*01         TRBJ1-3   single pair     CV0902             nan   
+3    TRBV18*01         TRBJ2-3   single pair     CV0902             CMV   
+4   TRBV5-1*01         TRBJ2-7   single pair     CV0902             nan   
+
+  initial_clustering  counts  index  
+0                CD8       1      0  
+1                CD8       1      1  
+2                CD4       1      2  
+3                CD4       1      3  
+4                CD8       1      4  

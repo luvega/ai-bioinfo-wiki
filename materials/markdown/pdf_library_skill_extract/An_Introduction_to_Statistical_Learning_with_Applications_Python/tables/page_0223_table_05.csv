@@ -1,0 +1,7 @@
+import numpy as np
+import statsmodels.api as sm
+from ISLP import load_data
+"from ISLP.models import (ModelSpec as MS,"
+"summarize,"
+poly)
+from sklearn.model_selection import train_test_split

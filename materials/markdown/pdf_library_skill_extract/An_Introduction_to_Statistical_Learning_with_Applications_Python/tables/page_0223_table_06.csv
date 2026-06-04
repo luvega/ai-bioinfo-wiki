@@ -1,0 +1,7 @@
+from functools import partial
+from sklearn.model_selection import \
+"(cross_validate,"
+"KFold,"
+ShuffleSplit)
+from sklearn.base import clone
+from ISLP.models import sklearn_sm

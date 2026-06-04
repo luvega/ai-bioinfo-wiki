@@ -1,0 +1,7 @@
+##        id         x pc          r2
+##  1 before sample_id  1 0.005112371
+##  2 before sample_id  2 0.032356284
+##  3 before sample_id  3 0.023072209
+##  4 before sample_id  4 0.031942048
+##  5 before sample_id  5 0.140255895
+##  6 before sample_id  6 0.001163737

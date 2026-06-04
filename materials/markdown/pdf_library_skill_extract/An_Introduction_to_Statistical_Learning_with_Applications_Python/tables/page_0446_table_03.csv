@@ -1,0 +1,14 @@
+class HittersModel(nn.Module):
+""
+"def __init__(self, input_size):"
+"super(HittersModel, self).__init__()"
+self.flatten = nn.Flatten()
+self.sequential = nn.Sequential(
+"nn.Linear(input_size, 50),"
+"nn.ReLU(),"
+"nn.Dropout(0.4),"
+"nn.Linear(50, 1))"
+""
+"def forward(self, x):"
+x = self.flatten(x)
+return torch.flatten(self.sequential(x))

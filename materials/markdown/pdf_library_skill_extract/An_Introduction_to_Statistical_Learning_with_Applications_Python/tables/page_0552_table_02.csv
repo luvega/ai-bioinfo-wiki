@@ -1,0 +1,3 @@
+NCI60 = load_data('NCI60')
+nci_labs = NCI60['labels']
+nci_data = NCI60['data']

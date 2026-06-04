@@ -1,0 +1,2 @@
+Epoch 340/400:  85%|████████▌ | 340/400 [08:00<01:22,  1.37s/it, loss=1.65e+03, v_num=1]Epoch 00340: reducing learning rate of group 0 to 2.4000e-03.
+Epoch 400/400: 100%|██████████| 400/400 [09:22<00:00,  1.37s/it, loss=1.64e+03, v_num=1]

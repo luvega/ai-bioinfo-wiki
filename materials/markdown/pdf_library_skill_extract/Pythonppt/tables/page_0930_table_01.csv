@@ -1,0 +1,5 @@
+方法,描述
+w.generate(txt),"向WordCloud对象w中加载文本txt，
+>>>w.generate(""Python and WordCloud"")"
+w.to_file(filename),"将词云输出为图像文件，.png或.jpg格式
+>>>w.to_file(""outfile.png"")"

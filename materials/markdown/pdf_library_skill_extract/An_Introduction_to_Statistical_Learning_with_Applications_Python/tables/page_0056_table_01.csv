@@ -1,0 +1,2 @@
+x = np.random.normal(size=50)
+x

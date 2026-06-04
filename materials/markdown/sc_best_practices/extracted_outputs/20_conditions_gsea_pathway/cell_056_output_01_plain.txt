@@ -1,0 +1,25 @@
+                                                       score      norm  \
+source                                                                   
+REACTOME_NEUTROPHIL_DEGRANULATION                   0.624770  5.587953   
+REACTOME_INTERFERON_SIGNALING                       0.844158  5.155074   
+REACTOME_INTERFERON_GAMMA_SIGNALING                 0.831962  4.137064   
+REACTOME_INTERFERON_ALPHA_BETA_SIGNALING            0.893431  4.107962   
+REACTOME_SIGNALING_BY_INTERLEUKINS                  0.376129  3.535838   
+REACTOME_MHC_CLASS_II_ANTIGEN_PRESENTATION          0.701555  3.378736   
+REACTOME_TRANSLATION                               -0.628266 -3.277846   
+REACTOME_RRNA_PROCESSING                           -0.703607 -3.205217   
+REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGR...  0.475259  3.162945   
+REACTOME_LEISHMANIA_INFECTION                       0.531540  2.964611   
+
+                                                            pval  
+source                                                            
+REACTOME_NEUTROPHIL_DEGRANULATION                   2.297617e-08  
+REACTOME_INTERFERON_SIGNALING                       2.535313e-07  
+REACTOME_INTERFERON_GAMMA_SIGNALING                 3.517788e-05  
+REACTOME_INTERFERON_ALPHA_BETA_SIGNALING            3.991655e-05  
+REACTOME_SIGNALING_BY_INTERLEUKINS                  4.064833e-04  
+REACTOME_MHC_CLASS_II_ANTIGEN_PRESENTATION          7.282002e-04  
+REACTOME_TRANSLATION                                1.046026e-03  
+REACTOME_RRNA_PROCESSING                            1.349605e-03  
+REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGR...  1.561817e-03  
+REACTOME_LEISHMANIA_INFECTION                       3.030663e-03  

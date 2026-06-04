@@ -1,0 +1,20 @@
+{
+  "order": 19,
+  "part": "Dealing with conditions",
+  "toc_file": "conditions/compositional",
+  "title": "Compositional analysis",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/conditions/compositional.ipynb",
+  "environment": "compositional",
+  "week_mapping": [
+    15
+  ],
+  "code_cell_count": 59,
+  "dataset_reference_count": 12,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/19_conditions_compositional",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/19_conditions_compositional/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/19_conditions_compositional/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/19_conditions_compositional/code_index.md"
+  }
+}

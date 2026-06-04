@@ -1,0 +1,1 @@
+[34mINFO    [0m Jax module moved to TFRT_CPU_0.Note: Pytorch lightning will show GPU is not being used for the Trainer.   

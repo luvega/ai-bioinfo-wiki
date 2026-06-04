@@ -1,0 +1,8 @@
+## class: SingleCellExperiment 
+## dim: 14700 19426 
+## metadata(2): merge.info pca.info
+## assays(3): reconstructed counts logcounts
+## rownames(14700): Xkr4 Rp1 ... Vmn2r122 CAAA01147332.1
+## rowData names(3): rotation ENSEMBL SYMBOL
+## colnames(19426): cell_9769 cell_9770 ... cell_30701 cell_30702
+## colData names(13): batch cell ... sizeFactor label

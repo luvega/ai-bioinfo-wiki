@@ -1,0 +1,9 @@
+ax = axes[1]
+"ax.plot(ticks,"
+"pcaUS.explained_variance_ratio_.cumsum(),"
+marker='o')
+ax.set_xlabel('Principal Component')
+ax.set_ylabel('Cumulative Proportion of Variance Explained')
+"ax.set_ylim([0, 1])"
+ax.set_xticks(ticks)
+fig

@@ -1,0 +1,4 @@
+##         mtorc1_signaling tnfa_signaling_via_nfkb  estrogen_response_late 
+##                    68.42                   69.70                   79.29 
+##  estrogen_response_early          uv_response_dn               apoptosis 
+##                    80.10                   80.55                   92.90

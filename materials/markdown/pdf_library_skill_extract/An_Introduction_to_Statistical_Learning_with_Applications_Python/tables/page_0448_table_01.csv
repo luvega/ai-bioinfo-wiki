@@ -1,0 +1,3 @@
+X_train_t = torch.tensor(X_train.astype(np.float32))
+Y_train_t = torch.tensor(Y_train.astype(np.float32))
+"hit_train = TensorDataset(X_train_t, Y_train_t)"

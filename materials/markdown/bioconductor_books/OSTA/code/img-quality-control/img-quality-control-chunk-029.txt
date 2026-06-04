@@ -1,0 +1,9 @@
+##  DataFrame with 6 rows and 2 columns
+##          QC_score low_qcscore
+##         <numeric>   <logical>
+##  f1_c1  0.0994988        TRUE
+##  f1_c10 0.9303342       FALSE
+##  f1_c11 0.7163955       FALSE
+##  f1_c12 0.7857230       FALSE
+##  f1_c13 0.8624128       FALSE
+##  f1_c14 0.4662456        TRUE

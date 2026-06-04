@@ -1,0 +1,6 @@
+## astrocytes_ependymal    endothelial-mural         interneurons 
+##                   79                   83                  118 
+##            microglia     oligodendrocytes        pyramidal CA1 
+##                   69                   81                  125 
+##         pyramidal SS 
+##                  149

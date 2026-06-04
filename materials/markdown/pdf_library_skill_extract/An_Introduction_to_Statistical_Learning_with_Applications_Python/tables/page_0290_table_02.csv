@@ -1,0 +1,3 @@
+"pls = PLSRegression(n_components=2,"
+scale=True)
+"pls.fit(X, Y)"

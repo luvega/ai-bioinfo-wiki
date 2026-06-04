@@ -1,0 +1,12 @@
+## Coefficient:  factor(tomato)TRUE 
+##                                  logFC logCPM      F    PValue     FDR
+## Mesenchyme                      1.1286  16.32 13.632 0.0005882 0.01353
+## Allantois                       0.7718  15.54  5.671 0.0214465 0.11742
+## Neural crest                   -0.8084  14.80  5.415 0.0244243 0.11742
+## Cardiomyocytes                  0.7892  14.90  5.413 0.0244509 0.11742
+## Erythroid3                     -0.6802  17.32  5.328 0.0255269 0.11742
+## Endothelium                     0.7166  14.32  4.098 0.0487574 0.18690
+## Haematoendothelial progenitors  0.6030  14.76  3.150 0.0825256 0.27116
+## Forebrain/Midbrain/Hindbrain   -0.3246  16.59  1.197 0.2796069 0.61665
+## ExE mesoderm                    0.3333  15.71  1.143 0.2905826 0.61665
+## Pharyngeal mesoderm             0.3326  15.76  1.131 0.2930671 0.61665

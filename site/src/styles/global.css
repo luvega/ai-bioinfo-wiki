@@ -405,11 +405,23 @@ img {
   overflow-wrap: anywhere;
 }
 
+.status-pill.accent {
+  background: #e7f4ec;
+  color: #1f6b43;
+}
+
 .status-row {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 18px;
+}
+
+.inline-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
 }
 
 .metric-row {

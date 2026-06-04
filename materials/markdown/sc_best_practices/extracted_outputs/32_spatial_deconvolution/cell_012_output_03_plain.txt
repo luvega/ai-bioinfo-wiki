@@ -1,0 +1,5 @@
+AnnData object with n_obs × n_vars = 11725 × 36601
+    obs: 'in_tissue', 'array_row', 'array_col', 'patient', 'patient_region_id', 'patient_group', 'major_label', 'batch'
+    var: 'gene_ids', 'feature_types', 'genome'
+    uns: 'spatial'
+    obsm: 'spatial'

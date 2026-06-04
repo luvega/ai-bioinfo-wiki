@@ -1,0 +1,6 @@
+设计名称,趋势,设计函数
+Linear,Constant,f(x) = x
+Early Pause,Speeds up,f(x) = x+(1-sin(x*π*2+π/2)/-8
+Late Pause,Slows down,f(x) = x+(1-sin(x*π*2+π/2)/8
+Slow Wavy,Constant,f(x) = x+sin(x*π*5)/20
+Fast Wavy,Constant,f(x) = x+sin(x*π*20)/80

@@ -1,0 +1,4 @@
+"fig, ax = subplots(figsize=(8, 8))"
+"ax = plot_gam(gam_full, 2)"
+ax.set_xlabel('Education')
+ax.set_ylabel('Effect on wage')

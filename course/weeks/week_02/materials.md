@@ -15,11 +15,26 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## AIDD 候选素材
 
-- 待从 materials/raw/aidd_bioinformatics/ 和 materials/markdown/aidd_bioinformatics/ 抽取。
+- 从 [AIDD 课程索引](../../../materials/markdown/aidd_bioinformatics/aidd.course_index.md) 和相关 `chapter.course.md` 选取；字幕原文只作术语核验，不直接进入课堂。
 
 ## PDF / 外部 PPT 候选素材
 
-- 待从 materials/markdown/pdf_library_legacy/、materials/markdown/pdf_library_mineru/ 和 materials/raw/external_ppt/ 抽取。
+- 从 `materials/markdown/pdf_library_mineru/` 和 `materials/markdown/pdf_library_skill_extract/` 选取已转换 Markdown；原始 PDF/PPT 不直接进入课程引用。
+
+## OWF Git / Shell 参考候选
+
+- [OWF Learn Git](../../../materials/markdown/openwaterfoundation_learning/git/README.md)：用于复现规范、Git 工作流、分支、提交、远端协作和常见输出消息说明。
+- [OWF Learn Windows Shell](../../../materials/markdown/openwaterfoundation_learning/windows_shell/README.md)：用于 Windows 命令行、用户环境、批处理脚本和故障排查的基础参考。
+- [OWF Learn Linux Shell](../../../materials/markdown/openwaterfoundation_learning/linux_shell/README.md)：用于 Linux/Bash、脚本化、重定向、日志和 cron 的基础参考。
+- 使用边界：这些材料只作为“可复现工作方式”和“命令行素养”参考，不替代课程大纲，也不自动提升本周 `status`。
+
+## 素材分层使用原则（2026-06-04）
+
+- 课堂主素材：课程项目目录、复现规范、Prompt 记录模板和 Week 02 三件套。
+- 支撑素材：AIDD Ch6 pipeline 和 Ch12 GitHub；OWF Git / Windows Shell / Linux Shell 用于版本记录、命令行和日志素养。
+- 拓展素材：真实生信 pipeline 只作为输入-处理-输出的类比，不要求学生运行。
+- 教师备课素材：OWF 教程用于整理 Git、shell、路径和日志讲解，不替代统计或生信事实来源。
+- 教材 / PPT 边界：可进 PPT：项目目录树、AI 协作记录表、Git 小步提交示意。
 
 ## 可进 PPT 的元素
 

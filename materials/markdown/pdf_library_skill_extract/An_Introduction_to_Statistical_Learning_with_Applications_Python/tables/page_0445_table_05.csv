@@ -1,0 +1,4 @@
+"cv = KFold(10,"
+"shuffle=True,"
+random_state=1)
+"grid = GridSearchCV(lasso,"

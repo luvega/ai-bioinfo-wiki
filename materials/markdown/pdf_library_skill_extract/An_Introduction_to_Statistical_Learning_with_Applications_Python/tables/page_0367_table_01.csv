@@ -1,0 +1,2 @@
+"bag_boston = RF(max_features=X_train.shape[1], random_state=0)"
+"bag_boston.fit(X_train, y_train)"

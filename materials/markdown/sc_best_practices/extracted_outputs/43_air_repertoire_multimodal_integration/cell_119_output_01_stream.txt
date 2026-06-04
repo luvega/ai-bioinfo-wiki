@@ -1,0 +1,2 @@
+... storing 'benisse_clusters' as categorical
+... storing 'clusters_top10' as categorical

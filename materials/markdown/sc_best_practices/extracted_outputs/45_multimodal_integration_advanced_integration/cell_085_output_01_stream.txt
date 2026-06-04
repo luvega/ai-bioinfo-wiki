@@ -1,0 +1,5 @@
+An object of class Seurat 
+4136 features across 16294 samples within 2 assays 
+Active assay: RNA (4000 features, 4000 variable features)
+ 1 other assay present: ADT
+ 4 dimensional reductions calculated: pca, harmony_pca, spca, wnn.umap

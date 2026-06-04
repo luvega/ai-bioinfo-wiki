@@ -1,0 +1,6 @@
+AnnData object with n_obs × n_vars = 33537 × 24136
+    obs: 'GEX_n_genes_by_counts', 'GEX_pct_counts_mt', 'GEX_size_factors', 'GEX_phase', 'ADT_n_antibodies_by_counts', 'ADT_total_counts', 'ADT_iso_count', 'cell_type', 'batch', 'ADT_pseudotime_order', 'GEX_pseudotime_order', 'Samplename', 'Site', 'DonorNumber', 'Modality', 'VendorLot', 'DonorID', 'DonorAge', 'DonorBMI', 'DonorBloodType', 'DonorRace', 'Ethnicity', 'DonorGender', 'QCMeds', 'DonorSmoker', 'is_train', 'GEX_n_counts', 'GEX_n_genes', 'ATAC_nCount_peaks', 'ATAC_atac_fragments', 'ATAC_reads_in_peaks_frac', 'ATAC_blacklist_fraction', 'ATAC_nucleosome_signal', 'ATAC_pseudotime_order', 'technology', 'cell_type_l2', 'cell_type_l1', 'cell_type_l3', 'assay', 'split', 'group', 'balancing_weight', 'donor', 'log1p_n_genes_by_counts', 'log1p_total_counts', 'modality', 'n_counts', 'n_genes_by_counts', 'new_donor', 'outliers', 'total_counts', 'new_batch', 'size_factors', '_scvi_batch'
+    var: 'modality'
+    uns: 'modality_lengths', '_scvi_uuid', '_scvi_manager_uuid'
+    obsm: '_scvi_extra_categorical_covs', 'latent', 'latent_ref'
+    layers: 'counts'

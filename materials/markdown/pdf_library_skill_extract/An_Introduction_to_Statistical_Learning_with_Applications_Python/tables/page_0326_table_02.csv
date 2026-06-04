@@ -1,0 +1,11 @@
+"fig, ax = subplots(figsize=(8,8))"
+"ax.scatter(age, y, facecolor='gray', alpha=0.5)"
+"for lam in np.logspace(-2, 6, 5):"
+"gam = LinearGAM(s_gam(0, lam=lam)).fit(X_age, y)"
+"ax.plot(age_grid,"
+"gam.predict(age_grid),"
+"label='{:.1e}'.format(lam),"
+linewidth=3)
+"ax.set_xlabel('Age', fontsize=20)"
+"ax.set_ylabel('Wage', fontsize=20);"
+ax.legend(title='$\lambda$');

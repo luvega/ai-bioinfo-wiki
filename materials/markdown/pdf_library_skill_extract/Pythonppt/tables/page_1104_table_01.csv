@@ -1,0 +1,6 @@
+函数,描述
+os.chdir(path),"修改当前程序操作的路径
+>>>os.chdir(""D:"")"
+os.getcwd(),"返回程序的当前路径
+>>>os.getcwd()
+'D:\\'"

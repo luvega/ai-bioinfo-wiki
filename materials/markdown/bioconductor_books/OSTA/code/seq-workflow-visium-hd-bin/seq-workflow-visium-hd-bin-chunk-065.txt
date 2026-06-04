@@ -1,0 +1,5 @@
+##  ij
+##       Myeloid;Tumor B cells;Fibroblast Fibroblast;Myeloid        Tumor;Tumor 
+##                3799               3670               3453               2742 
+##    Fibroblast;Tumor 
+##                2532

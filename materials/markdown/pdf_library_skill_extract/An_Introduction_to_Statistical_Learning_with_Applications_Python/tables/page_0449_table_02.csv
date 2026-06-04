@@ -1,0 +1,6 @@
+"hit_trainer = Trainer(deterministic=True,"
+"max_epochs=50,"
+"log_every_n_steps=5,"
+"logger=hit_logger,"
+callbacks=[ErrorTracker()])
+"hit_trainer.fit(hit_module, datamodule=hit_dm)"

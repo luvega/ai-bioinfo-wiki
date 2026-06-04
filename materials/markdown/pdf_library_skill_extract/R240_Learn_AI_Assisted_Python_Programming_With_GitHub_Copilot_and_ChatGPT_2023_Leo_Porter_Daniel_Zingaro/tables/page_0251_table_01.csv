@@ -1,0 +1,17 @@
+Using parameters and variables to avoid magic numbers
+""
+"The number of allowed guesses and the number of digits in the secret code and, equiva-
+lently, the number of digits in each guess are good examples that we can use to explain
+an important principle in code design. This principle is that when we write code, if a
+number can be a parameter or variable, it should be. This principle ensures the code
+is as versatile as possible. When programmers see a number being used, rather than a
+friendly name, they call this a “magic number” and that’s what we want to avoid. In our
+discussion about the number of guesses the player gets or the number of digits for the
+secret code, those should be parameters if we abide by this principle. At some point,
+these parameters need to be given concrete numbers for the code to work, but we should
+assign them values at the highest level of the code as possible (e.g., the player might set
+these parameters when the game starts)."
+""
+"To help adhere to the general principle, whenever you see a raw number (e.g., 4) in the
+code, ask yourself if that could be a parameter or variable. More often than not, it should
+be."

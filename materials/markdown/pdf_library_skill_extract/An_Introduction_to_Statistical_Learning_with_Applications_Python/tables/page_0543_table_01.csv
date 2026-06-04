@@ -1,0 +1,3 @@
+"scaler = StandardScaler(with_std=True,"
+with_mean=True)
+USArrests_scaled = scaler.fit_transform(USArrests)

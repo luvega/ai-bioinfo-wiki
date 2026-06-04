@@ -1,0 +1,7 @@
+"fig, ax = subplots(figsize=(8,8))"
+"roc_curve(best_svm,"
+"X_train,"
+"y_train,"
+"name='Training',"
+"color='r',"
+ax=ax);

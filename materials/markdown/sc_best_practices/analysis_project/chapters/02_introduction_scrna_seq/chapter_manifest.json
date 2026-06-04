@@ -1,0 +1,21 @@
+{
+  "order": 2,
+  "part": "Introduction",
+  "toc_file": "introduction/scrna_seq",
+  "title": "Single-cell RNA sequencing",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/introduction/scrna_seq.ipynb",
+  "environment": "advanced_data_structures_and_frameworks",
+  "week_mapping": [
+    14,
+    16
+  ],
+  "code_cell_count": 2,
+  "dataset_reference_count": 8,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/02_introduction_scrna_seq",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/02_introduction_scrna_seq/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/02_introduction_scrna_seq/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/02_introduction_scrna_seq/code_index.md"
+  }
+}

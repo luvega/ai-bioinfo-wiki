@@ -1,0 +1,113 @@
+---
+type: source-index
+title: PDF skill supplement tables index
+status: generated
+tags: [pdf, tables, pdf-supplement]
+---
+
+# Tables Index
+
+| Page | Table | Rows | Columns | CSV |
+|---:|---:|---:|---:|---|
+| 3 | 1 | 1 | 3 | [tables/page_0003_table_01.csv](tables/page_0003_table_01.csv) |
+| 4 | 1 | 1 | 2 | [tables/page_0004_table_01.csv](tables/page_0004_table_01.csv) |
+| 40 | 1 | 1 | 2 | [tables/page_0040_table_01.csv](tables/page_0040_table_01.csv) |
+| 61 | 1 | 9 | 2 | [tables/page_0061_table_01.csv](tables/page_0061_table_01.csv) |
+| 69 | 1 | 1 | 2 | [tables/page_0069_table_01.csv](tables/page_0069_table_01.csv) |
+| 69 | 2 | 1 | 2 | [tables/page_0069_table_02.csv](tables/page_0069_table_02.csv) |
+| 69 | 3 | 1 | 2 | [tables/page_0069_table_03.csv](tables/page_0069_table_03.csv) |
+| 69 | 4 | 1 | 2 | [tables/page_0069_table_04.csv](tables/page_0069_table_04.csv) |
+| 75 | 1 | 2 | 1 | [tables/page_0075_table_01.csv](tables/page_0075_table_01.csv) |
+| 77 | 1 | 1 | 2 | [tables/page_0077_table_01.csv](tables/page_0077_table_01.csv) |
+| 77 | 2 | 3 | 1 | [tables/page_0077_table_02.csv](tables/page_0077_table_02.csv) |
+| 77 | 3 | 3 | 1 | [tables/page_0077_table_03.csv](tables/page_0077_table_03.csv) |
+| 77 | 4 | 2 | 1 | [tables/page_0077_table_04.csv](tables/page_0077_table_04.csv) |
+| 77 | 5 | 3 | 1 | [tables/page_0077_table_05.csv](tables/page_0077_table_05.csv) |
+| 77 | 6 | 3 | 1 | [tables/page_0077_table_06.csv](tables/page_0077_table_06.csv) |
+| 77 | 7 | 3 | 1 | [tables/page_0077_table_07.csv](tables/page_0077_table_07.csv) |
+| 77 | 8 | 3 | 1 | [tables/page_0077_table_08.csv](tables/page_0077_table_08.csv) |
+| 77 | 9 | 3 | 1 | [tables/page_0077_table_09.csv](tables/page_0077_table_09.csv) |
+| 77 | 10 | 3 | 1 | [tables/page_0077_table_10.csv](tables/page_0077_table_10.csv) |
+| 77 | 11 | 3 | 1 | [tables/page_0077_table_11.csv](tables/page_0077_table_11.csv) |
+| 77 | 12 | 3 | 1 | [tables/page_0077_table_12.csv](tables/page_0077_table_12.csv) |
+| 77 | 13 | 3 | 1 | [tables/page_0077_table_13.csv](tables/page_0077_table_13.csv) |
+| 77 | 14 | 3 | 1 | [tables/page_0077_table_14.csv](tables/page_0077_table_14.csv) |
+| 77 | 15 | 3 | 1 | [tables/page_0077_table_15.csv](tables/page_0077_table_15.csv) |
+| 77 | 16 | 3 | 1 | [tables/page_0077_table_16.csv](tables/page_0077_table_16.csv) |
+| 77 | 17 | 3 | 1 | [tables/page_0077_table_17.csv](tables/page_0077_table_17.csv) |
+| 77 | 18 | 3 | 1 | [tables/page_0077_table_18.csv](tables/page_0077_table_18.csv) |
+| 77 | 19 | 4 | 1 | [tables/page_0077_table_19.csv](tables/page_0077_table_19.csv) |
+| 77 | 20 | 3 | 1 | [tables/page_0077_table_20.csv](tables/page_0077_table_20.csv) |
+| 77 | 21 | 3 | 1 | [tables/page_0077_table_21.csv](tables/page_0077_table_21.csv) |
+| 77 | 22 | 3 | 1 | [tables/page_0077_table_22.csv](tables/page_0077_table_22.csv) |
+| 77 | 23 | 3 | 1 | [tables/page_0077_table_23.csv](tables/page_0077_table_23.csv) |
+| 77 | 24 | 3 | 1 | [tables/page_0077_table_24.csv](tables/page_0077_table_24.csv) |
+| 77 | 25 | 2 | 1 | [tables/page_0077_table_25.csv](tables/page_0077_table_25.csv) |
+| 99 | 1 | 1 | 17 | [tables/page_0099_table_01.csv](tables/page_0099_table_01.csv) |
+| 112 | 1 | 5 | 5 | [tables/page_0112_table_01.csv](tables/page_0112_table_01.csv) |
+| 112 | 2 | 2 | 2 | [tables/page_0112_table_02.csv](tables/page_0112_table_02.csv) |
+| 112 | 3 | 2 | 2 | [tables/page_0112_table_03.csv](tables/page_0112_table_03.csv) |
+| 112 | 4 | 2 | 2 | [tables/page_0112_table_04.csv](tables/page_0112_table_04.csv) |
+| 112 | 5 | 2 | 2 | [tables/page_0112_table_05.csv](tables/page_0112_table_05.csv) |
+| 112 | 6 | 2 | 2 | [tables/page_0112_table_06.csv](tables/page_0112_table_06.csv) |
+| 112 | 7 | 2 | 2 | [tables/page_0112_table_07.csv](tables/page_0112_table_07.csv) |
+| 112 | 8 | 2 | 2 | [tables/page_0112_table_08.csv](tables/page_0112_table_08.csv) |
+| 112 | 9 | 2 | 2 | [tables/page_0112_table_09.csv](tables/page_0112_table_09.csv) |
+| 112 | 10 | 2 | 2 | [tables/page_0112_table_10.csv](tables/page_0112_table_10.csv) |
+| 112 | 11 | 2 | 2 | [tables/page_0112_table_11.csv](tables/page_0112_table_11.csv) |
+| 115 | 1 | 2 | 2 | [tables/page_0115_table_01.csv](tables/page_0115_table_01.csv) |
+| 138 | 1 | 5 | 1 | [tables/page_0138_table_01.csv](tables/page_0138_table_01.csv) |
+| 138 | 2 | 7 | 5 | [tables/page_0138_table_02.csv](tables/page_0138_table_02.csv) |
+| 144 | 1 | 1 | 17 | [tables/page_0144_table_01.csv](tables/page_0144_table_01.csv) |
+| 155 | 1 | 5 | 5 | [tables/page_0155_table_01.csv](tables/page_0155_table_01.csv) |
+| 155 | 2 | 2 | 2 | [tables/page_0155_table_02.csv](tables/page_0155_table_02.csv) |
+| 155 | 3 | 2 | 2 | [tables/page_0155_table_03.csv](tables/page_0155_table_03.csv) |
+| 155 | 4 | 2 | 2 | [tables/page_0155_table_04.csv](tables/page_0155_table_04.csv) |
+| 155 | 5 | 2 | 2 | [tables/page_0155_table_05.csv](tables/page_0155_table_05.csv) |
+| 155 | 6 | 2 | 2 | [tables/page_0155_table_06.csv](tables/page_0155_table_06.csv) |
+| 155 | 7 | 2 | 2 | [tables/page_0155_table_07.csv](tables/page_0155_table_07.csv) |
+| 155 | 8 | 2 | 2 | [tables/page_0155_table_08.csv](tables/page_0155_table_08.csv) |
+| 155 | 9 | 2 | 2 | [tables/page_0155_table_09.csv](tables/page_0155_table_09.csv) |
+| 155 | 10 | 2 | 2 | [tables/page_0155_table_10.csv](tables/page_0155_table_10.csv) |
+| 155 | 11 | 2 | 2 | [tables/page_0155_table_11.csv](tables/page_0155_table_11.csv) |
+| 159 | 1 | 2 | 2 | [tables/page_0159_table_01.csv](tables/page_0159_table_01.csv) |
+| 159 | 2 | 2 | 2 | [tables/page_0159_table_02.csv](tables/page_0159_table_02.csv) |
+| 159 | 3 | 2 | 2 | [tables/page_0159_table_03.csv](tables/page_0159_table_03.csv) |
+| 173 | 1 | 5 | 1 | [tables/page_0173_table_01.csv](tables/page_0173_table_01.csv) |
+| 173 | 2 | 7 | 5 | [tables/page_0173_table_02.csv](tables/page_0173_table_02.csv) |
+| 196 | 1 | 2 | 3 | [tables/page_0196_table_01.csv](tables/page_0196_table_01.csv) |
+| 202 | 1 | 8 | 1 | [tables/page_0202_table_01.csv](tables/page_0202_table_01.csv) |
+| 202 | 2 | 3 | 2 | [tables/page_0202_table_02.csv](tables/page_0202_table_02.csv) |
+| 202 | 3 | 9 | 1 | [tables/page_0202_table_03.csv](tables/page_0202_table_03.csv) |
+| 203 | 1 | 3 | 1 | [tables/page_0203_table_01.csv](tables/page_0203_table_01.csv) |
+| 203 | 2 | 8 | 1 | [tables/page_0203_table_02.csv](tables/page_0203_table_02.csv) |
+| 204 | 1 | 2 | 1 | [tables/page_0204_table_01.csv](tables/page_0204_table_01.csv) |
+| 205 | 1 | 4 | 4 | [tables/page_0205_table_01.csv](tables/page_0205_table_01.csv) |
+| 205 | 2 | 4 | 2 | [tables/page_0205_table_02.csv](tables/page_0205_table_02.csv) |
+| 205 | 3 | 3 | 2 | [tables/page_0205_table_03.csv](tables/page_0205_table_03.csv) |
+| 206 | 1 | 2 | 1 | [tables/page_0206_table_01.csv](tables/page_0206_table_01.csv) |
+| 207 | 1 | 9 | 2 | [tables/page_0207_table_01.csv](tables/page_0207_table_01.csv) |
+| 207 | 2 | 9 | 2 | [tables/page_0207_table_02.csv](tables/page_0207_table_02.csv) |
+| 209 | 1 | 5 | 1 | [tables/page_0209_table_01.csv](tables/page_0209_table_01.csv) |
+| 211 | 1 | 5 | 2 | [tables/page_0211_table_01.csv](tables/page_0211_table_01.csv) |
+| 211 | 2 | 5 | 2 | [tables/page_0211_table_02.csv](tables/page_0211_table_02.csv) |
+| 211 | 3 | 11 | 2 | [tables/page_0211_table_03.csv](tables/page_0211_table_03.csv) |
+| 245 | 1 | 4 | 1 | [tables/page_0245_table_01.csv](tables/page_0245_table_01.csv) |
+| 246 | 1 | 5 | 1 | [tables/page_0246_table_01.csv](tables/page_0246_table_01.csv) |
+| 246 | 2 | 2 | 5 | [tables/page_0246_table_02.csv](tables/page_0246_table_02.csv) |
+| 247 | 1 | 6 | 1 | [tables/page_0247_table_01.csv](tables/page_0247_table_01.csv) |
+| 247 | 2 | 6 | 3 | [tables/page_0247_table_02.csv](tables/page_0247_table_02.csv) |
+| 248 | 1 | 2 | 4 | [tables/page_0248_table_01.csv](tables/page_0248_table_01.csv) |
+| 260 | 1 | 2 | 4 | [tables/page_0260_table_01.csv](tables/page_0260_table_01.csv) |
+| 263 | 1 | 2 | 3 | [tables/page_0263_table_01.csv](tables/page_0263_table_01.csv) |
+| 264 | 1 | 2 | 3 | [tables/page_0264_table_01.csv](tables/page_0264_table_01.csv) |
+| 266 | 1 | 10 | 2 | [tables/page_0266_table_01.csv](tables/page_0266_table_01.csv) |
+| 268 | 1 | 6 | 2 | [tables/page_0268_table_01.csv](tables/page_0268_table_01.csv) |
+| 268 | 2 | 2 | 4 | [tables/page_0268_table_02.csv](tables/page_0268_table_02.csv) |
+| 269 | 1 | 6 | 1 | [tables/page_0269_table_01.csv](tables/page_0269_table_01.csv) |
+| 279 | 1 | 6 | 7 | [tables/page_0279_table_01.csv](tables/page_0279_table_01.csv) |
+| 280 | 1 | 8 | 1 | [tables/page_0280_table_01.csv](tables/page_0280_table_01.csv) |
+| 285 | 1 | 9 | 1 | [tables/page_0285_table_01.csv](tables/page_0285_table_01.csv) |
+| 288 | 1 | 9 | 1 | [tables/page_0288_table_01.csv](tables/page_0288_table_01.csv) |
+| 290 | 1 | 8 | 1 | [tables/page_0290_table_01.csv](tables/page_0290_table_01.csv) |
+| 361 | 1 | 9 | 1 | [tables/page_0361_table_01.csv](tables/page_0361_table_01.csv) |

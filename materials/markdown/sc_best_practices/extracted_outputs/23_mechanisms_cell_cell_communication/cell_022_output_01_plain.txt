@@ -1,0 +1,3 @@
+Index(['CD4 T cells', 'CD14+ Monocytes', 'B cells', 'NK cells', 'CD8 T cells',
+       'FCGR3A+ Monocytes', 'Dendritic cells', 'Megakaryocytes'],
+      dtype='object')

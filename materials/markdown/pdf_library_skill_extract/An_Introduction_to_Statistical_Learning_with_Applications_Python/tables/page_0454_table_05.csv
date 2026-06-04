@@ -1,0 +1,2 @@
+"mlr_trainer.test(mlr_module,"
+datamodule=mnist_dm)

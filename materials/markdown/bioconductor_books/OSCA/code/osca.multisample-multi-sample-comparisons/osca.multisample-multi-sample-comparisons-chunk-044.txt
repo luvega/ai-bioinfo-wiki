@@ -1,0 +1,2 @@
+## [1] "Blood progenitors 1" "Caudal epiblast"     "Caudal neurectoderm"
+## [4] "ExE ectoderm"        "Parietal endoderm"   "Stripped"

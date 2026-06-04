@@ -1,0 +1,2 @@
+##  Warning in .local(x, ...): 'pairwiseBinom' is deprecated.
+##  See help("Deprecated")

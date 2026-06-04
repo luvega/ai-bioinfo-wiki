@@ -1,0 +1,10 @@
+plotColData
+(sce.mam, 
+y=
+I
+(aggregated[
+"GO:0006641"
+,]), 
+x=
+"label"
+)

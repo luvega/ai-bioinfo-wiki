@@ -1,0 +1,13 @@
+## class: SingleCellExperiment 
+## dim: 21817 1915 
+## metadata(0):
+## assays(1): counts
+## rownames(21817): ENSMUSG00000109644 ENSMUSG00000007777 ...
+##   ENSMUSG00000055670 ENSMUSG00000039068
+## rowData names(3): GENEID SYMBOL SEQNAME
+## colnames(1915): JC4_349_HSC_FE_S13_ JC4_350_HSC_FE_S13_ ...
+##   JC48P6_1203_HSC_FE_S8_ JC48P6_1204_HSC_FE_S8_
+## colData names(2): sample protocol
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(0):

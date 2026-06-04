@@ -1,0 +1,8 @@
+max_num_workers=10
+"(imdb_train,"
+imdb_test) = load_tensor(root='data/IMDB')
+"imdb_dm = SimpleDataModule(imdb_train,"
+"imdb_test,"
+"validation=2000,"
+"num_workers=min(6, max_num_workers),"
+batch_size=512)

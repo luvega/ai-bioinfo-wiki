@@ -1,0 +1,4 @@
+scaler = StandardScaler()
+nci_scaled = scaler.fit_transform(nci_data)
+nci_pca = PCA()
+nci_scores = nci_pca.fit_transform(nci_scaled)

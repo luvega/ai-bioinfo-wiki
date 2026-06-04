@@ -1,0 +1,4 @@
+rng = np.random.default_rng(10)
+"x1 = rng.uniform(0, 1, size=100)"
+x2 = 0.5 * x1 + rng.normal(size=100) / 10
+y = 2 + 2 * x1 + 0.3 * x2 + rng.normal(size=100)

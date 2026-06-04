@@ -1,0 +1,6 @@
+📜 Retrieving model list from server https://celltypist.cog.sanger.ac.uk/models/models.json
+📚 Total models in list: 61
+📂 Storing models in /home/seokim/.celltypist/data/models
+💾 Total models to download: 2
+💾 Downloading model [1/2]: Immune_All_Low.pkl
+💾 Downloading model [2/2]: Immune_All_High.pkl

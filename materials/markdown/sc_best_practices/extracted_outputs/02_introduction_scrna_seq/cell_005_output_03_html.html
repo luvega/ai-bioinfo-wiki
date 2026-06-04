@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 15px;
+            width: 400px;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #3965a3;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>What is the main difference between single-cell and single-nuclei sequencing?</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3" value="Single-cell captures whole cells, while single-nuclei captures only nuclei"
+            onclick="checkAnswer(this, 'Single-cell captures whole cells, while single-nuclei captures only nuclei', '', 'feedback-q3')"> Single-cell captures whole cells, while single-nuclei captures only nuclei
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3" value="Single-nuclei sequencing has higher throughput"
+            onclick="checkAnswer(this, 'Single-cell captures whole cells, while single-nuclei captures only nuclei', '', 'feedback-q3')"> Single-nuclei sequencing has higher throughput
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3" value="Single-cell is more accurate"
+            onclick="checkAnswer(this, 'Single-cell captures whole cells, while single-nuclei captures only nuclei', '', 'feedback-q3')"> Single-cell is more accurate
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3" value="Single-nuclei sequencing is cheaper"
+            onclick="checkAnswer(this, 'Single-cell captures whole cells, while single-nuclei captures only nuclei', '', 'feedback-q3')"> Single-nuclei sequencing is cheaper
+        </label><br>
+        
+        <p id="feedback-q3" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q3" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: Single-cell captures whole cells, while single-nuclei captures only nuclei
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

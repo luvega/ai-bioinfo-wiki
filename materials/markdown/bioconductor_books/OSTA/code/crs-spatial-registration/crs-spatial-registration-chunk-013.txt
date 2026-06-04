@@ -1,0 +1,4 @@
+##  DataFrame with 1 row and 4 columns
+##      sample_id    image_id   data scaleFactor
+##    <character> <character> <list>   <numeric>
+##  1      Xenium         H&E   ####           1

@@ -33,6 +33,28 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - `materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python/book.course.md`：只取“特征、样本、监督学习问题”的概念背景，帮助解释表达矩阵为何是样本特征表。
 - `materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R/book.course.md`：作为统计学习概念补充，不直接进入 RNA-seq 上游命令。
 
+## Single-cell Best Practices 候选素材
+
+- [SCBP 课程索引](../../../materials/markdown/sc_best_practices/scbp.course_index.md)：全书章节、代码工程、数据 manifest 和 Week 13-16 映射。
+- [Single-cell RNA sequencing](../../../materials/markdown/sc_best_practices/analysis_project/chapters/02_introduction_scrna_seq/chapter.source.md)：用于解释 scRNA-seq 和 bulk RNA-seq 的实验与数据差异。
+- [Raw data processing](../../../materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/chapter.source.md)：用于补充 FASTQ、barcode、UMI、reference 和 count matrix 的来源。
+- [Fundamental data structures and frameworks](../../../materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.source.md)：用于引入 AnnData、obs/var/X/layers 等数据结构。
+- [Dataset download report](../../../materials/markdown/sc_best_practices/analysis_project/dataset_download_report.md)：用于核查哪些示例数据已下载、哪些需要 LaminDB 或人工处理。
+
+## OWF Shell 辅助参考
+
+- [OWF Learn Linux Shell](../../../materials/markdown/openwaterfoundation_learning/linux_shell/README.md)：只用于解释命令行、脚本、重定向和日志等通用操作素养。
+- [OWF Learn Windows Shell](../../../materials/markdown/openwaterfoundation_learning/windows_shell/README.md)：只用于 Windows 课堂环境中的路径、命令提示符和批处理背景。
+- 使用边界：Week 14 的 RNA-seq 上游流程仍以 AIDD 生信素材、课程讲稿和后续人工核验为主；OWF shell 教程不替代 FASTQ、SAM/BAM、feature extraction 等生信事实来源。
+
+## 素材分层使用原则（2026-06-04）
+
+- 课堂主素材：AIDD RNA-seq 上游链条和课堂 count matrix / metadata 核验。
+- 支撑素材：SCBP raw data processing / data structures、OSCA SCE/QC/normalization、OSTA reads-to-counts/QC/normalization。
+- 拓展素材：空间转录组作为表达矩阵来源扩展框，不覆盖 RNA-seq 主线。
+- 教师备课素材：OSCA/OSTA workflow 只用于确认文件角色和质量控制表述。
+- 教材 / PPT 边界：可进 PPT：FASTQ -> count matrix 流程、AnnData/SCE 概念框、metadata 对齐检查。
+
 ## 可进 PPT 的元素
 
 - 流程图：`SRA/FASTQ -> QC -> trimming -> alignment -> SAM/BAM -> sorting/indexing -> feature extraction -> count matrix`。

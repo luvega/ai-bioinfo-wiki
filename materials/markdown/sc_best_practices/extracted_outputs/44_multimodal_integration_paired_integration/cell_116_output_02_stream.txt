@@ -1,0 +1,2 @@
+Epoch 106/500:  21%|██        | 106/500 [11:30<42:46,  6.51s/it, loss=4.47e+03, v_num=1]
+Monitored metric reconstruction_loss_validation did not improve in the last 50 records. Best score: 9223.312. Signaling Trainer to stop.

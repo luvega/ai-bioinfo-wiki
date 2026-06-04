@@ -1,0 +1,5 @@
+"quad_model = MS([poly('horsepower', 2, raw=True)])"
+"quad_func = partial(boot_OLS,"
+"quad_model,"
+'mpg')
+"boot_SE(quad_func, Auto, B=1000)"

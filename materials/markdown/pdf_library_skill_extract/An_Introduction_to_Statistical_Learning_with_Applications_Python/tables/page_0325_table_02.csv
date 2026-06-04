@@ -1,0 +1,3 @@
+"ns_age = MS([ns('age', df=5)]).fit(Wage)"
+"M_ns = sm.OLS(y, ns_age.transform(Wage)).fit()"
+summarize(M_ns)

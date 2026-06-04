@@ -1,0 +1,12 @@
+Incorrect input testing
+""
+"Another category of tests will test the function on how it responds when given incorrect
+input. We won’t talk about this much in our book because we’re assuming you are calling
+your own functions, but in production code, this can be common. A few examples of call-
+ing this function with incorrect inputs might be to give the function a nonexisting list by
+using the value instead of an actual list (e.g., ), to give the
+None longest_word(None)
+function an empty list (e.g., ), to give the function a list with inte-
+longest_word([])
+gers as input (e.g., ), or to provide a list of strings but have the
+longest_word([1,2])"

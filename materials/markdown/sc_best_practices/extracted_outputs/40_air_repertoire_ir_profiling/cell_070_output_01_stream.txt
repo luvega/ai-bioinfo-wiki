@@ -1,0 +1,5 @@
+Amount of all T cells:				280045
+Amount of T cells with AIR:			280023
+Amount of T cells without doublets:		280023
+Amount of T cells with unique AIR per cell:	250160
+Amount of T cells with sinlge complete AIR:	196957

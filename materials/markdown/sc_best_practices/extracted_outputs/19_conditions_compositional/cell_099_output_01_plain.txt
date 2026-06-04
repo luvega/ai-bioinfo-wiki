@@ -1,0 +1,11 @@
+       condition batch
+B1       Control    B1
+B2       Control    B2
+B3       Control    B3
+B4       Control    B4
+B5    Hpoly.Day3    B5
+B6    Hpoly.Day3    B6
+B7   Hpoly.Day10    B7
+B8   Hpoly.Day10    B8
+B9    Salmonella    B9
+B10   Salmonella   B10

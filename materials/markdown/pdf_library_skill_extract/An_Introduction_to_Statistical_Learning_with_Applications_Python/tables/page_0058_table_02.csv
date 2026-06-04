@@ -1,0 +1,3 @@
+"output = subplots(figsize=(8, 8))"
+fig = output[0]
+ax = output[1]

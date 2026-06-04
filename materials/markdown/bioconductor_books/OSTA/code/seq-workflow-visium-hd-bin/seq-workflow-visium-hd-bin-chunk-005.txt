@@ -1,0 +1,7 @@
+##                               DeconClass   DeconLabel1          DeconLabel2
+##  s_008um_00000_00001-1           singlet     Pericytes          Endothelial
+##  s_008um_00000_00017-1           singlet Enteric Glial           Enterocyte
+##  s_008um_00000_00018-1 doublet_uncertain Enteric Glial             Tumor II
+##  s_008um_00000_00019-1           singlet           vSM                 Tuft
+##  s_008um_00000_00020-1           singlet           vSM CD8 Cytotoxic T cell
+##  s_008um_00000_00023-1            reject Smooth Muscle                  vSM

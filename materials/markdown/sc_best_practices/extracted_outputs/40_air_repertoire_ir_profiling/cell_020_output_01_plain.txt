@@ -1,0 +1,13 @@
+                       barcode    v_gene    d_gene c_gene j_gene productive  \
+34  AACTCCCCAAGTACCT-MH9143270      None      None  IGLC3  IGLJ5      False   
+38  AACTCTTCAGATCGGA-MH9143270  IGKV1-39      None   IGKC   None      False   
+43  AACTGGTCAGGGAGAG-MH9143270   IGLV4-3      None  IGLC2   None      False   
+65  ACACCAAGTCGATTGT-MH9143270      None  IGHD5-12   IGHD  IGHJ4      False   
+76  ACATCAGCATACTACG-MH9143270      None   IGHD3-3   IGHD  IGHJ6      False   
+
+    full_length  
+34        False  
+38        False  
+43        False  
+65        False  
+76        False  

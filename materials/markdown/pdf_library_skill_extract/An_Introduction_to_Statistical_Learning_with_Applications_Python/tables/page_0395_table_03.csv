@@ -1,0 +1,10 @@
+"kfold = skm.KFold(5,"
+"random_state=0,"
+shuffle=True)
+"grid = skm.GridSearchCV(svm_linear,"
+"{'C':[0.001,0.01,0.1,1,5,10,100]},"
+"refit=True,"
+"cv=kfold,"
+scoring='accuracy')
+"grid.fit(X, y)"
+grid.best_params_

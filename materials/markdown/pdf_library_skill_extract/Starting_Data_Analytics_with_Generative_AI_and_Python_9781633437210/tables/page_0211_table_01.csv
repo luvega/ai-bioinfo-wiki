@@ -1,0 +1,5 @@
+,There are a few other methods for illustrating the relationship between sensitivity
+"and specificity. If you prefer visual representations, you might find the receiver operat-",
+ing characteristic (ROC) curve useful. The ROC curve plots the true positive rate,
+"(sensitivity) against the false positive rate (1 – specificity) at various threshold settings,",
+providing a visual measure of a classifier’s performance.,

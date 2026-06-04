@@ -1,0 +1,27 @@
+## DataFrame with 48 rows and 4 columns
+##                                                phenotype       sum  detected
+##                                              <character> <numeric> <numeric>
+## SLX-9555.N701_S502.C89V9ANXX.s_1.r_1 wild type phenotype    854171      7617
+## SLX-9555.N701_S503.C89V9ANXX.s_1.r_1 wild type phenotype   1044243      7520
+## SLX-9555.N701_S504.C89V9ANXX.s_1.r_1 wild type phenotype   1152450      8305
+## SLX-9555.N701_S517.C89V9ANXX.s_1.r_1 wild type phenotype   1113526      8634
+## SLX-9555.N702_S502.C89V9ANXX.s_1.r_1 wild type phenotype   1308250      8364
+## ...                                                  ...       ...       ...
+## SLX-9555.N711_S517.C89V9ANXX.s_1.r_1 wild type phenotype   1317671      8581
+## SLX-9555.N712_S502.C89V9ANXX.s_1.r_1 wild type phenotype   1736189      9687
+## SLX-9555.N712_S503.C89V9ANXX.s_1.r_1 wild type phenotype   1521132      8983
+## SLX-9555.N712_S504.C89V9ANXX.s_1.r_1 wild type phenotype   1759166      8480
+## SLX-9555.N712_S517.C89V9ANXX.s_1.r_1 wild type phenotype   1436899      8469
+##                                          total
+##                                      <numeric>
+## SLX-9555.N701_S502.C89V9ANXX.s_1.r_1    854171
+## SLX-9555.N701_S503.C89V9ANXX.s_1.r_1   1044243
+## SLX-9555.N701_S504.C89V9ANXX.s_1.r_1   1152450
+## SLX-9555.N701_S517.C89V9ANXX.s_1.r_1   1113526
+## SLX-9555.N702_S502.C89V9ANXX.s_1.r_1   1308250
+## ...                                        ...
+## SLX-9555.N711_S517.C89V9ANXX.s_1.r_1   1317671
+## SLX-9555.N712_S502.C89V9ANXX.s_1.r_1   1736189
+## SLX-9555.N712_S503.C89V9ANXX.s_1.r_1   1521132
+## SLX-9555.N712_S504.C89V9ANXX.s_1.r_1   1759166
+## SLX-9555.N712_S517.C89V9ANXX.s_1.r_1   1436899

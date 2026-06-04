@@ -1,0 +1,4 @@
+knn1 = KNeighborsClassifier(n_neighbors=1)
+"knn1.fit(X_train, L_train)"
+knn1_pred = knn1.predict(X_test)
+"confusion_table(knn1_pred, L_test)"

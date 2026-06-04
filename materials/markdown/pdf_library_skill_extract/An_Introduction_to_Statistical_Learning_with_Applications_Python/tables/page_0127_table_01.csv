@@ -1,0 +1,3 @@
+"X = pd.DataFrame({'intercept': np.ones(Boston.shape[0]),"
+'lstat': Boston['lstat']})
+X[:4]

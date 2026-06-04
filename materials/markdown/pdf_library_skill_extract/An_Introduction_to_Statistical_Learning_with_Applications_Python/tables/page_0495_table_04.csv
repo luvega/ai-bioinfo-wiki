@@ -1,0 +1,3 @@
+"Index(['sex', 'diagnosis', 'loc', 'ki', 'gtv', 'stereo',"
+"'status', 'time'],"
+dtype='object')

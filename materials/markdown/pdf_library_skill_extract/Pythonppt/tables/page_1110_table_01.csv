@@ -1,0 +1,6 @@
+库名,用途,pip安装指令
+NumPy,N维数据表示和运算,pip install numpy
+Matplotlib,二维数据可视化,pip install matplotlib
+PIL,图像处理,pip install pillow
+Scikit-Learn,机器学习和数据挖掘,pip install sklearn
+Requests,HTTP协议访问及网络爬虫,pip install requests

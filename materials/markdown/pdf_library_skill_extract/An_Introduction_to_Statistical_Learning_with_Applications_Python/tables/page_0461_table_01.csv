@@ -1,0 +1,6 @@
+"for i, imgfile in enumerate(imgfiles):"
+img_df = class_labels.copy()
+img_df['prob'] = img_probs[i]
+"img_df = img_df.sort_values(by='prob', ascending=False)[:3]"
+print(f'Image: {imgfile}')
+print(img_df.reset_index().drop(columns=['idx']))

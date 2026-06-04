@@ -1,0 +1,6 @@
+库名,用途,pip安装指令
+Flask,轻量级Web开发框架,pip install flask
+WeRoBot,微信机器人开发框架,pip install werobot
+SymPy,数学符号计算工具,pip install sympy
+Pandas,高效数据分析和计算,pip install pandas
+Networkx,复杂网络和图结构的建模和分析,pip install networkx

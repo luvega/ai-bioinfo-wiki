@@ -1,0 +1,8 @@
+Number of cells in supplied matrix:  6224 
+Number of genes in supplied matrix:  10000 
+Number of nearest neighbors being used per cell for smoothing:  30 
+  |                                                                      |   0%Running in parallel using  2 cores ..
+  |======================================================================| 100%
+Merging results ..
+
+Time Elapsed:  1.23741063674291 mins 

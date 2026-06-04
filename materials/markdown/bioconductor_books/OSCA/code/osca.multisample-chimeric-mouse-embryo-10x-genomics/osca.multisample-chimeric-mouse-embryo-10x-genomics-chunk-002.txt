@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 29453 20935 
+## metadata(0):
+## assays(1): counts
+## rownames(29453): ENSMUSG00000051951 ENSMUSG00000089699 ...
+##   ENSMUSG00000095742 tomato-td
+## rowData names(2): ENSEMBL SYMBOL
+## colnames(20935): cell_9769 cell_9770 ... cell_30702 cell_30703
+## colData names(11): cell barcode ... doub.density sizeFactor
+## reducedDimNames(2): pca.corrected.E7.5 pca.corrected.E8.5
+## mainExpName: NULL
+## altExpNames(0):

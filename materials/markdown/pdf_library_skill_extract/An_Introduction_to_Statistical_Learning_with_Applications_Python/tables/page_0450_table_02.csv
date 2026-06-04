@@ -1,0 +1,8 @@
+"fig, ax = subplots(1, 1, figsize=(6, 6))"
+"ax = summary_plot(hit_results,"
+"ax,"
+"col='mae',"
+"ylabel='MAE',"
+valid_legend='Validation (=Test)')
+"ax.set_ylim([0, 400])"
+"ax.set_xticks(np.linspace(0, 50, 11).astype(int));"

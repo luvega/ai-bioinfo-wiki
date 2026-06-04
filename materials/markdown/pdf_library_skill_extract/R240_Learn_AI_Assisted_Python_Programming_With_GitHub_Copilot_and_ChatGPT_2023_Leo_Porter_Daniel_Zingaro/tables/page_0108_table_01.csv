@@ -1,0 +1,8 @@
+Copilot explanations can be wrong
+""
+"We chose the previous Copilot explanation because it was the best answer from Copilot
+after we asked it to explain the code three times. One of the answers it gave us sounded
+quite plausible, until it started talking about functions that didn’t exist. We believe the
+explanations can be helpful as a learning aid if you run it multiple times and look for
+common ideas, but a principal goal of this chapter is to give you the tools you need to
+understand when it makes mistakes."

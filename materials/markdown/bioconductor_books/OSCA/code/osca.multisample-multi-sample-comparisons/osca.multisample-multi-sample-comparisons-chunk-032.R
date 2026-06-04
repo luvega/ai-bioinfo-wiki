@@ -1,0 +1,4 @@
+summary
+(fit
+$
+df.prior)

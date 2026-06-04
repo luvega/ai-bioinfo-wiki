@@ -1,0 +1,10 @@
+,"Apart from rule-based approaches, Python offers multiple machine learning tech-"
+niques to summarize texts: latent semantic analysis (LSA) and latent Dirichlet alloca-,
+"tion (LDA) can be used to analyze latent topics, whereas pretrained language models",
+"like BERT, text-to-text transfer transformer (T5), and Bidirectional and Auto-",
+Regressive Transformer (BART) can be fine-tuned for specific tasks. Presenting the,
+"details of these methods and their capabilities is beyond the scope of this book, not to",
+mention that most of them are designed for other purposes than summarizing texts as,
+"short as our reviews. However, with options like the Gensim, scikit-learn, and Hugging",
+"Face Transformers libraries, you can select the right technique for your requirements",
+"and text type. At the same time, generative AI can assist you and provide advice.",

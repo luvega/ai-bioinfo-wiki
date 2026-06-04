@@ -1,0 +1,14 @@
+"def plot_nci(linkage, ax, cut=-np.inf):"
+"cargs = {'above_threshold_color':'black',"
+'color_threshold':cut}
+"hc = HClust(n_clusters=None,"
+"distance_threshold=0,"
+linkage=linkage.lower()).fit(nci_scaled)
+linkage_ = compute_linkage(hc)
+"dendrogram(linkage_,"
+"ax=ax,"
+"labels=np.asarray(nci_labs),"
+"leaf_font_size=10,"
+**cargs)
+ax.set_title('%s Linkage' % linkage)
+return hc

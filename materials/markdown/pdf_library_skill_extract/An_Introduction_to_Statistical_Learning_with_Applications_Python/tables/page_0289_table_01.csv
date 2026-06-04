@@ -1,0 +1,6 @@
+pca = PCA(n_components=2)
+linreg = skl.LinearRegression()
+"pipe = Pipeline([('pca', pca),"
+"('linreg', linreg)])"
+"pipe.fit(X, Y)"
+pipe.named_steps['linreg'].coef_

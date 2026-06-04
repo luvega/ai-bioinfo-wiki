@@ -1,0 +1,2 @@
+##  Warning in combineBlocks(collected, method = method, equiweight = equiweight, : 'combineBlocks' is deprecated.
+##  See help("Deprecated")

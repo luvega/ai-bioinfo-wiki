@@ -1,0 +1,43 @@
+                CAAGTDYEQYF  CAAQGSSMETQYF  CAARTVNTGELFF  CAAVQGPSYEQYF  \
+CAAGTDYEQYF             0.0            1.0            1.0            1.0   
+CAAQGSSMETQYF           1.0            0.0            1.0            1.0   
+CAARTVNTGELFF           1.0            1.0            0.0            1.0   
+CAAVQGPSYEQYF           1.0            1.0            1.0            0.0   
+CACGAGEDTGELFF          1.0            1.0            1.0            1.0   
+
+                CACGAGEDTGELFF  CACGKGGGSLRYTF  CACGPGGPSTDTQYF  \
+CAAGTDYEQYF                1.0             1.0              1.0   
+CAAQGSSMETQYF              1.0             1.0              1.0   
+CAARTVNTGELFF              1.0             1.0              1.0   
+CAAVQGPSYEQYF              1.0             1.0              1.0   
+CACGAGEDTGELFF             0.0             1.0              1.0   
+
+                CACPSTSGINTGELFF  CACRGLAGYEQYF  CADARSSWDTQYF  ...  \
+CAAGTDYEQYF                  1.0            1.0            1.0  ...   
+CAAQGSSMETQYF                1.0            1.0            1.0  ...   
+CAARTVNTGELFF                1.0            1.0            1.0  ...   
+CAAVQGPSYEQYF                1.0            1.0            1.0  ...   
+CACGAGEDTGELFF               1.0            1.0            1.0  ...   
+
+                CSVWTGEGYTF  CSVYTGTSAYEQYF  CSWLAGQETQYF  CTSRMDSNYGYTF  \
+CAAGTDYEQYF             1.0             1.0           1.0            1.0   
+CAAQGSSMETQYF           1.0             1.0           1.0            1.0   
+CAARTVNTGELFF           1.0             1.0           1.0            1.0   
+CAAVQGPSYEQYF           1.0             1.0           1.0            1.0   
+CACGAGEDTGELFF          1.0             1.0           1.0            1.0   
+
+                CVFGFRGDTQYF  CVSRDKYEQYF  CVTEGSSYNEQFF  CVTGLAENTQYF  \
+CAAGTDYEQYF              1.0          1.0            1.0           1.0   
+CAAQGSSMETQYF            1.0          1.0            1.0           1.0   
+CAARTVNTGELFF            1.0          1.0            1.0           1.0   
+CAAVQGPSYEQYF            1.0          1.0            1.0           1.0   
+CACGAGEDTGELFF           1.0          1.0            1.0           1.0   
+
+                CVTRETGGGGYTF  CVTRYSYEQYF  
+CAAGTDYEQYF               1.0          1.0  
+CAAQGSSMETQYF             1.0          1.0  
+CAARTVNTGELFF             1.0          1.0  
+CAAVQGPSYEQYF             1.0          1.0  
+CACGAGEDTGELFF            1.0          1.0  
+
+[5 rows x 6190 columns]

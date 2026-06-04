@@ -1,0 +1,4 @@
+"model = MS(Carseats.columns.drop('Sales'), intercept=False)"
+D = model.fit_transform(Carseats)
+feature_names = list(D.columns)
+X = np.asarray(D)

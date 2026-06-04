@@ -1,0 +1,2 @@
+/home/icb/anna.schaar/miniconda3/envs/deconvolution_book/lib/python3.9/site-packages/scanpy/plotting/_tools/scatterplots.py:392: UserWarning: No data for colormapping provided via 'c'. Parameters 'cmap' will be ignored
+  cax = scatter(

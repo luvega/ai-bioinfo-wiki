@@ -1,0 +1,9 @@
+         NMI_cluster/label  ARI_cluster/label  ASW_label  ASW_label/batch  \
+WNN               0.808672           0.729036   0.595822         0.854867   
+MOFA+             0.727261           0.497166   0.566888         0.800875   
+totalVI           0.847325           0.796760   0.566315         0.910679   
+
+         isolated_label_silhouette  graph_conn  
+WNN                       0.420527    0.914140  
+MOFA+                     0.418293    0.886662  
+totalVI                   0.513436    0.959439  

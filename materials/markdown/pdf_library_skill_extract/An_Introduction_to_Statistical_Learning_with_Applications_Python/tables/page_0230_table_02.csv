@@ -1,0 +1,5 @@
+rng = np.random.default_rng(0)
+"np.array([hp_func(Auto,"
+"rng.choice(392,"
+"392,"
+replace=True)) for _ in range(10)])

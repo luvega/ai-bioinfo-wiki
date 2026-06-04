@@ -1,0 +1,7 @@
+"roc_curve(svm_flex,"
+"X_test,"
+"y_test,"
+"name='Test $\gamma=50$',"
+"color='b',"
+ax=ax)
+fig;

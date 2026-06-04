@@ -1,0 +1,3 @@
+[92m→[0m connected lamindb: theislab/sc-best-practices
+[92m→[0m loaded Transform('5tukHKyz8kFR0001', key='pseudotemporal.ipynb'), re-started Run('Hfx6ZbLSPyO3msPK') at 2026-01-14 17:24:35 UTC
+[92m→[0m notebook imports: lamindb==2.0.1 scanpy==1.11.5

@@ -1,0 +1,24 @@
+NK_cells                 -0.511184
+Eosinophils              -0.498070
+CD4_T_cells_1            -0.403485
+B_cells_1                -0.325301
+B_cells_2                -0.281896
+CD8_T_cells              -0.281529
+pDC                      -0.264388
+CD4_T_cells_3            -0.180847
+CD16_Monocytes           -0.165263
+CD14_Monocytes_2         -0.164895
+CD34+ GATA2+ cells       -0.132763
+CD14_Monocytes_3         -0.063592
+Neutrophils_2            -0.058816
+Immature Neutrophils_1   -0.004655
+CD14_Monocytes_1         -0.002719
+Plasmablast               0.015157
+Neutrophils_3             0.057406
+Megakaryocytes            0.292929
+Immature Neutrophils_2    0.322763
+Neutrophils_1             0.446441
+Neutrophils_4             0.447348
+CD4_T_cells_2                  NaN
+mDC                            NaN
+dtype: float64

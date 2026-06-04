@@ -1,0 +1,12 @@
+## Coefficient:  factor(tomato)TRUE 
+##                                  logFC logCPM      F    PValue       FDR
+## ExE ectoderm                   -6.5967  13.02 51.692 3.766e-09 9.038e-08
+## Mesenchyme                      1.1667  16.29 12.248 1.016e-03 1.219e-02
+## Allantois                       0.8061  15.51  5.178 2.738e-02 1.937e-01
+## Cardiomyocytes                  0.8211  14.86  4.861 3.229e-02 1.937e-01
+## Neural crest                   -0.7707  14.76  4.081 4.897e-02 2.014e-01
+## Erythroid3                     -0.6422  17.28  4.030 5.035e-02 2.014e-01
+## Endothelium                     0.7532  14.29  3.726 5.948e-02 2.039e-01
+## Haematoendothelial progenitors  0.6387  14.72  2.935 9.311e-02 2.793e-01
+## ExE mesoderm                    0.3699  15.68  1.179 2.831e-01 6.786e-01
+## Pharyngeal mesoderm             0.3693  15.72  1.167 2.853e-01 6.786e-01

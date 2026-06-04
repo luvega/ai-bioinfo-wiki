@@ -1,0 +1,1 @@
+Artifact(uid='Y8EIAWzUB42V1j3S0008', is_latest=True, key='preprocessing_visualization/s4d8_quality_control.h5ad', description='anndata after quality control', suffix='.h5ad', kind='dataset', otype='AnnData', size=526647603, hash='FVzbbtQN4UQapQ6u8T0IvK', n_observations=14814, space_id=1, storage_id=1, run_id=7, created_by_id=5, created_at=2025-11-10 02:25:43 UTC)

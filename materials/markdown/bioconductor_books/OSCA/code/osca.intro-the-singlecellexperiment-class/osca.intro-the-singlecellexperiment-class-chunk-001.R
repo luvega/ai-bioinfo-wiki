@@ -1,0 +1,6 @@
+BiocManager
+::
+install
+(
+'SingleCellExperiment'
+)

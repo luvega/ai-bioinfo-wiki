@@ -1,0 +1,2 @@
+C:\Users\Shennor\.conda\envs\eharpy\lib\site-packages\rpy2\robjects\packages.py:365: UserWarning: The symbol 'quartz' is not in this R namespace/package.
+  warnings.warn(

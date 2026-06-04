@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 15px;
+            width: 400px;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #3965a3;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>Where would you store additional matrices derived from the main data, such as normalized counts or log-transformed values, in an AnnData object?</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3b" value="layers"
+            onclick="checkAnswer(this, 'layers', '', 'feedback-q3b')"> layers
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3b" value="obsm"
+            onclick="checkAnswer(this, 'layers', '`.obsm` stores matrices of calculations for the observations, such as PCA or UMAP embeddings.', 'feedback-q3b')"> obsm
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3b" value="varp"
+            onclick="checkAnswer(this, 'layers', '`.varp` stores graph-like structures that associate genes with genes.', 'feedback-q3b')"> varp
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3b" value="uns"
+            onclick="checkAnswer(this, 'layers', '`.uns` stores unstructured metadata.', 'feedback-q3b')"> uns
+        </label><br>
+        
+        <p id="feedback-q3b" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q3b" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: layers
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

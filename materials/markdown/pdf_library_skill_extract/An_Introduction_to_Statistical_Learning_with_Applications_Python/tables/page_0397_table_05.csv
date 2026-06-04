@@ -1,0 +1,5 @@
+"fig, ax = subplots(figsize=(8,8))"
+"ax.scatter(X[:,0],"
+"X[:,1],"
+"c=y,"
+cmap=cm.coolwarm)

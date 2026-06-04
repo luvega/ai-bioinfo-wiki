@@ -1,0 +1,13 @@
+plotTSNE
+(
+altExp
+(sce.pbmc), 
+colour_by=
+"label"
+, 
+text_by=
+"label"
+, 
+text_colour=
+"red"
+)

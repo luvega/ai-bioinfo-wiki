@@ -1,0 +1,24 @@
+## GRangesList object of length 46603:
+## $ENSMUSG00000102693
+## GRanges object with 0 ranges and 0 metadata columns:
+##    seqnames    ranges strand
+##       <Rle> <IRanges>  <Rle>
+##   -------
+##   seqinfo: no sequences
+## 
+## $ENSMUSG00000064842
+## GRanges object with 0 ranges and 0 metadata columns:
+##    seqnames    ranges strand
+##       <Rle> <IRanges>  <Rle>
+##   -------
+##   seqinfo: no sequences
+## 
+## $ENSMUSG00000051951
+## GRanges object with 0 ranges and 0 metadata columns:
+##    seqnames    ranges strand
+##       <Rle> <IRanges>  <Rle>
+##   -------
+##   seqinfo: no sequences
+## 
+## ...
+## <46600 more elements>

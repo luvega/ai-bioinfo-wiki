@@ -1,0 +1,3 @@
+D = Smarket.Direction
+"L_train, L_test = D.loc[train], D.loc[ train]
+∼"

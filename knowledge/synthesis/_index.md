@@ -5,6 +5,6 @@
 | Path | Title | Summary | Status | Tags |
 |:---|:---|:---|:---|:---|
 | [AIDD与36课时映射.md](AIDD与36课时映射.md) | AIDD 章节 → 36 课时教学大纲 · 映射表 | **AIDD 是案例素材，36 课时大纲是教学骨架。** | stable | knowledge, synthesis, mapping, course-design |
-| [MinerU_PDF结构化转换方案.md](MinerU_PDF结构化转换方案.md) | MinerU PDF 结构化转换方案 | 本页记录 `materials/` 下 PDF 的结构化转换路线：使用 MinerU 云端 Precision API 生成更适合信息抽取的 Markdown / JSON，同时保留旧的 `materials/markdown/pdf_library_legacy/` 轻量转换结 | in_progress | knowledge, synthesis, mineru, pdf, markdown, course-ops, api |
+| [MinerU_PDF结构化转换方案.md](MinerU_PDF结构化转换方案.md) | MinerU PDF 结构化转换方案 | 本页记录 `materials/` 下 PDF 的结构化转换路线：使用 MinerU 云端 Precision API 生成更适合信息抽取的 Markdown / JSON。当前 source 页已改用 `materials/markdown/pdf_library_mineru | in_progress | knowledge, synthesis, mineru, pdf, markdown, course-ops, api |
 | [三本Python书定位对比.md](三本Python书定位对比.md) | 三本 Python/AI 书定位对比 | **[ISLP](../sources/ISLP.md)**：统计学习与机器学习的**理论 + Python lab** 教材。 | stable | knowledge, synthesis, book-compare, course-design, ai-assisted, python |
 | [知识缺口与后续素材.md](知识缺口与后续素材.md) | 知识缺口与后续可 ingest 素材 | 本页扮演**“wiki 的购物清单”**：列出当前 wiki 中缺失但教学需要的内容， | in_progress | knowledge, synthesis, todo, gap-analysis, course-design |

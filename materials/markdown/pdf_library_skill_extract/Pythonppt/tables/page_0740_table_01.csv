@@ -1,0 +1,7 @@
+函数或方法,描述
+ls[i] = x,替换列表ls第i元素为x
+ls[i: j: k] = lt,用列表lt替换ls切片后所对应元素子列表
+del ls[i],删除列表ls中第i元素
+del ls[i: j: k],删除列表ls中第i到第j以k为步长的元素
+ls += lt,更新列表ls，将列表lt元素增加到列表ls中
+ls *= n,更新列表ls，其元素重复n次

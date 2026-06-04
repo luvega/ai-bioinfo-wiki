@@ -1,0 +1,2 @@
+"Auto.cylinders = pd.Series(Auto.cylinders, dtype='category')"
+Auto.cylinders.dtype

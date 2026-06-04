@@ -39,6 +39,7 @@ export type CoursebookChapter = {
   knowledgeSources: string[];
   materialSources: string[];
   coursebookTopics: string[];
+  badges?: string[];
   sample?: CoursebookSample;
 };
 
@@ -77,9 +78,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     reviewStatus: 'catalog_only',
     pptStatus: 'not_started',
     sourceWeekFiles: baseWeekFiles(2),
-    knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/concepts/AI协作边界.md', 'knowledge/entities/GitHub.md'],
-    materialSources: ['materials/markdown/aidd_bioinformatics/06_Understanding_Bioinformatics_Pipeline/chapter.course.md'],
-    coursebookTopics: ['可复现分析', 'Prompt 记录', '项目目录']
+    knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/concepts/AI协作边界.md', 'knowledge/entities/GitHub.md', 'knowledge/sources/OWF_Learn_Git.md', 'knowledge/sources/OWF_Learn_Windows_Shell.md', 'knowledge/sources/OWF_Learn_Linux_Shell.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/06_Understanding_Bioinformatics_Pipeline/chapter.course.md', 'materials/markdown/openwaterfoundation_learning/git/README.md', 'materials/markdown/openwaterfoundation_learning/windows_shell/README.md', 'materials/markdown/openwaterfoundation_learning/linux_shell/README.md'],
+    coursebookTopics: ['可复现分析', 'Prompt 记录', '项目目录'],
+    badges: ['可复现工作流']
   },
   {
     chapter: 3,
@@ -88,20 +90,22 @@ export const coursebookChapters: CoursebookChapter[] = [
     title: 'AI 辅助编程与 Python 快速入门',
     page: '/coursebook/week-03',
     phase: '编程、清洗、统计与图表',
-    summary: '用最小 Python 语法处理可手算核验的医药指标列表，并训练 AI 解释、调试和测试边界。',
+    summary: '用最小 Python 语法处理可手算核验的医药指标列表，并把 AI 提示词、运行结果和修订理由写入可复现记录。',
     status: '样章可读',
     reviewStatus: 'sample_ready',
     pptStatus: 'pptx_trial_done',
     sourceWeekFiles: baseWeekFiles(3),
-    knowledgeSources: ['knowledge/entities/Python.md', 'knowledge/entities/Biopython.md', 'knowledge/sources/Learn_AI_Assisted_Python_Programming.md'],
-    materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/pdf_library_mineru/Pythonppt', 'materials/markdown/pdf_library_mineru/R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro'],
-    coursebookTopics: ['Python 快速入门', '缺失值小案例', 'AI 辅助调试'],
+    knowledgeSources: ['knowledge/entities/Python.md', 'knowledge/entities/Biopython.md', 'knowledge/sources/Learn_AI_Assisted_Python_Programming.md', 'knowledge/sources/OWF_Learn_Git.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/openwaterfoundation_learning/git/README.md', 'materials/markdown/pdf_library_mineru/Pythonppt', 'materials/markdown/pdf_library_mineru/R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro'],
+    coursebookTopics: ['Python 快速入门', '缺失值小案例', 'AI 辅助调试', '可复现记录'],
+    badges: ['可复现工作流', '样章'],
     sample: {
       introQuestion: '怎样把“忽略缺失值、计算均值、标记高风险值”转成一段学生能读懂、能手算核验的 Python 代码？',
       learningObjectives: [
         '识别变量、列表、字典、条件和循环在医药数据处理中的作用。',
         '能用 3 到 5 个小样本手算核验代码输出。',
-        '能要求 AI 解释代码、定位报错、生成测试用例，而不是直接替代判断。'
+        '能要求 AI 解释代码、定位报错、生成测试用例，而不是直接替代判断。',
+        '能记录提示词、代码版本、运行输出和人工修订理由，形成最小可复现记录。'
       ],
       coreConcepts: [
         { term: '列表', explanation: '保存一组指标值，例如血糖、药物浓度或表达量。' },
@@ -123,7 +127,7 @@ export const coursebookChapters: CoursebookChapter[] = [
         allowed: ['解释 10 行以内代码', '根据报错定位原因', '生成边界测试样本', '提示可能遗漏的输入输出规则'],
         forbidden: ['替代学生判断医学阈值', '生成无法解释的大段代码', '跳过手算核验', '把 AI 输出当最终结果']
       },
-      verificationPoints: ['课堂代码必须能本机运行。', '均值和高风险值必须能手算复核。', 'AI 输出必须明确提到 `None` 缺失值。'],
+      verificationPoints: ['课堂代码必须能本机运行。', '均值和高风险值必须能手算复核。', 'AI 输出必须明确提到 `None` 缺失值。', '可复现记录必须保留提示词、运行输出和人工修订理由。'],
       pptBridge: {
         status: 'Week 03 已有 PPTX 试点样稿和 PNG 视觉验证记录。',
         entry: 'scripts/courseware/build_week03_pilot_ppt.py',
@@ -282,14 +286,15 @@ export const coursebookChapters: CoursebookChapter[] = [
     title: 'PCA、聚类与热图',
     page: '/coursebook#week-13',
     phase: '高维、组学与综合项目',
-    summary: '把 PCA、聚类和热图作为高维探索图形，强调参数和解释边界。',
+    summary: '把 PCA、聚类和热图作为高维探索图形，并接入 SCBP/OSCA 的现代单细胞参数边界。',
     status: '目录占位',
     reviewStatus: 'catalog_only',
     pptStatus: 'not_started',
     sourceWeekFiles: baseWeekFiles(13),
-    knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md'],
-    materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python'],
-    coursebookTopics: ['PCA', '聚类', '热图']
+    knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python'],
+    coursebookTopics: ['PCA', '聚类', '热图', '现代组学拓展'],
+    badges: ['现代组学拓展']
   },
   {
     chapter: 14,
@@ -298,16 +303,17 @@ export const coursebookChapters: CoursebookChapter[] = [
     title: '转录组数据分析基础',
     page: '/coursebook/week-14',
     phase: '高维、组学与综合项目',
-    summary: '解释 RNA-seq 从 FASTQ 到 count matrix 的链条，为差异表达分析建立输入核验基础。',
+    summary: '解释 RNA-seq 从 FASTQ 到 count matrix 的链条，并用 SCBP/OSCA/OSTA 对照现代组学数据结构。',
     status: '样章可读',
     reviewStatus: 'sample_ready',
     pptStatus: 'storyboard_pending',
     sourceWeekFiles: baseWeekFiles(14),
-    knowledgeSources: ['knowledge/concepts/RNA-seq上游流程.md', 'knowledge/concepts/差异表达分析.md'],
-    materialSources: ['materials/markdown/aidd_bioinformatics/07_NGS_data_Analysis_on_Bash_(Gene_Expression_Using_Command_Line)/chapter.course.md', 'materials/markdown/aidd_bioinformatics/aidd.course_index.md'],
-    coursebookTopics: ['RNA-seq 流程', 'count matrix', 'metadata'],
+    knowledgeSources: ['knowledge/concepts/RNA-seq上游流程.md', 'knowledge/concepts/差异表达分析.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/07_NGS_data_Analysis_on_Bash_(Gene_Expression_Using_Command_Line)/chapter.course.md', 'materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
+    coursebookTopics: ['RNA-seq 流程', 'count matrix', 'metadata', '现代组学拓展'],
+    badges: ['现代组学拓展', '样章'],
     sample: {
-      introQuestion: '表达矩阵从哪里来，它经过哪些质量控制和计数步骤才成为 Week 15 的统计输入？',
+      introQuestion: '表达矩阵从哪里来，它经过哪些质量控制、计数和 metadata 对齐步骤才成为 Week 15 的统计输入？',
       learningObjectives: [
         '说明 RNA-seq 的目标是测量基因表达水平。',
         '描述 FASTQ 到 count matrix 的输入、处理和输出链条。',
@@ -317,7 +323,8 @@ export const coursebookChapters: CoursebookChapter[] = [
         { term: 'FASTQ', explanation: '测序 reads 和质量信息的原始格式，不是可以直接做统计检验的分析表。' },
         { term: 'SAM/BAM', explanation: 'reads 比对到参考基因组后的中间结果，服务后续排序、索引和计数。' },
         { term: 'count matrix', explanation: '基因 x 样本的计数矩阵，是差异表达分析的主要输入之一。' },
-        { term: 'metadata', explanation: '记录样本分组、批次等信息，必须与 count matrix 列名一一对应。' }
+        { term: 'metadata', explanation: '记录样本分组、批次等信息，必须与 count matrix 列名一一对应。' },
+        { term: 'AnnData / SCE', explanation: '现代单细胞和 Bioconductor 工作流常用的数据容器，本章只作为结构对照，不要求运行完整 API。' }
       ],
       classroomCase: {
         title: '3 基因 x 4 样本 count matrix 核验',
@@ -333,7 +340,7 @@ export const coursebookChapters: CoursebookChapter[] = [
         allowed: ['把流程整理成输入、步骤、输出、质量问题四列表', '解释文件角色', '提示 metadata 对齐风险'],
         forbidden: ['替代上游 QC 判断', '伪造测序结果', '把字幕中的命令名不经核验写入正式 PPT', '跳过样本名核对']
       },
-      verificationPoints: ['上游流程图中的软件名和文件格式进入 PPT 前需回查。', 'count matrix 示例必须和 metadata 样本名严格对齐。', '总 counts 计算要能现场复核。'],
+      verificationPoints: ['上游流程图中的软件名和文件格式进入 PPT 前需回查。', 'SCBP/OSCA/OSTA 图形或 workflow 只作为结构对照，进入 PPT 前需核来源和授权。', 'count matrix 示例必须和 metadata 样本名严格对齐。', '总 counts 计算要能现场复核。'],
       pptBridge: {
         status: 'Week 14 已进入可授课试点，但尚未生成 storyboard/PPTX。',
         entry: 'course/weeks/week_14/outline.md',
@@ -348,26 +355,29 @@ export const coursebookChapters: CoursebookChapter[] = [
     title: '差异表达分析与功能解读',
     page: '/coursebook/week-15',
     phase: '高维、组学与综合项目',
-    summary: '从 count matrix 和 metadata 进入 DESeq2 结果表、火山图、热图和功能解释核验。',
+    summary: '从 count matrix 和 metadata 进入 DESeq2 结果表、火山图、热图和功能解释核验，并明确 AI 核验边界和 bulk、single-cell、spatial 差异边界。',
     status: '样章可读',
     reviewStatus: 'evidence_review_pass',
     pptStatus: 'storyboard_reviewed_and_pptx_trial_done',
     sourceWeekFiles: [...baseWeekFiles(15), 'course/weeks/week_15/ppt_storyboard.md'],
-    knowledgeSources: ['knowledge/entities/DESeq2.md', 'knowledge/concepts/差异表达分析.md', 'knowledge/concepts/富集分析_GO_KEGG.md'],
-    materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md', 'materials/markdown/aidd_bioinformatics/10_Microarray_Analysis_on_R/chapter.course.md'],
-    coursebookTopics: ['差异表达分析', '火山图', '功能富集'],
+    knowledgeSources: ['knowledge/entities/DESeq2.md', 'knowledge/concepts/差异表达分析.md', 'knowledge/concepts/富集分析_GO_KEGG.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md', 'materials/markdown/aidd_bioinformatics/10_Microarray_Analysis_on_R/chapter.course.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
+    coursebookTopics: ['差异表达分析', '火山图', '功能富集', '现代组学拓展'],
+    badges: ['现代组学拓展', '样章'],
     sample: {
       introQuestion: '怎样从高维差异表达结果走向克制、可核验的功能解释，而不是只找 P 值最小的基因？',
       learningObjectives: [
         '说明差异表达分析的输入、输出和统计问题。',
         '区分 `baseMean`、`log2FoldChange`、`pvalue` 和 `padj` 各自回答的问题。',
-        '解释火山图、热图和功能富集只提供候选证据，不直接证明机制。'
+        '解释火山图、热图和功能富集只提供候选证据，不直接证明机制。',
+        '能用 AI 辅助整理待核验清单，但必须保留数据库、文献和课堂数据来源的人工核验边界。'
       ],
       coreConcepts: [
         { term: 'log2FoldChange', explanation: '表达变化方向和幅度的效应量指标。' },
         { term: 'pvalue', explanation: '原始检验显著性，面对大量基因时容易放大假阳性风险。' },
         { term: 'padj', explanation: '多重检验校正后的显著性，本课堂用于候选筛选而不是最终医学结论。' },
-        { term: '功能解读', explanation: '从候选基因走向数据库或文献核验的过程，不是 AI 直接写机制。' }
+        { term: '功能解读', explanation: '从候选基因走向数据库或文献核验的过程，不是 AI 直接写机制。' },
+        { term: 'bulk / single-cell / spatial 差异', explanation: 'bulk 比较样本组平均表达，single-cell 还涉及细胞群和比例，spatial 还涉及空间区域和邻域模式。' }
       ],
       classroomCase: {
         title: 'DESeq2 结果表字段判读',
@@ -383,7 +393,7 @@ export const coursebookChapters: CoursebookChapter[] = [
         allowed: ['整理筛选规则', '生成火山图解释模板', '生成待核验清单', '帮助改写图注语言'],
         forbidden: ['编造基因功能', '把候选通路写成机制事实', '把模拟数据写成真实医学结论', '跳过数据库或文献核验']
       },
-      verificationPoints: ['所有模拟表格和图形需要标注教学模拟。', 'DESeq2 术语进入 PPT 前需核对官方文档或原始字幕。', '基因功能和通路解释必须保留“需核验”状态。'],
+      verificationPoints: ['所有模拟表格和图形需要标注教学模拟。', 'DESeq2 术语进入 PPT 前需核对官方文档或原始字幕。', 'SCBP/OSCA/OSTA 只用于比较不同差异问题，不混写成 bulk DESeq2 结论。', 'AI 核验只能生成待查清单和图注草稿，不能替代数据库、文献和课堂数据来源核对。', '基因功能和通路解释必须保留“需核验”状态。'],
       pptBridge: {
         status: 'Week 15 已完成 storyboard、evidence review、SYSU 官方蓝模板 PPTX、PNG 导出和 contact sheet QA。',
         entry: 'course/weeks/week_15/ppt_storyboard.md',
@@ -398,16 +408,17 @@ export const coursebookChapters: CoursebookChapter[] = [
     title: '单细胞转录组可视化',
     page: '/coursebook/week-16',
     phase: '高维、组学与综合项目',
-    summary: '用 QC、UMAP、cluster 和 marker 图训练单细胞可视化解读和参数敏感性意识。',
+    summary: '用 QC、UMAP、cluster、marker 和空间组学图训练现代组学可视化解读和参数敏感性意识。',
     status: '样章可读',
     reviewStatus: 'sample_ready',
     pptStatus: 'storyboard_pending',
     sourceWeekFiles: baseWeekFiles(16),
-    knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md'],
-    materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md'],
-    coursebookTopics: ['单细胞可视化', 'UMAP', 'marker gene'],
+    knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
+    coursebookTopics: ['单细胞可视化', 'UMAP', 'marker gene', '空间组学图形'],
+    badges: ['现代组学拓展', '样章'],
     sample: {
-      introQuestion: '单细胞图形如何呈现细胞异质性，又为什么不能把 UMAP 和 cluster 直接写成最终生物学结论？',
+      introQuestion: '单细胞和空间组学图形如何呈现细胞异质性，又为什么不能把 UMAP、cluster 或 spatial domain 直接写成最终生物学结论？',
       learningObjectives: [
         '区分 bulk RNA-seq 与 scRNA-seq 的数据含义。',
         '读懂 QC、UMAP/t-SNE、cluster 和 marker gene 图。',
@@ -417,7 +428,8 @@ export const coursebookChapters: CoursebookChapter[] = [
         { term: 'cell x gene matrix', explanation: '单细胞数据以细胞为观测单位，比 bulk 平均表达更细，但更稀疏。' },
         { term: 'QC 指标', explanation: '`nFeature`、`nCount` 和 `percent.mt` 用于发现低质量细胞、空液滴或受损细胞。' },
         { term: 'UMAP/t-SNE', explanation: '用于观察细胞状态结构的可视化方法，不是严格定量距离。' },
-        { term: 'marker gene', explanation: '支持候选细胞注释的表达证据，需要组合数据库、文献和上下文核验。' }
+        { term: 'marker gene', explanation: '支持候选细胞注释的表达证据，需要组合数据库、文献和上下文核验。' },
+        { term: 'spatial domain', explanation: '空间表达模式或组织区域候选，不等同于已经确认的病理区域或机制结论。' }
       ],
       classroomCase: {
         title: '单细胞图形四栏解读表',
@@ -433,7 +445,7 @@ export const coursebookChapters: CoursebookChapter[] = [
         allowed: ['梳理 scRNA-seq 流程', '列出参数敏感点', '解释 marker 候选含义', '生成图形解读表框架'],
         forbidden: ['直接给出最终细胞类型注释', '把 UMAP 距离解释为真实生物距离', '忽略参数设置', '编造 marker 证据']
       },
-      verificationPoints: ['公开展示图需确认数据来源和授权。', 'UMAP 距离、cluster 含义和 marker 注释需避免过度解释。', '参数敏感性必须在讲稿和后续 storyboard 中明示。'],
+      verificationPoints: ['公开展示图需确认数据来源和授权。', 'UMAP 距离、cluster 含义、marker 注释和 spatial domain 需避免过度解释。', 'SCBP/OSCA/OSTA workflow 不作为学生必跑任务。', '参数敏感性必须在讲稿和后续 storyboard 中明示。'],
       pptBridge: {
         status: 'Week 16 已进入可授课试点，但尚未生成 storyboard/PPTX。',
         entry: 'course/weeks/week_16/outline.md',
@@ -453,9 +465,10 @@ export const coursebookChapters: CoursebookChapter[] = [
     reviewStatus: 'catalog_only',
     pptStatus: 'not_started',
     sourceWeekFiles: baseWeekFiles(17),
-    knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/entities/GitHub.md', 'knowledge/concepts/AI协作边界.md'],
-    materialSources: ['materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md', 'materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210'],
-    coursebookTopics: ['综合项目', 'AI 审计', '结果核验']
+    knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/entities/GitHub.md', 'knowledge/concepts/AI协作边界.md', 'knowledge/sources/OWF_Learn_Git.md', 'knowledge/sources/OWF_Learn_Linux_Shell.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md', 'materials/markdown/openwaterfoundation_learning/git/README.md', 'materials/markdown/openwaterfoundation_learning/linux_shell/README.md', 'materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210'],
+    coursebookTopics: ['综合项目', 'AI 审计', '结果核验'],
+    badges: ['可复现工作流']
   },
   {
     chapter: 18,

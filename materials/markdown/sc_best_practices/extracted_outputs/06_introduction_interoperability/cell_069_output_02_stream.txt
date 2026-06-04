@@ -1,0 +1,9 @@
+MuData object with n_obs × n_vars = 1000 × 150
+  var:	'dummy_var'
+  2 modalities
+    A:	1000 x 100
+      obs:	'dummy_obs'
+      var:	'dummy_var'
+    B:	1000 x 50
+      obs:	'dummy_obs'
+      var:	'dummy_var'

@@ -1,0 +1,7 @@
+X = poly_age.transform(Wage)
+high_earn = Wage['high_earn'] = y > 250 # shorthand
+"glm = sm.GLM(y > 250,"
+"X,"
+family=sm.families.Binomial())
+B = glm.fit()
+summarize(B)

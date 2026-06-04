@@ -1,0 +1,20 @@
+{
+  "order": 7,
+  "part": "Introduction",
+  "toc_file": "introduction/rapids_singlecell",
+  "title": "GPU-accelerated analysis",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/introduction/rapids_singlecell.ipynb",
+  "environment": "advanced_data_structures_and_frameworks",
+  "week_mapping": [
+    14
+  ],
+  "code_cell_count": 14,
+  "dataset_reference_count": 15,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/07_introduction_rapids_singlecell",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/07_introduction_rapids_singlecell/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/07_introduction_rapids_singlecell/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/07_introduction_rapids_singlecell/code_index.md"
+  }
+}

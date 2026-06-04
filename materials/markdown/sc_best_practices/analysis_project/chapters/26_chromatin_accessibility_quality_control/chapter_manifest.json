@@ -1,0 +1,20 @@
+{
+  "order": 26,
+  "part": "Chromatin Accessibility",
+  "toc_file": "chromatin_accessibility/quality_control",
+  "title": "Quality Control",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/chromatin_accessibility/quality_control.ipynb",
+  "environment": "gene-regulatory-networks-atac",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 47,
+  "dataset_reference_count": 4,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/26_chromatin_accessibility_quality_control",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/26_chromatin_accessibility_quality_control/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/26_chromatin_accessibility_quality_control/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/26_chromatin_accessibility_quality_control/code_index.md"
+  }
+}

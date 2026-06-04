@@ -1,0 +1,4 @@
+##   [1] "Banksy"         "clustSIGNAL"    "concordexR"     "FuseSOM"       
+##   [5] "hoodscanR"      "imcRtools"      "poem"           "smoothclust"   
+##   [9] "spARI"          "spatialHeatmap" "SPIAT"          "stJoincount"   
+##  [13] "stPipe"         "tomoda"

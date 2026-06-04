@@ -1,0 +1,4 @@
+np.random.seed(0);
+"X = np.random.standard_normal((50,2));"
+"X[:25,0] += 3;"
+"X[:25,1] -= 4;"

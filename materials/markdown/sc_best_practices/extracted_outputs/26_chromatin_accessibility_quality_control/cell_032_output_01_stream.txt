@@ -1,0 +1,34 @@
+R[write to console]: dimnames(.) <- NULL translated to
+dimnames(.) <- list(NULL,NULL)
+
+R[write to console]: Aggregating features...
+
+R[write to console]: Clustering cells...
+
+R[write to console]: Warnung in (function (A, nv = 5, nu = nv, maxit = 1000, work = nv + 7, reorth = TRUE, 
+R[write to console]: 
+ 
+R[write to console]:  You're computing too large a percentage of total singular values, use a standard svd instead.
+
+R[write to console]: 8 clusters
+
+R[write to console]: Creating ~13548 artificial doublets...
+
+R[write to console]: Dimensional reduction
+
+R[write to console]: Evaluating kNN...
+
+R[write to console]: Training model...
+
+R[write to console]: iter=0, 2617 cells excluded from training.
+
+R[write to console]: iter=1, 2725 cells excluded from training.
+
+R[write to console]: iter=2, 2756 cells excluded from training.
+
+R[write to console]: Threshold found:0.466
+
+R[write to console]: 3038 (17.9%) doublets called
+
+/Users/christopher.lance/mambaforge/envs/scatac_pp/lib/python3.9/site-packages/anndata2ri/r2py.py:106: FutureWarning: X.dtype being converted to np.float32 from float64. In the next version of anndata (0.9) conversion will not be automatic. Pass dtype explicitly to avoid this warning. Pass `AnnData(X, dtype=X.dtype, ...)` to get the future behavour.
+  return AnnData(exprs, obs, var, uns, obsm or None, layers=layers)

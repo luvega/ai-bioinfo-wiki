@@ -1,0 +1,9 @@
+scaler = StandardScaler()
+X_scale = scaler.fit_transform(X)
+"hc_comp_scale = HClust(distance_threshold=0,"
+"n_clusters=None,"
+linkage='complete').fit(X_scale)
+linkage_comp_scale = compute_linkage(hc_comp_scale)
+"fig, ax = plt.subplots(1, 1, figsize=(8, 8))"
+"dendrogram(linkage_comp_scale, ax=ax, **cargs)"
+"ax.set_title(""Hierarchical Clustering with Scaled Features"");"

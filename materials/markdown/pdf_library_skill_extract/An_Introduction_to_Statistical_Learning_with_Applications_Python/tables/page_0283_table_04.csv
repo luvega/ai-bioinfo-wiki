@@ -1,0 +1,2 @@
+beta_hat = soln_path.loc[soln_path.index[59]]
+"lambdas[59], np.linalg.norm(beta_hat)"

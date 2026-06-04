@@ -5,7 +5,8 @@ authors: [Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani]
 year: 2013 (1e) / 2021 (2e)
 raw_path:
   - materials/raw/pdf_originals/An Introduction to Statistical Learning_ with Applications R--.pdf
-  - materials/markdown/pdf_library_legacy/An_Introduction_to_Statistical_Learning_with_Applications_R.md
+  - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R/book.mineru.md
+  - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R/book.course.md
 ingested: 2026-05-21
 language: en
 kind: textbook
@@ -53,3 +54,7 @@ labs 直接对应 R 语言风格，与 AIDD 第 9 章的 R 学习习惯一致。
 - 姊妹版：[ISLP](ISLP.md)
 - 配合学习：[AIDD 第 9 章 R for Bioinformatics](AIDD_Bioinformatics_Course.md)
 - 课程总线：[36 课时讲稿](36课时讲稿.md)
+
+## 勘误 / 注意
+
+- MinerU 转换结果以 `book.mineru.md` 为完整解析层，`book.course.md` 为备课整理层；旧版轻量转换已退役。

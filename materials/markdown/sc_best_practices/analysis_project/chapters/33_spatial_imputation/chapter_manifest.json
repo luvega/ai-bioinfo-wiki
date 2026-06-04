@@ -1,0 +1,20 @@
+{
+  "order": 33,
+  "part": "Spatial omics",
+  "toc_file": "spatial/imputation",
+  "title": "Imputation",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/spatial/imputation.ipynb",
+  "environment": "spatial",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 19,
+  "dataset_reference_count": 2,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/33_spatial_imputation",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/33_spatial_imputation/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/33_spatial_imputation/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/33_spatial_imputation/code_index.md"
+  }
+}

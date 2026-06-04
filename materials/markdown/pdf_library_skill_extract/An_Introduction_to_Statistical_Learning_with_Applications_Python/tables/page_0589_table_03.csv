@@ -1,0 +1,4 @@
+rng = np.random.default_rng(12)
+"X = rng.standard_normal((10, 100))"
+true_mean = np.array([0.5]*50 + [0]*50)
+"X += true_mean[None,:]"

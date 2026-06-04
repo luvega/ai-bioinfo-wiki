@@ -1,0 +1,5 @@
+"((X_train, Y_train),"
+"(X_valid, Y_valid),"
+"(X_test, Y_test)) = load_sparse(validation=2000,"
+"random_state=0,"
+root='data/IMDB')

@@ -1,0 +1,3 @@
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)

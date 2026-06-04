@@ -1,0 +1,6 @@
+"lstm_trainer = Trainer(deterministic=True,"
+"max_epochs=20,"
+"logger=lstm_logger,"
+callbacks=[ErrorTracker()])
+"lstm_trainer.fit(lstm_module,"
+datamodule=imdb_seq_dm)

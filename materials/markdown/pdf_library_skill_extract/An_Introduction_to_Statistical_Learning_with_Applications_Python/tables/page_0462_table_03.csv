@@ -1,0 +1,2 @@
+lookup = load_lookup(root='data/IMDB')
+' '.join(lookup[i] for i in sample_review)

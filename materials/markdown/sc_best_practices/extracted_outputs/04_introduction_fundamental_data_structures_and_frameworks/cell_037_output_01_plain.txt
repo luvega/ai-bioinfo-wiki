@@ -1,0 +1,4 @@
+AnnData object with n_obs × n_vars = 100 × 2000
+    obs: 'cell_type'
+    obsm: 'X_umap'
+    varm: 'gene_stuff'

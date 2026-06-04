@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 16940 2299 
+## metadata(0):
+## assays(2): counts logcounts
+## rownames(16940): ENSG00000268895 ENSG00000121410 ... ENSG00000159840
+##   ENSG00000074755
+## rowData names(2): symbol chr
+## colnames(2299): D28-1_1 D28-1_2 ... D30-8_93 D30-8_94
+## colData names(4): label donor plate sizeFactor
+## reducedDimNames(0):
+## mainExpName: endogenous
+## altExpNames(1): ERCC

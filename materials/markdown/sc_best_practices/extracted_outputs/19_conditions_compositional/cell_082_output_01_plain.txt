@@ -1,0 +1,2 @@
+<9842x847 sparse matrix of type '<class 'numpy.float32'>'
+	with 22864 stored elements in Compressed Sparse Row format>

@@ -1,0 +1,10 @@
+rng = np.random.default_rng(1)
+"A = rng.standard_normal((127, 5))"
+"M = rng.choice([0, np.nan], p=[0.8,0.2], size=A.shape)"
+A += M
+"D = pd.DataFrame(A, columns=['food',"
+"'bar',"
+"'pickle',"
+"'snack',"
+'popcorn'])
+D[:3]

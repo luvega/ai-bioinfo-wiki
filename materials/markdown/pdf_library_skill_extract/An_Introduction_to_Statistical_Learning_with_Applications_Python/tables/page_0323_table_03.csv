@@ -1,0 +1,3 @@
+"bs_ = BSpline(internal_knots=[25,40,60], intercept=True).fit(age)"
+bs_age = bs_.transform(age)
+bs_age.shape

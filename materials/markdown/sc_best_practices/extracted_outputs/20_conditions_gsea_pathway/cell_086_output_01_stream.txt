@@ -1,0 +1,4 @@
+/Users/isaac/miniconda3/envs/pathway/lib/python3.9/site-packages/rpy2/robjects/pandas2ri.py:54: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for name, values in obj.iteritems():
+/Users/isaac/miniconda3/envs/pathway/lib/python3.9/site-packages/rpy2/robjects/pandas2ri.py:54: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for name, values in obj.iteritems():

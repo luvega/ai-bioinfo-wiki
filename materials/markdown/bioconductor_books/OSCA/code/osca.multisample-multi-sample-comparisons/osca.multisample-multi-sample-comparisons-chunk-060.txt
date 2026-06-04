@@ -1,0 +1,27 @@
+## DataFrame with 14700 rows and 5 columns
+##                               logFC    logCPM         F       PValue
+##                           <numeric> <numeric> <numeric>    <numeric>
+## T                          10.87621   7.07425   551.739 4.18834e-118
+## Krt19                       8.16020   6.16367   358.865  2.37401e-78
+## Krt8                        4.39774   8.43123   282.104  2.90005e-62
+## Krt18                       4.71268   7.65059   269.008  1.67073e-59
+## Mest                       -4.86538  11.98807   243.688  3.74795e-54
+## ...                             ...       ...       ...          ...
+## Ccl27a_ENSMUSG00000095247        NA        NA        NA           NA
+## CR974586.5                       NA        NA        NA           NA
+## AC132444.6                       NA        NA        NA           NA
+## Vmn2r122                         NA        NA        NA           NA
+## CAAA01147332.1                   NA        NA        NA           NA
+##                                    FDR
+##                              <numeric>
+## T                         2.00077e-114
+## Krt19                      5.67031e-75
+## Krt8                       4.61784e-59
+## Krt18                      1.99527e-56
+## Mest                       3.58080e-51
+## ...                                ...
+## Ccl27a_ENSMUSG00000095247           NA
+## CR974586.5                          NA
+## AC132444.6                          NA
+## Vmn2r122                            NA
+## CAAA01147332.1                      NA

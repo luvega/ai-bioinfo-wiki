@@ -1,0 +1,4 @@
+\begin{enumerate*}
+\item 47
+\item 6224
+\end{enumerate*}

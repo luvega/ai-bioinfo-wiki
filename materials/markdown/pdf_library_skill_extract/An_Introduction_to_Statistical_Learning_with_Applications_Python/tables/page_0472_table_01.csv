@@ -1,0 +1,5 @@
+"nl_trainer = Trainer(deterministic=True,"
+"max_epochs=20,"
+callbacks=[ErrorTracker()])
+"nl_trainer.fit(nl_module, datamodule=day_dm)"
+"nl_trainer.test(nl_module, datamodule=day_dm)"

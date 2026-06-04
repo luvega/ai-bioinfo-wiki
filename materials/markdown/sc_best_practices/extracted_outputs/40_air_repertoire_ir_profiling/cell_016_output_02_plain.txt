@@ -1,0 +1,34 @@
+                      barcode  is_cell                            contig_id  \
+0  AAACCTGAGCGATATA-MH9143270     True  AAACCTGAGCGATATA-MH9143270_contig_1   
+1  AAACCTGAGCGATATA-MH9143270     True  AAACCTGAGCGATATA-MH9143270_contig_2   
+2  AAACCTGTCTACCAGA-MH9143270     True  AAACCTGTCTACCAGA-MH9143270_contig_1   
+3  AAACCTGTCTACCAGA-MH9143270     True  AAACCTGTCTACCAGA-MH9143270_contig_2   
+4  AAACGGGCATTTGCTT-MH9143270     True  AAACGGGCATTTGCTT-MH9143270_contig_1   
+
+   high_confidence  length chain     v_gene    d_gene j_gene c_gene  \
+0             True     646   IGL   IGLV1-44      None  IGLJ1  IGLC2   
+1             True     579   IGH   IGHV3-33   IGHD3-3  IGHJ4   IGHM   
+2             True     574   IGH  IGHV1-69D  IGHD2-15  IGHJ5   IGHM   
+3             True     744   IGL   IGLV1-51      None  IGLJ3  IGLC3   
+4             True     565   IGH   IGHV3-33      None  IGHJ4   IGHM   
+
+   full_length productive                      cdr3  \
+0         True       True            CAAWDDSLSASYVF   
+1         True       True       CARDNRVYYDFWSGYPDYW   
+2         True       True  CARDRRSAYCSGGSCWGGDWFDPW   
+3         True      False             CGTWDSSLSAWVF   
+4         True       True        CANPTRPYSSSWWYFDYW   
+
+                                             cdr3_nt  reads  umis  \
+0         TGTGCAGCATGGGATGACAGCCTGAGTGCCTCTTATGTCTTC    154    14   
+1  TGTGCGAGAGACAACCGAGTCTATTACGATTTTTGGAGTGGTTATC...    144    13   
+2  TGTGCGAGAGATCGTCGTTCAGCTTATTGTAGTGGTGGTAGCTGCT...    564    42   
+3            TGCGGAACATGGGATAGCAGCCTGAGTGCTTGGGTGTTC    188    21   
+4  TGTGCGAACCCCACCCGTCCATATAGCAGCAGCTGGTGGTACTTTG...    234    20   
+
+  raw_clonotype_id         raw_consensus_id patient_id newBarcode  
+0       clonotype9   clonotype9_consensus_2  COVID-002        NaN  
+1       clonotype9   clonotype9_consensus_1  COVID-002        NaN  
+2      clonotype10  clonotype10_consensus_1  COVID-002        NaN  
+3      clonotype10                     None  COVID-002        NaN  
+4      clonotype11  clonotype11_consensus_1  COVID-002        NaN  

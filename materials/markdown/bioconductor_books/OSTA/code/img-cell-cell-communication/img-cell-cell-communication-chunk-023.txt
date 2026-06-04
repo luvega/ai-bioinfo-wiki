@@ -1,0 +1,7 @@
+##    source target ligand receptor       score
+##  1      1      1   CD69    KLRB1 0.000000000
+##  2      1      1   EDN1    EDNRB 0.001402286
+##  3      1      1 CXCL12    CXCR4 0.013462056
+##  4      1      1   CD86    CTLA4 0.000000000
+##  5      1      1   CDH1     CDH1 2.101213651
+##  6      1      1  CD274    PDCD1 0.000000000

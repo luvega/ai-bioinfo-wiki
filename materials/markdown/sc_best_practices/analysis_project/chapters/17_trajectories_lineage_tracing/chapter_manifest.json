@@ -1,0 +1,18 @@
+{
+  "order": 17,
+  "part": "Inferring trajectories",
+  "toc_file": "trajectories/lineage_tracing",
+  "title": "Lineage tracing",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/trajectories/lineage_tracing.ipynb",
+  "environment": "lineage-tracing",
+  "week_mapping": [],
+  "code_cell_count": 25,
+  "dataset_reference_count": 12,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/17_trajectories_lineage_tracing",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/17_trajectories_lineage_tracing/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/17_trajectories_lineage_tracing/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/17_trajectories_lineage_tracing/code_index.md"
+  }
+}

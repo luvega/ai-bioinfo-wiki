@@ -1,0 +1,8 @@
+"posres_df = MS(['posres',"
+"'time',"
+"'status'],"
+intercept=False).fit_transform(Publication)
+"posres_fit = coxph().fit(posres_df,"
+"'time',"
+'status')
+"posres_fit.summary[['coef', 'se(coef)', 'p']]"

@@ -1,0 +1,12 @@
+MuData object with n_obs × n_vars = 9852 × 15256
+  2 modalities
+    rna:	9842 x 15215
+      obs:	'batch', 'barcode', 'condition', 'cell_label', 'scCODA_sample_id', 'nsbm_level_0', 'nsbm_level_1', 'nsbm_level_2', 'nsbm_level_3', 'nsbm_level_4', 'nsbm_level_5'
+      uns:	'neighbors', 'umap', 'schist', 'nsbm_level_1_colors', 'nsbm_level_2_colors', 'cell_label_colors'
+      obsm:	'X_pca', 'X_umap', 'CM_nsbm_level_0', 'CM_nsbm_level_1', 'CM_nsbm_level_2', 'CM_nsbm_level_3', 'CM_nsbm_level_4', 'CM_nsbm_level_5'
+      layers:	'counts', 'logcounts'
+      obsp:	'distances', 'connectivities'
+    coda:	10 x 41
+      obs:	'condition', 'batch'
+      var:	'n_cells'
+      uns:	'tree'

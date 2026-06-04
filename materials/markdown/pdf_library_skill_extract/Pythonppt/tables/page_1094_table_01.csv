@@ -1,0 +1,10 @@
+函数,描述
+os.path.dirname(path),"返回path中的目录名称
+>>>os.path.dirname(""D://PYE//file.txt"")
+'D://PYE'"
+os.path.basename(path),"返回path中最后的文件名称
+>>>os.path.basename(""D://PYE//file.txt"")
+'file.txt'"
+"os.path.join(path, *paths)","组合path与paths，返回一个路径字符串
+>>>os.path.join(""D:/"", ""PYE/file.txt"")
+'D:/PYE/file.txt'"

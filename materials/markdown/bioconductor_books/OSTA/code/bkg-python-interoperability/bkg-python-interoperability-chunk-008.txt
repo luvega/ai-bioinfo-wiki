@@ -1,0 +1,5 @@
+##  AnnData object with n_obs × n_vars = 3355 × 32285
+##      obs: 'in_tissue', 'array_row', 'array_col'
+##      var: 'gene_ids', 'feature_types', 'genome'
+##      uns: 'spatial'
+##      obsm: 'spatial'

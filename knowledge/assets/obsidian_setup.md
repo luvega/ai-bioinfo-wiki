@@ -32,12 +32,12 @@ tags: [obsidian, setup, workspace]
 
 ### 索引排除（`userIgnoreFilters`）
 - `materials/raw/pdf_originals/` — 大 PDF
-- `materials/markdown/pdf_library_legacy/` — PDF 转的大 markdown（最大 1.4 MB）
+- `materials/markdown/pdf_library_mineru/` — MinerU 结构化 PDF Markdown
 - `materials/markdown/aidd_bioinformatics/` — AIDD txt 镜像
 - `materials/raw/aidd_bioinformatics/` — AIDD 字幕 txt（主目录）
 - `.git/`、`__pycache__/`
 
-> 排除后 Obsidian 仍能用相对路径**链接**到这些文件（如 `materials/markdown/pdf_library_legacy` 下的 markdown），
+> 排除后 Obsidian 仍能用相对路径**链接**到这些文件（如 `materials/markdown/pdf_library_mineru` 下的 markdown），
 > 但不会出现在 Quick Switcher、Search、Graph View 中——保持工作面板干净。
 >
 > 如果想临时找 AIDD 原文，可去掉 `userIgnoreFilters` 中对应条目，或者用文件系统打开。

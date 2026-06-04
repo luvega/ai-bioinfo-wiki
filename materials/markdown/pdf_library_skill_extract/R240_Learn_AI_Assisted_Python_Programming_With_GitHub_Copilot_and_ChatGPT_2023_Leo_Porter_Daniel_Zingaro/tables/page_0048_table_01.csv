@@ -1,0 +1,12 @@
+Challenge,Description,Remedies
+,"We’ve had Copilot seem to tell us
+to write our own code by gener-
+ating this (or similar text) after a
+prompt:
+# YOUR CODE HERE",
+,"Copilot gives you code, but it
+won’t work because there are
+modules missing. (Modules are
+additional libraries that can be
+added to Python to give prebuilt
+functionality.)",

@@ -1,0 +1,3 @@
+trained_lasso = grid.best_estimator_
+Yhat_test = trained_lasso.predict(X_test)
+np.fabs(Yhat_test - Y_test).mean()

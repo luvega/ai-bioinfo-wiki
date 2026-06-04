@@ -1,0 +1,11 @@
+Copilot Labs explanations can be wrong
+""
+"As with the code produced by Copilot, the explanations from Copilot Labs can be wrong,
+too. You might be thinking, “Wait, what’s the value of a tool to understand code if it can
+be wrong?!” First, let us say that we agree that this can be really frustrating. However, it
+is right often enough in our experience that it can be really helpful, particularly for under-
+standing code basics like the things we’re teaching in these two chapters. Moreover,
+what students do now when they are confused about their code is to ask friends or web-
+sites about the code and, candidly, those make mistakes too. A way to help mitigate the
+potential for error is to ask Copilot for its explanation a couple times because you are less
+likely to get grossly incorrect answers across multiple tries."

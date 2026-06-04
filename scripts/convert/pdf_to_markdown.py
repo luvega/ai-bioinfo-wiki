@@ -1,4 +1,9 @@
-"""Convert reference PDFs to course-material Markdown.
+"""Convert reference PDFs to lightweight comparison Markdown.
+
+The authoritative PDF conversion layer for course preparation is MinerU under
+``materials/markdown/pdf_library_mineru``. This legacy converter is retained
+only for ad hoc comparison and writes to ``outputs/`` so it cannot recreate the
+retired materials-layer conversion results.
 
 Pipeline:
   1. For each PDF in INPUT_DIR, extract text page-by-page using ``pdfplumber``;
@@ -29,7 +34,7 @@ from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[2]
 INPUT_DIR = ROOT / "materials" / "raw" / "pdf_originals"
-OUTPUT_DIR = ROOT / "materials" / "markdown" / "pdf_library_legacy"
+OUTPUT_DIR = ROOT / "outputs" / "pdf_library_legacy"
 SCAN_THRESHOLD_CHARS_PER_PAGE = 60
 
 

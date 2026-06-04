@@ -1,0 +1,12 @@
+YLQPRTFLL     1326
+SPRWYFYYL      309
+TTDPSFLGRY     254
+RLQSLQTYV      150
+LTDEMIAQY      135
+              ... 
+LQAENVTGL        1
+LPSYAAFAT        1
+LPPVYTNSF        1
+LPPANTNSF        1
+YYTSNPTTF        1
+Name: antigen.epitope, Length: 667, dtype: int64

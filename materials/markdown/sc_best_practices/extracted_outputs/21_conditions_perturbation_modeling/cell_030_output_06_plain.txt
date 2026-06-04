@@ -1,0 +1,15 @@
+                  CD14+ Monocytes  CD4 T cells  Dendritic cells  NK cells  \
+mean_augur_score         0.920476     0.669376         0.847007  0.673299   
+mean_auc                 0.920476     0.669376         0.847007  0.673299   
+mean_accuracy            0.817033     0.601172         0.744249  0.610330   
+mean_precision           0.835072     0.630593         0.779699  0.642700   
+mean_f1                  0.806636     0.564695         0.735157  0.591230   
+mean_recall              0.826349     0.575714         0.756032  0.616984   
+
+                  CD8 T cells   B cells  FCGR3A+ Monocytes  Megakaryocytes  
+mean_augur_score     0.626247  0.783628           0.888934        0.512619  
+mean_auc             0.626247  0.783628           0.888934        0.512619  
+mean_accuracy        0.575714  0.674505           0.780330        0.510513  
+mean_precision       0.587059  0.742801           0.792996        0.526175  
+mean_f1              0.552114  0.633906           0.780933        0.406510  
+mean_recall          0.580000  0.622540           0.816508        0.388413  

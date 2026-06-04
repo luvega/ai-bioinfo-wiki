@@ -1,0 +1,10 @@
+"age,"
+"frac=span,"
+xvals=age_grid)
+"ax.plot(age_grid,"
+"fitted,"
+"label='{:.1f}'.format(span),"
+linewidth=4)
+"ax.set_xlabel('Age', fontsize=20)"
+"ax.set_ylabel('Wage', fontsize=20);"
+"ax.legend(title='span', fontsize=15);"

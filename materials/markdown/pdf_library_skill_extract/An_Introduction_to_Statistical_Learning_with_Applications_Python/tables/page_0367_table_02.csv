@@ -1,0 +1,4 @@
+"ax = subplots(figsize=(8,8))[1]"
+y_hat_bag = bag_boston.predict(X_test)
+"ax.scatter(y_hat_bag, y_test)"
+np.mean((y_test - y_hat_bag)**2)

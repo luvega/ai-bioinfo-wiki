@@ -1,0 +1,4 @@
+"ridge = skl.ElasticNet(alpha=lambdas[59], l1_ratio=0)"
+"scaler = StandardScaler(with_mean=True, with_std=True)"
+"pipe = Pipeline(steps=[('scaler', scaler), ('ridge', ridge)])"
+"pipe.fit(X, Y)"

@@ -1,0 +1,20 @@
+{
+  "order": 44,
+  "part": "Multimodal integration",
+  "toc_file": "multimodal_integration/paired_integration",
+  "title": "Paired integration",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/multimodal_integration/paired_integration.ipynb",
+  "environment": "advanced-integration",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 69,
+  "dataset_reference_count": 4,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/44_multimodal_integration_paired_integration",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/44_multimodal_integration_paired_integration/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/44_multimodal_integration_paired_integration/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/44_multimodal_integration_paired_integration/code_index.md"
+  }
+}

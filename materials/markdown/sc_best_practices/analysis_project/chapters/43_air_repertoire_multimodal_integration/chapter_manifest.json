@@ -1,0 +1,20 @@
+{
+  "order": 43,
+  "part": "Adaptive immune receptor repertoire",
+  "toc_file": "air_repertoire/multimodal_integration",
+  "title": "Integrating AIR and transcriptomics",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/air_repertoire/multimodal_integration.ipynb",
+  "environment": null,
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 55,
+  "dataset_reference_count": 22,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/43_air_repertoire_multimodal_integration",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/43_air_repertoire_multimodal_integration/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/43_air_repertoire_multimodal_integration/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/43_air_repertoire_multimodal_integration/code_index.md"
+  }
+}

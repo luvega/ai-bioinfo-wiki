@@ -1,0 +1,4 @@
+"results = sm.OLS(y_train, X_train).fit()"
+test_pred = results.predict(X_test)
+""
+return np.mean((y_test - test_pred)**2)

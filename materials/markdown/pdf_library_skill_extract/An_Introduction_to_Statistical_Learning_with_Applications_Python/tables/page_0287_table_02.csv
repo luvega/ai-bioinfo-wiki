@@ -1,0 +1,6 @@
+"results = skm.cross_validate(pipeCV,"
+"X,"
+"Y,"
+"cv=outer_valid,"
+scoring='neg_mean_squared_error')
+-results['test_score']

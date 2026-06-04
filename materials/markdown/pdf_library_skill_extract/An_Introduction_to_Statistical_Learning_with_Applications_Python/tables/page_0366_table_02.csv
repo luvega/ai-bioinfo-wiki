@@ -1,0 +1,6 @@
+reg = DTR(max_depth=3)
+"reg.fit(X_train, y_train)"
+"ax = subplots(figsize=(12,12))[1]"
+"plot_tree(reg,"
+"feature_names=feature_names,"
+ax=ax);

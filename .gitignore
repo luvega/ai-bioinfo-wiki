@@ -8,6 +8,22 @@
 materials/raw/pdf_originals/
 materials/raw/external_ppt/
 
+# Bioconductor online books: keep heavy raw/source mirrors local; commit only
+# searchable Markdown, code indexes, and manifests under materials/markdown.
+materials/raw/bioconductor_books/archives/*.tar.gz
+materials/raw/bioconductor_books/archives/*.tar.gz.part
+materials/raw/bioconductor_books/extracted/
+materials/raw/bioconductor_books/assets/
+materials/raw/bioconductor_books/github/
+
+# Open Water Foundation tutorials: commit only normalized Markdown/material
+# manifests under materials/markdown/openwaterfoundation_learning/.
+materials/raw/openwaterfoundation_learning/
+
+# Single-cell Best Practices: keep upstream raw mirror local; commit only
+# normalized Markdown, course indexes, and manifests under materials/markdown.
+materials/raw/sc_best_practices/upstream/
+
 # === PDF→Markdown 转换产物（可由脚本重建） ===
 # 这部分**保留入 git**，因为 wiki sources/PDF_Library 已经引用它们
 # 如果觉得太大，可以取消下一行注释

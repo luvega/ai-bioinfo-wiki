@@ -38,11 +38,12 @@ tags: [overview, map]
         │       ├── R / DESeq2 / scRNA-seq / Microarray
         │       └── GitHub
         │
-        └── PDF 书库（materials/raw/pdf_originals / materials/markdown/pdf_library_legacy）
+        └── PDF 书库（materials/raw/pdf_originals / materials/markdown/pdf_library_mineru）
                 ├── ISLP《An Introduction to Statistical Learning, Python》
                 ├── ISLR《An Introduction to Statistical Learning, R》
                 ├── Starting Data Analytics with Generative AI and Python
-                └── Learn AI-Assisted Python Programming（Copilot + ChatGPT）
+                ├── Learn AI-Assisted Python Programming（Copilot + ChatGPT）
+                └── 嵩天 Python PPT（Python 课堂节奏参考）
 ```
 
 四个素材池分别覆盖：
@@ -109,7 +110,7 @@ tags: [overview, map]
 ## 5. 当前状态
 
 - 初始化日期：2026-05-21
-- 已 ingest 素材：36 课时讲稿/大纲、AIDD（11 章 71 节）、4 本 PDF（轻量摘要）
+- 已 ingest 素材：36 课时讲稿/大纲、AIDD（11 章 71 节）、5 份 PDF/PPTPDF（MinerU 结构化转换与课程化 Markdown）
 - 已建页面（当前）：knowledge 40 页；course/weeks 已有 18 周骨架。
 - 下一步建议：
   1. 从 `course/weeks/week_01` 开始逐周细化 PPT 大纲与授课脚本。

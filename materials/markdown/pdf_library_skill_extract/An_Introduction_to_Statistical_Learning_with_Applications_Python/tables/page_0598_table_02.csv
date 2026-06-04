@@ -1,0 +1,8 @@
+cutoffs = np.sort(np.abs(T_vals))
+"FDRs, Rs, Vs = np.empty((3, m))"
+for j in range(m):
+R = np.sum(np.abs(T_vals) >= cutoffs[j])
+V = np.sum(np.abs(Tnull_vals) >= cutoffs[j]) / B
+Rs[j] = R
+Vs[j] = V
+FDRs[j] = V / R

@@ -1,0 +1,16 @@
+/home/icb/felix.drost/miniconda/envs/ergo/lib/python3.8/site-packages/pytorch_lightning/core/decorators.py:13: UserWarning: data_loader decorator deprecated in 0.7.0. Will remove 0.9.0
+  warnings.warn(w)
+                         cell_id              TRA  ... MHC     Score
+0      BGCV01_AAACCTGAGACCGGAT-1              NaN  ... NaN  0.000002
+1      BGCV01_AAACCTGAGGAACTGC-1    CAVKRGNNARLMF  ... NaN  0.629516
+2      BGCV01_AAACCTGAGGGATCTG-1    CAVGAPGDDKIIF  ... NaN  0.635792
+3      BGCV01_AAACCTGCAACGCACC-1              NaN  ... NaN  0.000017
+4      BGCV01_AAACCTGCACGTGAGA-1   CAVNSPGGYQKVTF  ... NaN  0.625245
+...                          ...              ...  ...  ..       ...
+12362     S12_TTTGTCAGTAGAAAGG-1      CARNTGNQFYF  ... NaN  0.614335
+12363     S12_TTTGTCAGTCCAACTA-1              NaN  ... NaN  0.000023
+12364     S12_TTTGTCAGTGAGTGAC-1      CARNTGNQFYF  ... NaN  0.614335
+12365     S12_TTTGTCATCCACTCCA-1    CAVSELGSEKLVF  ... NaN  0.685439
+12366     S12_TTTGTCATCGCATGAT-1  CVVRAPWGSARQLTF  ... NaN  0.673902
+
+[12367 rows x 11 columns]

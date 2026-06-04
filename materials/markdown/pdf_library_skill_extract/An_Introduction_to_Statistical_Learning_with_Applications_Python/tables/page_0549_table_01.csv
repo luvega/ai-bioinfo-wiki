@@ -1,0 +1,3 @@
+"fig, ax = plt.subplots(1, 1, figsize=(8,8))"
+"ax.scatter(X[:,0], X[:,1], c=kmeans.labels_)"
+"ax.set_title(""K-Means Clustering Results with K=2"");"

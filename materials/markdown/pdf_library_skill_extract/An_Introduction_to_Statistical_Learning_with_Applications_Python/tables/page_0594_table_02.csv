@@ -1,0 +1,3 @@
+fund_pvalues = np.empty(2000)
+"for i, manager in enumerate(Fund.columns):"
+"fund_pvalues[i] = ttest_1samp(Fund[manager], 0).pvalue"

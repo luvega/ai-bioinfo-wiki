@@ -1,0 +1,2 @@
+nb_labels = NB.predict(X_test)
+"confusion_table(nb_labels, L_test)"

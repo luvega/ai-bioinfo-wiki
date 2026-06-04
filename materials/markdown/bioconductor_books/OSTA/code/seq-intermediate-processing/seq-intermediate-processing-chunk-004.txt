@@ -1,0 +1,16 @@
+##  class: SpatialExperiment 
+##  dim: 21842 3639 
+##  metadata(0):
+##  assays(1): counts
+##  rownames(21842): ENSG00000243485 ENSG00000238009 ... ENSG00000271254
+##    ENSG00000268674
+##  rowData names(4): gene_id gene_name feature_type subsets_mito
+##  colnames(3639): AAACAAGTATCTCCCA-1 AAACAATCTACTAGCA-1 ...
+##    TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
+##  colData names(14): barcode_id sample_id ... subsets_mito_percent
+##    total
+##  reducedDimNames(0):
+##  mainExpName: NULL
+##  altExpNames(0):
+##  spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+##  imgData names(4): sample_id image_id data scaleFactor

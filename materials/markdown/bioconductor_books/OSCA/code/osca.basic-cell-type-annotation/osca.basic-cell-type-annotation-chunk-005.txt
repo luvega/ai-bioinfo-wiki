@@ -1,0 +1,11 @@
+## class: SummarizedExperiment 
+## dim: 19859 259 
+## metadata(0):
+## assays(1): logcounts
+## rownames(19859): TSPAN6 TNMD ... LINC00550 GIMAP1-GIMAP5
+## rowData names(0):
+## colnames(259): mature.neutrophil
+##   CD14.positive..CD16.negative.classical.monocyte ...
+##   epithelial.cell.of.umbilical.artery.1
+##   dermis.lymphatic.vessel.endothelial.cell.1
+## colData names(3): label.main label.fine label.ont

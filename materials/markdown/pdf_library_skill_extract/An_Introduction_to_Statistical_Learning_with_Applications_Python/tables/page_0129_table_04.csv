@@ -1,0 +1,2 @@
+new_predictions = results.get_prediction(newX);
+new_predictions.predicted_mean

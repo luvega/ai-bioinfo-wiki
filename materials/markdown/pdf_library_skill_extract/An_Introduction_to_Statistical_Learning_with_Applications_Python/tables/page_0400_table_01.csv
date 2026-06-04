@@ -1,0 +1,9 @@
+C=1)
+"svm_flex.fit(X_train, y_train)"
+"fig, ax = subplots(figsize=(8,8))"
+"roc_curve(svm_flex,"
+"X_train,"
+"y_train,"
+"name='Training $\gamma=50$',"
+"color='r',"
+ax=ax);

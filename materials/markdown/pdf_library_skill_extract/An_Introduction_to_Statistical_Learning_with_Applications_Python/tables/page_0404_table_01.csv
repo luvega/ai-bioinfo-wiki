@@ -1,0 +1,4 @@
+rng = np.random.default_rng(5)
+x1 = rng.uniform(size=500) - 0.5
+x2 = rng.uniform(size=500) - 0.5
+y = x1**2 - x2**2 > 0

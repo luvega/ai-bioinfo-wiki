@@ -1,0 +1,14 @@
+CMV                 601
+EBV                  83
+HIV-1                70
+ambiguous            55
+SARS-CoV-2           12
+HomoSapiens           8
+InfluenzaA            7
+HCV                   4
+TriticumAestivum      1
+YFV                   1
+DENV2                 1
+MCMV                  1
+SIV                   1
+Name: antigen.species, dtype: int64

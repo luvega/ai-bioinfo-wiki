@@ -1,0 +1,2 @@
+BrainCancer = load_data('BrainCancer')
+BrainCancer.columns

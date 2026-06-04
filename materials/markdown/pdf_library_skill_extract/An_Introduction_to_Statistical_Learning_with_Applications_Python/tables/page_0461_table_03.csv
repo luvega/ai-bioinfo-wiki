@@ -1,0 +1,7 @@
+"del(cifar_test,"
+"cifar_train,"
+"cifar_dm,"
+"cifar_module,"
+"cifar_logger,"
+"cifar_optimizer,"
+cifar_trainer)

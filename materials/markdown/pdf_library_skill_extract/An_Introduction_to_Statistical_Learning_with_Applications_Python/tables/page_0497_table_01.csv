@@ -1,0 +1,4 @@
+"logrank_test(by_sex['Male']['time'],"
+"by_sex['Female']['time'],"
+"by_sex['Male']['status'],"
+by_sex['Female']['status'])

@@ -1,0 +1,4 @@
+Khan = load_data('Khan')
+"D = pd.concat([Khan['xtrain'], Khan['xtest']])"
+"D['Y'] = pd.concat([Khan['ytrain'], Khan['ytest']])"
+D['Y'].value_counts()

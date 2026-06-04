@@ -1,0 +1,7 @@
+函数,描述
+getrandbits(k),"生成一个k比特长的随机整数
+>>>random.getrandbits(16)
+37885"
+"uniform(a, b)","生成一个[a, b]之间的随机小数
+>>>random.uniform(10, 100)
+13.096321648808136"

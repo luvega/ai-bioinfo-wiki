@@ -1,0 +1,7 @@
+"lambdas, soln_array = skl.Lasso.path(Xs,"
+"Y,"
+"l1_ratio=1,"
+n_alphas=100)[:2]
+"soln_path = pd.DataFrame(soln_array.T,"
+"columns=D.columns,"
+index=-np.log(lambdas))

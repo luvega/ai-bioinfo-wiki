@@ -1,0 +1,18 @@
+{
+  "order": 36,
+  "part": "Surface protein",
+  "toc_file": "surface_protein/doublet_detection",
+  "title": "Doublet detection",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/surface_protein/doublet_detection.ipynb",
+  "environment": "surface-protein",
+  "week_mapping": [],
+  "code_cell_count": 10,
+  "dataset_reference_count": 2,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/36_surface_protein_doublet_detection",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/36_surface_protein_doublet_detection/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/36_surface_protein_doublet_detection/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/36_surface_protein_doublet_detection/code_index.md"
+  }
+}

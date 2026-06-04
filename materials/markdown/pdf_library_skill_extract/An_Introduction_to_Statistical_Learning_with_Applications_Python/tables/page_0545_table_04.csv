@@ -1,0 +1,3 @@
+X = USArrests_scaled
+"U, D, V = np.linalg.svd(X, full_matrices=False)"
+"U.shape, D.shape, V.shape"

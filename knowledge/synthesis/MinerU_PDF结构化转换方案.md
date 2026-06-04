@@ -10,7 +10,7 @@ tags: [mineru, pdf, markdown, course-ops, api]
 
 ## 定位
 
-本页记录 `materials/` 下 PDF 的结构化转换路线：使用 MinerU 云端 Precision API 生成更适合信息抽取的 Markdown / JSON，同时保留旧的 `materials/markdown/pdf_library_legacy/` 轻量转换结果，避免一次性覆盖已被 source 页引用的素材。
+本页记录 `materials/` 下 PDF 的结构化转换路线：使用 MinerU 云端 Precision API 生成更适合信息抽取的 Markdown / JSON。当前 source 页已改用 `materials/markdown/pdf_library_mineru/`，旧的轻量转换结果已退役并移除。
 
 本项目明确不再保留本地 MinerU CLI 管线，也不维护 `.venv-mineru`。参考书 PDF 可以上传到 MinerU 云端解析；API token 只通过环境变量传入，不写入仓库。
 
@@ -26,7 +26,6 @@ tags: [mineru, pdf, markdown, course-ops, api]
 ```text
 materials/raw/pdf_originals/                    # 原始 PDF，只读，不入 git
 materials/raw/external_ppt/                     # 外部参考课件 PDF，例如嵩天 Python PPT
-materials/markdown/pdf_library_legacy/              # 旧版轻量 Markdown，暂不覆盖
 materials/markdown/pdf_library_mineru/        # MinerU API 生成层
   INDEX.md                        # PDF 清单与 API 入口
   manifest.json                   # 机器可读 PDF 清单
@@ -38,6 +37,8 @@ materials/markdown/pdf_library_mineru/        # MinerU API 生成层
   <book-slug>/
     book.part_001.mineru.md       # 单个 page range 提升出的 Markdown
     book.mineru.md                # 合并后的主 Markdown，供 wiki ingest
+    book.course.md                # 面向备课的课程化 Markdown
+    structure_report.md           # 结构质量报告
 scripts/convert/mineru_pdf_pipeline.py     # MinerU API-only 入口
 ```
 

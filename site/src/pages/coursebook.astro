@@ -12,7 +12,7 @@ const sampleCount = sampleChapters.length;
   <PageHeader
     eyebrow="Coursebook"
     title="在线教材目录"
-    intro="Coursebook 以 18 周课堂为骨架，但不把讲稿深度、周次准备度和 PPT 状态混为一谈。首期只开放 Week 03、14、15、16 四个样章，其余章节显示来源和状态。"
+    intro="Coursebook 以 18 周课堂为骨架，按课堂主素材、支撑素材、拓展素材和教师备课素材分层组织。首期只开放 Week 03、14、15、16 四个样章，其余章节显示来源、标签和状态。"
   />
 
   <section class="section">
@@ -23,7 +23,8 @@ const sampleCount = sampleChapters.length;
           <h2>课程主线优先，借鉴 AI_MD 的 book map 与校验方法</h2>
           <p>
             本教材保留现有 Astro 站点，不迁移到 MkDocs。内容映射记录在 <code>course/textbook/coursebook_map.yml</code>，
-            页面数据来自 <code>site/src/data/coursebook.ts</code>；<code>knowledge/</code> 只作为支持层，不覆盖 <code>course/syllabus/</code> 与 <code>course/weeks/</code>。
+            页面数据来自 <code>site/src/data/coursebook.ts</code>；素材分层记录在 <code>docs/course_material_week_alignment_2026-06-04.md</code>。
+            <code>knowledge/</code> 只作为支持层，不覆盖 <code>course/syllabus/</code> 与 <code>course/weeks/</code>。
           </p>
         </div>
         <div class="metric-row" aria-label="教材建设状态">
@@ -36,8 +37,8 @@ const sampleCount = sampleChapters.length;
             <span>个首期样章</span>
           </div>
           <div class="metric-card">
-            <strong>Pages</strong>
-            <span>GitHub Actions 发布</span>
+            <strong>Local</strong>
+            <span>本地构建优先</span>
           </div>
         </div>
       </div>
@@ -68,6 +69,7 @@ const sampleCount = sampleChapters.length;
             <div class="status-row">
               <span class="status-pill">{chapter.reviewStatus}</span>
               <span class="status-pill">{chapter.pptStatus}</span>
+              {chapter.badges?.map((badge) => <span class="status-pill accent">{badge}</span>)}
             </div>
           </a>
         ))}
@@ -102,6 +104,11 @@ const sampleCount = sampleChapters.length;
                 <td>
                   <strong>{chapter.title}</strong>
                   <p>{chapter.summary}</p>
+                  {chapter.badges && (
+                    <div class="inline-badges">
+                      {chapter.badges.map((badge) => <span class="status-pill accent">{badge}</span>)}
+                    </div>
+                  )}
                 </td>
                 <td><span class="status-pill">{chapter.reviewStatus}</span></td>
                 <td><span class="status-pill">{chapter.pptStatus}</span></td>

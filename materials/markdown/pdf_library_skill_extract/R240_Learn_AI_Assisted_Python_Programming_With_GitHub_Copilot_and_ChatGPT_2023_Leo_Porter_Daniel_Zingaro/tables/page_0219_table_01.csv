@@ -1,0 +1,12 @@
+".pdf files (and Word files, Excel files) are not text files"
+""
+"You might wonder why we can’t simply use Python methods like and to
+read write
+manipulate .pdf files. After all, that’s just what we did when working with .csv files in
+chapter 2."
+""
+"The big difference is that .csv files are text files, which are files readable by humans with
+no formatting or special commands. Many other file formats are not text files, however. A
+.pdf file, for example, is not human-readable and needs to be processed by code that is
+aware of the .pdf format. This is true of Microsoft Word files and Microsoft Excel files as
+well: they’re not text files, so we need specialized tools to work with them."

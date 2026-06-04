@@ -1,0 +1,7 @@
+"r2_fig, ax = subplots(figsize=(8,8))"
+"ax.errorbar(-np.log(lambdas),"
+"grid_r2.cv_results_['mean_test_score'],"
+yerr=grid_r2.cv_results_['std_test_score'] / np.sqrt(K)
+)
+"ax.set_xlabel('$-\log(\lambda)$', fontsize=20)"
+"ax.set_ylabel('Cross-validated $R^2$', fontsize=20);"

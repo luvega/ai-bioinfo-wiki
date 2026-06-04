@@ -1,0 +1,7 @@
+from sklearn.cluster import \
+"(KMeans,"
+AgglomerativeClustering)
+from scipy.cluster.hierarchy import \
+"(dendrogram,"
+cut_tree)
+from ISLP.cluster import compute_linkage

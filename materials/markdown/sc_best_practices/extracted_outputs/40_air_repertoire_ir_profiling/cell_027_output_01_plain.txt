@@ -1,0 +1,2 @@
+True    547630
+Name: productive, dtype: int64

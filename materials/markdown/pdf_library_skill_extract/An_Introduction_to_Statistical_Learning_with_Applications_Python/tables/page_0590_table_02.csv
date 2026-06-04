@@ -1,0 +1,10 @@
+p_values = np.empty(100)
+for i in range(100):
+"p_values[i] = ttest_1samp(X[:,i], 0).pvalue"
+"decision = pd.cut(p_values,"
+"[0, 0.05, 1],"
+"labels=['Reject H0',"
+'Do not reject H0'])
+"truth = pd.Categorical(true_mean == 0,"
+"categories=[True, False],"
+ordered=True)

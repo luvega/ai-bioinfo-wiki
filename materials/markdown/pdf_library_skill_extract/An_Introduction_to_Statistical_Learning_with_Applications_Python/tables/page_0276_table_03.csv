@@ -1,0 +1,2 @@
+Hitters = Hitters.dropna();
+Hitters.shape

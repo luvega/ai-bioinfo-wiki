@@ -1,0 +1,6 @@
+"ax = Boston.plot.scatter('lstat', 'medv')"
+"abline(ax,"
+"results.params[0],"
+"results.params[1],"
+"'r--',"
+linewidth=3)

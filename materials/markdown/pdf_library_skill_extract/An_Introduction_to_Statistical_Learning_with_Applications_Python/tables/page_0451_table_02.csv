@@ -1,0 +1,7 @@
+"(mnist_train,"
+"mnist_test) = [MNIST(root='data',"
+"train=train,"
+"download=True,"
+transform=ToTensor())
+"for train in [True, False]]"
+mnist_train

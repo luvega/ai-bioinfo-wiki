@@ -1,0 +1,4 @@
+"mlr_trainer = Trainer(deterministic=True,"
+"max_epochs=30,"
+callbacks=[ErrorTracker()])
+"mlr_trainer.fit(mlr_module, datamodule=mnist_dm)"

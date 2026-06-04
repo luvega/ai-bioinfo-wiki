@@ -1,0 +1,16 @@
+round
+(
+100
+*
+ncol
+(
+sub
+)
+/
+ncol
+(
+spe
+)
+, 
+2
+)

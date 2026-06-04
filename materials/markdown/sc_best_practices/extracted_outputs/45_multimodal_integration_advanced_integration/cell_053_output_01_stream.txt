@@ -1,0 +1,24 @@
+[INFO] fit_SCGLUE: Pretraining SCGLUE model...
+[INFO] autodevice: Using GPU 0 as computation device.
+[INFO] check_graph: Checking variable coverage...
+[INFO] check_graph: Checking edge attributes...
+[INFO] check_graph: Checking self-loops...
+[INFO] check_graph: Checking graph symmetry...
+[INFO] check_graph: All checks passed!
+[INFO] SCGLUEModel: Setting `graph_batch_size` = 1457
+[INFO] SCGLUEModel: Setting `max_epochs` = 102
+[INFO] SCGLUEModel: Setting `patience` = 9
+[INFO] SCGLUEModel: Setting `reduce_lr_patience` = 5
+[INFO] SCGLUETrainer: Using training directory: "/tmp/GLUETMPx6ds9f5b"
+[INFO] SCGLUETrainer: [Epoch 10] train={'g_nll': 0.199, 'g_kl': 0.039, 'g_elbo': 0.238, 'x_rna_nll': 0.241, 'x_rna_kl': 0.006, 'x_rna_elbo': 0.247, 'x_adt_nll': 1.934, 'x_adt_kl': 0.21, 'x_adt_elbo': 2.144, 'dsc_loss': 0.636, 'vae_loss': 2.401, 'gen_loss': 2.369}, val={'g_nll': 0.193, 'g_kl': 0.04, 'g_elbo': 0.233, 'x_rna_nll': 0.243, 'x_rna_kl': 0.006, 'x_rna_elbo': 0.249, 'x_adt_nll': 1.862, 'x_adt_kl': 0.199, 'x_adt_elbo': 2.061, 'dsc_loss': 0.63, 'vae_loss': 2.32, 'gen_loss': 2.288}, 4.8s elapsed
+[INFO] SCGLUETrainer: [Epoch 20] train={'g_nll': 0.196, 'g_kl': 0.041, 'g_elbo': 0.237, 'x_rna_nll': 0.237, 'x_rna_kl': 0.006, 'x_rna_elbo': 0.242, 'x_adt_nll': 1.845, 'x_adt_kl': 0.175, 'x_adt_elbo': 2.02, 'dsc_loss': 0.674, 'vae_loss': 2.272, 'gen_loss': 2.238}, val={'g_nll': 0.194, 'g_kl': 0.041, 'g_elbo': 0.235, 'x_rna_nll': 0.236, 'x_rna_kl': 0.005, 'x_rna_elbo': 0.242, 'x_adt_nll': 1.798, 'x_adt_kl': 0.173, 'x_adt_elbo': 1.97, 'dsc_loss': 0.67, 'vae_loss': 2.222, 'gen_loss': 2.188}, 5.9s elapsed
+[INFO] SCGLUETrainer: [Epoch 30] train={'g_nll': 0.182, 'g_kl': 0.041, 'g_elbo': 0.224, 'x_rna_nll': 0.236, 'x_rna_kl': 0.005, 'x_rna_elbo': 0.241, 'x_adt_nll': 1.835, 'x_adt_kl': 0.172, 'x_adt_elbo': 2.007, 'dsc_loss': 0.676, 'vae_loss': 2.257, 'gen_loss': 2.223}, val={'g_nll': 0.155, 'g_kl': 0.041, 'g_elbo': 0.196, 'x_rna_nll': 0.237, 'x_rna_kl': 0.005, 'x_rna_elbo': 0.242, 'x_adt_nll': 1.782, 'x_adt_kl': 0.166, 'x_adt_elbo': 1.948, 'dsc_loss': 0.669, 'vae_loss': 2.198, 'gen_loss': 2.165}, 12.0s elapsed
+[INFO] SCGLUETrainer: [Epoch 40] train={'g_nll': 0.147, 'g_kl': 0.042, 'g_elbo': 0.189, 'x_rna_nll': 0.236, 'x_rna_kl': 0.005, 'x_rna_elbo': 0.241, 'x_adt_nll': 1.833, 'x_adt_kl': 0.169, 'x_adt_elbo': 2.002, 'dsc_loss': 0.677, 'vae_loss': 2.251, 'gen_loss': 2.217}, val={'g_nll': 0.159, 'g_kl': 0.042, 'g_elbo': 0.2, 'x_rna_nll': 0.238, 'x_rna_kl': 0.005, 'x_rna_elbo': 0.243, 'x_adt_nll': 1.781, 'x_adt_kl': 0.166, 'x_adt_elbo': 1.947, 'dsc_loss': 0.674, 'vae_loss': 2.199, 'gen_loss': 2.165}, 12.1s elapsed
+Epoch 00044: reducing learning rate of group 0 to 2.0000e-04.
+Epoch 00044: reducing learning rate of group 0 to 2.0000e-04.
+[INFO] LRScheduler: Learning rate reduction: step 1
+[INFO] SCGLUETrainer: [Epoch 50] train={'g_nll': 0.146, 'g_kl': 0.042, 'g_elbo': 0.188, 'x_rna_nll': 0.235, 'x_rna_kl': 0.005, 'x_rna_elbo': 0.24, 'x_adt_nll': 1.824, 'x_adt_kl': 0.17, 'x_adt_elbo': 1.993, 'dsc_loss': 0.676, 'vae_loss': 2.241, 'gen_loss': 2.207}, val={'g_nll': 0.142, 'g_kl': 0.042, 'g_elbo': 0.183, 'x_rna_nll': 0.235, 'x_rna_kl': 0.005, 'x_rna_elbo': 0.241, 'x_adt_nll': 1.771, 'x_adt_kl': 0.166, 'x_adt_elbo': 1.938, 'dsc_loss': 0.669, 'vae_loss': 2.185, 'gen_loss': 2.152}, 14.4s elapsed
+Epoch 00058: reducing learning rate of group 0 to 2.0000e-05.
+Epoch 00058: reducing learning rate of group 0 to 2.0000e-05.
+[INFO] LRScheduler: Learning rate reduction: step 2
+[INFO] SCGLUETrainer: [Epoch 60] train={'g_nll': 0.147, 'g_kl': 0.042, 'g_elbo': 0.188, 'x_rna_nll': 0.235, 'x_rna_kl': 0.005, 'x_rna_elbo': 0.24, 'x_adt_nll': 1.818, 'x_adt_kl': 0.17, 'x_adt_elbo': 1.989, 'dsc_loss': 0.677, 'vae_loss': 2.237, 'gen_loss': 2.203}, val={'g_nll': 0.159, 'g_kl': 0.042, 'g_elbo': 0.201, 'x_rna_nll': 0.239, 'x_rna_kl': 0.005, 'x_rna_elbo': 0.244, 'x_adt_nll': 1.77, 'x_adt_kl': 0.167, 'x_adt_elbo': 1.936, 'dsc_loss': 0.668, 'vae_loss': 2.188, 'gen_loss': 2.155}, 6.4s elapsed

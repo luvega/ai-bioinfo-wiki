@@ -1,0 +1,2 @@
+Khan = load_data('Khan')
+"Khan['xtrain'].shape, Khan['xtest'].shape"

@@ -1,0 +1,14 @@
+## DataFrame with 46603 rows and 3 columns
+##                       Length      mean  detected
+##                    <integer> <numeric> <numeric>
+## ENSMUSG00000102693      1070 0.0000000   0.00000
+## ENSMUSG00000064842       110 0.0000000   0.00000
+## ENSMUSG00000051951      6094 0.0000000   0.00000
+## ENSMUSG00000102851       480 0.0000000   0.00000
+## ENSMUSG00000103377      2819 0.0208333   1.04167
+## ...                      ...       ...       ...
+## ENSMUSG00000094431       100         0         0
+## ENSMUSG00000094621       121         0         0
+## ENSMUSG00000098647        99         0         0
+## ENSMUSG00000096730      3077         0         0
+## ENSMUSG00000095742       243         0         0

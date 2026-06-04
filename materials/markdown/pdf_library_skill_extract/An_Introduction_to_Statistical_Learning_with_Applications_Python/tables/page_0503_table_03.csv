@@ -1,0 +1,7 @@
+t_0 -1
+null_distribution chi squared
+degrees_of_freedom 2
+test_name multivariate_logrank_test
+""
+test_statistic p -log2(p)
+49.90 <0.005 35.99

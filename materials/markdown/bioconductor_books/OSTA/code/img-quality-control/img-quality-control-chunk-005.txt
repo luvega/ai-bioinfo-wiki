@@ -1,0 +1,13 @@
+##  class: SpatialExperiment 
+##  dim: 950 48556 
+##  metadata(4): fov_positions fov_dim polygons technology
+##  assays(1): counts
+##  rownames(950): Chrna4 Slc6a1 ... Cck Aqp4
+##  rowData names(0):
+##  colnames(48556): f1_c1 f1_c10 ... f99_c98 f99_c99
+##  colData names(22): fov cellID ... polygons in_tissue
+##  reducedDimNames(0):
+##  mainExpName: NULL
+##  altExpNames(1): NegPrb
+##  spatialCoords names(2) : CenterX_global_px CenterY_global_px
+##  imgData names(1): sample_id

@@ -1,0 +1,6 @@
+AnnData object with n_obs × n_vars = 12301 × 15701
+    obs: 'nCount_RNA', 'nFeature_RNA', 'tsne1', 'tsne2', 'condition', 'cluster', 'cell_type', 'patient', 'nCount_SCT', 'nFeature_SCT', 'integrated_snn_res.0.4', 'seurat_clusters', 'n_genes', 'sample'
+    var: 'name', 'n_cells'
+    uns: 'log1p', 'condition_colors', 'cell_type_colors'
+    obsm: 'X_pca', 'X_umap'
+    layers: 'counts'

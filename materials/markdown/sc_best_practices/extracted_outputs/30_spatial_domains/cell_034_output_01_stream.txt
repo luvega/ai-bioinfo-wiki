@@ -1,0 +1,21 @@
+Initializing cluster centers with louvain, resolution =  0.65
+computing neighbors
+    using data matrix X directly
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:00)
+running Louvain clustering
+    using the "louvain" package of Traag (2017)
+    finished: found 16 clusters and added
+    'louvain', the cluster labels (adata.obs, categorical) (0:00:00)
+Epoch  0
+Epoch  10
+Epoch  20
+Epoch  30
+Epoch  40
+Epoch  50
+Epoch  60
+Epoch  70
+delta_label  0.000744047619047619 < tol  0.001
+Reach tolerance threshold. Stopping training.
+Total epoch: 79

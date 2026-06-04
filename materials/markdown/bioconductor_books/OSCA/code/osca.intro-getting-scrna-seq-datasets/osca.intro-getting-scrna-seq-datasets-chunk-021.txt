@@ -1,0 +1,11 @@
+## class: SingleCellExperiment 
+## dim: 11 640 
+## metadata(2): highlights iroot
+## assays(1): X
+## rownames(11): Gata2 Gata1 ... EgrNab Gfi1
+## rowData names(0):
+## colnames(640): 0 1 ... 158-3 159-3
+## colData names(1): cell_type
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(0):

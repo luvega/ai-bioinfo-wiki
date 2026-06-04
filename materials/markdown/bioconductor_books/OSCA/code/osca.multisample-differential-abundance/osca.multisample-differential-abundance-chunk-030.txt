@@ -1,0 +1,4 @@
+##        factor(tomato)TRUE
+## Down                    1
+## NotSig                 23
+## Up                      0

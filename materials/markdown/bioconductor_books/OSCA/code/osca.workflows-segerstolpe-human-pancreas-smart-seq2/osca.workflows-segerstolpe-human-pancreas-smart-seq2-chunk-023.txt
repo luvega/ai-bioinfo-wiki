@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 25454 105 
+## metadata(0):
+## assays(1): counts
+## rownames(25454): ENSG00000118473 ENSG00000142920 ... ENSG00000278306
+##   eGFP
+## rowData names(2): refseq symbol
+## colnames: NULL
+## colData names(9): CellType Disease ... CellType ncells
+## reducedDimNames(2): PCA TSNE
+## mainExpName: endogenous
+## altExpNames(0):

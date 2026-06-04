@@ -1,0 +1,5 @@
+"logit = LogisticRegression(penalty='l1',"
+"C=1/lam_max,"
+"solver='liblinear',"
+"warm_start=True,"
+fit_intercept=True)

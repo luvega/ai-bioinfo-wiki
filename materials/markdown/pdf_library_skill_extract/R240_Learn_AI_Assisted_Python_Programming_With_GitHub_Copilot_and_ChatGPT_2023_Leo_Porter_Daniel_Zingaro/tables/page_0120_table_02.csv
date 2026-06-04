@@ -1,0 +1,8 @@
+Modules in Python
+""
+"A module is a collection of code designed for a specific purpose. Recall that we don’t
+need to know how a function works to use it. It’s the same with modules: we don’t need
+to know how modules work to be able to use them, much as we don’t need to know how
+a light switch works internally to use it. As users of modules, we just need to know what a
+module will help us do and how to write the code to correctly call its functions. Of course,
+Copilot can help us write that kind of code."

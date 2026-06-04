@@ -1,0 +1,10 @@
+Reminder: Copilot is nondeterministic
+""
+"Remember from the Introduction that Copilot is nondeterministic, so what Copilot gives
+you may not match what it gives us. This is going to be a challenge for the rest of the
+book: What do you do if you get a wrong result when we get a right result? We’re fairly
+confident that Copilot will give you a correct answer here, but if you get a wrong answer
+from Copilot, go ahead and read the remainder of this section rather than working along
+with Copilot in VS Code. We will absolutely give you all the tools you need to fix the code
+when Copilot gives you a wrong answer, but that skill will be taught over the remainder of
+the book, so we don’t want you to get stuck on this now."

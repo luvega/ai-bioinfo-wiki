@@ -1,0 +1,20 @@
+{
+  "order": 37,
+  "part": "Surface protein",
+  "toc_file": "surface_protein/dimensionality_reduction",
+  "title": "Dimensionality Reduction",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/surface_protein/dimensionality_reduction.ipynb",
+  "environment": "surface-protein",
+  "week_mapping": [
+    13
+  ],
+  "code_cell_count": 16,
+  "dataset_reference_count": 2,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/37_surface_protein_dimensionality_reduction",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/37_surface_protein_dimensionality_reduction/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/37_surface_protein_dimensionality_reduction/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/37_surface_protein_dimensionality_reduction/code_index.md"
+  }
+}

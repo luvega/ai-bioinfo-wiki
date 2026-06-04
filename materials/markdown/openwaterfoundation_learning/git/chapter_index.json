@@ -1,0 +1,345 @@
+{
+  "generated_at": "2026-06-04T02:06:47+00:00",
+  "source": {
+    "key": "git",
+    "title": "OWF Learn Git",
+    "repo": "OpenWaterFoundation/owf-learn-git",
+    "site_url": "https://learn.openwaterfoundation.org/owf-learn-git/",
+    "commit_sha": "42a393fb0e2daff55ae973f940ca946ae8d05acf",
+    "course_use": "Week 02/03/17 version-control and reproducible workflow reference",
+    "tags": [
+      "git",
+      "github",
+      "version-control",
+      "week-02",
+      "week-03",
+      "week-17"
+    ],
+    "knowledge_filename": "OWF_Learn_Git.md"
+  },
+  "repo_url": "https://github.com/OpenWaterFoundation/owf-learn-git",
+  "archive_url": "https://codeload.github.com/OpenWaterFoundation/owf-learn-git/zip/42a393fb0e2daff55ae973f940ca946ae8d05acf",
+  "license": "CC BY-NC-SA 4.0",
+  "license_note": "GitHub repository metadata does not expose SPDX license; review upstream site/repo before PPT reuse.",
+  "raw_repo_root": "materials/raw/openwaterfoundation_learning/extracted/git/owf-learn-git-42a393fb0e2daff55ae973f940ca946ae8d05acf",
+  "markdown_root": "materials/markdown/openwaterfoundation_learning/git",
+  "mkdocs_nav_pages": [
+    "index.md",
+    "overview.md",
+    "install/overview.md",
+    "install/git.md",
+    "install/sourcetree.md",
+    "install/eclipse.md",
+    "eol.md",
+    "config.md",
+    "cloud/overview.md",
+    "cloud/github.md",
+    "cloud/bitbucket.md",
+    "simple-example.md",
+    "workflow/overview.md",
+    "workflow/feature-branch.md",
+    "workflow/git-flow.md",
+    "workflow/branch-naming.md",
+    "workflow/merge-via-issue-suggestion.md",
+    "workflow/merge-via-change-set.md",
+    "workflow/merge-via-pull-request.md",
+    "tasks/overview.md",
+    "tasks/new-repo.md",
+    "output-messages.md",
+    "git-general.md",
+    "resources.md"
+  ],
+  "page_count": 25,
+  "asset_count": 12,
+  "example_count": 0,
+  "pages": [
+    {
+      "title": "Cloud-hosted Git / Bitbucket",
+      "summary": "Need to discuss Bitbucket overview and protocols.",
+      "source_path": "mkdocs-project/docs/cloud/bitbucket.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/cloud/bitbucket.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/cloud/bitbucket.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/cloud/bitbucket.md",
+      "nav_order": 11
+    },
+    {
+      "title": "Cloud-hosted Git / GitHub",
+      "summary": "Need to discuss GitHub overview and protocols.",
+      "source_path": "mkdocs-project/docs/cloud/github.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/cloud/github.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/cloud/github.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/cloud/github.md",
+      "nav_order": 10
+    },
+    {
+      "title": "Cloud-Hosted Git / Overview",
+      "summary": "It is useful to maintain the master copy of a repository in the cloud, so that it can be shared between developers.",
+      "source_path": "mkdocs-project/docs/cloud/overview.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/cloud/overview.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/cloud/overview.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/cloud/overview.md",
+      "nav_order": 9
+    },
+    {
+      "title": "Configure Git",
+      "summary": "Once Git has been installed it is necessary to set a few configuration properties.",
+      "source_path": "mkdocs-project/docs/config.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/config.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/config.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/config.md",
+      "nav_order": 8
+    },
+    {
+      "title": "Git End-of-Line Issues",
+      "summary": "**Note that end of line issues discussed below may not be much of an issue for some Git tool installs.",
+      "source_path": "mkdocs-project/docs/eol.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/eol.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/eol.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/eol.md",
+      "nav_order": 7
+    },
+    {
+      "title": "Git for General Projects",
+      "summary": "Although Git is traditionally used for software projects, it can also be used for general projects.",
+      "source_path": "mkdocs-project/docs/git-general.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/git-general.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/git-general.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/git-general.md",
+      "nav_order": 23
+    },
+    {
+      "title": "Open Water Foundation / Learn Git",
+      "summary": "This documentation provides resources to learn how to to use the Git version control software,",
+      "source_path": "mkdocs-project/docs/index.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/index.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/index.md",
+      "nav_order": 1
+    },
+    {
+      "title": "Install Git Software / Eclipse",
+      "summary": "The Eclipse integrated development environment (IDE) has for several years included Git features by default.",
+      "source_path": "mkdocs-project/docs/install/eclipse.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/eclipse.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/install/eclipse.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/install/eclipse.md",
+      "nav_order": 6
+    },
+    {
+      "title": "Install Git Software / Git GUI",
+      "summary": "Installation of the command-line Git tools will generally also install the Git GUI software.",
+      "source_path": "mkdocs-project/docs/install/git-gui.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git-gui.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/install/git-gui.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/install/git-gui.md",
+      "nav_order": null
+    },
+    {
+      "title": "Install Git Software / Command Line Software",
+      "summary": "Git command-line tools are useful when using Git commands from a terminal window.",
+      "source_path": "mkdocs-project/docs/install/git.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/install/git.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/install/git.md",
+      "nav_order": 4
+    },
+    {
+      "title": "Install Git / Overview",
+      "summary": "Git client software is available as various software tools on various platforms.",
+      "source_path": "mkdocs-project/docs/install/overview.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/overview.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/install/overview.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/install/overview.md",
+      "nav_order": 3
+    },
+    {
+      "title": "Install Git Software / SourceTree",
+      "summary": "The SourceTree software is a free Git client that may be useful, in particular if other software tools such as Bitbucket and JIRA from Atlassian are used",
+      "source_path": "mkdocs-project/docs/install/sourcetree.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/sourcetree.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/install/sourcetree.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/install/sourcetree.md",
+      "nav_order": 5
+    },
+    {
+      "title": "Git Messages ##",
+      "summary": "The following is a list of Git messages and explanation of how to respond.",
+      "source_path": "mkdocs-project/docs/output-messages.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/output-messages.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/output-messages.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/output-messages.md",
+      "nav_order": 22
+    },
+    {
+      "title": "Git Overview",
+      "summary": "Git is software that provides version control for software and other files.",
+      "source_path": "mkdocs-project/docs/overview.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/overview.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/overview.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/overview.md",
+      "nav_order": 2
+    },
+    {
+      "title": "Git Resources",
+      "summary": "This documentation includes the following sections:",
+      "source_path": "mkdocs-project/docs/resources.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/resources.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/resources.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/resources.md",
+      "nav_order": 24
+    },
+    {
+      "title": "Git Simple Examples",
+      "summary": "Git training sites provide simple examples.",
+      "source_path": "mkdocs-project/docs/simple-example.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/simple-example.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/simple-example.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/simple-example.md",
+      "nav_order": 12
+    },
+    {
+      "title": "Common Git Tasks / New Repo",
+      "summary": "Need to describe creating new repo, including GitHub and Bitbucket integration.",
+      "source_path": "mkdocs-project/docs/tasks/new-repo.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/tasks/new-repo.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/tasks/new-repo.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/tasks/new-repo.md",
+      "nav_order": 21
+    },
+    {
+      "title": "Common Git Tasks / Overview",
+      "summary": "This documentation provides guidance on common tasks that are simple enough to run on the command line.",
+      "source_path": "mkdocs-project/docs/tasks/overview.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/tasks/overview.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/tasks/overview.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/tasks/overview.md",
+      "nav_order": 20
+    },
+    {
+      "title": "Git Workflow / Branch Naming",
+      "summary": "Branching naming conventions are important to ensure communication within a software project.",
+      "source_path": "mkdocs-project/docs/workflow/branch-naming.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/workflow/branch-naming.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/workflow/branch-naming.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/workflow/branch-naming.md",
+      "nav_order": 16
+    },
+    {
+      "title": "Git Workflow / Feature Branch",
+      "summary": "A feature branch workflow approach is appropriate for individual users and teams where",
+      "source_path": "mkdocs-project/docs/workflow/feature-branch.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/workflow/feature-branch.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/workflow/feature-branch.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/workflow/feature-branch.md",
+      "nav_order": 14
+    },
+    {
+      "title": "Git Workflow / Git Flow",
+      "summary": "Git Flow provides tools to implement",
+      "source_path": "mkdocs-project/docs/workflow/git-flow.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/workflow/git-flow.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/workflow/git-flow.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/workflow/git-flow.md",
+      "nav_order": 15
+    },
+    {
+      "title": "Git Workflow / Merge via Change Set",
+      "summary": "**TODO smalers 2017-02-12 Need to describe here how to merge using a change set that is emailed.**",
+      "source_path": "mkdocs-project/docs/workflow/merge-via-change-set.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/workflow/merge-via-change-set.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/workflow/merge-via-change-set.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/workflow/merge-via-change-set.md",
+      "nav_order": 18
+    },
+    {
+      "title": "Git Workflow / Merge via Issue Suggestion",
+      "summary": "**TODO smalers 2017-02-12 Need to describe steps to review an issue and make a suggestion.**",
+      "source_path": "mkdocs-project/docs/workflow/merge-via-issue-suggestion.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/workflow/merge-via-issue-suggestion.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/workflow/merge-via-issue-suggestion.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/workflow/merge-via-issue-suggestion.md",
+      "nav_order": 17
+    },
+    {
+      "title": "Git Workflow / Merge via Pull Request",
+      "summary": "[**TODO smalers 2017-02-12 Need to describe here how to merge using pull request.]",
+      "source_path": "mkdocs-project/docs/workflow/merge-via-pull-request.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/workflow/merge-via-pull-request.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/workflow/merge-via-pull-request.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/workflow/merge-via-pull-request.md",
+      "nav_order": 19
+    },
+    {
+      "title": "Git Workflow / Overview",
+      "summary": "Git \"workflow\" refers to the day-to-day steps that occur to modify and add content in a Git repository.",
+      "source_path": "mkdocs-project/docs/workflow/overview.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/workflow/overview.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-git/workflow/overview.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-git/blob/42a393fb0e2daff55ae973f940ca946ae8d05acf/mkdocs-project/docs/workflow/overview.md",
+      "nav_order": 13
+    }
+  ],
+  "assets": [
+    {
+      "source_path": "mkdocs-project/docs/images/OWF-Logo-Favicon-32x32.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/images/OWF-Logo-Favicon-32x32.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/install/git-for-windows-images/git-for-windows-install1.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git-for-windows-images/git-for-windows-install1.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/install/git-for-windows-images/git-for-windows-install2.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git-for-windows-images/git-for-windows-install2.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/install/git-for-windows-images/git-for-windows-install3.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git-for-windows-images/git-for-windows-install3.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/install/git-for-windows-images/git-for-windows-install4.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git-for-windows-images/git-for-windows-install4.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/install/git-for-windows-images/git-for-windows-install5.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git-for-windows-images/git-for-windows-install5.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/install/git-for-windows-images/git-for-windows-install6.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git-for-windows-images/git-for-windows-install6.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/install/git-for-windows-images/git-for-windows-install7.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git-for-windows-images/git-for-windows-install7.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/install/git-for-windows-images/git-for-windows-install8.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/install/git-for-windows-images/git-for-windows-install8.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/resources-images/git-prompt.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/resources-images/git-prompt.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/tasks/overview-images/notepadpp-end-of-line.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/tasks/overview-images/notepadpp-end-of-line.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/tasks/overview-images/vi-b-end-of-line.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/git/pages/tasks/overview-images/vi-b-end-of-line.png",
+      "suffix": ".png"
+    }
+  ],
+  "examples": []
+}

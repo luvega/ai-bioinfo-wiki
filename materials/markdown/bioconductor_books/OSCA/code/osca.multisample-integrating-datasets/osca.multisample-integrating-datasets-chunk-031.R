@@ -1,0 +1,4 @@
+head
+(mnn.out
+$
+batch)

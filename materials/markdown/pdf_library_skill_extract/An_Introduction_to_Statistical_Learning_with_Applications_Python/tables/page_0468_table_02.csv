@@ -1,0 +1,3 @@
+"Y, train = X['log_volume'], X['train']"
+X = X.drop(columns=['train'] + cols)
+X.columns

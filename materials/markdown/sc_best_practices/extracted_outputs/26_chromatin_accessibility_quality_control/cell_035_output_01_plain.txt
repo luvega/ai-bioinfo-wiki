@@ -1,0 +1,6 @@
+             barcodes  scDblFinder_score
+0  AAACAGCCAAGCTTAT-1           0.028191
+1  AAACAGCCATAGCTTG-1           0.000825
+2  AAACAGCCATGAAATG-1           0.063412
+3  AAACAGCCATGTTTGG-1           0.026449
+4  AAACATGCAACGTGCT-1           0.019928

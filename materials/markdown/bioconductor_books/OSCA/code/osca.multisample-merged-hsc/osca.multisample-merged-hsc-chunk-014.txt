@@ -1,0 +1,5 @@
+## DataFrame with 2 rows and 3 columns
+##             left     right                        lost.var
+##           <List>    <List>                        <matrix>
+## 1           Paul Nestorowa 0.01082734:0.0000000:0.00745166
+## 2 Paul,Nestorowa      Grun 0.00570326:0.0178387:0.00708292

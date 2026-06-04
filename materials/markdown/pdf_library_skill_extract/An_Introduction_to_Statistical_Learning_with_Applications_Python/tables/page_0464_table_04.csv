@@ -1,0 +1,8 @@
+coefs = []
+intercepts = []
+""
+for l in lam_val:
+logit.C = 1/l
+"logit.fit(X_train, Y_train)"
+coefs.append(logit.coef_.copy())
+intercepts.append(logit.intercept_)

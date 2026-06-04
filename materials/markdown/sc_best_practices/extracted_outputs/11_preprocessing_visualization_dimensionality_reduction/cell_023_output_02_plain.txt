@@ -1,0 +1,1 @@
+Artifact(uid='6MXF3Uy8DkG9wy720002', is_latest=True, key='preprocessing_visualization/s4d8_dimensionality_reduction.h5ad', description='anndata after dimensionality reduction', suffix='.h5ad', otype='AnnData', size=4530494307, hash='E-h2bZDOxSnEFWk1reXptw', space_id=1, storage_id=1, run_id=10, created_by_id=5, created_at=2025-05-13 03:31:03 UTC)

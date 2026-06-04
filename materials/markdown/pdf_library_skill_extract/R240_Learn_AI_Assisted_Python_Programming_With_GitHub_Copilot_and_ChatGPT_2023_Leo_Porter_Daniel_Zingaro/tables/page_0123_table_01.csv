@@ -1,0 +1,15 @@
+Code Element,Example,Brief Description
+,"for loop:
+for country in countries:
+print(country)
+while loop:
+index = 0
+while index < 4:
+print(index)
+index = index + 1
+for country in countries:
+print(country)
+points = {'a': 1, 'b': 3}
+file = open('chores.csv')
+first_line = file.readline()
+import matplotlib",

@@ -1,0 +1,2 @@
+WARNING: Non-standard locus name ignored: Multi 
+WARNING: Non-standard locus name ignored: None 

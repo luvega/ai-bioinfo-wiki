@@ -1,0 +1,4 @@
+##    Erdr1     Mid1 Kcnq1ot1     Nnat    Mcts2     Hopx  Slc38a4   Impact 
+##   1.0000   0.9565   0.7391   0.5217   0.3913   0.3913   0.3913   0.3913 
+##    Zdbf2   Zfp985 
+##   0.3043   0.1304

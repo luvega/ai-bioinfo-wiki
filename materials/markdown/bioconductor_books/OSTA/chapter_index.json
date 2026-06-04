@@ -1,0 +1,513 @@
+{
+  "generated_at": "2026-06-04T01:51:39+00:00",
+  "source": "OSTA",
+  "page_count": 44,
+  "image_count": 247,
+  "code_chunk_count": 952,
+  "pages": [
+    {
+      "source": "OSTA",
+      "slug": "crs-imputation",
+      "title": "37 Imputation",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/crs-imputation.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/crs-imputation.md",
+      "image_count": 5,
+      "code_chunk_count": 36,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "bkg-python-interoperability",
+      "title": "7 Python interoperability",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/bkg-python-interoperability.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/bkg-python-interoperability.md",
+      "image_count": 1,
+      "code_chunk_count": 22,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "osta",
+      "title": "Orchestrating Spatial Transcriptomics Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/release/OSTA/",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/osta.md",
+      "image_count": 3,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "ind-spatial-statistics",
+      "title": "31 Spatial statistics",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/ind-spatial-statistics.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/ind-spatial-statistics.md",
+      "image_count": 12,
+      "code_chunk_count": 26,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "bkg-importing-data",
+      "title": "5 Importing data",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/bkg-importing-data.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/bkg-importing-data.md",
+      "image_count": 0,
+      "code_chunk_count": 4,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "crs-workflow-xenvis",
+      "title": "38 Workflow: Xenium + Visium",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/crs-workflow-xenvis.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/crs-workflow-xenvis.md",
+      "image_count": 8,
+      "code_chunk_count": 34,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "mult-diff-spatial-patterns",
+      "title": "33 Differential spatial patterns",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/mult-diff-spatial-patterns.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/mult-diff-spatial-patterns.md",
+      "image_count": 3,
+      "code_chunk_count": 16,
+      "week_mapping": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "bkg-spatial-omics",
+      "title": "2 Spatial omics",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/bkg-spatial-omics.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/bkg-spatial-omics.md",
+      "image_count": 0,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "seq-deconvolution",
+      "title": "12 Deconvolution",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/seq-deconvolution.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/seq-deconvolution.md",
+      "image_count": 14,
+      "code_chunk_count": 43,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "img-workflow-xenium",
+      "title": "24 Workflow: Xenium",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/img-workflow-xenium.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/img-workflow-xenium.md",
+      "image_count": 5,
+      "code_chunk_count": 51,
+      "week_mapping": [
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "osta",
+      "title": "Orchestrating Spatial Transcriptomics Analysis with Bioconductor",
+      "url": "https://bioconductor.org/books/release/OSTA/index.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/osta.md",
+      "image_count": 3,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "img-neighborhood-analysis",
+      "title": "21 Neighborhood analysis",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/img-neighborhood-analysis.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/img-neighborhood-analysis.md",
+      "image_count": 12,
+      "code_chunk_count": 32,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "seq-workflow-visium-crc",
+      "title": "14 Workflow: Visium CRC",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/seq-workflow-visium-crc.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/seq-workflow-visium-crc.md",
+      "image_count": 12,
+      "code_chunk_count": 52,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "apx-citation",
+      "title": "Appendix D — Citation",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/apx-citation.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/apx-citation.md",
+      "image_count": 0,
+      "code_chunk_count": 0,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "apx-session-info",
+      "title": "Appendix C — Session information",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/apx-session-info.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/apx-session-info.md",
+      "image_count": 0,
+      "code_chunk_count": 2,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "ind-normalization",
+      "title": "26 Normalization",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/ind-normalization.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/ind-normalization.md",
+      "image_count": 4,
+      "code_chunk_count": 17,
+      "week_mapping": [
+        14
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "ind-image-analysis",
+      "title": "32 Image analysis",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/ind-image-analysis.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/ind-image-analysis.md",
+      "image_count": 5,
+      "code_chunk_count": 5,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "seq-intermediate-processing",
+      "title": "11 Intermediate processing",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/seq-intermediate-processing.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/seq-intermediate-processing.md",
+      "image_count": 6,
+      "code_chunk_count": 44,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "bkg-ecosystem",
+      "title": "4 Ecosystem",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/bkg-ecosystem.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/bkg-ecosystem.md",
+      "image_count": 4,
+      "code_chunk_count": 13,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "apx-acknowledgments",
+      "title": "Appendix A — Acknowledgments",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/apx-acknowledgments.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/apx-acknowledgments.md",
+      "image_count": 0,
+      "code_chunk_count": 0,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "seq-workflow-visium-hd-seg",
+      "title": "16 Workflow: Visium HD (segmented)",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/seq-workflow-visium-hd-seg.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/seq-workflow-visium-hd-seg.md",
+      "image_count": 9,
+      "code_chunk_count": 50,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "img-quality-control",
+      "title": "19 Quality control",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/img-quality-control.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/img-quality-control.md",
+      "image_count": 15,
+      "code_chunk_count": 38,
+      "week_mapping": [
+        14
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "img-intermediate-processing",
+      "title": "20 Intermediate processing",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/img-intermediate-processing.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/img-intermediate-processing.md",
+      "image_count": 1,
+      "code_chunk_count": 13,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "seq-workflow-dlpfc",
+      "title": "13 Workflow: Visium DLPFC",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/seq-workflow-dlpfc.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/seq-workflow-dlpfc.md",
+      "image_count": 14,
+      "code_chunk_count": 96,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "seq-reads-to-counts",
+      "title": "9 Reads to counts",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/seq-reads-to-counts.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/seq-reads-to-counts.md",
+      "image_count": 6,
+      "code_chunk_count": 0,
+      "week_mapping": [
+        14
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "bkg-introduction",
+      "title": "1 Introduction",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/bkg-introduction.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/bkg-introduction.md",
+      "image_count": 0,
+      "code_chunk_count": 0,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "ind-dimensionality-reduction",
+      "title": "27 Dimensionality reduction",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/ind-dimensionality-reduction.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/ind-dimensionality-reduction.md",
+      "image_count": 3,
+      "code_chunk_count": 13,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "bkg-example-datasets",
+      "title": "6 Example datasets",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/bkg-example-datasets.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/bkg-example-datasets.md",
+      "image_count": 0,
+      "code_chunk_count": 5,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "ind-clustering",
+      "title": "28 Clustering",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/ind-clustering.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/ind-clustering.md",
+      "image_count": 4,
+      "code_chunk_count": 27,
+      "week_mapping": [
+        16
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "seq-introduction",
+      "title": "8 Introduction",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/seq-introduction.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/seq-introduction.md",
+      "image_count": 1,
+      "code_chunk_count": 0,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "crs-spatial-registration",
+      "title": "36 Spatial registration",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/crs-spatial-registration.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/crs-spatial-registration.md",
+      "image_count": 7,
+      "code_chunk_count": 14,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "seq-quality-control",
+      "title": "10 Quality control",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/seq-quality-control.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/seq-quality-control.md",
+      "image_count": 15,
+      "code_chunk_count": 54,
+      "week_mapping": [
+        14
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "mult-diff-colocalization",
+      "title": "34 Differential colocalization",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/mult-diff-colocalization.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/mult-diff-colocalization.md",
+      "image_count": 11,
+      "code_chunk_count": 21,
+      "week_mapping": [
+        15
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "ind-feature-set-signatures",
+      "title": "30 Feature-set signatures",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/ind-feature-set-signatures.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/ind-feature-set-signatures.md",
+      "image_count": 3,
+      "code_chunk_count": 16,
+      "week_mapping": [
+        15
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "img-sub-cellular-analysis",
+      "title": "23 Sub-cellular analysis",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/img-sub-cellular-analysis.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/img-sub-cellular-analysis.md",
+      "image_count": 5,
+      "code_chunk_count": 0,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "img-introduction",
+      "title": "17 Introduction",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/img-introduction.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/img-introduction.md",
+      "image_count": 0,
+      "code_chunk_count": 0,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "img-segmentation",
+      "title": "18 Segmentation",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/img-segmentation.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/img-segmentation.md",
+      "image_count": 2,
+      "code_chunk_count": 0,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "seq-workflow-visium-hd-bin",
+      "title": "15 Workflow: Visium HD (binned)",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/seq-workflow-visium-hd-bin.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/seq-workflow-visium-hd-bin.md",
+      "image_count": 16,
+      "code_chunk_count": 91,
+      "week_mapping": [
+        16,
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "ind-feature-selection-testing",
+      "title": "29 Feature selection & testing",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/ind-feature-selection-testing.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/ind-feature-selection-testing.md",
+      "image_count": 6,
+      "code_chunk_count": 39,
+      "week_mapping": [
+        15
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "mult-structure-based",
+      "title": "35 Structure-based analysis",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/mult-structure-based.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/mult-structure-based.md",
+      "image_count": 9,
+      "code_chunk_count": 18,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "img-cell-cell-communication",
+      "title": "22 Cell-cell communication",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/img-cell-cell-communication.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/img-cell-cell-communication.md",
+      "image_count": 6,
+      "code_chunk_count": 24,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "apx-related-resources",
+      "title": "Appendix B — Related resources",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/apx-related-resources.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/apx-related-resources.md",
+      "image_count": 0,
+      "code_chunk_count": 0,
+      "week_mapping": []
+    },
+    {
+      "source": "OSTA",
+      "slug": "img-workflow-cosmx",
+      "title": "25 Workflow: CosMx",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/img-workflow-cosmx.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/img-workflow-cosmx.md",
+      "image_count": 15,
+      "code_chunk_count": 36,
+      "week_mapping": [
+        17
+      ]
+    },
+    {
+      "source": "OSTA",
+      "slug": "bkg-infrastructure",
+      "title": "3 Infrastructure",
+      "url": "https://bioconductor.org/books/release/OSTA/pages/bkg-infrastructure.html",
+      "markdown_path": "materials/markdown/bioconductor_books/OSTA/pages/bkg-infrastructure.md",
+      "image_count": 2,
+      "code_chunk_count": 0,
+      "week_mapping": []
+    }
+  ],
+  "extracted_archives": [
+    {
+      "package": "OSTA",
+      "version": "1.2.0",
+      "archive": "materials/raw/bioconductor_books/archives/OSTA_1.2.0.tar.gz",
+      "extracted_to": "materials/raw/bioconductor_books/extracted/OSTA_1.2.0"
+    }
+  ]
+}

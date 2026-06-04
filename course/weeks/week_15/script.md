@@ -186,3 +186,10 @@ AI 可以整理差异表达筛选规则、火山图解释模板和富集结果�
 ## 教师补充讲述：差异表达分析与功能解读 的课堂落地
 
 教师还可以再补充一段综合讲述：本周内容之所以重要，是因为它把抽象的医药数据问题变成了学生可以操作、可以检查、可以解释的课堂活动。围绕“按 padj 和 log2FoldChange 筛选候选基因，写火山图解释，并列出功能解读的待核验点”，教师要不断提醒学生，任何结果都不是孤立出现的，它依赖数据来源、字段含义、处理规则、图表表达和人工核验。AI 可以让初稿更快出现，但越快出现的内容越需要检查。学生如果能在本周说清输入、规则、输出和证据边界，就已经具备进入下一周学习的基础。
+## 本轮素材升级说明（2026-06-04）
+
+Week 15 需要明确修正 AIDD 历史映射：本周不是 Linux、NGS 流程或 variant calling 专题，而是差异表达分析与功能解读。AIDD 的 DESeq2、GEO2R、基因 ID 转换和 ggplot2 是课堂入口；SCBP 的 differential gene expression、GSEA 和 compositional analysis，OSCA 的 marker detection、multi-sample comparison 和 differential abundance，OSTA 的 spatial differential patterns 只用于说明不同数据粒度下“差异”问题并不相同。
+
+教师讲授时可以增加一张对照表：bulk RNA-seq 问“基因表达是否在样本组之间改变”，single-cell 问“细胞类型、细胞状态或 pseudobulk 表达是否改变”，spatial transcriptomics 问“空间位置、邻域或区域模式是否改变”。这张表服务于边界意识，不要求学生掌握高级模型。
+
+进入 PPT 前仍坚持三条红线：不把 `padj` 写成医学机制，不把 AI 生成的基因功能当事实，不把 single-cell 或 spatial 结果混写成 bulk DESeq2 结论。所有功能解释保留“需数据库或文献核验”。

@@ -1,0 +1,5 @@
+"day_dm = SimpleDataModule(day_train,"
+"day_test,"
+"num_workers=min(4, max_num_workers),"
+"validation=day_test,"
+batch_size=64)

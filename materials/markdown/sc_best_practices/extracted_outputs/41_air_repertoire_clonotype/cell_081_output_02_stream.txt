@@ -1,0 +1,1 @@
+To benefit from faster layout computation, please install graph-tool: conda install -c conda-forge graph-tool

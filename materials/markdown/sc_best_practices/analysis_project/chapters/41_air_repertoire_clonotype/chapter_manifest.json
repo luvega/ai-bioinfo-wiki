@@ -1,0 +1,18 @@
+{
+  "order": 41,
+  "part": "Adaptive immune receptor repertoire",
+  "toc_file": "air_repertoire/clonotype",
+  "title": "Clonotype analysis",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/air_repertoire/clonotype.ipynb",
+  "environment": null,
+  "week_mapping": [],
+  "code_cell_count": 54,
+  "dataset_reference_count": 6,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/41_air_repertoire_clonotype",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/41_air_repertoire_clonotype/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/41_air_repertoire_clonotype/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/41_air_repertoire_clonotype/code_index.md"
+  }
+}

@@ -1,0 +1,7 @@
+
+    WARNING: The R package "reticulate" only fixed recently
+    an issue that caused a segfault when used with rpy2:
+    https://github.com/rstudio/reticulate/pull/1188
+    Make sure that you use a version of that package that includes
+    the fix.
+    

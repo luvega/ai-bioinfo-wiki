@@ -1,0 +1,14 @@
+## DataFrame with 14700 rows and 5 columns
+##                               logFC    logCPM         F      PValue         FDR
+##                           <numeric> <numeric> <numeric>   <numeric>   <numeric>
+## Phlda2                    -2.490057  12.58170  1179.959 2.80745e-14 1.35150e-10
+## Xist                      -7.980820   8.00187  1063.299 6.06812e-14 1.46060e-10
+## Erdr1                      1.942835   9.07313   281.010 2.87909e-10 4.61998e-07
+## Slc22a18                  -4.339181   4.04375   118.554 5.08864e-08 6.12417e-05
+## Slc38a4                    0.891411  10.24084   115.549 6.83180e-08 6.57765e-05
+## ...                             ...       ...       ...         ...         ...
+## Ccl27a_ENSMUSG00000095247        NA        NA        NA          NA          NA
+## CR974586.5                       NA        NA        NA          NA          NA
+## AC132444.6                       NA        NA        NA          NA          NA
+## Vmn2r122                         NA        NA        NA          NA          NA
+## CAAA01147332.1                   NA        NA        NA          NA          NA

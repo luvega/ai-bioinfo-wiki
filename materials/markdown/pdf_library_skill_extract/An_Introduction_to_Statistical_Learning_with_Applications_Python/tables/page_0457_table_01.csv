@@ -1,0 +1,19 @@
+class CIFARModel(nn.Module):
+""
+def __init__(self):
+"super(CIFARModel, self).__init__()"
+"sizes = [(3,32),"
+"(32,64),"
+"(64,128),"
+"(128,256)]"
+"self.conv = nn.Sequential(*[BuildingBlock(in_, out_)"
+"for in_, out_ in sizes])"
+""
+"self.output = nn.Sequential(nn.Dropout(0.5),"
+"nn.Linear(2*2*256, 512),"
+"nn.ReLU(),"
+"nn.Linear(512, 100))"
+"def forward(self, x):"
+val = self.conv(x)
+"val = torch.flatten(val, start_dim=1)"
+return self.output(val)

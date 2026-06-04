@@ -1,0 +1,6 @@
+函数,描述
+"strftime(tpl, ts)","tpl是格式化模板字符串，用来定义输出效果
+ts是计算机内部时间类型变量
+>>>t = time.gmtime()
+>>>time.strftime(""%Y-%m-%d %H:%M:%S"",t)
+'2018-01-26 12:55:20'"

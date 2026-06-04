@@ -1,0 +1,5 @@
+ScanVI Model with the following params: 
+unlabeled_category: unlabelled, n_hidden: [1;36m128[0m, n_latent: [1;36m10[0m, n_layers: [1;36m1[0m, dropout_rate: [1;36m0.1[0m, dispersion: gene, 
+gene_likelihood: zinb
+Training status: Not Trained
+Model's adata is minified?: [3;91mFalse[0m

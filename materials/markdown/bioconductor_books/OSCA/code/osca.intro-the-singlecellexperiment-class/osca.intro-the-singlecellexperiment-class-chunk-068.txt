@@ -1,0 +1,27 @@
+## DataFrame with 22013 rows and 6 columns
+##                               gene_id gene_version      gene_name
+##                           <character>  <character>    <character>
+## ENSMUSG00000051951 ENSMUSG00000051951            5           Xkr4
+## ENSMUSG00000025900 ENSMUSG00000025900            9            Rp1
+## ENSMUSG00000025902 ENSMUSG00000025902           12          Sox17
+## ENSMUSG00000033845 ENSMUSG00000033845           12         Mrpl15
+## ENSMUSG00000025903 ENSMUSG00000025903           13         Lypla1
+## ...                               ...          ...            ...
+## ENSMUSG00000079808 ENSMUSG00000079808            3     AC168977.1
+## ENSMUSG00000095041 ENSMUSG00000095041            6           PISD
+## ENSMUSG00000063897 ENSMUSG00000063897            3          DHRSX
+## ENSMUSG00000096730 ENSMUSG00000096730            6       Vmn2r122
+## ENSMUSG00000095742 ENSMUSG00000095742            1 CAAA01147332.1
+##                       gene_source   gene_biotype havana_gene_version
+##                       <character>    <character>         <character>
+## ENSMUSG00000051951 ensembl_havana protein_coding                   2
+## ENSMUSG00000025900 ensembl_havana protein_coding                   2
+## ENSMUSG00000025902 ensembl_havana protein_coding                   6
+## ENSMUSG00000033845 ensembl_havana protein_coding                   3
+## ENSMUSG00000025903 ensembl_havana protein_coding                   3
+## ...                           ...            ...                 ...
+## ENSMUSG00000079808        ensembl protein_coding                  NA
+## ENSMUSG00000095041        ensembl protein_coding                  NA
+## ENSMUSG00000063897        ensembl protein_coding                  NA
+## ENSMUSG00000096730        ensembl protein_coding                  NA
+## ENSMUSG00000095742        ensembl protein_coding                  NA

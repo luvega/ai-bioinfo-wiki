@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 15px;
+            width: 400px;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #3965a3;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>SpatialData differs from AnnData because it:</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq6" value="Replaces gene expression matrices"
+            onclick="checkAnswer(this, 'Integrates spatial elements like images and geometries', 'SpatialData still supports expression matrices. It does not replace them.', 'feedback-q6')"> Replaces gene expression matrices
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq6" value="Stores only image data"
+            onclick="checkAnswer(this, 'Integrates spatial elements like images and geometries', 'SpatialData can store images, but also tables and coordinates.', 'feedback-q6')"> Stores only image data
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq6" value="Integrates spatial elements like images and geometries"
+            onclick="checkAnswer(this, 'Integrates spatial elements like images and geometries', '', 'feedback-q6')"> Integrates spatial elements like images and geometries
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq6" value="Works only with multimodal sequencing"
+            onclick="checkAnswer(this, 'Integrates spatial elements like images and geometries', 'SpatialData is not restricted to multimodal sequencing. It adds spatial context.', 'feedback-q6')"> Works only with multimodal sequencing
+        </label><br>
+        
+        <p id="feedback-q6" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q6" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: Integrates spatial elements like images and geometries
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

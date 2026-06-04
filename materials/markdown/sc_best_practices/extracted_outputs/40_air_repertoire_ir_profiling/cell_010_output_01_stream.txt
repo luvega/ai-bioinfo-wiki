@@ -1,0 +1,32 @@
+--2022-06-07 18:30:52--  https://figshare.com/ndownloader/files/35574338
+Resolving figshare.com (figshare.com)... 54.72.163.193, 52.50.42.102, 2a05:d018:1f4:d000:7421:2135:71b2:6a10, ...
+Connecting to figshare.com (figshare.com)|54.72.163.193|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/35574338/bcr_cellranger.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIYCQYOYV5JSSROOA/20220607/eu-west-1/s3/aws4_request&X-Amz-Date=20220607T163052Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=b18cb63ca03820e07cb8b3d9375466ca6405e655822269f5ae36d7449a28b810 [following]
+--2022-06-07 18:30:52--  https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/35574338/bcr_cellranger.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIYCQYOYV5JSSROOA/20220607/eu-west-1/s3/aws4_request&X-Amz-Date=20220607T163052Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=b18cb63ca03820e07cb8b3d9375466ca6405e655822269f5ae36d7449a28b810
+Resolving s3-eu-west-1.amazonaws.com (s3-eu-west-1.amazonaws.com)... 52.218.62.171
+Connecting to s3-eu-west-1.amazonaws.com (s3-eu-west-1.amazonaws.com)|52.218.62.171|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 84451806 (81M) [text/csv]
+Saving to: ‘data//BCR_00_read_aligned.csv’
+
+100%[======================================>] 84,451,806  39.1MB/s   in 2.1s   
+
+2022-06-07 18:30:54 (39.1 MB/s) - ‘data//BCR_00_read_aligned.csv’ saved [84451806/84451806]
+
+--2022-06-07 18:30:55--  https://figshare.com/ndownloader/files/35574539
+Resolving figshare.com (figshare.com)... 54.72.163.193, 52.50.42.102, 2a05:d018:1f4:d000:7421:2135:71b2:6a10, ...
+Connecting to figshare.com (figshare.com)|54.72.163.193|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/35574539/TCR_mergedUpdated.tsv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIYCQYOYV5JSSROOA/20220607/eu-west-1/s3/aws4_request&X-Amz-Date=20220607T163055Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=141ab989ae794394fb6c441d50c0ea6771f96a8d048a8a4c400c10dba267b97c [following]
+--2022-06-07 18:30:55--  https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/35574539/TCR_mergedUpdated.tsv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIYCQYOYV5JSSROOA/20220607/eu-west-1/s3/aws4_request&X-Amz-Date=20220607T163055Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=141ab989ae794394fb6c441d50c0ea6771f96a8d048a8a4c400c10dba267b97c
+Resolving s3-eu-west-1.amazonaws.com (s3-eu-west-1.amazonaws.com)... 52.218.62.171
+Connecting to s3-eu-west-1.amazonaws.com (s3-eu-west-1.amazonaws.com)|52.218.62.171|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 247085830 (236M) [text/tab-separated-values]
+Saving to: ‘data//TCR_00_read_aligned.tsv’
+
+100%[======================================>] 247,085,830 42.4MB/s   in 5.8s   
+
+2022-06-07 18:31:01 (40.9 MB/s) - ‘data//TCR_00_read_aligned.tsv’ saved [247085830/247085830]
+

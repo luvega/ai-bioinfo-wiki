@@ -1,0 +1,17 @@
+........
+Normalizing scATAC counts ..
+SummarizedExperiment object input detected .. Centering counts under assayCentering counts for cells sequentially in groups of size  5000  ..
+
+Computing centered counts for cells:  1  to  5000 ..
+Computing centered counts per cell using mean reads in features ..
+
+Computing centered counts for cells:  5001  to  6224 ..
+Computing centered counts per cell using mean reads in features ..
+
+Merging results..
+Done!
+Computing DORC scores ..
+Running in parallel using  2 cores ..
+
+Time Elapsed:  0.89201807975769 secs 
+

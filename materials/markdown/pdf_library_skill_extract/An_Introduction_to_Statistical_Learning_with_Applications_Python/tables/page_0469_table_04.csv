@@ -1,0 +1,13 @@
+class NYSEModel(nn.Module):
+def __init__(self):
+"super(NYSEModel, self).__init__()"
+"self.rnn = nn.RNN(3,"
+"12,"
+batch_first=True)
+"self.dense = nn.Linear(12, 1)"
+self.dropout = nn.Dropout(0.1)
+"def forward(self, x):"
+"val, h_n = self.rnn(x)"
+"val = self.dense(self.dropout(val[:,-1]))"
+return torch.flatten(val)
+nyse_model = NYSEModel()

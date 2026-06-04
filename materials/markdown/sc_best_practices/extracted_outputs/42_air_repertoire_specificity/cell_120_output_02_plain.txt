@@ -1,0 +1,2 @@
+SARS-CoV-2    21
+Name: Binding_fullIR, dtype: int64

@@ -1,0 +1,71 @@
+R[write to console]: Registered S3 method overwritten by 'SeuratDisk':
+  method            from  
+  as.sparse.H5Group Seurat
+
+R[write to console]: 경고:
+R[write to console]:  Unknown file type: h5ad
+
+R[write to console]: 경고:
+R[write to console]:  'assay' not set, setting to 'RNA'
+
+R[write to console]: Creating h5Seurat file for version 3.1.5.9900
+
+R[write to console]: Adding X as data
+
+R[write to console]: Adding X as counts
+
+R[write to console]: Adding meta.features from var
+
+R[write to console]: Adding X_pca as cell embeddings for pca
+
+R[write to console]: Adding X_umap as cell embeddings for umap
+
+R[write to console]: Adding PCs as feature loadings fpr pca
+
+R[write to console]: Adding miscellaneous information for pca
+
+R[write to console]: Adding standard deviations for pca
+
+R[write to console]: Adding miscellaneous information for umap
+
+R[write to console]: Adding hvg to miscellaneous data
+
+R[write to console]: Adding log1p to miscellaneous data
+
+R[write to console]: Adding layer counts as data in assay counts
+
+R[write to console]: Adding layer counts as counts in assay counts
+
+R[write to console]: Reading H5Seurat...
+
+R[write to console]: Validating h5Seurat file
+
+R[write to console]: 경고:
+R[write to console]:  Feature names cannot have underscores ('_'), replacing with dashes ('-')
+
+R[write to console]: Initializing RNA with data
+
+R[write to console]: Adding counts for RNA
+
+R[write to console]: Adding feature-level metadata for RNA
+
+R[write to console]: Adding reduction pca
+
+R[write to console]: Adding cell embeddings for pca
+
+R[write to console]: Adding feature loadings for pca
+
+R[write to console]: Adding miscellaneous information for pca
+
+R[write to console]: Adding reduction umap
+
+R[write to console]: Adding cell embeddings for umap
+
+R[write to console]: Adding miscellaneous information for umap
+
+R[write to console]: Adding command information
+
+R[write to console]: Adding cell-level metadata
+
+R[write to console]: Read Seurat object:
+

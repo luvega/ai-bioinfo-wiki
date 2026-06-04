@@ -1,0 +1,9 @@
+"Center = rng.choice(['A', 'B', 'C'],"
+"N,"
+replace=True)
+"Time = rng.choice(['Morn.', 'After.', 'Even.'],"
+"N,"
+replace=True)
+"D = pd.DataFrame({'Operators': Operators,"
+"'Center': pd.Categorical(Center),"
+'Time': pd.Categorical(Time)})

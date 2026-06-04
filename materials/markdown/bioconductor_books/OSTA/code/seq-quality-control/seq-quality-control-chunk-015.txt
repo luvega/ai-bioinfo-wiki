@@ -1,0 +1,33 @@
+##  DataFrame with 6 rows and 14 columns
+##                             barcode_id     sample_id in_tissue array_row
+##                            <character>   <character> <integer> <integer>
+##  AAACAAGTATCTCCCA-1 AAACAAGTATCTCCCA-1 sample_151673         1        50
+##  AAACAATCTACTAGCA-1 AAACAATCTACTAGCA-1 sample_151673         1         3
+##  AAACACCAATAACTGC-1 AAACACCAATAACTGC-1 sample_151673         1        59
+##  AAACAGAGCGACTCCT-1 AAACAGAGCGACTCCT-1 sample_151673         1        14
+##  AAACAGCTTTCAGAAG-1 AAACAGCTTTCAGAAG-1 sample_151673         1        43
+##  AAACAGGGTCTATATT-1 AAACAGGGTCTATATT-1 sample_151673         1        47
+##                     array_col ground_truth   reference cell_count       sum
+##                     <integer>  <character> <character>  <integer> <numeric>
+##  AAACAAGTATCTCCCA-1       102       Layer3      Layer3          6      8458
+##  AAACAATCTACTAGCA-1        43       Layer1      Layer1         16      1667
+##  AAACACCAATAACTGC-1        19           WM          WM          5      3769
+##  AAACAGAGCGACTCCT-1        94       Layer3      Layer3          2      5433
+##  AAACAGCTTTCAGAAG-1         9       Layer5      Layer5          4      4278
+##  AAACAGGGTCTATATT-1        13       Layer6      Layer6          6      4004
+##                      detected subsets_mito_sum subsets_mito_detected
+##                     <numeric>        <numeric>             <numeric>
+##  AAACAAGTATCTCCCA-1      3586             1407                    13
+##  AAACAATCTACTAGCA-1      1150              204                    11
+##  AAACACCAATAACTGC-1      1960              430                    13
+##  AAACAGAGCGACTCCT-1      2424             1316                    13
+##  AAACAGCTTTCAGAAG-1      2264              651                    12
+##  AAACAGGGTCTATATT-1      2178              621                    13
+##                     subsets_mito_percent     total
+##                                <numeric> <numeric>
+##  AAACAAGTATCTCCCA-1              16.6351      8458
+##  AAACAATCTACTAGCA-1              12.2376      1667
+##  AAACACCAATAACTGC-1              11.4089      3769
+##  AAACAGAGCGACTCCT-1              24.2223      5433
+##  AAACAGCTTTCAGAAG-1              15.2174      4278
+##  AAACAGGGTCTATATT-1              15.5095      4004

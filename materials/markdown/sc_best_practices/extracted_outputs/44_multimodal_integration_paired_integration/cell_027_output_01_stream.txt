@@ -1,0 +1,4 @@
+An object of class Seurat 
+136 features across 16294 samples within 1 assay 
+Active assay: ADT (136 features, 0 variable features)
+ 1 dimensional reduction calculated: harmony_pca

@@ -1,0 +1,8 @@
+<xarray.DataArray 'image' (c: 1, y: 1608, x: 1608)> Size: 5MB
+dask.array<from-zarr, shape=(1, 1608, 1608), dtype=uint16, chunksize=(1, 256, 256), chunktype=numpy.ndarray>
+Coordinates:
+  * c        (c) int64 8B 0
+  * y        (y) float64 13kB 2.0 6.0 10.0 14.0 ... 6.422e+03 6.426e+03 6.43e+03
+  * x        (x) float64 13kB 2.0 6.0 10.0 14.0 ... 6.422e+03 6.426e+03 6.43e+03
+Attributes:
+    transform:  {'global': Sequence \n    Scale (y, x)\n        [4. 4.]\n    ...

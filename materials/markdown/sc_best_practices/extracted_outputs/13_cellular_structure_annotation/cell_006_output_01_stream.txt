@@ -1,0 +1,5 @@
+[92m→[0m doing nothing, already connected lamindb: theislab/sc-best-practices
+[92m→[0m connected lamindb: theislab/sc-best-practices
+[92m→[0m found notebook annotation.ipynb, making new version
+[92m→[0m created Transform('BnpvfJLWjHuE0002', key='annotation.ipynb'), started new Run('TY8Ofee9hXmFcyrG') at 2026-03-20 19:44:21 UTC
+[92m→[0m notebook imports: celltypist==1.6.3 lamindb-core==2.3.1 matplotlib==3.10.8 numba==0.64.0 numpy==2.4.3 pandas==2.2.3 scArches==0.6.1 scanpy==1.11.1 scipy==1.16.3 seaborn==0.13.2

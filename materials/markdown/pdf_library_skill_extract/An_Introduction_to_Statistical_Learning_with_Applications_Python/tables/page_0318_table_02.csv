@@ -1,0 +1,13 @@
+"from pygam import (s as s_gam,"
+"l as l_gam,"
+"f as f_gam,"
+"LinearGAM,"
+LogisticGAM)
+""
+"from ISLP.transforms import (BSpline,"
+NaturalSpline)
+"from ISLP.models import bs, ns"
+"from ISLP.pygam import (approx_lam,"
+"degrees_of_freedom,"
+"plot as plot_gam,"
+anova as anova_gam)

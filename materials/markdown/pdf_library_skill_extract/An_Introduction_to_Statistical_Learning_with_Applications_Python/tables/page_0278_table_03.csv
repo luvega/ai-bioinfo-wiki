@@ -1,0 +1,3 @@
+"full_path.fit(Hitters, Y)"
+Yhat_in = full_path.predict(Hitters)
+Yhat_in.shape

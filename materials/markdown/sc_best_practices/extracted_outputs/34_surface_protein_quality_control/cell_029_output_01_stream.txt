@@ -1,0 +1,12 @@
+s1d1: outliers 206
+s1d2: outliers 209
+s1d3: outliers 227
+s2d1: outliers 340
+s2d4: outliers 189
+s2d5: outliers 150
+s3d1: outliers 339
+s3d6: outliers 492
+s3d7: outliers 338
+s4d1: outliers 245
+s4d8: outliers 184
+s4d9: outliers 499

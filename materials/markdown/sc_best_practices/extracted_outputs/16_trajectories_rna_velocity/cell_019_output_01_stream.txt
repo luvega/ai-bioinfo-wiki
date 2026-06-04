@@ -1,0 +1,2 @@
+[92m→[0m loaded Transform('LNBj60hdG1tm0000', key='rna_velocity.ipynb'), re-started Run('epuf25HOG55kJ58q') at 2026-02-16 22:06:34 UTC
+[92m→[0m notebook imports: lamindb==2.1.2 scanpy==1.11.5 scvelo==0.3.3

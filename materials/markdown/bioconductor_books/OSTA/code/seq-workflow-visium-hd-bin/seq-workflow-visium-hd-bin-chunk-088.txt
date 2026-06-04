@@ -1,0 +1,9 @@
+##  # A tibble: 6 × 3
+##    CT      target         n
+##    <chr>   <chr>      <int>
+##  1 Myeloid Tumor          0
+##  2 Myeloid Fibroblast    43
+##  3 B cells Tumor          0
+##  4 B cells Fibroblast    50
+##  5 B cells Tumor          0
+##  6 B cells Fibroblast    50

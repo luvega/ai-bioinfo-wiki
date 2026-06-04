@@ -1,0 +1,3 @@
+"strategy = Stepwise.first_peak(design,"
+"direction='forward',"
+max_terms=len(design.terms))

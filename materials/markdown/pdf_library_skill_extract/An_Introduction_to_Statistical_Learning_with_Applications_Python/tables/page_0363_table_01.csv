@@ -1,0 +1,2 @@
+"resid_dev = np.sum(log_loss(High, clf.predict_proba(X)))"
+resid_dev

@@ -1,0 +1,73 @@
+                           is_cell high_confidence multi_chain  \
+cell_id                                                          
+AAACCTGAGAACTCGG-MH9143420    True            True       False   
+AAACCTGAGAATAGGG-MH8919227    True            True       False   
+AAACCTGAGAATGTGT-MH8919326    True            True       False   
+AAACCTGAGAATGTGT-MH9143424    True            True       False   
+AAACCTGAGACACTAA-MH9143423    True            True       False   
+
+                                                                 extra_chains  \
+cell_id                                                                         
+AAACCTGAGAACTCGG-MH9143420                                                 []   
+AAACCTGAGAATAGGG-MH8919227                                                 []   
+AAACCTGAGAATGTGT-MH8919326  [{"c_call": "IGLC1", "consensus_count": 748, "...   
+AAACCTGAGAATGTGT-MH9143424                                                 []   
+AAACCTGAGACACTAA-MH9143423                                                 []   
+
+                           IR_VJ_1_c_call IR_VJ_2_c_call IR_VDJ_1_c_call  \
+cell_id                                                                    
+AAACCTGAGAACTCGG-MH9143420           IGKC            NaN            IGHM   
+AAACCTGAGAATAGGG-MH8919227           IGKC            NaN           IGHA1   
+AAACCTGAGAATGTGT-MH8919326           IGKC            NaN            IGHM   
+AAACCTGAGAATGTGT-MH9143424          IGLC2            NaN             NaN   
+AAACCTGAGACACTAA-MH9143423           IGKC            NaN           IGHG1   
+
+                           IR_VDJ_2_c_call  IR_VJ_1_consensus_count  \
+cell_id                                                               
+AAACCTGAGAACTCGG-MH9143420             NaN                   6982.0   
+AAACCTGAGAATAGGG-MH8919227             NaN                    626.0   
+AAACCTGAGAATGTGT-MH8919326             NaN                   1028.0   
+AAACCTGAGAATGTGT-MH9143424             NaN                    736.0   
+AAACCTGAGACACTAA-MH9143423             NaN                     66.0   
+
+                            IR_VJ_2_consensus_count  ...  IR_VJ_1_productive  \
+cell_id                                              ...                       
+AAACCTGAGAACTCGG-MH9143420                      NaN  ...                True   
+AAACCTGAGAATAGGG-MH8919227                      NaN  ...                True   
+AAACCTGAGAATGTGT-MH8919326                      NaN  ...                True   
+AAACCTGAGAATGTGT-MH9143424                      NaN  ...                True   
+AAACCTGAGACACTAA-MH9143423                      NaN  ...                True   
+
+                            IR_VJ_2_productive IR_VDJ_1_productive  \
+cell_id                                                              
+AAACCTGAGAACTCGG-MH9143420                None                True   
+AAACCTGAGAATAGGG-MH8919227                None                True   
+AAACCTGAGAATGTGT-MH8919326                None                True   
+AAACCTGAGAATGTGT-MH9143424                None                None   
+AAACCTGAGACACTAA-MH9143423                None                True   
+
+                           IR_VDJ_2_productive IR_VJ_1_v_call IR_VJ_2_v_call  \
+cell_id                                                                        
+AAACCTGAGAACTCGG-MH9143420                None       IGKV3-11            NaN   
+AAACCTGAGAATAGGG-MH8919227                None       IGKV3-15            NaN   
+AAACCTGAGAATGTGT-MH8919326                None       IGKV1-33            NaN   
+AAACCTGAGAATGTGT-MH9143424                None       IGLV3-21            NaN   
+AAACCTGAGACACTAA-MH9143423                None       IGKV3-20            NaN   
+
+                            IR_VDJ_1_v_call  IR_VDJ_2_v_call  has_ir  \
+cell_id                                                                
+AAACCTGAGAACTCGG-MH9143420         IGHV3-23              NaN    True   
+AAACCTGAGAATAGGG-MH8919227         IGHV1-24              NaN    True   
+AAACCTGAGAATGTGT-MH8919326          IGHV1-2              NaN    True   
+AAACCTGAGAATGTGT-MH9143424              NaN              NaN    True   
+AAACCTGAGACACTAA-MH9143423         IGHV3-23              NaN    True   
+
+                            patient_id  
+cell_id                                 
+AAACCTGAGAACTCGG-MH9143420   COVID-011  
+AAACCTGAGAATAGGG-MH8919227   COVID-075  
+AAACCTGAGAATGTGT-MH8919326   COVID-003  
+AAACCTGAGAATGTGT-MH9143424   COVID-039  
+AAACCTGAGACACTAA-MH9143423   COVID-036  
+
+[5 rows x 46 columns]

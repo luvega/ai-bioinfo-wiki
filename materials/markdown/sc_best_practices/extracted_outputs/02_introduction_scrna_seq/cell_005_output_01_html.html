@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 15px;
+            width: 400px;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #3965a3;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>What is the primary purpose of scRNA-seq?</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq1" value="To sequence the genome of a single cell"
+            onclick="checkAnswer(this, 'To measure gene expression in individual cells', '', 'feedback-q1')"> To sequence the genome of a single cell
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq1" value="To measure gene expression in individual cells"
+            onclick="checkAnswer(this, 'To measure gene expression in individual cells', '', 'feedback-q1')"> To measure gene expression in individual cells
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq1" value="To capture DNA methylation patterns"
+            onclick="checkAnswer(this, 'To measure gene expression in individual cells', '', 'feedback-q1')"> To capture DNA methylation patterns
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq1" value="To determine cell surface markers"
+            onclick="checkAnswer(this, 'To measure gene expression in individual cells', '', 'feedback-q1')"> To determine cell surface markers
+        </label><br>
+        
+        <p id="feedback-q1" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q1" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: To measure gene expression in individual cells
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

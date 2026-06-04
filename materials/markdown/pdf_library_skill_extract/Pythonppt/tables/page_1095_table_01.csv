@@ -1,0 +1,10 @@
+函数,描述
+os.path.exists(path),"判断path对应文件或目录是否存在，返回True或False
+>>>os.path.exists(""D://PYE//file.txt"")
+False"
+os.path.isfile(path),"判断path所对应是否为已存在的文件，返回True或False
+>>>os.path.isfile(""D://PYE//file.txt"")
+True"
+os.path.isdir(path),"判断path所对应是否为已存在的目录，返回True或False
+>>>os.path.isdir(""D://PYE//file.txt"")
+False"

@@ -1,0 +1,5 @@
+"K=1: # predicted to rent: 62,# who did rent 9, accuracy 14.5%"
+"K=2: # predicted to rent: 6,# who did rent 1, accuracy 16.7%"
+"K=3: # predicted to rent: 20,# who did rent 3, accuracy 15.0%"
+"K=4: # predicted to rent: 3,# who did rent 0, accuracy 0.0%"
+"K=5: # predicted to rent: 7,# who did rent 1, accuracy 14.3%"

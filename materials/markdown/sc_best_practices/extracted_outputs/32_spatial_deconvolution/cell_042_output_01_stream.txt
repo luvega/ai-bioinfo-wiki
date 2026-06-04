@@ -1,0 +1,2 @@
+Sampling local variables, batch:   0%|                                        | 0/17 [00:01<?, ?it/s]
+Sampling global variables, sample: 100%|██████████████████████████| 999/999 [00:09<00:00, 103.17it/s]

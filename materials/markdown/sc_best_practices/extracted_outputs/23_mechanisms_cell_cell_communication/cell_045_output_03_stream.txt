@@ -1,0 +1,4 @@
+0.46 of entities in the resource are missing from the data.
+Generating ligand-receptor stats for 12301 samples and 15474 features
+Assuming that counts were `natural` log-normalized!
+Running CellPhoneDB

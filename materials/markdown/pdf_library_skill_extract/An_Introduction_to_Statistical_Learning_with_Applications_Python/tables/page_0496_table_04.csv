@@ -1,0 +1,6 @@
+"fig, ax = subplots(figsize=(8,8))"
+by_sex = {}
+"for sex, df in BrainCancer.groupby('sex'):"
+by_sex[sex] = df
+"km_sex = km.fit(df['time'], df['status'])"
+"km_sex.plot(label='Sex=%s' % sex, ax=ax)"

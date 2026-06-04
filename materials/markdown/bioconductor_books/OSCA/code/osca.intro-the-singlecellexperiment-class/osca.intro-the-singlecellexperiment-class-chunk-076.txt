@@ -1,0 +1,27 @@
+## DataFrame with 93206 rows and 6 columns
+##                               gene_id gene_version      gene_name
+##                           <character>  <character>    <character>
+## ENSMUSG00000102693 ENSMUSG00000102693            1  4933401J01Rik
+## ENSMUSG00000064842 ENSMUSG00000064842            1        Gm26206
+## ENSMUSG00000051951 ENSMUSG00000051951            5           Xkr4
+## ENSMUSG00000102851 ENSMUSG00000102851            1        Gm18956
+## ENSMUSG00000103377 ENSMUSG00000103377            1        Gm37180
+## ...                               ...          ...            ...
+## ENSMUSG00000094431 ENSMUSG00000094431            1 CAAA01205117.1
+## ENSMUSG00000094621 ENSMUSG00000094621            1 CAAA01098150.1
+## ENSMUSG00000098647 ENSMUSG00000098647            1 CAAA01064564.1
+## ENSMUSG00000096730 ENSMUSG00000096730            6       Vmn2r122
+## ENSMUSG00000095742 ENSMUSG00000095742            1 CAAA01147332.1
+##                       gene_source         gene_biotype havana_gene_version
+##                       <character>          <character>         <character>
+## ENSMUSG00000102693         havana                  TEC                   1
+## ENSMUSG00000064842        ensembl                snRNA                  NA
+## ENSMUSG00000051951 ensembl_havana       protein_coding                   2
+## ENSMUSG00000102851         havana processed_pseudogene                   1
+## ENSMUSG00000103377         havana                  TEC                   1
+## ...                           ...                  ...                 ...
+## ENSMUSG00000094431        ensembl                miRNA                  NA
+## ENSMUSG00000094621        ensembl                miRNA                  NA
+## ENSMUSG00000098647        ensembl                miRNA                  NA
+## ENSMUSG00000096730        ensembl       protein_coding                  NA
+## ENSMUSG00000095742        ensembl       protein_coding                  NA

@@ -1,0 +1,8 @@
+函数或方法,描述
+ls.append(x),在列表ls最后增加一个元素x
+ls.clear(),删除列表ls中所有元素
+ls.copy(),生成一个新列表，赋值ls中所有元素
+"ls.insert(i,x)",在列表ls的第i位置增加元素x
+ls.pop(i),将列表ls中第i位置元素取出并删除该元素
+ls.remove(x),将列表ls中出现的第一个元素x删除
+ls.reverse(),将列表ls中的元素反转

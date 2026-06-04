@@ -1,0 +1,11 @@
+Shorthand for expressing test cases
+""
+"When writing tests for a function, the standard format is to write the function name and
+its input along with the desired outcome. For example, the call"
+""
+">>> longest_word(['a', 'bb', 'ccc'])"
+'ccc'
+means that if we call the function with the input list
+"longest_word ['a', 'bb',
+, then the value returned from the function should be .
+'ccc'] 'ccc'"

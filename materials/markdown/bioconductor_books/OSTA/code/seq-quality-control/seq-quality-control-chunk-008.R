@@ -1,0 +1,9 @@
+rowData
+(
+spe
+)
+$
+gene_name
+[
+is_mito
+]

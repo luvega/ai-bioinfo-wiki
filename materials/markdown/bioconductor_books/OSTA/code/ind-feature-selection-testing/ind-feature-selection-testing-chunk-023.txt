@@ -1,0 +1,21 @@
+##  DataFrame with 3 rows and 18 columns
+##                          gene_id   gene_name    feature_type subsets_mito
+##                      <character> <character>     <character>    <logical>
+##  ENSG00000171603 ENSG00000171603      CLSTN1 Gene Expression        FALSE
+##  ENSG00000162545 ENSG00000162545     CAMK2N1 Gene Expression        FALSE
+##  ENSG00000117632 ENSG00000117632       STMN1 Gene Expression        FALSE
+##                   sigma.sq    tau.sq       phi    loglik   runtime      mean
+##                  <numeric> <numeric> <numeric> <numeric> <numeric> <numeric>
+##  ENSG00000171603  0.174761  0.539773   5.41081  -121.843     0.019   2.03224
+##  ENSG00000162545  0.269047  0.372045   3.08577  -108.057     0.018   2.71693
+##  ENSG00000117632  0.239898  0.514311   6.13963  -123.305     0.019   2.64106
+##                        var     spcov   prop_sv loglik_lm   LR_stat      rank
+##                  <numeric> <numeric> <numeric> <numeric> <numeric> <numeric>
+##  ENSG00000171603  0.709124  0.205706  0.244580  -124.205   4.72492        68
+##  ENSG00000162545  0.573078  0.190913  0.419670  -113.555  10.99542        40
+##  ENSG00000117632  0.742838  0.185453  0.318079  -126.527   6.44437        56
+##                        pval      padj
+##                   <numeric> <numeric>
+##  ENSG00000171603 0.09418802 0.2186956
+##  ENSG00000162545 0.00409613 0.0163845
+##  ENSG00000117632 0.03986790 0.1139083

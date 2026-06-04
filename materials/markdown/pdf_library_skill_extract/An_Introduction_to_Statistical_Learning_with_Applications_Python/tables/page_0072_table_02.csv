@@ -1,0 +1,2 @@
+"fig, ax = subplots(figsize=(8, 8))"
+"Auto.boxplot('mpg', by='cylinders', ax=ax);"

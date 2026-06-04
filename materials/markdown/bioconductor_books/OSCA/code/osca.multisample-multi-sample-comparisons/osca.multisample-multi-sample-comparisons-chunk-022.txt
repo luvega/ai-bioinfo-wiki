@@ -1,0 +1,21 @@
+##         group lib.size norm.factors batch cell barcode sample stage tomato pool
+## Sample1     1  4607113       1.0684     5 <NA>    <NA>      5  E8.5   TRUE    3
+## Sample2     1  1064981       1.0487     6 <NA>    <NA>      6  E8.5  FALSE    3
+## Sample3     1  2494039       0.9582     7 <NA>    <NA>      7  E8.5   TRUE    4
+## Sample4     1  1028679       0.9774     8 <NA>    <NA>      8  E8.5  FALSE    4
+## Sample5     1  4290259       0.9707     9 <NA>    <NA>      9  E8.5   TRUE    5
+## Sample6     1  1950858       0.9817    10 <NA>    <NA>     10  E8.5  FALSE    5
+##         stage.mapped celltype.mapped closest.cell doub.density sizeFactor label
+## Sample1         <NA>      Mesenchyme         <NA>           NA         NA  <NA>
+## Sample2         <NA>      Mesenchyme         <NA>           NA         NA  <NA>
+## Sample3         <NA>      Mesenchyme         <NA>           NA         NA  <NA>
+## Sample4         <NA>      Mesenchyme         <NA>           NA         NA  <NA>
+## Sample5         <NA>      Mesenchyme         <NA>           NA         NA  <NA>
+## Sample6         <NA>      Mesenchyme         <NA>           NA         NA  <NA>
+##         celltype.mapped.1 sample.1 ncells
+## Sample1        Mesenchyme        5    286
+## Sample2        Mesenchyme        6     55
+## Sample3        Mesenchyme        7    243
+## Sample4        Mesenchyme        8    134
+## Sample5        Mesenchyme        9    478
+## Sample6        Mesenchyme       10    299

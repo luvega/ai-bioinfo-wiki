@@ -1,0 +1,3 @@
+Wage = load_data('Wage')
+y = Wage['wage']
+age = Wage['age']

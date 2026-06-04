@@ -1,0 +1,2 @@
+Carseats = load_data('Carseats')
+Carseats.columns

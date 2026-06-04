@@ -1,0 +1,23 @@
+Scaling features for provided objects
+Finding all pairwise anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 7195 anchors
+Filtering anchors
+	Retained 5146 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 4619 anchors
+Filtering anchors
+	Retained 3588 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 5575 anchors
+Filtering anchors
+	Retained 3942 anchors

@@ -1,0 +1,1 @@
+NaNs encountered, dropping rows with NaNs

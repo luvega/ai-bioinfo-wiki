@@ -1,0 +1,4 @@
+for col in D.columns:
+"template = 'Column ""{0}"" has {1:.2%} missing values'"
+"print(template.format(col,"
+np.isnan(D[col]).mean()))

@@ -1,0 +1,26 @@
+Neutrophils_1             22714
+Neutrophils_2             18675
+Neutrophils_3              9986
+CD4_T_cells_1              6278
+CD14_Monocytes_1           5362
+Neutrophils_4              4710
+CD8_T_cells                3255
+Megakaryocytes             3180
+NK_cells                   2916
+B_cells_1                  2561
+CD4_T_cells_2              1917
+Mixed_cells                1727
+Immature Neutrophils_1     1317
+CD16_Monocytes              983
+Immature Neutrophils_2      981
+CD14_Monocytes_3            632
+Eosinophils                 579
+CD14_Monocytes_2            556
+CD4_T_cells_3               409
+Plasmablast                 390
+Prol. cells                 247
+mDC                         235
+B_cells_2                   138
+pDC                          86
+CD34+ GATA2+ cells           49
+Name: cluster_labels_res.0.8, dtype: int64

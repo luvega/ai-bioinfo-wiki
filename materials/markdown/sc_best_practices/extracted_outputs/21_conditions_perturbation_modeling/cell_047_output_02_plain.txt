@@ -1,0 +1,1 @@
+[1;33mSet smaller span value in the case of a `segmentation fault` error.[0m

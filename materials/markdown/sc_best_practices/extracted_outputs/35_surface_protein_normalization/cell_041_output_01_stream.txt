@@ -1,0 +1,4 @@
+[94m•[0m please hit CTRL + s to save the notebook in your editor . [92m✓[0m
+[92m→[0m finished Run('Ygjmj9z9STgZ7fVF') after 15m at 2026-04-10 17:01:43 UTC
+[92m→[0m go to: https://lamin.ai/theislab/sc-best-practices/transform/Z95qTilYUzGh0002
+[92m→[0m to update your notebook from the CLI, run: lamin save /groups/nils/members/javier/single-cell-best-practices/jupyter-book/surface_protein/normalization.ipynb

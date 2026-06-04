@@ -1,0 +1,7 @@
+参数,描述
+font_path,"指定字体文件的路径，默认None
+>>>w=wordcloud.WordCloud(font_path=""msyh.ttc"")"
+max_words,"指定词云显示的最大单词数量，默认200
+>>>w=wordcloud.WordCloud(max_words=20)"
+stop_words,"指定词云的排除词列表，即不显示的单词列表
+>>>w=wordcloud.WordCloud(stop_words={""Python""})"

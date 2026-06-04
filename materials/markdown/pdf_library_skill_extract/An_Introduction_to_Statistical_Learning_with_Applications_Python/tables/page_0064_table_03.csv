@@ -1,0 +1,4 @@
+"keep_cols = np.zeros(A.shape[1], bool)"
+"keep_cols[[0, 2, 3]] = True"
+"idx_bool = np.ix_(keep_rows, keep_cols)"
+A[idx_bool]

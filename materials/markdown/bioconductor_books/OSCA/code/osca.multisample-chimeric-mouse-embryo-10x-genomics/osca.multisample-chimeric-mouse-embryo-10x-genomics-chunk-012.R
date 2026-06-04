@@ -1,0 +1,9 @@
+table
+(
+Cluster=
+colLabels
+(merged), 
+Sample=
+merged
+$
+sample)

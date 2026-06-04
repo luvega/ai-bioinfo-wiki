@@ -1,0 +1,3 @@
+Total number of cells: 16934
+Number of cells after filtering on total_fragment_counts: 15386
+Number of cells after filtering on n_features_per_cell: 15377

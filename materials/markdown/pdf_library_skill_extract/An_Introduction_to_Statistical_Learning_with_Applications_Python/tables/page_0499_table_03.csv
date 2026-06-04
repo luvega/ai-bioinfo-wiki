@@ -1,0 +1,2 @@
+predicted_survival = fit_all.predict_survival_function(modal_X)
+predicted_survival

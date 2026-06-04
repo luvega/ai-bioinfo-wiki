@@ -1,0 +1,2 @@
+"hit_module = SimpleModule.regression(hit_model,"
+metrics={'mae':MeanAbsoluteError()})

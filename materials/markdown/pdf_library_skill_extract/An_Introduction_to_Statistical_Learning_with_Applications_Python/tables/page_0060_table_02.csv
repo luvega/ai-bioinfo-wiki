@@ -1,0 +1,2 @@
+"fig.savefig(""Figure.png"", dpi=400)"
+"fig.savefig(""Figure.pdf"", dpi=200);"

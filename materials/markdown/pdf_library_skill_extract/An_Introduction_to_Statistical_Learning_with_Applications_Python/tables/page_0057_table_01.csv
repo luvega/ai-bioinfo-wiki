@@ -1,0 +1,4 @@
+rng = np.random.default_rng(1303)
+"print(rng.normal(scale=5, size=2))"
+rng2 = np.random.default_rng(1303)
+"print(rng2.normal(scale=5, size=2))"

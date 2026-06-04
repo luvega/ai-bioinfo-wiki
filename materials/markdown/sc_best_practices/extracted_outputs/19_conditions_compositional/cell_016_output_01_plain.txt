@@ -1,0 +1,3 @@
+     A    B    C Disease status
+1  193  201  206        Healthy
+2  296  146  158       Diseased

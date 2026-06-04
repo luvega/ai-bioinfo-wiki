@@ -1,0 +1,9 @@
+## DataFrame with 6 rows and 4 columns
+##        self.average other.average self.detected other.detected
+##           <numeric>     <numeric>     <numeric>      <numeric>
+## RPSA        1.04854       2.74065      0.507692       0.890276
+## RPL13A      3.99036       4.75633      0.992308       0.952263
+## EEF1A1      4.20631       5.11958      0.992308       0.953528
+## RPS18       3.75229       4.64261      0.984615       0.945780
+## RPS27       4.71792       5.35539      0.992308       0.962433
+## RPL3        3.01064       4.16446      0.930769       0.946790

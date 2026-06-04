@@ -1,0 +1,20 @@
+{
+  "order": 29,
+  "part": "Spatial omics",
+  "toc_file": "spatial/neighborhood",
+  "title": "Neighborhood analysis",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/spatial/neighborhood.ipynb",
+  "environment": "spatial",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 10,
+  "dataset_reference_count": 1,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/29_spatial_neighborhood",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/29_spatial_neighborhood/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/29_spatial_neighborhood/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/29_spatial_neighborhood/code_index.md"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "order": 0,
+  "part": "Preamble",
+  "toc_file": "preamble",
+  "title": "Single-cell best practices",
+  "source_type": "md",
+  "upstream_path": "jupyter-book/preamble.md",
+  "environment": "_config",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 0,
+  "dataset_reference_count": 11,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/00_preamble",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/00_preamble/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/00_preamble/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/00_preamble/code_index.md"
+  }
+}

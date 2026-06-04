@@ -1,0 +1,1 @@
+Added `interval` annotation for features from resources/cellranger_out/filtered_feature_bc_matrix.h5

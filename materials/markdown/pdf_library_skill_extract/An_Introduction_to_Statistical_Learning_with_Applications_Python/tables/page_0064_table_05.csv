@@ -1,0 +1,2 @@
+"idx_mixed = np.ix_([1,3], keep_cols)"
+A[idx_mixed]

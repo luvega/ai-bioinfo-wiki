@@ -1,0 +1,8 @@
+"boost_boston = GBR(n_estimators=5000,"
+"learning_rate=0.2,"
+"max_depth=3,"
+random_state=0)
+"boost_boston.fit(X_train,"
+y_train)
+y_hat_boost = boost_boston.predict(X_test);
+np.mean((y_test - y_hat_boost)**2)

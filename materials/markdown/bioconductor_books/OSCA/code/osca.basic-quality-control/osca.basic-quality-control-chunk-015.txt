@@ -1,0 +1,4 @@
+## DataFrame with 1 row and 5 columns
+##     LibSize    NExprs SpikeProp  MitoProp     Total
+##   <integer> <integer> <integer> <integer> <integer>
+## 1         3         0        19        14        33

@@ -1,0 +1,18 @@
+{
+  "order": 22,
+  "part": "Modeling mechanisms",
+  "toc_file": "mechanisms/gene_regulatory_networks",
+  "title": "Gene regulatory networks",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/mechanisms/gene_regulatory_networks.ipynb",
+  "environment": "cellcell",
+  "week_mapping": [],
+  "code_cell_count": 39,
+  "dataset_reference_count": 13,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/22_mechanisms_gene_regulatory_networks",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/22_mechanisms_gene_regulatory_networks/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/22_mechanisms_gene_regulatory_networks/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/22_mechanisms_gene_regulatory_networks/code_index.md"
+  }
+}

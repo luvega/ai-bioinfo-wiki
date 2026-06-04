@@ -1,0 +1,4 @@
+Carseats = load_data('Carseats')
+"High = np.where(Carseats.Sales > 8,"
+"""Yes"","
+"""No"")"

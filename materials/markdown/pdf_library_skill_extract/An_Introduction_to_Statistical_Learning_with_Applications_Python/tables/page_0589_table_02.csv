@@ -1,0 +1,9 @@
+from scipy.stats import \
+"(ttest_1samp,"
+"ttest_rel,"
+"ttest_ind,"
+t as t_dbn)
+from statsmodels.stats.multicomp import \
+pairwise_tukeyhsd
+from statsmodels.stats.multitest import \
+multipletests as mult_test

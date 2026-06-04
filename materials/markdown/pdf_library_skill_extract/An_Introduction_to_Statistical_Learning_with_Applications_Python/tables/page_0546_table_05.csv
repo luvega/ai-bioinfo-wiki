@@ -1,0 +1,4 @@
+"def low_rank(X, M=1):"
+"U, D, V = np.linalg.svd(X)"
+"L = U[:,:M] * D[None,:M]"
+return L.dot(V[:M])

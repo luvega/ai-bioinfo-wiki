@@ -1,0 +1,6 @@
+"To evaluate generative AI’s capabilities in detecting sentiments on a broader scale, we"
+"will utilize the ChatGPT 4 API. For details on API usage, see chapter 1. It’s also import-"
+ant to note that accessing the API might require a subscription or a specific pricing
+plan. Your goal here is to have ChatGPT assess the sentiment of the first 500 non-
+"empty reviews from the dataset, and compare these results with those from a basic sen-"
+"timent analysis using keywords, as conducted in section 5.5.4 (listing 5.6)."

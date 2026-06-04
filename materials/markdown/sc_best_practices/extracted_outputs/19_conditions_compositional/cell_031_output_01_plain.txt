@@ -1,0 +1,32 @@
+                       Final Parameter  HDI 3%  HDI 97%     SD  \
+Cell Type                                                        
+Endocrine                       0.0000   0.000    0.000  0.000   
+Enterocyte                      1.5458   0.985    2.071  0.283   
+Enterocyte.Progenitor           0.0000  -0.475    0.566  0.143   
+Goblet                          0.0000  -0.345    1.013  0.290   
+Stem                            0.0000  -0.742    0.297  0.173   
+TA                              0.0000  -0.876    0.331  0.211   
+TA.Early                        0.0000  -0.338    0.615  0.151   
+Tuft                            0.0000  -1.221    0.548  0.342   
+
+                       Inclusion probability  Expected Sample  \
+Cell Type                                                       
+Endocrine                             0.0000        32.598994   
+Enterocyte                            0.9996       382.634978   
+Enterocyte.Progenitor                 0.2817       126.126003   
+Goblet                                0.4354        52.735108   
+Stem                                  0.3092       135.406509   
+TA                                    0.3358        78.986854   
+TA.Early                              0.3033       152.670412   
+Tuft                                  0.4098        23.041143   
+
+                       log2-fold change  
+Cell Type                                
+Endocrine                     -0.526812  
+Enterocyte                     1.703306  
+Enterocyte.Progenitor         -0.526812  
+Goblet                        -0.526812  
+Stem                          -0.526812  
+TA                            -0.526812  
+TA.Early                      -0.526812  
+Tuft                          -0.526812  

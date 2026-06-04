@@ -1,0 +1,20 @@
+                       barcode    v_gene    d_gene c_gene j_gene productive  \
+3   AAACCTGTCTACCAGA-MH9143270  IGLV1-51      None  IGLC3  IGLJ3      False   
+13  AAAGCAAGTCGAAAGC-MH9143270  IGHV5-51  IGHD2-15   IGHD  IGHJ4      False   
+23  AACGTTGAGCTGCGAA-MH9143270  IGHV3-30      None   IGHM  IGHJ4      False   
+27  AACTCAGTCAAAGTAG-MH9143270  IGHV3-23  IGHD3-16   IGHD  IGHJ4      False   
+30  AACTCCCAGGTGCACA-MH9143270  IGKV6-21      None   IGKC  IGKJ3      False   
+
+    full_length                          cdr3  \
+3          True                 CGTWDSSLSAWVF   
+13         True                          None   
+23         True           CESGRATITMIVVTDLDYW   
+27         True  CAKAWIGLDSEIYYDYIWGSYRIDFDYW   
+30         True                          None   
+
+                                              cdr3_nt  
+3             TGCGGAACATGGGATAGCAGCCTGAGTGCTTGGGTGTTC  
+13                                               None  
+23  TGCGAAAGCGGGCGGGCTACGATTACTATGATAGTAGTGACTGACC...  
+27  TGTGCGAAAGCTTGGATCGGACTCGACTCCGAGATTTATTATGATT...  
+30                                               None  

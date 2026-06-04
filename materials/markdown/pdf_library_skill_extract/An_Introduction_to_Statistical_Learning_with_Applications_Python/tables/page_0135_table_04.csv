@@ -1,0 +1,7 @@
+allvars = list(Carseats.columns.drop('Sales'))
+y = Carseats['Sales']
+"final = allvars + [('Income', 'Advertising'),"
+"('Price', 'Age')]"
+X = MS(final).fit_transform(Carseats)
+"model = sm.OLS(y, X)"
+summarize(model.fit())

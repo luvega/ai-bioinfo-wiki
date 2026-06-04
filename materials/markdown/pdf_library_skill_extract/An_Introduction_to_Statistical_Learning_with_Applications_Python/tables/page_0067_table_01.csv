@@ -1,0 +1,2 @@
+idx_80 = Auto['year'] > 80
+Auto[idx_80]

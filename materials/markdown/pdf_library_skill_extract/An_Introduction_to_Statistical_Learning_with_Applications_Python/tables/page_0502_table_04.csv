@@ -1,0 +1,7 @@
+"fig, ax = subplots(figsize=(8,8))"
+by_center = {}
+"for center, df in D.groupby('Center'):"
+by_center[center] = df
+"km_center = km.fit(df['Wait time'], df['Failed'])"
+"km_center.plot(label='Center=%s' % center, ax=ax)"
+"ax.set_title(""Probability of Still Being on Hold"")"

@@ -1,0 +1,3 @@
+##  Detected a SingleCellExperiment as the reference dataset, consider setting
+##  'de.method = "t"' or "wilcox" in trainSingleR(). If you know better, this hint
+##  can be disabled with 'hint.sce=FALSE'.

@@ -1,0 +1,7 @@
+"gam_opt = gam.gridsearch(X_age, y)"
+"ax.plot(age_grid,"
+"gam_opt.predict(age_grid),"
+"label='Grid search',"
+linewidth=4)
+ax.legend()
+fig

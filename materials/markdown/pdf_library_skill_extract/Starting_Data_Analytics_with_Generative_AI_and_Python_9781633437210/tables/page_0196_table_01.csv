@@ -1,0 +1,12 @@
+Feature,n-gram analysis,Co-occurrence analysis
+,"Analyzes sequences of n items (words or
+tokens) from text
+Simple to implement and understand
+Effective for language modeling and
+predictions
+Context limited to fixed n words
+May miss longer-term dependencies
+between words
+Predictive text and autocomplete features
+Speech recognition and machine
+translation",

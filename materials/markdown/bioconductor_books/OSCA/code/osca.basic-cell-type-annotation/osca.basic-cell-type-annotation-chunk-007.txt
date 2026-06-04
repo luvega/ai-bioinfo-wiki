@@ -1,0 +1,5 @@
+## 
+##      B-cells CD4+ T-cells CD8+ T-cells           DC  Eosinophils Erythrocytes 
+##          566          781         1284            1            1            7 
+##          HSC    Monocytes     NK cells 
+##           15         1173          252

@@ -1,0 +1,8 @@
+"ax.errorbar(np.arange(n_steps),"
+"cv_mse.mean(1),"
+"cv_mse.std(1) / np.sqrt(K),"
+"label='Cross-validated',"
+c='r') # color red
+"ax.set_ylim([50000,250000])"
+ax.legend()
+mse_fig

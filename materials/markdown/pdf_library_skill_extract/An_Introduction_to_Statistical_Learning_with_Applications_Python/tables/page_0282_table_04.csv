@@ -1,0 +1,3 @@
+"path_fig, ax = subplots(figsize=(8,8))"
+"soln_path.plot(ax=ax, legend=False)"
+"ax.set_xlabel('$-\log(\lambda)$', fontsize=20)"

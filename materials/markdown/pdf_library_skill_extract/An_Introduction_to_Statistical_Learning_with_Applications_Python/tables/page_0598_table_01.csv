@@ -1,0 +1,11 @@
+"T_vals[j] = ttest_ind(D2[col],"
+"D4[col],"
+equal_var=True).statistic
+"D_ = np.hstack([D2[col], D4[col]])"
+D_null = D_.copy()
+for b in range(B):
+rng.shuffle(D_null)
+"ttest_ = ttest_ind(D_null[:n_],"
+"D_null[n_:],"
+equal_var=True)
+"Tnull_vals[j,b] = ttest_.statistic"

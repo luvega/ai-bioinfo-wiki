@@ -30,6 +30,7 @@ const catalogNext = coursebookChapters.find((item) => item.week === chapter.week
       <p>{chapter.summary}</p>
       <ul class="tag-list">
         {chapter.coursebookTopics.map((topic) => <li>{topic}</li>)}
+        {chapter.badges?.map((badge) => <li>{badge}</li>)}
       </ul>
     </div>
   </section>

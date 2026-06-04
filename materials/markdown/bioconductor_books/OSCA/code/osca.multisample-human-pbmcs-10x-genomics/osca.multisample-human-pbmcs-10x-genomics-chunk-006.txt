@@ -1,0 +1,11 @@
+## $pbmc3k
+##    Mode   FALSE    TRUE 
+## logical    2609      91 
+## 
+## $pbmc4k
+##    Mode   FALSE    TRUE 
+## logical    4182     158 
+## 
+## $pbmc8k
+##    Mode   FALSE    TRUE 
+## logical    8157     224

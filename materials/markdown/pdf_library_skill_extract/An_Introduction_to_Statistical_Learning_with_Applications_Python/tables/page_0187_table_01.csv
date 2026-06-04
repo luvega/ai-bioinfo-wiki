@@ -1,0 +1,12 @@
+"model = MS(['Lag1', 'Lag2']).fit(Smarket)"
+X = model.transform(Smarket)
+"X_train, X_test = X.loc[train], X.loc[ train]"
+"∼
+glm_train = sm.GLM(y_train,"
+"X_train,"
+family=sm.families.Binomial())
+results = glm_train.fit()
+probs = results.predict(exog=X_test)
+labels = np.array(['Down']*252)
+labels[probs>0.5] = 'Up'
+"confusion_table(labels, L_test)"

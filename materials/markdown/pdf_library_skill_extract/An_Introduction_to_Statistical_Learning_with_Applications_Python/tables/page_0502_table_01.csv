@@ -1,0 +1,3 @@
+"W = np.array([sim_time(l, cum_hazard, rng)"
+for l in true_linpred])
+"D['Wait time'] = np.clip(W, 0, 1000)"

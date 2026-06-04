@@ -1,0 +1,14 @@
+##  class: SpatialExperiment 
+##  dim: 9 4269 
+##  metadata(4): spatial_rna config cell_type_info internal_vars
+##  assays(1): weights
+##  rownames(9): B cells Endothelial ... T cells Tumor
+##  rowData names(0):
+##  colnames(4269): AACAATGTGCTCCGAG-1 AACACCATTCGCATAC-1 ...
+##    TGTTGGTGCGGAATCA-1 TGTTGGTGGACTCAGG-1
+##  colData names(1): sample_id
+##  reducedDimNames(0):
+##  mainExpName: NULL
+##  altExpNames(0):
+##  spatialCoords names(2) : x y
+##  imgData names(0):

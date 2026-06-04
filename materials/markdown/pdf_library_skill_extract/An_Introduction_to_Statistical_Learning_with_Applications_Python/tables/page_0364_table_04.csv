@@ -1,0 +1,4 @@
+"ccp_path = clf.cost_complexity_pruning_path(X_train, High_train)"
+"kfold = skm.KFold(10,"
+"random_state=1,"
+shuffle=True)

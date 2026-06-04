@@ -1,0 +1,6 @@
+lstm_model = LSTMModel(X_test.shape[-1])
+"summary(lstm_model,"
+"input_data=imdb_seq_train.tensors[0][:10],"
+"col_names=['input_size',"
+"'output_size',"
+'num_params'])

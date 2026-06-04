@@ -1,0 +1,7 @@
+"fig, ax = subplots(figsize=(8,8))"
+by_time = {}
+"for time, df in D.groupby('Time'):"
+by_time[time] = df
+"km_time = km.fit(df['Wait time'], df['Failed'])"
+"km_time.plot(label='Time=%s' % time, ax=ax)"
+"ax.set_title(""Probability of Still Being on Hold"")"

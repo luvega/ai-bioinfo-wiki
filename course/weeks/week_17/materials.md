@@ -15,11 +15,26 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## AIDD 候选素材
 
-- 待从 materials/raw/aidd_bioinformatics/ 和 materials/markdown/aidd_bioinformatics/ 抽取。
+- 从 [AIDD 课程索引](../../../materials/markdown/aidd_bioinformatics/aidd.course_index.md) 和相关 `chapter.course.md` 选取；字幕原文只作术语核验，不直接进入课堂。
 
 ## PDF / 外部 PPT 候选素材
 
-- 待从 materials/markdown/pdf_library_legacy/、materials/markdown/pdf_library_mineru/ 和 materials/raw/external_ppt/ 抽取。
+- 从 `materials/markdown/pdf_library_mineru/` 和 `materials/markdown/pdf_library_skill_extract/` 选取已转换 Markdown；原始 PDF/PPT 不直接进入课程引用。
+
+## OWF Git / Shell 参考候选
+
+- [OWF Learn Git](../../../materials/markdown/openwaterfoundation_learning/git/README.md)：用于综合项目中的分支、提交、远端协作、pull request 和常见错误消息说明。
+- [OWF Learn Windows Shell](../../../materials/markdown/openwaterfoundation_learning/windows_shell/README.md)：用于 Windows 项目脚本、批处理、环境变量和常见故障排查。
+- [OWF Learn Linux Shell](../../../materials/markdown/openwaterfoundation_learning/linux_shell/README.md)：用于 Bash 脚本、日志、重定向、退出状态和定时任务的项目化参考。
+- 使用边界：这些材料支持项目协作和结果核验流程，不替代统计、生物学或真实数据核验。
+
+## 素材分层使用原则（2026-06-04）
+
+- 课堂主素材：综合项目问题定义、数据字典、分析计划、图表计划和 AI 审计。
+- 支撑素材：AIDD GitHub/pipeline、OWF Git/Shell、GenAI 数据分析参考。
+- 拓展素材：OSCA/SCBP project structure 可作为高级项目组织示例，不要求学生复现。
+- 教师备课素材：准备项目 README、AI 使用声明、结果核验和复现检查清单。
+- 教材 / PPT 边界：可进 PPT：项目工作流、Git 提交流程、AI 审计表和报告初稿结构。
 
 ## 可进 PPT 的元素
 

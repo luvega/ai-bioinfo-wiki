@@ -1,0 +1,5 @@
+,"Another helpful metric is the area under the curve (AUC) score, which measures"
+the area under the ROC curve. A higher AUC score indicates a better model perfor-,
+"mance, as it implies a greater distinction between the true positive and false positive",
+"rates. This metric can be crucial for assessing the overall effectiveness of a model,",
+especially when making decisions in scenarios with uncertain or variable thresholds.,

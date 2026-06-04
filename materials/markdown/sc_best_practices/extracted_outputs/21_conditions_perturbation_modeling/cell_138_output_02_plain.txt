@@ -1,0 +1,1 @@
+<Axes: title={'center': 'UBE2L6'}, xlabel='sgRNA', ylabel='% of cells'>

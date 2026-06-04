@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 15px;
+            width: 400px;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #3965a3;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>In a SpatialData object, where are the X/Y coordinates of a table (AnnData object) stored?</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq5" value=".var"
+            onclick="checkAnswer(this, '.obsm['spatial']', '`.var` contains gene-level metadata, not spatial coordinates.', 'feedback-q5')"> .var
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq5" value=".obs"
+            onclick="checkAnswer(this, '.obsm['spatial']', '`.obs` contains cell-level metadata but not coordinate arrays.', 'feedback-q5')"> .obs
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq5" value=".obsm['spatial']"
+            onclick="checkAnswer(this, '.obsm['spatial']', '', 'feedback-q5')"> .obsm['spatial']
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq5" value=".layers['spatial']"
+            onclick="checkAnswer(this, '.obsm['spatial']', '`.layers` can store alternate matrices, but spatial coordinates are in `.obsm`.', 'feedback-q5')"> .layers['spatial']
+        </label><br>
+        
+        <p id="feedback-q5" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q5" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: .obsm['spatial']
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

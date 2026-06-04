@@ -1,0 +1,1 @@
+The history saving thread hit an unexpected error (OperationalError('unable to open database file')).History will not be written to the database.

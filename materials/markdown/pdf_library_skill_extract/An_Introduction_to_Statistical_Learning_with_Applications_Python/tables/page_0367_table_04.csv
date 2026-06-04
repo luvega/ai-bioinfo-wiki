@@ -1,0 +1,4 @@
+"RF_boston = RF(max_features=6,"
+"random_state=0).fit(X_train, y_train)"
+y_hat_RF = RF_boston.predict(X_test)
+np.mean((y_test - y_hat_RF)**2)

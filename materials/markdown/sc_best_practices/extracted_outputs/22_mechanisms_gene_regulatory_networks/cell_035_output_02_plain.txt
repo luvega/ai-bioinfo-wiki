@@ -1,0 +1,6 @@
+      TF    target  importance
+0   SOX6    SLC4A1  186.835278
+1   SOX6      ANK1  162.917264
+2   SOX6      HBA2  143.750583
+3   SOX6  SLC25A37  127.603415
+4  HMGB2     UBE2S  123.732197

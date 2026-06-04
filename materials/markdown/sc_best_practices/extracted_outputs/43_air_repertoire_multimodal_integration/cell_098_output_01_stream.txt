@@ -1,0 +1,3 @@
+... storing 'clonotype' as categorical
+... storing 'set' as categorical
+... storing 'clonotypes_top10' as categorical

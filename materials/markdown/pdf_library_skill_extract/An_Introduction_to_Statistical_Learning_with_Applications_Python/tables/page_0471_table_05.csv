@@ -1,0 +1,6 @@
+nl_model = NonLinearARModel()
+"nl_optimizer = RMSprop(nl_model.parameters(),"
+lr=0.001)
+"nl_module = SimpleModule.regression(nl_model,"
+"optimizer=nl_optimizer,"
+metrics={'r2':R2Score()})

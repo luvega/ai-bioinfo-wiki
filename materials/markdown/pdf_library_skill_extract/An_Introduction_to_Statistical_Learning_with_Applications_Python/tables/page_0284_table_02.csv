@@ -1,0 +1,7 @@
+ridge.alpha = 1e10
+"results = skm.cross_validate(ridge,"
+"X,"
+"Y,"
+"scoring='neg_mean_squared_error',"
+cv=validation)
+-results['test_score']

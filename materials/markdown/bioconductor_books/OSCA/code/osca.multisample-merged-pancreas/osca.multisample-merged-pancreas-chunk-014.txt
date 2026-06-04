@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 26616 604 
+## metadata(0):
+## assays(2): counts logcounts
+## rownames(26616): ENSG00000229483 ENSG00000232849 ... ENSG00000251576
+##   ENSG00000082898
+## rowData names(2): SYMBOL SEQNAME
+## colnames(604): 10th_C11_S96 10th_C13_S61 ... 9th-C96_S81 9th-C9_S13
+## colData names(8): age bmi ... Sex sizeFactor
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(0):

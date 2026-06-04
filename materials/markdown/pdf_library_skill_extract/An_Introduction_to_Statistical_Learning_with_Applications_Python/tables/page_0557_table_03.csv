@@ -1,0 +1,5 @@
+"nci_kmeans = KMeans(n_clusters=4,"
+"random_state=0,"
+n_init=20).fit(nci_scaled)
+"pd.crosstab(pd.Series(comp_cut, name='HClust'),"
+"pd.Series(nci_kmeans.labels_, name='K-means'))"

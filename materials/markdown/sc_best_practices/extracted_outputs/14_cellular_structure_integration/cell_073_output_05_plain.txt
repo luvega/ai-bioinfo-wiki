@@ -1,0 +1,1 @@
+Setup via `SCANVI.setup_anndata` with arguments:

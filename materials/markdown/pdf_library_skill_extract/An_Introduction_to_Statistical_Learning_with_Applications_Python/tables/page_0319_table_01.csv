@@ -1,0 +1,3 @@
+"poly_age = MS([poly('age', degree=4)]).fit(Wage)"
+"M = sm.OLS(y, poly_age.transform(Wage)).fit()"
+summarize(M)

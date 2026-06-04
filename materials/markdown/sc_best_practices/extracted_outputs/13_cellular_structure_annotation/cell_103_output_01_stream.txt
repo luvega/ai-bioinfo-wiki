@@ -1,0 +1,10 @@
+🔬 Input data has 8874 cells and 12850 genes
+🔗 Matching reference genes in the model
+🧬 4237 features used for prediction
+⚖️ Scaling input data
+🖋️ Predicting labels
+✅ Prediction done!
+👀 Detected a neighborhood graph in the input object, will run over-clustering on the basis of it
+⛓️ Over-clustering input data with resolution set to 10
+🗳️ Majority voting the predictions
+✅ Majority voting done!

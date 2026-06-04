@@ -1,0 +1,15 @@
+## class: SingleCellExperiment 
+## dim: 46604 192 
+## metadata(0):
+## assays(1): counts
+## rownames(46604): ENSMUSG00000102693 ENSMUSG00000064842 ...
+##   ENSMUSG00000095742 CBFB-MYH11-mcherry
+## rowData names(1): Length
+## colnames(192): SLX-9555.N701_S502.C89V9ANXX.s_1.r_1
+##   SLX-9555.N701_S503.C89V9ANXX.s_1.r_1 ...
+##   SLX-11312.N712_S508.H5H5YBBXX.s_8.r_1
+##   SLX-11312.N712_S517.H5H5YBBXX.s_8.r_1
+## colData names(8): cell line cell type ... spike-in addition block
+## reducedDimNames(0):
+## mainExpName: endogenous
+## altExpNames(2): ERCC SIRV

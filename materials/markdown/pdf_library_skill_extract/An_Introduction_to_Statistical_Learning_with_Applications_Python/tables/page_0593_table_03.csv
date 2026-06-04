@@ -1,0 +1,4 @@
+"returns = np.hstack([fund_mini.iloc[:,i] for i in range(5)])"
+managers = np.hstack([[i+1]*50 for i in range(5)])
+"tukey = pairwise_tukeyhsd(returns, managers)"
+print(tukey.summary())

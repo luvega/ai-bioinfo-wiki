@@ -1,0 +1,8 @@
+sce
+ 
+<-
+ 
+logNormCounts
+(
+sce
+)

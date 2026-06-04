@@ -1,0 +1,3 @@
+design = MS(['lstat'])
+X = design.fit_transform(Boston)
+X[:4]

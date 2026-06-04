@@ -1,0 +1,5 @@
+condition
+stimulated              5678
+control                 5560
+predicted stimulated    5560
+Name: count, dtype: int64

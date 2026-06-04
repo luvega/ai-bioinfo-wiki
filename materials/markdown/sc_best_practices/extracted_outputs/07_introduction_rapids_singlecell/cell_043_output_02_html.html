@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 12px;
+            width: 340px;
+            text-align: left;
+            font-size: 15px;
+            margin-bottom: 8px;
+            background-color: #3965a3;
+            border-radius: 8px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>Which of the following steps in a Dask-backed RSC pipeline triggers a synchronization (i.e., is not lazy)?</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq2" value="rsc.pp.normalize_total"
+            onclick="checkAnswer(this, 'rsc.pp.highly_variable_genes', 'normalize_total stays lazy.', 'feedback-q2')"> rsc.pp.normalize_total
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq2" value="rsc.pp.log1p"
+            onclick="checkAnswer(this, 'rsc.pp.highly_variable_genes', 'log1p stays lazy.', 'feedback-q2')"> rsc.pp.log1p
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq2" value="rsc.pp.highly_variable_genes"
+            onclick="checkAnswer(this, 'rsc.pp.highly_variable_genes', '', 'feedback-q2')"> rsc.pp.highly_variable_genes
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq2" value="Boolean indexing into adata"
+            onclick="checkAnswer(this, 'rsc.pp.highly_variable_genes', 'Boolean indexing is lazy as long as you avoid sc.pp.filter_cells / .filter_genes.', 'feedback-q2')"> Boolean indexing into adata
+        </label><br>
+        
+        <p id="feedback-q2" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q2" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: rsc.pp.highly_variable_genes
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

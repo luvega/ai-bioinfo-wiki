@@ -1,0 +1,2 @@
+"fig, axes = subplots(ncols=3, figsize=(15, 5))"
+"Auto.plot.scatter('horsepower', 'mpg', ax=axes[1]);"

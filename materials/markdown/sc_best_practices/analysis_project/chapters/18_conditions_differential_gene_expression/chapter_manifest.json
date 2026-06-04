@@ -1,0 +1,20 @@
+{
+  "order": 18,
+  "part": "Dealing with conditions",
+  "toc_file": "conditions/differential_gene_expression",
+  "title": "Differential gene expression analysis",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/conditions/differential_gene_expression.ipynb",
+  "environment": "compositional",
+  "week_mapping": [
+    15
+  ],
+  "code_cell_count": 39,
+  "dataset_reference_count": 8,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/code_index.md"
+  }
+}

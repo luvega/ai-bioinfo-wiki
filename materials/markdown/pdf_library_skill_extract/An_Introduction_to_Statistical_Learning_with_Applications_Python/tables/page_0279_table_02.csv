@@ -1,0 +1,6 @@
+cv_mse = []
+"for train_idx, test_idx in kfold.split(Y):"
+"errors = (Yhat_cv[test_idx] - Y[test_idx,None])**2"
+cv_mse.append(errors.mean(0)) # column means
+cv_mse = np.array(cv_mse).T
+cv_mse.shape

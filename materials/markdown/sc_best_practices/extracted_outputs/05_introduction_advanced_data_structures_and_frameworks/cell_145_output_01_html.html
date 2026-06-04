@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 15px;
+            width: 400px;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #3965a3;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>How would you access RNA data in a MuData object `mdata`?</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq4" value="mdata.rna"
+            onclick="checkAnswer(this, 'mdata.mod['rna']', 'MuData does not provide direct attributes for modalities. They are stored in `mod`.', 'feedback-q4')"> mdata.rna
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq4" value="mdata.obs['rna']"
+            onclick="checkAnswer(this, 'mdata.mod['rna']', '`obs` stores cell-level metadata, not modality data.', 'feedback-q4')"> mdata.obs['rna']
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq4" value="mdata.mod['rna']"
+            onclick="checkAnswer(this, 'mdata.mod['rna']', '', 'feedback-q4')"> mdata.mod['rna']
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq4" value="mdata.uns['rna']"
+            onclick="checkAnswer(this, 'mdata.mod['rna']', '`uns` stores unstructured metadata, not the modality matrix.', 'feedback-q4')"> mdata.uns['rna']
+        </label><br>
+        
+        <p id="feedback-q4" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q4" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: mdata.mod['rna']
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

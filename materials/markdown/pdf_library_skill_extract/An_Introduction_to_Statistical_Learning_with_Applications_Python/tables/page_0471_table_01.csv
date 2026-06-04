@@ -1,0 +1,7 @@
+"nyse_trainer = Trainer(deterministic=True,"
+"max_epochs=200,"
+callbacks=[ErrorTracker()])
+"nyse_trainer.fit(nyse_module,"
+datamodule=nyse_dm)
+"nyse_trainer.test(nyse_module,"
+datamodule=nyse_dm)

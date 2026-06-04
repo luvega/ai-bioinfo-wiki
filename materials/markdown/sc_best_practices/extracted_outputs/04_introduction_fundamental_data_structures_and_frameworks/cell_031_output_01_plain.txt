@@ -1,0 +1,2 @@
+View of AnnData object with n_obs × n_vars = 40 × 2000
+    obs: 'cell_type'

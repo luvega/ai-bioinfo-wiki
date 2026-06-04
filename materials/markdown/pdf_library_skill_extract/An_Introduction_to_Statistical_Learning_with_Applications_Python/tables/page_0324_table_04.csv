@@ -1,0 +1,5 @@
+"bs_age0 = MS([bs('age',"
+"df=3,"
+degree=0)]).fit(Wage)
+Xbs0 = bs_age0.transform(Wage)
+"summarize(sm.OLS(y, Xbs0).fit())"

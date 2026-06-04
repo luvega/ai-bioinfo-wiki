@@ -1,0 +1,15 @@
+stim_FCGR3A+ Monocytes      scores
+names                             
+IFITM3                  123.019180
+ISG15                   119.732079
+TYROBP                   91.894241
+TNFSF10                  87.408890
+S100A11                  85.721817
+...                            ...
+NR1D1                    -0.005578
+PIK3R5                    0.004145
+FHL2                      0.002915
+CLECL1                   -0.000262
+ADCK4                     0.000002
+
+[4000 rows x 1 columns]

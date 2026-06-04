@@ -1,0 +1,6 @@
+MuData object with n_obs × n_vars = 1000 × 150
+  obsm:	'X_pca'
+  2 modalities
+    A:	1000 x 100
+      uns:	'misc'
+    B:	1000 x 50

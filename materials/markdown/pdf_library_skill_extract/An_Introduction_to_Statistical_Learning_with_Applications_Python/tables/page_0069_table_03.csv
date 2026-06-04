@@ -1,0 +1,4 @@
+total = 0
+"for value in [3,2,19]:"
+total += value
+print('Total is: {0}'.format(total))

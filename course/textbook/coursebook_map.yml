@@ -30,8 +30,14 @@ chapters:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/concepts/AI协作边界.md
       - knowledge/entities/GitHub.md
+      - knowledge/sources/OWF_Learn_Git.md
+      - knowledge/sources/OWF_Learn_Windows_Shell.md
+      - knowledge/sources/OWF_Learn_Linux_Shell.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/06_Understanding_Bioinformatics_Pipeline/chapter.course.md
+      - materials/markdown/openwaterfoundation_learning/git/README.md
+      - materials/markdown/openwaterfoundation_learning/windows_shell/README.md
+      - materials/markdown/openwaterfoundation_learning/linux_shell/README.md
     ppt_status: not_started
     review_status: catalog_only
   - chapter: 3
@@ -46,8 +52,10 @@ chapters:
       - knowledge/entities/Python.md
       - knowledge/entities/Biopython.md
       - knowledge/sources/Learn_AI_Assisted_Python_Programming.md
+      - knowledge/sources/OWF_Learn_Git.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/aidd.course_index.md
+      - materials/markdown/openwaterfoundation_learning/git/README.md
       - materials/markdown/pdf_library_mineru/Pythonppt
       - materials/markdown/pdf_library_mineru/R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro
     ppt_status: pptx_trial_done
@@ -204,8 +212,14 @@ chapters:
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
+      - knowledge/sources/Single_Cell_Best_Practices.md
+      - knowledge/sources/OSCA.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/aidd.course_index.md
+      - materials/markdown/sc_best_practices/scbp.course_index.md
+      - materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md
+      - materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md
+      - materials/markdown/bioconductor_books/workflow_case_catalog.md
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
     ppt_status: not_started
     review_status: catalog_only
@@ -220,9 +234,16 @@ chapters:
     knowledge_sources:
       - knowledge/concepts/RNA-seq上游流程.md
       - knowledge/concepts/差异表达分析.md
+      - knowledge/sources/Single_Cell_Best_Practices.md
+      - knowledge/sources/OSCA.md
+      - knowledge/sources/OSTA.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/07_NGS_data_Analysis_on_Bash_(Gene_Expression_Using_Command_Line)/chapter.course.md
       - materials/markdown/aidd_bioinformatics/aidd.course_index.md
+      - materials/markdown/sc_best_practices/scbp.course_index.md
+      - materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/chapter.source.md
+      - materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.source.md
+      - materials/markdown/bioconductor_books/workflow_case_catalog.md
     ppt_status: storyboard_pending
     review_status: sample_ready
   - chapter: 15
@@ -238,9 +259,15 @@ chapters:
       - knowledge/entities/DESeq2.md
       - knowledge/concepts/差异表达分析.md
       - knowledge/concepts/富集分析_GO_KEGG.md
+      - knowledge/sources/Single_Cell_Best_Practices.md
+      - knowledge/sources/OSCA.md
+      - knowledge/sources/OSTA.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md
       - materials/markdown/aidd_bioinformatics/10_Microarray_Analysis_on_R/chapter.course.md
+      - materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.source.md
+      - materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/chapter.source.md
+      - materials/markdown/bioconductor_books/workflow_case_catalog.md
     ppt_status: storyboard_reviewed_and_pptx_trial_done
     review_status: evidence_review_pass
   - chapter: 16
@@ -254,8 +281,16 @@ chapters:
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
+      - knowledge/sources/Single_Cell_Best_Practices.md
+      - knowledge/sources/OSCA.md
+      - knowledge/sources/OSTA.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md
+      - materials/markdown/sc_best_practices/scbp.course_index.md
+      - materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/chapter.source.md
+      - materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/chapter.source.md
+      - materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction/chapter.source.md
+      - materials/markdown/bioconductor_books/workflow_case_catalog.md
     ppt_status: storyboard_pending
     review_status: sample_ready
   - chapter: 17
@@ -270,8 +305,12 @@ chapters:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/entities/GitHub.md
       - knowledge/concepts/AI协作边界.md
+      - knowledge/sources/OWF_Learn_Git.md
+      - knowledge/sources/OWF_Learn_Linux_Shell.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md
+      - materials/markdown/openwaterfoundation_learning/git/README.md
+      - materials/markdown/openwaterfoundation_learning/linux_shell/README.md
       - materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210
     ppt_status: not_started
     review_status: catalog_only

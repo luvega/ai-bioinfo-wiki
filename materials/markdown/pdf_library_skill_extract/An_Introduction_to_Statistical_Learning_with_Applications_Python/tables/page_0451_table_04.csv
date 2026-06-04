@@ -1,0 +1,5 @@
+"mnist_dm = SimpleDataModule(mnist_train,"
+"mnist_test,"
+"validation=0.2,"
+"num_workers=max_num_workers,"
+batch_size=256)

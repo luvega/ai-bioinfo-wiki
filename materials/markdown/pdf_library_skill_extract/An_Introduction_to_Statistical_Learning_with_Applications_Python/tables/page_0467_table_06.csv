@@ -1,0 +1,7 @@
+NYSE = load_data('NYSE')
+"cols = ['DJ_return', 'log_volume', 'log_volatility']"
+X = pd.DataFrame(StandardScaler(
+"with_mean=True,"
+"with_std=True).fit_transform(NYSE[cols]),"
+"columns=NYSE[cols].columns,"
+index=NYSE.index)

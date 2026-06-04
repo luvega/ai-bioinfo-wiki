@@ -1,0 +1,7 @@
+import numpy as np
+import pandas as pd
+from matplotlib.pyplot import subplots
+from statsmodels.datasets import get_rdataset
+import sklearn.model_selection as skm
+"from ISLP import load_data, confusion_table"
+from ISLP.models import ModelSpec as MS

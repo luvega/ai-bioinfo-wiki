@@ -1,0 +1,291 @@
+{
+  "generated_at": "2026-06-04T02:06:47+00:00",
+  "source": {
+    "key": "linux_shell",
+    "title": "OWF Learn Linux Shell",
+    "repo": "OpenWaterFoundation/owf-learn-linux-shell",
+    "site_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/",
+    "commit_sha": "4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d",
+    "course_use": "Week 02/03/17 Linux shell, Bash scripting, cron, and troubleshooting reference",
+    "tags": [
+      "linux-shell",
+      "bash",
+      "reproducibility",
+      "week-02",
+      "week-03",
+      "week-17"
+    ],
+    "knowledge_filename": "OWF_Learn_Linux_Shell.md"
+  },
+  "repo_url": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell",
+  "archive_url": "https://codeload.github.com/OpenWaterFoundation/owf-learn-linux-shell/zip/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d",
+  "license": "CC BY-NC-SA 4.0",
+  "license_note": "GitHub repository metadata does not expose SPDX license; review upstream site/repo before PPT reuse.",
+  "raw_repo_root": "materials/raw/openwaterfoundation_learning/extracted/linux_shell/owf-learn-linux-shell-4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d",
+  "markdown_root": "materials/markdown/openwaterfoundation_learning/linux_shell",
+  "mkdocs_nav_pages": [
+    "index.md",
+    "introduction/introduction.md",
+    "install/install.md",
+    "user-env/user-env.md",
+    "shell-script-basics/shell-script-basics.md",
+    "best-practices/best-practices.md",
+    "useful-commands/useful-commands.md",
+    "useful-scripts/useful-scripts.md",
+    "troubleshooting/troubleshooting.md",
+    "resources/resources.md",
+    "appendix-cron/cron.md"
+  ],
+  "page_count": 12,
+  "asset_count": 13,
+  "example_count": 14,
+  "pages": [
+    {
+      "title": "`cron` on Windows Subsystem for Linux (WSL)",
+      "summary": "After installation, the program is `C:\\Windows\\System32\\wsl.exe`.",
+      "source_path": "mkdocs-project/docs/appendix-cron/cron-wsl/cron-wsl.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/appendix-cron/cron-wsl/cron-wsl.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/appendix-cron/cron-wsl/cron-wsl.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/appendix-cron/cron-wsl/cron-wsl.md",
+      "nav_order": null
+    },
+    {
+      "title": "Appendix / `cron` Service  #",
+      "summary": "The `cron` software is a useful service that schedules running programs on a regular frequency.",
+      "source_path": "mkdocs-project/docs/appendix-cron/cron.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/appendix-cron/cron.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/appendix-cron/cron.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/appendix-cron/cron.md",
+      "nav_order": 11
+    },
+    {
+      "title": "Linux Shell / Shell Script Best Practices #",
+      "summary": "This page lists best practices, based on industry standards and first-hand experience.",
+      "source_path": "mkdocs-project/docs/best-practices/best-practices.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/best-practices/best-practices.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/best-practices/best-practices.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/best-practices/best-practices.md",
+      "nav_order": 6
+    },
+    {
+      "title": "Learn / Linux Shell #",
+      "summary": "This documentation provides information to learn how to use the Linux shell,",
+      "source_path": "mkdocs-project/docs/index.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/index.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/index.md",
+      "nav_order": 1
+    },
+    {
+      "title": "Linux Shell / Select and Install Shell Software #",
+      "summary": "Selecting a Linux shell will define the features of the shell scripting language.",
+      "source_path": "mkdocs-project/docs/install/install.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/install/install.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/install/install.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/install/install.md",
+      "nav_order": 3
+    },
+    {
+      "title": "Linux Shell / Introduction #",
+      "summary": "There is often a need to perform computational tasks without writing a program in a",
+      "source_path": "mkdocs-project/docs/introduction/introduction.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/introduction/introduction.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/introduction/introduction.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/introduction/introduction.md",
+      "nav_order": 2
+    },
+    {
+      "title": "Linux Shell / Resources #",
+      "summary": "The following are useful resources.",
+      "source_path": "mkdocs-project/docs/resources/resources.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/resources/resources.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/resources/resources.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/resources/resources.md",
+      "nav_order": 10
+    },
+    {
+      "title": "Linux Shell / Shell Script Basics #",
+      "summary": "The following are Bourne shell tutorials found on the internet.",
+      "source_path": "mkdocs-project/docs/shell-script-basics/shell-script-basics.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/shell-script-basics/shell-script-basics.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/shell-script-basics/shell-script-basics.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/shell-script-basics/shell-script-basics.md",
+      "nav_order": 5
+    },
+    {
+      "title": "Linux Shell / Troubleshooting #",
+      "summary": "Troubleshooting shell scripts typically involves reviewing error messages printed by the shell program.",
+      "source_path": "mkdocs-project/docs/troubleshooting/troubleshooting.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/troubleshooting/troubleshooting.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/troubleshooting/troubleshooting.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/troubleshooting/troubleshooting.md",
+      "nav_order": 9
+    },
+    {
+      "title": "Linux Shell / Useful Command Examples #",
+      "summary": "This page provides examples of useful Linux commands.",
+      "source_path": "mkdocs-project/docs/useful-commands/useful-commands.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/useful-commands/useful-commands.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/useful-commands/useful-commands.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/useful-commands/useful-commands.md",
+      "nav_order": 7
+    },
+    {
+      "title": "Linux Shell / Useful Script Examples #",
+      "summary": "This page provides examples of useful shell scripts or nuggets of code that can be used in scripts.",
+      "source_path": "mkdocs-project/docs/useful-scripts/useful-scripts.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/useful-scripts/useful-scripts.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/useful-scripts/useful-scripts.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/useful-scripts/useful-scripts.md",
+      "nav_order": 8
+    },
+    {
+      "title": "Linux Shell / User Environment Basics #",
+      "summary": "The command shell operates between the core operating system and other programs.",
+      "source_path": "mkdocs-project/docs/user-env/user-env.md",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/user-env/user-env.md",
+      "original_url": "https://learn.openwaterfoundation.org/owf-learn-linux-shell/user-env/user-env.html",
+      "source_blob": "https://github.com/OpenWaterFoundation/owf-learn-linux-shell/blob/4cf789ec9b3ae88a6f8be218dcd4dadcf86ac18d/mkdocs-project/docs/user-env/user-env.md",
+      "nav_order": 4
+    }
+  ],
+  "assets": [
+    {
+      "source_path": "mkdocs-project/docs/appendix-cron/cron-wsl/tstool-onwindows-fileopen.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/appendix-cron/cron-wsl/tstool-onwindows-fileopen.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/appendix-cron/cron-wsl/windows-scheduler-batch-warning.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/appendix-cron/cron-wsl/windows-scheduler-batch-warning.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/appendix-cron/cron-wsl/windows-scheduler-list.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/appendix-cron/cron-wsl/windows-scheduler-list.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/appendix-cron/cron-wsl/windows-scheduler-settings.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/appendix-cron/cron-wsl/windows-scheduler-settings.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/images/cygwin-32.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/images/cygwin-32.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/images/git-bash-32.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/images/git-bash-32.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/images/linux-32.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/images/linux-32.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/images/OWF-Logo-Color.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/images/OWF-Logo-Color.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/images/OWF-Logo-Favicon-32x32.ico",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/images/OWF-Logo-Favicon-32x32.ico",
+      "suffix": ".ico"
+    },
+    {
+      "source_path": "mkdocs-project/docs/images/OWF-Logo-Favicon-32x32.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/images/OWF-Logo-Favicon-32x32.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/images/windows-32.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/images/windows-32.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/introduction/images/linux-shell-prompt1.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/introduction/images/linux-shell-prompt1.png",
+      "suffix": ".png"
+    },
+    {
+      "source_path": "mkdocs-project/docs/introduction/images/windows-command-prompt1.png",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/introduction/images/windows-command-prompt1.png",
+      "suffix": ".png"
+    }
+  ],
+  "examples": [
+    {
+      "source_path": "mkdocs-project/docs/best-practices/examples/example-logging.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/best-practices/examples/example-logging.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/shell-script-basics/examples/example-braces-while-return-string.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/shell-script-basics/examples/example-braces-while-return-string.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/shell-script-basics/examples/example-broken-while-return-string.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/shell-script-basics/examples/example-broken-while-return-string.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/shell-script-basics/examples/example-built-in-exit-status.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/shell-script-basics/examples/example-built-in-exit-status.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/shell-script-basics/examples/example-here-doc-pipe.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/shell-script-basics/examples/example-here-doc-pipe.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/shell-script-basics/examples/example-here-doc-redirect.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/shell-script-basics/examples/example-here-doc-redirect.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/shell-script-basics/examples/example-if-return-status-check.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/shell-script-basics/examples/example-if-return-status-check.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/shell-script-basics/examples/example-sh-pipe-status.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/shell-script-basics/examples/example-sh-pipe-status.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/troubleshooting/example-debug.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/troubleshooting/example-debug.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/troubleshooting/example-redirection.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/troubleshooting/example-redirection.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/troubleshooting/example-x.sh",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/troubleshooting/example-x.sh",
+      "suffix": ".sh"
+    },
+    {
+      "source_path": "mkdocs-project/docs/useful-scripts/resources/logging-functions.txt",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/useful-scripts/resources/logging-functions.txt",
+      "suffix": ".txt"
+    },
+    {
+      "source_path": "mkdocs-project/docs/useful-scripts/resources/parse-command-line-builtin-getopts.txt",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/useful-scripts/resources/parse-command-line-builtin-getopts.txt",
+      "suffix": ".txt"
+    },
+    {
+      "source_path": "mkdocs-project/docs/useful-scripts/resources/parse-command-line-getopt-command.txt",
+      "local_path": "materials/markdown/openwaterfoundation_learning/linux_shell/pages/useful-scripts/resources/parse-command-line-getopt-command.txt",
+      "suffix": ".txt"
+    }
+  ]
+}
