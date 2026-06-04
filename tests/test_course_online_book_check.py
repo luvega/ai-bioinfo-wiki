@@ -23,6 +23,18 @@ def test_parse_map_reads_all_chapters():
     assert {chapter["week"] for chapter in chapters} == set(range(1, 19))
 
 
+def test_required_term_helper_reports_missing_terms():
+    module = load_module()
+    assert module.contains_required_terms("PCA UMAP 样章候选", ("PCA", "UMAP", "spatial matrix")) == ["spatial matrix"]
+
+
+def test_raw_reference_helper_accepts_slash_and_backslash_paths():
+    module = load_module()
+    assert module.has_forbidden_raw_reference("materials/raw/source.pdf")
+    assert module.has_forbidden_raw_reference(r"materials\raw\source.pdf")
+    assert not module.has_forbidden_raw_reference("materials/markdown/aidd_bioinformatics/aidd.course_index.md")
+
+
 def test_online_book_check_current_repo():
     module = load_module()
     assert module.run_check(ROOT) == []

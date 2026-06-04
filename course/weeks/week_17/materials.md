@@ -38,7 +38,14 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## 可进 PPT 的元素
 
-- 概念图：待定。
-- 示例表格：待定。
-- 代码片段：待定。
-- AI 提示词：待定。
+- 概念图：项目文件夹、Git/GitHub 记录、素材溯源、AI 使用声明、PPT storyboard 的交付链条。
+- 示例表格：`data_sources.md` 素材溯源表、`ai_use_statement.md` AI 使用声明模板、图表证据边界自查表。
+- 代码片段：只保留 `git status`、`git add`、`git commit`、`git log --oneline` 的课堂演示，不扩展成独立 Git 工程课。
+- AI 提示词：要求 AI 审查项目流程和待核验点，不替学生写结论。
+
+## 本轮升级重点（2026-06-04）
+
+- Week 17 的最低项目交付包固定为 `README.md`、`data_sources.md`、`ai_use_statement.md`、`ppt_storyboard.md` 和至少一张可解释图表。
+- OWF Git/Shell 只用于项目组织、命令记录、常见错误和可复现日志，不替代统计或生物学核验。
+- 学生应能把每张图对应到数据来源、处理步骤、AI 使用记录和证据边界。
+- 待核验：公开展示数据和图片前需确认授权；AI 生成文本必须保留人工修改和不采纳理由。

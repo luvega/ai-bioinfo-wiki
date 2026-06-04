@@ -38,7 +38,14 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## 可进 PPT 的元素
 
-- 概念图：待定。
-- 示例表格：待定。
-- 代码片段：待定。
-- AI 提示词：待定。
+- 概念图：表格矩阵、bulk expression matrix、single-cell matrix、spatial matrix 的观测单位对比。
+- 示例表格：PCA 坐标表、聚类参数表、热图标准化说明表。
+- 代码片段：只保留参数记录伪代码，不要求学生运行 SCBP/OSCA workflow。
+- AI 提示词：检查 PCA/聚类/热图解释是否记录标准化方法、距离度量、分辨率和待核验点。
+
+## 本轮升级重点（2026-06-04）
+
+- Week 13 标记为在线教材“样章候选”，但目标是看懂高维图形和流程边界，不训练学生独立完成高级单细胞或空间组学分析。
+- 课堂主线先从 6 samples x 5 genes 的教学矩阵进入 PCA、聚类和热图，再用 SCBP/OSCA/OSTA 图形说明现代组学图形为什么更依赖参数记录。
+- 必须清楚区分 bulk expression matrix、single-cell cell x gene matrix、spatial spot x gene matrix。
+- 待核验：UMAP/cluster/marker/spatial domain 均不得被直接写成最终细胞类型、药效机制或病理区域事实。

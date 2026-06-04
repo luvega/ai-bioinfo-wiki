@@ -39,3 +39,12 @@
 - Week 14：学生能说明 FASTQ、count matrix、metadata 的关系；不要求安装上游 RNA-seq 工具。
 - Week 15：学生能读 DESeq2 结果表、火山图和功能解读边界；不把 single-cell 或 spatial 的差异分析混同于 bulk DESeq2。
 - Week 16：学生能用“观察、可能解释、不确定性、待核验点”读 QC/UMAP/marker/spatial 图；不把 cluster 或 marker 直接写成最终细胞类型结论。
+
+## 下一轮优先级
+
+| 优先级 | 周次 | 交付物 | 验收点 |
+| --- | --- | --- | --- |
+| P0 | Week 13 | outline/script + Coursebook 样章候选 | 清楚区分表格矩阵、bulk expression matrix、single-cell matrix 与 spatial matrix |
+| P0 | Week 17-18 | 项目工作坊与汇报 rubric | 有 Git/GitHub、素材溯源、AI 使用声明和图表证据边界 |
+| P1 | Week 11-12 | 图表证据边界与表达矩阵桥接 | 能承接 Week 13，不默认生信或统计背景 |
+| P1 | Week 14/16 | PPT storyboard | 只标记 storyboard/review，不标记 PPTX 完成 |

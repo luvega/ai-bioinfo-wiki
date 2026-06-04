@@ -14,9 +14,9 @@ SITE_DATA = ROOT / "site" / "src" / "data" / "coursebook.ts"
 COURSEBOOK_INDEX = ROOT / "site" / "src" / "pages" / "coursebook.astro"
 COURSEBOOK_ROUTE = ROOT / "site" / "src" / "pages" / "coursebook" / "[slug].astro"
 WEEK_ROUTE = ROOT / "site" / "src" / "pages" / "weeks" / "[slug].astro"
-SAMPLE_WEEKS = {3, 14, 15, 16}
+SAMPLE_WEEKS = {3, 13, 14, 15, 16}
 MODERN_OMICS_EXPECTATIONS = {
-    13: ("Single_Cell_Best_Practices", "OSCA"),
+    13: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
     14: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
     15: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
     16: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
@@ -45,6 +45,18 @@ REQUIRED_SAMPLE_HEADINGS = (
     "待核验点",
     "PPT storyboard 生成入口说明",
 )
+WEEK13_TRANSITION_TERMS = (
+    "表格矩阵",
+    "bulk expression matrix",
+    "single-cell",
+    "spatial matrix",
+    "样章候选",
+    "UMAP",
+)
+PROJECT_WEEK_TERMS = {
+    17: ("Git/GitHub", "素材溯源", "AI 使用声明", "storyboard", "图表证据边界"),
+    18: ("数据来源", "图表表达", "证据边界", "AI 使用", "可复现记录"),
+}
 
 
 class Issue(NamedTuple):
@@ -62,6 +74,14 @@ def rel(path: Path, root: Path) -> str:
         return path.resolve().relative_to(root.resolve()).as_posix()
     except ValueError:
         return str(path)
+
+
+def contains_required_terms(text: str, terms: tuple[str, ...]) -> list[str]:
+    return [term for term in terms if term not in text]
+
+
+def has_forbidden_raw_reference(text: str) -> bool:
+    return "materials/raw" in text.replace("\\", "/")
 
 
 def scalar_value(line: str) -> str:
@@ -143,7 +163,7 @@ def check_map(root: Path) -> list[Issue]:
                 continue
             for value in values:
                 value_text = str(value)
-                if "materials/raw" in value_text.replace("\\", "/"):
+                if has_forbidden_raw_reference(value_text):
                     issues.append(Issue("RAW_SOURCE_REFERENCE", MAP_PATH, f"{field} references raw source: {value_text}"))
                     continue
                 candidate = root / value_text
@@ -179,11 +199,11 @@ def check_site_data(root: Path) -> list[Issue]:
             issues.append(Issue("MISSING_SAMPLE_FIELD", SITE_DATA, f"Missing sample field: {field}"))
     if "[[" in text or "]]" in text:
         issues.append(Issue("OBSIDIAN_LINK", SITE_DATA, "Obsidian wiki links are not allowed"))
-    if "materials/raw" in text.replace("\\", "/"):
+    if has_forbidden_raw_reference(text):
         issues.append(Issue("RAW_SOURCE_REFERENCE", SITE_DATA, "Site data must not reference raw sources"))
     if re.search(r"script\.md.*formal_ready.*PPT", text, flags=re.S):
         issues.append(Issue("STATUS_CONFLATION", SITE_DATA, "Do not infer PPT readiness from script formal_ready status"))
-    for required_text in ("现代组学拓展", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
+    for required_text in ("现代组学拓展", "样章候选", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
         if required_text not in text:
             issues.append(Issue("MISSING_MODERN_OMICS_DATA", SITE_DATA, f"Site data should expose {required_text}"))
     for required_text in ("可复现工作流", "OWF_Learn_Git"):
@@ -204,9 +224,22 @@ def check_course_week_files(root: Path) -> list[Issue]:
         materials_text = read_text(materials_path)
         if "素材分层使用原则（2026-06-04）" not in materials_text:
             issues.append(Issue("MISSING_MATERIAL_LAYERING", materials_path, "Week materials must include the four-layer source policy"))
-        for path in (materials_path, week_dir / "outline.md", week_dir / "script.md"):
-            if path.exists() and "materials/raw" in read_text(path).replace("\\", "/"):
+        week_files = (materials_path, week_dir / "outline.md", week_dir / "script.md")
+        week_text_parts: list[str] = []
+        for path in week_files:
+            if not path.exists():
+                continue
+            path_text = read_text(path)
+            week_text_parts.append(path_text)
+            if has_forbidden_raw_reference(path_text):
                 issues.append(Issue("RAW_SOURCE_REFERENCE", path, "Course week files must not reference materials/raw"))
+        week_text = "\n".join(week_text_parts)
+        if week == 13:
+            for term in contains_required_terms(week_text, WEEK13_TRANSITION_TERMS):
+                issues.append(Issue("MISSING_WEEK13_TRANSITION", week_dir, f"Week 13 should include {term}"))
+        if week in PROJECT_WEEK_TERMS:
+            for term in contains_required_terms(week_text, PROJECT_WEEK_TERMS[week]):
+                issues.append(Issue("MISSING_PROJECT_WEEK_TERM", week_dir, f"Week {week:02d} should include {term}"))
     return issues
 
 

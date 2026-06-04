@@ -14,11 +14,11 @@ This report only measures `script.md` frontmatter status and CJK character depth
 | 08 | formal_ready | 6797 | full-lecture | `course/weeks/week_08/script.md` |
 | 09 | formal_ready | 6813 | full-lecture | `course/weeks/week_09/script.md` |
 | 10 | formal_ready | 6707 | full-lecture | `course/weeks/week_10/script.md` |
-| 11 | formal_ready | 6832 | full-lecture | `course/weeks/week_11/script.md` |
-| 12 | formal_ready | 6796 | full-lecture | `course/weeks/week_12/script.md` |
-| 13 | formal_ready | 6789 | full-lecture | `course/weeks/week_13/script.md` |
+| 11 | formal_ready | 7853 | full-lecture | `course/weeks/week_11/script.md` |
+| 12 | formal_ready | 7576 | full-lecture | `course/weeks/week_12/script.md` |
+| 13 | formal_ready | 8063 | full-lecture | `course/weeks/week_13/script.md` |
 | 14 | formal_ready | 7080 | full-lecture | `course/weeks/week_14/script.md` |
 | 15 | formal_ready | 6947 | full-lecture | `course/weeks/week_15/script.md` |
 | 16 | formal_ready | 6971 | full-lecture | `course/weeks/week_16/script.md` |
-| 17 | formal_ready | 6790 | full-lecture | `course/weeks/week_17/script.md` |
-| 18 | formal_ready | 6725 | full-lecture | `course/weeks/week_18/script.md` |
+| 17 | formal_ready | 7793 | full-lecture | `course/weeks/week_17/script.md` |
+| 18 | formal_ready | 7450 | full-lecture | `course/weeks/week_18/script.md` |
