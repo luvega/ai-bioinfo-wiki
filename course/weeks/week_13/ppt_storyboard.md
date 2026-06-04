@@ -2,12 +2,12 @@
 week: 13
 title: PCA、聚类与热图
 ppt_status: storyboard
-review_status: evidence_review_pending
+review_status: evidence_review_pass
 ---
 
 # Week 13 PPT Storyboard：PCA、聚类与热图
 
-本 storyboard 只作为审查稿，不表示 PPTX 已生成。它服务 Week 13 在线教材样章候选，重点是把 Week 11 的图表证据边界和 Week 12 的矩阵结构直觉迁移到高维图形阅读。
+本 storyboard 只作为审查稿，不表示 PPTX 已生成。它服务 Week 13 在线教材试点候选，重点是把 Week 11 的图表证据边界和 Week 12 的矩阵结构直觉迁移到高维图形阅读。
 
 | Slide | Action title | Visual intent | Teacher note | Student action | Evidence/source note | Risk note |
 |---:|---|---|---|---|---|---|
@@ -24,7 +24,9 @@ review_status: evidence_review_pending
 ## Evidence Checklist
 
 - 教学矩阵为 generated teaching example，不作为真实药物实验结果。
+- 教学矩阵、PCA 坐标、聚类参数和热图/UMAP 说明见 [Week 13 教学矩阵与高维图形资产](teaching_assets.md)。
+- Evidence review 见 [Week 13 PPT Storyboard Evidence Review](../../evaluation/week_13_ppt_evidence_review.md)，当前只支持 `pilot_candidate` 与 `storyboard_reviewed`。
 - SCBP/OSCA/OSTA 只作为教师备课和现代组学拓展来源，不要求学生运行完整 workflow。
 - PCA、cluster、heatmap、UMAP 的解释必须包含输入、参数或标准化说明。
-- 进入 PPTX 前需补齐可公开展示图形或保留为课程自生成示意图。
-- 本周仍为 `sample_candidate`，不是 `pilot_ready` 或 PPT 完成状态。
+- 进入 PPTX 前需用脚本或教师自绘方式生成可公开展示图形，并做 PNG/contact sheet 视觉 QA。
+- 本周为 `pilot_candidate`，不是 `pilot_ready` 或 PPT 完成状态。

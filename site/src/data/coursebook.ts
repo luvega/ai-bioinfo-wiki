@@ -1,4 +1,4 @@
-export type CoursebookStatus = '目录占位' | '样章候选' | '样章可读';
+export type CoursebookStatus = '目录占位' | '样章候选' | '试点候选' | '样章可读';
 
 export type CoursebookSample = {
   introQuestion: string;
@@ -17,6 +17,7 @@ export type CoursebookSample = {
     forbidden: string[];
   };
   verificationPoints: string[];
+  candidateChecks?: string[];
   pptBridge: {
     status: string;
     entry: string;
@@ -47,6 +48,17 @@ const baseWeekFiles = (week: number) => [
   `course/weeks/week_${String(week).padStart(2, '0')}/materials.md`,
   `course/weeks/week_${String(week).padStart(2, '0')}/outline.md`,
   `course/weeks/week_${String(week).padStart(2, '0')}/script.md`
+];
+
+export const coursebookStatusPipeline = [
+  'catalog_only',
+  'sample_candidate',
+  'pilot_candidate',
+  'sample_ready',
+  'storyboard',
+  'evidence_review_assets_pending',
+  'evidence_review_pass',
+  'pptx_trial_done'
 ];
 
 export const coursebookChapters: CoursebookChapter[] = [
@@ -256,13 +268,13 @@ export const coursebookChapters: CoursebookChapter[] = [
     phase: '编程、清洗、统计与图表',
     summary: '用数据来源、视觉编码、统计标注和结论边界四层阅读科研图表，并训练 AI 图注改写的证据边界。',
     status: '目录占位',
-    reviewStatus: 'catalog_only',
+    reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: baseWeekFiles(11),
     knowledgeSources: ['knowledge/entities/ggplot2.md', 'knowledge/sources/ISLR.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
     coursebookTopics: ['科研图表规范', '图注写作', 'SCI 图表案例', '图表证据边界'],
-    badges: ['图表证据边界']
+    badges: ['图表证据边界', '微项目课堂化']
   },
   {
     chapter: 12,
@@ -273,13 +285,13 @@ export const coursebookChapters: CoursebookChapter[] = [
     phase: '高维、组学与综合项目',
     summary: '把临床表格桥接到样本 x 指标矩阵、表达矩阵、PCA、聚类和热图，建立 Week 13 的高维图形入口。',
     status: '目录占位',
-    reviewStatus: 'catalog_only',
+    reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
     sourceWeekFiles: baseWeekFiles(12),
     knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md'],
     materialSources: ['materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python', 'materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/sc_best_practices/scbp.course_index.md'],
     coursebookTopics: ['高维数据', '矩阵直觉', '距离度量', '表达矩阵桥接'],
-    badges: ['矩阵桥接']
+    badges: ['矩阵桥接', '微项目课堂化']
   },
   {
     chapter: 13,
@@ -289,14 +301,14 @@ export const coursebookChapters: CoursebookChapter[] = [
     page: '/coursebook/week-13',
     phase: '高维、组学与综合项目',
     summary: '把 PCA、聚类、热图和 UMAP 作为高维探索图形，区分 bulk、single-cell、spatial 的观测单位和误读风险。',
-    status: '样章候选',
-    reviewStatus: 'sample_candidate',
-    pptStatus: 'storyboard',
-    sourceWeekFiles: [...baseWeekFiles(13), 'course/weeks/week_13/ppt_storyboard.md'],
+    status: '试点候选',
+    reviewStatus: 'pilot_candidate',
+    pptStatus: 'storyboard_reviewed',
+    sourceWeekFiles: [...baseWeekFiles(13), 'course/weeks/week_13/ppt_storyboard.md', 'course/weeks/week_13/teaching_assets.md', 'course/evaluation/week_13_ppt_evidence_review.md'],
     knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python'],
     coursebookTopics: ['PCA', '聚类', '热图', '现代组学拓展'],
-    badges: ['现代组学拓展', '样章候选'],
+    badges: ['现代组学拓展', '试点候选'],
     sample: {
       introQuestion: '为什么同一批表达数据需要 PCA、聚类和热图来辅助理解，而这些图又不能直接证明机制？',
       learningObjectives: [
@@ -326,11 +338,12 @@ export const coursebookChapters: CoursebookChapter[] = [
         allowed: ['检查解释是否遗漏标准化、距离、参数和不确定性', '把图注改写为候选观察', '生成待核验清单', '比较 bulk、single-cell、spatial 图形读法差异'],
         forbidden: ['把 UMAP 或 cluster 直接写成细胞类型事实', '把热图颜色直接写成药效机制', '编造 SCBP/OSCA/OSTA workflow 结论', '跳过数据来源和参数记录']
       },
-      verificationPoints: ['教学矩阵和示意图必须标注为课堂模拟。', 'SCBP/OSCA/OSTA 只作为现代组学拓展来源，不作为学生必跑流程。', 'UMAP、cluster、marker 和 spatial domain 解释必须保留候选状态。', '任何图形分离都不能直接写成疾病机制、药效机制或临床建议。'],
+      verificationPoints: ['教学矩阵和示意图必须标注为课堂模拟。', 'SCBP/OSCA/OSTA 只作为现代组学拓展来源，不作为学生必跑流程。', 'UMAP、cluster、marker 和 spatial domain 解释必须保留候选状态。', '任何图形分离都不能直接写成疾病机制、药效机制或临床建议。', 'Evidence review 只支持 pilot_candidate，不表示 PPTX 或视觉 QA 完成。'],
+      candidateChecks: ['用脚本或教师自绘方式重新生成 PCA/热图示意，避免手写教学坐标被误读为真实分析结果。', 'PPTX 生成后必须导出 PNG/contact sheet 检查中文图注、参数说明和“不能证明机制”提示。', '若替换为真实公开数据图，必须补来源、授权、字段说明和参数记录。'],
       pptBridge: {
-        status: 'Week 13 当前为在线教材样章候选，已生成 storyboard；尚未完成 evidence review、PPTX 或 PNG/contact sheet QA。',
+        status: 'Week 13 当前为在线教材试点候选，已完成 storyboard evidence review；尚未生成 PPTX 或 PNG/contact sheet QA。',
         entry: 'course/weeks/week_13/ppt_storyboard.md',
-        nextActions: ['补充可公开展示的教学矩阵和高维图形示意。', '对 PCA/cluster/UMAP 解释做 evidence review。', '通过后再决定是否生成 PPTX。']
+        nextActions: ['用教学矩阵重新生成或自绘 PCA、聚类、热图和 UMAP 示意。', '生成 PPTX 后做 PNG/contact sheet 视觉 QA。', '若使用真实数据图，先补来源、授权和字段说明。']
       }
     }
   },
@@ -343,7 +356,7 @@ export const coursebookChapters: CoursebookChapter[] = [
     phase: '高维、组学与综合项目',
     summary: '解释 RNA-seq 从 FASTQ 到 count matrix 的链条，并用 SCBP/OSCA/OSTA 对照现代组学数据结构。',
     status: '样章可读',
-    reviewStatus: 'evidence_review_assets_pending',
+    reviewStatus: 'evidence_review_pass',
     pptStatus: 'storyboard',
     sourceWeekFiles: [...baseWeekFiles(14), 'course/weeks/week_14/ppt_storyboard.md'],
     knowledgeSources: ['knowledge/concepts/RNA-seq上游流程.md', 'knowledge/concepts/差异表达分析.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
@@ -380,9 +393,9 @@ export const coursebookChapters: CoursebookChapter[] = [
       },
       verificationPoints: ['上游流程图中的软件名和文件格式进入 PPT 前需回查。', 'SCBP/OSCA/OSTA 图形或 workflow 只作为结构对照，进入 PPT 前需核来源和授权。', 'count matrix 示例必须和 metadata 样本名严格对齐。', '总 counts 计算要能现场复核。'],
       pptBridge: {
-        status: 'Week 14 已完成 storyboard evidence review，仍需核对可公开展示素材；尚未生成 PPTX 或 PNG/contact sheet QA。',
+        status: 'Week 14 已完成 storyboard evidence review，公开素材策略改为教师自绘流程图和教学模拟矩阵；尚未生成 PPTX 或 PNG/contact sheet QA。',
         entry: 'course/weeks/week_14/ppt_storyboard.md',
-        nextActions: ['核对 AIDD 上游流程中的命令名、软件名和文件格式。', '补齐可公开展示图表或教学模拟图。', '素材核验通过后再决定是否进入 SYSU 蓝模板 PPTX 生成。']
+        nextActions: ['进入 PPTX 脚本前核对 AIDD 上游流程中的命令名、软件名和文件格式。', '保持自绘流程图和教学模拟矩阵，不直接引用外部图形。', '生成后再做 PNG/contact sheet 视觉 QA。']
       }
     }
   },
@@ -448,7 +461,7 @@ export const coursebookChapters: CoursebookChapter[] = [
     phase: '高维、组学与综合项目',
     summary: '用 QC、UMAP、cluster、marker 和空间组学图训练现代组学可视化解读和参数敏感性意识。',
     status: '样章可读',
-    reviewStatus: 'evidence_review_assets_pending',
+    reviewStatus: 'evidence_review_pass',
     pptStatus: 'storyboard',
     sourceWeekFiles: [...baseWeekFiles(16), 'course/weeks/week_16/ppt_storyboard.md'],
     knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
@@ -485,9 +498,9 @@ export const coursebookChapters: CoursebookChapter[] = [
       },
       verificationPoints: ['公开展示图需确认数据来源和授权。', 'UMAP 距离、cluster 含义、marker 注释和 spatial domain 需避免过度解释。', 'SCBP/OSCA/OSTA workflow 不作为学生必跑任务。', '参数敏感性必须在讲稿和后续 storyboard 中明示。'],
       pptBridge: {
-        status: 'Week 16 已完成 storyboard evidence review，仍需核对可公开展示素材；尚未生成 PPTX 或 PNG/contact sheet QA。',
+        status: 'Week 16 已完成 storyboard evidence review，公开素材策略改为自生成 QC/UMAP/marker/spatial 教学示意图；尚未生成 PPTX 或 PNG/contact sheet QA。',
         entry: 'course/weeks/week_16/ppt_storyboard.md',
-        nextActions: ['准备可公开展示的 QC/UMAP/marker 示例图并核授权。', '补齐参数敏感性说明对应图例。', '素材核验通过后再进入 PPTX 生成。']
+        nextActions: ['生成自绘或教学模拟 QC/UMAP/marker/spatial 图。', '补齐参数敏感性说明对应图例。', '生成后再做 PNG/contact sheet 视觉 QA。']
       }
     }
   },
@@ -504,8 +517,8 @@ export const coursebookChapters: CoursebookChapter[] = [
     pptStatus: 'not_started',
     sourceWeekFiles: baseWeekFiles(17),
     knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/entities/GitHub.md', 'knowledge/concepts/AI协作边界.md', 'knowledge/sources/OWF_Learn_Git.md', 'knowledge/sources/OWF_Learn_Linux_Shell.md'],
-    materialSources: ['materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md', 'materials/markdown/openwaterfoundation_learning/git/README.md', 'materials/markdown/openwaterfoundation_learning/linux_shell/README.md', 'materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210'],
-    coursebookTopics: ['综合项目', 'AI 审计', '结果核验', '素材溯源', 'PPT storyboard'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md', 'materials/markdown/openwaterfoundation_learning/git/README.md', 'materials/markdown/openwaterfoundation_learning/linux_shell/README.md', 'materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210', 'course/templates/project_readme_template.md', 'course/templates/data_sources_template.md', 'course/templates/ai_use_statement_template.md', 'course/templates/ppt_storyboard_template.md', 'course/evaluation/student_project_rubric.md'],
+    coursebookTopics: ['综合项目', 'AI 审计', '结果核验', '素材溯源', 'PPT storyboard', '项目 rubric'],
     badges: ['可复现工作流', '项目工作坊']
   },
   {
@@ -521,8 +534,8 @@ export const coursebookChapters: CoursebookChapter[] = [
     pptStatus: 'not_started',
     sourceWeekFiles: baseWeekFiles(18),
     knowledgeSources: ['knowledge/concepts/AI协作边界.md', 'knowledge/entities/GitHub.md', 'knowledge/concepts/项目目录结构与可复现.md'],
-    materialSources: ['materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md'],
-    coursebookTopics: ['项目汇报', 'AI 使用反思', '课程总结', '汇报 rubric'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md', 'course/templates/project_readme_template.md', 'course/templates/data_sources_template.md', 'course/templates/ai_use_statement_template.md', 'course/templates/ppt_storyboard_template.md', 'course/evaluation/student_project_rubric.md'],
+    coursebookTopics: ['项目汇报', 'AI 使用反思', '课程总结', '汇报 rubric', '项目 rubric'],
     badges: ['汇报验收']
   }
 ];

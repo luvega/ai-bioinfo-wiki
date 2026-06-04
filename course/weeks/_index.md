@@ -14,9 +14,9 @@
 | 08 | [week_08](week_08/) | 统计推断基础 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-08 |
 | 09 | [week_09](week_09/) | 相关分析与线性回归 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-09 |
 | 10 | [week_10](week_10/) | 分类问题与逻辑回归 | 待从课程主讲稿和素材卡中提炼。 | draft | courseware, week-10 |
-| 11 | [week_11](week_11/) | 科研图表规范与 SCI 图表表达 | 识别科研图表中的轴、单位、图例、样本量、统计方法和图注边界。 | draft | courseware, week-11 |
-| 12 | [week_12](week_12/) | 高维数据与数学直觉 | 解释临床表格、样本 x 指标矩阵、表达矩阵之间的关系。 | draft | courseware, week-12 |
-| 13 | [week_13](week_13/) | PCA、聚类与热图 | 说明高维数据为什么需要降维、聚类和热图辅助观察。 | sample_candidate | courseware, week-13 |
+| 11 | [week_11](week_11/) | 科研图表规范与 SCI 图表表达 | 识别科研图表中的轴、单位、图例、样本量、统计方法和图注边界。 | pilot_candidate | courseware, week-11 |
+| 12 | [week_12](week_12/) | 高维数据与数学直觉 | 解释临床表格、样本 x 指标矩阵、表达矩阵之间的关系。 | pilot_candidate | courseware, week-12 |
+| 13 | [week_13](week_13/) | PCA、聚类与热图 | 说明高维数据为什么需要降维、聚类和热图辅助观察。 | pilot_candidate | courseware, week-13 |
 | 14 | [week_14](week_14/) | 转录组数据分析基础 | 说明 RNA-seq 的目标是测量基因表达水平。 | pilot_ready | courseware, week-14 |
 | 15 | [week_15](week_15/) | 差异表达分析与功能解读 | 说明差异表达分析的输入、输出和统计问题。 | pilot_ready | courseware, week-15 |
 | 16 | [week_16](week_16/) | 单细胞转录组可视化 | 区分 bulk RNA-seq 与 scRNA-seq 的数据含义。 | pilot_ready | courseware, week-16 |

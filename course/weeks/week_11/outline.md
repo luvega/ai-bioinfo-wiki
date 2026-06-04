@@ -3,7 +3,7 @@ type: course-week
 week: 11
 title: 科研图表规范与 SCI 图表表达
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 11 周：科研图表规范与 SCI 图表表达 · PPT 大纲
@@ -34,6 +34,8 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 ## 课堂任务
 
 学生领取一张教学模拟图和一段 AI 改写图注，填写四栏表：图上看到什么、图形依据是什么、可能解释是什么、哪些内容需要数据或文献核验。
+
+可直接使用 [Week 11-13 连续微项目课堂表格](../week_11_13_classroom_tables.md) 中的“错误图注 -> 修订图注”表。课堂重点不是追求漂亮措辞，而是让学生能指出图注中哪一句已经从观察越界为机制或疗效结论。
 
 ## 连续微项目接口
 

@@ -12,7 +12,7 @@ const sampleCount = sampleChapters.length;
   <PageHeader
     eyebrow="Coursebook"
     title="在线教材目录"
-    intro="Coursebook 以 18 周课堂为骨架，按课堂主素材、支撑素材、拓展素材和教师备课素材分层组织。当前开放 Week 03、14、15、16 四个样章和 Week 13 候选样章，其余章节显示来源、标签和状态。"
+    intro="Coursebook 以 18 周课堂为骨架，按课堂主素材、支撑素材、拓展素材和教师备课素材分层组织。当前开放 Week 03、14、15、16 四个样章，Week 13 已推进为试点候选，其余章节显示来源、标签和状态。"
   />
 
   <section class="section">
@@ -34,7 +34,7 @@ const sampleCount = sampleChapters.length;
           </div>
           <div class="metric-card">
             <strong>{sampleCount}</strong>
-            <span>个首期样章</span>
+            <span>个样章/候选入口</span>
           </div>
           <div class="metric-card">
             <strong>Local</strong>
@@ -47,10 +47,25 @@ const sampleCount = sampleChapters.length;
         <ul class="content-list">
           <li><strong>目录占位：</strong>只表示已登记教材章节和来源，不表示正文完成。</li>
           <li><strong>样章候选：</strong>表示页面可读，但仍需补齐 evidence review、教学素材或 PPT 生产检查。</li>
+          <li><strong>试点候选：</strong>表示 storyboard 与 evidence review 已通过，可进入试讲或 PPTX 设计前置准备。</li>
           <li><strong>样章可读：</strong>表示页面具备导入问题、目标、概念、案例、AI 边界、来源和 PPT 衔接。</li>
           <li><strong>PPT 状态：</strong>独立记录 storyboard、evidence review、PPTX 和视觉 QA，不由讲稿状态自动推导。</li>
         </ul>
       </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Status Pipeline</p>
+        <h2>状态流水线</h2>
+        <p>
+          Coursebook 状态采用显式流水线：
+          <code>catalog_only</code> -> <code>sample_candidate</code> -> <code>pilot_candidate</code> -> <code>sample_ready</code> -> <code>storyboard</code> -> <code>evidence_review_assets_pending</code> -> <code>evidence_review_pass</code> -> <code>pptx_trial_done</code>。
+          其中 <code>evidence_review_assets_pending</code> 表示公开素材或图形授权尚未关闭；当前 Week 14/16 已改用自绘或自生成教学示意图策略，因此推进到 <code>evidence_review_pass</code>，但仍未宣称 PPTX 完成。
+        </p>
+      </div>
     </div>
   </section>
 
@@ -59,7 +74,7 @@ const sampleCount = sampleChapters.length;
       <div class="section-title">
         <p class="section-label">Readable Samples</p>
         <h2>样章与候选样章</h2>
-        <p>样章来自当前样板周和 Week 13 候选章，适合后续归纳教案、生成 storyboard 和推进 PPT 试点。</p>
+        <p>样章来自当前样板周和 Week 13 试点候选章，适合后续归纳教案、生成 storyboard 和推进 PPT 试点。</p>
       </div>
       <div class="chapter-grid">
         {sampleChapters.map((chapter) => (

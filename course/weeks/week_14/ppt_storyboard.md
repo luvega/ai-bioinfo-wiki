@@ -2,12 +2,12 @@
 week: 14
 title: 表达矩阵从哪里来
 ppt_status: storyboard
-review_status: evidence_review_pending
+review_status: evidence_review_pass
 ---
 
 # Week 14 PPT Storyboard：表达矩阵从哪里来
 
-本 storyboard 只用于审查 Week 14 的 PPT 结构和证据边界。当前状态是 `storyboard`，尚未生成 PPTX，也尚未做 PNG/contact sheet 视觉 QA。
+本 storyboard 只用于审查 Week 14 的 PPT 结构和证据边界。当前状态是 `storyboard` 与 `evidence_review_pass`，尚未生成 PPTX，也尚未做 PNG/contact sheet 视觉 QA。
 
 | Slide | Action title | Visual intent | Teacher note | Student action | Evidence/source note | Risk note |
 |---:|---|---|---|---|---|---|
@@ -22,7 +22,7 @@ review_status: evidence_review_pending
 
 ## Evidence Checklist
 
-- AIDD 上游流程中的软件名、命令名和文件格式进入 PPT 前需回查。
-- SCBP/OSCA/OSTA 图形只作为结构对照和教师备课来源，公开展示前需核对来源与授权。
+- AIDD 上游流程中的软件名、命令名和文件格式进入 PPTX 脚本前需回查。
+- 正式 PPT 默认使用教师自绘流程图和教学模拟矩阵；若改用外部图形，需重新进入 source review。
 - 所有 count matrix、metadata、QC 和 normalization 示例必须标注“教学模拟”或给出可追溯来源。
 - Week 14 只进入 storyboard review，不宣称 PPTX 完成。

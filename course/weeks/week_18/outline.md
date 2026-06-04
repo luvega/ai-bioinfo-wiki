@@ -34,6 +34,8 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 每组按 rubric 汇报 6 到 8 分钟，并回答至少 2 个答辩问题：一个关于数据来源，一个关于图表证据边界或 AI 使用。
 
+教师使用 [学生项目 Rubric](../../evaluation/student_project_rubric.md) 评分，并抽查四个项目文件：[项目 README 模板](../../templates/project_readme_template.md)、[数据与素材来源模板](../../templates/data_sources_template.md)、[AI 使用声明模板](../../templates/ai_use_statement_template.md) 和 [PPT Storyboard 模板](../../templates/ppt_storyboard_template.md) 的填写质量。
+
 ## AI协作边界
 
 - 允许：帮助准备答辩问题、压缩汇报语言、检查 AI 使用声明是否完整。

@@ -3,7 +3,7 @@ type: course-week
 week: 11
 title: 科研图表规范与 SCI 图表表达
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 11 周：科研图表规范与 SCI 图表表达 · 素材映射
@@ -48,3 +48,9 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - 本周是 [Week 11-13 连续微项目](../week_11_13_micro_project.md) 的第 1 步。
 - 课堂交付物：图表证据边界表，至少包含数据来源、视觉编码、统计标注、可支持结论和不能支持结论。
 - 与 Week 12 的衔接：学生把本周修订后的图注对应到下一周的样本 x 指标矩阵。
+
+## 课堂表格资产
+
+- [Week 11-13 连续微项目课堂表格](../week_11_13_classroom_tables.md) 已补齐 Week 11 的“错误图注 -> 修订图注”示例。
+- 本周从 `draft` 推进为 `pilot_candidate` 的依据是：课堂已有可投屏/打印表格、AI 图注越界检查任务和 Week 12 矩阵桥接接口。
+- 仍需人工核验：若替换为真实论文图或外部图，必须确认授权、来源和图注边界。

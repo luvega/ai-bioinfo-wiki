@@ -36,6 +36,8 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 每组提交 `README.md`、`data_sources.md`、`ai_use_statement.md`、`ppt_storyboard.md` 和至少一张可解释图表的草稿，现场用自查表标记需要修改的地方。
 
+学生可直接复制并填写 [项目 README 模板](../../templates/project_readme_template.md)、[数据与素材来源模板](../../templates/data_sources_template.md)、[AI 使用声明模板](../../templates/ai_use_statement_template.md) 和 [PPT Storyboard 模板](../../templates/ppt_storyboard_template.md)。现场互评按 [学生项目 Rubric](../../evaluation/student_project_rubric.md) 检查数据来源、图表表达、证据边界、AI 使用和可复现记录。
+
 ## AI协作边界
 
 - 允许：整理 README、检查流程遗漏、改写 storyboard、生成待核验清单。

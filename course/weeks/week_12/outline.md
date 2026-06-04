@@ -3,7 +3,7 @@ type: course-week
 week: 12
 title: 高维数据与数学直觉
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 12 周：高维数据与数学直觉 · PPT 大纲
@@ -35,6 +35,8 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 ## 课堂任务
 
 学生用一个 6 samples x 5 genes 的教学矩阵，手工识别行、列、分组变量、缺失值、尺度差异，再解释为什么热图颜色不是原始医学结论。
+
+可直接使用 [Week 11-13 连续微项目课堂表格](../week_11_13_classroom_tables.md) 中的“临床表格 -> 样本 x 指标矩阵 -> metadata”表。学生必须能把 `group`、`batch` 与表达矩阵分开说明，并指出 metadata 对齐错误会怎样影响后续 PCA、聚类和热图。
 
 ## 连续微项目接口
 

@@ -2,12 +2,12 @@
 week: 16
 title: 单细胞与空间组学图形解读
 ppt_status: storyboard
-review_status: evidence_review_pending
+review_status: evidence_review_pass
 ---
 
 # Week 16 PPT Storyboard：单细胞与空间组学图形解读
 
-本 storyboard 只用于审查 Week 16 的图形解读路径和证据边界。当前状态是 `storyboard`，尚未生成 PPTX，也尚未做 PNG/contact sheet 视觉 QA。
+本 storyboard 只用于审查 Week 16 的图形解读路径和证据边界。当前状态是 `storyboard` 与 `evidence_review_pass`，尚未生成 PPTX，也尚未做 PNG/contact sheet 视觉 QA。
 
 | Slide | Action title | Visual intent | Teacher note | Student action | Evidence/source note | Risk note |
 |---:|---|---|---|---|---|---|
@@ -22,7 +22,7 @@ review_status: evidence_review_pending
 
 ## Evidence Checklist
 
-- 公开展示 QC、UMAP、marker、spatial 图前需确认数据来源和授权。
+- 正式 PPT 默认使用自生成 QC、UMAP、marker、spatial 教学示意图；若改用外部图形，需重新进入 source review。
 - SCBP/OSCA/OSTA workflow 不作为学生必跑任务，只作为图形阅读和教师备课素材。
 - 所有 marker、cell type、spatial domain 和 mechanism 语句必须保留候选和待核验状态。
 - Week 16 只进入 storyboard review，不宣称 PPTX 完成。

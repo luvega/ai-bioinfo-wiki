@@ -3,7 +3,7 @@ type: course-week
 week: 13
 title: PCA、聚类与热图
 hours: 2
-status: sample_candidate
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 13 周：PCA、聚类与热图 · 素材映射
@@ -42,6 +42,12 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - 示例表格：PCA 坐标表、聚类参数表、热图标准化说明表。
 - 代码片段：只保留参数记录伪代码，不要求学生运行 SCBP/OSCA workflow。
 - AI 提示词：检查 PCA/聚类/热图解释是否记录标准化方法、距离度量、分辨率和待核验点。
+
+## 教学资产与 evidence review
+
+- [Week 13 教学矩阵与高维图形资产](teaching_assets.md) 已补齐可公开使用的教学矩阵、PCA 坐标表示意、聚类参数表、热图说明、UMAP 示意说明和 AI 审查 Prompt。
+- [Week 13 PPT Storyboard Evidence Review](../../evaluation/week_13_ppt_evidence_review.md) 已将本周推进为 `pilot_candidate`，但仍不表示 PPTX 已生成。
+- 正式进入 PPTX 前，PCA/热图示意最好由脚本从教学矩阵重新生成，并在 PNG/contact sheet 中检查图注、颜色和文字溢出。
 
 ## 本轮升级重点（2026-06-04）
 

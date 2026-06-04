@@ -3,7 +3,7 @@ type: course-week
 week: 13
 title: PCA、聚类与热图
 hours: 2
-status: sample_candidate
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 13 周：PCA、聚类与热图 · PPT 大纲
@@ -36,6 +36,8 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 学生填写“高维图形四栏表”：输入矩阵是什么、图上观察是什么、可能解释是什么、必须核验什么。课堂样例使用教学矩阵，不把 UMAP/cluster 直接写成细胞类型事实。
 
+可直接使用 [Week 13 教学矩阵与高维图形资产](teaching_assets.md) 和 [Week 11-13 连续微项目课堂表格](../week_11_13_classroom_tables.md)。教师应把 PCA 坐标、聚类参数、热图颜色和 UMAP 示意都标注为教学模拟或图形阅读预告。
+
 ## 连续微项目接口
 
 本周完成 [Week 11-13 连续微项目](../week_11_13_micro_project.md) 的高维图形判读环节。学生必须能把 Week 11 的图表证据边界、Week 12 的矩阵结构说明，迁移到 PCA、聚类、热图和 UMAP 的输入输出解释。
@@ -48,3 +50,9 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 ## 课后练习
 
 从 PCA、热图、UMAP 三类图中任选一种，写一段不超过 150 字的图形解释，并列出 3 个待核验点。
+
+## 试点候选待完成事项
+
+- 生成 PPTX 前重新计算或绘制 PCA/热图示意，避免手写教学坐标被误读为真实分析结果。
+- 对 PPTX 导出 PNG/contact sheet，检查中文图注、参数说明和“不能证明机制”提示是否可读。
+- 若替换为真实公开数据图，必须补来源、授权和字段说明。

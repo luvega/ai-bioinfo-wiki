@@ -110,6 +110,19 @@ const catalogNext = coursebookChapters.find((item) => item.week === chapter.week
     </div>
   </section>
 
+  {sample.candidateChecks && (
+    <section class="section">
+      <div class="section-inner">
+        <article class="info-panel">
+          <h2>候选样章待完成事项</h2>
+          <ul class="content-list">
+            {sample.candidateChecks.map((item) => <li>{item}</li>)}
+          </ul>
+        </article>
+      </div>
+    </section>
+  )}
+
   <section class="section">
     <div class="section-inner split">
       <article class="info-panel">

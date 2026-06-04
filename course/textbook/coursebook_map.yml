@@ -190,7 +190,7 @@ chapters:
       - materials/markdown/sc_best_practices/scbp.course_index.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
     ppt_status: not_started
-    review_status: catalog_only
+    review_status: pilot_candidate
   - chapter: 12
     week: 12
     title: 高维数据与数学直觉
@@ -209,7 +209,7 @@ chapters:
       - materials/markdown/aidd_bioinformatics/aidd.course_index.md
       - materials/markdown/sc_best_practices/scbp.course_index.md
     ppt_status: not_started
-    review_status: catalog_only
+    review_status: pilot_candidate
   - chapter: 13
     week: 13
     title: PCA、聚类与热图
@@ -219,6 +219,8 @@ chapters:
       - course/weeks/week_13/outline.md
       - course/weeks/week_13/script.md
       - course/weeks/week_13/ppt_storyboard.md
+      - course/weeks/week_13/teaching_assets.md
+      - course/evaluation/week_13_ppt_evidence_review.md
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
@@ -232,8 +234,8 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
-    ppt_status: storyboard
-    review_status: sample_candidate
+    ppt_status: storyboard_reviewed
+    review_status: pilot_candidate
   - chapter: 14
     week: 14
     title: 转录组数据分析基础
@@ -257,7 +259,7 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
     ppt_status: storyboard
-    review_status: evidence_review_assets_pending
+    review_status: evidence_review_pass
   - chapter: 15
     week: 15
     title: 差异表达分析与功能解读
@@ -305,7 +307,7 @@ chapters:
       - materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction/chapter.source.md
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
     ppt_status: storyboard
-    review_status: evidence_review_assets_pending
+    review_status: evidence_review_pass
   - chapter: 17
     week: 17
     title: 综合项目工作坊：AI 协作分析与结果核验
@@ -325,6 +327,11 @@ chapters:
       - materials/markdown/openwaterfoundation_learning/git/README.md
       - materials/markdown/openwaterfoundation_learning/linux_shell/README.md
       - materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210
+      - course/templates/project_readme_template.md
+      - course/templates/data_sources_template.md
+      - course/templates/ai_use_statement_template.md
+      - course/templates/ppt_storyboard_template.md
+      - course/evaluation/student_project_rubric.md
     ppt_status: not_started
     review_status: catalog_only
   - chapter: 18
@@ -340,5 +347,10 @@ chapters:
       - knowledge/entities/GitHub.md
     material_sources:
       - materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md
+      - course/templates/project_readme_template.md
+      - course/templates/data_sources_template.md
+      - course/templates/ai_use_statement_template.md
+      - course/templates/ppt_storyboard_template.md
+      - course/evaluation/student_project_rubric.md
     ppt_status: not_started
     review_status: catalog_only

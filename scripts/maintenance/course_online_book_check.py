@@ -50,8 +50,10 @@ WEEK13_TRANSITION_TERMS = (
     "bulk expression matrix",
     "single-cell",
     "spatial matrix",
-    "样章候选",
+    "试点候选",
     "UMAP",
+    "PCA 坐标",
+    "聚类参数",
 )
 PROJECT_WEEK_TERMS = {
     17: ("Git/GitHub", "素材溯源", "AI 使用声明", "storyboard", "图表证据边界"),
@@ -60,11 +62,17 @@ PROJECT_WEEK_TERMS = {
 REQUIRED_SUPPORT_FILES = (
     "course/evaluation/learning_outcome_matrix.md",
     "course/evaluation/student_project_rubric.md",
+    "course/evaluation/week_13_ppt_evidence_review.md",
     "course/evaluation/week_14_ppt_evidence_review.md",
     "course/evaluation/week_16_ppt_evidence_review.md",
     "course/templates/ai_use_statement_template.md",
+    "course/templates/project_readme_template.md",
+    "course/templates/data_sources_template.md",
+    "course/templates/ppt_storyboard_template.md",
     "course/weeks/week_11_13_micro_project.md",
+    "course/weeks/week_11_13_classroom_tables.md",
     "course/weeks/week_13/ppt_storyboard.md",
+    "course/weeks/week_13/teaching_assets.md",
 )
 
 
@@ -166,12 +174,12 @@ def check_map(root: Path) -> list[Issue]:
             issues.append(Issue("BAD_SAMPLE_ROUTE", MAP_PATH, f"Week {week:02d} should route to /coursebook/week-{int(week):02d}"))
         if week not in SAMPLE_WEEKS and not page.startswith("/coursebook#week-"):
             issues.append(Issue("BAD_CATALOG_ROUTE", MAP_PATH, f"Week {week} should route to a Coursebook catalog anchor"))
-        if week == 13 and review_status != "sample_candidate":
-            issues.append(Issue("BAD_WEEK13_STATUS", MAP_PATH, "Week 13 should remain sample_candidate until evidence review passes"))
-        if week == 13 and ppt_status != "storyboard":
-            issues.append(Issue("BAD_WEEK13_PPT_STATUS", MAP_PATH, "Week 13 should expose storyboard without claiming PPTX completion"))
-        if week in {14, 16} and review_status != "evidence_review_assets_pending":
-            issues.append(Issue("BAD_EVIDENCE_STATUS", MAP_PATH, f"Week {week:02d} should remain evidence_review_assets_pending until public assets are verified"))
+        if week == 13 and review_status != "pilot_candidate":
+            issues.append(Issue("BAD_WEEK13_STATUS", MAP_PATH, "Week 13 should be pilot_candidate after evidence review, without claiming pilot_ready"))
+        if week == 13 and ppt_status != "storyboard_reviewed":
+            issues.append(Issue("BAD_WEEK13_PPT_STATUS", MAP_PATH, "Week 13 should expose reviewed storyboard without claiming PPTX completion"))
+        if week in {14, 16} and review_status != "evidence_review_pass":
+            issues.append(Issue("BAD_EVIDENCE_STATUS", MAP_PATH, f"Week {week:02d} should be evidence_review_pass after public asset strategy is closed"))
 
         for field in ("source_week_files", "knowledge_sources", "material_sources"):
             values = chapter.get(field, [])
@@ -220,10 +228,10 @@ def check_site_data(root: Path) -> list[Issue]:
         issues.append(Issue("RAW_SOURCE_REFERENCE", SITE_DATA, "Site data must not reference raw sources"))
     if re.search(r"script\.md.*formal_ready.*PPT", text, flags=re.S):
         issues.append(Issue("STATUS_CONFLATION", SITE_DATA, "Do not infer PPT readiness from script formal_ready status"))
-    for required_text in ("现代组学拓展", "样章候选", "evidence_review_assets_pending", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
+    for required_text in ("现代组学拓展", "试点候选", "pilot_candidate", "storyboard_reviewed", "evidence_review_assets_pending", "evidence_review_pass", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
         if required_text not in text:
             issues.append(Issue("MISSING_MODERN_OMICS_DATA", SITE_DATA, f"Site data should expose {required_text}"))
-    for required_text in ("可复现工作流", "OWF_Learn_Git"):
+    for required_text in ("可复现工作流", "OWF_Learn_Git", "AI 使用声明", "项目 rubric", "student_project_rubric"):
         if required_text not in text:
             issues.append(Issue("MISSING_REPRO_DATA", SITE_DATA, f"Site data should expose {required_text}"))
     return issues
@@ -275,6 +283,13 @@ def check_routes() -> list[Issue]:
         for heading in REQUIRED_SAMPLE_HEADINGS:
             if heading not in route_text:
                 issues.append(Issue("MISSING_SAMPLE_SECTION", COURSEBOOK_ROUTE, f"Missing rendered sample section: {heading}"))
+        if "候选样章待完成事项" not in route_text:
+            issues.append(Issue("MISSING_CANDIDATE_CHECKS", COURSEBOOK_ROUTE, "Sample route should render candidate chapter pending checks"))
+    if COURSEBOOK_INDEX.exists():
+        index_text = read_text(COURSEBOOK_INDEX)
+        for required_text in ("状态流水线", "catalog_only", "sample_candidate", "pilot_candidate", "evidence_review_assets_pending", "evidence_review_pass", "pptx_trial_done"):
+            if required_text not in index_text:
+                issues.append(Issue("MISSING_STATUS_PIPELINE", COURSEBOOK_INDEX, f"Coursebook index should explain {required_text}"))
     if WEEK_ROUTE.exists():
         week_route_text = read_text(WEEK_ROUTE)
         if "getCoursebookChapterByWeek" not in week_route_text or "/coursebook#week-" not in week_route_text:

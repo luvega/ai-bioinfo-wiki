@@ -3,7 +3,7 @@ type: course-week
 week: 12
 title: 高维数据与数学直觉
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 12 周：高维数据与数学直觉 · 素材映射
@@ -48,3 +48,9 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - 本周是 [Week 11-13 连续微项目](../week_11_13_micro_project.md) 的第 2 步。
 - 课堂交付物：矩阵结构说明表，至少包含观测单位、变量、metadata、缺失/尺度问题和标准化必要性。
 - 与 Week 13 的衔接：同一个教学矩阵进入 PCA、聚类和热图解释，避免学生每周重新理解一个新案例。
+
+## 课堂表格资产
+
+- [Week 11-13 连续微项目课堂表格](../week_11_13_classroom_tables.md) 已补齐 Week 12 的“临床表格 -> 样本 x 指标矩阵 -> metadata”示例。
+- 本周从 `draft` 推进为 `pilot_candidate` 的依据是：课堂已有转换说明表、metadata 模板和 Week 13 高维图形输入接口。
+- 仍需人工核验：若使用真实表达矩阵，必须确认来源、单位、是否 log/normalized 和样本分组含义。
