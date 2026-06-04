@@ -10,7 +10,7 @@
 | [full_week_pilot_candidate_review.md](full_week_pilot_candidate_review.md) | 18 周 materials/outline 进入试点候选水位的人工审查记录 | pilot_candidate_review |
 | [lecture_script_standard.md](lecture_script_standard.md) | 每周讲义深度等级、必备结构和扩写顺序 | active |
 | [week_03_pilot_review.md](week_03_pilot_review.md) | Week 03 可授课试点的 rubric 试评 | draft-review |
-| [week_13_ppt_evidence_review.md](week_13_ppt_evidence_review.md) | Week 13 PPT storyboard 与教学资产的 evidence review | evidence_review_pass |
+| [week_13_ppt_evidence_review.md](week_13_ppt_evidence_review.md) | Week 13 PPT storyboard 与教学资产的 evidence review | pilot_ready_evidence_pass |
 | [week_14_pilot_review.md](week_14_pilot_review.md) | Week 14 可授课试点的 rubric 试评 | draft-review |
 | [week_14_ppt_evidence_review.md](week_14_ppt_evidence_review.md) | Week 14 PPT storyboard 的 claim-evidence 审查 | evidence_review_pass |
 | [week_15_pilot_review.md](week_15_pilot_review.md) | Week 15 可授课试点的 rubric 试评 | draft-review |

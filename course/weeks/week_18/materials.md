@@ -50,6 +50,7 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - [数据与素材来源模板](../../templates/data_sources_template.md)：检查展示图表是否有来源、字段和授权说明。
 - [AI 使用声明模板](../../templates/ai_use_statement_template.md)：检查 AI 使用是否透明、可审计。
 - [PPT Storyboard 模板](../../templates/ppt_storyboard_template.md)：检查最终 PPT 是否逐页保留证据来源和 risk note。
+- [Week 18 试讲包 v1](teaching_pack_v1.md)：提供汇报时间切分、答辩问题池、最终归档清单和优秀/需修改样例。
 
 ## 试点候选审查依据（2026-06-04）
 

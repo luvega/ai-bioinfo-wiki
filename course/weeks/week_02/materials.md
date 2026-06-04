@@ -38,10 +38,10 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## 可进 PPT 的元素
 
-- 概念图：待定。
-- 示例表格：待定。
-- 代码片段：待定。
-- AI 提示词：待定。
+- 概念图：项目目录、Git/GitHub 记录、数据来源和 AI 日志的可复现链条。
+- 示例表格：Prompt 记录表、素材溯源表和 README 最小结构。
+- 代码片段：`git status`、`git add`、`git commit`、`git log --oneline`。
+- AI 提示词：检查项目目录和 README 是否能支持复现，不代写结论。
 
 ## 试点候选审查依据（2026-06-04）
 

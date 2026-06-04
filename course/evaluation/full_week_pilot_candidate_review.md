@@ -8,7 +8,7 @@
 
 - Week 01/02/04-10/17/18 已补齐最小“学习目标 -> 课堂任务 -> 可评价证据 -> AI 协作边界 -> 待核验点”闭环，可进入 `pilot_candidate`。
 - Week 03/14/15/16 保持 `pilot_ready` 或样章可读状态，不回退。
-- Week 11/12/13 保持 `pilot_candidate`，其中 Week 13 仍是样章候选，不等同于 PPTX 完成。
+- Week 11/12 保持 `pilot_candidate`；Week 13 在补齐可复现教学图形脚本和 evidence review 后可升为 `pilot_ready`，但不等同于 PPTX 完成。
 - 本次审查只确认周次素材和课堂大纲具备试点候选条件，不生成、不宣称、不推断任何新增 PPTX。
 
 ## 统一判据
@@ -34,12 +34,13 @@
 | Week 08 | 统计推断五列表和 P 值/置信区间边界已明确 | 补齐检验前提反例 |
 | Week 09 | 散点图、回归解释、残差/异常点和因果边界已明确 | 补齐混杂因素课堂讨论卡 |
 | Week 10 | 混淆矩阵、阈值、敏感度/特异度和模型边界已明确 | 补齐阈值风险小数据 |
+| Week 13 | 高维图形教学矩阵、PCA/聚类/热图/UMAP 资产和 evidence review 已支持试讲 | 进入 PPTX 前继续做 PNG/contact sheet QA |
 | Week 17 | 项目交付包、素材溯源、AI 使用声明、storyboard 和 Git/GitHub 记录已明确 | 增加互评样表和教师巡查清单 |
 | Week 18 | 汇报 rubric、答辩问题、AI 使用反思和最终归档要求已明确 | 增加答辩问题池与优秀/需改进样例 |
 
 ## PPT 状态声明
 
 - `script.md status: formal_ready` 与 `depth: full-lecture` 只代表讲义深度达标。
-- `materials.md` 与 `outline.md` 的 `pilot_candidate` 只代表具备试点候选课堂结构。
+- `materials.md` 与 `outline.md` 的 `pilot_candidate` 只代表具备试点候选课堂结构；`pilot_ready` 代表具备试讲条件，不代表 PPT 完成。
 - PPT 状态仍按 storyboard、evidence review、PPTX 生成和 PNG/contact sheet QA 独立判断。
 - 本轮没有新增 PPTX，也没有把任何周次从讲义状态自动推断为 PPT 完成。

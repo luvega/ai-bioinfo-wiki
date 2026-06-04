@@ -15,8 +15,18 @@ COURSEBOOK_INDEX = ROOT / "site" / "src" / "pages" / "coursebook.astro"
 COURSEBOOK_ROUTE = ROOT / "site" / "src" / "pages" / "coursebook" / "[slug].astro"
 WEEK_ROUTE = ROOT / "site" / "src" / "pages" / "weeks" / "[slug].astro"
 SAMPLE_WEEKS = {3, 13, 14, 15, 16}
-MINIMUM_REVIEW_STATUSES = {"pilot_candidate", "sample_ready", "evidence_review_pass"}
+MINIMUM_REVIEW_STATUSES = {"pilot_candidate", "pilot_ready", "sample_ready", "evidence_review_pass"}
 MINIMUM_WEEK_FILE_STATUSES = {"pilot_candidate", "pilot_ready"}
+TRIAL_READY_PACK_WEEKS = {1, 2, 4, 5, 6, 7, 8, 9, 10, 17, 18}
+TRIAL_READY_PACK_TERMS = (
+    "2 学时时间切分",
+    "课堂",
+    "预期输出",
+    "参考答案",
+    "常见误区",
+    "AI 审计提示",
+)
+STALE_PLACEHOLDERS = ("待提炼", "待抽取", "待定")
 MODERN_OMICS_EXPECTATIONS = {
     13: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
     14: ("Single_Cell_Best_Practices", "OSCA", "OSTA"),
@@ -52,7 +62,7 @@ WEEK13_TRANSITION_TERMS = (
     "bulk expression matrix",
     "single-cell",
     "spatial matrix",
-    "试点候选",
+    "试讲就绪",
     "UMAP",
     "PCA 坐标",
     "聚类参数",
@@ -76,6 +86,10 @@ REQUIRED_SUPPORT_FILES = (
     "course/weeks/week_11_13_classroom_tables.md",
     "course/weeks/week_13/ppt_storyboard.md",
     "course/weeks/week_13/teaching_assets.md",
+    "scripts/courseware/build_week13_teaching_figures.py",
+)
+REQUIRED_TRIAL_READY_PACKS = tuple(
+    f"course/weeks/week_{week:02d}/teaching_pack_v1.md" for week in sorted(TRIAL_READY_PACK_WEEKS)
 )
 
 
@@ -179,8 +193,8 @@ def check_map(root: Path) -> list[Issue]:
             issues.append(Issue("BAD_CATALOG_ROUTE", MAP_PATH, f"Week {week} should route to a Coursebook catalog anchor"))
         if review_status not in MINIMUM_REVIEW_STATUSES:
             issues.append(Issue("LOW_REVIEW_STATUS", MAP_PATH, f"Week {week:02d} review_status should be at least pilot_candidate, found {review_status}"))
-        if week == 13 and review_status != "pilot_candidate":
-            issues.append(Issue("BAD_WEEK13_STATUS", MAP_PATH, "Week 13 should be pilot_candidate after evidence review, without claiming pilot_ready"))
+        if week == 13 and review_status != "pilot_ready":
+            issues.append(Issue("BAD_WEEK13_STATUS", MAP_PATH, "Week 13 should be pilot_ready after reproducible teaching figures and evidence review"))
         if week == 13 and ppt_status != "storyboard_reviewed":
             issues.append(Issue("BAD_WEEK13_PPT_STATUS", MAP_PATH, "Week 13 should expose reviewed storyboard without claiming PPTX completion"))
         if week in {14, 16} and review_status != "evidence_review_pass":
@@ -237,9 +251,11 @@ def check_site_data(root: Path) -> list[Issue]:
         issues.append(Issue("LOW_REVIEW_STATUS", SITE_DATA, "Coursebook data should not leave any week at catalog_only after full-week pilot candidate review"))
     if re.search(r"status:\s*['\"]目录占位", text):
         issues.append(Issue("LOW_DISPLAY_STATUS", SITE_DATA, "Coursebook data should display full-week pilot candidate status, not catalog placeholders"))
-    for required_text in ("现代组学拓展", "试点候选", "pilot_candidate", "storyboard_reviewed", "evidence_review_assets_pending", "evidence_review_pass", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
+    for required_text in ("现代组学拓展", "试点候选", "pilot_candidate", "pilot_ready", "storyboard_reviewed", "evidence_review_assets_pending", "evidence_review_pass", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
         if required_text not in text:
             issues.append(Issue("MISSING_MODERN_OMICS_DATA", SITE_DATA, f"Site data should expose {required_text}"))
+    if "试讲包 v1" not in text:
+        issues.append(Issue("MISSING_TRIAL_READY_PACK_DATA", SITE_DATA, "Site data should expose trial-ready pack badges"))
     for required_text in ("可复现工作流", "OWF_Learn_Git", "AI 使用声明", "项目 rubric", "student_project_rubric"):
         if required_text not in text:
             issues.append(Issue("MISSING_REPRO_DATA", SITE_DATA, f"Site data should expose {required_text}"))
@@ -258,6 +274,7 @@ def check_course_week_files(root: Path) -> list[Issue]:
         materials_text = read_text(materials_path)
         if "素材分层使用原则（2026-06-04）" not in materials_text:
             issues.append(Issue("MISSING_MATERIAL_LAYERING", materials_path, "Week materials must include the four-layer source policy"))
+        trial_pack_path = week_dir / "teaching_pack_v1.md"
         week_files = (materials_path, week_dir / "outline.md", week_dir / "script.md")
         week_text_parts: list[str] = []
         for path in week_files:
@@ -270,8 +287,22 @@ def check_course_week_files(root: Path) -> list[Issue]:
                 status_value = status_match.group(1).strip("'\"") if status_match else ""
                 if status_value not in MINIMUM_WEEK_FILE_STATUSES:
                     issues.append(Issue("LOW_WEEK_FILE_STATUS", path, f"{path.name} should be pilot_candidate or pilot_ready, found {status_value or 'missing'}"))
+                if status_value in MINIMUM_WEEK_FILE_STATUSES:
+                    for placeholder in STALE_PLACEHOLDERS:
+                        if placeholder in path_text:
+                            issues.append(Issue("STALE_WEEK_PLACEHOLDER", path, f"{path.name} still contains placeholder text: {placeholder}"))
             if has_forbidden_raw_reference(path_text):
                 issues.append(Issue("RAW_SOURCE_REFERENCE", path, "Course week files must not reference materials/raw"))
+        if week in TRIAL_READY_PACK_WEEKS:
+            if not trial_pack_path.exists():
+                issues.append(Issue("MISSING_TRIAL_READY_PACK", trial_pack_path, f"Week {week:02d} should include teaching_pack_v1.md"))
+            else:
+                pack_text = read_text(trial_pack_path)
+                week_text_parts.append(pack_text)
+                for term in contains_required_terms(pack_text, TRIAL_READY_PACK_TERMS):
+                    issues.append(Issue("MISSING_TRIAL_READY_PACK_TERM", trial_pack_path, f"Week {week:02d} teaching pack should include {term}"))
+                if has_forbidden_raw_reference(pack_text):
+                    issues.append(Issue("RAW_SOURCE_REFERENCE", trial_pack_path, "Teaching packs must not reference materials/raw"))
         week_text = "\n".join(week_text_parts)
         if week == 13:
             for term in contains_required_terms(week_text, WEEK13_TRANSITION_TERMS):
@@ -313,7 +344,7 @@ def check_routes() -> list[Issue]:
 
 def run_check(root: Path = ROOT) -> list[Issue]:
     issues: list[Issue] = []
-    for relative_path in REQUIRED_SUPPORT_FILES:
+    for relative_path in (*REQUIRED_SUPPORT_FILES, *REQUIRED_TRIAL_READY_PACKS):
         candidate = root / relative_path
         if not candidate.exists():
             issues.append(Issue("MISSING_SUPPORT_FILE", candidate, f"Required support file is missing: {relative_path}"))

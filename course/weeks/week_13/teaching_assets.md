@@ -2,13 +2,21 @@
 type: teaching-assets
 week: 13
 title: Week 13 教学矩阵与高维图形资产
-status: active
+status: pilot_ready_asset
 updated: 2026-06-04
 ---
 
 # Week 13 教学矩阵与高维图形资产
 
 本文件为 Week 13 的可公开教学资产说明。所有数据均为 generated teaching example，只用于课堂解释 PCA、聚类、热图和 UMAP 的输入输出与证据边界，不代表真实药物实验结果。
+
+## 可复现图形生成
+
+- 脚本：[Week 13 教学图形生成脚本](../../../scripts/courseware/build_week13_teaching_figures.py)。
+- 输出目录：`outputs/teaching_figures/week_13/`，不进入 Git。
+- 输出文件：`week13_pca.svg`、`week13_cluster.svg`、`week13_heatmap.svg`、`week13_umap.svg`。
+- 依赖：Python 标准库；固定模拟数据；无需外部图片或商业素材。
+- 课堂边界：生成图只用于解释高维图形读法，不作为真实分析结果、机制结论或 PPTX 完成证据。
 
 ## 教学矩阵
 
@@ -76,6 +84,15 @@ Week 13 的 UMAP 只作为现代组学图形阅读预告：
 - 点可以代表细胞或 spot，取决于输入矩阵。
 - 点的局部邻近关系受预处理、PCA 维度、neighbors、min_dist 和随机种子影响。
 - cluster 或 spatial domain 只能写成候选结构，不可写成最终细胞类型、病理区域或药物机制。
+
+## 图形参数与风险提示
+
+| 图形 | 输入 | 参数或处理 | 必须显示的风险提示 |
+|---|---|---|---|
+| PCA | 教学矩阵 | 使用脚本中固定教学坐标展示 PC1/PC2 结构 | 只提示主要变异方向，不证明机制 |
+| 聚类 | z-score 后矩阵 | Euclidean distance + complete linkage | cluster 标签依赖参数，不是诊断或机制标签 |
+| 热图 | 6 samples x 5 genes 矩阵 | 教学色阶；正式 PPT 需说明标准化 | 颜色显示模式，不是原始表达量或药效大小 |
+| UMAP | 教学坐标 | 用于现代组学图形预告 | 点距和 cluster 不代表真实生物距离 |
 
 ## AI 审查 Prompt
 

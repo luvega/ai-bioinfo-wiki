@@ -3,7 +3,7 @@ type: course-week
 week: 13
 title: PCA、聚类与热图
 hours: 2
-status: pilot_candidate
+status: pilot_ready
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 13 周：PCA、聚类与热图 · PPT 大纲
@@ -25,12 +25,14 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 6. AI 协作边界与待核验点。
 7. 出口卡：一张图能说什么，不能说什么？
 
-## 待抽取素材
+## 已对齐素材
 
 - 课程主讲稿：[课程教学讲稿](../../syllabus/课程教学讲稿-医药数据处理与可视化-36课时-AI前置调整版.md)
 - [SCBP 降维章节](../../../materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md)
 - [SCBP 聚类章节](../../../materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md)
 - [OSCA](../../../knowledge/sources/OSCA.md) 和 [OSTA](../../../knowledge/sources/OSTA.md) 作为教师备课和现代组学拓展。
+- [Week 13 教学矩阵与高维图形资产](teaching_assets.md)
+- [Week 13 教学图形生成脚本](../../../scripts/courseware/build_week13_teaching_figures.py)
 
 ## 课堂任务
 
@@ -51,7 +53,14 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 从 PCA、热图、UMAP 三类图中任选一种，写一段不超过 150 字的图形解释，并列出 3 个待核验点。
 
-## 试点候选待完成事项
+## 试讲就绪接口（2026-06-04）
+
+- 教学图形：PCA、cluster、heatmap 和 UMAP 均可由固定教学数据或参数说明复现为 SVG。
+- 参数说明：每张图必须显示 generated teaching example、标准化或距离/参数提示、不能证明机制的风险说明。
+- 课堂产物：学生填写高维图形四栏表，区分输入、观察、候选解释和待核验点。
+- 状态边界：本周升为 `pilot_ready` 仅表示可试讲；PPTX、PNG/contact sheet 和正式视觉 QA 仍不完成。
+
+## PPT 前待完成事项
 
 - 生成 PPTX 前重新计算或绘制 PCA/热图示意，避免手写教学坐标被误读为真实分析结果。
 - 对 PPTX 导出 PNG/contact sheet，检查中文图注、参数说明和“不能证明机制”提示是否可读。

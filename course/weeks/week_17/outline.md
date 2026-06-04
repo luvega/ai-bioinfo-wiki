@@ -24,13 +24,14 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 6. 图表证据边界自查。
 7. 小组现场审查和修改清单。
 
-## 待抽取素材
+## 已对齐素材
 
 - 课程主讲稿：[课程教学讲稿](../../syllabus/课程教学讲稿-医药数据处理与可视化-36课时-AI前置调整版.md)
 - [OWF Learn Git](../../../materials/markdown/openwaterfoundation_learning/git/README.md)
 - [OWF Learn Windows Shell](../../../materials/markdown/openwaterfoundation_learning/windows_shell/README.md)
 - [OWF Learn Linux Shell](../../../materials/markdown/openwaterfoundation_learning/linux_shell/README.md)
 - [AI 协作边界](../../../knowledge/concepts/AI协作边界.md)
+- [Week 17 试讲包 v1](teaching_pack_v1.md)
 
 ## 课堂任务
 

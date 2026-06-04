@@ -44,11 +44,21 @@ def test_full_week_pilot_candidate_statuses_are_enforced():
     module = load_module()
     chapters = module.parse_map(ROOT / "course" / "textbook" / "coursebook_map.yml")
     assert all(chapter["review_status"] in module.MINIMUM_REVIEW_STATUSES for chapter in chapters)
+    week13 = next(chapter for chapter in chapters if chapter["week"] == 13)
+    assert week13["review_status"] == "pilot_ready"
     for week in range(1, 19):
         week_dir = ROOT / "course" / "weeks" / f"week_{week:02d}"
         for name in ("materials.md", "outline.md"):
             text = (week_dir / name).read_text(encoding="utf-8")
             assert any(f"status: {status}" in text for status in module.MINIMUM_WEEK_FILE_STATUSES)
+
+
+def test_trial_ready_packs_cover_teacher_needs():
+    module = load_module()
+    for week in module.TRIAL_READY_PACK_WEEKS:
+        pack = ROOT / "course" / "weeks" / f"week_{week:02d}" / "teaching_pack_v1.md"
+        text = pack.read_text(encoding="utf-8")
+        assert module.contains_required_terms(text, module.TRIAL_READY_PACK_TERMS) == []
 
 
 def test_online_book_check_flags_missing_source(tmp_path):

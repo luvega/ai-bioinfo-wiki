@@ -10,6 +10,7 @@ chapters:
       - course/weeks/week_01/materials.md
       - course/weeks/week_01/outline.md
       - course/weeks/week_01/script.md
+      - course/weeks/week_01/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/concepts/医药数据特征.md
       - knowledge/concepts/工具分工_Python_R_Bash.md
@@ -26,6 +27,7 @@ chapters:
       - course/weeks/week_02/materials.md
       - course/weeks/week_02/outline.md
       - course/weeks/week_02/script.md
+      - course/weeks/week_02/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/concepts/AI协作边界.md
@@ -68,6 +70,7 @@ chapters:
       - course/weeks/week_04/materials.md
       - course/weeks/week_04/outline.md
       - course/weeks/week_04/script.md
+      - course/weeks/week_04/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/entities/R.md
       - knowledge/entities/ggplot2.md
@@ -85,6 +88,7 @@ chapters:
       - course/weeks/week_05/materials.md
       - course/weeks/week_05/outline.md
       - course/weeks/week_05/script.md
+      - course/weeks/week_05/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/sources/Starting_Data_Analytics_GenAI.md
@@ -101,6 +105,7 @@ chapters:
       - course/weeks/week_06/materials.md
       - course/weeks/week_06/outline.md
       - course/weeks/week_06/script.md
+      - course/weeks/week_06/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/sources/Starting_Data_Analytics_GenAI.md
@@ -116,6 +121,7 @@ chapters:
       - course/weeks/week_07/materials.md
       - course/weeks/week_07/outline.md
       - course/weeks/week_07/script.md
+      - course/weeks/week_07/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/entities/ggplot2.md
       - knowledge/sources/Starting_Data_Analytics_GenAI.md
@@ -131,6 +137,7 @@ chapters:
       - course/weeks/week_08/materials.md
       - course/weeks/week_08/outline.md
       - course/weeks/week_08/script.md
+      - course/weeks/week_08/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/sources/ISLP.md
       - knowledge/sources/ISLR.md
@@ -147,6 +154,7 @@ chapters:
       - course/weeks/week_09/materials.md
       - course/weeks/week_09/outline.md
       - course/weeks/week_09/script.md
+      - course/weeks/week_09/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/sources/ISLP.md
       - knowledge/sources/ISLR.md
@@ -163,6 +171,7 @@ chapters:
       - course/weeks/week_10/materials.md
       - course/weeks/week_10/outline.md
       - course/weeks/week_10/script.md
+      - course/weeks/week_10/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/sources/ISLP.md
       - knowledge/sources/ISLR.md
@@ -221,6 +230,7 @@ chapters:
       - course/weeks/week_13/ppt_storyboard.md
       - course/weeks/week_13/teaching_assets.md
       - course/evaluation/week_13_ppt_evidence_review.md
+      - scripts/courseware/build_week13_teaching_figures.py
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
@@ -235,7 +245,7 @@ chapters:
       - materials/markdown/bioconductor_books/workflow_case_catalog.md
       - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python
     ppt_status: storyboard_reviewed
-    review_status: pilot_candidate
+    review_status: pilot_ready
   - chapter: 14
     week: 14
     title: 转录组数据分析基础
@@ -316,6 +326,7 @@ chapters:
       - course/weeks/week_17/materials.md
       - course/weeks/week_17/outline.md
       - course/weeks/week_17/script.md
+      - course/weeks/week_17/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/entities/GitHub.md
@@ -342,6 +353,7 @@ chapters:
       - course/weeks/week_18/materials.md
       - course/weeks/week_18/outline.md
       - course/weeks/week_18/script.md
+      - course/weeks/week_18/teaching_pack_v1.md
     knowledge_sources:
       - knowledge/concepts/AI协作边界.md
       - knowledge/entities/GitHub.md

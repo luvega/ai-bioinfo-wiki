@@ -10,7 +10,9 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## 教学目标
 
-- 待从课程主讲稿和素材卡中提炼。
+- 能把 CSV/Excel/TSV 原始表整理成可分析表。
+- 能建立字段字典，说明字段、单位、类型和用途。
+- 能判断长表和宽表各适合回答什么课堂问题。
 
 ## PPT 结构
 
@@ -21,10 +23,11 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 5. AI 协作边界与核验点
 6. 小结与作业
 
-## 待抽取素材
+## 已对齐素材
 
 - 课程主讲稿：[课程教学讲稿](../../syllabus/课程教学讲稿-医药数据处理与可视化-36课时-AI前置调整版.md)
-- 知识层候选页：待从 [knowledge/index](../../../knowledge/index.md) 映射。
+- 试讲包：[Week 05 试讲包 v1](teaching_pack_v1.md)
+- 知识层：项目目录结构与可复现、Starting Data Analytics GenAI。
 
 ## 试点候选课堂接口（2026-06-04）
 

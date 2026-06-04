@@ -10,7 +10,9 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## 教学目标
 
-- 待从课程主讲稿和素材卡中提炼。
+- 能读懂 R `data.frame`、factor 和基础输出，并说明字段含义。
+- 能把 Python 数据结构直觉迁移到 R 数据框和 ggplot2 图层准备。
+- 能使用 AI 解释 R 报错，但保留运行结果和字段核验。
 
 ## PPT 结构
 
@@ -21,10 +23,11 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 5. AI 协作边界与核验点
 6. 小结与作业
 
-## 待抽取素材
+## 已对齐素材
 
 - 课程主讲稿：[课程教学讲稿](../../syllabus/课程教学讲稿-医药数据处理与可视化-36课时-AI前置调整版.md)
-- 知识层候选页：待从 [knowledge/index](../../../knowledge/index.md) 映射。
+- 试讲包：[Week 04 试讲包 v1](teaching_pack_v1.md)
+- 知识层：R、ggplot2、工具分工。
 
 ## 试点候选课堂接口（2026-06-04）
 

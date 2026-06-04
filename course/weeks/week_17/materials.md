@@ -57,6 +57,7 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - [AI 使用声明模板](../../templates/ai_use_statement_template.md)：用于记录 Prompt、AI 输出用途、人工修改、不采纳理由和核验方式。
 - [PPT Storyboard 模板](../../templates/ppt_storyboard_template.md)：用于 Week 18 汇报前审查每页 action title、图表、证据来源和风险边界。
 - [学生项目 Rubric](../../evaluation/student_project_rubric.md)：Week 17 课堂互评和 Week 18 终评使用同一评价标准。
+- [Week 17 试讲包 v1](teaching_pack_v1.md)：提供 2 学时时间切分、教师巡查清单、互评任务和 AI 审计提示。
 
 ## 试点候选审查依据（2026-06-04）
 

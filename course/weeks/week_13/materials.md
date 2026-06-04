@@ -3,7 +3,7 @@ type: course-week
 week: 13
 title: PCA、聚类与热图
 hours: 2
-status: pilot_candidate
+status: pilot_ready
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 13 周：PCA、聚类与热图 · 素材映射
@@ -46,12 +46,13 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 ## 教学资产与 evidence review
 
 - [Week 13 教学矩阵与高维图形资产](teaching_assets.md) 已补齐可公开使用的教学矩阵、PCA 坐标表示意、聚类参数表、热图说明、UMAP 示意说明和 AI 审查 Prompt。
-- [Week 13 PPT Storyboard Evidence Review](../../evaluation/week_13_ppt_evidence_review.md) 已将本周推进为 `pilot_candidate`，但仍不表示 PPTX 已生成。
-- 正式进入 PPTX 前，PCA/热图示意最好由脚本从教学矩阵重新生成，并在 PNG/contact sheet 中检查图注、颜色和文字溢出。
+- [Week 13 教学图形生成脚本](../../../scripts/courseware/build_week13_teaching_figures.py) 可用固定模拟数据生成 PCA、cluster、heatmap 和 UMAP SVG，输出到 `outputs/teaching_figures/week_13/`。
+- [Week 13 PPT Storyboard Evidence Review](../../evaluation/week_13_ppt_evidence_review.md) 已将本周推进为 `pilot_ready`，但仍不表示 PPTX、PNG/contact sheet 或正式视觉 QA 已完成。
+- 正式进入 PPTX 前，PCA/热图示意应由脚本重新生成，并在 PNG/contact sheet 中检查图注、颜色和文字溢出。
 
 ## 本轮升级重点（2026-06-04）
 
-- Week 13 标记为在线教材“样章候选”，但目标是看懂高维图形和流程边界，不训练学生独立完成高级单细胞或空间组学分析。
+- Week 13 标记为在线教材“试讲就绪样章”，但目标是看懂高维图形和流程边界，不训练学生独立完成高级单细胞或空间组学分析。
 - 课堂主线先从 6 samples x 5 genes 的教学矩阵进入 PCA、聚类和热图，再用 SCBP/OSCA/OSTA 图形说明现代组学图形为什么更依赖参数记录。
 - 必须清楚区分 bulk expression matrix、single-cell cell x gene matrix、spatial spot x gene matrix。
 - 待核验：UMAP/cluster/marker/spatial domain 均不得被直接写成最终细胞类型、药效机制或病理区域事实。

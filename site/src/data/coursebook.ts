@@ -54,6 +54,7 @@ export const coursebookStatusPipeline = [
   'catalog_only',
   'sample_candidate',
   'pilot_candidate',
+  'pilot_ready',
   'sample_ready',
   'storyboard',
   'evidence_review_assets_pending',
@@ -73,10 +74,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(1),
+    sourceWeekFiles: [...baseWeekFiles(1), 'course/weeks/week_01/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/concepts/医药数据特征.md', 'knowledge/concepts/工具分工_Python_R_Bash.md', 'knowledge/concepts/AI协作边界.md'],
     materialSources: ['course/syllabus/课程教学讲稿-医药数据处理与可视化-36课时-AI前置调整版.md'],
-    coursebookTopics: ['医药数据类型', '工具分工', 'AI 协作边界']
+    coursebookTopics: ['医药数据类型', '工具分工', 'AI 协作边界'],
+    badges: ['试讲包 v1']
   },
   {
     chapter: 2,
@@ -89,11 +91,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(2),
+    sourceWeekFiles: [...baseWeekFiles(2), 'course/weeks/week_02/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/concepts/AI协作边界.md', 'knowledge/entities/GitHub.md', 'knowledge/sources/OWF_Learn_Git.md', 'knowledge/sources/OWF_Learn_Windows_Shell.md', 'knowledge/sources/OWF_Learn_Linux_Shell.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/06_Understanding_Bioinformatics_Pipeline/chapter.course.md', 'materials/markdown/openwaterfoundation_learning/git/README.md', 'materials/markdown/openwaterfoundation_learning/windows_shell/README.md', 'materials/markdown/openwaterfoundation_learning/linux_shell/README.md'],
     coursebookTopics: ['可复现分析', 'Prompt 记录', '项目目录'],
-    badges: ['可复现工作流']
+    badges: ['可复现工作流', '试讲包 v1']
   },
   {
     chapter: 3,
@@ -158,10 +160,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(4),
+    sourceWeekFiles: [...baseWeekFiles(4), 'course/weeks/week_04/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/entities/R.md', 'knowledge/entities/ggplot2.md', 'knowledge/concepts/工具分工_Python_R_Bash.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R'],
-    coursebookTopics: ['R 数据框', '因子变量', 'R 代码核验']
+    coursebookTopics: ['R 数据框', '因子变量', 'R 代码核验'],
+    badges: ['试讲包 v1']
   },
   {
     chapter: 5,
@@ -174,10 +177,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(5),
+    sourceWeekFiles: [...baseWeekFiles(5), 'course/weeks/week_05/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/sources/Starting_Data_Analytics_GenAI.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210'],
-    coursebookTopics: ['数据读取', '数据整形', '字段含义']
+    coursebookTopics: ['数据读取', '数据整形', '字段含义'],
+    badges: ['试讲包 v1']
   },
   {
     chapter: 6,
@@ -190,10 +194,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(6),
+    sourceWeekFiles: [...baseWeekFiles(6), 'course/weeks/week_06/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/sources/Starting_Data_Analytics_GenAI.md'],
     materialSources: ['materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210'],
-    coursebookTopics: ['缺失值处理', '异常值识别', '清洗日志']
+    coursebookTopics: ['缺失值处理', '异常值识别', '清洗日志'],
+    badges: ['试讲包 v1']
   },
   {
     chapter: 7,
@@ -206,10 +211,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(7),
+    sourceWeekFiles: [...baseWeekFiles(7), 'course/weeks/week_07/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/entities/ggplot2.md', 'knowledge/sources/Starting_Data_Analytics_GenAI.md'],
     materialSources: ['materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210'],
-    coursebookTopics: ['描述统计', '分布可视化', '图形解释']
+    coursebookTopics: ['描述统计', '分布可视化', '图形解释'],
+    badges: ['试讲包 v1']
   },
   {
     chapter: 8,
@@ -222,10 +228,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(8),
+    sourceWeekFiles: [...baseWeekFiles(8), 'course/weeks/week_08/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/sources/ISLP.md', 'knowledge/sources/ISLR.md'],
     materialSources: ['materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R'],
-    coursebookTopics: ['统计推断', 'P 值误区', '检验前提']
+    coursebookTopics: ['统计推断', 'P 值误区', '检验前提'],
+    badges: ['试讲包 v1']
   },
   {
     chapter: 9,
@@ -238,10 +245,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(9),
+    sourceWeekFiles: [...baseWeekFiles(9), 'course/weeks/week_09/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/sources/ISLP.md', 'knowledge/sources/ISLR.md'],
     materialSources: ['materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R'],
-    coursebookTopics: ['相关分析', '线性回归', '因果边界']
+    coursebookTopics: ['相关分析', '线性回归', '因果边界'],
+    badges: ['试讲包 v1']
   },
   {
     chapter: 10,
@@ -254,10 +262,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(10),
+    sourceWeekFiles: [...baseWeekFiles(10), 'course/weeks/week_10/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/sources/ISLP.md', 'knowledge/sources/ISLR.md'],
     materialSources: ['materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R'],
-    coursebookTopics: ['分类问题', '逻辑回归', '模型评价']
+    coursebookTopics: ['分类问题', '逻辑回归', '模型评价'],
+    badges: ['试讲包 v1']
   },
   {
     chapter: 11,
@@ -300,15 +309,15 @@ export const coursebookChapters: CoursebookChapter[] = [
     title: 'PCA、聚类与热图',
     page: '/coursebook/week-13',
     phase: '高维、组学与综合项目',
-    summary: '把 PCA、聚类、热图和 UMAP 作为高维探索图形，区分 bulk、single-cell、spatial 的观测单位和误读风险。',
-    status: '试点候选',
-    reviewStatus: 'pilot_candidate',
+    summary: '把 PCA、聚类、热图和 UMAP 作为可复现教学图形，区分 bulk、single-cell、spatial 的观测单位和误读风险。',
+    status: '样章可读',
+    reviewStatus: 'pilot_ready',
     pptStatus: 'storyboard_reviewed',
-    sourceWeekFiles: [...baseWeekFiles(13), 'course/weeks/week_13/ppt_storyboard.md', 'course/weeks/week_13/teaching_assets.md', 'course/evaluation/week_13_ppt_evidence_review.md'],
+    sourceWeekFiles: [...baseWeekFiles(13), 'course/weeks/week_13/ppt_storyboard.md', 'course/weeks/week_13/teaching_assets.md', 'course/evaluation/week_13_ppt_evidence_review.md', 'scripts/courseware/build_week13_teaching_figures.py'],
     knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python'],
     coursebookTopics: ['PCA', '聚类', '热图', '现代组学拓展'],
-    badges: ['现代组学拓展', '试点候选'],
+    badges: ['现代组学拓展', '试讲就绪', '样章'],
     sample: {
       introQuestion: '为什么同一批表达数据需要 PCA、聚类和热图来辅助理解，而这些图又不能直接证明机制？',
       learningObjectives: [
@@ -341,7 +350,7 @@ export const coursebookChapters: CoursebookChapter[] = [
       verificationPoints: ['教学矩阵和示意图必须标注为课堂模拟。', 'SCBP/OSCA/OSTA 只作为现代组学拓展来源，不作为学生必跑流程。', 'UMAP、cluster、marker 和 spatial domain 解释必须保留候选状态。', '任何图形分离都不能直接写成疾病机制、药效机制或临床建议。', 'Evidence review 只支持 pilot_candidate，不表示 PPTX 或视觉 QA 完成。'],
       candidateChecks: ['用脚本或教师自绘方式重新生成 PCA/热图示意，避免手写教学坐标被误读为真实分析结果。', 'PPTX 生成后必须导出 PNG/contact sheet 检查中文图注、参数说明和“不能证明机制”提示。', '若替换为真实公开数据图，必须补来源、授权、字段说明和参数记录。'],
       pptBridge: {
-        status: 'Week 13 当前为在线教材试点候选，已完成 storyboard evidence review；尚未生成 PPTX 或 PNG/contact sheet QA。',
+        status: 'Week 13 当前为在线教材试讲就绪样章，已完成 storyboard evidence review 和可复现教学图形脚本；尚未生成 PPTX 或 PNG/contact sheet QA。',
         entry: 'course/weeks/week_13/ppt_storyboard.md',
         nextActions: ['用教学矩阵重新生成或自绘 PCA、聚类、热图和 UMAP 示意。', '生成 PPTX 后做 PNG/contact sheet 视觉 QA。', '若使用真实数据图，先补来源、授权和字段说明。']
       }
@@ -515,11 +524,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(17),
+    sourceWeekFiles: [...baseWeekFiles(17), 'course/weeks/week_17/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/entities/GitHub.md', 'knowledge/concepts/AI协作边界.md', 'knowledge/sources/OWF_Learn_Git.md', 'knowledge/sources/OWF_Learn_Linux_Shell.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md', 'materials/markdown/openwaterfoundation_learning/git/README.md', 'materials/markdown/openwaterfoundation_learning/linux_shell/README.md', 'materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210', 'course/templates/project_readme_template.md', 'course/templates/data_sources_template.md', 'course/templates/ai_use_statement_template.md', 'course/templates/ppt_storyboard_template.md', 'course/evaluation/student_project_rubric.md'],
     coursebookTopics: ['综合项目', 'AI 审计', '结果核验', '素材溯源', 'PPT storyboard', '项目 rubric'],
-    badges: ['可复现工作流', '项目工作坊']
+    badges: ['可复现工作流', '项目工作坊', '试讲包 v1']
   },
   {
     chapter: 18,
@@ -532,11 +541,11 @@ export const coursebookChapters: CoursebookChapter[] = [
     status: '试点候选',
     reviewStatus: 'pilot_candidate',
     pptStatus: 'not_started',
-    sourceWeekFiles: baseWeekFiles(18),
+    sourceWeekFiles: [...baseWeekFiles(18), 'course/weeks/week_18/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/concepts/AI协作边界.md', 'knowledge/entities/GitHub.md', 'knowledge/concepts/项目目录结构与可复现.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md', 'course/templates/project_readme_template.md', 'course/templates/data_sources_template.md', 'course/templates/ai_use_statement_template.md', 'course/templates/ppt_storyboard_template.md', 'course/evaluation/student_project_rubric.md'],
     coursebookTopics: ['项目汇报', 'AI 使用反思', '课程总结', '汇报 rubric', '项目 rubric'],
-    badges: ['汇报验收']
+    badges: ['汇报验收', '试讲包 v1']
   }
 ];
 
