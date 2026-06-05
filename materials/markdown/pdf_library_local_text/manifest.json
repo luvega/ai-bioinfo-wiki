@@ -1,0 +1,51 @@
+[
+  {
+    "title": "生物医药大数据与智能分析",
+    "slug": "Biomedical_Big_Data_Intelligent_Analysis",
+    "pdf_path": "materials/raw/pdf_originals/生物医药大数据与智能分析.pdf",
+    "pages": 307,
+    "size_mb": 16.04,
+    "method": "text-layer",
+    "status": "generated",
+    "chars": 173340,
+    "processed_pages": 307,
+    "missing_pages": 0,
+    "output_markdown": "materials/markdown/pdf_library_local_text/Biomedical_Big_Data_Intelligent_Analysis/book.fulltext.md",
+    "report": "materials/markdown/pdf_library_local_text/Biomedical_Big_Data_Intelligent_Analysis/extraction_report.md",
+    "cache_dir": "outputs/pdf_library_local_text_cache/Biomedical_Big_Data_Intelligent_Analysis",
+    "generated": "2026-06-05 11:29:57",
+    "ocr_language": null,
+    "ocr_dpi": null,
+    "ocr_psm": null,
+    "notes": [
+      "Raw PDFs are unchanged under materials/raw/pdf_originals.",
+      "Page-level extraction cache is under outputs/ and is not committed.",
+      "Use the raw PDF for page-accurate quotation or figure verification."
+    ]
+  },
+  {
+    "title": "Python程序设计-以医药数据为例",
+    "slug": "Python_Programming_Medical_Data",
+    "pdf_path": "materials/raw/pdf_originals/Python程序设计-以医药数据为例.pdf",
+    "pages": 335,
+    "size_mb": 107.34,
+    "method": "tesseract-ocr",
+    "status": "generated",
+    "chars": 356716,
+    "processed_pages": 335,
+    "missing_pages": 0,
+    "output_markdown": "materials/markdown/pdf_library_local_text/Python_Programming_Medical_Data/book.fulltext.md",
+    "report": "materials/markdown/pdf_library_local_text/Python_Programming_Medical_Data/extraction_report.md",
+    "cache_dir": "outputs/pdf_library_local_text_cache/Python_Programming_Medical_Data",
+    "generated": "2026-06-05 11:29:56",
+    "ocr_language": "chi_sim+eng",
+    "ocr_dpi": 220,
+    "ocr_psm": "3",
+    "notes": [
+      "Raw PDFs are unchanged under materials/raw/pdf_originals.",
+      "Page-level extraction cache is under outputs/ and is not committed.",
+      "Use the raw PDF for page-accurate quotation or figure verification.",
+      "OCR text is suitable for retrieval and lesson planning, but code snippets and tables require manual verification."
+    ]
+  }
+]

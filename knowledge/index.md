@@ -35,6 +35,8 @@
 - [Starting_Data_Analytics_GenAI](sources/Starting_Data_Analytics_GenAI.md) — Manning GenAI 数据分析工作流 · stable · `generative-ai, data-analytics`
 - [Learn_AI_Assisted_Python_Programming](sources/Learn_AI_Assisted_Python_Programming.md) — Manning Copilot / ChatGPT 编程教学法 · stable · `copilot, chatgpt, python`
 - [嵩天 Python PPT](sources/嵩天PythonPPT.md) — 中文 Python PPT 外部参考源，待结构化抽取 · draft · `python, slides`
+- [生物医药大数据与智能分析](sources/生物医药大数据与智能分析.md) — 中文生物医药大数据与智能分析案例教材，已完成本地文本层全文入库 · source_ingested · `biomedical-big-data, intelligent-analysis`
+- [Python程序设计_以医药数据为例](sources/Python程序设计_以医药数据为例.md) — 中文 Python 与医药数据处理案例教材，已完成 Tesseract OCR 全文入库 · source_ingested · `python, pharmacy-data, ocr`
 
 ## Entities（具体实体）
 
@@ -106,7 +108,7 @@
 
 ## 当前规模
 
-- Knowledge 页：46（含顶层 3、sources 15、entities 11、concepts 9、topics 3、synthesis 4、assets 1）
+- Knowledge 页：48（含顶层 3、sources 17、entities 11、concepts 9、topics 3、synthesis 4、assets 1）
 - Courseware 周目录：18（每周 `outline.md` / `script.md` / `materials.md`）
 - 当前主线：先从 `course/weeks/` 产出 PPT 大纲与脚本，再按需回填 `knowledge/`。
 

@@ -145,10 +145,19 @@
 - 用户确认后续每轮实现默认提交并推送当前分支，便于线上检查和 PR 审阅。
 - 该默认规则只覆盖普通 commit/push；公开仓库、改变远端可见性、删除远端、强推或重写远端历史仍需再次明确确认。
 
+### [2026-06-05] D-030 · 中文 PDF 教材全文入库
+
+- 新增 `scripts/convert/ingest_local_pdf_textbooks.py`，用于本地 PDF 文本层抽取与 Tesseract OCR。
+- `生物医药大数据与智能分析.pdf` 已完成文本层全文入库：`materials/markdown/pdf_library_local_text/Biomedical_Big_Data_Intelligent_Analysis/book.fulltext.md`。
+- `Python程序设计-以医药数据为例.pdf` 无可用文本层，已用 Tesseract `chi_sim+eng`、220 DPI、PSM 3 完成 335 页 OCR：`materials/markdown/pdf_library_local_text/Python_Programming_Medical_Data/book.fulltext.md`。
+- 页级缓存保留在 `outputs/pdf_library_local_text_cache/`，不入 Git；原始 PDF 仍保持只读且由 `.gitignore` 排除。
+- OCR 全文只用于检索和备课定位；代码、表格、函数名和原文引用进入课件前必须回原始 PDF 人工核验。
+
 ## 3. 当前状态
 
 - `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md`、`teaching_plan.md` 和 40 页主干 `ppt_storyboard.md`。
 - `course/textbook/chapters/chapter_01.md` 到 `chapter_18.md` 已进入 `expanded_draft`，并改为知识体系正文；与 40 页 storyboard 的关系只保留为索引表。
+- 两本中文 PDF 教材已进入 `materials/markdown/pdf_library_local_text/`：`生物医药大数据与智能分析` 为文本层抽取，`Python程序设计-以医药数据为例` 为 Tesseract OCR。
 - 样板周优先级：Week 03、Week 14、Week 15、Week 16 已进入可授课试点；Week 13 已进入试讲就绪样章。
 - 课程质量 rubric 已新增，位置为 `course/evaluation/courseware_rubric.md`。
 - Week 03 已有 PPT 试点样稿生成脚本和真实 PNG 页面验证记录。

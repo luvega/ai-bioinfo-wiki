@@ -177,3 +177,12 @@
 - 原始层：大型 tarball、完整解压目录、图片镜像和 GitHub clone 缓存限定在 `materials/raw/bioconductor_books/`，通过 `.gitignore` 排除。
 - 素材层：可检索 Markdown、`code_snippets.jsonl`、`image_manifest.csv`、`source_manifest.json`、`workflow_case_catalog.md` 写入 `materials/markdown/bioconductor_books/`。
 - 课程边界：OSTA/OSCA 仅作为 Week 14-17 案例拓展来源，不改变任何周次或 PPT 状态。
+
+## [2026-06-05] ingest | 两本中文 PDF 教材全文入库
+
+- 新增：`scripts/convert/ingest_local_pdf_textbooks.py`，用于本地 PDF 文本层抽取和 Tesseract OCR 入库。
+- 输入：`materials/raw/pdf_originals/生物医药大数据与智能分析.pdf` 与 `materials/raw/pdf_originals/Python程序设计-以医药数据为例.pdf`。
+- 输出：`materials/markdown/pdf_library_local_text/` 下生成 2 份 `book.fulltext.md`、提取报告、根索引和 manifest。
+- OCR：`Python程序设计-以医药数据为例.pdf` 无文本层，使用 Tesseract `chi_sim+eng`、220 DPI、PSM 3 完成 335 页 OCR。
+- 新增 source 页：`knowledge/sources/生物医药大数据与智能分析.md`、`knowledge/sources/Python程序设计_以医药数据为例.md`。
+- 课程边界：两本书仅作为备课素材来源，不改变任何周次、教材章节、PPT 或课程事实主线状态。
