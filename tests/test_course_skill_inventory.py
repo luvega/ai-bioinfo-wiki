@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import zipfile
 from pathlib import Path
 
 
@@ -44,6 +45,12 @@ def make_project(root: Path, module) -> Path:
     return global_root
 
 
+def write_test_zip(root: Path, entries: dict[str, str | bytes]) -> None:
+    with zipfile.ZipFile(root / "skills.zip", "w") as archive:
+        for name, content in entries.items():
+            archive.writestr(name, content)
+
+
 def test_root_is_derived_from_script_location():
     module = load_module()
     assert module.ROOT == ROOT
@@ -70,3 +77,24 @@ def test_skill_inventory_flags_stale_readme_count(tmp_path):
     (tmp_path / "skills" / "README.md").write_text("# Skills\n\n本目录包含 **1 个** skill。\n", encoding="utf-8")
     issues = module.run_check(tmp_path, global_root)
     assert any(issue.code == "STALE_SKILLS_README_COUNT" for issue in issues)
+
+
+def test_skill_inventory_checks_skills_zip_non_cache_files(tmp_path):
+    module = load_module()
+    global_root = make_project(tmp_path, module)
+    (tmp_path / module.SKILLS_ZIP_REPORT).write_text("verified", encoding="utf-8")
+    existing_skill_md = (tmp_path / "skills" / "existing-skill" / "SKILL.md").read_bytes()
+    write_test_zip(
+        tmp_path,
+        {
+            "skills/existing-skill/SKILL.md": existing_skill_md,
+            "skills/existing-skill/missing-guide.md": "guide",
+            "skills/existing-skill/__pycache__/cached.cpython-311.pyc": "cache",
+        },
+    )
+    issues = module.run_check(tmp_path, global_root)
+    assert any(issue.code == "MISSING_ZIP_SKILL_FILE" and "missing-guide.md" in str(issue.path) for issue in issues)
+    assert not any("__pycache__" in str(issue.path) for issue in issues)
+
+    (tmp_path / "skills" / "existing-skill" / "missing-guide.md").write_text("guide", encoding="utf-8")
+    assert module.run_check(tmp_path, global_root) == []

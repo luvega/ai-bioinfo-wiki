@@ -22,4 +22,6 @@
 | [chapters/chapter_16.md](chapters/chapter_16.md) | 第 16 章 单细胞转录组可视化 | 单细胞和空间组学图形怎样呈现异质性，又为什么容易被过度解释？ | expanded_draft | course, textbook |
 | [chapters/chapter_17.md](chapters/chapter_17.md) | 第 17 章 综合项目工作坊：AI 协作分析与结果核验 | 一个项目包怎样让同学和教师追溯问题、数据、代码、图表和 AI 使用？ | expanded_draft | course, textbook |
 | [chapters/chapter_18.md](chapters/chapter_18.md) | 第 18 章 综合项目汇报与课程总结 | 最终汇报应评价漂亮图表，还是评价数据来源、证据边界和可复现记录？ | expanded_draft | course, textbook |
+| [logical_v2/material_coverage_matrix.md](logical_v2/material_coverage_matrix.md) | 教材 v2 素材覆盖矩阵 | 本矩阵用于反查所有主要素材池是否已进入 12 章逻辑教材规划。它只记录课程化使用位置，不改变任何原始素材、旧 18 周教材或周次状态。 | source_mapped | course, textbook, logical-v2, material-coverage, source-mapped |
+| [logical_v2/教材结构总纲.md](logical_v2/教材结构总纲.md) | 医药数据处理与可视化教材 v2 逻辑结构总纲 | 本总纲用于规划教材 v2。v2 不再按 18 周教学进度切章，而按“医药问题 -> 数据结构 -> 分析方法 -> 图表表达 -> AI 协作 -> 可复现证据”的知识链组织。18 周课程仍然是授课组织、teaching plan、PPT storyboard 和课堂节奏的主线； | source_mapped | course, textbook, logical-v2, pharmacy-data, ai-assisted, source-mapped |
 | [教材编写总纲.md](教材编写总纲.md) | 医药数据处理与可视化课程教材编写总纲 | 本文件用于后续逐章撰写教材正文。章节以当前 `36 课时-AI 前置调整版` 为主线，吸收 54 课时旧大纲的细分内容，并把本项目已整理的 AIDD、ISLP/ISLR、AI 辅助编程、GenAI 数据分析、中文 Python PPT、Single-cell Best Pract | draft | course, textbook, courseware, syllabus, ai-assisted, pharmacy-data |

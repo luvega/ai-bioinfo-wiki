@@ -14,6 +14,10 @@ TEXTBOOK = ROOT / "course" / "textbook"
 CHAPTERS = TEXTBOOK / "chapters"
 ASSETS = TEXTBOOK / "assets"
 MAP_PATH = TEXTBOOK / "coursebook_map.yml"
+LOGICAL_V2 = TEXTBOOK / "logical_v2"
+LOGICAL_V2_MAP = LOGICAL_V2 / "coursebook_map.yml"
+LOGICAL_V2_BLUEPRINT = LOGICAL_V2 / "教材结构总纲.md"
+LOGICAL_V2_COVERAGE = LOGICAL_V2 / "material_coverage_matrix.md"
 SITE_DATA = ROOT / "site" / "src" / "data" / "coursebook.ts"
 GRAPH_EDGES = ASSETS / "knowledge_graph" / "course_graph_edges.csv"
 GRAPH_MERMAID = ASSETS / "knowledge_graph" / "course_graph.mmd"
@@ -42,6 +46,35 @@ EXPANDED_TEXTBOOK_STATUS = "expanded_draft"
 EXPANDED_PPT_STATUS = "storyboard_expanded"
 FOCUS_WEEKS = {3, 11, 12, 13, 14, 15, 16}
 STATUS_CONFLATION_TERMS = {"pilot_candidate", "pilot_ready", "sample_ready", "evidence_review_pass", "storyboard", "pptx_trial_done"}
+LOGICAL_V2_STATUSES = {"source_mapped", "blueprint_ready", "draft_chapter", "review_ready"}
+LOGICAL_V2_REQUIRED_FIELDS = (
+    "part",
+    "title",
+    "core_question",
+    "status",
+    "source_weeks",
+    "source_chapters",
+    "knowledge_sources",
+    "material_sources",
+    "asset_sources",
+    "learning_evidence",
+)
+LOGICAL_V2_COVERAGE_TERMS = (
+    "AIDD",
+    "Single_Cell_Best_Practices",
+    "OSCA",
+    "OSTA",
+    "ISLP",
+    "ISLR",
+    "OWF_Learn_Git",
+    "OWF_Learn_Windows_Shell",
+    "OWF_Learn_Linux_Shell",
+    "Learn_AI_Assisted_Python_Programming",
+    "Starting_Data_Analytics_GenAI",
+    "Python程序设计_以医药数据为例",
+    "生物医药大数据与智能分析",
+    "student_project_rubric",
+)
 
 
 class Issue(NamedTuple):
@@ -268,13 +301,86 @@ def check_site_data(root: Path = ROOT) -> list[Issue]:
     return issues
 
 
+def list_value(chapter: dict[str, object], field: str) -> list[str]:
+    value = chapter.get(field, [])
+    if not isinstance(value, list):
+        return []
+    return [str(item) for item in value if str(item).strip()]
+
+
+def check_logical_v2_paths(root: Path, map_path: Path, chapter: dict[str, object], field: str) -> list[Issue]:
+    issues: list[Issue] = []
+    values = list_value(chapter, field)
+    chapter_no = int(chapter.get("chapter", 0))
+    if not values:
+        issues.append(Issue("LOGICAL_V2_EMPTY_FIELD", map_path, f"Chapter {chapter_no:02d} has empty {field}"))
+        return issues
+    for value in values:
+        if has_forbidden_reference(value):
+            issues.append(Issue("LOGICAL_V2_FORBIDDEN_REFERENCE", map_path, f"Chapter {chapter_no:02d} {field} uses forbidden reference: {value}"))
+            continue
+        candidate = root / value
+        if not candidate.exists():
+            issues.append(Issue("LOGICAL_V2_MISSING_SOURCE", map_path, f"Chapter {chapter_no:02d} {field} does not exist: {value}"))
+    return issues
+
+
+def check_logical_v2(root: Path = ROOT) -> list[Issue]:
+    issues: list[Issue] = []
+    required_files = (LOGICAL_V2_BLUEPRINT, LOGICAL_V2_MAP, LOGICAL_V2_COVERAGE)
+    for path in required_files:
+        if not path.exists():
+            issues.append(Issue("LOGICAL_V2_MISSING_FILE", path, "Logical v2 textbook planning file is missing"))
+            continue
+        text = read_text(path)
+        if has_forbidden_reference(text):
+            issues.append(Issue("LOGICAL_V2_FORBIDDEN_REFERENCE", path, "Logical v2 files must not reference raw paths or Obsidian links"))
+    if issues:
+        return issues
+
+    blueprint = read_text(LOGICAL_V2_BLUEPRINT)
+    for required in ("12 章", "不再按 18 周", "source_mapped", "course/syllabus/"):
+        if required not in blueprint:
+            issues.append(Issue("LOGICAL_V2_BLUEPRINT_GAP", LOGICAL_V2_BLUEPRINT, f"Blueprint should state {required}"))
+
+    coverage = read_text(LOGICAL_V2_COVERAGE)
+    for term in LOGICAL_V2_COVERAGE_TERMS:
+        if term not in coverage:
+            issues.append(Issue("LOGICAL_V2_COVERAGE_GAP", LOGICAL_V2_COVERAGE, f"Coverage matrix should include {term}"))
+
+    chapters = parse_map(LOGICAL_V2_MAP)
+    if len(chapters) != 12:
+        issues.append(Issue("LOGICAL_V2_BAD_CHAPTER_COUNT", LOGICAL_V2_MAP, f"Expected 12 logical chapters, found {len(chapters)}"))
+    seen = [int(chapter.get("chapter", 0)) for chapter in chapters]
+    if seen != list(range(1, 13)):
+        issues.append(Issue("LOGICAL_V2_BAD_CHAPTER_SEQUENCE", LOGICAL_V2_MAP, f"Expected chapters 1-12 in order, found {seen}"))
+
+    for chapter in chapters:
+        chapter_no = int(chapter.get("chapter", 0))
+        for field in LOGICAL_V2_REQUIRED_FIELDS:
+            if field not in chapter:
+                issues.append(Issue("LOGICAL_V2_MISSING_FIELD", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} missing {field}"))
+        status = str(chapter.get("status", ""))
+        if status not in LOGICAL_V2_STATUSES:
+            issues.append(Issue("LOGICAL_V2_BAD_STATUS", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} status is {status or 'missing'}"))
+        if status in STATUS_CONFLATION_TERMS:
+            issues.append(Issue("LOGICAL_V2_STATUS_CONFLATION", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} reuses non-textbook status {status}"))
+        if not str(chapter.get("core_question", "")).endswith("？"):
+            issues.append(Issue("LOGICAL_V2_BAD_CORE_QUESTION", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} core_question should be a question"))
+        for path_field in ("source_weeks", "source_chapters", "knowledge_sources", "material_sources", "asset_sources"):
+            issues.extend(check_logical_v2_paths(root, LOGICAL_V2_MAP, chapter, path_field))
+        if not list_value(chapter, "learning_evidence"):
+            issues.append(Issue("LOGICAL_V2_EMPTY_FIELD", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} has empty learning_evidence"))
+    return issues
+
+
 def run_check(root: Path = ROOT) -> list[Issue]:
-    return [*check_chapters(root), *check_map(root), *check_knowledge_graph(root), *check_site_data(root)]
+    return [*check_chapters(root), *check_map(root), *check_knowledge_graph(root), *check_site_data(root), *check_logical_v2(root)]
 
 
 def print_issues(root: Path, issues: list[Issue]) -> None:
     if not issues:
-        print("OK: textbook chapters, source assets, knowledge graph, and status separation are current.")
+        print("OK: textbook chapters, logical v2 map, source assets, knowledge graph, and status separation are current.")
         return
     for issue in issues:
         print(f"{issue.code}: {rel(issue.path, root)}: {issue.message}")

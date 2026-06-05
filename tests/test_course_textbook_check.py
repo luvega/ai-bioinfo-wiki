@@ -55,6 +55,24 @@ def test_map_exposes_textbook_interface():
         assert len(chapter["asset_sources"]) >= 3
 
 
+def test_logical_v2_map_exposes_source_mapped_structure():
+    module = load_module()
+    path = ROOT / "course" / "textbook" / "logical_v2" / "coursebook_map.yml"
+    chapters = module.parse_map(path)
+    assert len(chapters) == 12
+    assert [chapter["chapter"] for chapter in chapters] == list(range(1, 13))
+    for chapter in chapters:
+        assert chapter["status"] == "source_mapped"
+        assert chapter["core_question"].endswith("？")
+        for field in module.LOGICAL_V2_REQUIRED_FIELDS:
+            assert field in chapter
+        for field in ("source_weeks", "source_chapters", "knowledge_sources", "material_sources", "asset_sources"):
+            assert module.list_value(chapter, field)
+            for value in module.list_value(chapter, field):
+                assert (ROOT / value).exists(), value
+        assert module.list_value(chapter, "learning_evidence")
+
+
 def test_knowledge_graph_links_all_weeks():
     edges = (ROOT / "course" / "textbook" / "assets" / "knowledge_graph" / "course_graph_edges.csv").read_text(encoding="utf-8")
     graph = (ROOT / "course" / "textbook" / "assets" / "knowledge_graph" / "course_graph.mmd").read_text(encoding="utf-8")
