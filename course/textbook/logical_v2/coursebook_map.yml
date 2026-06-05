@@ -8,7 +8,11 @@ chapters:
     part: 全书导论
     title: 医药数据、问题意识与证据链
     core_question: 药学问题如何转成数据、方法、图表和结论边界？
-    status: source_mapped
+    status: review_ready
+    review_status: review_ready
+    page: /coursebook/logical-v2/chapter-01
+    chapter_source: course/textbook/logical_v2/chapters/chapter_01.md
+    review_focus: 课程定位、证据链入口、AI 协作边界
     source_weeks:
       - course/weeks/week_01
       - course/weeks/week_11
@@ -35,7 +39,11 @@ chapters:
     part: 工作流与规范
     title: 可复现项目与 AI 协作规范
     core_question: 一个分析为什么必须能追溯来源、代码、Prompt 和人工核验？
-    status: source_mapped
+    status: review_ready
+    review_status: review_ready
+    page: /coursebook/logical-v2/chapter-02
+    chapter_source: course/textbook/logical_v2/chapters/chapter_02.md
+    review_focus: 可复现规范、项目交付包、AI 使用声明
     source_weeks:
       - course/weeks/week_02
       - course/weeks/week_17
@@ -105,7 +113,11 @@ chapters:
     part: 数据质量
     title: 表格数据读取、整理与质量控制
     core_question: 原始表怎样变成可分析表，哪些处理不能交给 AI 代判？
-    status: source_mapped
+    status: review_ready
+    review_status: review_ready
+    page: /coursebook/logical-v2/chapter-04
+    chapter_source: course/textbook/logical_v2/chapters/chapter_04.md
+    review_focus: 数据字典、清洗日志、缺失异常人工判断
     source_weeks:
       - course/weeks/week_05
       - course/weeks/week_06
@@ -215,7 +227,11 @@ chapters:
     part: 图表与写作
     title: 科研图表与 SCI 表达
     core_question: 图表如何支撑结论，如何避免漂亮但无证据？
-    status: source_mapped
+    status: review_ready
+    review_status: review_ready
+    page: /coursebook/logical-v2/chapter-08
+    chapter_source: course/textbook/logical_v2/chapters/chapter_08.md
+    review_focus: 图表证据边界、图注改写、AI 审计
     source_weeks:
       - course/weeks/week_11
       - course/weeks/week_18
@@ -302,7 +318,11 @@ chapters:
     part: 组学解释
     title: 差异表达、富集分析与功能解释
     core_question: DE 结果表如何进入图表和候选解释，哪里必须停止？
-    status: source_mapped
+    status: review_ready
+    review_status: review_ready
+    page: /coursebook/logical-v2/chapter-11
+    chapter_source: course/textbook/logical_v2/chapters/chapter_11.md
+    review_focus: DESeq2 字段、火山图图注、功能解释降级
     source_weeks:
       - course/weeks/week_15
       - course/weeks/week_16
@@ -331,7 +351,11 @@ chapters:
     part: 前沿与项目
     title: 单细胞、空间组学与综合项目
     core_question: 单细胞/空间图形如何解读，并怎样转成学生项目交付？
-    status: source_mapped
+    status: review_ready
+    review_status: review_ready
+    page: /coursebook/logical-v2/chapter-12
+    chapter_source: course/textbook/logical_v2/chapters/chapter_12.md
+    review_focus: 单细胞/空间图形判读、项目交付闭环
     source_weeks:
       - course/weeks/week_16
       - course/weeks/week_17

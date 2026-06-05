@@ -1,11 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeader from '../components/PageHeader.astro';
-import { textbookChapters, sampleChapters } from '../data/coursebook';
+import { textbookChapters, sampleChapters, logicalV2Chapters, logicalV2ReviewChapters } from '../data/coursebook';
 import { withBase } from '../lib/paths';
 
 const totalChapters = textbookChapters.length;
 const sampleCount = sampleChapters.length;
+const logicalV2Count = logicalV2Chapters.length;
+const logicalV2ReviewCount = logicalV2ReviewChapters.length;
 ---
 
 <BaseLayout title="Coursebook" description="医药数据处理与可视化在线教材目录">
@@ -69,6 +71,49 @@ const sampleCount = sampleChapters.length;
           Coursebook 只保留教材正文、知识地图、素材资产和章节来源；逐页 storyboard 审核在 Courseware 中完成。
         </p>
       </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner split">
+      <div>
+        <div class="section-title">
+          <p class="section-label">Logical v2 Review</p>
+          <h2>教材 v2 逻辑章节并行审查</h2>
+          <p>
+            logical v2 按“医药问题到可复现证据”的知识链重组教材，不替换当前 18 周 Coursebook。
+            第一批开放第 1、2、4、8、11、12 章，用于审查教材风格、证据边界和素材映射。
+          </p>
+        </div>
+        <div class="metric-row" aria-label="教材 v2 审查状态">
+          <div class="metric-card">
+            <strong>{logicalV2Count}</strong>
+            <span>章 v2 规划</span>
+          </div>
+          <div class="metric-card">
+            <strong>{logicalV2ReviewCount}</strong>
+            <span>章 review_ready</span>
+          </div>
+          <div class="metric-card">
+            <strong>Parallel</strong>
+            <span>不替换 18 周</span>
+          </div>
+        </div>
+        <p>
+          <a class="text-link" href={withBase('/coursebook/logical-v2')}>打开 logical v2 审查入口</a>
+        </p>
+      </div>
+      <article class="info-panel">
+        <h2>审查重点</h2>
+        <ul class="content-list">
+          <li>第 1 章：课程定位和证据链入口。</li>
+          <li>第 2 章：可复现项目和 AI 使用声明。</li>
+          <li>第 4 章：数据质量、清洗日志和人工判断。</li>
+          <li>第 8 章：图表证据边界和图注审计。</li>
+          <li>第 11 章：DE 结果解释和功能降级。</li>
+          <li>第 12 章：单细胞/空间图形判读与综合项目。</li>
+        </ul>
+      </article>
     </div>
   </section>
 

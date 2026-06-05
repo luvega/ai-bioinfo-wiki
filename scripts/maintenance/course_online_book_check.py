@@ -10,14 +10,18 @@ from typing import NamedTuple
 
 ROOT = Path(__file__).resolve().parents[2]
 MAP_PATH = ROOT / "course" / "textbook" / "coursebook_map.yml"
+LOGICAL_V2_MAP_PATH = ROOT / "course" / "textbook" / "logical_v2" / "coursebook_map.yml"
 SITE_DATA = ROOT / "site" / "src" / "data" / "coursebook.ts"
 COURSEBOOK_INDEX = ROOT / "site" / "src" / "pages" / "coursebook.astro"
 COURSEBOOK_REVIEW = ROOT / "site" / "src" / "pages" / "coursebook" / "review.astro"
 COURSEBOOK_ROUTE = ROOT / "site" / "src" / "pages" / "coursebook" / "[slug].astro"
+LOGICAL_V2_INDEX = ROOT / "site" / "src" / "pages" / "coursebook" / "logical-v2.astro"
+LOGICAL_V2_ROUTE = ROOT / "site" / "src" / "pages" / "coursebook" / "logical-v2" / "[slug].astro"
 COURSEWARE_INDEX = ROOT / "site" / "src" / "pages" / "courseware.astro"
 COURSEWARE_ROUTE = ROOT / "site" / "src" / "pages" / "courseware" / "[slug].astro"
 WEEK_ROUTE = ROOT / "site" / "src" / "pages" / "weeks" / "[slug].astro"
 SAMPLE_WEEKS = {3, 13, 14, 15, 16}
+LOGICAL_V2_REVIEW_CHAPTERS = {1, 2, 4, 8, 11, 12}
 MINIMUM_REVIEW_STATUSES = {"pilot_candidate", "pilot_ready", "sample_ready", "evidence_review_pass"}
 MINIMUM_WEEK_FILE_STATUSES = {"pilot_candidate", "pilot_ready"}
 TRIAL_READY_PACK_WEEKS = {1, 2, 4, 5, 6, 7, 8, 9, 10, 17, 18}
@@ -258,6 +262,37 @@ def check_map(root: Path) -> list[Issue]:
     return issues
 
 
+def check_logical_v2_map(root: Path) -> list[Issue]:
+    issues: list[Issue] = []
+    if not LOGICAL_V2_MAP_PATH.exists():
+        return [Issue("MISSING_LOGICAL_V2_MAP", LOGICAL_V2_MAP_PATH, "logical_v2/coursebook_map.yml is missing")]
+    chapters = parse_map(LOGICAL_V2_MAP_PATH)
+    if len(chapters) != 12:
+        issues.append(Issue("BAD_LOGICAL_V2_COUNT", LOGICAL_V2_MAP_PATH, f"Expected 12 logical v2 chapters, found {len(chapters)}"))
+    seen = {int(chapter.get("chapter", 0)) for chapter in chapters}
+    if seen != set(range(1, 13)):
+        issues.append(Issue("BAD_LOGICAL_V2_COVERAGE", LOGICAL_V2_MAP_PATH, f"Expected chapters 1-12, found {sorted(seen)}"))
+    for chapter in chapters:
+        chapter_no = int(chapter.get("chapter", 0))
+        status = str(chapter.get("status", ""))
+        if chapter_no in LOGICAL_V2_REVIEW_CHAPTERS:
+            expected_page = f"/coursebook/logical-v2/chapter-{chapter_no:02d}"
+            expected_source = f"course/textbook/logical_v2/chapters/chapter_{chapter_no:02d}.md"
+            if status != "review_ready":
+                issues.append(Issue("LOGICAL_V2_NOT_REVIEW_READY", LOGICAL_V2_MAP_PATH, f"Chapter {chapter_no:02d} should be review_ready"))
+            if str(chapter.get("review_status", "")) != "review_ready":
+                issues.append(Issue("LOGICAL_V2_BAD_REVIEW_STATUS", LOGICAL_V2_MAP_PATH, f"Chapter {chapter_no:02d} should expose review_status"))
+            if str(chapter.get("page", "")) != expected_page:
+                issues.append(Issue("LOGICAL_V2_BAD_PAGE", LOGICAL_V2_MAP_PATH, f"Chapter {chapter_no:02d} should route to {expected_page}"))
+            if str(chapter.get("chapter_source", "")) != expected_source:
+                issues.append(Issue("LOGICAL_V2_BAD_SOURCE", LOGICAL_V2_MAP_PATH, f"Chapter {chapter_no:02d} should use {expected_source}"))
+            if not (root / expected_source).exists():
+                issues.append(Issue("LOGICAL_V2_MISSING_CHAPTER", root / expected_source, f"Chapter {chapter_no:02d} review draft is missing"))
+        elif status != "source_mapped":
+            issues.append(Issue("LOGICAL_V2_UNEXPECTED_STATUS", LOGICAL_V2_MAP_PATH, f"Chapter {chapter_no:02d} should remain source_mapped"))
+    return issues
+
+
 def check_site_data(root: Path) -> list[Issue]:
     issues: list[Issue] = []
     if not SITE_DATA.exists():
@@ -286,6 +321,9 @@ def check_site_data(root: Path) -> list[Issue]:
     for required_text in ("expanded_draft", "storyboard_expanded", "textbookChapterSource", "textbookAssetSources", "textbookStoryboardSource", "textbookTeachingPlanSource", "textbookChapters", "coursewareWeeks", "CoursewareWeek", "教材扩写稿"):
         if required_text not in text:
             issues.append(Issue("MISSING_TEXTBOOK_INTERFACE", SITE_DATA, f"Site data should expose {required_text}"))
+    for required_text in ("LogicalV2Chapter", "logicalV2Chapters", "logicalV2ReviewChapters", "review_ready", "/coursebook/logical-v2/chapter-01", "/coursebook/logical-v2/chapter-12"):
+        if required_text not in text:
+            issues.append(Issue("MISSING_LOGICAL_V2_DATA", SITE_DATA, f"Site data should expose {required_text}"))
     if "CoursebookStatus" in text:
         issues.append(Issue("STATUS_CONFLATION", SITE_DATA, "Site data should split textbookChapters and coursewareWeeks instead of a single CoursebookStatus"))
     for required_text in ("现代组学拓展", "试点候选", "pilot_candidate", "pilot_ready", "evidence_review_pass", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
@@ -352,7 +390,7 @@ def check_course_week_files(root: Path) -> list[Issue]:
 
 def check_routes() -> list[Issue]:
     issues: list[Issue] = []
-    route_files = (COURSEBOOK_INDEX, COURSEBOOK_ROUTE, COURSEWARE_INDEX, COURSEWARE_ROUTE, WEEK_ROUTE)
+    route_files = (COURSEBOOK_INDEX, COURSEBOOK_ROUTE, LOGICAL_V2_INDEX, LOGICAL_V2_ROUTE, COURSEWARE_INDEX, COURSEWARE_ROUTE, WEEK_ROUTE)
     for path in route_files:
         if not path.exists():
             issues.append(Issue("MISSING_ROUTE", path, "Required Astro route is missing"))
@@ -390,9 +428,19 @@ def check_routes() -> list[Issue]:
                 issues.append(Issue("MISSING_COURSEWARE_ROUTE", COURSEWARE_ROUTE, f"Courseware route should expose {required_text}"))
     if COURSEBOOK_INDEX.exists():
         index_text = read_text(COURSEBOOK_INDEX)
-        for required_text in ("在线教材目录", "教材与课件分工", "textbookChapters", "coursewareWeeks", "/courseware", "docs/course_status_dictionary.md"):
+        for required_text in ("在线教材目录", "教材与课件分工", "textbookChapters", "coursewareWeeks", "/courseware", "docs/course_status_dictionary.md", "/coursebook/logical-v2", "logical v2"):
             if required_text not in index_text:
                 issues.append(Issue("MISSING_COURSEBOOK_INDEX", COURSEBOOK_INDEX, f"Coursebook index should explain {required_text}"))
+    if LOGICAL_V2_INDEX.exists():
+        index_text = read_text(LOGICAL_V2_INDEX)
+        for required_text in ("教材 v2 逻辑章节审查入口", "logicalV2Chapters", "review_ready", "source_mapped", "不替换 18 周"):
+            if required_text not in index_text:
+                issues.append(Issue("MISSING_LOGICAL_V2_INDEX", LOGICAL_V2_INDEX, f"Logical v2 index should expose {required_text}"))
+    if LOGICAL_V2_ROUTE.exists():
+        route_text = read_text(LOGICAL_V2_ROUTE)
+        for required_text in ("logicalV2ReviewChapters", "教材正文", "来源映射", "学习证据", "审查状态", "Courseware 审核台"):
+            if required_text not in route_text:
+                issues.append(Issue("MISSING_LOGICAL_V2_ROUTE", LOGICAL_V2_ROUTE, f"Logical v2 route should expose {required_text}"))
     if WEEK_ROUTE.exists():
         week_route_text = read_text(WEEK_ROUTE)
         if "getCoursebookChapterByWeek" not in week_route_text or "/coursebook/" not in week_route_text:
@@ -408,7 +456,7 @@ def run_check(root: Path = ROOT) -> list[Issue]:
         candidate = root / relative_path
         if not candidate.exists():
             issues.append(Issue("MISSING_SUPPORT_FILE", candidate, f"Required support file is missing: {relative_path}"))
-    return [*issues, *check_map(root), *check_site_data(root), *check_routes(), *check_course_week_files(root)]
+    return [*issues, *check_map(root), *check_logical_v2_map(root), *check_site_data(root), *check_routes(), *check_course_week_files(root)]
 
 
 def print_issues(root: Path, issues: list[Issue]) -> None:

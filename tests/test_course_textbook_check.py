@@ -62,7 +62,15 @@ def test_logical_v2_map_exposes_source_mapped_structure():
     assert len(chapters) == 12
     assert [chapter["chapter"] for chapter in chapters] == list(range(1, 13))
     for chapter in chapters:
-        assert chapter["status"] == "source_mapped"
+        chapter_no = chapter["chapter"]
+        if chapter_no in module.LOGICAL_V2_REVIEW_CHAPTERS:
+            assert chapter["status"] == "review_ready"
+            assert chapter["review_status"] == "review_ready"
+            assert chapter["page"] == f"/coursebook/logical-v2/chapter-{chapter_no:02d}"
+            assert chapter["chapter_source"] == f"course/textbook/logical_v2/chapters/chapter_{chapter_no:02d}.md"
+            assert chapter["review_focus"]
+        else:
+            assert chapter["status"] == "source_mapped"
         assert chapter["core_question"].endswith("？")
         for field in module.LOGICAL_V2_REQUIRED_FIELDS:
             assert field in chapter
@@ -71,6 +79,21 @@ def test_logical_v2_map_exposes_source_mapped_structure():
             for value in module.list_value(chapter, field):
                 assert (ROOT / value).exists(), value
         assert module.list_value(chapter, "learning_evidence")
+
+
+def test_logical_v2_review_chapters_have_review_ready_body():
+    module = load_module()
+    for chapter_no in sorted(module.LOGICAL_V2_REVIEW_CHAPTERS):
+        path = ROOT / "course" / "textbook" / "logical_v2" / "chapters" / f"chapter_{chapter_no:02d}.md"
+        text = path.read_text(encoding="utf-8")
+        fm = module.frontmatter(text)
+        assert module.frontmatter_scalar(fm, "status") == "review_ready"
+        assert module.frontmatter_scalar(fm, "review_status") == "review_ready"
+        assert module.chinese_count(text) >= module.LOGICAL_V2_REVIEW_MIN_CHINESE
+        for heading in module.LOGICAL_V2_REVIEW_HEADINGS:
+            assert heading in text
+        for field in module.LOGICAL_V2_REVIEW_FRONTMATTER_LISTS:
+            assert module.frontmatter_list(fm, field)
 
 
 def test_knowledge_graph_links_all_weeks():

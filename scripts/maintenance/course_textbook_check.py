@@ -15,6 +15,7 @@ CHAPTERS = TEXTBOOK / "chapters"
 ASSETS = TEXTBOOK / "assets"
 MAP_PATH = TEXTBOOK / "coursebook_map.yml"
 LOGICAL_V2 = TEXTBOOK / "logical_v2"
+LOGICAL_V2_CHAPTERS = LOGICAL_V2 / "chapters"
 LOGICAL_V2_MAP = LOGICAL_V2 / "coursebook_map.yml"
 LOGICAL_V2_BLUEPRINT = LOGICAL_V2 / "教材结构总纲.md"
 LOGICAL_V2_COVERAGE = LOGICAL_V2 / "material_coverage_matrix.md"
@@ -47,6 +48,9 @@ EXPANDED_PPT_STATUS = "storyboard_expanded"
 FOCUS_WEEKS = {3, 11, 12, 13, 14, 15, 16}
 STATUS_CONFLATION_TERMS = {"pilot_candidate", "pilot_ready", "sample_ready", "evidence_review_pass", "storyboard", "pptx_trial_done"}
 LOGICAL_V2_STATUSES = {"source_mapped", "blueprint_ready", "draft_chapter", "review_ready"}
+LOGICAL_V2_REVIEW_CHAPTERS = {1, 2, 4, 8, 11, 12}
+LOGICAL_V2_REVIEW_STATUS = "review_ready"
+LOGICAL_V2_REVIEW_MIN_CHINESE = 3400
 LOGICAL_V2_REQUIRED_FIELDS = (
     "part",
     "title",
@@ -58,6 +62,34 @@ LOGICAL_V2_REQUIRED_FIELDS = (
     "material_sources",
     "asset_sources",
     "learning_evidence",
+)
+LOGICAL_V2_REVIEW_FIELDS = (
+    "page",
+    "chapter_source",
+    "review_focus",
+    "review_status",
+)
+LOGICAL_V2_REVIEW_FRONTMATTER_LISTS = (
+    "source_weeks",
+    "source_chapters",
+    "knowledge_sources",
+    "material_sources",
+    "asset_sources",
+    "learning_evidence",
+)
+LOGICAL_V2_REVIEW_HEADINGS = (
+    "## 导入问题",
+    "## 本章知识链",
+    "## 核心概念",
+    "## 最小工具",
+    "## 案例与素材来源",
+    "## AI 协作与核验",
+    "## 学习证据",
+    "## 教材写作口径",
+    "## 审查重点",
+    "## 上线审查提示",
+    "## 18 周反向映射",
+    "## 待核验点",
 )
 LOGICAL_V2_COVERAGE_TERMS = (
     "AIDD",
@@ -325,6 +357,60 @@ def check_logical_v2_paths(root: Path, map_path: Path, chapter: dict[str, object
     return issues
 
 
+def check_logical_v2_review_chapter(root: Path, map_path: Path, chapter: dict[str, object]) -> list[Issue]:
+    issues: list[Issue] = []
+    chapter_no = int(chapter.get("chapter", 0))
+    source = str(chapter.get("chapter_source", ""))
+    expected_source = f"course/textbook/logical_v2/chapters/chapter_{chapter_no:02d}.md"
+    expected_page = f"/coursebook/logical-v2/chapter-{chapter_no:02d}"
+    if source != expected_source:
+        issues.append(Issue("LOGICAL_V2_BAD_CHAPTER_SOURCE", map_path, f"Chapter {chapter_no:02d} should use {expected_source}"))
+        return issues
+    if str(chapter.get("page", "")) != expected_page:
+        issues.append(Issue("LOGICAL_V2_BAD_PAGE", map_path, f"Chapter {chapter_no:02d} should route to {expected_page}"))
+    if str(chapter.get("review_status", "")) != LOGICAL_V2_REVIEW_STATUS:
+        issues.append(Issue("LOGICAL_V2_BAD_REVIEW_STATUS", map_path, f"Chapter {chapter_no:02d} review_status should be {LOGICAL_V2_REVIEW_STATUS}"))
+    if not str(chapter.get("review_focus", "")).strip():
+        issues.append(Issue("LOGICAL_V2_EMPTY_REVIEW_FOCUS", map_path, f"Chapter {chapter_no:02d} should list review_focus"))
+
+    path = root / source
+    if not path.exists():
+        issues.append(Issue("LOGICAL_V2_MISSING_REVIEW_CHAPTER", path, f"Chapter {chapter_no:02d} review draft is missing"))
+        return issues
+    text = read_text(path)
+    fm = frontmatter(text)
+    if has_forbidden_reference(text):
+        issues.append(Issue("LOGICAL_V2_FORBIDDEN_REFERENCE", path, "Logical v2 review chapters must not reference raw paths or Obsidian links"))
+    if frontmatter_scalar(fm, "status") != LOGICAL_V2_REVIEW_STATUS:
+        issues.append(Issue("LOGICAL_V2_CHAPTER_STATUS", path, f"frontmatter status should be {LOGICAL_V2_REVIEW_STATUS}"))
+    if frontmatter_scalar(fm, "review_status") != LOGICAL_V2_REVIEW_STATUS:
+        issues.append(Issue("LOGICAL_V2_CHAPTER_REVIEW_STATUS", path, f"frontmatter review_status should be {LOGICAL_V2_REVIEW_STATUS}"))
+    if frontmatter_scalar(fm, "core_question") != str(chapter.get("core_question", "")):
+        issues.append(Issue("LOGICAL_V2_CORE_QUESTION_MISMATCH", path, "frontmatter core_question should match coursebook_map.yml"))
+    for heading in LOGICAL_V2_REVIEW_HEADINGS:
+        if heading not in text:
+            issues.append(Issue("LOGICAL_V2_MISSING_REVIEW_SECTION", path, f"Missing required review section: {heading}"))
+    count = chinese_count(text)
+    if count < LOGICAL_V2_REVIEW_MIN_CHINESE:
+        issues.append(Issue("LOGICAL_V2_SHORT_REVIEW_CHAPTER", path, f"Expected at least {LOGICAL_V2_REVIEW_MIN_CHINESE} Chinese chars, found {count}"))
+    for field in LOGICAL_V2_REVIEW_FRONTMATTER_LISTS:
+        values = frontmatter_list(fm, field)
+        if not values:
+            issues.append(Issue("LOGICAL_V2_EMPTY_FRONTMATTER_LIST", path, f"frontmatter {field} should not be empty"))
+            continue
+        if field != "learning_evidence":
+            for value in values:
+                if has_forbidden_reference(value):
+                    issues.append(Issue("LOGICAL_V2_FORBIDDEN_REFERENCE", path, f"frontmatter {field} uses forbidden reference: {value}"))
+                    continue
+                if not (root / value).exists():
+                    issues.append(Issue("LOGICAL_V2_MISSING_FRONTMATTER_SOURCE", path, f"frontmatter {field} path does not exist: {value}"))
+    for required_text in ("AI 协作", "学习证据", "待核验", "18 周反向映射", "证据边界"):
+        if required_text not in text:
+            issues.append(Issue("LOGICAL_V2_REVIEW_CONTENT_GAP", path, f"Review chapter should include {required_text}"))
+    return issues
+
+
 def check_logical_v2(root: Path = ROOT) -> list[Issue]:
     issues: list[Issue] = []
     required_files = (LOGICAL_V2_BLUEPRINT, LOGICAL_V2_MAP, LOGICAL_V2_COVERAGE)
@@ -360,17 +446,27 @@ def check_logical_v2(root: Path = ROOT) -> list[Issue]:
         for field in LOGICAL_V2_REQUIRED_FIELDS:
             if field not in chapter:
                 issues.append(Issue("LOGICAL_V2_MISSING_FIELD", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} missing {field}"))
+        if chapter_no in LOGICAL_V2_REVIEW_CHAPTERS:
+            for field in LOGICAL_V2_REVIEW_FIELDS:
+                if field not in chapter:
+                    issues.append(Issue("LOGICAL_V2_MISSING_FIELD", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} review-ready chapter missing {field}"))
         status = str(chapter.get("status", ""))
         if status not in LOGICAL_V2_STATUSES:
             issues.append(Issue("LOGICAL_V2_BAD_STATUS", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} status is {status or 'missing'}"))
         if status in STATUS_CONFLATION_TERMS:
             issues.append(Issue("LOGICAL_V2_STATUS_CONFLATION", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} reuses non-textbook status {status}"))
+        if chapter_no in LOGICAL_V2_REVIEW_CHAPTERS and status != LOGICAL_V2_REVIEW_STATUS:
+            issues.append(Issue("LOGICAL_V2_EXPECTED_REVIEW_READY", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} should be {LOGICAL_V2_REVIEW_STATUS}"))
+        if chapter_no not in LOGICAL_V2_REVIEW_CHAPTERS and status != "source_mapped":
+            issues.append(Issue("LOGICAL_V2_UNEXPECTED_REVIEW_READY", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} should remain source_mapped in the first review batch"))
         if not str(chapter.get("core_question", "")).endswith("？"):
             issues.append(Issue("LOGICAL_V2_BAD_CORE_QUESTION", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} core_question should be a question"))
         for path_field in ("source_weeks", "source_chapters", "knowledge_sources", "material_sources", "asset_sources"):
             issues.extend(check_logical_v2_paths(root, LOGICAL_V2_MAP, chapter, path_field))
         if not list_value(chapter, "learning_evidence"):
             issues.append(Issue("LOGICAL_V2_EMPTY_FIELD", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} has empty learning_evidence"))
+        if chapter_no in LOGICAL_V2_REVIEW_CHAPTERS:
+            issues.extend(check_logical_v2_review_chapter(root, LOGICAL_V2_MAP, chapter))
     return issues
 
 

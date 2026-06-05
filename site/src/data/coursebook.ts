@@ -646,6 +646,247 @@ export const coursewareWeeks: CoursewareWeek[] = textbookChapters.map((chapter) 
 
 export const sampleChapters = textbookChapters.filter((chapter) => chapter.sample);
 
+export type LogicalV2ChapterStatus = 'source_mapped' | 'review_ready';
+
+export type LogicalV2Chapter = {
+  chapter: number;
+  slug: string;
+  title: string;
+  part: string;
+  coreQuestion: string;
+  summary: string;
+  status: LogicalV2ChapterStatus;
+  reviewStatus?: string;
+  page?: string;
+  chapterSource?: string;
+  reviewFocus: string;
+  sourceWeeks: string[];
+  sourceChapters: string[];
+  knowledgeSources: string[];
+  materialSources: string[];
+  assetSources: string[];
+  learningEvidence: string[];
+};
+
+export const logicalV2Chapters: LogicalV2Chapter[] = [
+  {
+    chapter: 1,
+    slug: 'chapter-01',
+    title: '医药数据、问题意识与证据链',
+    part: '全书导论',
+    coreQuestion: '药学问题如何转成数据、方法、图表和结论边界？',
+    summary: '建立 v2 的课程定位和问题-数据-方法-图表-边界证据链。',
+    status: 'review_ready',
+    reviewStatus: 'review_ready',
+    page: '/coursebook/logical-v2/chapter-01',
+    chapterSource: 'course/textbook/logical_v2/chapters/chapter_01.md',
+    reviewFocus: '课程定位、证据链入口、AI 协作边界',
+    sourceWeeks: ['course/weeks/week_01', 'course/weeks/week_11'],
+    sourceChapters: ['course/textbook/chapters/chapter_01.md', 'course/textbook/chapters/chapter_11.md'],
+    knowledgeSources: ['knowledge/concepts/医药数据特征.md', 'knowledge/concepts/工具分工_Python_R_Bash.md', 'knowledge/concepts/AI协作边界.md'],
+    materialSources: ['course/syllabus/课程教学讲稿-医药数据处理与可视化-36课时-AI前置调整版.md', 'materials/markdown/aidd_bioinformatics/01_Introduction_To_Biological_Programming_(PY,_R_and_Linux)/chapter.course.md'],
+    assetSources: ['course/textbook/assets/datasets/week01_glucose_contract.csv', 'course/textbook/assets/diagrams/week01_evidence_chain.mmd', 'course/textbook/assets/knowledge_graph/course_graph.mmd'],
+    learningEvidence: ['问题-数据-方法-图表-边界五栏草表', 'AI 协作边界声明草稿']
+  },
+  {
+    chapter: 2,
+    slug: 'chapter-02',
+    title: '可复现项目与 AI 协作规范',
+    part: '工作流与规范',
+    coreQuestion: '一个分析为什么必须能追溯来源、代码、Prompt 和人工核验？',
+    summary: '把证据链落实为 README、data_sources、ai_use_statement 和项目清单。',
+    status: 'review_ready',
+    reviewStatus: 'review_ready',
+    page: '/coursebook/logical-v2/chapter-02',
+    chapterSource: 'course/textbook/logical_v2/chapters/chapter_02.md',
+    reviewFocus: '可复现规范、项目交付包、AI 使用声明',
+    sourceWeeks: ['course/weeks/week_02', 'course/weeks/week_17', 'course/weeks/week_18'],
+    sourceChapters: ['course/textbook/chapters/chapter_02.md', 'course/textbook/chapters/chapter_17.md', 'course/textbook/chapters/chapter_18.md'],
+    knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/concepts/AI协作边界.md', 'knowledge/entities/GitHub.md', 'knowledge/sources/OWF_Learn_Git.md'],
+    materialSources: ['materials/markdown/openwaterfoundation_learning/git/README.md', 'materials/markdown/openwaterfoundation_learning/windows_shell/README.md', 'materials/markdown/openwaterfoundation_learning/linux_shell/README.md', 'materials/markdown/aidd_bioinformatics/12_GitHub_Guide_for_Students/chapter.course.md'],
+    assetSources: ['course/textbook/assets/datasets/week02_project_manifest.csv', 'course/textbook/assets/code/week02_project_manifest.py', 'course/textbook/assets/diagrams/week02_reproducible_workflow.mmd'],
+    learningEvidence: ['项目 README 草稿', 'data_sources 与 ai_use_statement 最小交付包']
+  },
+  {
+    chapter: 3,
+    slug: 'chapter-03',
+    title: '编程最小工具箱',
+    part: '工具最小集',
+    coreQuestion: '药学学生需要掌握哪些 Python、R、Shell 最小能力？',
+    summary: '后续正文待写；当前只完成来源映射。',
+    status: 'source_mapped',
+    reviewFocus: 'Python/R/Shell 最小能力与 AI 代码核验',
+    sourceWeeks: ['course/weeks/week_03', 'course/weeks/week_04', 'course/weeks/week_17'],
+    sourceChapters: ['course/textbook/chapters/chapter_03.md', 'course/textbook/chapters/chapter_04.md', 'course/textbook/chapters/chapter_17.md'],
+    knowledgeSources: ['knowledge/entities/Python.md', 'knowledge/entities/R.md', 'knowledge/entities/Bash.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/02_Python_Language_for_Bioinformatics_(Biopython_for_Bioinformatics)/chapter.course.md'],
+    assetSources: ['course/textbook/assets/datasets/week03_glucose_values.csv', 'course/textbook/assets/code/week03_glucose_filter.py', 'course/textbook/assets/diagrams/week03_python_audit_loop.mmd'],
+    learningEvidence: ['代码、运行输出和手工核验记录']
+  },
+  {
+    chapter: 4,
+    slug: 'chapter-04',
+    title: '表格数据读取、整理与质量控制',
+    part: '数据质量',
+    coreQuestion: '原始表怎样变成可分析表，哪些处理不能交给 AI 代判？',
+    summary: '把读取、数据字典、缺失异常、清洗日志和分组汇总合并为数据质量章。',
+    status: 'review_ready',
+    reviewStatus: 'review_ready',
+    page: '/coursebook/logical-v2/chapter-04',
+    chapterSource: 'course/textbook/logical_v2/chapters/chapter_04.md',
+    reviewFocus: '数据字典、清洗日志、缺失异常人工判断',
+    sourceWeeks: ['course/weeks/week_05', 'course/weeks/week_06'],
+    sourceChapters: ['course/textbook/chapters/chapter_05.md', 'course/textbook/chapters/chapter_06.md'],
+    knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/sources/Starting_Data_Analytics_GenAI.md', 'knowledge/sources/Python程序设计_以医药数据为例.md'],
+    materialSources: ['materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210', 'materials/markdown/aidd_bioinformatics/02_Python_Language_for_Bioinformatics_(Biopython_for_Bioinformatics)/chapter.course.md'],
+    assetSources: ['course/textbook/assets/datasets/week05_raw_glucose_table.csv', 'course/textbook/assets/code/week05_dictionary_check.py', 'course/textbook/assets/diagrams/week05_table_reshape.mmd', 'course/textbook/assets/datasets/week06_cleaning_cases.csv'],
+    learningEvidence: ['数据字典和整理规则', '清洗日志、异常解释和分组汇总表']
+  },
+  {
+    chapter: 5,
+    slug: 'chapter-05',
+    title: '描述统计与分布可视化',
+    part: '描述与表达',
+    coreQuestion: '一组医药指标怎样被统计量和图形共同描述？',
+    summary: '后续正文待写；当前只完成来源映射。',
+    status: 'source_mapped',
+    reviewFocus: '描述统计、分布图形和图注表达',
+    sourceWeeks: ['course/weeks/week_07', 'course/weeks/week_11'],
+    sourceChapters: ['course/textbook/chapters/chapter_07.md', 'course/textbook/chapters/chapter_11.md'],
+    knowledgeSources: ['knowledge/entities/ggplot2.md', 'knowledge/sources/Starting_Data_Analytics_GenAI.md'],
+    materialSources: ['materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210'],
+    assetSources: ['course/textbook/assets/datasets/week07_concentration_distribution.csv', 'course/textbook/assets/code/week07_descriptive_stats.py', 'course/textbook/assets/diagrams/week07_distribution_reading.mmd'],
+    learningEvidence: ['描述统计表', '直方图、箱线图或分布图图注']
+  },
+  {
+    chapter: 6,
+    slug: 'chapter-06',
+    title: '统计推断与结果解释边界',
+    part: '统计判断',
+    coreQuestion: 'P 值、置信区间、效应量和多重比较分别能说明什么？',
+    summary: '后续正文待写；当前只完成来源映射。',
+    status: 'source_mapped',
+    reviewFocus: '统计推断语言和 FDR 边界',
+    sourceWeeks: ['course/weeks/week_08', 'course/weeks/week_15'],
+    sourceChapters: ['course/textbook/chapters/chapter_08.md', 'course/textbook/chapters/chapter_15.md'],
+    knowledgeSources: ['knowledge/sources/ISLP.md', 'knowledge/sources/ISLR.md', 'knowledge/entities/DESeq2.md'],
+    materialSources: ['materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python'],
+    assetSources: ['course/textbook/assets/datasets/week08_inference_result.csv', 'course/textbook/assets/code/week08_inference_language.py', 'course/textbook/assets/diagrams/week08_inference_boundary.mmd'],
+    learningEvidence: ['检验前提与解释边界表']
+  },
+  {
+    chapter: 7,
+    slug: 'chapter-07',
+    title: '相关、回归与分类预测',
+    part: '模型与预测',
+    coreQuestion: '相关、回归、预测概率和阈值如何服务药学判断？',
+    summary: '后续正文待写；当前只完成来源映射。',
+    status: 'source_mapped',
+    reviewFocus: '回归、分类和阈值解释边界',
+    sourceWeeks: ['course/weeks/week_09', 'course/weeks/week_10'],
+    sourceChapters: ['course/textbook/chapters/chapter_09.md', 'course/textbook/chapters/chapter_10.md'],
+    knowledgeSources: ['knowledge/sources/ISLP.md', 'knowledge/sources/ISLR.md'],
+    materialSources: ['materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_R'],
+    assetSources: ['course/textbook/assets/datasets/week09_dose_response.csv', 'course/textbook/assets/code/week09_regression_check.py', 'course/textbook/assets/diagrams/week09_correlation_causation.mmd'],
+    learningEvidence: ['相关与回归图注', '阈值-性能-解释表']
+  },
+  {
+    chapter: 8,
+    slug: 'chapter-08',
+    title: '科研图表与 SCI 表达',
+    part: '图表与写作',
+    coreQuestion: '图表如何支撑结论，如何避免漂亮但无证据？',
+    summary: '用图表证据边界表审查视觉编码、图注语言和 AI 改写风险。',
+    status: 'review_ready',
+    reviewStatus: 'review_ready',
+    page: '/coursebook/logical-v2/chapter-08',
+    chapterSource: 'course/textbook/logical_v2/chapters/chapter_08.md',
+    reviewFocus: '图表证据边界、图注改写、AI 审计',
+    sourceWeeks: ['course/weeks/week_11', 'course/weeks/week_18'],
+    sourceChapters: ['course/textbook/chapters/chapter_11.md', 'course/textbook/chapters/chapter_18.md'],
+    knowledgeSources: ['knowledge/entities/ggplot2.md', 'knowledge/concepts/AI协作边界.md', 'knowledge/sources/AIDD_Bioinformatics_Course.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md', 'course/evaluation/learning_outcome_matrix.md', 'course/evaluation/courseware_rubric.md'],
+    assetSources: ['course/textbook/assets/datasets/week11_figure_claims.csv', 'course/textbook/assets/code/week11_caption_audit.py', 'course/textbook/assets/diagrams/week11_figure_evidence.mmd', 'course/textbook/assets/datasets/week18_presentation_rubric.csv'],
+    learningEvidence: ['图表证据边界表', '修改后的图注和 AI 审计记录']
+  },
+  {
+    chapter: 9,
+    slug: 'chapter-09',
+    title: '高维矩阵、降维、聚类与热图',
+    part: '高维数据',
+    coreQuestion: '表达矩阵、PCA、聚类、热图和 UMAP 能看出什么，不能证明什么？',
+    summary: '后续正文待写；当前只完成来源映射。',
+    status: 'source_mapped',
+    reviewFocus: '高维图形输入、观察和边界',
+    sourceWeeks: ['course/weeks/week_12', 'course/weeks/week_13', 'course/weeks/week_16'],
+    sourceChapters: ['course/textbook/chapters/chapter_12.md', 'course/textbook/chapters/chapter_13.md', 'course/textbook/chapters/chapter_16.md'],
+    knowledgeSources: ['knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
+    materialSources: ['materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/bioconductor_books/README.md'],
+    assetSources: ['course/textbook/assets/datasets/week13_expression_matrix.csv', 'course/textbook/assets/diagrams/week13_high_dimensional_reading.mmd'],
+    learningEvidence: ['高维图形输入-观察-解释-待核验四栏表']
+  },
+  {
+    chapter: 10,
+    slug: 'chapter-10',
+    title: '转录组流程与表达矩阵',
+    part: '组学流程',
+    coreQuestion: 'FASTQ 如何走到 count matrix，metadata 为什么是底线？',
+    summary: '后续正文待写；当前只完成来源映射。',
+    status: 'source_mapped',
+    reviewFocus: 'RNA-seq 上游链条和 metadata 对齐',
+    sourceWeeks: ['course/weeks/week_14', 'course/weeks/week_15'],
+    sourceChapters: ['course/textbook/chapters/chapter_14.md', 'course/textbook/chapters/chapter_15.md'],
+    knowledgeSources: ['knowledge/concepts/RNA-seq上游流程.md', 'knowledge/sources/AIDD_Bioinformatics_Course.md', 'knowledge/sources/OSCA.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/07_NGS_data_Analysis_on_Bash_(Gene_Expression_Using_Command_Line)/chapter.course.md'],
+    assetSources: ['course/textbook/assets/datasets/week14_count_matrix.csv', 'course/textbook/assets/code/week14_count_matrix_qc.py', 'course/textbook/assets/diagrams/week14_rnaseq_pipeline.mmd'],
+    learningEvidence: ['count matrix 与 metadata 对齐核验表']
+  },
+  {
+    chapter: 11,
+    slug: 'chapter-11',
+    title: '差异表达、富集分析与功能解释',
+    part: '组学解释',
+    coreQuestion: 'DE 结果表如何进入图表和候选解释，哪里必须停止？',
+    summary: '把 DESeq2 字段、火山图、富集和功能解释全部降级为候选证据审查。',
+    status: 'review_ready',
+    reviewStatus: 'review_ready',
+    page: '/coursebook/logical-v2/chapter-11',
+    chapterSource: 'course/textbook/logical_v2/chapters/chapter_11.md',
+    reviewFocus: 'DESeq2 字段、火山图图注、功能解释降级',
+    sourceWeeks: ['course/weeks/week_15', 'course/weeks/week_16'],
+    sourceChapters: ['course/textbook/chapters/chapter_15.md', 'course/textbook/chapters/chapter_16.md'],
+    knowledgeSources: ['knowledge/entities/DESeq2.md', 'knowledge/concepts/差异表达分析.md', 'knowledge/concepts/富集分析_GO_KEGG.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md'],
+    materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/bioconductor_books/README.md'],
+    assetSources: ['course/textbook/assets/datasets/week15_deseq2_results.csv', 'course/textbook/assets/code/week15_de_filter.py', 'course/textbook/assets/diagrams/week15_de_interpretation.mmd', 'course/textbook/assets/datasets/week16_single_cell_figures.csv'],
+    learningEvidence: ['DE 结果字段解释和火山图图注', '候选基因功能解释降级清单']
+  },
+  {
+    chapter: 12,
+    slug: 'chapter-12',
+    title: '单细胞、空间组学与综合项目',
+    part: '前沿与项目',
+    coreQuestion: '单细胞/空间图形如何解读，并怎样转成学生项目交付？',
+    summary: '用单细胞和空间图形训练本科判读边界，并收束为综合项目包。',
+    status: 'review_ready',
+    reviewStatus: 'review_ready',
+    page: '/coursebook/logical-v2/chapter-12',
+    chapterSource: 'course/textbook/logical_v2/chapters/chapter_12.md',
+    reviewFocus: '单细胞/空间图形判读、项目交付闭环',
+    sourceWeeks: ['course/weeks/week_16', 'course/weeks/week_17', 'course/weeks/week_18'],
+    sourceChapters: ['course/textbook/chapters/chapter_16.md', 'course/textbook/chapters/chapter_17.md', 'course/textbook/chapters/chapter_18.md'],
+    knowledgeSources: ['knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md', 'knowledge/sources/生物医药大数据与智能分析.md', 'knowledge/concepts/AI协作边界.md'],
+    materialSources: ['materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/bioconductor_books/README.md', 'course/evaluation/student_project_rubric.md', 'course/templates/ai_use_statement_template.md'],
+    assetSources: ['course/textbook/assets/datasets/week16_single_cell_figures.csv', 'course/textbook/assets/code/week16_single_cell_audit.py', 'course/textbook/assets/diagrams/week16_single_cell_spatial.mmd', 'course/textbook/assets/datasets/week17_project_package_check.csv', 'course/textbook/assets/datasets/week18_presentation_rubric.csv'],
+    learningEvidence: ['单细胞/空间图形四栏解读表', 'README、data_sources、ai_use_statement 和 6-8 页项目 storyboard']
+  }
+];
+
+export const logicalV2ReviewChapters = logicalV2Chapters.filter((chapter) => chapter.status === 'review_ready');
+
+export function getLogicalV2ChapterBySlug(slug: string) {
+  return logicalV2Chapters.find((chapter) => chapter.slug === slug);
+}
+
 export function getCoursebookChapterBySlug(slug: string) {
   return textbookChapters.find((chapter) => chapter.slug === slug);
 }

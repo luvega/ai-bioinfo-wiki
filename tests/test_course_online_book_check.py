@@ -50,6 +50,8 @@ def test_dual_track_coursebook_and_courseware_routes_are_present():
     review_route = ROOT / "site" / "src" / "pages" / "coursebook" / "review.astro"
     chapter_route = ROOT / "site" / "src" / "pages" / "coursebook" / "[slug].astro"
     index_route = ROOT / "site" / "src" / "pages" / "coursebook.astro"
+    logical_v2_index = ROOT / "site" / "src" / "pages" / "coursebook" / "logical-v2.astro"
+    logical_v2_route = ROOT / "site" / "src" / "pages" / "coursebook" / "logical-v2" / "[slug].astro"
     courseware_index = ROOT / "site" / "src" / "pages" / "courseware.astro"
     courseware_route = ROOT / "site" / "src" / "pages" / "courseware" / "[slug].astro"
     assert review_route.exists()
@@ -57,11 +59,28 @@ def test_dual_track_coursebook_and_courseware_routes_are_present():
     chapter_text = chapter_route.read_text(encoding="utf-8")
     assert "教材正文" in chapter_text
     assert "Storyboard 审核表" not in chapter_text
-    assert "/courseware" in index_route.read_text(encoding="utf-8")
+    index_text = index_route.read_text(encoding="utf-8")
+    assert "/courseware" in index_text
+    assert "/coursebook/logical-v2" in index_text
+    assert logical_v2_index.exists()
+    assert logical_v2_route.exists()
+    assert "logicalV2Chapters" in logical_v2_index.read_text(encoding="utf-8")
+    assert "logicalV2ReviewChapters" in logical_v2_route.read_text(encoding="utf-8")
     assert "Teaching Plan 与 Storyboard 审核台" in courseware_index.read_text(encoding="utf-8")
     route_text = courseware_route.read_text(encoding="utf-8")
     assert "40 页主干 storyboard 审核表" in route_text
     assert "studentAction" in route_text
+
+
+def test_logical_v2_online_map_exposes_review_ready_batch():
+    module = load_module()
+    chapters = module.parse_map(ROOT / "course" / "textbook" / "logical_v2" / "coursebook_map.yml")
+    ready = {chapter["chapter"] for chapter in chapters if chapter["status"] == "review_ready"}
+    assert ready == module.LOGICAL_V2_REVIEW_CHAPTERS
+    for chapter in chapters:
+        if chapter["chapter"] in module.LOGICAL_V2_REVIEW_CHAPTERS:
+            assert chapter["page"] == f"/coursebook/logical-v2/chapter-{chapter['chapter']:02d}"
+            assert chapter["review_status"] == "review_ready"
 
 
 def test_full_week_pilot_candidate_statuses_are_enforced():
