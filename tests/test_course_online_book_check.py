@@ -65,7 +65,11 @@ def test_dual_track_coursebook_and_courseware_routes_are_present():
     assert logical_v2_index.exists()
     assert logical_v2_route.exists()
     assert "logicalV2Chapters" in logical_v2_index.read_text(encoding="utf-8")
-    assert "logicalV2ReviewChapters" in logical_v2_route.read_text(encoding="utf-8")
+    logical_v2_route_text = logical_v2_route.read_text(encoding="utf-8")
+    assert "logicalV2ReviewChapters" in logical_v2_route_text
+    assert "cwd()" in logical_v2_route_text
+    assert "Missing logical v2 chapter source" in logical_v2_route_text
+    assert "正文尚未生成" not in logical_v2_route_text
     assert "Teaching Plan 与 Storyboard 审核台" in courseware_index.read_text(encoding="utf-8")
     route_text = courseware_route.read_text(encoding="utf-8")
     assert "40 页主干 storyboard 审核表" in route_text

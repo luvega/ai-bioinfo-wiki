@@ -438,9 +438,11 @@ def check_routes() -> list[Issue]:
                 issues.append(Issue("MISSING_LOGICAL_V2_INDEX", LOGICAL_V2_INDEX, f"Logical v2 index should expose {required_text}"))
     if LOGICAL_V2_ROUTE.exists():
         route_text = read_text(LOGICAL_V2_ROUTE)
-        for required_text in ("logicalV2ReviewChapters", "教材正文", "来源映射", "学习证据", "审查状态", "Courseware 审核台"):
+        for required_text in ("logicalV2ReviewChapters", "教材正文", "来源映射", "学习证据", "审查状态", "Courseware 审核台", "cwd()", "Missing logical v2 chapter source"):
             if required_text not in route_text:
                 issues.append(Issue("MISSING_LOGICAL_V2_ROUTE", LOGICAL_V2_ROUTE, f"Logical v2 route should expose {required_text}"))
+        if "正文尚未生成" in route_text:
+            issues.append(Issue("LOGICAL_V2_FALLBACK_BODY", LOGICAL_V2_ROUTE, "Logical v2 route must fail on missing chapter markdown instead of rendering an empty fallback body"))
     if WEEK_ROUTE.exists():
         week_route_text = read_text(WEEK_ROUTE)
         if "getCoursebookChapterByWeek" not in week_route_text or "/coursebook/" not in week_route_text:

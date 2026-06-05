@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
+import { cwd } from 'node:process';
 import { logicalV2ReviewChapters } from '../../../data/coursebook';
 import { withBase } from '../../../lib/paths';
 import { renderSimpleMarkdown } from '../../../lib/simpleMarkdown';
@@ -17,12 +18,21 @@ export function getStaticPaths() {
 const { chapter } = Astro.props;
 const previousChapter = logicalV2ReviewChapters.filter((item) => item.chapter < chapter.chapter).at(-1);
 const nextChapter = logicalV2ReviewChapters.find((item) => item.chapter > chapter.chapter);
-const repoRoot = fileURLToPath(new URL('../../../../../', import.meta.url));
 const chapterSource = chapter.chapterSource ?? '';
-const chapterPath = resolve(repoRoot, chapterSource);
-const chapterMarkdown = chapterSource && existsSync(chapterPath)
-  ? readFileSync(chapterPath, 'utf-8')
-  : `# ${chapter.title}\n\n本章 logical v2 正文尚未生成。`;
+const repoRootCandidates = [
+  cwd(),
+  resolve(cwd(), '..'),
+  fileURLToPath(new URL('../../../../../', import.meta.url))
+];
+const chapterPath = repoRootCandidates
+  .map((root) => resolve(root, chapterSource))
+  .find((candidate) => existsSync(candidate));
+
+if (!chapterPath) {
+  throw new Error(`Missing logical v2 chapter source: ${chapterSource}`);
+}
+
+const chapterMarkdown = readFileSync(chapterPath, 'utf-8');
 const chapterHtml = renderSimpleMarkdown(chapterMarkdown);
 ---
 
