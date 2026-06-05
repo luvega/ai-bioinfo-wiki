@@ -1,0 +1,4 @@
+"ridgeCV = skl.ElasticNetCV(alphas=lambdas,"
+"l1_ratio=0,"
+cv=kfold)
+"pipeCV = Pipeline(steps=[('scaler', scaler),"

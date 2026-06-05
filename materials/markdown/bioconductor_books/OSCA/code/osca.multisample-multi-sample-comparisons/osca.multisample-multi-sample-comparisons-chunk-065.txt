@@ -1,0 +1,14 @@
+## DataFrame with 14700 rows and 5 columns
+##                               logFC    logCPM         F      PValue       FDR
+##                           <numeric> <numeric> <numeric>   <numeric> <numeric>
+## Noto                      -11.28825   7.36866   15.3737 9.58638e-05  0.150922
+## Foxj1                     -10.98882   6.65952   15.3159 9.87901e-05  0.150922
+## Shh                       -10.74794   5.85831   15.1633 9.93906e-05  0.150922
+## Cyb561                    -10.45862   5.20446   14.6234 1.32253e-04  0.150922
+## Foxa2                      -8.48654   6.27993   13.8804 1.96141e-04  0.150922
+## ...                             ...       ...       ...         ...       ...
+## Ccl27a_ENSMUSG00000095247        NA        NA        NA          NA        NA
+## CR974586.5                       NA        NA        NA          NA        NA
+## AC132444.6                       NA        NA        NA          NA        NA
+## Vmn2r122                         NA        NA        NA          NA        NA
+## CAAA01147332.1                   NA        NA        NA          NA        NA

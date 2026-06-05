@@ -1,0 +1,9 @@
+Setting up data: 14530it [00:01, 10889.53it/s]
+Calculating distances... : 100%|██████████| 4720/4720 [00:02<00:00, 1758.62it/s]                                                                     
+Generating edge list :   0%|          | 0/220 [00:00<?, ?it/s]                                                                                       /home/juan.henao/.local/lib/python3.8/site-packages/dandelion/tools/_network.py:259: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+Generating edge list : 100%|██████████| 220/220 [00:00<00:00, 852.52it/s]                                                                            
+Computing overlap : 100%|██████████| 4721/4721 [00:05<00:00, 846.28it/s]                                                                             
+Linking edges : 100%|██████████| 4450/4450 [00:02<00:00, 1500.32it/s]                                                                                

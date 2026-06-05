@@ -1,0 +1,15 @@
+## class: SingleCellExperiment 
+## dim: 46603 96 
+## metadata(0):
+## assays(2): counts logcounts
+## rownames(46603): ENSMUSG00000102693 ENSMUSG00000064842 ...
+##   ENSMUSG00000096730 ENSMUSG00000095742
+## rowData names(0):
+## colnames(96): SLX-9555.N701_S502.C89V9ANXX.s_1.r_1
+##   SLX-9555.N701_S503.C89V9ANXX.s_1.r_1 ...
+##   SLX-9555.N712_S508.C89V9ANXX.s_1.r_1
+##   SLX-9555.N712_S517.C89V9ANXX.s_1.r_1
+## colData names(1): sizeFactor
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(0):

@@ -1,0 +1,3 @@
+running Leiden clustering
+    finished: found 17 clusters and added
+    'squidpy_domains', the cluster labels (adata.obs, categorical) (0:00:00)

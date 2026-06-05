@@ -1,0 +1,13 @@
+sudo
+ apt-get install r-base 
+# Debian/Ubuntu
+
+
+sudo
+ dnf install R 
+# Fedora/CentOS/RHEL
+
+
+sudo
+ yum install R 
+# older Fedora/CentOS/RHEL

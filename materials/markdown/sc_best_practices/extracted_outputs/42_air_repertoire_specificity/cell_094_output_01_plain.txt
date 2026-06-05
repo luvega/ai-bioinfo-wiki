@@ -1,0 +1,23 @@
+                                      TRA     TRAV    TRAJ                TRB  \
+cell_id                                                                         
+BGCV01_AAACCTGAGACCGGAT-1             NaN      NaN     NaN      CASSDSSTDTQYF   
+BGCV01_AAACCTGAGGAACTGC-1   CAVKRGNNARLMF   TRAV21  TRAJ31      CASSQTGGQPQHF   
+BGCV01_AAACCTGAGGGATCTG-1   CAVGAPGDDKIIF  TRAV8-3  TRAJ30    CASRPSGLNTDTQYF   
+BGCV01_AAACCTGCAACGCACC-1             NaN      NaN     NaN      CASSYGGYNEQFF   
+BGCV01_AAACCTGCACGTGAGA-1  CAVNSPGGYQKVTF  TRAV8-1  TRAJ13  CAISASGGGSSGNTIYF   
+
+                               TRBV     TRBJ    Peptide  T-Cell-Type  MHC  \
+cell_id                                                                     
+BGCV01_AAACCTGAGACCGGAT-1   TRBV6-4  TRBJ2-3  KLGGALQAK          NaN  NaN   
+BGCV01_AAACCTGAGGAACTGC-1   TRBV5-1  TRBJ1-5  KLGGALQAK          NaN  NaN   
+BGCV01_AAACCTGAGGGATCTG-1   TRBV7-9  TRBJ2-3  KLGGALQAK          NaN  NaN   
+BGCV01_AAACCTGCAACGCACC-1   TRBV6-5  TRBJ2-1  KLGGALQAK          NaN  NaN   
+BGCV01_AAACCTGCACGTGAGA-1  TRBV10-3  TRBJ1-3  KLGGALQAK          NaN  NaN   
+
+                              Score  
+cell_id                              
+BGCV01_AAACCTGAGACCGGAT-1  0.000002  
+BGCV01_AAACCTGAGGAACTGC-1  0.629516  
+BGCV01_AAACCTGAGGGATCTG-1  0.635792  
+BGCV01_AAACCTGCAACGCACC-1  0.000017  
+BGCV01_AAACCTGCACGTGAGA-1  0.625245  

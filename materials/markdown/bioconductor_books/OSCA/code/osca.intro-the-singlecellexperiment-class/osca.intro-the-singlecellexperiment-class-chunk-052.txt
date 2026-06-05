@@ -1,0 +1,39 @@
+## GRanges object with 10 ranges and 6 metadata columns:
+##                      seqnames          ranges strand |            gene_id
+##                         <Rle>       <IRanges>  <Rle> |        <character>
+##   ENSMUSG00000102693        1 3073253-3074322      + | ENSMUSG00000102693
+##   ENSMUSG00000064842        1 3102016-3102125      + | ENSMUSG00000064842
+##   ENSMUSG00000051951        1 3205901-3671498      - | ENSMUSG00000051951
+##   ENSMUSG00000102851        1 3252757-3253236      + | ENSMUSG00000102851
+##   ENSMUSG00000103377        1 3365731-3368549      - | ENSMUSG00000103377
+##   ENSMUSG00000104017        1 3375556-3377788      - | ENSMUSG00000104017
+##   ENSMUSG00000103025        1 3464977-3467285      - | ENSMUSG00000103025
+##   ENSMUSG00000089699        1 3466587-3513553      + | ENSMUSG00000089699
+##   ENSMUSG00000103201        1 3512451-3514507      - | ENSMUSG00000103201
+##   ENSMUSG00000103147        1 3531795-3532720      + | ENSMUSG00000103147
+##                      gene_version     gene_name    gene_source
+##                       <character>   <character>    <character>
+##   ENSMUSG00000102693            1 4933401J01Rik         havana
+##   ENSMUSG00000064842            1       Gm26206        ensembl
+##   ENSMUSG00000051951            5          Xkr4 ensembl_havana
+##   ENSMUSG00000102851            1       Gm18956         havana
+##   ENSMUSG00000103377            1       Gm37180         havana
+##   ENSMUSG00000104017            1       Gm37363         havana
+##   ENSMUSG00000103025            1       Gm37686         havana
+##   ENSMUSG00000089699            1        Gm1992         havana
+##   ENSMUSG00000103201            1       Gm37329         havana
+##   ENSMUSG00000103147            1        Gm7341         havana
+##                              gene_biotype havana_gene_version
+##                               <character>         <character>
+##   ENSMUSG00000102693                  TEC                   1
+##   ENSMUSG00000064842                snRNA                <NA>
+##   ENSMUSG00000051951       protein_coding                   2
+##   ENSMUSG00000102851 processed_pseudogene                   1
+##   ENSMUSG00000103377                  TEC                   1
+##   ENSMUSG00000104017                  TEC                   1
+##   ENSMUSG00000103025                  TEC                   1
+##   ENSMUSG00000089699            antisense                   1
+##   ENSMUSG00000103201                  TEC                   1
+##   ENSMUSG00000103147 processed_pseudogene                   1
+##   -------
+##   seqinfo: 45 sequences from an unspecified genome; no seqlengths

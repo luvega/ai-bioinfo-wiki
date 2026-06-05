@@ -1,0 +1,8 @@
+AnnData object with n_obs × n_vars = 120502 × 136
+    obs: 'donor', 'batch', 'n_genes_by_counts', 'log1p_n_genes_by_counts', 'total_counts', 'log1p_total_counts', 'n_counts', 'outliers'
+    var: 'gene_ids', 'feature_types', 'n_cells_by_counts', 'mean_counts', 'log1p_mean_counts', 'pct_dropout_by_counts', 'total_counts', 'log1p_total_counts'
+    uns: 'batch_colors', 'donor_colors', 'neighbors', 'pca', 'umap'
+    obsm: 'X_isotypes', 'X_pca', 'X_pcahm', 'X_umap'
+    varm: 'PCs'
+    layers: 'counts'
+    obsp: 'connectivities', 'distances'

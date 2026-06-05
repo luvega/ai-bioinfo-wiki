@@ -1,0 +1,7 @@
+"fig, ax = subplots(figsize=(8,8))"
+"plot_gam(gam_full,"
+"1,"
+ax=ax)
+ax.set_xlabel('Year')
+ax.set_ylabel('Effect on wage')
+"ax.set_title('Partial dependence of year on wage', fontsize=20)"

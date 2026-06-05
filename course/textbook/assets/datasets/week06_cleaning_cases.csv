@@ -1,0 +1,6 @@
+patient_id,group,marker,issue
+P01,Control,2.1,ok
+P02,Control,,missing
+P03,Drug,99.0,unit_check
+P03,Drug,3.9,duplicate
+P04,Drug,4.1,ok

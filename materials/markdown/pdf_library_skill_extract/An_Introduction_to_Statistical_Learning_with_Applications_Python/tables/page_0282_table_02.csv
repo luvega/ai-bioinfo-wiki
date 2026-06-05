@@ -1,0 +1,5 @@
+"soln_path = pd.DataFrame(soln_array.T,"
+"columns=D.columns,"
+index=-np.log(lambdas))
+soln_path.index.name = 'negative log(lambda)'
+soln_path

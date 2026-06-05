@@ -1,0 +1,21 @@
+##    group lib.size norm.factors batch       cell          barcode sample stage
+## 5      1     2268            1     5  cell_9769 AAACCTGAGACTGTAA      5  E8.5
+## 6      1      993            1     6 cell_12180 AAACCTGCAGATGGCA      6  E8.5
+## 7      1     2708            1     7 cell_13227 AAACCTGAGACAAGCC      7  E8.5
+## 8      1     2749            1     8 cell_16234 AAACCTGCAAACCCAT      8  E8.5
+## 9      1     4009            1     9 cell_19332 AAACCTGCAACGATCT      9  E8.5
+## 10     1     6224            1    10 cell_23875 AAACCTGAGGCATGTG     10  E8.5
+##    tomato pool stage.mapped              celltype.mapped closest.cell
+## 5    TRUE    3        E8.25                   Mesenchyme   cell_24159
+## 6   FALSE    3        E8.25             Somitic mesoderm   cell_63247
+## 7    TRUE    4         E8.5             Somitic mesoderm   cell_25454
+## 8   FALSE    4        E8.25                 ExE mesoderm  cell_139075
+## 9    TRUE    5         E8.0                 ExE mesoderm  cell_116116
+## 10  FALSE    5         E8.5 Forebrain/Midbrain/Hindbrain   cell_39343
+##    doub.density sizeFactor label
+## 5      0.029850     1.6349     1
+## 6      0.291916     2.5981    12
+## 7      0.601740     1.5939    11
+## 8      0.004733     0.8707    17
+## 9      0.079415     0.8933     3
+## 10     0.040747     0.3947     7

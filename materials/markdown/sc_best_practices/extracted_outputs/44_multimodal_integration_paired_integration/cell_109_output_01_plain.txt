@@ -1,0 +1,4 @@
+AnnData object with n_obs × n_vars = 17243 × 44002
+    obs: 'cell_type', 'batch', 'modality'
+    var: 'feature_types', 'gene_id'
+    layers: 'counts'

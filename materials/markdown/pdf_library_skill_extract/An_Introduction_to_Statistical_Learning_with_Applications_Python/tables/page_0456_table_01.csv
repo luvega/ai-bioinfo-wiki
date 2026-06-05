@@ -1,0 +1,12 @@
+"fig, axes = subplots(5, 5, figsize=(10,10))"
+rng = np.random.default_rng(4)
+"indices = rng.choice(np.arange(len(cifar_train)), 25,"
+"replace=False).reshape((5,5))"
+for i in range(5):
+for j in range(5):
+"idx = indices[i,j]"
+"axes[i,j].imshow(np.transpose(cifar_train[idx][0],"
+"[1,2,0]),"
+interpolation=None)
+"axes[i,j].set_xticks([])"
+"axes[i,j].set_yticks([])"

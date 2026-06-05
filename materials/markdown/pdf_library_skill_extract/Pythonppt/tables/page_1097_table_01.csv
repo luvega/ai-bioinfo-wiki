@@ -1,0 +1,4 @@
+函数,描述
+os.path.getsize(path),"返回path对应文件的大小，以字节为单位
+>>>os.path.getsize(""D:/PYE/file.txt"")
+180768"

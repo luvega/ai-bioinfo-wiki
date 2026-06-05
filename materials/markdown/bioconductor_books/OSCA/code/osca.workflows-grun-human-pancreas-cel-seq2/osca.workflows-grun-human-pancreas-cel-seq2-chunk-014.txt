@@ -1,0 +1,19 @@
+## block
+##                  CD13+ sorted cells_D17       CD24+ CD44+ live sorted cells_D17 
+##                                      87                                      87 
+##                  CD63+ sorted cells_D10                TGFBR3+ sorted cells_D17 
+##                                      40                                      90 
+## exocrine fraction, live sorted cells_D2 exocrine fraction, live sorted cells_D3 
+##                                      82                                       7 
+##        live sorted cells, library 1_D10        live sorted cells, library 1_D17 
+##                                      33                                      88 
+##         live sorted cells, library 1_D3         live sorted cells, library 1_D7 
+##                                      25                                      85 
+##        live sorted cells, library 2_D10        live sorted cells, library 2_D17 
+##                                      35                                      83 
+##         live sorted cells, library 2_D3         live sorted cells, library 2_D7 
+##                                      27                                      84 
+##         live sorted cells, library 3_D3         live sorted cells, library 3_D7 
+##                                      16                                      83 
+##         live sorted cells, library 4_D3         live sorted cells, library 4_D7 
+##                                      29                                      83

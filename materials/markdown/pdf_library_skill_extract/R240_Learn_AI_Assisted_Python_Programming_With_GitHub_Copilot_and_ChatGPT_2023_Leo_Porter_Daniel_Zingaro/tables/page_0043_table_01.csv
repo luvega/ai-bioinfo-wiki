@@ -1,0 +1,10 @@
+File not found or file missing errors
+""
+"If you ever receive an error that says you are missing a file, take heart: these are the
+kinds of errors that everyone makes. They can be really annoying when writing software.
+It could be that you just didn’t put the file in your working folder—this happens. That’s an
+easy fix by copying or moving the file into the correct folder. However, sometimes, you’ll
+look in the folder and the file will be there, but when you run your code in VS Code, Python
+can’t seem to find it. If this happens to you (it happened to us when writing the book!), be
+sure to have the folder with the code and the desired file open using Explorer in VS Code
+(as shown in the Side Bar in figure 2.1)."

@@ -1,0 +1,7 @@
+"X = MS(D.columns,"
+intercept=False).fit_transform(D)
+fit_queuing = coxph().fit(
+"X,"
+"'Wait time',"
+'Failed')
+"fit_queuing.summary[['coef', 'se(coef)', 'p']]"

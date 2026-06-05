@@ -1,0 +1,6 @@
+Index(['var_1', 'var_2', 'var_3', 'var_4', 'var_5', 'var_6', 'var_7', 'var_8',
+       'var_9', 'var_10',
+       ...
+       'var2_41', 'var2_42', 'var2_43', 'var2_44', 'var2_45', 'var2_46',
+       'var2_47', 'var2_48', 'var2_49', 'var2_50'],
+      dtype='object', length=150)

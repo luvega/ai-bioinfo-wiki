@@ -1,0 +1,5 @@
+"summary(nyse_model,"
+"input_data=X_rnn_t,"
+"col_names=['input_size',"
+"'output_size',"
+'num_params'])

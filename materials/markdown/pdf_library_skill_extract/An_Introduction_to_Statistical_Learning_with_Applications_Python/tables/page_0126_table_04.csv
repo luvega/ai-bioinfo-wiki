@@ -1,0 +1,2 @@
+"Boston = load_data(""Boston"")"
+Boston.columns

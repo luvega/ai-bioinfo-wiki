@@ -1,0 +1,4 @@
+linkage_comp = compute_linkage(hc_comp)
+"comp_cut = cut_tree(linkage_comp, n_clusters=4).reshape(-1)"
+"pd.crosstab(nci_labs['label'],"
+"pd.Series(comp_cut.reshape(-1), name='Complete'))"

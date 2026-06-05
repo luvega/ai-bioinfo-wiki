@@ -1,0 +1,6 @@
+AnnData object with n_obs × n_vars = 5780 × 27876
+    obs: 'clusters', 'palantir_pseudotime', 'palantir_diff_potential'
+    var: 'palantir'
+    uns: 'clusters_colors', 'palantir_branch_probs_cell_types'
+    obsm: 'MAGIC_imputed_data', 'X_tsne', 'palantir_branch_probs'
+    layers: 'spliced', 'unspliced'

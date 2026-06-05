@@ -1,0 +1,20 @@
+{
+  "order": 32,
+  "part": "Spatial omics",
+  "toc_file": "spatial/deconvolution",
+  "title": "Spatial deconvolution",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/spatial/deconvolution.ipynb",
+  "environment": "spatial",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 32,
+  "dataset_reference_count": 4,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/32_spatial_deconvolution",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/32_spatial_deconvolution/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/32_spatial_deconvolution/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/32_spatial_deconvolution/code_index.md"
+  }
+}

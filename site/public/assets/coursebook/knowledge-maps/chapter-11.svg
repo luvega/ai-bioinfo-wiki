@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="520" viewBox="0 0 1080 520" role="img" aria-labelledby="title desc">
+<title id="title">第 11 章知识图谱</title>
+<desc id="desc">差异表达、富集分析与功能解释 的知识图谱，展示核心问题、概念、方法、学习证据和证据边界。</desc>
+<rect width="1080" height="520" fill="#ffffff"/>
+<rect x="24" y="24" width="1032" height="472" rx="8" fill="#f7fafc" stroke="#d8e5ec"/>
+<text x="56" y="54" fill="#0b4f6c" font-size="22" font-family="Microsoft YaHei, Arial" font-weight="700">第 11 章 差异表达、富集分析与功能解释</text>
+<line x1="270" y1="152" x2="430" y2="122" stroke="#7aaec4" stroke-width="3"/>
+<line x1="650" y1="122" x2="780" y2="152" stroke="#7aaec4" stroke-width="3"/>
+<line x1="300" y1="198" x2="280" y2="270" stroke="#75b58d" stroke-width="3"/>
+<line x1="850" y1="198" x2="720" y2="270" stroke="#d9a95e" stroke-width="3"/>
+<line x1="430" y1="340" x2="620" y2="340" stroke="#7aaec4" stroke-width="3"/>
+<rect x="80" y="72" width="280" height="116" rx="8" fill="#e6f1f6" stroke="#0b4f6c" stroke-width="2"/>
+<text x="98" y="106" fill="#0b4f6c" font-size="17" font-family="Microsoft YaHei, Arial" font-weight="700">核心问题</text>
+<text x="98" y="136" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial">差异表达、富集分析与功能解释</text>
+<rect x="430" y="72" width="280" height="116" rx="8" fill="#f3f8fb" stroke="#3494ba" stroke-width="2"/>
+<text x="448" y="106" fill="#3494ba" font-size="17" font-family="Microsoft YaHei, Arial" font-weight="700">核心概念</text>
+<text x="448" y="136" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial">差异表达 / 倍数变化 / 多重校</text>
+<text x="448" y="159" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial">正</text>
+<rect x="780" y="72" width="280" height="116" rx="8" fill="#f7fafc" stroke="#667085" stroke-width="2"/>
+<text x="798" y="106" fill="#667085" font-size="17" font-family="Microsoft YaHei, Arial" font-weight="700">方法路径</text>
+<text x="798" y="136" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial">字段解释 / 筛选规则说明 / 火</text>
+<text x="798" y="159" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial">山图标注</text>
+<rect x="220" y="270" width="280" height="116" rx="8" fill="#f1f8f4" stroke="#029e73" stroke-width="2"/>
+<text x="238" y="304" fill="#029e73" font-size="17" font-family="Microsoft YaHei, Arial" font-weight="700">学习证据</text>
+<text x="238" y="334" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial">DE 字段解释 / 火山图图注 /</text>
+<text x="238" y="357" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial"> 功能解释降级清单</text>
+<rect x="620" y="270" width="280" height="116" rx="8" fill="#fff7e8" stroke="#de8f05" stroke-width="2"/>
+<text x="638" y="304" fill="#de8f05" font-size="17" font-family="Microsoft YaHei, Arial" font-weight="700">证据边界</text>
+<text x="638" y="334" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial">差异表达和富集分析提示候选方向，不</text>
+<text x="638" y="357" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial">能直接证明基因功能、通路机制或药物</text>
+<text x="638" y="380" fill="#1d2733" font-size="15" font-family="Microsoft YaHei, Arial">靶点。</text>
+</svg>

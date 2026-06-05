@@ -1,0 +1,11 @@
+## class: SingleCellExperiment 
+## dim: 29453 4 
+## metadata(0):
+## assays(1): counts
+## rownames(29453): Xkr4 Gm1992 ... CAAA01147332.1 tomato-td
+## rowData names(2): ENSEMBL SYMBOL
+## colnames: NULL
+## colData names(13): cell barcode ... ncells block
+## reducedDimNames(1): pca.corrected
+## mainExpName: NULL
+## altExpNames(0):

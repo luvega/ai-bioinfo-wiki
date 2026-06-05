@@ -1,0 +1,65 @@
+Start at res =  0.4 step =  0.1
+Initializing cluster centers with louvain, resolution =  0.4
+computing neighbors
+    using data matrix X directly
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:00)
+running Louvain clustering
+    using the "louvain" package of Traag (2017)
+    finished: found 10 clusters and added
+    'louvain', the cluster labels (adata.obs, categorical) (0:00:00)
+Epoch  0
+Res =  0.4 Num of clusters =  10
+Initializing cluster centers with louvain, resolution =  0.5
+computing neighbors
+    using data matrix X directly
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:00)
+running Louvain clustering
+    using the "louvain" package of Traag (2017)
+    finished: found 13 clusters and added
+    'louvain', the cluster labels (adata.obs, categorical) (0:00:00)
+Epoch  0
+Res =  0.5 Num of clusters =  13
+Res changed to 0.5
+Initializing cluster centers with louvain, resolution =  0.6
+computing neighbors
+    using data matrix X directly
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:00)
+running Louvain clustering
+    using the "louvain" package of Traag (2017)
+    finished: found 14 clusters and added
+    'louvain', the cluster labels (adata.obs, categorical) (0:00:00)
+Epoch  0
+Res =  0.6 Num of clusters =  14
+Res changed to 0.6
+Initializing cluster centers with louvain, resolution =  0.7
+computing neighbors
+    using data matrix X directly
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:00)
+running Louvain clustering
+    using the "louvain" package of Traag (2017)
+    finished: found 16 clusters and added
+    'louvain', the cluster labels (adata.obs, categorical) (0:00:00)
+Epoch  0
+Res =  0.7 Num of clusters =  16
+Step changed to 0.05
+Initializing cluster centers with louvain, resolution =  0.65
+computing neighbors
+    using data matrix X directly
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:00)
+running Louvain clustering
+    using the "louvain" package of Traag (2017)
+    finished: found 15 clusters and added
+    'louvain', the cluster labels (adata.obs, categorical) (0:00:00)
+Epoch  0
+Res =  0.65 Num of clusters =  15
+recommended res =  0.65

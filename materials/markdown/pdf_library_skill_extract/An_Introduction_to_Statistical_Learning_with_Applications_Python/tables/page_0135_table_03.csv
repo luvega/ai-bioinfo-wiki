@@ -1,0 +1,4 @@
+"Index(['Sales', 'CompPrice', 'Income', 'Advertising',"
+"'Population', 'Price', 'ShelveLoc', 'Age', 'Education',"
+"'Urban', 'US'],"
+dtype='object')

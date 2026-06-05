@@ -1,0 +1,2 @@
+"logit_labels = np.where(logit_pred[:,1]>0.25, 'Yes', 'No')"
+"confusion_table(logit_labels, y_test)"

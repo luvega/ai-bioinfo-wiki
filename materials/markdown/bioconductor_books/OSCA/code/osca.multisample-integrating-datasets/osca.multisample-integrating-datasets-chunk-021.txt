@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 31232 6791 
+## metadata(0):
+## assays(1): corrected
+## rownames(31232): ENSG00000243485 ENSG00000237613 ... ENSG00000198695
+##   ENSG00000198727
+## rowData names(0):
+## colnames: NULL
+## colData names(1): batch
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(0):

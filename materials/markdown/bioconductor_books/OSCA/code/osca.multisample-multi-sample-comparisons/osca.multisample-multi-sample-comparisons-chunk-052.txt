@@ -1,0 +1,27 @@
+## DataFrame with 14700 rows and 6 columns
+##                               logFC    logCPM         F      PValue         FDR
+##                           <numeric> <numeric> <numeric>   <numeric>   <numeric>
+## Slc22a18                  -4.339181   4.04375  118.5538 5.08864e-08 0.000244967
+## Acta2                     -0.832258   9.12478   49.7834 1.07506e-05 0.021517934
+## Mxd4                      -1.421795   5.64602   56.5738 1.34096e-05 0.021517934
+## Rbp4                       1.889804   4.35443   33.9050 5.42433e-05 0.065281829
+## Myl9                      -0.987835   6.24832   33.5800 1.47659e-04 0.135875736
+## ...                             ...       ...       ...         ...         ...
+## Ccl27a_ENSMUSG00000095247        NA        NA        NA          NA          NA
+## CR974586.5                       NA        NA        NA          NA          NA
+## AC132444.6                       NA        NA        NA          NA          NA
+## Vmn2r122                         NA        NA        NA          NA          NA
+## CAAA01147332.1                   NA        NA        NA          NA          NA
+##                           OtherAverage
+##                              <numeric>
+## Slc22a18                            NA
+## Acta2                       -0.0231969
+## Mxd4                        -0.1532086
+## Rbp4                        -0.0875043
+## Myl9                        -0.0920026
+## ...                                ...
+## Ccl27a_ENSMUSG00000095247           NA
+## CR974586.5                          NA
+## AC132444.6                          NA
+## Vmn2r122                            NA
+## CAAA01147332.1                      NA

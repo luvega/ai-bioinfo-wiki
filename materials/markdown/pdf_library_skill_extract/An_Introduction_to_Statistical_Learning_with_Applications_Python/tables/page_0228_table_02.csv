@@ -1,0 +1,5 @@
+Portfolio = load_data('Portfolio')
+"def alpha_func(D, idx):"
+"cov_ = np.cov(D[['X','Y']].loc[idx], rowvar=False)"
+"return ((cov_[1,1] - cov_[0,1]) /"
+"(cov_[0,0]+cov_[1,1]-2*cov_[0,1]))"

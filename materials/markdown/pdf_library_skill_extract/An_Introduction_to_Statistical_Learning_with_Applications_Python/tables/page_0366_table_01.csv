@@ -1,0 +1,7 @@
+"(X_train,"
+"X_test,"
+"y_train,"
+"y_test) = skm.train_test_split(X,"
+"Boston['medv'],"
+"test_size=0.3,"
+random_state=0)

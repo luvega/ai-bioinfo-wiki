@@ -1,0 +1,18 @@
+{
+  "order": 49,
+  "part": "Changelog",
+  "toc_file": "CHANGELOG",
+  "title": "Changelog",
+  "source_type": "md",
+  "upstream_path": "jupyter-book/CHANGELOG.md",
+  "environment": "_config",
+  "week_mapping": [],
+  "code_cell_count": 0,
+  "dataset_reference_count": 57,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/49_changelog",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/49_changelog/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/49_changelog/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/49_changelog/code_index.md"
+  }
+}

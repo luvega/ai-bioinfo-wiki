@@ -1,0 +1,4 @@
+"cifar_optimizer = RMSprop(cifar_model.parameters(), lr=0.001)"
+"cifar_module = SimpleModule.classification(cifar_model,"
+optimizer=cifar_optimizer)
+"cifar_logger = CSVLogger('logs', name='CIFAR100')"

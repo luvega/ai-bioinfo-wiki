@@ -1,0 +1,53 @@
+
+        #########################################################
+        ###           __  __  ____  ______                    ### 
+        ###          |  \/  |/ __ \|  ____/\    _             ### 
+        ###          | \  / | |  | | |__ /  \ _| |_           ### 
+        ###          | |\/| | |  | |  __/ /\ \_   _|          ###
+        ###          | |  | | |__| | | / ____ \|_|            ###
+        ###          |_|  |_|\____/|_|/_/    \_\              ###
+        ###                                                   ### 
+        ######################################################### 
+       
+ 
+        
+Loaded view='rna' group='s1d1' with N=5219 samples and D=4000 features...
+Loaded view='rna' group='s1d3' with N=4975 samples and D=4000 features...
+Loaded view='rna' group='s1d2' with N=6100 samples and D=4000 features...
+Loaded view='adt' group='s1d1' with N=5219 samples and D=136 features...
+Loaded view='adt' group='s1d3' with N=4975 samples and D=136 features...
+Loaded view='adt' group='s1d2' with N=6100 samples and D=136 features...
+
+
+Model options:
+- Automatic Relevance Determination prior on the factors: True
+- Automatic Relevance Determination prior on the weights: True
+- Spike-and-slab prior on the factors: False
+- Spike-and-slab prior on the weights: True
+Likelihoods:
+- View 0 (rna): gaussian
+- View 1 (adt): gaussian
+
+
+
+GPU mode is activated
+
+
+
+######################################
+## Training the model with seed 1 ##
+######################################
+
+
+
+Converged!
+
+
+
+#######################
+## Training finished ##
+#######################
+
+
+Saving model in /tmp/mofa_20230103-162506.hdf5...
+Saved MOFA embeddings in .obsm['X_mofa'] slot and their loadings in .varm['LFs'].

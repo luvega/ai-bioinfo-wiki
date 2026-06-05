@@ -1,0 +1,3 @@
+"plot_wage_fit(age_df,"
+"ns_age,"
+"'Natural spline, df=5');"

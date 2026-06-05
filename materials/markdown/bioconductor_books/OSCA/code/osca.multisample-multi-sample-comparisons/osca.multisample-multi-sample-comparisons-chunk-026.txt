@@ -1,0 +1,15 @@
+##         (Intercept) factor(pool)4 factor(pool)5 factor(tomato)TRUE
+## Sample1           1             0             0                  1
+## Sample2           1             0             0                  0
+## Sample3           1             1             0                  1
+## Sample4           1             1             0                  0
+## Sample5           1             0             1                  1
+## Sample6           1             0             1                  0
+## attr(,"assign")
+## [1] 0 1 1 2
+## attr(,"contrasts")
+## attr(,"contrasts")$`factor(pool)`
+## [1] "contr.treatment"
+## 
+## attr(,"contrasts")$`factor(tomato)`
+## [1] "contr.treatment"

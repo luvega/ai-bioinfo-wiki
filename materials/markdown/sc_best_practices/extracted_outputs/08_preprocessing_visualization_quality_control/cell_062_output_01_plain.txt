@@ -1,0 +1,4 @@
+scDblFinder_class
+singlet    12322
+doublet     2492
+Name: count, dtype: int64

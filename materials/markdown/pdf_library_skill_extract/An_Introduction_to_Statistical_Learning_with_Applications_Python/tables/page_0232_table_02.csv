@@ -1,0 +1,3 @@
+"M = sm.OLS(Auto['mpg'],"
+quad_model.fit_transform(Auto))
+summarize(M.fit())['std err']

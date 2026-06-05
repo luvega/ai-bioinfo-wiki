@@ -1,0 +1,7 @@
+##                                      Joincount   Expected  Variance   z-value
+##  Jtot                               1132.15707 2494.52543 265.87369 -83.55200
+##  pyramidal CA1:pyramidal CA1         735.66944  351.21205  62.92504  48.46592
+##  pyramidal CA1:oligodendrocytes       22.39901  303.28546  75.62290 -32.30012
+##  oligodendrocytes:oligodendrocytes   196.71667   65.35907  19.34973  29.86192
+##  pyramidal CA1:astrocytes_ependymal   97.55301  379.29404  92.67327 -29.26664
+##  pyramidal SS:pyramidal CA1          195.38757  445.19310 106.83889 -24.16781

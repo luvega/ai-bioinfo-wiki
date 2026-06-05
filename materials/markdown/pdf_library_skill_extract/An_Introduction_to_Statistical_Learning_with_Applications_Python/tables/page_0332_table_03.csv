@@ -1,0 +1,8 @@
+"fig, ax = subplots(figsize=(8, 8))"
+"ax = plot_gam(gam_logit_, 2)"
+ax.set_xlabel('Education')
+ax.set_ylabel('Effect on wage')
+ax.set_title('Partial dependence of high earner status on education
+"', fontsize=20);"
+"ax.set_xticklabels(Wage['education'].cat.categories[1:],"
+fontsize=8);

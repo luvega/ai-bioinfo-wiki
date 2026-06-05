@@ -1,0 +1,11 @@
+"kfold = skm.KFold(5,"
+"random_state=0,"
+shuffle=True)
+"grid = skm.GridSearchCV(svm_rbf,"
+"{'C':[0.1,1,10,100,1000],"
+"'gamma':[0.5,1,2,3,4]},"
+"refit=True,"
+"cv=kfold,"
+scoring='accuracy');
+"grid.fit(X_train, y_train)"
+grid.best_params_

@@ -1,0 +1,9 @@
+"D = np.zeros((X.shape[0], X.shape[0]));"
+for i in range(X.shape[0]):
+"x_ = np.multiply.outer(np.ones(X.shape[0]), X[i])"
+"D[i] = np.sqrt(np.sum((X - x_)**2, 1));"
+"hc_sing_pre = HClust(distance_threshold=0,"
+"n_clusters=None,"
+"metric='precomputed',"
+linkage='single')
+hc_sing_pre.fit(D)

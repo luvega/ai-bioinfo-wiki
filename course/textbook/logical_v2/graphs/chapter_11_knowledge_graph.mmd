@@ -1,0 +1,43 @@
+flowchart LR
+    accTitle: 第 11 章知识图谱
+    accDescr: 本图展示第 11 章从核心问题到概念、方法、证据和边界的关系。
+    q["核心问题<br/>DE 结果表如何进入图表和候选解释，哪里必须停止？"]
+    b["证据边界<br/>差异表达和富集分析提示候选方向，不能直接证明基因功能、通路机制或药物靶点。"]
+    c1["概念<br/>差异表达"]
+    q --> c1
+    c2["概念<br/>倍数变化"]
+    q --> c2
+    c3["概念<br/>多重校正"]
+    q --> c3
+    c4["概念<br/>火山图"]
+    q --> c4
+    c5["概念<br/>富集条目"]
+    q --> c5
+    c6["概念<br/>候选解释"]
+    q --> c6
+    m1["方法<br/>字段解释"]
+    c1 --> m1
+    m2["方法<br/>筛选规则说明"]
+    c2 --> m2
+    m3["方法<br/>火山图标注"]
+    c3 --> m3
+    m4["方法<br/>富集结果降级"]
+    c4 --> m4
+    m5["方法<br/>文献核验"]
+    c5 --> m5
+    e1["学习证据<br/>DE 字段解释"]
+    m1 --> e1
+    e1 --> b
+    e2["学习证据<br/>火山图图注"]
+    m2 --> e2
+    e2 --> b
+    e3["学习证据<br/>功能解释降级清单"]
+    m3 --> e3
+    e3 --> b
+    e4["学习证据<br/>待核验候选基因表"]
+    m4 --> e4
+    e4 --> b
+    classDef question fill:#e6f1f6,stroke:#0b4f6c,stroke-width:2px,color:#14364a
+    classDef boundary fill:#f1f8f4,stroke:#029e73,stroke-width:2px,color:#164a2f
+    class q question
+    class b boundary

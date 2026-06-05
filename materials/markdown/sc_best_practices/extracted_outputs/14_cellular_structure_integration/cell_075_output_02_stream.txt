@@ -1,0 +1,3 @@
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+/Users/seohyon/miniconda3/envs/integration/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:434: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.

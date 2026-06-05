@@ -1,0 +1,9 @@
+## class: SingleCellExperiment 
+## dim: 32738 2609 
+## metadata(0):
+## assays(2): counts logcounts
+## rownames(32738): ENSG00000243485 ENSG00000237613 ... ENSG00000215616
+##   ENSG00000215611
+## rowData names(3): ENSEMBL_ID Symbol_TENx Symbol
+## colnames: NULL
+## colData names(13): Sample Barcode ... sizeFactor label

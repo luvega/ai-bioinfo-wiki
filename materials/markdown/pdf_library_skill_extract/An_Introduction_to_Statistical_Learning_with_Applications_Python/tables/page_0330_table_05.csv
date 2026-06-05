@@ -1,0 +1,8 @@
+gam_0 = LinearGAM(year_term +
+"f_gam(2, lam=0))"
+"gam_linear = LinearGAM(l_gam(0, lam=0) +"
+year_term +
+"f_gam(2, lam=0))"
+"gam_0.fit(Xgam, y)"
+"gam_linear.fit(Xgam, y)"
+"anova_gam(gam_0, gam_linear, gam_full)"

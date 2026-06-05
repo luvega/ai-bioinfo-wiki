@@ -1,0 +1,3 @@
+AnnData object with n_obs × n_vars = 10 × 808
+    var: 'index_cell', 'kth_distance'
+    uns: 'sample_col'

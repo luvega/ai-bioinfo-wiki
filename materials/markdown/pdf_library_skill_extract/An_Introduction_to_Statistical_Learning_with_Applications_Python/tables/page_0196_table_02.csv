@@ -1,0 +1,13 @@
+"for K in range(1,6):"
+knn = KNeighborsClassifier(n_neighbors=K)
+"knn_pred = knn.fit(X_train, y_train).predict(X_test)"
+"C = confusion_table(knn_pred, y_test)"
+"templ = ('K={0:d}: # predicted to rent: {1:>2},' +"
+"' # who did rent {2:d}, accuracy {3:.1%}')"
+pred = C.loc['Yes'].sum()
+"did_rent = C.loc['Yes','Yes']"
+print(templ.format(
+"K,"
+"pred,"
+"did_rent,"
+did_rent / pred))

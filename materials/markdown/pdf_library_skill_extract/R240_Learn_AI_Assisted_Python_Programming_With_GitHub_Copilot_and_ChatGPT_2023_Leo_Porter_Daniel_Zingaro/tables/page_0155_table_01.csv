@@ -1,0 +1,11 @@
+Machine Learning
+""
+"Authorship identification, as we’re doing here, is a machine learning (ML) task. ML is a
+branch of AI designed to help computers “learn” from data in order to make predictions.
+There are various forms of ML; the one we’re doing here is called supervised learning. In
+supervised learning, we have access to training data, which consists of objects and their
+known categories (or labels). In our case, our objects are book texts, and the category for
+each book is the author who wrote it. We can train (i.e., learn) on the training set by cal-
+culating features—average number of words per sentence, average sentence complexity,
+and so on—for each book. Later, when we’re provided a book whose author we don’t
+know, we can use what we learned in the training to make our guess."

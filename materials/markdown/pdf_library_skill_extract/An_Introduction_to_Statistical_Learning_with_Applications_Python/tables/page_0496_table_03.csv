@@ -1,0 +1,4 @@
+"fig, ax = subplots(figsize=(8,8))"
+km = KaplanMeierFitter()
+"km_brain = km.fit(BrainCancer['time'], BrainCancer['status'])"
+"km_brain.plot(label='Kaplan Meier estimate', ax=ax)"

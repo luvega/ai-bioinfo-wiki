@@ -1,0 +1,3 @@
+y = Boston['medv']
+"model = sm.OLS(y, X)"
+results = model.fit()

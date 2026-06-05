@@ -1,0 +1,9 @@
+table
+(
+Cluster=
+colLabels
+(merged.grun), 
+Donor=
+merged.grun
+$
+batch)

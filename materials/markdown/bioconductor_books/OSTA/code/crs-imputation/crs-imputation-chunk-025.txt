@@ -1,0 +1,7 @@
+##          k     g FDR summary.AUC
+##  1 B Cells  CD74   0   0.9477608
+##  2 B Cells MS4A1   0   0.8773396
+##  3 B Cells CXCR4   0   0.8271647
+##  4 B Cells SP140   0   0.7843702
+##  5 B Cells BANK1   0   0.7840307
+##  6 B Cells CIITA   0   0.8615623

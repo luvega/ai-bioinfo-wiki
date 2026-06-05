@@ -1,0 +1,13 @@
+Factor,Generative AI,Traditional NLP methods
+,"Low
+ Difficult to understand how the model arrives
+at a summary
+ Like a black box
+Complex
+ Requires complex techniques like reinforce-
+ment learning to optimize for specific objec-
+tives (e.g., factual accuracy, sentiment
+analysis)
+ Prompt engineering may help at setting sum-
+mary objectives, but it is not fully determinis-
+tic and requires monitoring",

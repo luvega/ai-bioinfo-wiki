@@ -1,0 +1,14 @@
+## DataFrame with 96 rows and 1 column
+##                                                   phenotype
+##                                                 <character>
+## SLX-9555.N701_S502.C89V9ANXX.s_1.r_1    wild type phenotype
+## SLX-9555.N701_S503.C89V9ANXX.s_1.r_1    wild type phenotype
+## SLX-9555.N701_S504.C89V9ANXX.s_1.r_1    wild type phenotype
+## SLX-9555.N701_S505.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..
+## SLX-9555.N701_S506.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..
+## ...                                                     ...
+## SLX-9555.N712_S505.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..
+## SLX-9555.N712_S506.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..
+## SLX-9555.N712_S507.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..
+## SLX-9555.N712_S508.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..
+## SLX-9555.N712_S517.C89V9ANXX.s_1.r_1    wild type phenotype

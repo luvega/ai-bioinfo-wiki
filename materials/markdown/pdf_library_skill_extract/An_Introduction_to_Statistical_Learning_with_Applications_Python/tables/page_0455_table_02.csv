@@ -1,0 +1,5 @@
+"(cifar_train,"
+"cifar_test) = [CIFAR100(root=""data"","
+"train=train,"
+download=True)
+"for train in [True, False]]"

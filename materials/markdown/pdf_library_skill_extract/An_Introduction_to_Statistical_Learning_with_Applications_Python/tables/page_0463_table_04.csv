@@ -1,0 +1,7 @@
+"imdb_logger = CSVLogger('logs', name='IMDB')"
+"imdb_trainer = Trainer(deterministic=True,"
+"max_epochs=30,"
+"logger=imdb_logger,"
+callbacks=[ErrorTracker()])
+"imdb_trainer.fit(imdb_module,"
+datamodule=imdb_dm)

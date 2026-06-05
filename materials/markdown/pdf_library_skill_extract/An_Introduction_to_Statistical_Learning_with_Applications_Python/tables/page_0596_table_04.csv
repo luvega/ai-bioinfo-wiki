@@ -1,0 +1,7 @@
+D2 = D[lambda df:df['Y'] == 2]
+D4 = D[lambda df:df['Y'] == 4]
+gene_11 = 'G0011'
+"observedT, pvalue = ttest_ind(D2[gene_11],"
+"D4[gene_11],"
+equal_var=True)
+"observedT, pvalue"

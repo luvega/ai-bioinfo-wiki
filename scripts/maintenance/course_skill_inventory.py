@@ -2,9 +2,11 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import os
 import re
 import sys
+import zipfile
 from pathlib import Path
 from typing import NamedTuple
 
@@ -37,6 +39,8 @@ PROJECT_COURSE_SKILLS = (
 
 MANIFEST = Path("docs/skill_loading_manifest_2026-06-03.md")
 README = Path("skills/README.md")
+SKILLS_ZIP = Path("skills.zip")
+SKILLS_ZIP_REPORT = Path("docs/skills_zip_install_report_2026-06-05.md")
 
 
 class Issue(NamedTuple):
@@ -118,6 +122,61 @@ def check_manifest(root: Path) -> list[Issue]:
     return []
 
 
+def is_ignored_zip_entry(name: str) -> bool:
+    parts = name.replace("\\", "/").split("/")
+    return "__pycache__" in parts or name.endswith(".pyc") or name.endswith("/")
+
+
+def zip_skill_names(zip_path: Path) -> list[str]:
+    names: set[str] = set()
+    with open_skills_zip(zip_path) as archive:
+        for name in archive.namelist():
+            parts = name.replace("\\", "/").split("/")
+            if len(parts) >= 3 and parts[0] == "skills" and parts[1]:
+                names.add(parts[1])
+    return sorted(names)
+
+
+def open_skills_zip(zip_path: Path) -> zipfile.ZipFile:
+    try:
+        return zipfile.ZipFile(zip_path, metadata_encoding="utf-8")
+    except TypeError:
+        return zipfile.ZipFile(zip_path)
+
+
+def hash_bytes(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+
+def check_skills_zip_install(root: Path) -> list[Issue]:
+    issues: list[Issue] = []
+    zip_path = root / SKILLS_ZIP
+    if not zip_path.exists():
+        return issues
+    if not (root / SKILLS_ZIP_REPORT).is_file():
+        issues.append(Issue("MISSING_SKILLS_ZIP_REPORT", root / SKILLS_ZIP_REPORT, "skills.zip install report is missing"))
+    with open_skills_zip(zip_path) as archive:
+        for name in zip_skill_names(zip_path):
+            if not (root / "skills" / name / "SKILL.md").is_file():
+                issues.append(Issue("MISSING_ZIP_SKILL", root / "skills" / name, "Skill directory from skills.zip is not installed locally"))
+        for entry in archive.infolist():
+            name = entry.filename.replace("\\", "/")
+            if name == "skills/README.md":
+                continue
+            if not name.startswith("skills/") or is_ignored_zip_entry(name):
+                continue
+            local_path = root / Path(*name.split("/"))
+            if not local_path.exists():
+                issues.append(Issue("MISSING_ZIP_SKILL_FILE", local_path, "Non-cache file from skills.zip is missing locally"))
+                continue
+            with archive.open(entry) as stream:
+                zip_hash = hash_bytes(stream.read())
+            local_hash = hash_bytes(local_path.read_bytes())
+            if zip_hash != local_hash:
+                issues.append(Issue("ZIP_SKILL_FILE_DIFFERS", local_path, "Local skill file differs from skills.zip; do not overwrite without review"))
+    return issues
+
+
 def run_check(root: Path = ROOT, global_root: Path | None = None) -> list[Issue]:
     root = root.resolve()
     global_root = (global_root or default_codex_skills_root()).resolve()
@@ -125,6 +184,7 @@ def run_check(root: Path = ROOT, global_root: Path | None = None) -> list[Issue]
     issues.extend(check_global_skills(global_root))
     issues.extend(check_readme_count(root))
     issues.extend(check_manifest(root))
+    issues.extend(check_skills_zip_install(root))
     return issues
 
 

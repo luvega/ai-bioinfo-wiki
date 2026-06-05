@@ -1,0 +1,11 @@
+plotDots
+(sce.pbmc, 
+rownames
+(chosen2)[
+1
+:
+10
+], 
+group=
+"label"
+)

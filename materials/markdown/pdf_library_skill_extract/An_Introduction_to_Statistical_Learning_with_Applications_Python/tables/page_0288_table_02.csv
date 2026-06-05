@@ -1,0 +1,8 @@
+"lassoCV_fig, ax = subplots(figsize=(8,8))"
+"ax.errorbar(-np.log(tuned_lasso.alphas_),"
+"tuned_lasso.mse_path_.mean(1),"
+yerr=tuned_lasso.mse_path_.std(1) / np.sqrt(K))
+"ax.axvline(-np.log(tuned_lasso.alpha_), c='k', ls='--')"
+"ax.set_ylim([50000,250000])"
+"ax.set_xlabel('$-\log(\lambda)$', fontsize=20)"
+"ax.set_ylabel('Cross-validated MSE', fontsize=20);"

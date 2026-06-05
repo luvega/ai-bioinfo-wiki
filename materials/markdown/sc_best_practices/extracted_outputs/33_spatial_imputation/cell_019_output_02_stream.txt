@@ -1,0 +1,5 @@
+Score: 0.271, KL reg: 0.346
+Score: 0.911, KL reg: 0.005
+Score: 0.931, KL reg: 0.002
+Score: 0.937, KL reg: 0.002
+Score: 0.941, KL reg: 0.001

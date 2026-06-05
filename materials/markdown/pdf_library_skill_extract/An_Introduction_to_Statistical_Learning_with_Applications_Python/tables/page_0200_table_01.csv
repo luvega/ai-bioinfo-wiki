@@ -1,0 +1,2 @@
+coef_month = S2[S2.index.str.contains('mnth')]['coef']
+coef_month

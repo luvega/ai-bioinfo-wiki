@@ -1,0 +1,40 @@
+           feature_types          gene_id  n_cells  highly_variable     means  \
+AL627309.5           GEX  ENSG00000241860      112            False  0.006533   
+LINC01409            GEX  ENSG00000237491      422            False  0.024462   
+LINC01128            GEX  ENSG00000228794      569            False  0.030714   
+NOC2L                GEX  ENSG00000188976      675            False  0.037059   
+KLHL17               GEX  ENSG00000187961       88            False  0.005295   
+...                  ...              ...      ...              ...       ...   
+MT-ND5               GEX  ENSG00000198786     4056            False  0.269375   
+MT-ND6               GEX  ENSG00000198695     1102            False  0.051506   
+MT-CYB               GEX  ENSG00000198727     5647            False  0.520368   
+AL592183.1           GEX  ENSG00000273748      732            False  0.047486   
+AC240274.1           GEX  ENSG00000271254       43            False  0.001871   
+
+            dispersions  dispersions_norm  highly_variable_nbatches  \
+AL627309.5     0.775289          0.357974                         1   
+LINC01409      0.716935         -0.126119                         0   
+LINC01128      0.709340         -0.296701                         0   
+NOC2L          0.704363         -0.494025                         0   
+KLHL17         0.721757         -0.028456                         0   
+...                 ...               ...                       ...   
+MT-ND5         0.645837         -0.457491                         0   
+MT-ND6         0.697710         -0.248421                         0   
+MT-CYB         0.613233         -0.441362                         0   
+AL592183.1     0.753417          0.413699                         0   
+AC240274.1     0.413772         -0.386635                         0   
+
+            highly_variable_intersection  
+AL627309.5                         False  
+LINC01409                          False  
+LINC01128                          False  
+NOC2L                              False  
+KLHL17                             False  
+...                                  ...  
+MT-ND5                             False  
+MT-ND6                             False  
+MT-CYB                             False  
+AL592183.1                         False  
+AC240274.1                         False  
+
+[13431 rows x 9 columns]

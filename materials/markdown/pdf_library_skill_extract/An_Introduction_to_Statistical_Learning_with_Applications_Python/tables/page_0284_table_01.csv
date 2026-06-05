@@ -1,0 +1,10 @@
+"validation = skm.ShuffleSplit(n_splits=1,"
+"test_size=0.5,"
+random_state=0)
+ridge.alpha = 0.01
+"results = skm.cross_validate(ridge,"
+"X,"
+"Y,"
+"scoring='neg_mean_squared_error',"
+cv=validation)
+-results['test_score']

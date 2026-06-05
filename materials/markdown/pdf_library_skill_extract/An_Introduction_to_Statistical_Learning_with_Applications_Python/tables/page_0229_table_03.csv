@@ -1,0 +1,5 @@
+"alpha_SE = boot_SE(alpha_func,"
+"Portfolio,"
+"B=1000,"
+seed=0)
+alpha_SE

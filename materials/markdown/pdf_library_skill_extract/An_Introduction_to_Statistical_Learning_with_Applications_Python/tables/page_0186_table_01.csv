@@ -1,0 +1,9 @@
+"X_train, X_test = X.loc[train], X.loc[ train]"
+"∼
+y_train, y_test = y.loc[train], y.loc[ train]"
+"∼
+glm_train = sm.GLM(y_train,"
+"X_train,"
+family=sm.families.Binomial())
+results = glm_train.fit()
+probs = results.predict(exog=X_test)

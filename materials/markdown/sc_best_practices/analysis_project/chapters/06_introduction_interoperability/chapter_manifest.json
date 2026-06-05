@@ -1,0 +1,20 @@
+{
+  "order": 6,
+  "part": "Introduction",
+  "toc_file": "introduction/interoperability",
+  "title": "Interoperability",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/introduction/interoperability.ipynb",
+  "environment": "advanced_data_structures_and_frameworks",
+  "week_mapping": [
+    14
+  ],
+  "code_cell_count": 20,
+  "dataset_reference_count": 40,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/06_introduction_interoperability",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/06_introduction_interoperability/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/06_introduction_interoperability/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/06_introduction_interoperability/code_index.md"
+  }
+}

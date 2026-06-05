@@ -1,0 +1,15 @@
+##  class: SpatialExperiment 
+##  dim: 307 7954 
+##  metadata(5): resources spatialList experiment.xenium cell_boundaries
+##    nucleus_boundaries
+##  assays(1): counts
+##  rownames(307): FBLIM1 C1QA ... IL2RG TCEAL7
+##  rowData names(0):
+##  colnames(7954): AACACGTGCATCGCAC-1 AACACTTGGCAAGGAA-1 ...
+##    TGTTGGATGGACTTCT-1 TGTTGGCCAGACCTAC-1
+##  colData names(8): in_tissue sample_id ... subsets_gs_percent total
+##  reducedDimNames(0):
+##  mainExpName: Gene Expression
+##  altExpNames(0):
+##  spatialCoords names(2) : x y
+##  imgData names(4): sample_id image_id data scaleFactor

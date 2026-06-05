@@ -1,0 +1,2 @@
+qda = QDA(store_covariance=True)
+"qda.fit(X_train, L_train)"

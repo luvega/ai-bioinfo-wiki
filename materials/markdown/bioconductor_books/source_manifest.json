@@ -1,0 +1,413 @@
+{
+  "generated_at": "2026-06-04T01:15:32+00:00",
+  "bioconductor_version": "3.23",
+  "package_index_url": "https://bioconductor.org/packages/3.23/books/src/contrib/PACKAGES",
+  "raw_root": "materials/raw/bioconductor_books",
+  "markdown_root": "materials/markdown/bioconductor_books",
+  "packages": {
+    "OSTA": {
+      "package": "OSTA",
+      "version": "1.2.0",
+      "license": "CC BY 4.0",
+      "md5": "89ceba272612bd2568b182050118bc5f",
+      "tarball_url": "https://bioconductor.org/packages/3.23/books/src/contrib/OSTA_1.2.0.tar.gz",
+      "source": "bioconductor-packages"
+    },
+    "OSCA": {
+      "package": "OSCA",
+      "version": "1.22.0",
+      "license": "CC BY 4.0",
+      "md5": "8395f439cac3b696db6d0f9a7aa1b08c",
+      "tarball_url": "https://bioconductor.org/packages/3.23/books/src/contrib/OSCA_1.22.0.tar.gz",
+      "source": "bioconductor-packages"
+    },
+    "OSCA.intro": {
+      "package": "OSCA.intro",
+      "version": "1.20.0",
+      "license": "CC BY 4.0",
+      "md5": "957751a3e5ba6535e6f6d41a735e4529",
+      "tarball_url": "https://bioconductor.org/packages/3.23/books/src/contrib/OSCA.intro_1.20.0.tar.gz",
+      "source": "bioconductor-packages"
+    },
+    "OSCA.basic": {
+      "package": "OSCA.basic",
+      "version": "1.20.0",
+      "license": "CC BY 4.0",
+      "md5": "8759719f0e25767de794a7a56cb8bbf2",
+      "tarball_url": "https://bioconductor.org/packages/3.23/books/src/contrib/OSCA.basic_1.20.0.tar.gz",
+      "source": "bioconductor-packages"
+    },
+    "OSCA.advanced": {
+      "package": "OSCA.advanced",
+      "version": "release-link-missing",
+      "license": "CC BY 4.0",
+      "md5": "",
+      "tarball_url": "https://bioconductor.org/packages/3.23/books/src/contrib/OSCA.advanced_1.20.0.tar.gz",
+      "source": "github-fallback",
+      "note": "Bioconductor release tarball currently unavailable; use OSCA-source/OSCA.advanced."
+    },
+    "OSCA.multisample": {
+      "package": "OSCA.multisample",
+      "version": "1.20.0",
+      "license": "CC BY 4.0",
+      "md5": "3da3d5c4d620ab3d6e41aa4e934dc75e",
+      "tarball_url": "https://bioconductor.org/packages/3.23/books/src/contrib/OSCA.multisample_1.20.0.tar.gz",
+      "source": "bioconductor-packages"
+    },
+    "OSCA.workflows": {
+      "package": "OSCA.workflows",
+      "version": "1.20.0",
+      "license": "CC BY 4.0",
+      "md5": "fe5bba03fe9721dcfe836b4812e43869",
+      "tarball_url": "https://bioconductor.org/packages/3.23/books/src/contrib/OSCA.workflows_1.20.0.tar.gz",
+      "source": "bioconductor-packages"
+    }
+  },
+  "sources": {
+    "OSTA": {
+      "release_url": "https://bioconductor.org/books/release/OSTA/",
+      "package": "OSTA",
+      "license": "CC BY 4.0",
+      "course_use": "Week 16-17 spatial transcriptomics case extension",
+      "release_links": [
+        "https://bioconductor.org/books/release/OSTA/",
+        "https://bioconductor.org/books/release/OSTA/index.html",
+        "https://bioconductor.org/books/release/OSTA/pages/apx-acknowledgments.html",
+        "https://bioconductor.org/books/release/OSTA/pages/apx-citation.html",
+        "https://bioconductor.org/books/release/OSTA/pages/apx-related-resources.html",
+        "https://bioconductor.org/books/release/OSTA/pages/apx-session-info.html",
+        "https://bioconductor.org/books/release/OSTA/pages/bkg-ecosystem.html",
+        "https://bioconductor.org/books/release/OSTA/pages/bkg-example-datasets.html",
+        "https://bioconductor.org/books/release/OSTA/pages/bkg-importing-data.html",
+        "https://bioconductor.org/books/release/OSTA/pages/bkg-infrastructure.html",
+        "https://bioconductor.org/books/release/OSTA/pages/bkg-introduction.html",
+        "https://bioconductor.org/books/release/OSTA/pages/bkg-python-interoperability.html",
+        "https://bioconductor.org/books/release/OSTA/pages/bkg-spatial-omics.html",
+        "https://bioconductor.org/books/release/OSTA/pages/crs-imputation.html",
+        "https://bioconductor.org/books/release/OSTA/pages/crs-spatial-registration.html",
+        "https://bioconductor.org/books/release/OSTA/pages/crs-workflow-xenvis.html",
+        "https://bioconductor.org/books/release/OSTA/pages/img-cell-cell-communication.html",
+        "https://bioconductor.org/books/release/OSTA/pages/img-intermediate-processing.html",
+        "https://bioconductor.org/books/release/OSTA/pages/img-introduction.html",
+        "https://bioconductor.org/books/release/OSTA/pages/img-neighborhood-analysis.html",
+        "https://bioconductor.org/books/release/OSTA/pages/img-quality-control.html",
+        "https://bioconductor.org/books/release/OSTA/pages/img-segmentation.html",
+        "https://bioconductor.org/books/release/OSTA/pages/img-sub-cellular-analysis.html",
+        "https://bioconductor.org/books/release/OSTA/pages/img-workflow-cosmx.html",
+        "https://bioconductor.org/books/release/OSTA/pages/img-workflow-xenium.html",
+        "https://bioconductor.org/books/release/OSTA/pages/ind-clustering.html",
+        "https://bioconductor.org/books/release/OSTA/pages/ind-dimensionality-reduction.html",
+        "https://bioconductor.org/books/release/OSTA/pages/ind-feature-selection-testing.html",
+        "https://bioconductor.org/books/release/OSTA/pages/ind-feature-set-signatures.html",
+        "https://bioconductor.org/books/release/OSTA/pages/ind-image-analysis.html",
+        "https://bioconductor.org/books/release/OSTA/pages/ind-normalization.html",
+        "https://bioconductor.org/books/release/OSTA/pages/ind-spatial-statistics.html",
+        "https://bioconductor.org/books/release/OSTA/pages/mult-diff-colocalization.html",
+        "https://bioconductor.org/books/release/OSTA/pages/mult-diff-spatial-patterns.html",
+        "https://bioconductor.org/books/release/OSTA/pages/mult-structure-based.html",
+        "https://bioconductor.org/books/release/OSTA/pages/seq-deconvolution.html",
+        "https://bioconductor.org/books/release/OSTA/pages/seq-intermediate-processing.html",
+        "https://bioconductor.org/books/release/OSTA/pages/seq-introduction.html",
+        "https://bioconductor.org/books/release/OSTA/pages/seq-quality-control.html",
+        "https://bioconductor.org/books/release/OSTA/pages/seq-reads-to-counts.html",
+        "https://bioconductor.org/books/release/OSTA/pages/seq-workflow-dlpfc.html",
+        "https://bioconductor.org/books/release/OSTA/pages/seq-workflow-visium-crc.html",
+        "https://bioconductor.org/books/release/OSTA/pages/seq-workflow-visium-hd-bin.html",
+        "https://bioconductor.org/books/release/OSTA/pages/seq-workflow-visium-hd-seg.html"
+      ]
+    },
+    "OSCA": {
+      "release_url": "https://bioconductor.org/books/release/OSCA/",
+      "package": "OSCA",
+      "license": "CC BY 4.0",
+      "course_use": "Week 14-17 single-cell workflow case extension",
+      "release_links": [
+        "https://bioconductor.org/books/3.23/OSCA.advanced/",
+        "https://bioconductor.org/books/3.23/OSCA.basic/",
+        "https://bioconductor.org/books/3.23/OSCA.intro/",
+        "https://bioconductor.org/books/3.23/OSCA.multisample/",
+        "https://bioconductor.org/books/3.23/OSCA.workflows/",
+        "https://bioconductor.org/books/release/OSCA/",
+        "https://bioconductor.org/books/release/OSCA/book-contents.html",
+        "https://bioconductor.org/books/release/OSCA/contributors.html",
+        "https://bioconductor.org/books/release/OSCA/index.html"
+      ],
+      "advanced_fallback": "https://github.com/OSCA-source/OSCA.advanced"
+    }
+  },
+  "github_repositories": [
+    {
+      "name": "OSCA",
+      "url": "https://github.com/OSCA-source/OSCA",
+      "api_url": "https://api.github.com/repos/OSCA-source/OSCA",
+      "available": true,
+      "default_branch": "master",
+      "branches": [
+        {
+          "name": "RELEASE_3_12",
+          "sha": "bb87e03b0f8f53c4650bcf9c591a6ed03470dd6b"
+        },
+        {
+          "name": "RELEASE_3_13",
+          "sha": "f60a55ee12a88b2d4ca68f787095414242d73e93"
+        },
+        {
+          "name": "RELEASE_3_14",
+          "sha": "ea5a034da22c718135b2dccc278204c8ff8e71a7"
+        },
+        {
+          "name": "RELEASE_3_15",
+          "sha": "8563e4cf421228fe03c38143c64a7d1aaae88768"
+        },
+        {
+          "name": "RELEASE_3_17",
+          "sha": "e36690382f646b3f6762d41ebf3e15dbddf5f31d"
+        },
+        {
+          "name": "RELEASE_3_20",
+          "sha": "46726893e0e3278decf0693b75557f3e7aed8dea"
+        },
+        {
+          "name": "RELEASE_3_23",
+          "sha": "b1d002f82d1d17286a889c08b31f36c19bd83c15"
+        },
+        {
+          "name": "devel",
+          "sha": "73bbe7a3f5e47eeb4b7835dee2bac642e1895976"
+        },
+        {
+          "name": "master",
+          "sha": "fe7b362a3215622e06e987aa021d7eec2d0a1fba"
+        }
+      ],
+      "note": null
+    },
+    {
+      "name": "OSCA.intro",
+      "url": "https://github.com/OSCA-source/OSCA.intro",
+      "api_url": "https://api.github.com/repos/OSCA-source/OSCA.intro",
+      "available": true,
+      "default_branch": "devel",
+      "branches": [
+        {
+          "name": "RELEASE_3_13",
+          "sha": "e3f1676499c27d35110a76ff1298515cac3dc4c2"
+        },
+        {
+          "name": "RELEASE_3_14",
+          "sha": "2198c9db2fac75ac97cc541e890ddfec2f378e53"
+        },
+        {
+          "name": "RELEASE_3_15",
+          "sha": "7ea12185fa34a71110192f68c6aae400ebbdf196"
+        },
+        {
+          "name": "RELEASE_3_17",
+          "sha": "ce068c8fe7d71abc83b33c3600ddeefe79384496"
+        },
+        {
+          "name": "RELEASE_3_19",
+          "sha": "9e41ed50128cb4fa072060338946aa123a332b4d"
+        },
+        {
+          "name": "RELEASE_3_20",
+          "sha": "df803df85ec477d9085a64748e3886d6e1f3b978"
+        },
+        {
+          "name": "RELEASE_3_21",
+          "sha": "7daaa31425917b6846ce57a184db6c330bbf84e9"
+        },
+        {
+          "name": "devel",
+          "sha": "dbdcd4816662eabcc7dc55c4909bb24f52ae568e"
+        }
+      ],
+      "note": null
+    },
+    {
+      "name": "OSCA.basic",
+      "url": "https://github.com/OSCA-source/OSCA.basic",
+      "api_url": "https://api.github.com/repos/OSCA-source/OSCA.basic",
+      "available": true,
+      "default_branch": "devel",
+      "branches": [
+        {
+          "name": "RELEASE_3_13",
+          "sha": "49f02a9900aafbec2c6bf4a44a9245e60015d976"
+        },
+        {
+          "name": "RELEASE_3_14",
+          "sha": "65bfda47cbee7fb27320b827d5d9e79c7c855bf5"
+        },
+        {
+          "name": "RELEASE_3_15",
+          "sha": "30b49c539b9a334c2e4b6e5d94da127cd29ba976"
+        },
+        {
+          "name": "RELEASE_3_16",
+          "sha": "7f72c9d1b5fcc5ad36135c844b6cc53888cc0e65"
+        },
+        {
+          "name": "RELEASE_3_17",
+          "sha": "04bb9b9df2e14b16d0232e35ffb9d429c8fe9ad4"
+        },
+        {
+          "name": "RELEASE_3_19",
+          "sha": "e4780a0fe92975b37dee3ab79d472ebf1b59b87c"
+        },
+        {
+          "name": "RELEASE_3_20",
+          "sha": "30604124a01aafcf0a0bbc2fa74e8b7d36fed03b"
+        },
+        {
+          "name": "RELEASE_3_21",
+          "sha": "e82ba056962c949f361798fb11dba6a884cd32d4"
+        },
+        {
+          "name": "devel",
+          "sha": "b18d43b1ffdfefa6790d37c666ff5d542e5f2906"
+        },
+        {
+          "name": "rm-aucell",
+          "sha": "3b6e63711f45d7f028216ab3d3fd32e4d6b398bc"
+        },
+        {
+          "name": "update-clustering-results",
+          "sha": "77ff7b510cffb7b6fe273d519f937908ed1664cd"
+        }
+      ],
+      "note": null
+    },
+    {
+      "name": "OSCA.advanced",
+      "url": "https://github.com/OSCA-source/OSCA.advanced",
+      "api_url": "https://api.github.com/repos/OSCA-source/OSCA.advanced",
+      "available": true,
+      "default_branch": "devel",
+      "branches": [
+        {
+          "name": "RELEASE_3_13",
+          "sha": "1b2a4ddba945ccd10e2e2a04c0c5ddf925eb90e5"
+        },
+        {
+          "name": "RELEASE_3_14",
+          "sha": "fcb6078bfc42beed46c203ca80736a4c9ae1af77"
+        },
+        {
+          "name": "RELEASE_3_15",
+          "sha": "f279607ea0e333871044f4252862cc382975aa7f"
+        },
+        {
+          "name": "RELEASE_3_16",
+          "sha": "ec308a763f0d54c413a82b1b4a4a3669ba4152e6"
+        },
+        {
+          "name": "RELEASE_3_17",
+          "sha": "784d1a3c5702388a332b41f2ef6b8251d283f5e2"
+        },
+        {
+          "name": "RELEASE_3_18",
+          "sha": "64f389cb775699991988e4731f1e545cb74edc35"
+        },
+        {
+          "name": "RELEASE_3_19",
+          "sha": "57a6085832517b142902003f9e3e04cc0488e654"
+        },
+        {
+          "name": "RELEASE_3_20",
+          "sha": "16871ae4f77af9b5da3376c2edde3ae95b9284b5"
+        },
+        {
+          "name": "RELEASE_3_21",
+          "sha": "00073f0d7009d92d06df75c354875f29282bb092"
+        },
+        {
+          "name": "RELEASE_3_22",
+          "sha": "2d5c19498668d0d04cc539a330b60b1332028000"
+        },
+        {
+          "name": "devel",
+          "sha": "06225560116192a4679c557c05887593050cc705"
+        }
+      ],
+      "note": null,
+      "use_as_release_fallback": true
+    },
+    {
+      "name": "OSCA.multisample",
+      "url": "https://github.com/OSCA-source/OSCA.multisample",
+      "api_url": "https://api.github.com/repos/OSCA-source/OSCA.multisample",
+      "available": true,
+      "default_branch": "devel",
+      "branches": [
+        {
+          "name": "RELEASE_3_13",
+          "sha": "53b33b3b97fa91465d58bb3ef9c826685345bac3"
+        },
+        {
+          "name": "RELEASE_3_14",
+          "sha": "e8ceb315d255d1338dd5b715f1718cee4049d30e"
+        },
+        {
+          "name": "RELEASE_3_15",
+          "sha": "b8b58fd8a4cad36e4f5a33139385571a4ebaea1b"
+        },
+        {
+          "name": "RELEASE_3_18",
+          "sha": "44254117ee0c8e26a6a1368ece9e96c88af5b48a"
+        },
+        {
+          "name": "RELEASE_3_20",
+          "sha": "40d2c5c24ebc4ebf7efc8b6c7ce67e010ebed467"
+        },
+        {
+          "name": "RELEASE_3_21",
+          "sha": "5b52eedbe290426d0d275f75a23050f11009f2fe"
+        },
+        {
+          "name": "actions",
+          "sha": "d054bd4ffabefa4f85d35096900801506cc926ba"
+        },
+        {
+          "name": "devel",
+          "sha": "8176fcae738cfc386fc7f427d921f8cd13eff584"
+        },
+        {
+          "name": "fix-bioc3.19",
+          "sha": "fae6bfd8ef3b1dab1bc776b8de1e6005671dfa9a"
+        },
+        {
+          "name": "issue-12",
+          "sha": "56f0ac3d5598b211e70e8dc00e6ddb03d64527c8"
+        },
+        {
+          "name": "legacy-edgeR",
+          "sha": "6aaeb7378a9be1ae0938111f4e44afdff4a54b0f"
+        }
+      ],
+      "note": null
+    },
+    {
+      "name": "OSCA.workflows",
+      "url": "https://github.com/OSCA-source/OSCA.workflows",
+      "api_url": "https://api.github.com/repos/OSCA-source/OSCA.workflows",
+      "available": true,
+      "default_branch": "devel",
+      "branches": [],
+      "note": "GitHub metadata fetch failed: HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "name": "OSCA.trajectory",
+      "url": "https://github.com/OSCA-source/OSCA.trajectory",
+      "api_url": "https://api.github.com/repos/OSCA-source/OSCA.trajectory",
+      "available": false,
+      "default_branch": null,
+      "branches": [],
+      "note": "GitHub metadata fetch failed: HTTP Error 403: rate limit exceeded"
+    }
+  ],
+  "notes": [
+    "Large archives, extracted sources, full image mirrors, and GitHub clone caches stay under materials/raw and are ignored by git.",
+    "Generated Markdown, code snippet JSONL, image manifest CSV, and workflow catalog are intended for searchable course preparation."
+  ]
+}

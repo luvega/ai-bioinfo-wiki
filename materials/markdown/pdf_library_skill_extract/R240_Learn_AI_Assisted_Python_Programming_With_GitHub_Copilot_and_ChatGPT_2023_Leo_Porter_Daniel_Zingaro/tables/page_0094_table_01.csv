@@ -1,0 +1,8 @@
+The = symbol is different in Python than in math
+""
+"The = sign is used in Python and other programming languages to denote assignment.
+The variable on the left side of the equal symbol is given the value of the calculation per-
+formed on the right side of the equal symbol. This is not a permanent relationship as the
+variable can have its value changed. People new to programming who are strong in math
+can find this confusing, but just remember that the = sign in Python means assignment,
+not equality."

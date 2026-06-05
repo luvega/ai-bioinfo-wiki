@@ -1,0 +1,6 @@
+        time_yr subject_id instrument_type    site
+Cell_2        4  subject 1          type a  site y
+Cell_3        2  subject 2          type a  site y
+Cell_5        4  subject 4          type b  site x
+Cell_6        2  subject 1          type b  site y
+Cell_7        4  subject 4          type a  site x

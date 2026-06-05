@@ -1,0 +1,6 @@
+"y_train,"
+"best_svm,"
+ax=ax)
+""
+y_hat_test = best_svm.predict(X_test)
+"confusion_table(y_hat_test, y_test)"

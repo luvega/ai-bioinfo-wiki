@@ -1,0 +1,3 @@
+modal_X = all_MS.transform(modal_df)
+modal_X.index = levels
+modal_X

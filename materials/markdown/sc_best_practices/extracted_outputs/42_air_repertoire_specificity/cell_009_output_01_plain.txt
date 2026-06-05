@@ -1,0 +1,41 @@
+        multi_chain      species     mhc.a mhc.b mhc.class antigen.epitope  \
+cell_id                                                                      
+0             False  HomoSapiens  HLA-B*08   B2M      MHCI        FLKEKGGL   
+1             False  HomoSapiens  HLA-B*08   B2M      MHCI        FLKEKGGL   
+2             False  HomoSapiens  HLA-B*08   B2M      MHCI        FLKEKGGL   
+3             False  HomoSapiens  HLA-B*08   B2M      MHCI        FLKEKGGL   
+4             False  HomoSapiens  HLA-B*08   B2M      MHCI        FLKEKGGL   
+
+        antigen.gene antigen.species   reference.id method.identification  \
+cell_id                                                                     
+0                Nef           HIV-1  PMID:15596521         tetramer-sort   
+1                Nef           HIV-1  PMID:15596521         tetramer-sort   
+2                Nef           HIV-1  PMID:15596521         tetramer-sort   
+3                Nef           HIV-1  PMID:15596521         tetramer-sort   
+4                Nef           HIV-1  PMID:15596521         tetramer-sort   
+
+         ... IR_VDJ_2_sequence_id   IR_VJ_1_v_call IR_VJ_2_v_call  \
+cell_id  ...                                                        
+0        ...                  NaN      TRAV26-1*01            NaN   
+1        ...                  NaN              NaN            NaN   
+2        ...                  NaN        TRAV20*01            NaN   
+3        ...                  NaN         TRAV2*01            NaN   
+4        ...                  NaN  TRAV38-2/DV8*01            NaN   
+
+        IR_VDJ_1_v_call IR_VDJ_2_v_call IR_VJ_1_v_cigar IR_VJ_2_v_cigar  \
+cell_id                                                                   
+0             TRBV13*01             NaN             NaN             NaN   
+1             TRBV13*01             NaN             NaN             NaN   
+2             TRBV13*01             NaN             NaN             NaN   
+3             TRBV13*01             NaN             NaN             NaN   
+4             TRBV14*01             NaN             NaN             NaN   
+
+        IR_VDJ_1_v_cigar IR_VDJ_2_v_cigar has_ir  
+cell_id                                           
+0                    NaN              NaN   True  
+1                    NaN              NaN   True  
+2                    NaN              NaN   True  
+3                    NaN              NaN   True  
+4                    NaN              NaN   True  
+
+[5 rows x 92 columns]

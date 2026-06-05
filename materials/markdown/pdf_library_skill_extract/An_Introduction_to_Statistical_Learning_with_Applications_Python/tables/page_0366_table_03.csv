@@ -1,0 +1,10 @@
+"ccp_path = reg.cost_complexity_pruning_path(X_train, y_train)"
+"kfold = skm.KFold(5,"
+"shuffle=True,"
+random_state=10)
+"grid = skm.GridSearchCV(reg,"
+"{'ccp_alpha': ccp_path.ccp_alphas},"
+"refit=True,"
+"cv=kfold,"
+scoring='neg_mean_squared_error')
+"G = grid.fit(X_train, y_train)"

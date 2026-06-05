@@ -1,0 +1,2 @@
+"test_results = imdb_trainer.test(imdb_module, datamodule=imdb_dm)"
+test_results

@@ -1,0 +1,5 @@
+coef std err t P>|t|
+intercept 94.158 1.478 63.687 0.0
+"bs(age, df=3, degree=0)[0] 22.349 2.152 10.388 0.0"
+"bs(age, df=3, degree=0)[1] 24.808 2.044 12.137 0.0"
+"bs(age, df=3, degree=0)[2] 22.781 2.087 10.917 0.0"

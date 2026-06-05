@@ -1,0 +1,6 @@
+"imdb_seq_dm = SimpleDataModule(imdb_seq_train,"
+"imdb_seq_test,"
+"validation=2000,"
+"batch_size=300,"
+"num_workers=min(6, max_num_workers)"
+)

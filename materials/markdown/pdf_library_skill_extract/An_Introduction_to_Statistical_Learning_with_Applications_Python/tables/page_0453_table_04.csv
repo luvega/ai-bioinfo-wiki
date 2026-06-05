@@ -1,0 +1,6 @@
+"mnist_trainer = Trainer(deterministic=True,"
+"max_epochs=30,"
+"logger=mnist_logger,"
+callbacks=[ErrorTracker()])
+"mnist_trainer.fit(mnist_module,"
+datamodule=mnist_dm)

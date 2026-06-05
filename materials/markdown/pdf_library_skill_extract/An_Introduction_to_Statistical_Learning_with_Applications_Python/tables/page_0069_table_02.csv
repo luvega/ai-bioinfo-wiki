@@ -1,0 +1,5 @@
+Auto_re.loc[lambda df: (df['displacement'] < 300)
+& (df.index.str.contains('ford')
+"| df.index.str.contains('datsun')),"
+"['weight', 'origin']"
+]

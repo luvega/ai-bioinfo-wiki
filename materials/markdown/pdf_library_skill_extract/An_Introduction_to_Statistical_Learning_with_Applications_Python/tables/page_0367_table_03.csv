@@ -1,0 +1,5 @@
+"bag_boston = RF(max_features=X_train.shape[1],"
+"n_estimators=500,"
+"random_state=0).fit(X_train, y_train)"
+y_hat_bag = bag_boston.predict(X_test)
+np.mean((y_test - y_hat_bag)**2)

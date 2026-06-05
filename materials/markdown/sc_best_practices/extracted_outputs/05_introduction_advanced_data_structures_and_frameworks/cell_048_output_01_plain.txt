@@ -1,0 +1,5 @@
+MuData object with n_obs × n_vars = 1000 × 150 backed at 'my_mudata.h5mu'
+  2 modalities
+    A:	1000 x 100
+      uns:	'misc'
+    B:	1000 x 50

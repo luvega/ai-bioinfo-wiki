@@ -1,0 +1,6 @@
+,The following code demonstrates how you can use the API to conduct sentiment,
+analysis on the reviews by leveraging the intrinsic language capabilities of ChatGPT 4.,,
+"To make it operational, you’ll need to replace your-api-key with your actual",,
+"ChatGPT API key and ensure that your account has sufficient funds. Fortunately, you",,
+can also find the results of this analysis in the books,,in the
+Sentiment_Analysis_500reviews.csv file.,,

@@ -1,0 +1,2 @@
+SARS-CoV-2    44
+Name: Binding_Hamming, dtype: int64

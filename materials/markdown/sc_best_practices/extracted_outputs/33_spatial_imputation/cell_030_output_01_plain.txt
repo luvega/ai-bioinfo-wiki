@@ -1,0 +1,4 @@
+AnnData object with n_obs × n_vars = 40864 × 17966
+    obs: 'CellID', 'FOV', 'CellTypeID_new', 'cell_type', 'uniform_density', 'rna_count_based_density'
+    var: 'chozen_isoform', 'code', 'n_cells', 'sparsity', 'is_training'
+    uns: 'neighbors', 'leiden', 'umap', 'leiden_colors', 'training_genes', 'overlap_genes'

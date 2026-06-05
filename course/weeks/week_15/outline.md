@@ -93,3 +93,9 @@ AI 可以整理筛选规则和图注草稿；不能编造基因功能、通路�
 
 ### 待核验
 size factor、dispersion、negative binomial model 等术语进入 PPT 前需要核对。
+## 本轮素材升级说明（2026-06-04）
+
+- 教学定位：Week 15 的正式主线是 bulk 差异表达分析与功能解读，不再沿用 AIDD 索引里偏 Linux/NGS/variant 的历史映射。
+- 新增支撑：AIDD DESeq2/GEO2R/ggplot2 是课堂入口；SCBP、OSCA、OSTA 用于比较 single-cell、multi-sample、spatial 场景下“差异”的不同含义。
+- 药学场景：用药物处理组与对照组表达矩阵解释 `log2FoldChange`、`pvalue`、`padj`、火山图和功能解释核验。
+- PPT storyboard 入口：后续修改 Week 15 PPT 必须先改 `ppt_storyboard.md`，再做 evidence review 和 PNG/contact sheet QA。

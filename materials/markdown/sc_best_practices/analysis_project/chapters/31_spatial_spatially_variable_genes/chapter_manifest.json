@@ -1,0 +1,20 @@
+{
+  "order": 31,
+  "part": "Spatial omics",
+  "toc_file": "spatial/spatially_variable_genes",
+  "title": "Spatially variable genes",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/spatial/spatially_variable_genes.ipynb",
+  "environment": "spatial",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 14,
+  "dataset_reference_count": 1,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/31_spatial_spatially_variable_genes",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/31_spatial_spatially_variable_genes/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/31_spatial_spatially_variable_genes/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/31_spatial_spatially_variable_genes/code_index.md"
+  }
+}

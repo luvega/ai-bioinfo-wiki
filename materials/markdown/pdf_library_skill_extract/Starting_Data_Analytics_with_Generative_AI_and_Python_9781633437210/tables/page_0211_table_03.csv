@@ -1,0 +1,11 @@
+,"For those with a mathematical inclination, calculating the Matthews correlation"
+coefficient (MCC) can be particularly enlightening. The MCC is a measure often used,
+"in ML to provide a balanced evaluation of binary classifications, even when the classes",
+"are of very different sizes. It returns a value between –1 and +1, where +1 represents a",
+"perfect prediction, 0 indicates no better than random prediction, and –1 denotes",
+total disagreement between prediction and observation. This coefficient is considered,
+one of the best metrics for evaluating the quality of binary classifications because it,
+"takes into account true and false positives and negatives, providing a comprehensive",
+"overview of the model’s performance. Additionally, it condenses this information into",
+"a single number, making it particularly useful for comparing the performance of mul-",
+tiple models.,

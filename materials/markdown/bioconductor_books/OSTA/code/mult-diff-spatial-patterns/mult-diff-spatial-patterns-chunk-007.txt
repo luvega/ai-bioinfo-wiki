@@ -1,0 +1,7 @@
+##   [1] "gene_id"                          "logFC.condition20DPI.cluster_id1"
+##   [3] "logFC.condition2DPI.cluster_id1"  "logFC.condition20DPI.cluster_id2"
+##   [5] "logFC.condition2DPI.cluster_id2"  "logFC.condition20DPI.cluster_id3"
+##   [7] "logFC.condition2DPI.cluster_id3"  "logFC.condition20DPI.cluster_id4"
+##   [9] "logFC.condition2DPI.cluster_id4"  "logCPM"                          
+##  [11] "F"                                "PValue"                          
+##  [13] "FDR"

@@ -1,0 +1,7 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/lustre/groups/ml01/workspace/anastasia.litinetskaya/miniconda3/envs/paired_integration_chapter/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:267: LightningDeprecationWarning: The `Callback.on_epoch_end` hook was deprecated in v1.6 and will be removed in v1.8. Please use `Callback.on_<train/validation/test>_epoch_end` instead.
+  rank_zero_deprecation(
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]

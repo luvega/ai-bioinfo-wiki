@@ -1,0 +1,21 @@
+{
+  "order": 5,
+  "part": "Introduction",
+  "toc_file": "introduction/advanced_data_structures_and_frameworks",
+  "title": "Multimodal and spatial data structures",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/introduction/advanced_data_structures_and_frameworks.ipynb",
+  "environment": "advanced_data_structures_and_frameworks",
+  "week_mapping": [
+    14,
+    16
+  ],
+  "code_cell_count": 59,
+  "dataset_reference_count": 15,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/05_introduction_advanced_data_structures_and_frameworks",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/05_introduction_advanced_data_structures_and_frameworks/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/05_introduction_advanced_data_structures_and_frameworks/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/05_introduction_advanced_data_structures_and_frameworks/code_index.md"
+  }
+}

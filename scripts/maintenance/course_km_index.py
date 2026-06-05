@@ -11,6 +11,7 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 COURSE_WEEKS = ROOT / "course" / "weeks"
+TEXTBOOK = ROOT / "course" / "textbook"
 MATERIALS_MARKDOWN = ROOT / "materials" / "markdown"
 KNOWLEDGE = ROOT / "knowledge"
 
@@ -195,9 +196,47 @@ def build_knowledge_indexes(root: Path = ROOT) -> dict[Path, str]:
     return indexes
 
 
+def build_textbook_assets_index(root: Path = ROOT) -> str:
+    assets_root = root / "course" / "textbook" / "assets"
+    lines = [
+        "# Textbook Assets Index",
+        "",
+        GENERATED_NOTICE,
+        "",
+        "| Path | Type | Summary |",
+        "|:---|:---|:---|",
+    ]
+    if not assets_root.exists():
+        return "\n".join(lines) + "\n"
+    files = sorted(
+        [path for path in assets_root.rglob("*") if path.is_file() and path.name != "_index.md"],
+        key=lambda p: p.relative_to(assets_root).as_posix().lower(),
+    )
+    for file_path in files:
+        relative = file_path.relative_to(assets_root).as_posix()
+        suffix = file_path.suffix.lower().lstrip(".") or "file"
+        summary = "教材可入库源码资产"
+        if "/datasets/" in f"/{relative}":
+            summary = "教学小数据"
+        elif "/code/" in f"/{relative}":
+            summary = "课堂核验代码"
+        elif "/diagrams/" in f"/{relative}":
+            summary = "Mermaid 示意图源码"
+        elif "/knowledge_graph/" in f"/{relative}":
+            summary = "课程知识图谱源码"
+        lines.append(f"| [{relative}]({relative}) | {suffix} | {summary} |")
+    return "\n".join(lines) + "\n"
+
+
 def expected_indexes(root: Path = ROOT) -> dict[Path, str]:
     indexes = {
         root / "course" / "weeks" / "_index.md": build_weeks_index(root),
+        root / "course" / "textbook" / "_index.md": build_markdown_tree_index(
+            root / "course" / "textbook",
+            "Course Textbook Index",
+            ["course", "textbook"],
+        ),
+        root / "course" / "textbook" / "assets" / "_index.md": build_textbook_assets_index(root),
         root / "materials" / "markdown" / "_index.md": build_markdown_tree_index(
             root / "materials" / "markdown",
             "Materials Markdown Index",

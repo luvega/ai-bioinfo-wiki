@@ -1,0 +1,23 @@
+                  nCount_RNA  nFeature_RNA      tsne1      tsne2 label  \
+index                                                                    
+AAACATACATTTCC-1      3017.0           877 -27.640373  14.966629  ctrl   
+AAACATACCAGAAA-1      2481.0           713 -27.493646  28.924885  ctrl   
+AAACATACCATGCA-1       703.0           337 -10.468194  -5.984389  ctrl   
+AAACATACCTCGCT-1      3420.0           850 -24.367997  20.429285  ctrl   
+AAACATACCTGGTA-1      3158.0          1111  27.952170  24.159738  ctrl   
+
+                  cluster        cell_type     replicate  nCount_SCT  \
+index                                                                  
+AAACATACATTTCC-1        9  CD14+ Monocytes  patient_1016      1704.0   
+AAACATACCAGAAA-1        9  CD14+ Monocytes  patient_1256      1614.0   
+AAACATACCATGCA-1        3      CD4 T cells  patient_1488       908.0   
+AAACATACCTCGCT-1        9  CD14+ Monocytes  patient_1256      1738.0   
+AAACATACCTGGTA-1        4  Dendritic cells  patient_1039      1857.0   
+
+                  nFeature_SCT integrated_snn_res.0.4 seurat_clusters  
+index                                                                  
+AAACATACATTTCC-1           711                      1               1  
+AAACATACCAGAAA-1           662                      1               1  
+AAACATACCATGCA-1           337                      6               6  
+AAACATACCTCGCT-1           653                      1               1  
+AAACATACCTGGTA-1           928                     12              12  

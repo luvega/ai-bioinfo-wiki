@@ -184,3 +184,10 @@ AI 可以帮助整理 scRNA-seq 可视化流程和四栏解读表，但不能直
 ## 教师补充讲述：单细胞转录组可视化 的课堂落地
 
 教师还可以再补充一段综合讲述：本周内容之所以重要，是因为它把抽象的医药数据问题变成了学生可以操作、可以检查、可以解释的课堂活动。围绕“用四栏表解读单细胞图形：图上观察、可能解释、不确定性、待核验点”，教师要不断提醒学生，任何结果都不是孤立出现的，它依赖数据来源、字段含义、处理规则、图表表达和人工核验。AI 可以让初稿更快出现，但越快出现的内容越需要检查。学生如果能在本周说清输入、规则、输出和证据边界，就已经具备进入下一周学习的基础。
+## 本轮素材升级说明（2026-06-04）
+
+Week 16 的素材权重已经改变：AIDD scRNA-seq 只作为学生入口，SCBP、OSCA 和 OSTA 承担现代组学内容的权威支撑。SCBP 提供 QC、normalization、feature selection、annotation、integration、trajectory 和 spatial omics 的完整图形与流程；OSCA 提供 Bioconductor 视角的 QC、clustering、annotation 和 multi-sample integration；OSTA 提供 spatial domains、spatially variable genes 和 deconvolution 的空间组学视角。
+
+课堂不要求学生运行这些 workflow。教师应把复杂流程压缩成四栏读图表：图上看到什么、可能解释什么、哪里不确定、需要核验什么。对于 UMAP，要提醒它是可视化嵌入，不是严格生物距离；对于 cluster，要提醒它是算法分组，不自动等于细胞类型；对于 marker，要提醒单个 marker 不足以完成注释。
+
+进入 PPT 前需核验：任何公开展示图都要确认来源和授权；细胞类型、空间区域或通路机制解释必须保留证据状态；AI 只能帮助生成读图框架，不替代人工注释和文献/数据库核验。

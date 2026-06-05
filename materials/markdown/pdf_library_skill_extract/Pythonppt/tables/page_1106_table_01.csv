@@ -1,0 +1,4 @@
+函数,描述
+os.urandom(n),"获得n个字节长度的随机字符串，通常用于加解密运算
+>>>os.urandom(10)
+b'7\xbe\xf2!\xc1=\x01gL\xb3'"

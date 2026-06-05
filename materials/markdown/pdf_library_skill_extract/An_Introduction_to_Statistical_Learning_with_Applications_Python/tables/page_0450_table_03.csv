@@ -1,0 +1,3 @@
+hit_model.eval()
+preds = hit_module(X_test_t)
+torch.abs(Y_test_t - preds).mean()

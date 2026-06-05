@@ -1,0 +1,12 @@
+class: SingleCellExperiment 
+dim: 2000 100 
+metadata(0):
+assays(2): counts logcounts
+rownames(2000): Gene-0 Gene-1 ... Gene-1998 Gene-1999
+rowData names(0):
+colnames(100): Cell_0 Cell_1 ... Cell_98 Cell_99
+colData names(9): n_genes_by_counts log1p_n_genes_by_counts ...
+  pct_counts_in_top_500_genes ident
+reducedDimNames(2): PCA UMAP
+mainExpName: RNA
+altExpNames(0):

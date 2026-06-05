@@ -1,0 +1,5 @@
+rng = np.random.default_rng(0)
+"alpha_func(Portfolio,"
+"rng.choice(100,"
+"100,"
+replace=True))

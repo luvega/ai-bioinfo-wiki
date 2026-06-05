@@ -1,0 +1,11 @@
+Wordle
+""
+"If you’ve played Wordle before, you might notice some similarities between Wordle and
+our game here. Wordle uses letters, and ours uses digits, but the type of feedback you
+receive for your guesses is similar. In both cases, you’re told about letters or digits that
+are in the right or wrong place. In Wordle, you’re given a clue about each of your letters on
+its own. For example, if the first letter of your guess is “h,” you might be told that the “h” is
+in the word but in the wrong place. By contrast, in our game, you aren’t given hints about
+each digit individually but instead are given hints about your guess in aggregate. Still, we
+hope you’re struck by these similarities and by the fact that you’re building something
+that resembles a recent, world-wide phenomenon of a game!"

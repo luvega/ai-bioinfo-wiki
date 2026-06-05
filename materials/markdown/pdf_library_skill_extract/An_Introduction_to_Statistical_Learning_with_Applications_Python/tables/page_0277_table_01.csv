@@ -1,0 +1,4 @@
+design = MS(Hitters.columns.drop('Salary')).fit(Hitters)
+Y = np.array(Hitters['Salary'])
+X = design.transform(Hitters)
+"sigma2 = OLS(Y,X).fit().scale"

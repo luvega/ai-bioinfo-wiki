@@ -1,0 +1,18 @@
+{
+  "order": 47,
+  "part": "Acknowledgements",
+  "toc_file": "acknowledgements",
+  "title": "Acknowledgements",
+  "source_type": "md",
+  "upstream_path": "jupyter-book/acknowledgements.md",
+  "environment": "_config",
+  "week_mapping": [],
+  "code_cell_count": 0,
+  "dataset_reference_count": 0,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/47_acknowledgements",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/47_acknowledgements/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/47_acknowledgements/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/47_acknowledgements/code_index.md"
+  }
+}

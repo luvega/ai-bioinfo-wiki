@@ -1,0 +1,7 @@
+方法及使用 1/3,描述
+str.lower() 或 str.upper(),"返回字符串的副本，全部字符小写/大写
+""AbCdEfGh"".lower() 结果为 ""abcdefgh"""
+str.split(sep=None),"返回一个列表，由str根据sep被分隔的部分组成
+""A,B,C"".split("","") 结果为 ['A','B','C']"
+str.count(sub),"返回子串sub在str中出现的次数
+""a apple a day"".count(""a"") 结果为 4"

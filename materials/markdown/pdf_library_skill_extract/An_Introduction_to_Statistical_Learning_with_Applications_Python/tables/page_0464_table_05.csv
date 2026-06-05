@@ -1,0 +1,2 @@
+coefs = np.squeeze(coefs)
+intercepts = np.squeeze(intercepts)

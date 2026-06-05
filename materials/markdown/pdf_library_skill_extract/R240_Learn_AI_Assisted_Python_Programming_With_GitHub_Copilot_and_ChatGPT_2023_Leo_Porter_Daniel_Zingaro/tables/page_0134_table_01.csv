@@ -1,0 +1,9 @@
+Test cases are not automatically run by Copilot
+""
+"A common question we hear is, Why doesn’t Copilot directly incorporate the test cases
+when generating code. For example, if we add test cases, it would be nice if Copilot could
+try to generate functions and only provide us with the code that would pass those test
+cases. Unfortunately, there are some technical challenges in doing this, and as of the
+time of writing this book, this feature is not yet included. So, if you add test cases, it just
+improves the prompt to Copilot but does not guarantee that the Copilot code suggestion
+passes those tests."

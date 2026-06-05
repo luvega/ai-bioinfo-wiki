@@ -1,0 +1,7 @@
+参数,描述
+min_font_size,"指定词云中字体的最小字号，默认4号
+>>>w=wordcloud.WordCloud(min_font_size=10)"
+max_font_size,"指定词云中字体的最大字号，根据高度自动调节
+>>>w=wordcloud.WordCloud(min_font_size=20)"
+font_step,"指定词云中字体字号的步进间隔，默认为1
+>>>w=wordcloud.WordCloud(font_step=2)"

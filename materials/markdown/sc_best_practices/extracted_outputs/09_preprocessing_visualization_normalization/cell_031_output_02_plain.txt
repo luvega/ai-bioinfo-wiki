@@ -1,0 +1,1 @@
+Artifact(uid='p24SHFvXmfAdGrmj0001', is_latest=True, key='preprocessing_visualization/s4d8_normalization.h5ad', description='anndata after three different normalization methods', suffix='.h5ad', otype='AnnData', size=4513935737, hash='RcwGlB0RnlhvsbrB7fBM46', n_observations=14814, space_id=1, storage_id=1, run_id=8, created_by_id=5, created_at=2025-04-25 15:23:43 UTC)

@@ -1,0 +1,9 @@
+computing velocities
+    finished (0:00:04) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing velocity graph (using 8/8 cores)
+    finished (0:00:05) --> added 
+    'velocity_graph', sparse matrix with cosine correlations (adata.uns)
+computing velocity embedding
+    finished (0:00:00) --> added
+    'velocity_umap', embedded velocity vectors (adata.obsm)

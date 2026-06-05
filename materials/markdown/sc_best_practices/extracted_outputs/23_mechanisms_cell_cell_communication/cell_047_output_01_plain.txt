@@ -1,0 +1,27 @@
+                 source             target ligand_complex receptor_complex  \
+1129        CD8 T cells        CD8 T cells            B2M             CD3D   
+831         CD8 T cells           NK cells            B2M            KLRD1   
+468   FCGR3A+ Monocytes    CD14+ Monocytes          TIMP1             CD63   
+1513        CD8 T cells  FCGR3A+ Monocytes            B2M           LILRB2   
+836         CD8 T cells           NK cells            B2M            CD247   
+
+      lr_means  cellphone_pvals  expr_prod  scaled_weight  lr_logfc  \
+1129  2.562213              0.0   3.070147       1.070524  0.690730   
+831   2.511733              0.0   2.622731       1.541763  0.858930   
+468   1.877567              0.0   3.374182       1.478816  1.808744   
+1513  2.402974              0.0   1.658766       1.466587  0.604138   
+836   2.414776              0.0   1.763377       1.156763  0.644404   
+
+      spec_weight   lrscore  lr_probs  cellchat_pvals   steady_rank  \
+1129     0.062383  0.982125  0.123504             0.0  2.092188e-11   
+831      0.080626  0.980689  0.110393             0.0  2.092188e-11   
+468      0.123245  0.982935  0.136754             0.0  2.092188e-11   
+1513     0.078486  0.975838  0.063762             0.0  2.092188e-11   
+836      0.074642  0.976548  0.041130             0.0  2.092188e-11   
+
+      specificity_rank  magnitude_rank  
+1129      1.415831e-09    9.840017e-13  
+831       1.415831e-09    8.965786e-11  
+468       1.415831e-09    9.348292e-09  
+1513      1.415831e-09    1.935320e-08  
+836       1.415831e-09    1.228218e-07  

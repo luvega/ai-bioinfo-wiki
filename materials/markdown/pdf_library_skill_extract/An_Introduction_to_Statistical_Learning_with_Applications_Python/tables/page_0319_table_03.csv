@@ -1,0 +1,4 @@
+"age_grid = np.linspace(age.min(),"
+"age.max(),"
+100)
+age_df = pd.DataFrame({'age': age_grid})

@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 13429 6791 
+## metadata(2): merge.info pca.info
+## assays(1): reconstructed
+## rownames(13429): ENSG00000239945 ENSG00000228463 ... ENSG00000198695
+##   ENSG00000198727
+## rowData names(1): rotation
+## colnames: NULL
+## colData names(1): batch
+## reducedDimNames(1): corrected
+## mainExpName: NULL
+## altExpNames(0):

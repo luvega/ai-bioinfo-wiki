@@ -1,0 +1,27 @@
+                                         donor batch  n_genes_by_counts  \
+AAACCCAAGGATGGCT-1-0-0-0-0-0-0-0-0-0-0-0  s1d1     0                124   
+AAACCCAAGGCCTAGA-1-0-0-0-0-0-0-0-0-0-0-0  s1d1     0                140   
+AAACCCAAGTGAGTGC-1-0-0-0-0-0-0-0-0-0-0-0  s1d1     0                120   
+AAACCCACAAGAGGCT-1-0-0-0-0-0-0-0-0-0-0-0  s1d1     0                128   
+AAACCCACATCGTGGC-1-0-0-0-0-0-0-0-0-0-0-0  s1d1     0                114   
+
+                                          log1p_n_genes_by_counts  \
+AAACCCAAGGATGGCT-1-0-0-0-0-0-0-0-0-0-0-0                 4.828314   
+AAACCCAAGGCCTAGA-1-0-0-0-0-0-0-0-0-0-0-0                 4.948760   
+AAACCCAAGTGAGTGC-1-0-0-0-0-0-0-0-0-0-0-0                 4.795791   
+AAACCCACAAGAGGCT-1-0-0-0-0-0-0-0-0-0-0-0                 4.859812   
+AAACCCACATCGTGGC-1-0-0-0-0-0-0-0-0-0-0-0                 4.744932   
+
+                                          total_counts  log1p_total_counts  \
+AAACCCAAGGATGGCT-1-0-0-0-0-0-0-0-0-0-0-0        6483.0            8.777093   
+AAACCCAAGGCCTAGA-1-0-0-0-0-0-0-0-0-0-0-0       19711.0            9.888983   
+AAACCCAAGTGAGTGC-1-0-0-0-0-0-0-0-0-0-0-0        3349.0            8.116715   
+AAACCCACAAGAGGCT-1-0-0-0-0-0-0-0-0-0-0-0        7841.0            8.967249   
+AAACCCACATCGTGGC-1-0-0-0-0-0-0-0-0-0-0-0        2462.0            7.809135   
+
+                                          n_counts  outliers  
+AAACCCAAGGATGGCT-1-0-0-0-0-0-0-0-0-0-0-0    6483.0     False  
+AAACCCAAGGCCTAGA-1-0-0-0-0-0-0-0-0-0-0-0   19711.0     False  
+AAACCCAAGTGAGTGC-1-0-0-0-0-0-0-0-0-0-0-0    3349.0     False  
+AAACCCACAAGAGGCT-1-0-0-0-0-0-0-0-0-0-0-0    7841.0     False  
+AAACCCACATCGTGGC-1-0-0-0-0-0-0-0-0-0-0-0    2462.0     False  

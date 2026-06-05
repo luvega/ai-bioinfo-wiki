@@ -1,0 +1,4 @@
+The rpy2.ipython extension is already loaded. To reload it, use:
+  %reload_ext rpy2.ipython
+[92m→[0m loaded Transform('0VP4jDUT9P3E0000', key='integration.ipynb'), re-started Run('zYZOfUIlcXImvYWR') at 2026-02-16 19:19:58 UTC
+[92m→[0m notebook imports: anndata2ri==2.0 bbknn==1.6.0 lamindb==2.0.1 matplotlib==3.10.8 numpy==2.3.5 pandas==2.3.3 scanpy==1.11.5 scib==1.1.7 scvi-tools==1.4.1 session-info==1.0.0

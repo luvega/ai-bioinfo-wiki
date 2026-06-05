@@ -1,0 +1,3 @@
+"model = MS(Hitters.columns.drop('Salary'), intercept=False)"
+X = model.fit_transform(Hitters).to_numpy()
+Y = Hitters['Salary'].to_numpy()

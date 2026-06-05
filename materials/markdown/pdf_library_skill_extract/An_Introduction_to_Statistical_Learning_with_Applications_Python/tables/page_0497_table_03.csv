@@ -1,0 +1,8 @@
+coxph = CoxPHFitter # shorthand
+"sex_df = BrainCancer[['time', 'status', 'sex']]"
+"model_df = MS(['time', 'status', 'sex'],"
+intercept=False).fit_transform(sex_df)
+"cox_fit = coxph().fit(model_df,"
+"'time',"
+'status')
+"cox_fit.summary[['coef', 'se(coef)', 'p']]"

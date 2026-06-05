@@ -1,0 +1,8 @@
+months = Bike['mnth'].dtype.categories
+coef_month = pd.concat([
+"coef_month,"
+"pd.Series([-coef_month.sum()],"
+index=['mnth[Dec]'
+])
+])
+coef_month

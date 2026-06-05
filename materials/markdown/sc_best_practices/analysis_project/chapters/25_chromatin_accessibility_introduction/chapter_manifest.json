@@ -1,0 +1,20 @@
+{
+  "order": 25,
+  "part": "Chromatin Accessibility",
+  "toc_file": "chromatin_accessibility/introduction",
+  "title": "Single-cell ATAC sequencing",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/chromatin_accessibility/introduction.ipynb",
+  "environment": "gene-regulatory-networks-atac",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 1,
+  "dataset_reference_count": 1,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/25_chromatin_accessibility_introduction",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/25_chromatin_accessibility_introduction/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/25_chromatin_accessibility_introduction/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/25_chromatin_accessibility_introduction/code_index.md"
+  }
+}

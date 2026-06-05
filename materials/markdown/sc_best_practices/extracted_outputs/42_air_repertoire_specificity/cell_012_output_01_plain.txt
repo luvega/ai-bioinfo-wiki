@@ -1,0 +1,2 @@
+SARS-CoV-2    4566
+Name: antigen.species, dtype: int64

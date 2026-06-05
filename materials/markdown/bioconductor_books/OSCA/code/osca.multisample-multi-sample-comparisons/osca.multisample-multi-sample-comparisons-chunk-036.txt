@@ -1,0 +1,4 @@
+##        factor(tomato)TRUE
+## Down                    8
+## NotSig               5675
+## Up                      6

@@ -1,0 +1,70 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .flip-card-q8 {
+            background-color: transparent;
+            width: 350px;
+            height: 200px;
+            perspective: 1000px;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        .flip-card-inner-q8 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            transform-origin: center;
+        }
+        .flip-card-q8:hover .flip-card-inner-q8 {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front-q8, .flip-card-back-q8 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-align: center;
+        }
+        .flip-card-front-q8 {
+            background-color: #3965a3;
+            font-size: 20px;
+        }
+        .flip-card-back-q8 {
+            background-color: #a8d480;
+            transform: rotateY(180deg);
+            font-size: 20px;
+        }_b
+    </style>
+
+    <div class="flip-card-q8">
+        <div class="flip-card-inner-q8">
+            <div class="flip-card-front-q8">
+                What is the key advantage of third-generation sequencing?
+            </div>
+            <div class="flip-card-back-q8">
+                Long-read sequencing without amplification, as seen in Nanopore and PacBio.
+            </div>
+        </div>
+    </div>
+    <noscript>
+        <p><strong>Q:</strong> What is the key advantage of third-generation sequencing?</p>
+        <p><strong>Answer:</strong> Long-read sequencing without amplification, as seen in Nanopore and PacBio.</p>
+    </noscript>
+    

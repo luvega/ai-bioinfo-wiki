@@ -1,0 +1,7 @@
+"svm_rbf = SVC(kernel=""rbf"", gamma=1, C=1e5)"
+"svm_rbf.fit(X_train, y_train)"
+"fig, ax = subplots(figsize=(8,8))"
+"plot_svm(X_train,"
+"y_train,"
+"svm_rbf,"
+ax=ax)

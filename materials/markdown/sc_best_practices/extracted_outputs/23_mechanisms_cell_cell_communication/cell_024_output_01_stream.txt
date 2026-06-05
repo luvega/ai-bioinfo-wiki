@@ -1,0 +1,2 @@
+/home/dbdimitrov/anaconda3/envs/cellcell/lib/python3.10/site-packages/scanpy/plotting/_tools/scatterplots.py:364: UserWarning: No data for colormapping provided via 'c'. Parameters 'cmap' will be ignored
+/home/dbdimitrov/anaconda3/envs/cellcell/lib/python3.10/site-packages/scanpy/plotting/_tools/scatterplots.py:364: UserWarning: No data for colormapping provided via 'c'. Parameters 'cmap' will be ignored

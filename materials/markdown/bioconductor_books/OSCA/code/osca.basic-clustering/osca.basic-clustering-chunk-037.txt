@@ -1,0 +1,15 @@
+## class: SingleCellExperiment 
+## dim: 46604 185 
+## metadata(0):
+## assays(3): counts logcounts corrected
+## rownames(46604): 4933401J01Rik Gm26206 ... CAAA01147332.1
+##   CBFB-MYH11-mcherry
+## rowData names(4): Length ENSEMBL SYMBOL SEQNAME
+## colnames(185): SLX-9555.N701_S502.C89V9ANXX.s_1.r_1
+##   SLX-9555.N701_S503.C89V9ANXX.s_1.r_1 ...
+##   SLX-11312.N712_S507.H5H5YBBXX.s_8.r_1
+##   SLX-11312.N712_S517.H5H5YBBXX.s_8.r_1
+## colData names(9): cell line cell type ... block sizeFactor
+## reducedDimNames(2): PCA TSNE
+## mainExpName: endogenous
+## altExpNames(2): ERCC SIRV

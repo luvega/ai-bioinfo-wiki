@@ -1,0 +1,7 @@
+%%capture
+"fig, axes = subplots(1, 2, figsize=(16, 8), sharey=True)"
+"for ((X_, Y_),"
+"data_,"
+"color) in zip([(X_train, Y_train),"
+"(X_valid, Y_valid),"
+"(X_test, Y_test)],"

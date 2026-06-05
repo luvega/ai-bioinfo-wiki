@@ -1,0 +1,15 @@
+                                  0
+NMI_cluster/label          0.727261
+ARI_cluster/label          0.497166
+ASW_label                  0.566888
+ASW_label/batch            0.800875
+PCR_batch                       NaN
+cell_cycle_conservation         NaN
+isolated_label_F1               NaN
+isolated_label_silhouette  0.418293
+graph_conn                 0.886662
+kBET                            NaN
+iLISI                           NaN
+cLISI                           NaN
+hvg_overlap                     NaN
+trajectory                      NaN

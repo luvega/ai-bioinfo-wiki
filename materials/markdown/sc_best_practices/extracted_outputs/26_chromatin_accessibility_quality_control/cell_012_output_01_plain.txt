@@ -1,0 +1,8 @@
+MuData object with n_obs × n_vars = 16934 × 190628
+  var:	'gene_ids', 'feature_types', 'genome', 'interval'
+  2 modalities
+    rna:	16934 x 36601
+      var:	'gene_ids', 'feature_types', 'genome', 'interval'
+    atac:	16934 x 154027
+      var:	'gene_ids', 'feature_types', 'genome', 'interval'
+      uns:	'atac', 'files'

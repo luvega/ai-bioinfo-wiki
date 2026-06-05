@@ -1,0 +1,7 @@
+##  
+##                B cells           Endothelial            Fibroblast 
+##                   6375                  4799                 10136 
+##  Intestinal Epithelial               Myeloid              Neuronal 
+##                  11946                  7229                   418 
+##          Smooth Muscle               T cells                 Tumor 
+##                   4405                  5040                 38113

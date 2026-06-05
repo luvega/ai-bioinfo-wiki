@@ -1,0 +1,24 @@
+objc[13409]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x12f0f1c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x1448ce6b0). One of the two will be used. Which one is undefined.
+objc[13410]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x1265f3c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x13bdb76b0). One of the two will be used. Which one is undefined.
+objc[13408]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x125a9ec30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x13b1576b0). One of the two will be used. Which one is undefined.
+objc[13411]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x129969c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x13f0d36b0). One of the two will be used. Which one is undefined.
+objc[13407]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x127cb9c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x13d4106b0). One of the two will be used. Which one is undefined.
+objc[13414]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x12ee9ac30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x1446806b0). One of the two will be used. Which one is undefined.
+Numba: Attempted to fork from a non-main thread, the TBB library may be in an invalid state in the child process.
+Numba: Attempted to fork from a non-main thread, the TBB library may be in an invalid state in the child process.
+objc[13490]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x124cf9c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x13a4136b0). One of the two will be used. Which one is undefined.
+objc[13492]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x131710c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x146e806b0). One of the two will be used. Which one is undefined.
+Numba: Attempted to fork from a non-main thread, the TBB library may be in an invalid state in the child process.
+objc[13660]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x13455ec30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x149c2f6b0). One of the two will be used. Which one is undefined.
+Numba: Attempted to fork from a non-main thread, the TBB library may be in an invalid state in the child process.
+objc[13699]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x131764c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x146ee86b0). One of the two will be used. Which one is undefined.
+Numba: Attempted to fork from a non-main thread, the TBB library may be in an invalid state in the child process.
+objc[13757]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x12ad09c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x1404af6b0). One of the two will be used. Which one is undefined.
+Numba: Attempted to fork from a non-main thread, the TBB library may be in an invalid state in the child process.
+objc[14239]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x1278c5c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x13d0326b0). One of the two will be used. Which one is undefined.
+Numba: Attempted to fork from a non-main thread, the TBB library may be in an invalid state in the child process.
+objc[14327]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x132a2ec30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x1481d76b0). One of the two will be used. Which one is undefined.
+Numba: Attempted to fork from a non-main thread, the TBB library may be in an invalid state in the child process.
+Numba: Attempted to fork from a non-main thread, the TBB library may be in an invalid state in the child process.
+objc[14348]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x1343f7c30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x149ba86b0). One of the two will be used. Which one is undefined.
+objc[14356]: Class GNotificationCenterDelegate is implemented in both /opt/anaconda3/lib/libgio-2.0.0.dylib (0x12f11cc30) and /usr/local/Cellar/glib/2.74.4/lib/libgio-2.0.0.dylib (0x1448ce6b0). One of the two will be used. Which one is undefined.

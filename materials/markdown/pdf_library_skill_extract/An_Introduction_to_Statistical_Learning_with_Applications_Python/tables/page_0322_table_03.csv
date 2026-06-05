@@ -1,0 +1,3 @@
+newX = poly_age.transform(age_df)
+preds = B.get_prediction(newX)
+bands = preds.conf_int(alpha=0.05)

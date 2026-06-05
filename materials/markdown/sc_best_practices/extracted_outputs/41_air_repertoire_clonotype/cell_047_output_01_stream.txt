@@ -1,0 +1,2 @@
+/home/juan.henao/.local/lib/python3.8/site-packages/scirpy/pl/base.py:262: UserWarning: FixedFormatter should only be used together with FixedLocator
+  ax.set_yticklabels(order)

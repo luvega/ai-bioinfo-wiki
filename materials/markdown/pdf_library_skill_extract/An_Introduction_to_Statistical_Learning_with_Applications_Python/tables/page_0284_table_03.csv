@@ -1,0 +1,8 @@
+param_grid = {'ridge__alpha': lambdas}
+"grid = skm.GridSearchCV(pipe,"
+"param_grid,"
+"cv=validation,"
+scoring='neg_mean_squared_error')
+"grid.fit(X, Y)"
+grid.best_params_['ridge__alpha']
+grid.best_estimator_

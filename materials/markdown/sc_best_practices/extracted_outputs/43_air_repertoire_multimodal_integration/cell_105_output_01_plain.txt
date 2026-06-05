@@ -1,0 +1,71 @@
+       TTCTCAAAGAATTCCC-MH9143275  TATCAGGAGTGAACAT-MH9143275  \
+HES4                     0.000000                         0.0   
+CPTP                     0.334078                         0.0   
+THAP3                    0.000000                         0.0   
+VAMP3                    0.334078                         0.0   
+CASP9                    0.000000                         0.0   
+
+       CATCCACCAACGCACC-MH9143275  GTCGTAATCACCGTAA-MH9143275  \
+HES4                          0.0                    0.000000   
+CPTP                          0.0                    0.000000   
+THAP3                         0.0                    0.225355   
+VAMP3                         0.0                    0.000000   
+CASP9                         0.0                    0.225355   
+
+       AACTCTTAGCACCGCT-MH9143275  ACTATCTCACAGGAGT-MH9143275  \
+HES4                          0.0                     0.00000   
+CPTP                          0.0                     0.00000   
+THAP3                         0.0                     0.45654   
+VAMP3                         0.0                     0.00000   
+CASP9                         0.0                     0.00000   
+
+       CAGTAACCAGGAATCG-MH9143275  ACTGTCCTCTCGGACG-MH9143275  \
+HES4                     0.000000                         0.0   
+CPTP                     0.000000                         0.0   
+THAP3                    0.000000                         0.0   
+VAMP3                    0.000000                         0.0   
+CASP9                    0.355897                         0.0   
+
+       TCGGGACCAGCATGAG-MH9143275  ATTGGACAGCCATCGC-MH9143275  ...  \
+HES4                          0.0                     0.00000  ...   
+CPTP                          0.0                     0.44491  ...   
+THAP3                         0.0                     0.00000  ...   
+VAMP3                         0.0                     0.00000  ...   
+CASP9                         0.0                     0.00000  ...   
+
+       CACAGTAAGTGTCCAT-MH9143275  GTCAAGTCAAGGACTG-MH9143275  \
+HES4                          0.0                         0.0   
+CPTP                          0.0                         0.0   
+THAP3                         0.0                         0.0   
+VAMP3                         0.0                         0.0   
+CASP9                         0.0                         0.0   
+
+       TAGTGGTAGCGATTCT-MH9143275  GTGCAGCGTCTCCCTA-MH9143275  \
+HES4                          0.0                         0.0   
+CPTP                          0.0                         0.0   
+THAP3                         0.0                         0.0   
+VAMP3                         0.0                         0.0   
+CASP9                         0.0                         0.0   
+
+       CTGGTCTCATCCTTGC-MH9143275  CTTTGCGAGCTGCCCA-MH9143275  \
+HES4                          0.0                         0.0   
+CPTP                          0.0                         0.0   
+THAP3                         0.0                         0.0   
+VAMP3                         0.0                         0.0   
+CASP9                         0.0                         0.0   
+
+       TACACGATCGGGAGTA-MH9143275  GGGCACTAGGATGTAT-MH9143275  \
+HES4                     0.000000                         0.0   
+CPTP                     0.565442                         0.0   
+THAP3                    0.000000                         0.0   
+VAMP3                    0.565442                         0.0   
+CASP9                    0.000000                         0.0   
+
+       TCACAAGGTGGTGTAG-MH9143275  TGCGCAGTCTCAAGTG-MH9143275  
+HES4                          0.0                    0.000000  
+CPTP                          0.0                    0.000000  
+THAP3                         0.0                    0.000000  
+VAMP3                         0.0                    0.000000  
+CASP9                         0.0                    0.291166  
+
+[5 rows x 1000 columns]

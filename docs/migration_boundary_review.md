@@ -13,7 +13,7 @@
 | `doc/` 正式大纲和主讲稿 | `course/syllabus/` | 是 | 是 | 复核 docx 与 Markdown 主讲稿是否同版 |
 | `raw/AIDD_Bioinformatics/` | `materials/raw/aidd_bioinformatics/` | 是 | 是 | 抽查字幕清理后是否缺章节 |
 | `sources/AIDD_Bioinformatics/` | `materials/markdown/aidd_bioinformatics/` | 是 | 是 | 复核 AIDD 镜像索引和章节映射 |
-| `sources/PDF_Library/` | `materials/markdown/pdf_library_legacy/` 和 `materials/markdown/pdf_library_mineru/` | 是 | 是 | 保留转换 Markdown，忽略重型缓存 |
+| `sources/PDF_Library/` | `materials/markdown/pdf_library_mineru/` | 是 | 是 | 保留 MinerU 完整转换；旧版轻量转换已移除 |
 | `wiki/sources/` | `knowledge/sources/` | 是 | 是 | 检查来源页链接和摘要是否仍准确 |
 | `wiki/entities/` | `knowledge/entities/` | 是 | 是 | 清理孤岛实体页 |
 | `wiki/concepts/` | `knowledge/concepts/` | 是 | 是 | 检查 Week 11/15 历史错位 |
@@ -42,4 +42,3 @@
 | Week 03 | AI 辅助编程与 Python 快速入门 | 代码可手算核验、AI 协作边界、Python 课堂任务 |
 | Week 15 | 差异表达分析与功能解读 | 火山图/热图解释、padj/log2FC、功能解释核验 |
 | Week 16 | 单细胞转录组可视化 | QC/UMAP/marker 图、参数敏感性、细胞注释边界 |
-

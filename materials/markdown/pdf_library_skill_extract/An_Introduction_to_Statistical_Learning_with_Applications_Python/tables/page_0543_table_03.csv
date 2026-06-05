@@ -1,0 +1,6 @@
+"i, j = 0, 1 # which components"
+"fig, ax = plt.subplots(1, 1, figsize=(8, 8))"
+"ax.scatter(scores[:,0], scores[:,1])"
+ax.set_xlabel('PC%d' % (i+1))
+ax.set_ylabel('PC%d' % (j+1))
+for k in range(pcaUS.components_.shape[1]):

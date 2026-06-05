@@ -1,0 +1,2 @@
+##  Warning in .local(x, ...): 'pairwiseWilcox' is deprecated.
+##  See help("Deprecated")

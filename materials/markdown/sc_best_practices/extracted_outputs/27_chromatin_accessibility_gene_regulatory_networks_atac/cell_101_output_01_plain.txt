@@ -1,0 +1,1 @@
+HTML widgets cannot be represented in plain text (need html)

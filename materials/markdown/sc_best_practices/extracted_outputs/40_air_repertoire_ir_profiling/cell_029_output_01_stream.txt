@@ -1,0 +1,2 @@
+WARNING: Non-standard locus name ignored: Multi 
+Amount cells: 280045

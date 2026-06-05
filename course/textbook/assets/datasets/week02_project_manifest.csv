@@ -1,0 +1,6 @@
+path,role,must_commit
+data_raw/,original source data,no
+data_processed/,cleaned teaching tables,yes
+scripts/,analysis code,yes
+results/,figures and tables,yes
+ai_logs/,AI collaboration records,no

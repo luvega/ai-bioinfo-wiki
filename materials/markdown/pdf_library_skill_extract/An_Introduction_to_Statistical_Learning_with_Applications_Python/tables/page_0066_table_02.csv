@@ -1,0 +1,2 @@
+Auto_new = Auto.dropna()
+Auto_new.shape

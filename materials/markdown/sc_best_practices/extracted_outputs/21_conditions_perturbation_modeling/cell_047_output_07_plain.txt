@@ -1,0 +1,9 @@
+Oligo         0.801417
+Astro         0.769116
+Microglia     0.743707
+OPC           0.743605
+Inhibitory    0.656202
+NF Oligo      0.625692
+Excitatory    0.623923
+Endo          0.588481
+Name: mean_augur_score, dtype: float64

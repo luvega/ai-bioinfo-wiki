@@ -1,0 +1,8 @@
+"validation = ShuffleSplit(n_splits=1,"
+"test_size=196,"
+random_state=0)
+"results = cross_validate(hp_model,"
+"Auto.drop(['mpg'], axis=1),"
+"Auto['mpg'],"
+cv=validation);
+results['test_score']

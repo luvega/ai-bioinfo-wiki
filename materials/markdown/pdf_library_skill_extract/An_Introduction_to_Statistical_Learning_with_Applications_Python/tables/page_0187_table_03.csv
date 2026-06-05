@@ -1,0 +1,2 @@
+"newdata = pd.DataFrame({'Lag1':[1.2, 1.5],"
+"'Lag2':[1.1, -0.8]});"

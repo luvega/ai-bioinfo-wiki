@@ -1,0 +1,2 @@
+... storing 'cdr3' as categorical
+... storing 'TESSA_cluster_top10' as categorical

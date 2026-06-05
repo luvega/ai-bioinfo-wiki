@@ -1,0 +1,5 @@
+MuData object with n_obs × n_vars = 9842 × 15215
+  2 modalities
+    rna:	9842 x 15215
+      obs:	'batch', 'barcode', 'condition', 'cell_label'
+    milo:	0 x 0

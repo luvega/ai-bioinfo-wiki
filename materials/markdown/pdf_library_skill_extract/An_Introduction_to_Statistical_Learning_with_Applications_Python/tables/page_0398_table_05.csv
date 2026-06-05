@@ -1,0 +1,3 @@
+best_svm = grid.best_estimator_
+"fig, ax = subplots(figsize=(8,8))"
+"plot_svm(X_train,"

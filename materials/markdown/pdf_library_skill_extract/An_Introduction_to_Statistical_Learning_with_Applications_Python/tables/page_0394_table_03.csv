@@ -1,0 +1,9 @@
+rng = np.random.default_rng(1)
+"X = rng.standard_normal((50, 2))"
+y = np.array([-1]*25+[1]*25)
+X[y==1] += 1
+"fig, ax = subplots(figsize=(8,8))"
+"ax.scatter(X[:,0],"
+"X[:,1],"
+"c=y,"
+cmap=cm.coolwarm);

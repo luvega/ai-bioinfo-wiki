@@ -1,0 +1,2 @@
+lstm_module = SimpleModule.binary_classification(lstm_model)
+"lstm_logger = CSVLogger('logs', name='IMDB_LSTM')"

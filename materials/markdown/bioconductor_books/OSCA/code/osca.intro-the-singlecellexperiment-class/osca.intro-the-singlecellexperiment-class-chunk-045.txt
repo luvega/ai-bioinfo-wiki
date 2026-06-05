@@ -1,0 +1,14 @@
+## DataFrame with 46603 rows and 1 column
+##                       Length
+##                    <integer>
+## ENSMUSG00000102693      1070
+## ENSMUSG00000064842       110
+## ENSMUSG00000051951      6094
+## ENSMUSG00000102851       480
+## ENSMUSG00000103377      2819
+## ...                      ...
+## ENSMUSG00000094431       100
+## ENSMUSG00000094621       121
+## ENSMUSG00000098647        99
+## ENSMUSG00000096730      3077
+## ENSMUSG00000095742       243

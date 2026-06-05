@@ -1,0 +1,5 @@
+"path_fig, ax = subplots(figsize=(8,8))"
+"soln_path.plot(ax=ax, legend=False)"
+ax.legend(loc='upper left')
+"ax.set_xlabel('$-\log(\lambda)$', fontsize=20)"
+"ax.set_ylabel('Standardized coefficiients', fontsize=20);"

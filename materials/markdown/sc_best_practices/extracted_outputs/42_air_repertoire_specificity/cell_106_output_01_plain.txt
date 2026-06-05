@@ -1,0 +1,85 @@
+          Name Ab or Nb                                           Binds to  \
+0           T6       Ab  SARS-CoV2_WT;SARS-CoV2_Alpha;SARS-CoV2_Beta;SA...   
+1  Hauser_Ab15       Ab  SARS-CoV2_WT (weak);SARS-CoV2_Beta (weak);SARS...   
+2  Hauser_Ab16       Ab  SARS-CoV2_WT;SARS-CoV2_Beta;SARS-CoV1;RaTG13;S...   
+3  Hauser_Ab17       Ab  SARS-CoV2_WT;SARS-CoV2_Beta;SARS-CoV1;RaTG13;S...   
+4  Hauser_Ab19       Ab          SARS-CoV2_WT (weak);SARS-CoV2_Beta (weak)   
+
+                 Doesn't Bind to  \
+0                            NaN   
+1                            NaN   
+2                            NaN   
+3                            NaN   
+4  SARS-CoV1;WIV-1;RaTG13;SHC014   
+
+                                     Neutralising Vs  \
+0  SARS-CoV2_WT;SARS-CoV2_Alpha;SARS-CoV2_Beta;SA...   
+1  SARS-CoV2_WT (weak);SARS-CoV2_Gamma (weak);RaTG13   
+2  SARS-CoV2_WT;SARS-CoV2_Beta (weak);SARS-CoV2_G...   
+3           SHC014 (weak);WIV-1 (weak);RaTG13 (weak)   
+4                                      RaTG13 (weak)   
+
+                                 Not Neutralising Vs Protein + Epitope  \
+0                                                NaN            S; RBD   
+1                              SARS-CoV2_Beta;SHC014            S; RBD   
+2                                                NaN            S; RBD   
+3  SARS-CoV2_WT;SARS-CoV2_Beta;SARS-CoV2_Gamma;SA...            S; RBD   
+4                       SARS-CoV2_WT;SARS-CoV2_Gamma            S; RBD   
+
+                                Origin  \
+0   B-cells; SARS-CoV2_WT RBD Vaccinee   
+1  Immunised Mice (rational immunogen)   
+2  Immunised Mice (rational immunogen)   
+3  Immunised Mice (rational immunogen)   
+4  Immunised Mice (rational immunogen)   
+
+                                           VH or VHH  \
+0  QVQLQQPGTELVNPGASLKMSCKTSGYRFTSYIIHWVKQTPGQGLE...   
+1  EVQLQQSGPELVKPGASVKISCKASGYSFTGYYMNWVKQSPEKSLE...   
+2  EVQLQQSGPELVKPGASVKISCKASGYSFNNYYMNWVKQSPEKSLE...   
+3  EVQLQQSGPELVKPGASVKISCKASGYSFTDYYMNWVKQSPEKSLE...   
+4  QVQLQQSGAELARPGASVKLSCKASGYPFTSYGINWVKQRTGQGLE...   
+
+                                                  VL  ...   Light J Gene  \
+0  QIVLTQSPSSLAVSVGEKVTLSCKSSQSLLYSNNQKNYLAWYQQKS...  ...  IGKJ1 (Mouse)   
+1  DILMTQSPSSMSVSLGDTVSITCHASQGISSNIGWLQQKPGKSFKG...  ...  IGKJ2 (Mouse)   
+2  DILMTQSPSSMSVSLGDTVSITCHASQGIGSNIGWLQQKPGKSFKG...  ...  IGKJ2 (Mouse)   
+3  DILMTQSPSSMSVSLGDTVSITCHASQGISSNIGWLQQKPGKSFKG...  ...  IGKJ2 (Mouse)   
+4  DIVMTQSHKFMSTSIGDRVSITCKASHDVSTAVAWYQQKPGQSPKL...  ...  IGKJ2 (Mouse)   
+
+             CDRH3      CDRL3  \
+0       ARDGENVLDY  QQYYTYPWT   
+1     ARYYGNLYAMDY  VQYTHFPYT   
+2     ARYFGNLFAMDF  VQYVQFPYT   
+3     ARYYGNLYAMDY  VQYVQFPYT   
+4  ARSWNSNYGEYYFDY  QQHYSTPYT   
+
+                                          Structures  \
+0  https://www.rcsb.org/structure/7FJO;Expected (...   
+1                                                 ND   
+2                                                 ND   
+3                https://www.rcsb.org/structure/7TE1   
+4                                                 ND   
+
+                ABB Homology Model (if no structure)  \
+0                                                NaN   
+1  Coronavirus%20Binding%20Antibody%20Sequences%2...   
+2  Coronavirus%20Binding%20Antibody%20Sequences%2...   
+3                                                NaN   
+4  Coronavirus%20Binding%20Antibody%20Sequences%2...   
+
+                                             Sources    Date Added  \
+0  Qingtai Liang et al., 2022 (https://www.cell.c...  Apr 20, 2022   
+1  Blake Hauser et al., 2022 (https://www.cell.co...  Apr 20, 2022   
+2  Blake Hauser et al., 2022 (https://www.cell.co...  Apr 20, 2022   
+3  Blake Hauser et al., 2022 (https://www.cell.co...  Apr 20, 2022   
+4  Blake Hauser et al., 2022 (https://www.cell.co...  Apr 20, 2022   
+
+   Last Updated Update Description Notes/Following Up?  
+0  Apr 20, 2022                NaN            Complete  
+1  Apr 20, 2022                NaN            Complete  
+2  Apr 20, 2022                NaN            Complete  
+3  Apr 20, 2022                NaN            Complete  
+4  Apr 20, 2022                NaN            Complete  
+
+[5 rows x 23 columns]

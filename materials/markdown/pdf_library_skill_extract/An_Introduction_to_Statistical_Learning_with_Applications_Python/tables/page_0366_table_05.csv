@@ -1,0 +1,4 @@
+"ax = subplots(figsize=(12,12))[1]"
+"plot_tree(G.best_estimator_,"
+"feature_names=feature_names,"
+ax=ax);

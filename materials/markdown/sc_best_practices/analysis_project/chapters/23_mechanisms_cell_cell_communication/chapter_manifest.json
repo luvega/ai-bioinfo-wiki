@@ -1,0 +1,18 @@
+{
+  "order": 23,
+  "part": "Modeling mechanisms",
+  "toc_file": "mechanisms/cell_cell_communication",
+  "title": "Cell-cell communication",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/mechanisms/cell_cell_communication.ipynb",
+  "environment": "cellcell",
+  "week_mapping": [],
+  "code_cell_count": 42,
+  "dataset_reference_count": 7,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/23_mechanisms_cell_cell_communication",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/23_mechanisms_cell_cell_communication/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/23_mechanisms_cell_cell_communication/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/23_mechanisms_cell_cell_communication/code_index.md"
+  }
+}

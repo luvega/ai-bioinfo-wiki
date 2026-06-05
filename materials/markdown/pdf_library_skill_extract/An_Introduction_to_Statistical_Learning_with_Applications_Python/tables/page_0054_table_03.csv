@@ -1,0 +1,6 @@
+"print('x before we modify x_reshape:\n', x)"
+"print('x_reshape before we modify x_reshape:\n', x_reshape)"
+"x_reshape[0, 0] = 5"
+"print('x_reshape after we modify its top left element:\n',"
+x_reshape)
+"print('x after we modify top left element of x_reshape:\n', x)"

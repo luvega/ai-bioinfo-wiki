@@ -1,0 +1,18 @@
+{
+  "order": 38,
+  "part": "Surface protein",
+  "toc_file": "surface_protein/batch_correction",
+  "title": "Batch correction",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/surface_protein/batch_correction.ipynb",
+  "environment": "surface-protein",
+  "week_mapping": [],
+  "code_cell_count": 8,
+  "dataset_reference_count": 2,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/38_surface_protein_batch_correction",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/38_surface_protein_batch_correction/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/38_surface_protein_batch_correction/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/38_surface_protein_batch_correction/code_index.md"
+  }
+}

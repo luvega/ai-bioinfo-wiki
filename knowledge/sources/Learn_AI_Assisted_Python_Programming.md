@@ -6,7 +6,8 @@ year: 2023
 publisher: Manning
 raw_path:
   - materials/raw/pdf_originals/【R240】Learn AI-Assisted Python Programming With GitHub Copilot and ChatGPT (2023)【Leo Porter, Daniel Zingaro】.pdf
-  - materials/markdown/pdf_library_legacy/R240_Learn_AI-Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro.md
+  - materials/markdown/pdf_library_mineru/R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro/book.mineru.md
+  - materials/markdown/pdf_library_mineru/R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro/book.course.md
 ingested: 2026-05-21
 language: en
 kind: textbook
@@ -57,3 +58,7 @@ tags: [generative-ai, copilot, chatgpt, python, programming-pedagogy, prompt-eng
 - 实体：[GitHub Copilot](../entities/GitHub_Copilot.md) · [ChatGPT](../entities/ChatGPT.md)
 - 概念：[AI 协作边界](../concepts/AI协作边界.md)
 - 课程总线：[36 课时讲稿](36课时讲稿.md)
+
+## 勘误 / 注意
+
+- MinerU 转换结果以 `book.mineru.md` 为完整解析层，`book.course.md` 为备课整理层；旧版轻量转换已退役。

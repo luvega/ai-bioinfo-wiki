@@ -1,0 +1,16 @@
+BiocManager
+::
+install
+(
+c
+(
+'scuttle'
+, 
+'scran'
+, 
+'scater'
+, 
+'uwot'
+, 
+'rtracklayer'
+))

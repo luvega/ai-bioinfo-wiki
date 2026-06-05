@@ -1,0 +1,8 @@
+from ISLP import confusion_table
+from ISLP.models import contrast
+from sklearn.discriminant_analysis import \
+"(LinearDiscriminantAnalysis as LDA,"
+QuadraticDiscriminantAnalysis as QDA)
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import StandardScaler

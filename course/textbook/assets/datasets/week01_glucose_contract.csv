@@ -1,0 +1,6 @@
+patient_id,group,glucose_before,glucose_after,dose_mg,adherence
+P01,Control,8.1,8.0,0,good
+P02,Control,7.5,7.7,0,missing
+P03,Drug,8.4,6.9,50,good
+P04,Drug,9.1,7.2,50,good
+P05,Drug,7.9,7.8,50,poor

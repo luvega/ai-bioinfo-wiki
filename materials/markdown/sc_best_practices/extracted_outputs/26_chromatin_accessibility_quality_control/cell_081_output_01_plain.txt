@@ -1,0 +1,4 @@
+AnnData object with n_obs × n_vars = 16934 × 154027
+    obs: 'scDblFinder_score', 'AMULET_pVal', 'AMULET_qVal', 'AMULET_negLog10qVal', 'n_features_per_cell', 'total_fragment_counts', 'log_total_fragment_counts', 'nucleosome_signal', 'nuc_signal_filter', 'tss_score'
+    var: 'gene_ids', 'feature_types', 'genome', 'interval', 'n_cells_by_counts', 'mean_counts', 'pct_dropout_by_counts', 'total_counts'
+    uns: 'atac', 'files'

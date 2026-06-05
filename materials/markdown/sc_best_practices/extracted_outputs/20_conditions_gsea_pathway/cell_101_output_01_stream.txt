@@ -1,0 +1,4 @@
+/Users/isaac/miniconda3/envs/pathway/lib/python3.9/site-packages/rpy2/robjects/pandas2ri.py:54: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for name, values in obj.iteritems():
+R[write to console]: No group or design set. Assuming all samples belong to one group.
+

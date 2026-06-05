@@ -1,0 +1,9 @@
+transform = ToTensor()
+cifar_train_X = torch.stack([transform(x) for x in
+cifar_train.data])
+cifar_test_X = torch.stack([transform(x) for x in
+cifar_test.data])
+"cifar_train = TensorDataset(cifar_train_X,"
+torch.tensor(cifar_train.targets))
+"cifar_test = TensorDataset(cifar_test_X,"
+torch.tensor(cifar_test.targets))

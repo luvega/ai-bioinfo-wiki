@@ -1,0 +1,20 @@
+    ligand ligand_complex  ligand_means  ligand_props receptor  \
+0   LGALS9         LGALS9      0.072739      0.101973    PTPRC   
+9   LGALS9         LGALS9      0.072739      0.101973     CD44   
+37     VIM            VIM      0.507059      0.519725     CD44   
+38     PKM            PKM      0.230863      0.278267     CD44   
+66  LGALS9         LGALS9      0.072739      0.101973     CD47   
+
+   receptor_complex  receptor_means  receptor_props       source       target  \
+0             PTPRC        0.457824        0.501761  CD4 T cells  CD4 T cells   
+9              CD44        0.304042        0.364741  CD4 T cells  CD4 T cells   
+37             CD44        0.304042        0.364741  CD4 T cells  CD4 T cells   
+38             CD44        0.304042        0.364741  CD4 T cells  CD4 T cells   
+66             CD47        0.213795        0.272807  CD4 T cells  CD4 T cells   
+
+    lrs_to_keep  lr_means  cellphone_pvals  
+0          True  0.265281              1.0  
+9          True  0.188391              1.0  
+37         True  0.405550              1.0  
+38         True  0.267453              1.0  
+66         True  0.143267              1.0  

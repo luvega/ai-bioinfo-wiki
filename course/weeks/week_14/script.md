@@ -189,3 +189,10 @@ AI 可以帮助梳理 RNA-seq 从 FASTQ 到 count matrix 的流程，整理 GEO 
 ## 教师补充讲述：转录组数据分析基础 的课堂落地
 
 教师还可以再补充一段综合讲述：本周内容之所以重要，是因为它把抽象的医药数据问题变成了学生可以操作、可以检查、可以解释的课堂活动。围绕“检查小型 count matrix 与 metadata 是否对齐，计算样本总 counts，并说明 GEO/ArrayExpress 只提供来源核验线索”，教师要不断提醒学生，任何结果都不是孤立出现的，它依赖数据来源、字段含义、处理规则、图表表达和人工核验。AI 可以让初稿更快出现，但越快出现的内容越需要检查。学生如果能在本周说清输入、规则、输出和证据边界，就已经具备进入下一周学习的基础。
+## 本轮素材升级说明（2026-06-04）
+
+Week 14 新增 SCBP、OSCA 和 OSTA 后，教师应把它们作为“现代组学流程对照”，而不是增加课堂负担。AIDD 的 FASTQ、QC、alignment、SAM/BAM 和 feature extraction 仍是学生入口；SCBP 用于说明 scRNA-seq 中 barcode、UMI、AnnData 等数据结构；OSCA 用于补充 Bioconductor / SingleCellExperiment 视角；OSTA 只作为空间转录组也需要 reads-to-counts 和 QC 的拓展例子。
+
+课堂解释要始终回到三个对象：count matrix、metadata、quality note。学生只要能说明每个样本的列名如何对应 metadata、总 counts 为什么不同、为什么不能直接比较原始 counts，就达成本周目标。不要把命令行安装、完整 workflow 或空间统计方法作为课堂考核。
+
+进入 PPT 前需核验：AIDD 命令名和文件格式说明需回查原始材料；SCBP/OSCA/OSTA 图形或 workflow 若进入 PPT，只能作为流程或结构示意，并标注来源和“教师备课素材”状态。

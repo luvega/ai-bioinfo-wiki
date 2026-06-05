@@ -1,0 +1,8 @@
+"ax.plot(np.arange(n_steps),"
+"validation_mse,"
+"'b--', # color blue, broken line"
+label='Validation')
+ax.set_xticks(np.arange(n_steps)[::2])
+"ax.set_ylim([50000,250000])"
+ax.legend()
+mse_fig

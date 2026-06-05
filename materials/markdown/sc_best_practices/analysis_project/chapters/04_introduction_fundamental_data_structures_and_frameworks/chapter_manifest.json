@@ -1,0 +1,20 @@
+{
+  "order": 4,
+  "part": "Introduction",
+  "toc_file": "introduction/fundamental_data_structures_and_frameworks",
+  "title": "Fundamental data structures and frameworks",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/introduction/fundamental_data_structures_and_frameworks.ipynb",
+  "environment": "advanced_data_structures_and_frameworks",
+  "week_mapping": [
+    14
+  ],
+  "code_cell_count": 43,
+  "dataset_reference_count": 11,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/code_index.md"
+  }
+}

@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 14700 186 
+## metadata(2): merge.info pca.info
+## assays(1): counts
+## rownames(14700): Xkr4 Rp1 ... Vmn2r122 CAAA01147332.1
+## rowData names(3): rotation ENSEMBL SYMBOL
+## colnames: NULL
+## colData names(16): batch cell ... sample ncells
+## reducedDimNames(5): corrected pca.corrected.E7.5 pca.corrected.E8.5
+##   TSNE UMAP
+## mainExpName: NULL
+## altExpNames(0):

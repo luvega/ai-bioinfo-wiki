@@ -1,0 +1,4 @@
+"cargs = {'color_threshold':-np.inf,"
+'above_threshold_color':'black'}
+linkage_comp = compute_linkage(hc_comp)
+"fig, ax = plt.subplots(1, 1, figsize=(8, 8))"

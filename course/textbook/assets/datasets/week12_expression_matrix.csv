@@ -1,0 +1,7 @@
+sample_id,group,batch,GeneA,GeneB,GeneC,GeneD,GeneE
+Ctrl_1,Control,B1,10,8,4,5,7
+Ctrl_2,Control,B1,11,7,5,4,6
+Ctrl_3,Control,B2,9,8,4,5,7
+Drug_1,Drug,B1,17,5,8,6,4
+Drug_2,Drug,B2,16,4,9,7,5
+Drug_3,Drug,B2,18,5,8,6,4

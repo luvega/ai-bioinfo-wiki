@@ -1,0 +1,4 @@
+X = MS(terms).fit_transform(Boston)
+"model = sm.OLS(y, X)"
+results = model.fit()
+summarize(results)

@@ -1,0 +1,4 @@
+"khan_linear = SVC(kernel='linear', C=10)"
+"khan_linear.fit(Khan['xtrain'], Khan['ytrain'])"
+"confusion_table(khan_linear.predict(Khan['xtrain']),"
+Khan['ytrain'])

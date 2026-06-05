@@ -1,0 +1,2 @@
+"Pipeline(steps=[('scaler', StandardScaler()),"
+"('ridge', ElasticNet(alpha=0.005899, l1_ratio=0))])"

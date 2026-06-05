@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 15px;
+            width: 400px;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #3965a3;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>What is reverse transcription in the context of scRNA-seq?</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq2" value="Converting cDNA to mRNA"
+            onclick="checkAnswer(this, 'Converting mRNA to cDNA', '', 'feedback-q2')"> Converting cDNA to mRNA
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq2" value="Sequencing the DNA"
+            onclick="checkAnswer(this, 'Converting mRNA to cDNA', '', 'feedback-q2')"> Sequencing the DNA
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq2" value="Converting mRNA to cDNA"
+            onclick="checkAnswer(this, 'Converting mRNA to cDNA', '', 'feedback-q2')"> Converting mRNA to cDNA
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq2" value="Labeling cell surface markers"
+            onclick="checkAnswer(this, 'Converting mRNA to cDNA', '', 'feedback-q2')"> Labeling cell surface markers
+        </label><br>
+        
+        <p id="feedback-q2" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q2" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: Converting mRNA to cDNA
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,4 @@
+feature_types
+ATAC    116490
+GEX      13431
+Name: count, dtype: int64

@@ -1,0 +1,5 @@
+"def boot_OLS(model_matrix, response, D, idx):"
+D_ = D.loc[idx]
+Y_ = D_[response]
+X_ = clone(model_matrix).fit_transform(D_)
+"return sm.OLS(Y_, X_).fit().params"

@@ -1,0 +1,14 @@
+SpatialData object, with associated Zarr store: /Users/luisheinzlmeier/Library/Caches/lamindb/lamin-eu-central-1/VPwcjx3CDAa2/introduction/advanced_data_structures_and_frameworks_spatialdata.zarr
+├── Images
+│     └── 'raw_image': DataTree[cyx] (1, 6432, 6432), (1, 1608, 1608)
+├── Labels
+│     └── 'segmentation_mask': DataArray[yx] (6432, 6432)
+├── Points
+│     └── 'transcripts': DataFrame with shape: (<Delayed>, 3) (2D points)
+├── Shapes
+│     └── 'nucleus_boundaries': GeoDataFrame shape: (3375, 1) (2D shapes)
+└── Tables
+      └── 'table': AnnData (3375, 99)
+with coordinate systems:
+    ▸ 'global', with elements:
+        raw_image (Images), segmentation_mask (Labels), transcripts (Points), nucleus_boundaries (Shapes)

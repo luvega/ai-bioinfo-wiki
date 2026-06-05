@@ -1,0 +1,3 @@
+"print(export_text(clf,"
+"feature_names=feature_names,"
+show_weights=True))

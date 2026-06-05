@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getWeekLabel, weeks } from '../../data/weeks';
+import { getCoursebookChapterByWeek } from '../../data/coursebook';
+import { withBase } from '../../lib/paths';
 
 export function getStaticPaths() {
   return weeks.map((week) => ({
@@ -12,6 +14,7 @@ export function getStaticPaths() {
 const { week } = Astro.props;
 const previous = weeks.find((item) => item.week === week.week - 1);
 const next = weeks.find((item) => item.week === week.week + 1);
+const coursebookChapter = getCoursebookChapterByWeek(week.week);
 ---
 
 <BaseLayout title={`${getWeekLabel(week.week)} ${week.title}`} description={week.question}>
@@ -80,10 +83,26 @@ const next = weeks.find((item) => item.week === week.week + 1);
           <h3>核验提示</h3>
           <p>所有 AI 生成解释、代码、图注和结果摘要都需要记录 Prompt、输出、人工核验和修改说明。</p>
         </article>
+        <article class="resource-card">
+          <h3>在线教材</h3>
+          {coursebookChapter ? (
+            <>
+              <p>本周内容已映射到 12 章 Coursebook。教材章节用于系统复习知识结构，90 分钟教学计划和 40 页主干 storyboard 在 Courseware 中查看。</p>
+              <p><a class="text-link" href={withBase(coursebookChapter.page)}>打开第 {coursebookChapter.chapter} 章 {coursebookChapter.title}</a></p>
+              <p><a class="text-link" href={withBase(`/courseware/${week.slug}`)}>打开 {getWeekLabel(week.week)} Courseware</a></p>
+            </>
+          ) : (
+            <>
+              <p>本周暂未映射到 Coursebook 章节；教学计划、Student action 和 40 页主干 storyboard 在 Courseware 中查看。</p>
+              <p><a class="text-link" href={withBase('/coursebook')}>打开 Coursebook 目录</a></p>
+              <p><a class="text-link" href={withBase(`/courseware/${week.slug}`)}>打开 {getWeekLabel(week.week)} Courseware</a></p>
+            </>
+          )}
+        </article>
       </div>
       <nav class="next-prev" aria-label="周次导航">
-        {previous ? <a href={`/weeks/${previous.slug}`}>← {getWeekLabel(previous.week)} {previous.title}</a> : <a href="/weeks">← 返回周次总览</a>}
-        {next ? <a href={`/weeks/${next.slug}`}>{getWeekLabel(next.week)} {next.title} →</a> : <a href="/weeks">返回周次总览 →</a>}
+        {previous ? <a href={withBase(`/weeks/${previous.slug}`)}>← {getWeekLabel(previous.week)} {previous.title}</a> : <a href={withBase('/weeks')}>← 返回周次总览</a>}
+        {next ? <a href={withBase(`/weeks/${next.slug}`)}>{getWeekLabel(next.week)} {next.title} →</a> : <a href={withBase('/weeks')}>返回周次总览 →</a>}
       </nav>
     </div>
   </section>

@@ -1,0 +1,5 @@
+age_term = gam_full.terms[0]
+"age_term.lam = approx_lam(Xgam, age_term, df=4+1)"
+year_term = gam_full.terms[1]
+"year_term.lam = approx_lam(Xgam, year_term, df=4+1)"
+"gam_full = gam_full.fit(Xgam, y)"

@@ -100,3 +100,9 @@ AI 可以把流程整理成表格；不能替代对数据来源、质量控制�
 
 ### 待核验
 上游流程图中的每个软件和文件格式名称进入 PPT 前需核对。
+## 本轮素材升级说明（2026-06-04）
+
+- 教学定位：Week 14 的核心问题是“表达矩阵从哪里来”，课堂不要求跑通完整 RNA-seq、single-cell 或 spatial workflow。
+- 新增支撑：AIDD RNA-seq 流程作为学生入口；SCBP raw processing / data structures、OSCA SingleCellExperiment/QC/normalization、OSTA reads-to-counts/QC 作为现代组学补充。
+- 药学场景：用药物处理前后样本的 count matrix 和 metadata 说明分组、批次和总 counts 核验。
+- PPT storyboard 入口：后续 storyboard 应加入一页“bulk、single-cell、spatial 都要先回答输入、QC、矩阵和 metadata”。

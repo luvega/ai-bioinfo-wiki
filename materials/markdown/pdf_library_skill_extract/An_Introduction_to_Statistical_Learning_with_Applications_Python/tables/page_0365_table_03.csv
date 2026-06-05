@@ -1,0 +1,5 @@
+"print(accuracy_score(High_test,"
+best_.predict(X_test)))
+"confusion = confusion_table(best_.predict(X_test),"
+High_test)
+confusion

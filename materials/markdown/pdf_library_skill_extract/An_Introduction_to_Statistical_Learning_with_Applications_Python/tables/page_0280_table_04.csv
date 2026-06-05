@@ -1,0 +1,3 @@
+D = design.fit_transform(Hitters)
+"D = D.drop('intercept', axis=1)"
+X = np.asarray(D)

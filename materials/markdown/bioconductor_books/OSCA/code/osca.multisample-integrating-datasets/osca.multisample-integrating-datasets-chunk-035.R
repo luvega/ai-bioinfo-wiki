@@ -1,0 +1,4 @@
+assay
+(mnn.out, 
+"reconstructed"
+)

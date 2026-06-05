@@ -1,0 +1,15 @@
+##  class: SpatialExperiment 
+##  dim: 422 340837 
+##  metadata(3): experiment.xenium cell_boundaries nucleus_boundaries
+##  assays(1): counts
+##  rownames(422): ABCC8 ACP5 ... WFDC2 XCL2
+##  rowData names(3): ID Symbol Type
+##  colnames(340837): aaaadaba-1 aaaadgga-1 ... oikdmkkf-1 oikeebja-1
+##  colData names(10): cell_id transcript_counts ... nucleus_area
+##    sample_id
+##  reducedDimNames(0):
+##  mainExpName: NULL
+##  altExpNames(3): NegControlProbe UnassignedCodeword
+##    NegControlCodeword
+##  spatialCoords names(2) : x_centroid y_centroid
+##  imgData names(0):

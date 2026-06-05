@@ -1,0 +1,5 @@
+AnnData object with n_obs × n_vars = 86332 × 10
+    obs: 'donor', 'batch', 'site', 'cell_type', 'reference_or_query'
+    uns: 'neighbors', 'umap'
+    obsm: 'X_umap'
+    obsp: 'connectivities', 'distances'

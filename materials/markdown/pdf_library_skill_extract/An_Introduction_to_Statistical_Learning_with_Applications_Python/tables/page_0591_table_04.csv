@@ -1,0 +1,4 @@
+Fund = load_data('Fund')
+"fund_mini = Fund.iloc[:,:5]"
+fund_mini_pvals = np.empty(5)
+for i in range(5):

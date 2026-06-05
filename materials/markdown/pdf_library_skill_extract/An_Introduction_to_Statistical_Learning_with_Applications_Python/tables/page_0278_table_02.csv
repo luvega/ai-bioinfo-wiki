@@ -1,0 +1,4 @@
+"strategy = Stepwise.fixed_steps(design,"
+"len(design.terms),"
+direction='forward')
+"full_path = sklearn_selection_path(OLS, strategy)"

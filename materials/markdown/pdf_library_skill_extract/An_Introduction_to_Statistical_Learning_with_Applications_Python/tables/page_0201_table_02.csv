@@ -1,0 +1,7 @@
+"fig_hr, ax_hr = subplots(figsize=(8,8))"
+x_hr = np.arange(coef_hr.shape[0])
+"ax_hr.plot(x_hr, coef_hr, marker='o', ms=10)"
+ax_hr.set_xticks(x_hr[::2])
+"ax_hr.set_xticklabels(range(24)[::2], fontsize=20)"
+"ax_hr.set_xlabel('Hour', fontsize=20)"
+"ax_hr.set_ylabel('Coefficient', fontsize=20);"

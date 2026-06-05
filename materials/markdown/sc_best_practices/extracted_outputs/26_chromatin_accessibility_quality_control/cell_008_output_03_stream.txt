@@ -1,0 +1,4 @@
+/Users/christopher.lance/mambaforge/envs/scatac_pp/lib/python3.9/site-packages/anndata/_core/anndata.py:1830: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/Users/christopher.lance/mambaforge/envs/scatac_pp/lib/python3.9/site-packages/mudata/_core/mudata.py:446: UserWarning: var_names are not unique. To make them unique, call `.var_names_make_unique`.
+  warnings.warn(

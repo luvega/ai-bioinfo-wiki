@@ -1,0 +1,6 @@
+"del(lstm_model,"
+"lstm_trainer,"
+"lstm_logger,"
+"imdb_seq_dm,"
+"imdb_seq_train,"
+imdb_seq_test)

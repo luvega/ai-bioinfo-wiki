@@ -1,0 +1,9 @@
+DataFrame with 6 rows and 3 columns
+             sum  detected     total
+       <numeric> <integer> <numeric>
+Cell_0      2021      1297      2021
+Cell_1      2075      1314      2075
+Cell_2      1947      1233      1947
+Cell_3      1986      1250      1986
+Cell_4      1987      1255      1987
+Cell_5      1930      1266      1930

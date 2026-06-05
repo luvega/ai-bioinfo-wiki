@@ -1,0 +1,3 @@
+WARNING: dendrogram data not found (using key=dendrogram_cell_type). Running `sc.tl.dendrogram` with default parameters. For fine tuning it is recommended to run `sc.tl.dendrogram` independently.
+WARNING: You’re trying to run this on 2785 dimensions of `.X`, if you really want this, set `use_rep='X'`.
+         Falling back to preprocessing with `sc.pp.pca` and default params.

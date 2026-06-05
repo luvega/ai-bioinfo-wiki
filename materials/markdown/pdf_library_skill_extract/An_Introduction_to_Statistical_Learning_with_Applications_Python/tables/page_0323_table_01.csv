@@ -1,0 +1,2 @@
+"cut_age = pd.qcut(age, 4)"
+"summarize(sm.OLS(y, pd.get_dummies(cut_age)).fit())"

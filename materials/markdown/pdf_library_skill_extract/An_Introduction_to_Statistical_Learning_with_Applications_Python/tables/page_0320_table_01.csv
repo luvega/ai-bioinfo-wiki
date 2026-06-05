@@ -1,0 +1,11 @@
+"facecolor='gray',"
+alpha=0.5)
+"for val, ls in zip([preds.predicted_mean,"
+"bands[:,0],"
+"bands[:,1]],"
+"['b','r--','r--']):"
+"ax.plot(age_df.values, val, ls, linewidth=3)"
+"ax.set_title(title, fontsize=20)"
+"ax.set_xlabel('Age', fontsize=20)"
+"ax.set_ylabel('Wage', fontsize=20);"
+return ax

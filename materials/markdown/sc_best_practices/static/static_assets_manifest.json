@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "upstream_path": "jupyter-book/_static/favicon.ico",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/favicon.ico",
+      "bytes": 13058,
+      "sha256": "0c3398098aab8fde8e6d5bab99dac4c3bc5233adf9b4aca0f31e7aa7accdf164"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/advanced_data_structures_and_frameworks/advanced_data_structures_and_frameworks.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/advanced_data_structures_and_frameworks/advanced_data_structures_and_frameworks.png",
+      "bytes": 151994,
+      "sha256": "7b082f7b553e94b1a8d24d8d2499c5747481b9a7cd818c818b93e5570b9de5de"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/advanced_data_structures_and_frameworks/mudata.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/advanced_data_structures_and_frameworks/mudata.png",
+      "bytes": 354354,
+      "sha256": "e3cf6f970f4a16601b0f534a5041448862dce7f0b6f32c00285de2de9c05c804"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/advanced_data_structures_and_frameworks/muon.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/advanced_data_structures_and_frameworks/muon.png",
+      "bytes": 1164512,
+      "sha256": "37e6d6469ddf04095d22a092127e96320e007c7def725d080a4923a3ecc6b518"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/advanced_data_structures_and_frameworks/muon_api.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/advanced_data_structures_and_frameworks/muon_api.png",
+      "bytes": 96399,
+      "sha256": "3b259ba6b5cb8a80ee6390d60e3140bc146a8e535f8dae605d7e1d8a48a6db8f"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/advanced_data_structures_and_frameworks/SpacialData_elements.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/advanced_data_structures_and_frameworks/SpacialData_elements.png",
+      "bytes": 367109,
+      "sha256": "001784ccbcd202e83a82850daa504b64faebf18b1f3b31e8d11023b26532f819"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/air_repertoire/AIR_types.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/air_repertoire/AIR_types.png",
+      "bytes": 319847,
+      "sha256": "3a03cd6b5ee172bda68da68d1fb3e049263c61ec29b81cdadf6de78fbc0bf610"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/air_repertoire/bcr2_logo_motif.svg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/air_repertoire/bcr2_logo_motif.svg",
+      "bytes": 39031,
+      "sha256": "bd43e78465e23d5761dab5a9f4484678793cee4191e73da320230c5db5a97bed"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/air_repertoire/bcr_logo_motif.svg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/air_repertoire/bcr_logo_motif.svg",
+      "bytes": 39031,
+      "sha256": "bd43e78465e23d5761dab5a9f4484678793cee4191e73da320230c5db5a97bed"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/air_repertoire/logo_motif.svg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/air_repertoire/logo_motif.svg",
+      "bytes": 40020,
+      "sha256": "1079615c08ae0d2add9398f246dac05913b1e0249f3e8c0cfb7c6cea86dcb083"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/air_repertoire/VDJ_recombination.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/air_repertoire/VDJ_recombination.png",
+      "bytes": 436048,
+      "sha256": "0263624fa441cb193ea3e6350e4849b28921cc6ddbb659149f7d290d02735be0"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/clustering/clustering.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/clustering/clustering.jpeg",
+      "bytes": 923820,
+      "sha256": "38dee08adf8418fe5acf0aa7e88edb9efb59faf86680379c30f8ee9bdc69061a"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/conditions/compositional.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/conditions/compositional.jpg",
+      "bytes": 452829,
+      "sha256": "0b486a8131f0a259b7ccbe75d2a77f49123679ab88d210f0bd9bb0870391c72d"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/conditions/differential_gene_expression.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/conditions/differential_gene_expression.jpg",
+      "bytes": 1227273,
+      "sha256": "57b46fe3a44a6361279da279ba93a72952e92128a749fcd2e4e464c50d91e84b"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/conditions/eccite.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/conditions/eccite.png",
+      "bytes": 114788,
+      "sha256": "3a8c547e0a23145693ef9cd82e6eda669ce9f4641923a191b09012560d3830a5"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/fundamental_data_structures_and_frameworks/anndata.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/fundamental_data_structures_and_frameworks/anndata.jpg",
+      "bytes": 49487,
+      "sha256": "a2ea23680d0c8dd2bd6d2c2da45df4031b5828434917f91e554b56533fe49156"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/fundamental_data_structures_and_frameworks/fundamental_data_structures_and_frameworks.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/fundamental_data_structures_and_frameworks/fundamental_data_structures_and_frameworks.png",
+      "bytes": 140639,
+      "sha256": "21797b234fe39d562355e61e1fce961d5fa3998fc1dd6c89c0fb8bdffd732ccc"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/fundamental_data_structures_and_frameworks/scanpy.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/fundamental_data_structures_and_frameworks/scanpy.jpg",
+      "bytes": 359040,
+      "sha256": "0d77a6cc853dc19c1db0c843fbb4e37fd922fa0331bc73711df1540f99e84f65"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/fundamental_data_structures_and_frameworks/scanpy_api.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/fundamental_data_structures_and_frameworks/scanpy_api.png",
+      "bytes": 114594,
+      "sha256": "6cd28d50576278367986a4ddea6e2cb6cdd2334ccc1a1ce5571e647ce1e63ba3"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/mechanisms/ccc_limitations.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/mechanisms/ccc_limitations.png",
+      "bytes": 152399,
+      "sha256": "39c1ae97e0b6faf3f4a3e60b6801a69a8bc6e44d1c9fa1ec649abc3ccf57be82"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/mechanisms/cell_cell_communication.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/mechanisms/cell_cell_communication.png",
+      "bytes": 87040,
+      "sha256": "f5f068180158004e10907cbd6c3ca9f461c8923de8666ae048fd07d247be4c45"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/not_used/scvi_tools.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/not_used/scvi_tools.png",
+      "bytes": 665437,
+      "sha256": "c9648b3a534392113f4d927d3d9e3521cadf7206cca6e297b02e0abdb02a8114"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/preprocessing_visualization/ambient_rna.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/preprocessing_visualization/ambient_rna.jpeg",
+      "bytes": 220981,
+      "sha256": "48f5c26284cf1f56f0a2706656fb903899b9afa8e35a4e36d1dacfd58cbed6cc"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/preprocessing_visualization/dimensionality_reduction.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/preprocessing_visualization/dimensionality_reduction.jpeg",
+      "bytes": 141294,
+      "sha256": "c5c3ac3ca10014f0bd2f1a7732b4842e8fe1be94fff3b8424451ba811c1ef8d3"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/preprocessing_visualization/doublet_detection.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/preprocessing_visualization/doublet_detection.jpeg",
+      "bytes": 72100,
+      "sha256": "8fe669fc6b4d32b1dd6d2125f2d6ed08b5c1e7792333764e3ef9a2a3e8cd2d39"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/preprocessing_visualization/feature_selection.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/preprocessing_visualization/feature_selection.jpeg",
+      "bytes": 174422,
+      "sha256": "8681a87b58d70596cbfb7f892ba85f73683b97ddde2efb6c8457e1e995568863"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/preprocessing_visualization/quality_control.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/preprocessing_visualization/quality_control.jpeg",
+      "bytes": 266449,
+      "sha256": "0411b69f13bae9fb3c3684e4de263ca1ea5a435704758efffe8e5118c2ce0695"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/alevinQC_plots.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/alevinQC_plots.png",
+      "bytes": 505366,
+      "sha256": "4e5d808f34291c9ad53154bb4e539042e5a59814237c124122e089f4296fac2d"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/alevinQC_summary.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/alevinQC_summary.png",
+      "bytes": 338484,
+      "sha256": "4be19800a25a257ca1da78cf32b99c683571fa6a06d2cb046c86f7ac13f96988"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/alignment_vs_mapping.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/alignment_vs_mapping.png",
+      "bytes": 277468,
+      "sha256": "db68d3090ca688f14c4aaa4f2045fc2e952ce7052dda739b606854ab6e7ca54c"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/adapter_content.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/adapter_content.jpg",
+      "bytes": 908546,
+      "sha256": "62987ce84a66e4c4e8911ec9fe0036d2269077463e04032ec2db56ca2d8916e7"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/basic_statistics.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/basic_statistics.jpg",
+      "bytes": 1142525,
+      "sha256": "3ae127cdebfd85a9e2a003811c2af236e58e59d790b5cd527ff88b84dd143284"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/overrepresented_sequences.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/overrepresented_sequences.jpg",
+      "bytes": 2707485,
+      "sha256": "70fa2050ab05c419352d00b1d8edb58c3d6bb6e0a6bf8ebd97d197129318a0ec"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/per_base_n_content.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/per_base_n_content.jpg",
+      "bytes": 748045,
+      "sha256": "55c5b08577d4db87b65882d7f859db1ed767f980890091f472646cce223e6b05"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/per_base_sequence_content.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/per_base_sequence_content.jpg",
+      "bytes": 1098674,
+      "sha256": "db335457c8bfd0324c26bf0ee8c3befc9bb8658b8f97d663d115a1720baa9e6f"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/per_read_sequence_quality.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/per_read_sequence_quality.jpg",
+      "bytes": 812180,
+      "sha256": "330a603ab88d7e3f4af97057c3f4af18892830fd07724801a87505a0f4cadd19"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/per_sequence_gc_content.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/per_sequence_gc_content.jpg",
+      "bytes": 1218873,
+      "sha256": "ee1195c02554e9043a62b2bb7d89c1bfc67bb12bddd58e7c40548dec5389089e"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/per_sequence_quality_scores.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/per_sequence_quality_scores.jpg",
+      "bytes": 699904,
+      "sha256": "f006c90c0a0abd2452e77b9da62b3a68027dea954ccbba1b40a155f3604c8ddd"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/per_tile_sequence_quality.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/per_tile_sequence_quality.jpg",
+      "bytes": 227399,
+      "sha256": "f1032743a0f68ff933fa0161ee139dd408efee9ca1423b74c12caeb12e22523f"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/sequence_duplication_levels.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/sequence_duplication_levels.jpg",
+      "bytes": 577119,
+      "sha256": "18e2796ec15b2076b29cb396bc5d4145f94e818a8b9c25fc8482a1b1d16ee5b4"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/sequence_length_distribution.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/sequence_length_distribution.jpg",
+      "bytes": 844329,
+      "sha256": "39de5efd0c51fe90f00b7a0b033fefcb5fb4623b3c9dcf2f1328bda75f160fca"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/fastqc_example/summary.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/fastqc_example/summary.jpg",
+      "bytes": 539573,
+      "sha256": "9b2eda43c5446a568040fe50b468ad8191fce7fd639a8ecfd55cdee933e024c0"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/overview_raw_data_processing.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/overview_raw_data_processing.jpg",
+      "bytes": 520697,
+      "sha256": "aa57b5abbc6b2c44c141109bd712022b1d2be46f73f6e4ccc22a6f4166b94a97"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/raw_data_processing/UMI.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/raw_data_processing/UMI.png",
+      "bytes": 260073,
+      "sha256": "dabe98551468128f09a58d1e6189e37487e13493f08c2537095025caa45abb8b"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/sc_atac/amulet.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/sc_atac/amulet.png",
+      "bytes": 654074,
+      "sha256": "f78fde47ab4c6fc1fe71b7876b29b85a5a379c7910b1faa0e1aa5b6c38900305"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/sc_atac/mechanisms_overview.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/sc_atac/mechanisms_overview.png",
+      "bytes": 1117058,
+      "sha256": "ff1d31ad915ec49e01d1aef3993d9a7b449f01a5ad071fab24a1f5e079586a42"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/sc_atac/methods_overview.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/sc_atac/methods_overview.png",
+      "bytes": 864973,
+      "sha256": "ef11e96928d9cc6cdd602f14a29566751efd6352162ed96689c00300490ee928"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/sc_atac/overview_atac.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/sc_atac/overview_atac.jpeg",
+      "bytes": 2530926,
+      "sha256": "e8f6fa778807f55499130306cb333bf25ae2df6e2246652ed35f12ee1423462b"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/scrna_seq/hooke_cork.jpg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/scrna_seq/hooke_cork.jpg",
+      "bytes": 368821,
+      "sha256": "2047c15a2ab3647e06b91408164083246ebc9a9de8ea510db456a70a9b66b66a"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/scrna_seq/quantifying_gene_expression.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/scrna_seq/quantifying_gene_expression.png",
+      "bytes": 392159,
+      "sha256": "9fc8084d6537fbe7aec67986a842872d691f98f422c09b36b7a7759916d9ac3b"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/spatial/deconvolution.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/spatial/deconvolution.jpeg",
+      "bytes": 637039,
+      "sha256": "8a8da3f42710cb34114bdae0600a0144528730b62b27b74a16496d7332ed954f"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/spatial/domains.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/spatial/domains.jpeg",
+      "bytes": 954040,
+      "sha256": "1bf57d5bac329374406555947edafc9c25e54bea17d3b5217c3df6708e1eca71"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/spatial/imputation.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/spatial/imputation.jpeg",
+      "bytes": 300951,
+      "sha256": "b398153c5eb6e504ec56dfdb78d449a6411e4d9ac2f327a9afce2ef552af8d86"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/spatial/imputation_2.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/spatial/imputation_2.jpeg",
+      "bytes": 540074,
+      "sha256": "24e3583621628f486ca78f52ec6efa02bd2f161728d58d8e82b0e30921898f9d"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/spatial/introduction_1.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/spatial/introduction_1.jpeg",
+      "bytes": 284908,
+      "sha256": "27f932904664de79487a466818a21d08e38ca29853f5caacdfccab47c94a3f32"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/spatial/svg.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/spatial/svg.jpeg",
+      "bytes": 290510,
+      "sha256": "5401b643a523a8dc07958aa27f11ca0d8ef9710e3b5313bf10b5efbc1259e6b8"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/title.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/title.png",
+      "bytes": 1275450,
+      "sha256": "30e8c8c9cc2c70cfd01ffea1f37d031e2898bfd5868e91d50bfe418b537f62c1"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/trajectories/CRISPR-Cas9-based.gif",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/trajectories/CRISPR-Cas9-based.gif",
+      "bytes": 89946,
+      "sha256": "8dca806f4a9592fa9a6a53599a9f8a7135cd504613a6c07fadb9bedb4355b6ea"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/trajectories/fx1_lrg.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/trajectories/fx1_lrg.jpeg",
+      "bytes": 282827,
+      "sha256": "1c81ae798818358924589fafef75599bbe83221b60c4355f9bc163719538a9c1"
+    },
+    {
+      "upstream_path": "jupyter-book/_static/images/trajectories/tumor_tracing.png",
+      "local_path": "materials/markdown/sc_best_practices/static/_static/images/trajectories/tumor_tracing.png",
+      "bytes": 359756,
+      "sha256": "c123e7fd6ff4c1b45e47c40bacec947f6832f165af26a651887b78775bddd145"
+    },
+    {
+      "upstream_path": "jupyter-book/air_repertoire/bcr2_logo_motif.svg",
+      "local_path": "materials/markdown/sc_best_practices/static/air_repertoire/bcr2_logo_motif.svg",
+      "bytes": 39031,
+      "sha256": "bd43e78465e23d5761dab5a9f4484678793cee4191e73da320230c5db5a97bed"
+    },
+    {
+      "upstream_path": "jupyter-book/air_repertoire/bcr_logo_motif.svg",
+      "local_path": "materials/markdown/sc_best_practices/static/air_repertoire/bcr_logo_motif.svg",
+      "bytes": 39031,
+      "sha256": "bd43e78465e23d5761dab5a9f4484678793cee4191e73da320230c5db5a97bed"
+    },
+    {
+      "upstream_path": "jupyter-book/cellular_structure/figures/integration_overview_figure.jpeg",
+      "local_path": "materials/markdown/sc_best_practices/static/cellular_structure/figures/integration_overview_figure.jpeg",
+      "bytes": 616929,
+      "sha256": "21eefcde8cbe4013140a66634c9de1e13d70b521bd0530bb9d2cb04695faac47"
+    },
+    {
+      "upstream_path": "jupyter-book/logo.png",
+      "local_path": "materials/markdown/sc_best_practices/static/logo.png",
+      "bytes": 13058,
+      "sha256": "0c3398098aab8fde8e6d5bab99dac4c3bc5233adf9b4aca0f31e7aa7accdf164"
+    },
+    {
+      "upstream_path": "jupyter-book/mechanisms/network_tutorial_rna_atac.png",
+      "local_path": "materials/markdown/sc_best_practices/static/mechanisms/network_tutorial_rna_atac.png",
+      "bytes": 232032,
+      "sha256": "a0ce17730e11454297a8c5ee53c54c26ed791f819b4415997d0ec57e54d34bd3"
+    }
+  ]
+}

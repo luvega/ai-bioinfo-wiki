@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 46078 1656 
+## metadata(0):
+## assays(2): counts logcounts
+## rownames(46078): ENSMUSG00000000001 ENSMUSG00000000003 ...
+##   ENSMUSG00000107391 ENSMUSG00000107392
+## rowData names(3): GENEID SYMBOL SEQNAME
+## colnames(1656): HSPC_025 HSPC_031 ... Prog_852 Prog_810
+## colData names(10): gate broad ... metrics sizeFactor
+## reducedDimNames(1): diffusion
+## mainExpName: endogenous
+## altExpNames(2): ERCC FACS

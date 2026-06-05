@@ -1,0 +1,6 @@
+AnnData object with n_obs × n_vars = 24673 × 15706
+    obs: 'nCount_RNA', 'nFeature_RNA', 'tsne1', 'tsne2', 'condition', 'cluster', 'cell_type', 'replicate', 'nCount_SCT', 'nFeature_SCT', 'integrated_snn_res.0.4', 'seurat_clusters'
+    var: 'name', 'highly_variable', 'highly_variable_rank', 'means', 'variances', 'variances_norm'
+    uns: 'log1p', 'hvg'
+    obsm: 'X_pca', 'X_umap'
+    layers: 'counts'

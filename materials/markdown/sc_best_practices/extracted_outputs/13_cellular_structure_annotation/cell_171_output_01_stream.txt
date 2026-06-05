@@ -1,0 +1,1 @@
+... storing 'reference_or_query' as categorical

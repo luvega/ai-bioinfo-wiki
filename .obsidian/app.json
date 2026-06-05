@@ -16,7 +16,6 @@
     "trashOption":  "system",
     "userIgnoreFilters":  [
                               "materials/raw/pdf_originals/",
-                              "materials/markdown/pdf_library_legacy/",
                               "materials/markdown/pdf_library_mineru/",
                               "materials/markdown/aidd_bioinformatics/",
                               "materials/raw/aidd_bioinformatics/",

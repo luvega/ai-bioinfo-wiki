@@ -1,0 +1,4 @@
+'weathersit']).fit_transform(Bike)
+"M2_lm = sm.OLS(Y, X2).fit()"
+S2 = summarize(M2_lm)
+S2

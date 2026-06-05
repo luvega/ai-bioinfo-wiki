@@ -1,0 +1,11 @@
+--2022-06-30 10:28:22--  https://zenodo.org/record/5847462/files/KPTracer-Data.tar.gz?download=1
+Resolving zenodo.org (zenodo.org)... 137.138.76.77
+Connecting to zenodo.org (zenodo.org)|137.138.76.77|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1304975216 (1.2G) [application/octet-stream]
+Saving to: ‘KPTracer-Data.tar.gz?download=1’
+
+KPTracer-Data.tar.g 100%[===================>]   1.21G  1.49MB/s    in 7m 3s   
+
+2022-06-30 10:35:27 (2.94 MB/s) - ‘KPTracer-Data.tar.gz?download=1’ saved [1304975216/1304975216]
+

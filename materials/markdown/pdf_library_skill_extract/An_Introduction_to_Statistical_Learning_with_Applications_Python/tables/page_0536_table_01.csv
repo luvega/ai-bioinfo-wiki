@@ -1,0 +1,17 @@
+Linkage,Description
+Complete,"Maximal intercluster dissimilarity. Compute all pairwise
+dissimilaritiesbetweentheobservationsinclusterAandthe
+observationsinclusterB,andrecordthelargest ofthesedis-
+similarities."
+Single,"Minimalinterclusterdissimilarity.Computeallpairwisedis-
+similarities between the observations in cluster A and the
+observations in cluster B, and record the smallest of these
+dissimilarities.Singlelinkagecanresultinextended,trailing
+clustersinwhichsingleobservationsarefusedone-at-a-time."
+Average,"Mean intercluster dissimilarity. Compute all pairwise dis-
+similarities between the observations in cluster A and the
+observations in cluster B, and record the average of these
+dissimilarities."
+Centroid,"Dissimilarity between the centroid for cluster A (a mean
+vector of length p) and the centroid for cluster B. Centroid
+linkage can result in undesirable inversions."

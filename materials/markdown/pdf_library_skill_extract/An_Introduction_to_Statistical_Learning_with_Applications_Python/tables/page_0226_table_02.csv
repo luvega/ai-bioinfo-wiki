@@ -1,0 +1,11 @@
+cv_error = np.zeros(5)
+H = np.array(Auto['horsepower'])
+M = sklearn_sm(sm.OLS)
+"for i, d in enumerate(range(1,6)):"
+"X = np.power.outer(H, np.arange(d+1))"
+"M_CV = cross_validate(M,"
+"X,"
+"Y,"
+cv=Auto.shape[0])
+cv_error[i] = np.mean(M_CV['test_score'])
+cv_error

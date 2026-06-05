@@ -1,0 +1,5 @@
+total = 0
+"for value in [2,3,19]:"
+"for weight in [3, 2, 1]:"
+total += value * weight
+print('Total is: {0}'.format(total))

@@ -1,0 +1,5 @@
+An object of class Seurat 
+150 features across 1000 samples within 2 assays 
+Active assay: A (100 features, 0 variable features)
+ 2 layers present: counts, data
+ 1 other assay present: B

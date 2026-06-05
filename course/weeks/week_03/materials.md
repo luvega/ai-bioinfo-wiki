@@ -32,6 +32,21 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 - `materials/markdown/pdf_library_mineru/R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro/book.course.md`：AI 辅助编程主素材，重点回查“Introducing AI-assisted programming with Copilot”“Getting started with Copilot”“Reading Python code”“Testing and prompt engineering”。
 - `materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210/book.course.md`：补充 GenAI 数据分析工作流、提示词迭代和代码调试，不作为 Python 语法主线。
 
+## OWF Git / Shell 参考候选
+
+- [OWF Learn Git](../../../materials/markdown/openwaterfoundation_learning/git/README.md)：用于解释为什么 AI 生成代码后仍要保存版本、查看差异、提交小步变更。
+- [OWF Learn Windows Shell](../../../materials/markdown/openwaterfoundation_learning/windows_shell/README.md)：用于 Windows 课堂环境中的命令提示符、批处理和路径问题提示。
+- [OWF Learn Linux Shell](../../../materials/markdown/openwaterfoundation_learning/linux_shell/README.md)：用于说明 Bash 命令、脚本和重定向概念；本周不要求学生掌握完整 Bash。
+- 使用边界：这些材料只补足 AI 辅助编程前的 Git/shell 操作背景，不替代本周 Python 小数据和人工核验主线。
+
+## 素材分层使用原则（2026-06-04）
+
+- 课堂主素材：Week 03 试点讲稿、PPT 大纲和血糖列表小案例。
+- 支撑素材：AIDD Python/Biopython 章节、AI 编程参考书、嵩天 Python PPT 已转换 Markdown。
+- 拓展素材：Biopython 只作文件和序列数据类比，不提前讲复杂生信算法。
+- 教师备课素材：OWF Git/Shell 可用于解释为什么 AI 生成代码后要看 diff、保存小步版本。
+- 教材 / PPT 边界：可进 PPT：`glucose` 小列表、手算核验表、AI 解释/调试边界。
+
 ## 可进 PPT 的元素
 
 - 概念图：`问题 -> 小数据 -> Python 表达 -> AI 解释/调试 -> 人工核验`。

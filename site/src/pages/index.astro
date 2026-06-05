@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import WeekCard from '../components/WeekCard.astro';
 import { phases, weeks } from '../data/weeks';
+import { withBase } from '../lib/paths';
 
 const featuredWeeks = [weeks[2], weeks[13], weeks[14], weeks[15]];
 const pathway = [
@@ -22,9 +23,9 @@ const pathway = [
         AI 前置的 36 课时课程门户，面向药学本科生，围绕医药问题、数据结构、统计方法、可视化表达和 AI 协作核验组织学习。
       </p>
       <div class="hero-actions">
-        <a class="button secondary" href="/syllabus">查看课程大纲</a>
-        <a class="button ghost" href="/weeks">进入 18 周地图</a>
-        <a class="button ghost" href="/ai-collaboration">AI 协作规范</a>
+        <a class="button secondary" href={withBase('/syllabus')}>查看课程大纲</a>
+        <a class="button ghost" href={withBase('/weeks')}>进入 18 周地图</a>
+        <a class="button ghost" href={withBase('/ai-collaboration')}>AI 协作规范</a>
       </div>
     </div>
   </section>
@@ -34,7 +35,7 @@ const pathway = [
       <div class="section-title">
         <p class="section-label">Course Spine</p>
         <h2>一条从问题到证据表达的学习链条</h2>
-        <p>课程主线不是软件清单，而是可复现的数据分析工作链。每个工具和案例都服务于这条链条。</p>
+        <p>课程主线围绕可复现的数据分析工作链展开。每个工具和案例都服务于问题、数据、方法、图表和证据边界。</p>
       </div>
       <div class="pathway">
         {pathway.map(([number, title, text]) => (
@@ -74,18 +75,19 @@ const pathway = [
       <div>
         <div class="section-title">
           <p class="section-label">Coursebook</p>
-          <h2>课程教材不受课堂时间限制</h2>
+          <h2>12 章教材提供系统复习入口</h2>
           <p>
-            18 周页面服务课堂节奏，Coursebook 则吸收本项目所有可用参考资源：AIDD 生物信息学、ISLP/ISLR、AI 辅助 Python、生成式 AI 数据分析、知识页和编程案例。
+            Coursebook 按 12 章组织教材正文，吸收 AIDD 生物信息学、ISLP/ISLR、AI 辅助 Python、生成式 AI 数据分析、知识页和编程案例。
+            18 周页面继续服务课堂节奏和实践任务。
           </p>
         </div>
         <div class="button-row">
-          <a class="button" href="/coursebook">查看 Coursebook 规划</a>
-          <a class="button secondary" href="/resources">浏览资源索引</a>
+          <a class="button" href={withBase('/coursebook')}>查看 Coursebook</a>
+          <a class="button secondary" href={withBase('/resources')}>浏览资源索引</a>
         </div>
       </div>
       <figure class="image-panel">
-        <img src="/assets/sysu/campus-mountain.jpg" alt="中山大学校园照片" />
+        <img src={withBase('/assets/sysu/campus-mountain.jpg')} alt="中山大学校园照片" />
       </figure>
     </div>
   </section>

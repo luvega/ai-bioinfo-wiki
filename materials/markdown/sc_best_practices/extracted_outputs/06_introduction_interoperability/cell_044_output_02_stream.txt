@@ -1,0 +1,2 @@
+R[write to console]:   [[ suppressing 10 column names ‘Cell_0’, ‘Cell_1’, ‘Cell_2’ ... ]]
+

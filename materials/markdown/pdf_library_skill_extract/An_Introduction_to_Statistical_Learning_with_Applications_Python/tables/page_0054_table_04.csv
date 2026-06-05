@@ -1,0 +1,7 @@
+x before we modify x_reshape:
+[1 2 3 4 5 6]
+x_reshape before we modify x_reshape:
+[[1 2 3]
+[4 5 6]]
+x_reshape after we modify its top left element:
+[[5 2 3]

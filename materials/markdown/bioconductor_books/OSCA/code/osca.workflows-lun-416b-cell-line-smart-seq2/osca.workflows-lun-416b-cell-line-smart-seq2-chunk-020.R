@@ -1,0 +1,13 @@
+table
+(
+Cluster=
+colLabels
+(sce
+.416
+b), 
+Oncogene=
+sce
+.416
+b
+$
+phenotype)

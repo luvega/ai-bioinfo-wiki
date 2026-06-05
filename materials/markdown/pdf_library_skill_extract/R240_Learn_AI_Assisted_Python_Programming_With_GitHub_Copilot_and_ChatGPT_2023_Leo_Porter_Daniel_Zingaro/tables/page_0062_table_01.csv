@@ -1,0 +1,4 @@
+Docstrings explain function behavior
+""
+"Docstrings are how Python functions are described by programmers. They follow the
+function header and begin and end with three quotation marks."

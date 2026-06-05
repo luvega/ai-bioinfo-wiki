@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 33694 8680 
+## metadata(1): Samples
+## assays(1): counts
+## rownames(33694): ENSG00000243485 ENSG00000237613 ... ENSG00000277475
+##   ENSG00000268674
+## rowData names(2): ID Symbol
+## colnames: NULL
+## colData names(2): Sample Barcode
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(0):

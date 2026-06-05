@@ -1,0 +1,3 @@
+Running FigR using 2 cores ..
+
+

@@ -1,0 +1,6 @@
+[94m•[0m please hit CTRL + s to save the notebook in your editor .... still waiting .....
+.............. [92m✓[0m
+[93m![0m cells [(0, 3)] were not run consecutively
+[92m→[0m finished Run('2jUW2z0ijgULitLv') after 1m at 2026-04-10 17:30:42 UTC
+[92m→[0m go to: https://lamin.ai/theislab/sc-best-practices/transform/liGMVGre4G5H0004
+[92m→[0m to update your notebook from the CLI, run: lamin save /groups/nils/members/javier/single-cell-best-practices/jupyter-book/surface_protein/dimensionality_reduction.ipynb

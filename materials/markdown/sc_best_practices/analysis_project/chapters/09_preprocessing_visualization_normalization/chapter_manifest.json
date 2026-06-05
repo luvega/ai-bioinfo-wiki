@@ -1,0 +1,20 @@
+{
+  "order": 9,
+  "part": "Preprocessing and visualization",
+  "toc_file": "preprocessing_visualization/normalization",
+  "title": "Normalization",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/preprocessing_visualization/normalization.ipynb",
+  "environment": "preprocessing",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 16,
+  "dataset_reference_count": 2,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/09_preprocessing_visualization_normalization",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/09_preprocessing_visualization_normalization/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/09_preprocessing_visualization_normalization/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/09_preprocessing_visualization_normalization/code_index.md"
+  }
+}

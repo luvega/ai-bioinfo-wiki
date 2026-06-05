@@ -1,0 +1,8 @@
+coef std err ...
+intercept 60.494 9.460 ...
+"bs(age, internal_knots=[25, 40, 60])[0] 3.980 12.538 ..."
+"bs(age, internal_knots=[25, 40, 60])[1] 44.631 9.626 ..."
+"bs(age, internal_knots=[25, 40, 60])[2] 62.839 10.755 ..."
+"bs(age, internal_knots=[25, 40, 60])[3] 55.991 10.706 ..."
+"bs(age, internal_knots=[25, 40, 60])[4] 50.688 14.402 ..."
+"bs(age, internal_knots=[25, 40, 60])[5] 16.606 19.126 ..."

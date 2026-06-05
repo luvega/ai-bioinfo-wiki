@@ -1,0 +1,2 @@
+The rpy2.ipython extension is already loaded. To reload it, use:
+  %reload_ext rpy2.ipython

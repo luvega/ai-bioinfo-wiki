@@ -1,0 +1,27 @@
+## DataFrame with 96 rows and 3 columns
+##                                                    genotype
+##                                                 <character>
+## SLX-9555.N701_S502.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+## SLX-9555.N701_S503.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+## SLX-9555.N701_S504.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+## SLX-9555.N701_S505.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+## SLX-9555.N701_S506.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+## ...                                                     ...
+## SLX-9555.N712_S505.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+## SLX-9555.N712_S506.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+## SLX-9555.N712_S507.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+## SLX-9555.N712_S508.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+## SLX-9555.N712_S517.C89V9ANXX.s_1.r_1 Doxycycline-inducibl..
+##                                                   phenotype    spike_in
+##                                                 <character> <character>
+## SLX-9555.N701_S502.C89V9ANXX.s_1.r_1    wild type phenotype   ERCC+SIRV
+## SLX-9555.N701_S503.C89V9ANXX.s_1.r_1    wild type phenotype   ERCC+SIRV
+## SLX-9555.N701_S504.C89V9ANXX.s_1.r_1    wild type phenotype   ERCC+SIRV
+## SLX-9555.N701_S505.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..   ERCC+SIRV
+## SLX-9555.N701_S506.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..   ERCC+SIRV
+## ...                                                     ...         ...
+## SLX-9555.N712_S505.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..    Premixed
+## SLX-9555.N712_S506.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..    Premixed
+## SLX-9555.N712_S507.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..    Premixed
+## SLX-9555.N712_S508.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..    Premixed
+## SLX-9555.N712_S517.C89V9ANXX.s_1.r_1    wild type phenotype    Premixed

@@ -1,0 +1,24 @@
+##                       
+## new.labels             Astrocyte Endothelial Cell GABA-ergic Neuron
+##   astrocytes_ependymal        43                2                 0
+##   endothelial-mural            0               27                 0
+##   interneurons                 0                0               759
+##   microglia                    0                0                 0
+##   oligodendrocytes             0                0                 1
+##   pyramidal SS                 0                0                 1
+##                       
+## new.labels             Glutamatergic Neuron Microglia Oligodendrocyte
+##   astrocytes_ependymal                    0         0               0
+##   endothelial-mural                       0         0               0
+##   interneurons                            2         0               0
+##   microglia                               0        22               0
+##   oligodendrocytes                        0         0              38
+##   pyramidal SS                          810         0               0
+##                       
+## new.labels             Oligodendrocyte Precursor Cell Unclassified
+##   astrocytes_ependymal                             20            4
+##   endothelial-mural                                 0            2
+##   interneurons                                      0           15
+##   microglia                                         0            1
+##   oligodendrocytes                                  2            0
+##   pyramidal SS                                      0           60

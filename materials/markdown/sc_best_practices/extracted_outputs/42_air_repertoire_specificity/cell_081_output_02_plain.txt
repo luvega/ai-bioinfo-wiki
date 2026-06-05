@@ -1,0 +1,9 @@
+CMV            840
+ambiguous      182
+HIV-1           30
+EBV             20
+InfluenzaA      18
+SARS-CoV-2       6
+HomoSapiens      4
+HCV              1
+Name: antigen.species_alignment, dtype: int64

@@ -1,0 +1,2 @@
+Auto_re = Auto.set_index('name')
+Auto_re

@@ -1,0 +1,2 @@
+Hitters = load_data('Hitters').dropna()
+n = Hitters.shape[0]

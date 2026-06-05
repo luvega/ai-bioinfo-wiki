@@ -1,0 +1,3 @@
+##  Detected a large SingleCellExperiment as the reference dataset, consider
+##  setting 'aggr.ref = TRUE' for speed in trainSingleR(). If you know better, this
+##  hint can be disabled with 'hint.sce=FALSE'.

@@ -1,0 +1,11 @@
+"outer_valid = skm.ShuffleSplit(n_splits=1,"
+"test_size=0.25,"
+random_state=1)
+"inner_cv = skm.KFold(n_splits=5,"
+"shuffle=True,"
+random_state=2)
+"ridgeCV = skl.ElasticNetCV(alphas=lambdas,"
+"l1_ratio=0,"
+cv=inner_cv)
+"pipeCV = Pipeline(steps=[('scaler', scaler),"
+"('ridge', ridgeCV)]);"

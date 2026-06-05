@@ -1,0 +1,9 @@
+tuned_ridge = pipeCV.named_steps['ridge']
+"ridgeCV_fig, ax = subplots(figsize=(8,8))"
+"ax.errorbar(-np.log(lambdas),"
+"tuned_ridge.mse_path_.mean(1),"
+yerr=tuned_ridge.mse_path_.std(1) / np.sqrt(K))
+"ax.axvline(-np.log(tuned_ridge.alpha_), c='k', ls='--')"
+"ax.set_ylim([50000,250000])"
+"ax.set_xlabel('$-\log(\lambda)$', fontsize=20)"
+"ax.set_ylabel('Cross-validated MSE', fontsize=20);"

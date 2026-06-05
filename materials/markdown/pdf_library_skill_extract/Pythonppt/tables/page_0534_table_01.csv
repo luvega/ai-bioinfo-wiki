@@ -1,0 +1,7 @@
+函数,描述
+"randint(a, b)","生成一个[a, b]之间的整数
+>>>random.randint(10, 100)
+64"
+"randrange(m, n[, k])","生成一个[m, n)之间以k为步长的随机整数
+>>>random.randrange(10, 100, 10)
+80"

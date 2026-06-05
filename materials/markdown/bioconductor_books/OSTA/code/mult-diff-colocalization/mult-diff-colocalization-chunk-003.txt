@@ -1,0 +1,13 @@
+##  class: SpatialExperiment 
+##  dim: 38 881544 
+##  metadata(0):
+##  assays(0):
+##  rownames(38): H3 SMA ... DNA1 DNA2
+##  rowData names(6): channel metal ... antibody_clone full_name
+##  colnames(881544): 138_1 138_2 ... 566_1171 566_1172
+##  colData names(29): cell_id image_name ... patient_BMI sample_id
+##  reducedDimNames(0):
+##  mainExpName: Damond_2019_Pancreas_FULL_v1
+##  altExpNames(0):
+##  spatialCoords names(2) : x y
+##  imgData names(0):

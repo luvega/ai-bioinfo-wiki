@@ -1,0 +1,4 @@
+np.all(
+"[lda.classes_[i] for i in np.argmax(lda_prob, 1)] =="
+lda_pred
+)

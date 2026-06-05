@@ -1,0 +1,7 @@
+"grid = skm.GridSearchCV(pipe,"
+"param_grid,"
+"cv=kfold,"
+scoring='neg_mean_squared_error')
+"grid.fit(X, Y)"
+grid.best_params_['ridge__alpha']
+grid.best_estimator_

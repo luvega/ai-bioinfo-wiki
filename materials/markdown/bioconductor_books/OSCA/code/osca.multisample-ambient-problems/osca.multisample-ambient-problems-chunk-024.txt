@@ -1,0 +1,2 @@
+##    Mode   FALSE    TRUE     NAs 
+## logical    1388   15393   12672

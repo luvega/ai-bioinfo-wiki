@@ -1,0 +1,3 @@
+"fig, ax = subplots(figsize=(8,8))"
+"ax.scatter(X_age,"
+"y,"

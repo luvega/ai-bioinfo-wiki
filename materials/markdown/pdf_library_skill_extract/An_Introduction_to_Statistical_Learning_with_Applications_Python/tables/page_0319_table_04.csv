@@ -1,0 +1,12 @@
+"def plot_wage_fit(age_df,"
+"basis,"
+title):
+""
+X = basis.transform(Wage)
+Xnew = basis.transform(age_df)
+"M = sm.OLS(y, X).fit()"
+preds = M.get_prediction(Xnew)
+bands = preds.conf_int(alpha=0.05)
+"fig, ax = subplots(figsize=(8,8))"
+"ax.scatter(age,"
+"y,"

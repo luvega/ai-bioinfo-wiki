@@ -1,0 +1,9 @@
+Debugging is really an art more than a science
+""
+"The iterative process when debugging is necessary because we’re genuinely confused
+about what the code is doing and why it isn’t matching our expectations. It’s okay to add
+a bunch of print statements that just tell you what you thought was happening in the first
+place because each of these print statements tells you where not to look for the bug and
+is an effective process of elimination. Figuring out where to look for bugs takes time and
+practice, so don’t worry if you find yourself spending a fair bit of time on it when you first
+start."

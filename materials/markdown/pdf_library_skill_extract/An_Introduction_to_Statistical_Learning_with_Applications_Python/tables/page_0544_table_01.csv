@@ -1,0 +1,4 @@
+"ax.arrow(0, 0, pcaUS.components_[i,k], pcaUS.components_[j,k])"
+"ax.text(pcaUS.components_[i,k],"
+"pcaUS.components_[j,k],"
+USArrests.columns[k])

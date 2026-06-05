@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeader from '../components/PageHeader.astro';
 import { phases, weeks } from '../data/weeks';
+import { withBase } from '../lib/paths';
 ---
 
 <BaseLayout title="课程大纲" description="医药数据处理与可视化 36 课时 AI 前置课程大纲">
@@ -67,7 +68,7 @@ import { phases, weeks } from '../data/weeks';
         <tbody>
           {weeks.map((week) => (
             <tr>
-              <td><a href={`/weeks/${week.slug}`}>Week {String(week.week).padStart(2, '0')}</a></td>
+              <td><a href={withBase(`/weeks/${week.slug}`)}>Week {String(week.week).padStart(2, '0')}</a></td>
               <td>{week.title}</td>
               <td>{week.phase}</td>
               <td>{week.aiBoundary}</td>

@@ -1,0 +1,6 @@
+操作函数或方法,描述
+S.copy(),返回集合S的一个副本
+len(S),返回集合S的元素个数
+x in S,判断S中元素x，x在集合S中，返回True，否则返回False
+x not in S,判断S中元素x，x不在集合S中，返回False，否则返回True
+set(x),将其他类型变量x转变为集合类型

@@ -33,6 +33,30 @@ export const resources: Resource[] = [
     status: '扩展素材'
   },
   {
+    title: 'Single-cell Best Practices',
+    type: '现代组学素材',
+    source: 'materials/markdown/sc_best_practices/scbp.course_index.md',
+    weeks: 'Week 13-16',
+    use: '支撑降维、聚类、QC、annotation、GSEA、trajectory、spatial 和 multimodal 图形解读。',
+    status: '扩展素材'
+  },
+  {
+    title: 'OSCA / OSTA Bioconductor Books',
+    type: '现代组学素材',
+    source: 'materials/markdown/bioconductor_books/workflow_case_catalog.md',
+    weeks: 'Week 14-17',
+    use: '作为 SingleCellExperiment、单细胞 workflow、空间转录组流程和教师备课案例库。',
+    status: '扩展素材'
+  },
+  {
+    title: 'OWF Git / Shell Tutorials',
+    type: '可复现工作流素材',
+    source: 'materials/markdown/openwaterfoundation_learning/',
+    weeks: 'Week 02, 03, 17',
+    use: '补充 Git、小步提交、命令行、日志、脚本和项目复现记录，不替代生信事实来源。',
+    status: '扩展素材'
+  },
+  {
     title: 'An Introduction to Statistical Learning with Applications in Python',
     type: '参考书',
     source: 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python/',

@@ -1,0 +1,71 @@
+        S11_AAACCTGAGATTACCC-1  S11_AAACCTGGTAATTGGA-1  \
+KLHL17                0.000000                     0.0   
+HES4                  0.000000                     0.0   
+ISG15                 1.845827                     0.0   
+AGRN                  0.000000                     0.0   
+TTLL10                0.000000                     0.0   
+
+        S11_AAACCTGGTAGCACGA-1  S11_AAACCTGGTCTCAACA-1  \
+KLHL17                 0.00000                0.000000   
+HES4                   0.00000                0.000000   
+ISG15                  1.54457                2.441434   
+AGRN                   0.00000                0.000000   
+TTLL10                 0.00000                0.000000   
+
+        S11_AAACCTGTCGCCGTGA-1  S11_AAACCTGTCTTATCTG-1  \
+KLHL17                0.000000                  0.0000   
+HES4                  0.000000                  0.0000   
+ISG15                 2.430966                  0.9284   
+AGRN                  0.000000                  0.0000   
+TTLL10                0.000000                  0.0000   
+
+        S11_AAACGGGCAAGAAAGG-1  S11_AAACGGGGTAGCGATG-1  \
+KLHL17                     0.0                     0.0   
+HES4                       0.0                     0.0   
+ISG15                      0.0                     0.0   
+AGRN                       0.0                     0.0   
+TTLL10                     0.0                     0.0   
+
+        S11_AAACGGGGTCGGCACT-1  S11_AAACGGGGTTACGGAG-1  ...  \
+KLHL17                 0.00000                0.000000  ...   
+HES4                   0.00000                0.000000  ...   
+ISG15                  1.64661                1.565189  ...   
+AGRN                   0.00000                0.000000  ...   
+TTLL10                 0.00000                0.000000  ...   
+
+        S12_TTTGGTTGTCAGAGGT-1  S12_TTTGGTTTCAAGAAGT-1  \
+KLHL17                0.000000                     0.0   
+HES4                  0.000000                     0.0   
+ISG15                 1.210719                     0.0   
+AGRN                  0.000000                     0.0   
+TTLL10                0.000000                     0.0   
+
+        S12_TTTGGTTTCTACTATC-1  S12_TTTGGTTTCTCGCTTG-1  \
+KLHL17                0.000000                0.000000   
+HES4                  0.000000                0.000000   
+ISG15                 1.581859                1.511785   
+AGRN                  0.000000                0.000000   
+TTLL10                0.000000                0.000000   
+
+        S12_TTTGTCACACGGTAGA-1  S12_TTTGTCAGTAGAAAGG-1  \
+KLHL17                1.662003                0.000000   
+HES4                  0.000000                0.000000   
+ISG15                 0.000000                2.015501   
+AGRN                  0.000000                0.000000   
+TTLL10                0.000000                0.000000   
+
+        S12_TTTGTCAGTCCAACTA-1  S12_TTTGTCAGTGAGTGAC-1  \
+KLHL17                     0.0                0.000000   
+HES4                       0.0                0.000000   
+ISG15                      0.0                2.088418   
+AGRN                       0.0                0.000000   
+TTLL10                     0.0                0.000000   
+
+        S12_TTTGTCATCCACTCCA-1  S12_TTTGTCATCGCATGAT-1  
+KLHL17                0.000000                     0.0  
+HES4                  0.000000                     0.0  
+ISG15                 1.611682                     0.0  
+AGRN                  0.000000                     0.0  
+TTLL10                0.000000                     0.0  
+
+[5 rows x 5281 columns]

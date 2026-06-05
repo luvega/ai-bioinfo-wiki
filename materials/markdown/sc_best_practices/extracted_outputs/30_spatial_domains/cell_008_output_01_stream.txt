@@ -1,0 +1,10 @@
+computing neighbors
+    using 'X_pca' with n_pcs = 50
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:08)
+Creating graph using `grid` coordinates and `None` transform and `1` libraries.
+Adding `adata.obsp['spatial_connectivities']`
+       `adata.obsp['spatial_distances']`
+       `adata.uns['spatial_neighbors']`
+Finish (0:00:00)

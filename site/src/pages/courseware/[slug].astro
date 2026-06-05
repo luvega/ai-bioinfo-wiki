@@ -1,0 +1,133 @@
+---
+import { existsSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { coursewareWeeks, getCoursebookChapterByWeek } from '../../data/coursebook';
+import { getWeekLabel } from '../../data/weeks';
+import { withBase } from '../../lib/paths';
+import { renderSimpleMarkdown } from '../../lib/simpleMarkdown';
+import { parseStoryboardRows, storyboardReviewMetrics } from '../../lib/storyboard';
+
+export function getStaticPaths() {
+  return coursewareWeeks.map((week) => ({
+    params: { slug: week.slug },
+    props: { week }
+  }));
+}
+
+const { week } = Astro.props;
+const previousWeek = coursewareWeeks.find((item) => item.week === week.week - 1);
+const nextWeek = coursewareWeeks.find((item) => item.week === week.week + 1);
+const textbookChapter = getCoursebookChapterByWeek(week.week);
+const repoRoot = fileURLToPath(new URL('../../../../', import.meta.url));
+const teachingPlanPath = resolve(repoRoot, week.teachingPlanSource);
+const teachingPlanMarkdown = existsSync(teachingPlanPath)
+  ? readFileSync(teachingPlanPath, 'utf-8')
+  : `# ${week.title}\n\n本周 teaching_plan.md 尚未生成。`;
+const teachingPlanHtml = renderSimpleMarkdown(teachingPlanMarkdown);
+const storyboardPath = resolve(repoRoot, week.storyboardSource);
+const storyboardMarkdown = existsSync(storyboardPath) ? readFileSync(storyboardPath, 'utf-8') : '';
+const storyboardRows = parseStoryboardRows(storyboardMarkdown);
+const storyboardMetrics = storyboardReviewMetrics(storyboardRows);
+---
+
+<BaseLayout title={`${getWeekLabel(week.week)} Courseware`} description={week.summary}>
+  <section class="week-hero sample-hero">
+    <div class="section-inner">
+      <p class="section-label">Courseware · {getWeekLabel(week.week)} · {week.phase}</p>
+      <h1>{week.title}</h1>
+      <p>{week.summary}</p>
+      <ul class="tag-list">
+        {week.badges?.map((badge) => <li>{badge}</li>)}
+        <li>teaching_plan_ready</li>
+        <li>{week.pptStatus}</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner split">
+      <article class="info-panel">
+        <h2>教学计划源稿</h2>
+        <p><strong>教学计划：</strong><code>{week.teachingPlanSource}</code></p>
+        <p><strong>Storyboard：</strong><code>{week.storyboardSource}</code></p>
+        <p><strong>教材章节：</strong><code>{textbookChapter?.chapterSource}</code></p>
+        <p><strong>Coursebook 章节：</strong>{textbookChapter ? `第 ${textbookChapter.chapter} 章 ${textbookChapter.title}` : '未映射'}</p>
+        <p><strong>审查状态：</strong>{week.reviewStatus}</p>
+        <p><strong>PPT 状态：</strong>{week.pptStatus}</p>
+      </article>
+      <article class="info-panel">
+        <h2>审核指标</h2>
+        <ul class="content-list">
+          <li>Storyboard 页数：{storyboardMetrics.rowCount}/40</li>
+          <li>Student action：{storyboardMetrics.completeStudentActions}/40</li>
+          <li>Timing 合计：{storyboardMetrics.totalMinutes} min</li>
+          <li>Action title 重复：{storyboardMetrics.duplicateActionTitles}</li>
+          <li>教师讲解最大重复：{storyboardMetrics.maxTeacherRepeat}</li>
+          <li>泛化 evidence note：{storyboardMetrics.genericEvidenceRows}</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner">
+      <article class="info-panel textbook-body">
+        <h2>Teaching Plan</h2>
+        <div class="markdown-body" set:html={teachingPlanHtml} />
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="section-label">Storyboard Review</p>
+        <h2>40 页主干 storyboard 审核表</h2>
+        <p>本表用于人工去模板化和后续 PPT 裁剪，不表示 PPTX 或视觉 QA 完成。</p>
+      </div>
+      <div class="chapter-table-wrap">
+        <table class="data-table chapter-table review-table">
+          <thead>
+            <tr>
+              <th>页</th>
+              <th>模块</th>
+              <th>Action title</th>
+              <th>Student action</th>
+              <th>Timing</th>
+              <th>证据来源</th>
+              <th>风险边界</th>
+            </tr>
+          </thead>
+          <tbody>
+            {storyboardRows.map((row) => (
+              <tr>
+                <td>{row.slide}</td>
+                <td>{row.module}</td>
+                <td><strong>{row.actionTitle}</strong></td>
+                <td>{row.studentAction}</td>
+                <td>{row.timing}</td>
+                <td><code>{row.evidenceSourceNote}</code></td>
+                <td>{row.riskBoundaryNote}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="section-inner">
+      <nav class="next-prev" aria-label="Courseware 周次导航">
+        {previousWeek ? <a href={withBase(previousWeek.page)}>← {getWeekLabel(previousWeek.week)} {previousWeek.title}</a> : <a href={withBase('/courseware')}>← 返回 Courseware 总览</a>}
+        {nextWeek ? <a href={withBase(nextWeek.page)}>{getWeekLabel(nextWeek.week)} {nextWeek.title} →</a> : <a href={withBase('/courseware')}>返回 Courseware 总览 →</a>}
+      </nav>
+      <nav class="next-prev compact-nav" aria-label="教材章节导航">
+        <a href={withBase(textbookChapter?.page ?? '/coursebook')}>打开对应教材章节</a>
+        <a href={withBase('/coursebook')}>返回 Coursebook 目录</a>
+      </nav>
+    </div>
+  </section>
+</BaseLayout>

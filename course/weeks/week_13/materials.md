@@ -3,7 +3,7 @@ type: course-week
 week: 13
 title: PCA、聚类与热图
 hours: 2
-status: draft
+status: pilot_ready
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 13 周：PCA、聚类与热图 · 素材映射
@@ -15,15 +15,50 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## AIDD 候选素材
 
-- 待从 materials/raw/aidd_bioinformatics/ 和 materials/markdown/aidd_bioinformatics/ 抽取。
+- 从 [AIDD 课程索引](../../../materials/markdown/aidd_bioinformatics/aidd.course_index.md) 和相关 `chapter.course.md` 选取；字幕原文只作术语核验，不直接进入课堂。
 
 ## PDF / 外部 PPT 候选素材
 
-- 待从 materials/markdown/pdf_library_legacy/、materials/markdown/pdf_library_mineru/ 和 materials/raw/external_ppt/ 抽取。
+- 从 `materials/markdown/pdf_library_mineru/` 和 `materials/markdown/pdf_library_skill_extract/` 选取已转换 Markdown；原始 PDF/PPT 不直接进入课程引用。
+
+## Single-cell Best Practices 候选素材
+
+- [SCBP 课程索引](../../../materials/markdown/sc_best_practices/scbp.course_index.md)：用于从完整 Jupyter Book 中定位 Week 13-16 可用章节。
+- [Dimensionality reduction](../../../materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md)：PCA、邻居图、UMAP/t-SNE 的算法流程和代码示例。
+- [Clustering](../../../materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md)：聚类分辨率、图聚类和 cluster 解释边界。
+- [Clustering code](../../../materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.py)：可作为完整 notebook 工程的参考代码入口，进入课堂前需简化为小数据演示。
+
+## 素材分层使用原则（2026-06-04）
+
+- 课堂主素材：PCA、聚类和热图作为高维探索图形，重点是参数记录和解释边界。
+- 支撑素材：SCBP dimensionality reduction / clustering、AIDD scRNA/microarray、ISLP/ISLR PCA/聚类背景。
+- 拓展素材：OSCA clustering 和 dimensionality reduction 作为教师备课，不要求完整 Bioconductor workflow。
+- 教师备课素材：筛选可公开展示的 PCA/UMAP/cluster 图，并保留参数来源。
+- 教材 / PPT 边界：可进 PPT：PCA 解释方差、聚类分辨率、热图标准化与颜色边界。
 
 ## 可进 PPT 的元素
 
-- 概念图：待定。
-- 示例表格：待定。
-- 代码片段：待定。
-- AI 提示词：待定。
+- 概念图：表格矩阵、bulk expression matrix、single-cell matrix、spatial matrix 的观测单位对比。
+- 示例表格：PCA 坐标表、聚类参数表、热图标准化说明表。
+- 代码片段：只保留参数记录伪代码，不要求学生运行 SCBP/OSCA workflow。
+- AI 提示词：检查 PCA/聚类/热图解释是否记录标准化方法、距离度量、分辨率和待核验点。
+
+## 教学资产与 evidence review
+
+- [Week 13 教学矩阵与高维图形资产](teaching_assets.md) 已补齐可公开使用的教学矩阵、PCA 坐标表示意、聚类参数表、热图说明、UMAP 示意说明和 AI 审查 Prompt。
+- [Week 13 教学图形生成脚本](../../../scripts/courseware/build_week13_teaching_figures.py) 可用固定模拟数据生成 PCA、cluster、heatmap 和 UMAP SVG，输出到 `outputs/teaching_figures/week_13/`。
+- [Week 13 PPT Storyboard Evidence Review](../../evaluation/week_13_ppt_evidence_review.md) 已将本周推进为 `pilot_ready`，但仍不表示 PPTX、PNG/contact sheet 或正式视觉 QA 已完成。
+- 正式进入 PPTX 前，PCA/热图示意应由脚本重新生成，并在 PNG/contact sheet 中检查图注、颜色和文字溢出。
+
+## 本轮升级重点（2026-06-04）
+
+- Week 13 标记为在线教材“试讲就绪样章”，但目标是看懂高维图形和流程边界，不训练学生独立完成高级单细胞或空间组学分析。
+- 课堂主线先从 6 samples x 5 genes 的教学矩阵进入 PCA、聚类和热图，再用 SCBP/OSCA/OSTA 图形说明现代组学图形为什么更依赖参数记录。
+- 必须清楚区分 bulk expression matrix、single-cell cell x gene matrix、spatial spot x gene matrix。
+- 待核验：UMAP/cluster/marker/spatial domain 均不得被直接写成最终细胞类型、药效机制或病理区域事实。
+
+## 连续微项目接口
+
+- 本周是 [Week 11-13 连续微项目](../week_11_13_micro_project.md) 的第 3 步。
+- 课堂交付物：高维图形四栏表，固定填写输入矩阵、图上观察、候选解释、待核验点。
+- 样章候选验收：必须保留教学矩阵、图形误读示例、AI 审查 Prompt、SCBP/OSCA/OSTA 拓展来源和“不能证明机制”的边界说明。

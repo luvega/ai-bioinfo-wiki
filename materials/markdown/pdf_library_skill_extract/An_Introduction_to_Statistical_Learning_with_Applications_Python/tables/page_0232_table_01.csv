@@ -1,0 +1,4 @@
+intercept 2.067840
+"poly(horsepower, 2, raw=True)[0] 0.033019"
+"poly(horsepower, 2, raw=True)[1] 0.000120"
+dtype: float64

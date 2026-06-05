@@ -1,0 +1,2 @@
+"fig, ax = subplots(figsize=(8, 8))"
+"ax.plot(horsepower, mpg, 'o');"

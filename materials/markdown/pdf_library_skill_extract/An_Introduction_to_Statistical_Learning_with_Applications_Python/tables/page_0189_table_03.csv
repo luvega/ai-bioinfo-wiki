@@ -1,0 +1,4 @@
+lda_prob = lda.predict_proba(X_test)
+np.all(
+"np.where(lda_prob[:,1] >= 0.5, 'Up','Down') == lda_pred"
+)

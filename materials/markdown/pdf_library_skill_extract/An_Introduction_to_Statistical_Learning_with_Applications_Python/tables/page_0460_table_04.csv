@@ -1,0 +1,6 @@
+labs = json.load(open('imagenet_class_index.json'))
+"class_labels = pd.DataFrame([(int(k), v[1]) for k, v in"
+"labs.items()],"
+"columns=['idx', 'label'])"
+class_labels = class_labels.set_index('idx')
+class_labels = class_labels.sort_index()

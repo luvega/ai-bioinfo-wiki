@@ -1,0 +1,8 @@
+datasets = []
+"for mask in [train, train]:"
+"∼
+X_day_t = torch.tensor("
+np.asarray(X_day[mask]).astype(np.float32))
+Y_t = torch.tensor(np.asarray(Y[mask]).astype(np.float32))
+"datasets.append(TensorDataset(X_day_t, Y_t))"
+"day_train, day_test = datasets"

@@ -1,0 +1,10 @@
+##  # A tibble: 6 × 6
+##    square_002um     square_008um    square_016um    cell_id         in_nucleus
+##    <chr>            <chr>           <chr>           <chr>           <lgl>     
+##  1 s_002um_02526_0… s_008um_00631_… s_016um_00315_… cellid_0000000… FALSE     
+##  2 s_002um_02526_0… s_008um_00631_… s_016um_00315_… cellid_0000000… FALSE     
+##  3 s_002um_02527_0… s_008um_00631_… s_016um_00315_… cellid_0000000… FALSE     
+##  4 s_002um_02527_0… s_008um_00631_… s_016um_00315_… cellid_0000000… TRUE      
+##  5 s_002um_02527_0… s_008um_00631_… s_016um_00315_… cellid_0000000… TRUE      
+##  6 s_002um_02527_0… s_008um_00631_… s_016um_00315_… cellid_0000000… TRUE      
+##  # ℹ 1 more variable: in_cell <lgl>

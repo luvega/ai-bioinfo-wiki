@@ -1,0 +1,4 @@
+"cv=kfold,"
+scoring='accuracy')
+"grid.fit(X_train, High_train)"
+grid.best_score_

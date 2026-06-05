@@ -1,0 +1,2 @@
+INFO: `Trainer.fit` stopped: `max_epochs=500` reached.
+`Trainer.fit` stopped: `max_epochs=500` reached.

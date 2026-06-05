@@ -1,0 +1,12 @@
+try:
+"for name, metric in cifar_module.metrics.items():"
+cifar_module.metrics[name] = metric.to('mps')
+"cifar_trainer_mps = Trainer(accelerator='mps',"
+"deterministic=True,"
+max_epochs=30)
+"cifar_trainer_mps.fit(cifar_module,"
+datamodule=cifar_dm)
+"cifar_trainer_mps.test(cifar_module,"
+datamodule=cifar_dm)
+except:
+pass

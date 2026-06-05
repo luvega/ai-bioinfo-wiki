@@ -1,0 +1,8 @@
+Getting Copilot to suggest code may require pressing Tab or Enter
+""
+"We find that Copilot will sometimes pause in giving suggestions until you press a key to
+help prompt it. As mentioned in table 2.1, if you are giving it comments, it will sometimes
+just want to give you more comments as suggestions. Pressing Enter another time can
+often trigger it to start generating code instead. Other times, pressing Tab will cause it to
+continue providing suggestions. Please refer to table 2.1 if Copilot is not generating code
+for you."

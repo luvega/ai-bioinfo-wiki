@@ -1,0 +1,4 @@
+"hitters_MSE = sklearn_selected(OLS,"
+strategy)
+"hitters_MSE.fit(Hitters, Y)"
+hitters_MSE.selected_state_

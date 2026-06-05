@@ -1,0 +1,16 @@
+##  class: SpatialExperiment 
+##  dim: 21720 3614 
+##  metadata(0):
+##  assays(2): counts logcounts
+##  rownames(21720): ENSG00000243485 ENSG00000238009 ... ENSG00000160307
+##    ENSG00000160310
+##  rowData names(13): source type ... gene_interest_7 gene_search
+##  colnames(3614): AAACAAGTATCTCCCA-1 AAACAATCTACTAGCA-1 ...
+##    TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
+##  colData names(26): barcode_id sample_id ... expr_chrM_ratio
+##    ManualAnnotation
+##  reducedDimNames(2): PCA UMAP
+##  mainExpName: NULL
+##  altExpNames(0):
+##  spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+##  imgData names(4): sample_id image_id data scaleFactor

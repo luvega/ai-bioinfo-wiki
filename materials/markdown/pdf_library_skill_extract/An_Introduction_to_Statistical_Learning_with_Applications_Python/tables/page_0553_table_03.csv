@@ -1,0 +1,18 @@
+cancer_types = list(np.unique(nci_labs))
+nci_groups = np.array([cancer_types.index(lab)
+for lab in nci_labs.values])
+"fig, axes = plt.subplots(1, 2, figsize=(15,6))"
+ax = axes[0]
+"ax.scatter(nci_scores[:,0],"
+"nci_scores[:,1],"
+"c=nci_groups,"
+"marker='o',"
+s=50)
+ax.set_xlabel('PC1'); ax.set_ylabel('PC2')
+ax = axes[1]
+"ax.scatter(nci_scores[:,0],"
+"nci_scores[:,2],"
+"c=nci_groups,"
+"marker='o',"
+s=50)
+ax.set_xlabel('PC1'); ax.set_ylabel('PC3');

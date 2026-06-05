@@ -1,0 +1,8 @@
+"validation = skm.ShuffleSplit(n_splits=1,"
+"test_size=200,"
+random_state=0)
+"results = skm.cross_validate(clf,"
+"D,"
+"High,"
+cv=validation)
+results['test_score']

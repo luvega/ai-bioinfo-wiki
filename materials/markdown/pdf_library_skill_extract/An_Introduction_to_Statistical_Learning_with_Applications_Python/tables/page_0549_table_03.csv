@@ -1,0 +1,7 @@
+"kmeans1 = KMeans(n_clusters=3,"
+"random_state=3,"
+n_init=1).fit(X)
+"kmeans20 = KMeans(n_clusters=3,"
+"random_state=3,"
+n_init=20).fit(X);
+"kmeans1.inertia_, kmeans20.inertia_"

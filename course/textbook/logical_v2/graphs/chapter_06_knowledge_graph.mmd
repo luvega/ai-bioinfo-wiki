@@ -1,0 +1,43 @@
+flowchart LR
+    accTitle: 第 6 章知识图谱
+    accDescr: 本图展示第 6 章从核心问题到概念、方法、证据和边界的关系。
+    q["核心问题<br/>P 值、置信区间、效应量和多重比较分别能说明什么？"]
+    b["证据边界<br/>统计显著性不等同于临床重要性，富集或高维检验更需要多重比较控制。"]
+    c1["概念<br/>样本"]
+    q --> c1
+    c2["概念<br/>总体"]
+    q --> c2
+    c3["概念<br/>抽样误差"]
+    q --> c3
+    c4["概念<br/>统计检验"]
+    q --> c4
+    c5["概念<br/>效应量"]
+    q --> c5
+    c6["概念<br/>多重比较"]
+    q --> c6
+    m1["方法<br/>前提检查"]
+    c1 --> m1
+    m2["方法<br/>效应量报告"]
+    c2 --> m2
+    m3["方法<br/>区间解释"]
+    c3 --> m3
+    m4["方法<br/>P 值降级"]
+    c4 --> m4
+    m5["方法<br/>FDR 说明"]
+    c5 --> m5
+    e1["学习证据<br/>检验前提表"]
+    m1 --> e1
+    e1 --> b
+    e2["学习证据<br/>P 值解释句"]
+    m2 --> e2
+    e2 --> b
+    e3["学习证据<br/>CI 与效应量说明"]
+    m3 --> e3
+    e3 --> b
+    e4["学习证据<br/>多重比较提醒"]
+    m4 --> e4
+    e4 --> b
+    classDef question fill:#e6f1f6,stroke:#0b4f6c,stroke-width:2px,color:#14364a
+    classDef boundary fill:#f1f8f4,stroke:#029e73,stroke-width:2px,color:#164a2f
+    class q question
+    class b boundary

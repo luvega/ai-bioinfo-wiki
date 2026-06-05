@@ -1,0 +1,5 @@
+"hitters_Cp = sklearn_selected(OLS,"
+"strategy,"
+scoring=neg_Cp)
+"hitters_Cp.fit(Hitters, Y)"
+hitters_Cp.selected_state_

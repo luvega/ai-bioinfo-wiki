@@ -1,0 +1,7 @@
+levels = cleaned['diagnosis'].unique()
+def representative(series):
+"if hasattr(series.dtype, 'categories'):"
+return pd.Series.mode(series)
+else:
+return series.mean()
+"modal_data = cleaned.apply(representative, axis=0)"

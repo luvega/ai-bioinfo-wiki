@@ -1,0 +1,4 @@
+colSums
+(
+as.matrix
+(filtered))

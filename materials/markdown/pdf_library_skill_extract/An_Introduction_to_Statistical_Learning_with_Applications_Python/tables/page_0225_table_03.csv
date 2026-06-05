@@ -1,0 +1,10 @@
+"Auto_train, Auto_valid = train_test_split(Auto,"
+"test_size=196,"
+random_state=3)
+MSE = np.zeros(3)
+"for idx, degree in enumerate(range(1, 4)):"
+"MSE[idx] = evalMSE([poly('horsepower', degree)],"
+"'mpg',"
+"Auto_train,"
+Auto_valid)
+MSE

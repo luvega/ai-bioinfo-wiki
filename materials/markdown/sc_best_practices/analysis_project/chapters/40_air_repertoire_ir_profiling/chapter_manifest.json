@@ -1,0 +1,18 @@
+{
+  "order": 40,
+  "part": "Adaptive immune receptor repertoire",
+  "toc_file": "air_repertoire/ir_profiling",
+  "title": "Immune Receptor Profiling",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/air_repertoire/ir_profiling.ipynb",
+  "environment": null,
+  "week_mapping": [],
+  "code_cell_count": 33,
+  "dataset_reference_count": 17,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/40_air_repertoire_ir_profiling",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/40_air_repertoire_ir_profiling/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/40_air_repertoire_ir_profiling/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/40_air_repertoire_ir_profiling/code_index.md"
+  }
+}

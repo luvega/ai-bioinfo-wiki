@@ -1,0 +1,12 @@
+## $Grun
+## [1] "D2"  "D3"  "D7"  "D10" "D17"
+## 
+## $Lawlor
+## [1] "ACIW009"  "ACJV399"  "ACCG268"  "ACCR015A" "ACEK420A" "ACEL337"  "ACHY057" 
+## [8] "ACIB065" 
+## 
+## $Muraro
+## [1] "D28" "D29" "D31" "D30"
+## 
+## $Seger
+##  [1] "H2"   "T2D1" "H1"   "T2D2" "H3"   "H4"   "H5"   "H6"   "T2D3" "T2D4"

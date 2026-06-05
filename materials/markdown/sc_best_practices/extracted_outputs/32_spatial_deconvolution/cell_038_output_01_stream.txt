@@ -1,0 +1,11 @@
+/home/icb/anna.schaar/miniconda3/envs/deconvolution_book/lib/python3.9/site-packages/lightning_fabric/plugins/environments/slurm.py:166: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python /home/icb/anna.schaar/miniconda3/envs/deconvolution_ ...
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/icb/anna.schaar/miniconda3/envs/deconvolution_book/lib/python3.9/site-packages/lightning_fabric/plugins/environments/slurm.py:166: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python /home/icb/anna.schaar/miniconda3/envs/deconvolution_ ...
+  rank_zero_warn(
+/home/icb/anna.schaar/miniconda3/envs/deconvolution_book/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:106: UserWarning: You passed in a `val_dataloader` but have no `validation_step`. Skipping val loop.
+  rank_zero_warn("You passed in a `val_dataloader` but have no `validation_step`. Skipping val loop.")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]

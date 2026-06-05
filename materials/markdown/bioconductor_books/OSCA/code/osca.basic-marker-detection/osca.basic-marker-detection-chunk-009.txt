@@ -1,0 +1,9 @@
+## DataFrame with 6 rows and 4 columns
+##        self.average other.average self.detected other.detected
+##           <numeric>     <numeric>     <numeric>      <numeric>
+## NKG7        4.59366      0.859465      1.000000      0.4070466
+## PRF1        2.44789      0.217020      0.942197      0.1578987
+## GZMA        2.71043      0.431911      0.965318      0.2414811
+## GNLY        4.39154      0.571955      0.976879      0.2317908
+## CST7        2.28360      0.336373      0.953757      0.2168489
+## FGFBP2      2.09686      0.107363      0.872832      0.0722781

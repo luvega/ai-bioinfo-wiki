@@ -1,0 +1,2 @@
+Total number of cells: 16934
+Number of cells after filtering of low quality cells: 14814

@@ -1,0 +1,3 @@
+computing UMAP
+    finished: added
+    'X_umap', UMAP coordinates (adata.obsm) (0:00:11)

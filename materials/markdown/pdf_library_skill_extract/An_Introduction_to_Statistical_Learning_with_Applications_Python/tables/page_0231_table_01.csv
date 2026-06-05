@@ -1,0 +1,5 @@
+"hp_se = boot_SE(hp_func,"
+"Auto,"
+"B=1000,"
+seed=10)
+hp_se

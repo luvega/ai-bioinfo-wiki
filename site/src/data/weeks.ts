@@ -39,8 +39,8 @@ export const weeks: Week[] = [
     outline: ['规范项目目录', '原始数据和结果分离', 'Prompt、输出、核验与修改留痕', 'GitHub 与项目协作基础'],
     practice: '建立个人课程项目目录，并记录一次 AI 报错解释过程。',
     aiBoundary: 'AI 用于解释报错和流程风险，不替代目录设计与清洗决策。',
-    sourcePaths: ['course/weeks/week_02', 'knowledge/concepts/项目目录结构与可复现.md', 'knowledge/entities/GitHub.md'],
-    coursebook: ['可复现分析', 'AI 协作记录', 'Pipeline 思维']
+    sourcePaths: ['course/weeks/week_02', 'knowledge/concepts/项目目录结构与可复现.md', 'knowledge/entities/GitHub.md', 'materials/markdown/openwaterfoundation_learning/'],
+    coursebook: ['可复现分析', 'AI 协作记录', 'Pipeline 思维', 'OWF Git/Shell 工作流']
   },
   {
     week: 3,
@@ -53,8 +53,8 @@ export const weeks: Week[] = [
     outline: ['Python 环境与基本对象', '列表与缺失值处理', '条件循环与指标筛选', 'AI 生成代码的逐行核验'],
     practice: '处理 `glucose = [5.2, 6.1, 4.9, None, 12.8, 5.7]`，过滤缺失、计算均值并标记高风险值。',
     aiBoundary: '可请求 AI 解释代码和局部调试，但必须人工手算小样例核验。',
-    sourcePaths: ['course/weeks/week_03', 'course/first_round_content.md', 'knowledge/entities/Python.md'],
-    coursebook: ['Python 快速入门', '缺失值小案例', 'AI 辅助调试']
+    sourcePaths: ['course/weeks/week_03', 'course/first_round_content.md', 'knowledge/entities/Python.md', 'materials/markdown/openwaterfoundation_learning/git/README.md'],
+    coursebook: ['Python 快速入门', '缺失值小案例', 'AI 辅助调试', 'Git 小步记录']
   },
   {
     week: 4,
@@ -73,7 +73,7 @@ export const weeks: Week[] = [
   {
     week: 5,
     slug: 'week-05',
-    title: '数据读取与整形',
+    title: '数据读取与整理',
     phase: '编程、清洗、统计与图表',
     keywords: ['CSV', 'Excel', '长宽表', '数据类型'],
     question: '如何把原始文件整理成适合统计和绘图的分析表？',
@@ -82,7 +82,7 @@ export const weeks: Week[] = [
     practice: '读取不规范表格，统一列名，检查类型，并把重复测量宽表转换成长表。',
     aiBoundary: 'AI 可帮助排查读写错误和生成局部转换代码，不能决定字段删改。',
     sourcePaths: ['course/weeks/week_05', 'materials/markdown/pdf_library_mineru', 'materials/markdown/aidd_bioinformatics'],
-    coursebook: ['数据读取', '数据整形', '表格结构与文件格式']
+    coursebook: ['数据读取', '数据整理', '表格结构与文件格式']
   },
   {
     week: 6,
@@ -193,8 +193,8 @@ export const weeks: Week[] = [
     outline: ['PCA 直觉', '聚类方法', '热图标准化与颜色', '参数记录模板'],
     practice: '对模拟表达矩阵做 PCA、聚类和热图，写出标准化、距离和聚类参数。',
     aiBoundary: 'AI 可辅助调试参数，但不能把探索结果写成机制证明。',
-    sourcePaths: ['course/weeks/week_13', 'materials/markdown/aidd_bioinformatics'],
-    coursebook: ['PCA', '聚类', '热图']
+    sourcePaths: ['course/weeks/week_13', 'materials/markdown/aidd_bioinformatics', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
+    coursebook: ['PCA', '聚类', '热图', '现代组学拓展']
   },
   {
     week: 14,
@@ -207,8 +207,8 @@ export const weeks: Week[] = [
     outline: ['SRA/FASTQ', 'QC 与 trimming', '比对、排序和索引', 'feature extraction 与 count matrix'],
     practice: '检查小型 count matrix 与 metadata 的样本名、总 counts 和分组。',
     aiBoundary: 'AI 可梳理流程，不能替代上游质控和参数判断。',
-    sourcePaths: ['course/weeks/week_14', 'course/first_round_content.md', 'knowledge/concepts/RNA-seq上游流程.md'],
-    coursebook: ['RNA-seq 流程', 'count matrix', 'metadata']
+    sourcePaths: ['course/weeks/week_14', 'course/first_round_content.md', 'knowledge/concepts/RNA-seq上游流程.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
+    coursebook: ['RNA-seq 流程', 'count matrix', 'metadata', 'SCBP/OSCA/OSTA 数据结构']
   },
   {
     week: 15,
@@ -221,8 +221,8 @@ export const weeks: Week[] = [
     outline: ['DESeq2 基本思想', '多重检验校正', '火山图和热图', '功能富集和文献核验'],
     practice: '读取差异表达表，筛选基因，绘制火山图，并标注需要核验的功能解释。',
     aiBoundary: 'AI 可整理表格和解释模板，不得编造基因功能。',
-    sourcePaths: ['course/weeks/week_15', 'course/first_round_content.md', 'knowledge/entities/DESeq2.md', 'knowledge/concepts/富集分析_GO_KEGG.md'],
-    coursebook: ['差异表达分析', '火山图', '功能富集']
+    sourcePaths: ['course/weeks/week_15', 'course/first_round_content.md', 'knowledge/entities/DESeq2.md', 'knowledge/concepts/富集分析_GO_KEGG.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
+    coursebook: ['差异表达分析', '火山图', '功能富集', 'bulk/single-cell/spatial 差异边界']
   },
   {
     week: 16,
@@ -235,8 +235,8 @@ export const weeks: Week[] = [
     outline: ['单细胞数据特点', 'QC 指标', '降维聚类', 'marker 展示和细胞类型注释'],
     practice: '阅读一组 UMAP、QC 和 marker 图，写出可能解释及需要核验的参数。',
     aiBoundary: 'AI 可梳理流程和参数风险，不能替代细胞类型注释。',
-    sourcePaths: ['course/weeks/week_16', 'course/first_round_content.md', 'knowledge/concepts/差异表达分析.md'],
-    coursebook: ['单细胞可视化', 'UMAP', 'marker gene']
+    sourcePaths: ['course/weeks/week_16', 'course/first_round_content.md', 'knowledge/concepts/差异表达分析.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
+    coursebook: ['单细胞可视化', 'UMAP', 'marker gene', '空间组学图形解读']
   },
   {
     week: 17,
@@ -249,8 +249,8 @@ export const weeks: Week[] = [
     outline: ['研究问题定义', '数据字典与清洗记录', '分析计划与图表计划', 'AI 输出审查和报告整合'],
     practice: '完成项目流程表、核心图表草稿和 AI 协作记录摘要。',
     aiBoundary: 'AI 可辅助流程梳理、代码重构和语言修改，所有结论必须人工核验。',
-    sourcePaths: ['course/weeks/week_17', 'knowledge/concepts/项目目录结构与可复现.md', 'knowledge/entities/GitHub.md'],
-    coursebook: ['综合项目', 'AI 审计', '结果核验']
+    sourcePaths: ['course/weeks/week_17', 'knowledge/concepts/项目目录结构与可复现.md', 'knowledge/entities/GitHub.md', 'materials/markdown/openwaterfoundation_learning/'],
+    coursebook: ['综合项目', 'AI 审计', '结果核验', 'Git/Shell 可复现记录']
   },
   {
     week: 18,

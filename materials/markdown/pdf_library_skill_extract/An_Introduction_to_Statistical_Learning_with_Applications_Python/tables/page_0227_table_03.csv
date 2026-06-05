@@ -1,0 +1,12 @@
+cv_error = np.zeros(5)
+"cv = KFold(n_splits=10,"
+"shuffle=True,"
+random_state=0) # use same splits for each degree
+"for i, d in enumerate(range(1,6)):"
+"X = np.power.outer(H, np.arange(d+1))"
+"M_CV = cross_validate(M,"
+"X,"
+"Y,"
+cv=cv)
+cv_error[i] = np.mean(M_CV['test_score'])
+cv_error

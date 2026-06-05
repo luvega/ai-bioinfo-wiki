@@ -1,0 +1,43 @@
+flowchart LR
+    accTitle: 第 5 章知识图谱
+    accDescr: 本图展示第 5 章从核心问题到概念、方法、证据和边界的关系。
+    q["核心问题<br/>一组医药指标怎样被统计量和图形共同描述？"]
+    b["证据边界<br/>描述统计只能描述样本分布，不能直接推出总体差异或临床效应。"]
+    c1["概念<br/>集中趋势"]
+    q --> c1
+    c2["概念<br/>离散程度"]
+    q --> c2
+    c3["概念<br/>偏态"]
+    q --> c3
+    c4["概念<br/>离群点"]
+    q --> c4
+    c5["概念<br/>分组分布"]
+    q --> c5
+    c6["概念<br/>图注"]
+    q --> c6
+    m1["方法<br/>统计量计算"]
+    c1 --> m1
+    m2["方法<br/>分布观察"]
+    c2 --> m2
+    m3["方法<br/>分组比较"]
+    c3 --> m3
+    m4["方法<br/>图形选择"]
+    c4 --> m4
+    m5["方法<br/>图注撰写"]
+    c5 --> m5
+    e1["学习证据<br/>描述统计表"]
+    m1 --> e1
+    e1 --> b
+    e2["学习证据<br/>分布图"]
+    m2 --> e2
+    e2 --> b
+    e3["学习证据<br/>样本量和单位标注"]
+    m3 --> e3
+    e3 --> b
+    e4["学习证据<br/>图形解释段落"]
+    m4 --> e4
+    e4 --> b
+    classDef question fill:#e6f1f6,stroke:#0b4f6c,stroke-width:2px,color:#14364a
+    classDef boundary fill:#f1f8f4,stroke:#029e73,stroke-width:2px,color:#164a2f
+    class q question
+    class b boundary

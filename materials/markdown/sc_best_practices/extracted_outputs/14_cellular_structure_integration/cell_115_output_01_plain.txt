@@ -1,0 +1,13 @@
+              ASW_label  ASW_label/batch  PCR_batch  \
+scVI           0.567771         0.906278   0.854619   
+scANVI         0.616567         0.907695   0.747247   
+BBKNN          0.555469         0.847772   0.190583   
+Seurat         0.571231         0.915237   0.629736   
+Unintegrated   0.555775         0.833656   0.000000   
+
+              isolated_label_silhouette  graph_conn  
+scVI                           0.638646    0.981818  
+scANVI                         0.676892    0.994919  
+BBKNN                          0.641923    0.958387  
+Seurat                         0.617306    0.988407  
+Unintegrated                   0.653710    0.985660  

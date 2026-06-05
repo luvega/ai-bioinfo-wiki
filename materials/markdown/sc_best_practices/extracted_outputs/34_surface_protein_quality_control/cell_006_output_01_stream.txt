@@ -1,0 +1,4 @@
+[92m→[0m found notebook quality_control.ipynb, making new version -- anticipating changes
+[92m→[0m created Transform('FATGTTa0bL500005', key='quality_control.ipynb'), started new Run('Jo8rLdu1Zy6ipxks') at 2026-04-10 17:26:28 UTC
+[92m→[0m notebook imports: lamindb-core==2.3.1 muon==0.1.7 numpy==2.4.3 pandas==2.3.3 scanpy==1.12 scipy==1.16.3 seaborn==0.13.2
+[94m•[0m recommendation: to identify the notebook across renames, pass the uid: ln.track("FATGTTa0bL50")

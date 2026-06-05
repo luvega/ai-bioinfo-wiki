@@ -1,0 +1,4 @@
+"imdb_optimizer = RMSprop(imdb_model.parameters(), lr=0.001)"
+imdb_module = SimpleModule.binary_classification(
+"imdb_model,"
+optimizer=imdb_optimizer)

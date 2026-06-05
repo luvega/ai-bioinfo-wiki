@@ -1,0 +1,5 @@
+"pipe = Pipeline([('scaler', scaler),"
+"('pca', pca),"
+"('linreg', linreg)])"
+"pipe.fit(X, Y)"
+pipe.named_steps['linreg'].coef_

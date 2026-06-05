@@ -1,0 +1,14 @@
+imdb_results = pd.read_csv(imdb_logger.experiment.metrics_file_path)
+"summary_plot(imdb_results,"
+"axes[1],"
+"col='accuracy',"
+ylabel='Accuracy')
+"axes[1].set_xticks(np.linspace(0, 30, 7).astype(int))"
+"axes[1].set_ylabel('Accuracy', fontsize=20)"
+"axes[1].set_xlabel('Epoch', fontsize=20)"
+"axes[1].set_ylim([0.5, 1]);"
+"axes[1].axhline(test_results[0]['test_accuracy'],"
+"color='blue',"
+"linestyle='--',"
+linewidth=3)
+fig

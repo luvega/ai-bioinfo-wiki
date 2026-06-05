@@ -1,0 +1,36 @@
+Challenge,Description,Remedies
+,"If you give Copilot a prompt using the
+comment symbol (#), when you start
+a new line, it wants to just give you
+more comments rather than code.
+For example:
+# output ""Hello Copilot""
+to the screen
+# print ""Hello world"" to
+the screen
+We’ve seen Copilot generate line
+after line of comments, sometimes
+repeating itself! When this happens,
+suggestion #3 (use docstrings) is
+sometimes the most effective.",
+,"Sometimes Copilot just gives you
+obviously wrong code from the start.
+(You’ll learn throughout this book
+how to identify incorrect code!)
+In addition, sometimes Copilot
+seems to get stuck down wrong
+paths. For example, it might seem to
+be trying to solve a different problem
+than what you’ve asked it to solve.
+(Suggestion 3, in particular, can help
+with getting Copilot to go down a new
+path.)",
+,"We’ve had Copilot seem to tell us to
+write our own code by generating this
+(or similar text) after a prompt:
+# YOUR CODE HERE",
+,"Copilot gives you code, but it won’t
+work because there are modules
+missing. (Modules are additional
+libraries that can be added to Python
+to give pre-built functionality.)",

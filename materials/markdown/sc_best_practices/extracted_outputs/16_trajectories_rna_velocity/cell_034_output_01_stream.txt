@@ -1,0 +1,3 @@
+computing velocities
+    finished (0:00:00) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)

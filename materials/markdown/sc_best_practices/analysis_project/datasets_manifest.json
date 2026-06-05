@@ -1,0 +1,3044 @@
+{
+  "version": 1,
+  "max_download_mb": 200,
+  "output_root": "E:/Codex_Projects/AI_Course/outputs/sc_best_practices/datasets",
+  "downloaded_count": 2,
+  "blocked_or_manual_count": 52,
+  "items": [
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://automatetheboringstuff.com/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://scanpy.readthedocs.io/en/stable/tutorials.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://scanpy.readthedocs.io/en/stable/api.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://muon-tutorials.readthedocs.io/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://r4ds.had.co.nz/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://doi.org/10.1038/s41576-023-00586-w",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/blob/development/CONTRIBUTING.md",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/releases",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/issues",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preamble",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/blob/development/LICENSE",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/prior_art",
+      "kind": "url",
+      "value": "https://bioconductor.org/books/release/OSCA/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/prior_art",
+      "kind": "url",
+      "value": "https://lmweber.org/OSTA-book/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/prior_art",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-tutorial/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/scrna_seq",
+      "kind": "url",
+      "value": "https://assets.thermofisher.com/TFS-Assets/GSD/brochures/sanger-sequencing-workflow-brochure.pdf",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/scrna_seq",
+      "kind": "url",
+      "value": "https://www.sciencedirect.com/science/article/abs/pii/B9780128154991000132",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/scrna_seq",
+      "kind": "url",
+      "value": "https://www.base4.co.uk/cost-comparison-of-dna-sequencing-technologies/#:~:text=$500%20per%20megabase",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/scrna_seq",
+      "kind": "url",
+      "value": "https://www.thermofisher.com/de/de/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/next-generation-sequencing/dna-sequencing-history.html#:~:text=Although%20DNA%20sequencers%20using%20Sanger,base%20pairs",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/scrna_seq",
+      "kind": "url",
+      "value": "https://www.bio-rad.com/de-de/applications-technologies/coding-non-coding-rna?ID=Q1070M70KWE7",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/scrna_seq",
+      "kind": "url",
+      "value": "https://www.youtube.com/watch?v=NgRfc6atXQ8",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/scrna_seq",
+      "kind": "url",
+      "value": "https://www.youtube.com/watch?v=XH6vIBLwC2M",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/scrna_seq",
+      "kind": "url",
+      "value": "https://bionumbers.hms.harvard.edu/search.aspx",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.10xgenomics.com/blog/sequence-with-confidence-understand-index-hopping-and-how-to-resolve-it",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/bcl2fastq-direct",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://rtsf.natsci.msu.edu/genomics/technical-documents/fastqc-tutorial-and-faq.aspx",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/lessons/qc_fastqc_assessment.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://sequencing.qcfail.com/software/fastqc/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://hbctraining.github.io/main/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.biostars.org/p/9461090/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://sequencing.qcfail.com/articles/position-specific-failures-of-flowcells/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/12%20Per%20Tile%20Sequence%20Quality.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://sequencing.qcfail.com/articles/positional-sequence-bias-in-random-primed-libraries/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://sequencing.qcfail.com/articles/read-through-adapters-can-appear-at-the-ends-of-sequencing-reads/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://multiqc.info",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/smarco/WFA2-lib#-33-alignment-span",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://samtools.github.io/hts-specs/SAMv1.pdf",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://genome.sph.umich.edu/wiki/SAM#What_is_a_CIGAR.3F",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://teichlab.github.io/scg_lib_structs/data/10X-Genomics/3M-february-2018.txt.gz",
+      "status": "downloaded",
+      "reason": "URL path looks like a data file.",
+      "bytes": 18350152,
+      "sha256": "6f5c08bd6c0c63e7cd4f62bc5ec47024baaf6b230524f313799b9f5431df7b37",
+      "local_path": "E:/Codex_Projects/AI_Course/outputs/sc_best_practices/datasets/0043_raw_data_processing.gz"
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://support.10xgenomics.com/single-cell-gene-expression/software/visualization/latest/what-is-loupe-cell-browser",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/csoneson/alevinQC",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/pachterlab/kb_python",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/MarioniLab/DropletUtils/blob/master/R/emptyDropsCellRanger.R",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://en.wikipedia.org/wiki/FASTQ_format",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://en.wikipedia.org/wiki/FASTA_format",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://useast.ensembl.org/info/website/upload/gff.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://support.10xgenomics.com/single-cell-gene-expression/software/release-notes/build#GRCh38_2020A",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.10xgenomics.com/resources/datasets/200-sorted-cells-from-human-glioblastoma-multiforme-3-lt-v-3-1-3-1-low-6-0-0",
+      "status": "manual_required",
+      "reason": "10x dataset page is not a direct file endpoint."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://alevin-fry.readthedocs.io/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/COMBINE-lab/simpleaf",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.rust-lang.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/COMBINE-lab/quantaf",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://docs.conda.io/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://salmon.readthedocs.io/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/COMBINE-lab/pyroe",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/Haydnspass/miniforge#rosetta-on-mac-with-apple-silicon-hardware",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://umd.box.com/shared/static/lx2xownlrhz3us8496tyu9c4dgade814.gz",
+      "status": "failed",
+      "reason": "HTTP 400: Bad Request"
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/f0t1h/3M-february-2018/raw/master/3M-february-2018.txt.gz",
+      "status": "downloaded",
+      "reason": "URL path looks like a data file.",
+      "bytes": 18350152,
+      "sha256": "d16d6ffb664df4c54de960199b31cf482945d2daeca27f14e2641c966dde7934",
+      "local_path": "E:/Codex_Projects/AI_Course/outputs/sc_best_practices/datasets/0062_raw_data_processing.gz"
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://simpleaf.readthedocs.io/en/latest/index-command.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://simpleaf.readthedocs.io/en/latest/quant-command.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://simpleaf.readthedocs.io/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://anndata.readthedocs.io/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://rdrr.io/github/mikelove/fishpond/man/loadFry.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/mikelove/fishpond",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/release-notes",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://salmon.readthedocs.io/en/latest/alevin.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://alevin-fry.readthedocs.io/en/latest/generate_permit_list.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://alevin-fry.readthedocs.io/en/latest/collate.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://alevin-fry.readthedocs.io/en/latest/quant.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.nextflow.io/docs/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/sdparekh/zUMIs/wiki",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://www.kallistobus.tools/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/alexdobin/STAR/blob/master/docs/STARsolo.md",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://nf-co.re/scrnaseq",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://nf-co.re/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://combine-lab.github.io/alevin-fry-tutorials/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://github.com/COMBINE-lab/roe",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://combine-lab.github.io/quantaf",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://galaxyproject.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-preprocessing/tutorial.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "url",
+      "value": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "download_command",
+      "value": "wget -qO- https://umd.box.com/shared/static/lx2xownlrhz3us8496tyu9c4dgade814.gz | tar xzf - --strip-components=1 -C .",
+      "status": "manual_required"
+    },
+    {
+      "source": "introduction/raw_data_processing",
+      "kind": "download_command",
+      "value": "wget -qO- https://github.com/f0t1h/3M-february-2018/raw/master/3M-february-2018.txt.gz | gunzip - > 3M-february-2018.txt",
+      "status": "manual_required"
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://bioconductor.org/books/release/OSCA/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://rdrr.io/github/mojaveazure/seurat-object/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://anndata.readthedocs.io/en/latest/tutorials/notebooks/getting-started.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://en.wikipedia.org/wiki/Hierarchical_Data_Format",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://zarr.readthedocs.io/en/stable/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://scanpy.readthedocs.io/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://scanpy.readthedocs.io/en/stable/tutorials.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://www.youtube.com/channel/UCpsvsIAW3R5OdftJKKuLNMA",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "data_read_call",
+      "value": "read_h5ad(\"my_results.h5ad\")",
+      "status": "context_required"
+    },
+    {
+      "source": "introduction/fundamental_data_structures_and_frameworks",
+      "kind": "data_read_call",
+      "value": "read_h5ad(\"my_results.h5ad\", backed=\"r\")",
+      "status": "context_required"
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://mudata.readthedocs.io/stable/notebooks/quickstart_mudata.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://mudata.readthedocs.io/stable/io/mudata.html#",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://muon-tutorials.readthedocs.io/en/latest/single-cell-rna-atac/pbmc10k/2-Chromatin-Accessibility-Processing.html#Processing-chromatin-accessibility-of-10k-PBMCs",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://muon.readthedocs.io/en/latest/api/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://muon-tutorials.readthedocs.io/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://s3.embl.de/spatialdata/spatialdata-sandbox/mouse_liver.zip",
+      "status": "failed",
+      "reason": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)"
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://docs.xarray.dev/en/stable/generated/xarray.DataArray.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://docs.xarray.dev/en/stable/generated/xarray.DataTree.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://docs.dask.org/en/stable/dataframe.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoDataFrame.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://anndata.readthedocs.io/en/stable/generated/anndata.AnnData.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://spatialdata.scverse.org/en/stable/api.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://geopandas.org/en/stable/docs.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/advanced_data_structures_and_frameworks",
+      "kind": "url",
+      "value": "https://spatialdata.scverse.org/en/stable/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://bioconductor.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://satijalab.org/seurat/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://scverse.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://www.nextflow.io/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://snakemake.readthedocs.io/en/stable/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://www.hdfgroup.org/solutions/hdf5/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://anndata.readthedocs.io/en/latest/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://anndata.readthedocs.io/en/latest/fileformat-prose.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://bioconductor.org/packages/zellkonverter/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://bioconductor.org/packages/basilisk/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://github.com/cellgeni/sceasy",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://mojaveazure.github.io/seurat-disk/articles/convert-anndata.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://mojaveazure.github.io/seurat-disk/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://github.com/rstudio/reticulate/pull/1188",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://mojaveazure.github.io/seurat-disk/reference/Convert.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://anndata.dynverse.org/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "http://loompy.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://github.com/mojaveazure/loomR",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://pypi.org/project/loompy/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://bioconductor.org/packages/LoomExperiment/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "http://velocyto.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://zarr.dev/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://tiledb.com/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://satijalab.org/seurat/articles/conversion_vignette.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://rpy2.github.io/doc/latest/html/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://icb-anndata2ri.readthedocs-hosted.com/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://rstudio.github.io/reticulate/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://rmarkdown.rstudio.com/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://quarto.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://pmbio.github.io/MuDataSeurat/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://bioconductor.org/packages/MuData/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://docs.juliahub.com/Muon/QfqCh/0.1.1/objects/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://github.com/maren-ha/scVI.jl",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "http://vitessce.io/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://github.com/jkanche/kana",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "url",
+      "value": "https://github.com/kaizhang/anndata-rs",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "lamindb_artifact",
+      "value": "key=\"introduction/interoperability_adata.h5ad\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "lamindb_artifact",
+      "value": "key=\"introduction/interoperability_mdata.h5mu\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "data_read_call",
+      "value": "read_h5ad(zellkonverter_h5ad_file)",
+      "status": "context_required"
+    },
+    {
+      "source": "introduction/interoperability",
+      "kind": "data_read_call",
+      "value": "read_h5ad(h5ad_file)",
+      "status": "context_required"
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://rapids-singlecell.readthedocs.io/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://rapids.ai/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://docs.rapids.ai/api/dask-cuda/stable/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://pypi.nvidia.com",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://github.com/rapidsai/rmm",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://exampledata.scverse.org/rapids-singlecell/dli_census.h5ad",
+      "status": "blocked_oversize",
+      "reason": "Content-Length 885572153 exceeds limit 209715200."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://github.com/tallulandrews/M3Drop",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "http://127.0.0.1:8787/status",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://decoupler-py.readthedocs.io/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://squidpy.readthedocs.io/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://pertpy.readthedocs.io/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://docs.rapids.ai/api/rmm/stable/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://docs.rapids.ai/api/cuml/stable/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "url",
+      "value": "https://developer.nvidia.com/blog/gpu-accelerated-single-cell-rna-analysis-with-rapids-singlecell/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "introduction/rapids_singlecell",
+      "kind": "data_read_call",
+      "value": "read_h5ad(path)",
+      "status": "context_required"
+    },
+    {
+      "source": "preprocessing_visualization/quality_control",
+      "kind": "lamindb_artifact",
+      "value": "key=\"preprocessing_visualization/quality_control_adata.h5ad\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "preprocessing_visualization/normalization",
+      "kind": "url",
+      "value": "https://github.com/MarioniLab/scran/issues/70",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "preprocessing_visualization/normalization",
+      "kind": "lamindb_artifact",
+      "value": "key=\"preprocessing_visualization/s4d8_quality_control.h5ad\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "preprocessing_visualization/feature_selection",
+      "kind": "lamindb_artifact",
+      "value": "key=\"preprocessing_visualization/s4d8_normalization.h5ad\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "preprocessing_visualization/dimensionality_reduction",
+      "kind": "lamindb_artifact",
+      "value": "key=\"preprocessing_visualization/s4d8_feature_selection.h5ad\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "cellular_structure/annotation",
+      "kind": "url",
+      "value": "https://matplotlib.org/stable/tutorials/colors/colormaps.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/annotation",
+      "kind": "url",
+      "value": "https://www.celltypist.org",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/annotation",
+      "kind": "url",
+      "value": "https://www.celltypist.org/tutorials",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/annotation",
+      "kind": "url",
+      "value": "https://celltypist.cog.sanger.ac.uk/models/models.json",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/annotation",
+      "kind": "url",
+      "value": "https://pypi.org/project/litlogger/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/annotation",
+      "kind": "lamindb_artifact",
+      "value": "key=\"cellular_structure/annotation_reference_features.csv\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "cellular_structure/annotation",
+      "kind": "lamindb_artifact",
+      "value": "key=\"cellular_structure/annotation_reference_model.pt\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://github.com/theislab/scib",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://github.com/cellgeni/batchbench",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://openproblems.bio",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://openproblems.bio/neurips_2021/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://www.10xgenomics.com/products/single-cell-multiome-atac-plus-gene-expression",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://anndata.readthedocs.io/en/stable/concatenation.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://www.nature.com/articles/s41592-021-01336-8/figures/13",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://theislab.github.io/scib-reproducibility/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "cellular_structure/integration",
+      "kind": "url",
+      "value": "https://www.github.com/theislab/scib",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/pseudotemporal",
+      "kind": "url",
+      "value": "https://ipywidgets.readthedocs.io/en/stable/user_install.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/pseudotemporal",
+      "kind": "url",
+      "value": "https://github.com/dpeerlab/Palantir/blob/master/notebooks/Palantir_sample_notebook.ipynb",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/pseudotemporal",
+      "kind": "lamindb_artifact",
+      "value": "key=\"trajectory/pseudotemporal.h5ad\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "trajectories/rna_velocity",
+      "kind": "lamindb_artifact",
+      "value": "key=\"trajectory/rna_velocity.h5ad\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "url",
+      "value": "https://cassiopeia-lineage.readthedocs.io/en/latest/notebooks/preprocess.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "url",
+      "value": "https://cassiopeia-lineage.readthedocs.io/en/latest/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "url",
+      "value": "https://www.nature.com/articles/s41586-019-1184-5",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "url",
+      "value": "https://zenodo.org/record/5847462#.YrFDKuzMI6A",
+      "status": "manual_required",
+      "reason": "Zenodo record requires file selection or license review."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "url",
+      "value": "https://zenodo.org/record/5847462/files/KPTracer-Data.tar.gz?download=1",
+      "status": "manual_required",
+      "reason": "Zenodo record requires file selection or license review."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "url",
+      "value": "https://cassiopeia-lineage.readthedocs.io/en/latest/api/solver.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "url",
+      "value": "https://lineageot.readthedocs.io",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "url",
+      "value": "https://cospar.readthedocs.io/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "url",
+      "value": "https://cassiopeia-lineage.readthedocs.io/en/latest/notebooks/benchmark.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "download_command",
+      "value": "!wget \"https://zenodo.org/record/5847462/files/KPTracer-Data.tar.gz?download=1\"",
+      "status": "manual_required"
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(\"KPTracer-Data/KPTracer.alleleTable.FINAL.txt\", sep='\\t', index_col = 0)",
+      "status": "context_required"
+    },
+    {
+      "source": "trajectories/lineage_tracing",
+      "kind": "data_read_call",
+      "value": "sc.read_h5ad(\"KPTracer-Data/expression/adata_processed.nt.h5ad\")",
+      "status": "context_required"
+    },
+    {
+      "source": "conditions/differential_gene_expression",
+      "kind": "url",
+      "value": "https://pertpy.readthedocs.io/en/stable/tutorials/notebooks/differential_gene_expression.html#differential-expression-testing-with-edger",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/differential_gene_expression",
+      "kind": "url",
+      "value": "https://decoupler.readthedocs.io/en/latest/notebooks/scell/rna_psbk.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/differential_gene_expression",
+      "kind": "url",
+      "value": "https://pertpy.readthedocs.io/en/stable/tutorials/notebooks/differential_gene_expression.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/differential_gene_expression",
+      "kind": "url",
+      "value": "https://rdrr.io/bioc/edgeR/man/filterByExpr.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/differential_gene_expression",
+      "kind": "url",
+      "value": "https://f1000research.com/articles/9-1444",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/differential_gene_expression",
+      "kind": "url",
+      "value": "https://matthew.wardrop.casa/formulaic/latest/formulas/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/differential_gene_expression",
+      "kind": "url",
+      "value": "https://patsy.readthedocs.io/en/latest/formulas.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/differential_gene_expression",
+      "kind": "url",
+      "value": "https://hbctraining.github.io/DGE_workshop_salmon/lessons/05_DGE_DESeq2_analysis2.html#:~:text=Results%20exploration",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://sccoda.readthedocs.io/en/latest",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://www.statsmodels.org/stable/example_formulas.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://tasccoda.readthedocs.io/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://github.com/dawe/schist",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "http://etetoolkit.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://github.com/MarioniLab/miloR",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://github.com/theislab/pertpy",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://bioconductor.org/packages/release/bioc/html/edgeR.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://genomicsclass.github.io/book/pages/expressing_design_formula.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://github.com/MarioniLab/miloR/issues/220#issuecomment-1140812805",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "http://varianceexplained.org/statistics/interpreting-pvalue-histogram/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/compositional",
+      "kind": "url",
+      "value": "https://github.com/MarioniLab/miloR/issues/208",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/gsea_pathway",
+      "kind": "url",
+      "value": "https://bioconductor.org/packages/release/bioc/manuals/limma/man/limma.pdf",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/gsea_pathway",
+      "kind": "url",
+      "value": "https://github.com/DavisLaboratory/scDECAF",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/gsea_pathway",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/34464122",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "conditions/gsea_pathway",
+      "kind": "url",
+      "value": "https://ipywidgets.readthedocs.io/en/stable/user_install.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/gsea_pathway",
+      "kind": "url",
+      "value": "https://decoupler-py.readthedocs.io/en/latest/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/gsea_pathway",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/35233771",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "conditions/gsea_pathway",
+      "kind": "download_command",
+      "value": "!wget -O 'c2.cp.reactome.v7.5.1.symbols.gmt' https://figshare.com/ndownloader/files/35233771",
+      "status": "manual_required"
+    },
+    {
+      "source": "conditions/perturbation_modeling",
+      "kind": "url",
+      "value": "https://github.com/neurorestore/Augur",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/perturbation_modeling",
+      "kind": "url",
+      "value": "https://github.com/theislab/scgen",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/perturbation_modeling",
+      "kind": "url",
+      "value": "https://github.com/satijalab/seurat/blob/master/R/mixscape.R",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/perturbation_modeling",
+      "kind": "url",
+      "value": "https://github.com/theislab/pertpy/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/perturbation_modeling",
+      "kind": "url",
+      "value": "https://pertpy.readthedocs.io/en/development/usage/tools/pertpy.tools.Augur.html#load",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/perturbation_modeling",
+      "kind": "url",
+      "value": "https://en.wikipedia.org/wiki/Permutation_test",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/perturbation_modeling",
+      "kind": "url",
+      "value": "https://cite-seq.com/eccite-seq",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "conditions/perturbation_modeling",
+      "kind": "url",
+      "value": "https://satijalab.org/seurat/articles/mixscape_vignette.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "url",
+      "value": "https://www.grnpedia.org/trrust/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "url",
+      "value": "https://saezlab.github.io/dorothea/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "url",
+      "value": "http://www.licpathway.net/KnockTFv2/index.php",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "url",
+      "value": "https://regulondb.ccg.unam.mx/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "url",
+      "value": "https://github.com/aertslab/SCENICprotocol/blob/master/notebooks/PBMC10k_SCENIC-protocol-CLI.ipynb",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "url",
+      "value": "https://raw.githubusercontent.com/aertslab/SCENICprotocol/master/example/allTFs_hg38.txt",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "url",
+      "value": "https://resources.aertslab.org/cistarget/databases/homo_sapiens/hg38/refseq_r80/mc9nr/gene_based/hg38__refseq-r80__10kb_up_and_down_tss.mc9nr.genes_vs_motifs.rankings.feather",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "url",
+      "value": "https://resources.aertslab.org/cistarget/motif2tf/motifs-v9-nr.hgnc-m0.001-o0.0.tbl",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "download_command",
+      "value": "!wget -nc https://raw.githubusercontent.com/aertslab/SCENICprotocol/master/example/allTFs_hg38.txt",
+      "status": "manual_required"
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "download_command",
+      "value": "!wget -nc https://resources.aertslab.org/cistarget/databases/homo_sapiens/hg38/refseq_r80/mc9nr/gene_based/hg38__refseq-r80__10kb_up_and_down_tss.mc9nr.genes_vs_motifs.rankings.feather",
+      "status": "manual_required"
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "download_command",
+      "value": "!wget -nc https://resources.aertslab.org/cistarget/motif2tf/motifs-v9-nr.hgnc-m0.001-o0.0.tbl",
+      "status": "manual_required"
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "data_read_call",
+      "value": "sc.read_h5ad(\"../../data/openproblems_bmmc_multiome_genes_filtered.h5ad\")",
+      "status": "context_required"
+    },
+    {
+      "source": "mechanisms/gene_regulatory_networks",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(\"adj.csv\", index_col=False, sep=\",\")",
+      "status": "context_required"
+    },
+    {
+      "source": "mechanisms/cell_cell_communication",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/34464122",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "mechanisms/cell_cell_communication",
+      "kind": "url",
+      "value": "https://github.com/saeyslab/nichenetr",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/cell_cell_communication",
+      "kind": "url",
+      "value": "https://zenodo.org/badge/DOI/10.5281/zenodo.7074291.svg",
+      "status": "manual_required",
+      "reason": "Zenodo record requires file selection or license review."
+    },
+    {
+      "source": "mechanisms/cell_cell_communication",
+      "kind": "url",
+      "value": "https://doi.org/10.5281/zenodo.7074291",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "mechanisms/cell_cell_communication",
+      "kind": "url",
+      "value": "https://zenodo.org/record/7074291/files/ligand_target_matrix_nsga2r_final.rds",
+      "status": "manual_required",
+      "reason": "Zenodo record requires file selection or license review."
+    },
+    {
+      "source": "mechanisms/cell_cell_communication",
+      "kind": "url",
+      "value": "https://zenodo.org/record/7074291/files/lr_network_human_21122021.rds",
+      "status": "manual_required",
+      "reason": "Zenodo record requires file selection or license review."
+    },
+    {
+      "source": "mechanisms/cell_cell_communication",
+      "kind": "url",
+      "value": "https://github.com/saezlab/OmnipathR",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "deconvolution/bulk_deconvolution",
+      "kind": "data_read_call",
+      "value": "sc.read(data_file + \"seurat_COVID19_freshWB_PBMC_cohort2_incl_raw.h5ad\")",
+      "status": "context_required"
+    },
+    {
+      "source": "deconvolution/bulk_deconvolution",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(data_file + \"BulkSmall.txt\", sep=\"\\t\", index_col=0)",
+      "status": "context_required"
+    },
+    {
+      "source": "deconvolution/bulk_deconvolution",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(data_file + \"annoSmall.txt\", sep=\"\\t\", index_col=0)",
+      "status": "context_required"
+    },
+    {
+      "source": "chromatin_accessibility/introduction",
+      "kind": "url",
+      "value": "https://www.youtube.com/watch?v=XelGO582s4U",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "chromatin_accessibility/quality_control",
+      "kind": "url",
+      "value": "https://www.bioconductor.org/packages/devel/bioc/vignettes/scDblFinder/inst/doc/scATAC.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "chromatin_accessibility/quality_control",
+      "kind": "url",
+      "value": "https://zenodo.org/record/5189588#.ZDlrwexBxqs",
+      "status": "manual_required",
+      "reason": "Zenodo record requires file selection or license review."
+    },
+    {
+      "source": "chromatin_accessibility/quality_control",
+      "kind": "data_read_call",
+      "value": "mu.read_10x_h5(\"cellranger_out/filtered_feature_bc_matrix.h5\")",
+      "status": "context_required"
+    },
+    {
+      "source": "chromatin_accessibility/quality_control",
+      "kind": "data_read_call",
+      "value": "sc.read_h5ad(\"output/atac_qc_metrics.h5ad\")",
+      "status": "context_required"
+    },
+    {
+      "source": "chromatin_accessibility/gene_regulatory_networks_atac",
+      "kind": "url",
+      "value": "https://buenrostrolab.github.io/FigR/articles/FigR_shareseq.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "chromatin_accessibility/gene_regulatory_networks_atac",
+      "kind": "url",
+      "value": "http://humantfs.ccbr.utoronto.ca/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "chromatin_accessibility/gene_regulatory_networks_atac",
+      "kind": "url",
+      "value": "https://raw.githubusercontent.com/aertslab/SCENICprotocol/master/example/allTFs_hg38.txt",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "chromatin_accessibility/gene_regulatory_networks_atac",
+      "kind": "url",
+      "value": "https://episcanpy.readthedocs.io/en/anna/api/episcanpy.pp.select_var_feature.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "chromatin_accessibility/gene_regulatory_networks_atac",
+      "kind": "url",
+      "value": "http://humantfs.ccbr.utoronto.ca/myTFPageUniversal.php?user=&eID=ENSG00000162599&dbd=&submit_param=submit_value",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "chromatin_accessibility/gene_regulatory_networks_atac",
+      "kind": "url",
+      "value": "https://github.com/caleblareau/BuenColors",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "spatial/neighborhood",
+      "kind": "url",
+      "value": "https://support.10xgenomics.com/spatial-gene-expression/datasets/1.1.0/V1_Adult_Mouse_Brain",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "spatial/domains",
+      "kind": "url",
+      "value": "https://support.10xgenomics.com/spatial-gene-expression/datasets/1.1.0/V1_Adult_Mouse_Brain",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "spatial/domains",
+      "kind": "url",
+      "value": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain/V1_Adult_Mouse_Brain_image.tif",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "spatial/spatially_variable_genes",
+      "kind": "url",
+      "value": "https://support.10xgenomics.com/spatial-gene-expression/datasets/1.1.0/V1_Adult_Mouse_Brain",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "spatial/deconvolution",
+      "kind": "url",
+      "value": "https://cell2location.readthedocs.io/en/latest/notebooks/cell2location_tutorial.html#Visualising-cell-abundance-in-spatial-coordinates",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "spatial/deconvolution",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/39347357",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "spatial/deconvolution",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/39347573",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "spatial/deconvolution",
+      "kind": "url",
+      "value": "https://github.com/BayraktarLab/cell2location/blob/master/docs/images/Note_on_selecting_hyperparameters.pdf",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "spatial/imputation",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/39360860",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "spatial/imputation",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/39360836",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "surface_protein/quality_control",
+      "kind": "url",
+      "value": "https://citeseq.files.wordpress.com/2017/10/antibody_transparent.png",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "surface_protein/quality_control",
+      "kind": "url",
+      "value": "https://lamin.ai/theislab/sc-best-practices/transform/FATGTTa0bL500004",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "surface_protein/quality_control",
+      "kind": "lamindb_artifact",
+      "value": "key=\"surface-protein/cite_filtered.h5mu\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "surface_protein/normalization",
+      "kind": "url",
+      "value": "https://lamin.ai/theislab/sc-best-practices/transform/Z95qTilYUzGh0002",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "surface_protein/normalization",
+      "kind": "lamindb_artifact",
+      "value": "key=\"surface-protein/cite_quality_control.h5mu\",\n    is_latest=True,",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "surface_protein/normalization",
+      "kind": "lamindb_artifact",
+      "value": "key=\"surface-protein/cite_raw.h5mu\",\n    is_latest=True,",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "surface_protein/doublet_detection",
+      "kind": "url",
+      "value": "https://lamin.ai/theislab/sc-best-practices/transform/xo1WtNUmrJCK0003",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "surface_protein/doublet_detection",
+      "kind": "lamindb_artifact",
+      "value": "key=\"surface-protein/cite_normalization.h5mu\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "surface_protein/dimensionality_reduction",
+      "kind": "url",
+      "value": "https://lamin.ai/theislab/sc-best-practices/transform/liGMVGre4G5H0004",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "surface_protein/dimensionality_reduction",
+      "kind": "lamindb_artifact",
+      "value": "key=\"surface-protein/cite_doublet_detection.h5mu\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "surface_protein/batch_correction",
+      "kind": "url",
+      "value": "https://lamin.ai/theislab/sc-best-practices/transform/4LJehi0GPRuj0003",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "surface_protein/batch_correction",
+      "kind": "lamindb_artifact",
+      "value": "key=\"surface-protein/cite_dimensionality_reduction.h5mu\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "surface_protein/annotation",
+      "kind": "url",
+      "value": "https://lamin.ai/theislab/sc-best-practices/transform/BnpvfJLWjHuE0004",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "surface_protein/annotation",
+      "kind": "lamindb_artifact",
+      "value": "key=\"surface-protein/cite_batch_correction.h5mu\", is_latest=True",
+      "status": "manual_required",
+      "reason": "Requires lamindb connection and artifact lookup."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/35574338",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/35574539",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/35574338/bcr_cellranger.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIYCQYOYV5JSSROOA/20220607/eu-west-1/s3/aws4_request&X-Amz-Date=20220607T163052Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=b18cb63ca03820e07cb8b3d9375466ca6405e655822269f5ae36d7449a28b810",
+      "status": "blocked",
+      "reason": "Temporary signed URL is likely expired."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/35574539/TCR_mergedUpdated.tsv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIYCQYOYV5JSSROOA/20220607/eu-west-1/s3/aws4_request&X-Amz-Date=20220607T163055Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=141ab989ae794394fb6c441d50c0ea6771f96a8d048a8a4c400c10dba267b97c",
+      "status": "blocked",
+      "reason": "Temporary signed URL is likely expired."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://github.com/theislab/scanpy",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://github.com/scverse/scirpy",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org/en/latest/data-structure.html#storing-airr-rearrangement-data-in-anndata",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org/en/latest/changelog.html#v0-13-0-new-data-structure-based-on-awkward-arrays",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://www.10xgenomics.com/support/software/cell-ranger/8.0/analysis/outputs/cr-5p-outputs-annotations-vdj",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "url",
+      "value": "https://kb.10xgenomics.com/hc/en-us/articles/115003248383-What-are-productive-contigs-",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "download_command",
+      "value": "! wget -O $path_bcr_input -nc https://figshare.com/ndownloader/files/35574338",
+      "status": "manual_required"
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "download_command",
+      "value": "! wget -O $path_tcr_input -nc https://figshare.com/ndownloader/files/35574539",
+      "status": "manual_required"
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(path_bcr_input, index_col=0)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(path_tcr_input, sep=\"\\t\")",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "data_read_call",
+      "value": "read_10x_vdj(path_tcr_csv)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/ir_profiling",
+      "kind": "data_read_call",
+      "value": "read_10x_vdj(path_bcr_input)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/clonotype",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org/en/latest/data-structure.html#storing-airr-rearrangement-data-in-anndata",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/clonotype",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org/en/latest/changelog.html#v0-13-0-new-data-structure-based-on-awkward-arrays",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/clonotype",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/clonotype",
+      "kind": "url",
+      "value": "https://gitlab.com/joelostblom/session_info",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/clonotype",
+      "kind": "url",
+      "value": "https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/clonotype",
+      "kind": "data_read_call",
+      "value": "sc.read(path_gex)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org/en/latest/data-structure.html#storing-airr-rearrangement-data-in-anndata",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org/en/latest/changelog.html#v0-13-0-new-data-structure-based-on-awkward-arrays",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://www.iedb.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://vdjdb.cdr3.net/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "http://friedmanlab.weizmann.ac.il/McPAS-TCR/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://db.cngb.org/pird/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://clients.adaptivebiotech.com/pub/covid-2020",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "http://opig.stats.ox.ac.uk/webapps/covabdab/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "http://opig.stats.ox.ac.uk/webapps/covabdab/static/downloads/CoV-AbDab_200422.csv",
+      "status": "failed",
+      "reason": "HTTP 404: NOT FOUND"
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://www.rcsb.org/structure/7FJO;Expected",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://www.cell.c",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://www.cell.co",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "url",
+      "value": "https://www.rcsb.org/structure/7TE1",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "download_command",
+      "value": "!wget -O tmp/CoV-AbDab.csv http://opig.stats.ox.ac.uk/webapps/covabdab/static/downloads/CoV-AbDab_200422.csv",
+      "status": "manual_required"
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "data_read_call",
+      "value": "sc.read(path_tcr)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(\"tmp/tcrmatch_output.csv\", sep=\"\\t\")",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(\"ERGO-II/results.csv\", index_col=0)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "data_read_call",
+      "value": "sc.read(path_bcr)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/specificity",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(\"tmp/CoV-AbDab.csv\")",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org/en/latest/data-structure.html#storing-airr-rearrangement-data-in-anndata",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org/en/latest/changelog.html#v0-13-0-new-data-structure-based-on-awkward-arrays",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://scirpy.scverse.org",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-10026/E-MTAB-10026.processed.4.zip",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://figshare.com/ndownloader/files/35574338",
+      "status": "failed_empty",
+      "reason": "Downloaded zero bytes."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "http://www.w3.org/2000/svg",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "http://www.w3.org/2001/xml-events",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "http://www.w3.org/1999/xlink",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://github.com/jcao89757/TESSA",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://github.com/DmitryUlyanov/Multicore-TSNE",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://github.com/phbradley/conga/blob/master/colab_conga_pipeline.ipynb",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://github.com/SchubertLab/mvTCR",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "url",
+      "value": "https://github.com/wooyongc/Benisse",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "download_command",
+      "value": "! wget -O $path_bcr_input -nc https://figshare.com/ndownloader/files/35574338",
+      "status": "manual_required"
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "data_read_call",
+      "value": "sc.read(path_gex_tcr)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "data_read_call",
+      "value": "sc.read(path_tcr)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "data_read_call",
+      "value": "sc.read(path_gex_bcr)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "data_read_call",
+      "value": "sc.read(path_bcr)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(f\"{path_res}/TESSA_tcr_embedding.csv\", index_col=0)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(f\"{path_res}/result_meta.csv\", index_col=0)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(path_bcr_contigs, index_col=0, low_memory=False)",
+      "status": "context_required"
+    },
+    {
+      "source": "air_repertoire/multimodal_integration",
+      "kind": "data_read_call",
+      "value": "pd.read_csv(f\"{path_res}/clone_annotation.csv\", index_col=0)",
+      "status": "context_required"
+    },
+    {
+      "source": "multimodal_integration/paired_integration",
+      "kind": "url",
+      "value": "https://github.com/rstudio/reticulate/pull/1188",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/paired_integration",
+      "kind": "url",
+      "value": "https://github.com/theislab/anndata2ri",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/paired_integration",
+      "kind": "url",
+      "value": "https://satijalab.org/seurat/articles/integration_introduction.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/paired_integration",
+      "kind": "url",
+      "value": "https://cupy.dev",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/advanced_integration",
+      "kind": "url",
+      "value": "https://github.com/satijalab/seurat/tree/feat/dictionary",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/advanced_integration",
+      "kind": "url",
+      "value": "https://github.com/rstudio/reticulate/pull/1188",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/advanced_integration",
+      "kind": "url",
+      "value": "https://openproblems.bio/neurips_2021/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/advanced_integration",
+      "kind": "url",
+      "value": "https://scglue.readthedocs.io/en/latest/tutorials.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/advanced_integration",
+      "kind": "url",
+      "value": "https://github.com/theislab/anndata2ri",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/advanced_integration",
+      "kind": "url",
+      "value": "https://satijalab.org/seurat/articles/integration_introduction.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "multimodal_integration/advanced_integration",
+      "kind": "data_read_call",
+      "value": "sc.read(\"/lustre/groups/ml01/workspace/daniel.strobl/neurips_cite_pp.h5ad\")",
+      "status": "context_required"
+    },
+    {
+      "source": "outlook",
+      "kind": "url",
+      "value": "https://openproblems.bio/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "glossary",
+      "kind": "url",
+      "value": "https://anndata.readthedocs.io/en/latest/index.html",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "glossary",
+      "kind": "url",
+      "value": "https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/differential-gene-expression#:~:text=Within%20this%20context%2C%20differential%20gene%20expression%20is%20defined%20as%20the%20biochemical%20process%20that%20determinates%20which%20genes%20respond%20to%20which%20signals%20or%20triggers%20depending%20on%20the%20conditions",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "glossary",
+      "kind": "url",
+      "value": "https://scverse.org/",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "glossary",
+      "kind": "url",
+      "value": "https://medium.com/biased-algorithms/sparse-data-vs-missing-data-38bc2c7af7c6",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/releases/tag/1.0.0",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/164",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/155",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/118",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/100",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/148",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/110",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/119",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/109",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/105",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/102",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/98",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/60",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/91",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/76",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/77",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/80",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/139",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/149",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/135",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/131",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/112",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/166",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/152",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/107",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/93",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/71",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/70",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/69",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/116",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/101",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/79",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/85",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/62",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/86",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/140",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/103",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/63",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/142",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/157",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/124",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/89",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/88",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/59",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/72",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/65",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/58",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/57",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/53",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/162",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/96",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/17",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/115",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/158",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pulls/154",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/145",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    },
+    {
+      "source": "CHANGELOG",
+      "kind": "url",
+      "value": "https://github.com/theislab/single-cell-best-practices/pull/154",
+      "status": "skipped_non_dataset",
+      "reason": "Reference URL, documentation, or non-data web page."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+##        Oncogene
+## Cluster induced CBFB-MYH11 oncogene expression wild type phenotype
+##       1                                     78                   0
+##       2                                      0                  69
+##       3                                      1                  23
+##       4                                     14                   0

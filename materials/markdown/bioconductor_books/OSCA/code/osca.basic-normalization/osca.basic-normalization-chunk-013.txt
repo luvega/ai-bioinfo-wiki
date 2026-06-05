@@ -1,0 +1,13 @@
+## class: SingleCellExperiment 
+## dim: 46603 528 
+## metadata(0):
+## assays(1): counts
+## rownames(46603): ENSMUSG00000102693 ENSMUSG00000064842 ...
+##   ENSMUSG00000096730 ENSMUSG00000095742
+## rowData names(0):
+## colnames(528): SLX-12611.N701_S502. SLX-12611.N702_S502. ...
+##   SLX-12612.i712_i522. SLX-12612.i714_i522.
+## colData names(13): age individual ... stimulus time
+## reducedDimNames(0):
+## mainExpName: endogenous
+## altExpNames(1): ERCC

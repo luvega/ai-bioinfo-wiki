@@ -1,0 +1,20 @@
+{
+  "order": 12,
+  "part": "Identifying cellular structure",
+  "toc_file": "cellular_structure/clustering",
+  "title": "Clustering",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/cellular_structure/clustering.ipynb",
+  "environment": "annotation",
+  "week_mapping": [
+    13
+  ],
+  "code_cell_count": 7,
+  "dataset_reference_count": 0,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/code_index.md"
+  }
+}

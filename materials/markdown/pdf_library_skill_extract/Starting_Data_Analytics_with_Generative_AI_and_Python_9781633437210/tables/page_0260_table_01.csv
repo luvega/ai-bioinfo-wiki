@@ -1,0 +1,16 @@
+Sentiment analysis (n=500),"Number of reviews
+classified as positive",Sensitivity,Specificity
+,"320 (63%)
+true positives
+163 (33%)
+250 (50%)
+193 (39%)
+295 (59%)
+265 (53%)
+325 (65%)","1
+0.45
+0.74
+0.56
+0.86
+0.79
+0.87",

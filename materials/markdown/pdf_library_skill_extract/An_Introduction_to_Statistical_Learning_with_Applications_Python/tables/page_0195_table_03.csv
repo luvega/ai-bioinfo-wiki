@@ -1,0 +1,3 @@
+knn1 = KNeighborsClassifier(n_neighbors=1)
+"knn1_pred = knn1.fit(X_train, y_train).predict(X_test)"
+"np.mean(y_test != knn1_pred), np.mean(y_test != ""No"")"

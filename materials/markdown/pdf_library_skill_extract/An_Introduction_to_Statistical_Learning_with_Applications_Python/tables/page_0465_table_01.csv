@@ -1,0 +1,15 @@
+"['Training', 'Validation', 'Test'],"
+"['black', 'red', 'blue']):"
+"linpred_ = X_ * coefs.T + intercepts[None,:]"
+label_ = np.array(linpred_ > 0)
+accuracy_ = np.array([np.mean(Y_ == l) for l in label_.T])
+"axes[0].plot(-np.log(lam_val / X_train.shape[0]),"
+"accuracy_,"
+"'.--',"
+"color=color,"
+"markersize=13,"
+"linewidth=2,"
+label=data_)
+axes[0].legend()
+"axes[0].set_xlabel(r'$-\log(\lambda)$', fontsize=20)"
+"axes[0].set_ylabel('Accuracy', fontsize=20)"

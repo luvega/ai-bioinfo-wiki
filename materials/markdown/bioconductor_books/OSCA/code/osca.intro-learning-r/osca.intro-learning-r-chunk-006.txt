@@ -1,0 +1,37 @@
+R version 4.6.0 RC (2026-04-17 r89917)
+Platform: x86_64-pc-linux-gnu
+Running under: Ubuntu 24.04.4 LTS
+
+Matrix products: default
+BLAS:   /home/biocbuild/bbs-3.23-bioc/R/lib/libRblas.so 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.0  LAPACK version 3.12.0
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_GB              LC_COLLATE=C              
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: America/New_York
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] BiocStyle_2.40.0 rebook_1.22.0   
+
+loaded via a namespace (and not attached):
+ [1] cli_3.6.6           knitr_1.51          rlang_1.2.0        
+ [4] xfun_0.57           otel_0.2.0          generics_0.1.4     
+ [7] CodeDepends_0.6.7   jsonlite_2.0.0      dir.expiry_1.20.0  
+[10] htmltools_0.5.9     XML_3.99-0.23       graph_1.90.0       
+[13] sass_0.4.10         stats4_4.6.0        rmarkdown_2.31     
+[16] filelock_1.0.3      evaluate_1.0.5      jquerylib_0.1.4    
+[19] fastmap_1.2.0       yaml_2.3.12         lifecycle_1.0.5    
+[22] bookdown_0.46       BiocManager_1.30.27 compiler_4.6.0     
+[25] codetools_0.2-20    digest_0.6.39       R6_2.6.1           
+[28] bslib_0.10.0        tools_4.6.0         BiocGenerics_0.58.0
+[31] cachem_1.1.0

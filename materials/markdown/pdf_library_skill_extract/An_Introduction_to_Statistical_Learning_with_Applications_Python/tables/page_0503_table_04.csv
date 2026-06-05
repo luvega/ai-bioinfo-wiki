@@ -1,0 +1,6 @@
+"X = MS(['Wait time',"
+"'Failed',"
+"'Center'],"
+intercept=False).fit_transform(D)
+"F = coxph().fit(X, 'Wait time', 'Failed')"
+F.log_likelihood_ratio_test()

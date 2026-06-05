@@ -1,0 +1,2 @@
+"X = rng.standard_normal((10, 3))"
+X

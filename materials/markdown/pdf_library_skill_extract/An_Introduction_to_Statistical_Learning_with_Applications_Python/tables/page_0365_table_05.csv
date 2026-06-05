@@ -1,0 +1,5 @@
+"Boston = load_data(""Boston"")"
+"model = MS(Boston.columns.drop('medv'), intercept=False)"
+D = model.fit_transform(Boston)
+feature_names = list(D.columns)
+X = np.asarray(D)

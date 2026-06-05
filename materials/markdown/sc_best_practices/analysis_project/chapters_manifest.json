@@ -1,0 +1,974 @@
+[
+  {
+    "order": 0,
+    "part": "Preamble",
+    "toc_file": "preamble",
+    "title": "Single-cell best practices",
+    "source_type": "md",
+    "upstream_path": "jupyter-book/preamble.md",
+    "environment": "_config",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 0,
+    "dataset_reference_count": 11,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/00_preamble",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/00_preamble/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/00_preamble/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/00_preamble/code_index.md"
+    }
+  },
+  {
+    "order": 1,
+    "part": "Introduction",
+    "toc_file": "introduction/prior_art",
+    "title": "Prior art",
+    "source_type": "md",
+    "upstream_path": "jupyter-book/introduction/prior_art.md",
+    "environment": "advanced_data_structures_and_frameworks",
+    "week_mapping": [],
+    "code_cell_count": 0,
+    "dataset_reference_count": 3,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/01_introduction_prior_art",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/01_introduction_prior_art/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/01_introduction_prior_art/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/01_introduction_prior_art/code_index.md"
+    }
+  },
+  {
+    "order": 2,
+    "part": "Introduction",
+    "toc_file": "introduction/scrna_seq",
+    "title": "Single-cell RNA sequencing",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/introduction/scrna_seq.ipynb",
+    "environment": "advanced_data_structures_and_frameworks",
+    "week_mapping": [
+      14,
+      16
+    ],
+    "code_cell_count": 2,
+    "dataset_reference_count": 8,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/02_introduction_scrna_seq",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/02_introduction_scrna_seq/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/02_introduction_scrna_seq/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/02_introduction_scrna_seq/code_index.md"
+    }
+  },
+  {
+    "order": 3,
+    "part": "Introduction",
+    "toc_file": "introduction/raw_data_processing",
+    "title": "Raw data processing",
+    "source_type": "md",
+    "upstream_path": "jupyter-book/introduction/raw_data_processing.md",
+    "environment": "advanced_data_structures_and_frameworks",
+    "week_mapping": [
+      14
+    ],
+    "code_cell_count": 0,
+    "dataset_reference_count": 67,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/code_index.md"
+    }
+  },
+  {
+    "order": 4,
+    "part": "Introduction",
+    "toc_file": "introduction/fundamental_data_structures_and_frameworks",
+    "title": "Fundamental data structures and frameworks",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/introduction/fundamental_data_structures_and_frameworks.ipynb",
+    "environment": "advanced_data_structures_and_frameworks",
+    "week_mapping": [
+      14
+    ],
+    "code_cell_count": 43,
+    "dataset_reference_count": 11,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/code_index.md"
+    }
+  },
+  {
+    "order": 5,
+    "part": "Introduction",
+    "toc_file": "introduction/advanced_data_structures_and_frameworks",
+    "title": "Multimodal and spatial data structures",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/introduction/advanced_data_structures_and_frameworks.ipynb",
+    "environment": "advanced_data_structures_and_frameworks",
+    "week_mapping": [
+      14,
+      16
+    ],
+    "code_cell_count": 59,
+    "dataset_reference_count": 15,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/05_introduction_advanced_data_structures_and_frameworks",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/05_introduction_advanced_data_structures_and_frameworks/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/05_introduction_advanced_data_structures_and_frameworks/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/05_introduction_advanced_data_structures_and_frameworks/code_index.md"
+    }
+  },
+  {
+    "order": 6,
+    "part": "Introduction",
+    "toc_file": "introduction/interoperability",
+    "title": "Interoperability",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/introduction/interoperability.ipynb",
+    "environment": "advanced_data_structures_and_frameworks",
+    "week_mapping": [
+      14
+    ],
+    "code_cell_count": 20,
+    "dataset_reference_count": 40,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/06_introduction_interoperability",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/06_introduction_interoperability/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/06_introduction_interoperability/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/06_introduction_interoperability/code_index.md"
+    }
+  },
+  {
+    "order": 7,
+    "part": "Introduction",
+    "toc_file": "introduction/rapids_singlecell",
+    "title": "GPU-accelerated analysis",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/introduction/rapids_singlecell.ipynb",
+    "environment": "advanced_data_structures_and_frameworks",
+    "week_mapping": [
+      14
+    ],
+    "code_cell_count": 14,
+    "dataset_reference_count": 15,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/07_introduction_rapids_singlecell",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/07_introduction_rapids_singlecell/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/07_introduction_rapids_singlecell/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/07_introduction_rapids_singlecell/code_index.md"
+    }
+  },
+  {
+    "order": 8,
+    "part": "Preprocessing and visualization",
+    "toc_file": "preprocessing_visualization/quality_control",
+    "title": "Quality Control",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/preprocessing_visualization/quality_control.ipynb",
+    "environment": "preprocessing",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 30,
+    "dataset_reference_count": 1,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/code_index.md"
+    }
+  },
+  {
+    "order": 9,
+    "part": "Preprocessing and visualization",
+    "toc_file": "preprocessing_visualization/normalization",
+    "title": "Normalization",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/preprocessing_visualization/normalization.ipynb",
+    "environment": "preprocessing",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 16,
+    "dataset_reference_count": 2,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/09_preprocessing_visualization_normalization",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/09_preprocessing_visualization_normalization/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/09_preprocessing_visualization_normalization/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/09_preprocessing_visualization_normalization/code_index.md"
+    }
+  },
+  {
+    "order": 10,
+    "part": "Preprocessing and visualization",
+    "toc_file": "preprocessing_visualization/feature_selection",
+    "title": "Feature selection",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/preprocessing_visualization/feature_selection.ipynb",
+    "environment": "preprocessing",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 10,
+    "dataset_reference_count": 1,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/10_preprocessing_visualization_feature_selection",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/10_preprocessing_visualization_feature_selection/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/10_preprocessing_visualization_feature_selection/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/10_preprocessing_visualization_feature_selection/code_index.md"
+    }
+  },
+  {
+    "order": 11,
+    "part": "Preprocessing and visualization",
+    "toc_file": "preprocessing_visualization/dimensionality_reduction",
+    "title": "Dimensionality Reduction",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/preprocessing_visualization/dimensionality_reduction.ipynb",
+    "environment": "preprocessing",
+    "week_mapping": [
+      13
+    ],
+    "code_cell_count": 11,
+    "dataset_reference_count": 1,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/code_index.md"
+    }
+  },
+  {
+    "order": 12,
+    "part": "Identifying cellular structure",
+    "toc_file": "cellular_structure/clustering",
+    "title": "Clustering",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/cellular_structure/clustering.ipynb",
+    "environment": "annotation",
+    "week_mapping": [
+      13
+    ],
+    "code_cell_count": 7,
+    "dataset_reference_count": 0,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/code_index.md"
+    }
+  },
+  {
+    "order": 13,
+    "part": "Identifying cellular structure",
+    "toc_file": "cellular_structure/annotation",
+    "title": "Annotation",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/cellular_structure/annotation.ipynb",
+    "environment": "annotation",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 91,
+    "dataset_reference_count": 7,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/code_index.md"
+    }
+  },
+  {
+    "order": 14,
+    "part": "Identifying cellular structure",
+    "toc_file": "cellular_structure/integration",
+    "title": "Data integration",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/cellular_structure/integration.ipynb",
+    "environment": "annotation",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 52,
+    "dataset_reference_count": 10,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/14_cellular_structure_integration",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/14_cellular_structure_integration/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/14_cellular_structure_integration/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/14_cellular_structure_integration/code_index.md"
+    }
+  },
+  {
+    "order": 15,
+    "part": "Inferring trajectories",
+    "toc_file": "trajectories/pseudotemporal",
+    "title": "Pseudotemporal ordering",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/trajectories/pseudotemporal.ipynb",
+    "environment": "lineage-tracing",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 9,
+    "dataset_reference_count": 3,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/15_trajectories_pseudotemporal",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/15_trajectories_pseudotemporal/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/15_trajectories_pseudotemporal/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/15_trajectories_pseudotemporal/code_index.md"
+    }
+  },
+  {
+    "order": 16,
+    "part": "Inferring trajectories",
+    "toc_file": "trajectories/rna_velocity",
+    "title": "RNA velocity",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/trajectories/rna_velocity.ipynb",
+    "environment": "lineage-tracing",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 12,
+    "dataset_reference_count": 1,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/16_trajectories_rna_velocity",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/16_trajectories_rna_velocity/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/16_trajectories_rna_velocity/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/16_trajectories_rna_velocity/code_index.md"
+    }
+  },
+  {
+    "order": 17,
+    "part": "Inferring trajectories",
+    "toc_file": "trajectories/lineage_tracing",
+    "title": "Lineage tracing",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/trajectories/lineage_tracing.ipynb",
+    "environment": "lineage-tracing",
+    "week_mapping": [],
+    "code_cell_count": 25,
+    "dataset_reference_count": 12,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/17_trajectories_lineage_tracing",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/17_trajectories_lineage_tracing/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/17_trajectories_lineage_tracing/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/17_trajectories_lineage_tracing/code_index.md"
+    }
+  },
+  {
+    "order": 18,
+    "part": "Dealing with conditions",
+    "toc_file": "conditions/differential_gene_expression",
+    "title": "Differential gene expression analysis",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/conditions/differential_gene_expression.ipynb",
+    "environment": "compositional",
+    "week_mapping": [
+      15
+    ],
+    "code_cell_count": 39,
+    "dataset_reference_count": 8,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/code_index.md"
+    }
+  },
+  {
+    "order": 19,
+    "part": "Dealing with conditions",
+    "toc_file": "conditions/compositional",
+    "title": "Compositional analysis",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/conditions/compositional.ipynb",
+    "environment": "compositional",
+    "week_mapping": [
+      15
+    ],
+    "code_cell_count": 59,
+    "dataset_reference_count": 12,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/19_conditions_compositional",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/19_conditions_compositional/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/19_conditions_compositional/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/19_conditions_compositional/code_index.md"
+    }
+  },
+  {
+    "order": 20,
+    "part": "Dealing with conditions",
+    "toc_file": "conditions/gsea_pathway",
+    "title": "Gene set enrichment and pathway analysis",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/conditions/gsea_pathway.ipynb",
+    "environment": "compositional",
+    "week_mapping": [
+      15
+    ],
+    "code_cell_count": 54,
+    "dataset_reference_count": 7,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/code_index.md"
+    }
+  },
+  {
+    "order": 21,
+    "part": "Dealing with conditions",
+    "toc_file": "conditions/perturbation_modeling",
+    "title": "Perturbation modeling",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/conditions/perturbation_modeling.ipynb",
+    "environment": "compositional",
+    "week_mapping": [
+      15
+    ],
+    "code_cell_count": 60,
+    "dataset_reference_count": 8,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/21_conditions_perturbation_modeling",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/21_conditions_perturbation_modeling/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/21_conditions_perturbation_modeling/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/21_conditions_perturbation_modeling/code_index.md"
+    }
+  },
+  {
+    "order": 22,
+    "part": "Modeling mechanisms",
+    "toc_file": "mechanisms/gene_regulatory_networks",
+    "title": "Gene regulatory networks",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/mechanisms/gene_regulatory_networks.ipynb",
+    "environment": "cellcell",
+    "week_mapping": [],
+    "code_cell_count": 39,
+    "dataset_reference_count": 13,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/22_mechanisms_gene_regulatory_networks",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/22_mechanisms_gene_regulatory_networks/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/22_mechanisms_gene_regulatory_networks/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/22_mechanisms_gene_regulatory_networks/code_index.md"
+    }
+  },
+  {
+    "order": 23,
+    "part": "Modeling mechanisms",
+    "toc_file": "mechanisms/cell_cell_communication",
+    "title": "Cell-cell communication",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/mechanisms/cell_cell_communication.ipynb",
+    "environment": "cellcell",
+    "week_mapping": [],
+    "code_cell_count": 42,
+    "dataset_reference_count": 7,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/23_mechanisms_cell_cell_communication",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/23_mechanisms_cell_cell_communication/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/23_mechanisms_cell_cell_communication/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/23_mechanisms_cell_cell_communication/code_index.md"
+    }
+  },
+  {
+    "order": 24,
+    "part": "Deconvolution",
+    "toc_file": "deconvolution/bulk_deconvolution",
+    "title": "Bulk deconvolution",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/deconvolution/bulk_deconvolution.ipynb",
+    "environment": null,
+    "week_mapping": [],
+    "code_cell_count": 20,
+    "dataset_reference_count": 3,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/24_deconvolution_bulk_deconvolution",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/24_deconvolution_bulk_deconvolution/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/24_deconvolution_bulk_deconvolution/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/24_deconvolution_bulk_deconvolution/code_index.md"
+    }
+  },
+  {
+    "order": 25,
+    "part": "Chromatin Accessibility",
+    "toc_file": "chromatin_accessibility/introduction",
+    "title": "Single-cell ATAC sequencing",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/chromatin_accessibility/introduction.ipynb",
+    "environment": "gene-regulatory-networks-atac",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 1,
+    "dataset_reference_count": 1,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/25_chromatin_accessibility_introduction",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/25_chromatin_accessibility_introduction/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/25_chromatin_accessibility_introduction/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/25_chromatin_accessibility_introduction/code_index.md"
+    }
+  },
+  {
+    "order": 26,
+    "part": "Chromatin Accessibility",
+    "toc_file": "chromatin_accessibility/quality_control",
+    "title": "Quality Control",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/chromatin_accessibility/quality_control.ipynb",
+    "environment": "gene-regulatory-networks-atac",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 47,
+    "dataset_reference_count": 4,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/26_chromatin_accessibility_quality_control",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/26_chromatin_accessibility_quality_control/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/26_chromatin_accessibility_quality_control/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/26_chromatin_accessibility_quality_control/code_index.md"
+    }
+  },
+  {
+    "order": 27,
+    "part": "Chromatin Accessibility",
+    "toc_file": "chromatin_accessibility/gene_regulatory_networks_atac",
+    "title": "Gene regulatory networks",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/chromatin_accessibility/gene_regulatory_networks_atac.ipynb",
+    "environment": "gene-regulatory-networks-atac",
+    "week_mapping": [],
+    "code_cell_count": 69,
+    "dataset_reference_count": 6,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/27_chromatin_accessibility_gene_regulatory_networks_atac",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/27_chromatin_accessibility_gene_regulatory_networks_atac/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/27_chromatin_accessibility_gene_regulatory_networks_atac/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/27_chromatin_accessibility_gene_regulatory_networks_atac/code_index.md"
+    }
+  },
+  {
+    "order": 28,
+    "part": "Spatial omics",
+    "toc_file": "spatial/introduction",
+    "title": "Single-cell data resolved in space",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/spatial/introduction.ipynb",
+    "environment": "spatial",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 0,
+    "dataset_reference_count": 0,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction/code_index.md"
+    }
+  },
+  {
+    "order": 29,
+    "part": "Spatial omics",
+    "toc_file": "spatial/neighborhood",
+    "title": "Neighborhood analysis",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/spatial/neighborhood.ipynb",
+    "environment": "spatial",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 10,
+    "dataset_reference_count": 1,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/29_spatial_neighborhood",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/29_spatial_neighborhood/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/29_spatial_neighborhood/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/29_spatial_neighborhood/code_index.md"
+    }
+  },
+  {
+    "order": 30,
+    "part": "Spatial omics",
+    "toc_file": "spatial/domains",
+    "title": "Spatial domains",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/spatial/domains.ipynb",
+    "environment": "spatial",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 23,
+    "dataset_reference_count": 2,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/30_spatial_domains",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/30_spatial_domains/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/30_spatial_domains/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/30_spatial_domains/code_index.md"
+    }
+  },
+  {
+    "order": 31,
+    "part": "Spatial omics",
+    "toc_file": "spatial/spatially_variable_genes",
+    "title": "Spatially variable genes",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/spatial/spatially_variable_genes.ipynb",
+    "environment": "spatial",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 14,
+    "dataset_reference_count": 1,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/31_spatial_spatially_variable_genes",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/31_spatial_spatially_variable_genes/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/31_spatial_spatially_variable_genes/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/31_spatial_spatially_variable_genes/code_index.md"
+    }
+  },
+  {
+    "order": 32,
+    "part": "Spatial omics",
+    "toc_file": "spatial/deconvolution",
+    "title": "Spatial deconvolution",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/spatial/deconvolution.ipynb",
+    "environment": "spatial",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 32,
+    "dataset_reference_count": 4,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/32_spatial_deconvolution",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/32_spatial_deconvolution/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/32_spatial_deconvolution/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/32_spatial_deconvolution/code_index.md"
+    }
+  },
+  {
+    "order": 33,
+    "part": "Spatial omics",
+    "toc_file": "spatial/imputation",
+    "title": "Imputation",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/spatial/imputation.ipynb",
+    "environment": "spatial",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 19,
+    "dataset_reference_count": 2,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/33_spatial_imputation",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/33_spatial_imputation/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/33_spatial_imputation/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/33_spatial_imputation/code_index.md"
+    }
+  },
+  {
+    "order": 34,
+    "part": "Surface protein",
+    "toc_file": "surface_protein/quality_control",
+    "title": "Quality control",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/surface_protein/quality_control.ipynb",
+    "environment": "surface-protein",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 17,
+    "dataset_reference_count": 3,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/34_surface_protein_quality_control",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/34_surface_protein_quality_control/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/34_surface_protein_quality_control/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/34_surface_protein_quality_control/code_index.md"
+    }
+  },
+  {
+    "order": 35,
+    "part": "Surface protein",
+    "toc_file": "surface_protein/normalization",
+    "title": "Normalization",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/surface_protein/normalization.ipynb",
+    "environment": "surface-protein",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 18,
+    "dataset_reference_count": 3,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/35_surface_protein_normalization",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/35_surface_protein_normalization/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/35_surface_protein_normalization/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/35_surface_protein_normalization/code_index.md"
+    }
+  },
+  {
+    "order": 36,
+    "part": "Surface protein",
+    "toc_file": "surface_protein/doublet_detection",
+    "title": "Doublet detection",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/surface_protein/doublet_detection.ipynb",
+    "environment": "surface-protein",
+    "week_mapping": [],
+    "code_cell_count": 10,
+    "dataset_reference_count": 2,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/36_surface_protein_doublet_detection",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/36_surface_protein_doublet_detection/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/36_surface_protein_doublet_detection/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/36_surface_protein_doublet_detection/code_index.md"
+    }
+  },
+  {
+    "order": 37,
+    "part": "Surface protein",
+    "toc_file": "surface_protein/dimensionality_reduction",
+    "title": "Dimensionality Reduction",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/surface_protein/dimensionality_reduction.ipynb",
+    "environment": "surface-protein",
+    "week_mapping": [
+      13
+    ],
+    "code_cell_count": 16,
+    "dataset_reference_count": 2,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/37_surface_protein_dimensionality_reduction",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/37_surface_protein_dimensionality_reduction/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/37_surface_protein_dimensionality_reduction/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/37_surface_protein_dimensionality_reduction/code_index.md"
+    }
+  },
+  {
+    "order": 38,
+    "part": "Surface protein",
+    "toc_file": "surface_protein/batch_correction",
+    "title": "Batch correction",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/surface_protein/batch_correction.ipynb",
+    "environment": "surface-protein",
+    "week_mapping": [],
+    "code_cell_count": 8,
+    "dataset_reference_count": 2,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/38_surface_protein_batch_correction",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/38_surface_protein_batch_correction/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/38_surface_protein_batch_correction/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/38_surface_protein_batch_correction/code_index.md"
+    }
+  },
+  {
+    "order": 39,
+    "part": "Surface protein",
+    "toc_file": "surface_protein/annotation",
+    "title": "Annotation",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/surface_protein/annotation.ipynb",
+    "environment": "surface-protein",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 17,
+    "dataset_reference_count": 2,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/39_surface_protein_annotation",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/39_surface_protein_annotation/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/39_surface_protein_annotation/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/39_surface_protein_annotation/code_index.md"
+    }
+  },
+  {
+    "order": 40,
+    "part": "Adaptive immune receptor repertoire",
+    "toc_file": "air_repertoire/ir_profiling",
+    "title": "Immune Receptor Profiling",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/air_repertoire/ir_profiling.ipynb",
+    "environment": null,
+    "week_mapping": [],
+    "code_cell_count": 33,
+    "dataset_reference_count": 17,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/40_air_repertoire_ir_profiling",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/40_air_repertoire_ir_profiling/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/40_air_repertoire_ir_profiling/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/40_air_repertoire_ir_profiling/code_index.md"
+    }
+  },
+  {
+    "order": 41,
+    "part": "Adaptive immune receptor repertoire",
+    "toc_file": "air_repertoire/clonotype",
+    "title": "Clonotype analysis",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/air_repertoire/clonotype.ipynb",
+    "environment": null,
+    "week_mapping": [],
+    "code_cell_count": 54,
+    "dataset_reference_count": 6,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/41_air_repertoire_clonotype",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/41_air_repertoire_clonotype/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/41_air_repertoire_clonotype/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/41_air_repertoire_clonotype/code_index.md"
+    }
+  },
+  {
+    "order": 42,
+    "part": "Adaptive immune receptor repertoire",
+    "toc_file": "air_repertoire/specificity",
+    "title": "Specificity analysis",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/air_repertoire/specificity.ipynb",
+    "environment": null,
+    "week_mapping": [],
+    "code_cell_count": 58,
+    "dataset_reference_count": 20,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/42_air_repertoire_specificity",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/42_air_repertoire_specificity/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/42_air_repertoire_specificity/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/42_air_repertoire_specificity/code_index.md"
+    }
+  },
+  {
+    "order": 43,
+    "part": "Adaptive immune receptor repertoire",
+    "toc_file": "air_repertoire/multimodal_integration",
+    "title": "Integrating AIR and transcriptomics",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/air_repertoire/multimodal_integration.ipynb",
+    "environment": null,
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 55,
+    "dataset_reference_count": 22,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/43_air_repertoire_multimodal_integration",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/43_air_repertoire_multimodal_integration/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/43_air_repertoire_multimodal_integration/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/43_air_repertoire_multimodal_integration/code_index.md"
+    }
+  },
+  {
+    "order": 44,
+    "part": "Multimodal integration",
+    "toc_file": "multimodal_integration/paired_integration",
+    "title": "Paired integration",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/multimodal_integration/paired_integration.ipynb",
+    "environment": "advanced-integration",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 69,
+    "dataset_reference_count": 4,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/44_multimodal_integration_paired_integration",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/44_multimodal_integration_paired_integration/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/44_multimodal_integration_paired_integration/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/44_multimodal_integration_paired_integration/code_index.md"
+    }
+  },
+  {
+    "order": 45,
+    "part": "Multimodal integration",
+    "toc_file": "multimodal_integration/advanced_integration",
+    "title": "Advanced integration",
+    "source_type": "ipynb",
+    "upstream_path": "jupyter-book/multimodal_integration/advanced_integration.ipynb",
+    "environment": "advanced-integration",
+    "week_mapping": [
+      16
+    ],
+    "code_cell_count": 103,
+    "dataset_reference_count": 7,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/45_multimodal_integration_advanced_integration",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/45_multimodal_integration_advanced_integration/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/45_multimodal_integration_advanced_integration/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/45_multimodal_integration_advanced_integration/code_index.md"
+    }
+  },
+  {
+    "order": 46,
+    "part": "Outlook",
+    "toc_file": "outlook",
+    "title": "Outlook",
+    "source_type": "md",
+    "upstream_path": "jupyter-book/outlook.md",
+    "environment": "_config",
+    "week_mapping": [],
+    "code_cell_count": 0,
+    "dataset_reference_count": 1,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/46_outlook",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/46_outlook/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/46_outlook/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/46_outlook/code_index.md"
+    }
+  },
+  {
+    "order": 47,
+    "part": "Acknowledgements",
+    "toc_file": "acknowledgements",
+    "title": "Acknowledgements",
+    "source_type": "md",
+    "upstream_path": "jupyter-book/acknowledgements.md",
+    "environment": "_config",
+    "week_mapping": [],
+    "code_cell_count": 0,
+    "dataset_reference_count": 0,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/47_acknowledgements",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/47_acknowledgements/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/47_acknowledgements/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/47_acknowledgements/code_index.md"
+    }
+  },
+  {
+    "order": 48,
+    "part": "Glossary",
+    "toc_file": "glossary",
+    "title": "Glossary",
+    "source_type": "md",
+    "upstream_path": "jupyter-book/glossary.md",
+    "environment": "_config",
+    "week_mapping": [],
+    "code_cell_count": 0,
+    "dataset_reference_count": 4,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/48_glossary",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/48_glossary/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/48_glossary/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/48_glossary/code_index.md"
+    }
+  },
+  {
+    "order": 49,
+    "part": "Changelog",
+    "toc_file": "CHANGELOG",
+    "title": "Changelog",
+    "source_type": "md",
+    "upstream_path": "jupyter-book/CHANGELOG.md",
+    "environment": "_config",
+    "week_mapping": [],
+    "code_cell_count": 0,
+    "dataset_reference_count": 57,
+    "paths": {
+      "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/49_changelog",
+      "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/49_changelog/chapter.source.md",
+      "script": "materials/markdown/sc_best_practices/analysis_project/chapters/49_changelog/chapter.py",
+      "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/49_changelog/code_index.md"
+    }
+  }
+]

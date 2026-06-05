@@ -1,0 +1,29 @@
+Fitting size factors...
+... done in 0.00 seconds.
+
+Fitting dispersions...
+... done in 0.32 seconds.
+
+Fitting dispersion trend curve...
+... done in 0.03 seconds.
+
+Fitting MAP dispersions...
+... done in 0.36 seconds.
+
+Fitting LFCs...
+... done in 0.22 seconds.
+
+Calculating cook's distance...
+... done in 0.00 seconds.
+
+Replacing 2 outlier genes.
+
+Fitting dispersions...
+... done in 0.01 seconds.
+
+Fitting MAP dispersions...
+... done in 0.01 seconds.
+
+Fitting LFCs...
+... done in 0.01 seconds.
+

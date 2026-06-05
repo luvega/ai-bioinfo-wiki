@@ -1,0 +1,13 @@
+while rel_err > thresh:
+count += 1
+# Step 2(a)
+"Xapp = low_rank(Xhat, M=1)"
+# Step 2(b)
+Xhat[ismiss] = Xapp[ismiss]
+# Step 2(c)
+mss = np.mean(((Xna - Xapp)[ ismiss])**2)
+"∼
+rel_err = (mssold - mss) / mss0"
+mssold = mss
+"print(""Iteration: {0}, MSS:{1:.3f}, Rel.Err {2:.2e}"""
+".format(count, mss, rel_err))"

@@ -1,0 +1,4 @@
+intercept 1.800
+"poly(horsepower, 2, raw=True)[0] 0.031"
+"poly(horsepower, 2, raw=True)[1] 0.000"
+"Name: std err, dtype: float64"

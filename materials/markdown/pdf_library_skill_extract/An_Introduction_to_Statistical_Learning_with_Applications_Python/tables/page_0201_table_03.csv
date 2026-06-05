@@ -1,0 +1,9 @@
+S_pois = summarize(M_pois)
+coef_month = S_pois[S_pois.index.str.contains('mnth')]['coef']
+"coef_month = pd.concat([coef_month,"
+"pd.Series([-coef_month.sum()],"
+index=['mnth[Dec]'])])
+coef_hr = S_pois[S_pois.index.str.contains('hr')]['coef']
+"coef_hr = pd.concat([coef_hr,"
+"pd.Series([-coef_hr.sum()],"
+index=['hr[23]'])])

@@ -1,0 +1,13 @@
+scale_arrow = s_ = 2
+"scores[:,1] *= -1"
+pcaUS.components_[1] *= -1 # flip the y-axis
+"fig, ax = plt.subplots(1, 1, figsize=(8, 8))"
+"ax.scatter(scores[:,0], scores[:,1])"
+ax.set_xlabel('PC%d' % (i+1))
+ax.set_ylabel('PC%d' % (j+1))
+for k in range(pcaUS.components_.shape[1]):
+"ax.arrow(0, 0, s_*pcaUS.components_[i,k], s_*pcaUS.components_["
+"j,k])"
+"ax.text(s_*pcaUS.components_[i,k],"
+"s_*pcaUS.components_[j,k],"
+USArrests.columns[k])

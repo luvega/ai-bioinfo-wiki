@@ -1,0 +1,46 @@
+flowchart LR
+    accTitle: 第 12 章知识图谱
+    accDescr: 本图展示第 12 章从核心问题到概念、方法、证据和边界的关系。
+    q["核心问题<br/>单细胞/空间图形如何解读，并怎样转成学生项目交付？"]
+    b["证据边界<br/>单细胞和空间图形用于学习判读和项目表达，不能替代真实注释、实验验证和临床判断。"]
+    c1["概念<br/>细胞异质性"]
+    q --> c1
+    c2["概念<br/>细胞类型注释"]
+    q --> c2
+    c3["概念<br/>空间邻域"]
+    q --> c3
+    c4["概念<br/>参数记录"]
+    q --> c4
+    c5["概念<br/>项目交付"]
+    q --> c5
+    c6["概念<br/>答辩边界"]
+    q --> c6
+    m1["方法<br/>图形四栏解读"]
+    c1 --> m1
+    m2["方法<br/>参数追踪"]
+    c2 --> m2
+    m3["方法<br/>注释核验"]
+    c3 --> m3
+    m4["方法<br/>空间图形描述"]
+    c4 --> m4
+    m5["方法<br/>项目包整理"]
+    c5 --> m5
+    e1["学习证据<br/>单细胞/空间图形四栏表"]
+    m1 --> e1
+    e1 --> b
+    e2["学习证据<br/>项目 README"]
+    m2 --> e2
+    e2 --> b
+    e3["学习证据<br/>data_sources"]
+    m3 --> e3
+    e3 --> b
+    e4["学习证据<br/>ai_use_statement"]
+    m4 --> e4
+    e4 --> b
+    e5["学习证据<br/>6-8 页项目 storyboard"]
+    m5 --> e5
+    e5 --> b
+    classDef question fill:#e6f1f6,stroke:#0b4f6c,stroke-width:2px,color:#14364a
+    classDef boundary fill:#f1f8f4,stroke:#029e73,stroke-width:2px,color:#164a2f
+    class q question
+    class b boundary

@@ -1,0 +1,14 @@
+##         ligand receptor pathway               type
+##  711    CXCL12    CXCR4    CXCL Secreted Signaling
+##  882       PTN     SDC4     PTN Secreted Signaling
+##  905      EDN1    EDNRB     EDN Secreted Signaling
+##  1640    PTPRC     MRC1    CD45  Cell-Cell Contact
+##  1644     CD80    CD274    CD80  Cell-Cell Contact
+##  1646     CD80    CTLA4    CD80  Cell-Cell Contact
+##  1648     CD86    CTLA4    CD86  Cell-Cell Contact
+##  1657     CDH1     CDH1     CDH  Cell-Cell Contact
+##  1671     CD69    KLRB1    CLEC  Cell-Cell Contact
+##  1834    NCAM1    NCAM1    NCAM  Cell-Cell Contact
+##  1887    CD274    PDCD1   PD-L1  Cell-Cell Contact
+##  1888 PDCD1LG2    PDCD1    PDL2  Cell-Cell Contact
+##  1889   PECAM1   PECAM1  PECAM1  Cell-Cell Contact

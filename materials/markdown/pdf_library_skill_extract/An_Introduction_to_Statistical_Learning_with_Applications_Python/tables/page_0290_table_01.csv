@@ -1,0 +1,5 @@
+"Xn,"
+"Y,"
+"cv=kfold,"
+scoring='neg_mean_squared_error')
+-cv_null['test_score'].mean()

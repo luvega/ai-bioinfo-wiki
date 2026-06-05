@@ -1,0 +1,20 @@
+{
+  "order": 11,
+  "part": "Preprocessing and visualization",
+  "toc_file": "preprocessing_visualization/dimensionality_reduction",
+  "title": "Dimensionality Reduction",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/preprocessing_visualization/dimensionality_reduction.ipynb",
+  "environment": "preprocessing",
+  "week_mapping": [
+    13
+  ],
+  "code_cell_count": 11,
+  "dataset_reference_count": 1,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/code_index.md"
+  }
+}

@@ -1,0 +1,5 @@
+"for idx, (x, y) in enumerate(nyse_dm.train_dataloader()):"
+out = nyse_model(x)
+"print(y.size(), out.size())"
+if idx >= 2:
+break

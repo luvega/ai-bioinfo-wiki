@@ -1,0 +1,13 @@
+##  class: SingleCellExperiment 
+##  dim: 18082 67568 
+##  metadata(1): Samples
+##  assays(1): counts
+##  rownames(18082): SAMD11 NOC2L ... MT-ND6 MT-CYB
+##  rowData names(3): ID Symbol Type
+##  colnames(67568): AAACAAGCAACAGCTAACTTTAGG-1
+##    AAACAAGCAACTGTTCACTTTAGG-1 ... TTTGTGAGTGCGTACCATGTTGAC-24
+##    TTTGTGAGTGGAAGCTATGTTGAC-24
+##  colData names(7): Sample Barcode ... Level1 Level2
+##  reducedDimNames(0):
+##  mainExpName: NULL
+##  altExpNames(0):

@@ -1,0 +1,6 @@
+infl = results.get_influence()
+"ax = subplots(figsize=(8,8))[1]"
+"ax.scatter(np.arange(X.shape[0]), infl.hat_matrix_diag)"
+ax.set_xlabel('Index')
+ax.set_ylabel('Leverage')
+np.argmax(infl.hat_matrix_diag)

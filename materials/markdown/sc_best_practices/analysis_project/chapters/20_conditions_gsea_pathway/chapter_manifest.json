@@ -1,0 +1,20 @@
+{
+  "order": 20,
+  "part": "Dealing with conditions",
+  "toc_file": "conditions/gsea_pathway",
+  "title": "Gene set enrichment and pathway analysis",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/conditions/gsea_pathway.ipynb",
+  "environment": "compositional",
+  "week_mapping": [
+    15
+  ],
+  "code_cell_count": 54,
+  "dataset_reference_count": 7,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/code_index.md"
+  }
+}

@@ -1,0 +1,2 @@
+mnist_module = SimpleModule.classification(mnist_model)
+"mnist_logger = CSVLogger('logs', name='MNIST')"

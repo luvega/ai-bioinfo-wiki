@@ -1,0 +1,5 @@
+## 
+##      acinar       alpha        beta       delta        duct endothelial 
+##         217         795         442         189         239          18 
+##     epsilon mesenchymal          pp 
+##           3          80          96

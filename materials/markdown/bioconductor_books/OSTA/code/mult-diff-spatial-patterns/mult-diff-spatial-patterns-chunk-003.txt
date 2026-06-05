@@ -1,0 +1,15 @@
+##  class: SpatialExperiment 
+##  dim: 5000 55660 
+##  metadata(0):
+##  assays(2): counts logcounts
+##  rownames(5000): AMEX60DD009830 AMEX60DD009962 ... AMEX60DD004094
+##    AMEX60DD054542
+##  rowData names(2): gene_name gene_id
+##  colnames(55660): CELL.17879.10DPI_1 CELL.17922.10DPI_1 ...
+##    CELL.9123.2DPI_2 CELL.9124.2DPI_2
+##  colData names(5): sample_id condition Banksy_smooth sdimx sdimy
+##  reducedDimNames(0):
+##  mainExpName: NULL
+##  altExpNames(0):
+##  spatialCoords names(2) : x y
+##  imgData names(1): sample_id

@@ -1,0 +1,2 @@
+[92m→[0m creating new artifact version for key 'cellular_structure/s4d8_annotated.h5ad' in storage 's3://lamin-eu-central-1/VPwcjx3CDAa2'
+... uploading 7d6LdOoS4ZSxqQPw0001.h5ad: 100.0%

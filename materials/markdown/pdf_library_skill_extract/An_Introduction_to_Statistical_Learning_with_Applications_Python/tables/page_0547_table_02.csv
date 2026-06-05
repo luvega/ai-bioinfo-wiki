@@ -1,0 +1,8 @@
+thresh = 1e-7
+rel_err = 1
+count = 0
+ismiss = np.isnan(Xna)
+mssold = np.mean(Xhat[ ismiss]**2)
+"∼
+mss0 = np.mean(Xna[ ismiss]**2)
+∼"

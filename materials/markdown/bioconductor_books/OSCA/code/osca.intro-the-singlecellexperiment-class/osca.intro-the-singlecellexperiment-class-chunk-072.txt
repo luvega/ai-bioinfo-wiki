@@ -1,0 +1,27 @@
+## DataFrame with 192 rows and 4 columns
+##                                                   phenotype       sum  detected
+##                                                 <character> <numeric> <numeric>
+## SLX-9555.N701_S502.C89V9ANXX.s_1.r_1    wild type phenotype    854171      7617
+## SLX-9555.N701_S503.C89V9ANXX.s_1.r_1    wild type phenotype   1044243      7520
+## SLX-9555.N701_S504.C89V9ANXX.s_1.r_1    wild type phenotype   1152450      8305
+## SLX-9555.N701_S505.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..   1193876      8142
+## SLX-9555.N701_S506.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..   1521472      7153
+## ...                                                     ...       ...       ...
+## SLX-9555.N712_S505.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..    203221      5608
+## SLX-9555.N712_S506.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..   1059853      6948
+## SLX-9555.N712_S507.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..   1672343      6879
+## SLX-9555.N712_S508.C89V9ANXX.s_1.r_1 induced CBFB-MYH11 o..   1939537      7213
+## SLX-9555.N712_S517.C89V9ANXX.s_1.r_1    wild type phenotype   1436899      8469
+##                                          total
+##                                      <numeric>
+## SLX-9555.N701_S502.C89V9ANXX.s_1.r_1    854171
+## SLX-9555.N701_S503.C89V9ANXX.s_1.r_1   1044243
+## SLX-9555.N701_S504.C89V9ANXX.s_1.r_1   1152450
+## SLX-9555.N701_S505.C89V9ANXX.s_1.r_1   1193876
+## SLX-9555.N701_S506.C89V9ANXX.s_1.r_1   1521472
+## ...                                        ...
+## SLX-9555.N712_S505.C89V9ANXX.s_1.r_1    203221
+## SLX-9555.N712_S506.C89V9ANXX.s_1.r_1   1059853
+## SLX-9555.N712_S507.C89V9ANXX.s_1.r_1   1672343
+## SLX-9555.N712_S508.C89V9ANXX.s_1.r_1   1939537
+## SLX-9555.N712_S517.C89V9ANXX.s_1.r_1   1436899

@@ -1,0 +1,4 @@
+"bs_age = MS([bs('age', internal_knots=[25,40,60])])"
+Xbs = bs_age.fit_transform(Wage)
+"M = sm.OLS(y, Xbs).fit()"
+summarize(M)

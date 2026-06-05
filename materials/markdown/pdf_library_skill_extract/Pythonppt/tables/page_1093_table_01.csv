@@ -1,0 +1,10 @@
+函数,描述
+os.path.abspath(path),"返回path在当前系统中的绝对路径
+>>>os.path.abspath(""file.txt"")
+'C:\\Users\\Tian Song\\Python36-32\\file.txt'"
+os.path.normpath(path),"归一化path的表示形式，统一用\\分隔路径
+>>>os.path.normpath(""D://PYE//file.txt"")
+'D:\\PYE\\file.txt'"
+os.path.relpath(path),"返回当前程序与文件之间的相对路径 (relative path)
+>>>os.path.relpath(""C://PYE//file.txt"")
+'..\\..\\..\\..\\..\\..\\..\\PYE\\file.txt'"

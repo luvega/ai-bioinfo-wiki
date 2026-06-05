@@ -1,0 +1,22 @@
+Why we should explore and understand our options
+""
+"There are several reasons why you shouldn’t just use the first module that Copilot chat
+tells you to use:"
+"1 It may not work on all operating systems. In general, we want to find modules that
+work across multiple operating systems so that the tool can be used by you (if you
+later switch operating systems) or others with whom you’ve shared the tool."
+2
+"It may turn out not to work for our use case after all, or we may struggle to get the
+code to work. If we have other options, we can start trying those before sinking too
+much time into a strategy that may or may not ultimately work out."
+3
+"Modules are updated frequently. Usually this is to add new features and fix bugs,
+but sometimes, functions are removed or changed in this process as well. When
+the author of a module removes a function, it’s known as deprecating that func-
+tion. Once a function is deprecated, it may no longer work, and we need to find a
+replacement. Copilot is trained only every once in a while, not continuously, so if
+a new version of a module comes out after Copilot was trained on it, Copilot won’t
+know about the updates. This can lead to Copilot suggesting code that depends
+on an older version of the module than the one you have. There are ways to ad-
+dress this, as we will see later in the chapter. But if you run into trouble, having
+other options to explore is useful."

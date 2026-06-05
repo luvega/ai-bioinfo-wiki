@@ -1,0 +1,3 @@
+INFO:root:Allocate tensors for mapping.
+INFO:root:Begin training with 132 genes and rna_count_based density_prior in cells mode...
+INFO:root:Printing scores every 100 epochs.

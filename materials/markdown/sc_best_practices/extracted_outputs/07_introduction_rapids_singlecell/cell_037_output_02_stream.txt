@@ -1,0 +1,2 @@
+[1778059284.202777] [2cab62a-lcedt:537888:0]          parser.c:2359 UCX  WARN  unused environment variable: UCX_MEMTYPE_CACHE (maybe: UCX_MEMTYPE_CACHE?)
+[1778059284.202777] [2cab62a-lcedt:537888:0]          parser.c:2359 UCX  WARN  (set UCX_WARN_UNUSED_ENV_VARS=n to suppress this warning)

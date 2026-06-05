@@ -1,0 +1,1 @@
+Setup via `Cell2location.setup_anndata` with arguments:

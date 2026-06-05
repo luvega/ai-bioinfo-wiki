@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 15px;
+            width: 400px;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #3965a3;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>In an AnnData object, which slot stores the main count matrix for scRNA-seq data?</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3a" value="X"
+            onclick="checkAnswer(this, 'X', '', 'feedback-q3a')"> X
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3a" value="obs"
+            onclick="checkAnswer(this, 'X', '`.obs` stores cell-level metadata (observations), not the main count matrix.', 'feedback-q3a')"> obs
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3a" value="var"
+            onclick="checkAnswer(this, 'X', '`.var` stores gene-level metadata (variables), not the expression matrix itself.', 'feedback-q3a')"> var
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq3a" value="uns"
+            onclick="checkAnswer(this, 'X', '`.uns` stores unstructured metadata.', 'feedback-q3a')"> uns
+        </label><br>
+        
+        <p id="feedback-q3a" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q3a" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: X
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

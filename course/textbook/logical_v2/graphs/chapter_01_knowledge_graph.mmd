@@ -1,0 +1,40 @@
+flowchart LR
+    accTitle: 第 1 章知识图谱
+    accDescr: 本图展示第 1 章从核心问题到概念、方法、证据和边界的关系。
+    q["核心问题<br/>药学问题如何转成数据、方法、图表和结论边界？"]
+    b["证据边界<br/>导论只建立分析判断框架，不要求学生完成高级统计或组学流程。"]
+    c1["概念<br/>医药问题"]
+    q --> c1
+    c2["概念<br/>观测单位"]
+    q --> c2
+    c3["概念<br/>数据字段"]
+    q --> c3
+    c4["概念<br/>方法选择"]
+    q --> c4
+    c5["概念<br/>图表证据"]
+    q --> c5
+    c6["概念<br/>结论边界"]
+    q --> c6
+    m1["方法<br/>问题转写"]
+    c1 --> m1
+    m2["方法<br/>字段识别"]
+    c2 --> m2
+    m3["方法<br/>图表选择"]
+    c3 --> m3
+    m4["方法<br/>来源核验"]
+    c4 --> m4
+    m5["方法<br/>边界降级"]
+    c5 --> m5
+    e1["学习证据<br/>问题-数据-方法-图表-边界五栏表"]
+    m1 --> e1
+    e1 --> b
+    e2["学习证据<br/>AI 协作边界声明"]
+    m2 --> e2
+    e2 --> b
+    e3["学习证据<br/>一段克制结论"]
+    m3 --> e3
+    e3 --> b
+    classDef question fill:#e6f1f6,stroke:#0b4f6c,stroke-width:2px,color:#14364a
+    classDef boundary fill:#f1f8f4,stroke:#029e73,stroke-width:2px,color:#164a2f
+    class q question
+    class b boundary

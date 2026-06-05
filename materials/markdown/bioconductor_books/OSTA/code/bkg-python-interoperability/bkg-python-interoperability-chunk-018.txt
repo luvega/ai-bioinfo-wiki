@@ -1,0 +1,5 @@
+##  InMemoryAnnData object with n_obs × n_vars = 4992 × 18085
+##      obs: 'in_tissue', 'array_row', 'array_col', 'sample_id'
+##      var: 'ID', 'Symbol', 'Type'
+##      uns: 'resources', 'spatialList'
+##      layers: 'counts'

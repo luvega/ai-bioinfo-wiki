@@ -1,0 +1,5 @@
+train = (Smarket.Year < 2005)
+Smarket_train = Smarket.loc[train]
+Smarket_test = Smarket.loc[ train]
+"∼
+Smarket_test.shape"

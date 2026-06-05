@@ -1,0 +1,3 @@
+Added peak annotation from resources/cellranger_out/atac_peak_annotation.tsv to .uns['atac']['peak_annotation']
+Added gene names to peak annotation in .uns['atac']['peak_annotation']
+Located fragments file: resources/cellranger_out/atac_fragments.tsv.gz

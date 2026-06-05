@@ -1,0 +1,2 @@
+array(['ISG15', 'IFI6', 'ISG20', ..., 'EEF1A1', 'FTH1', 'RGCC'],
+      dtype=object)

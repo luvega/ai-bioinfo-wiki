@@ -1,0 +1,5 @@
+HClust = AgglomerativeClustering
+"hc_comp = HClust(distance_threshold=0,"
+"n_clusters=None,"
+linkage='complete')
+hc_comp.fit(X)

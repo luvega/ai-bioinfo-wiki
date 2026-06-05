@@ -1,0 +1,6 @@
+"gam_0 = LinearGAM(age_term + f_gam(2, lam=0))"
+"gam_0.fit(Xgam, y)"
+gam_linear = LinearGAM(age_term +
+"l_gam(1, lam=0) +"
+"f_gam(2, lam=0))"
+"gam_linear.fit(Xgam, y)"

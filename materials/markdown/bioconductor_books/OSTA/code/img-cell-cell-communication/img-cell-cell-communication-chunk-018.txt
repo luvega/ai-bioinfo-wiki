@@ -1,0 +1,11 @@
+##  class: SingleCellExperiment 
+##  dim: 26 15003 
+##  metadata(0):
+##  assays(2): s r
+##  rownames(26): CD69-KLRB1 EDN1-EDNRB ... PECAM1 PTN
+##  rowData names(0):
+##  colnames(15003): 4303 4305 ... 107719 107722
+##  colData names(69): cell_id transcript_counts ... r-PECAM1 r-PTN
+##  reducedDimNames(0):
+##  mainExpName: NULL
+##  altExpNames(0):

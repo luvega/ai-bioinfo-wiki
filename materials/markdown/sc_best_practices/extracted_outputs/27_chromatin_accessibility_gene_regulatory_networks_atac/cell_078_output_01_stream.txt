@@ -1,0 +1,9 @@
+[1] 47
+ [1] "MGAT4A"    "ADGRG1"    "APBB1"     "BEST1"     "C15orf39"  "CASP8"    
+ [7] "CCL5"      "CCR7"      "CD300LF"   "CD3E"      "CD86"      "COLQ"     
+[13] "CR1L"      "CTSB"      "DNAJA1"    "DNPH1"     "EPN2"      "FPR1"     
+[19] "GATA3"     "GM2A"      "KLHL36"    "LILRB2"    "LONRF1"    "MYADM"    
+[25] "NCF2"      "NFIA"      "NOLC1"     "P2RX1"     "PRF1"      "PRKCQ-AS1"
+[31] "PTCH1"     "RFPL1S"    "RHOQ"      "RXRA"      "SESN3"     "SLC16A6"  
+[37] "SLC2A9"    "SMAD7"     "STRN3"     "SWAP70"    "TEC"       "THEMIS"   
+[43] "TLE1"      "TM9SF2"    "TNRC6B"    "ZNF471"    "ZNRF1"    

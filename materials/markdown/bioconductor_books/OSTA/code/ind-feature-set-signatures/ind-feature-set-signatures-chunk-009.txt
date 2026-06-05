@@ -1,0 +1,4 @@
+##        heme_metabolism          adipogenesis     kras_signaling_dn 
+##                   7.63                 11.64                 14.88 
+##    il2_stat5_signaling xenobiotic_metabolism inflammatory_response 
+##                  17.43                 23.68                 24.04

@@ -1,0 +1,7 @@
+%%capture
+"fig, axes = plt.subplots(1, 2, figsize=(15, 6))"
+ticks = np.arange(pcaUS.n_components_)+1
+ax = axes[0]
+"ax.plot(ticks,"
+"pcaUS.explained_variance_ratio_,"
+marker='o')

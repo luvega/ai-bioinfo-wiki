@@ -1,0 +1,4 @@
+"grid_r2 = skm.GridSearchCV(pipe,"
+"param_grid,"
+cv=kfold)
+"grid_r2.fit(X, Y)"

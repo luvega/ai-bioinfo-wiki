@@ -1,0 +1,16 @@
+"fig, ax = subplots(figsize=(8,8))"
+rng = np.random.default_rng(0)
+ax.scatter(age +
+"0.2 * rng.uniform(size=y.shape[0]),"
+"np.where(high_earn, 0.198, 0.002),"
+"fc='gray',"
+marker='|')
+"for val, ls in zip([preds.predicted_mean,"
+"bands[:,0],"
+"bands[:,1]],"
+"['b','r--','r--']):"
+"ax.plot(age_df.values, val, ls, linewidth=3)"
+"ax.set_title('Degree-4 Polynomial', fontsize=20)"
+"ax.set_xlabel('Age', fontsize=20)"
+"ax.set_ylim([0,0.2])"
+"ax.set_ylabel('P(Wage > 250)', fontsize=20);"

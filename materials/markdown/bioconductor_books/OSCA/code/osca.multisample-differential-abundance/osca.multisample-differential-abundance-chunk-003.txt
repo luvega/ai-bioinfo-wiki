@@ -1,0 +1,8 @@
+##                      
+##                        5  6   7   8   9  10
+##   Allantois           97 15 139 127 318 259
+##   Blood progenitors 1  6  3  16   6   8  17
+##   Blood progenitors 2 31  8  28  21  43 114
+##   Cardiomyocytes      85 21  79  31 174 211
+##   Caudal Mesoderm     10 10   9   3  10  29
+##   Caudal epiblast      2  2   0   0  22  45

@@ -1,0 +1,6 @@
+  IR_VDJ_1_junction_aa antigen.species    CDR3b_trimmed
+0        CASSDSSTDTQYF             EBV      ASSDSSTDTQY
+1        CASSQTGGQPQHF             NaN      ASSQTGGQPQH
+2      CASRPSGLNTDTQYF             NaN    ASRPSGLNTDTQY
+3        CASSYGGYNEQFF             CMV      ASSYGGYNEQF
+4    CAISASGGGSSGNTIYF             NaN  AISASGGGSSGNTIY

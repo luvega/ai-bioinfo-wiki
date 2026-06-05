@@ -1,0 +1,5 @@
+##  
+##          B     DCIS1     DCIS2         T dendritic      endo     macro 
+##       1463      1863      2159      4742       313      1055      3724 
+##       mast    myoepi   perivas   stromal     tumor 
+##         92      1839       285      2611      5897

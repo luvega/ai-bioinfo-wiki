@@ -1,0 +1,9 @@
+MuData object with n_obs × n_vars = 24807643 × 36741
+  var:	'gene_ids', 'feature_types'
+  2 modalities
+    rna:	24807643 x 36601
+      obs:	'donor', 'batch'
+      var:	'gene_ids', 'feature_types'
+    prot:	24807643 x 140
+      obs:	'donor', 'batch'
+      var:	'gene_ids', 'feature_types'

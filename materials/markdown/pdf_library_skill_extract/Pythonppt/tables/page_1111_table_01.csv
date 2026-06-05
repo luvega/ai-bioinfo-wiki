@@ -1,0 +1,6 @@
+库名,用途,pip安装指令
+Jieba,中文分词,pip install jieba
+Beautiful Soup,HTML和XML解析器,pip install beautifulsoup4
+Wheel,Python第三方库文件打包工具,pip install wheel
+PyInstaller,打包Python源文件为可执行文件,pip install pyinstaller
+Django,Python最流行的Web开发框架,pip install django

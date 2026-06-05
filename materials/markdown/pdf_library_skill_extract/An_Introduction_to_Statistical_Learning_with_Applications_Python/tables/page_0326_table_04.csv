@@ -1,0 +1,4 @@
+age_term = gam.terms[0]
+"lam_4 = approx_lam(X_age, age_term, 4)"
+age_term.lam = lam_4
+"degrees_of_freedom(X_age, age_term)"

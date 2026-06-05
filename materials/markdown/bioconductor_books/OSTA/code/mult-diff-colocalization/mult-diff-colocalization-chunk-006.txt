@@ -1,0 +1,7 @@
+##            intercept coefficient      p.value   adj.pvalue  from    to
+##  beta__Tc  -21.90519    27.11610 5.321113e-22 6.438546e-20  beta    Tc
+##  Tc__beta  -20.70299    26.89058 1.341501e-21 8.116080e-20    Tc  beta
+##  delta__Tc -21.76499    21.49124 2.420556e-17 9.157442e-16 delta    Tc
+##  Tc__delta -20.60341    21.43587 3.027253e-17 9.157442e-16    Tc delta
+##  Th__beta  -24.27671    31.29873 5.364678e-13 1.298252e-11    Th  beta
+##  beta__Th  -25.21713    31.23346 7.225223e-13 1.457087e-11  beta    Th

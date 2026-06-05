@@ -3,7 +3,7 @@ type: course-week
 week: 6
 title: 缺失值、异常值处理与分组汇总
 hours: 2
-status: draft
+status: pilot_candidate
 source: ../../syllabus/36课时-AI前置调整版.docx
 ---
 # 第 06 周：缺失值、异常值处理与分组汇总 · 素材映射
@@ -15,15 +15,30 @@ source: ../../syllabus/36课时-AI前置调整版.docx
 
 ## AIDD 候选素材
 
-- 待从 materials/raw/aidd_bioinformatics/ 和 materials/markdown/aidd_bioinformatics/ 抽取。
+- 从 [AIDD 课程索引](../../../materials/markdown/aidd_bioinformatics/aidd.course_index.md) 和相关 `chapter.course.md` 选取；字幕原文只作术语核验，不直接进入课堂。
 
 ## PDF / 外部 PPT 候选素材
 
-- 待从 materials/markdown/pdf_library_legacy/、materials/markdown/pdf_library_mineru/ 和 materials/raw/external_ppt/ 抽取。
+- 从 `materials/markdown/pdf_library_mineru/` 和 `materials/markdown/pdf_library_skill_extract/` 选取已转换 Markdown；原始 PDF/PPT 不直接进入课程引用。
+
+## 素材分层使用原则（2026-06-04）
+
+- 课堂主素材：缺失值、异常值、重复值和分组汇总；强调清洗规则记录。
+- 支撑素材：AIDD QC/trimming 作为质量控制类比；GenAI 数据分析参考用于清洗日志。
+- 拓展素材：组学低质量样本/低表达过滤只作类比，不替代医学清洗判断。
+- 教师备课素材：准备删除、填补、保留三类策略的风险表。
+- 教材 / PPT 边界：可进 PPT：缺失比例表、IQR 异常值示例、清洗日志模板。
 
 ## 可进 PPT 的元素
 
-- 概念图：待定。
-- 示例表格：待定。
-- 代码片段：待定。
-- AI 提示词：待定。
+- 概念图：缺失、异常、重复到清洗日志和处理前后汇总的流程图。
+- 示例表格：含缺失随访、疑似单位错误和重复记录的教学小表。
+- 代码片段：缺失比例、重复检查和分组汇总的最小代码。
+- AI 提示词：审查清洗日志是否说明处理理由，不替代删除决策。
+
+## 试点候选审查依据（2026-06-04）
+
+- 课堂任务：识别缺失值、重复记录和异常值，分别给出删除、保留、填补或标记的清洗理由。
+- 评价证据：提交清洗日志、缺失比例表、异常值标记表和分组汇总表，保留处理前后样本量变化。
+- AI 协作边界：允许 AI 生成清洗日志模板和提醒极端值检查；禁止 AI 直接决定删除病例、替代医学阈值判断或隐藏清洗影响。
+- 待核验点：正式 PPT 前需核对异常值规则、单位换算和分组汇总结果是否可手算抽查。

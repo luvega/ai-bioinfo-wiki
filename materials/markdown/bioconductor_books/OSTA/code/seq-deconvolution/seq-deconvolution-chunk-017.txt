@@ -1,0 +1,14 @@
+##  class: SpatialExperiment 
+##  dim: 12 4962 
+##  metadata(4): spatial_rna config cell_type_info internal_vars
+##  assays(1): weights
+##  rownames(12): B DCIS1 ... stromal tumor
+##  rowData names(0):
+##  colnames(4962): AACACCTACTATCGAA-1 AACACGTGCATCGCAC-1 ...
+##    TGTTGGCCAGACCTAC-1 TGTTGGCCTACACGTG-1
+##  colData names(1): sample_id
+##  reducedDimNames(0):
+##  mainExpName: NULL
+##  altExpNames(0):
+##  spatialCoords names(2) : x y
+##  imgData names(0):

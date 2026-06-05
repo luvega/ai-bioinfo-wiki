@@ -1,0 +1,21 @@
+$s1d3
+An object of class Seurat 
+2000 features across 4279 samples within 1 assay 
+Active assay: originalexp (2000 features, 0 variable features)
+ 2 layers present: counts, data
+ 8 dimensional reductions calculated: ATAC_gene_activity, ATAC_lsi_full, ATAC_lsi_red, ATAC_umap, GEX_X_pca, GEX_X_umap, PCA, UMAP
+
+$s2d1
+An object of class Seurat 
+2000 features across 4220 samples within 1 assay 
+Active assay: originalexp (2000 features, 0 variable features)
+ 2 layers present: counts, data
+ 8 dimensional reductions calculated: ATAC_gene_activity, ATAC_lsi_full, ATAC_lsi_red, ATAC_umap, GEX_X_pca, GEX_X_umap, PCA, UMAP
+
+$s3d7
+An object of class Seurat 
+2000 features across 1771 samples within 1 assay 
+Active assay: originalexp (2000 features, 0 variable features)
+ 2 layers present: counts, data
+ 8 dimensional reductions calculated: ATAC_gene_activity, ATAC_lsi_full, ATAC_lsi_red, ATAC_umap, GEX_X_pca, GEX_X_umap, PCA, UMAP
+

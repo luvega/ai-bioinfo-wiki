@@ -1,0 +1,6 @@
+Dask DataFrame Structure:
+                     x        y               gene
+npartitions=1                                     
+               float64  float64  category[unknown]
+                   ...      ...                ...
+Dask Name: read-parquet, 1 graph layer

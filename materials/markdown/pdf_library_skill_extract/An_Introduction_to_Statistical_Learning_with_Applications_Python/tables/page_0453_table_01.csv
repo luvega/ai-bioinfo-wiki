@@ -1,0 +1,5 @@
+"summary(mnist_model,"
+"input_data=X_,"
+"col_names=['input_size',"
+"'output_size',"
+'num_params'])

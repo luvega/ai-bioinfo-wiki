@@ -1,0 +1,9 @@
+"resize = Resize((232,232))"
+crop = CenterCrop(224)
+"normalize = Normalize([0.485,0.456,0.406],"
+"[0.229,0.224,0.225])"
+imgfiles = sorted([f for f in glob('book_images/*')])
+"imgs = torch.stack([torch.div(crop(resize(read_image(f))), 255)"
+for f in imgfiles])
+imgs = normalize(imgs)
+imgs.size()

@@ -1,0 +1,2 @@
+##     FASN TACSTD2   ERBB2 CEACAM6   EPCAM    KRT7 
+##     0.55    0.59    0.91    0.44    0.62    0.70

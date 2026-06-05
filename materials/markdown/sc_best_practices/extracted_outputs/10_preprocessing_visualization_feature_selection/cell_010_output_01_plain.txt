@@ -1,0 +1,2 @@
+<rpy2.robjects.methods.RS4 object at 0x164985550> [25]
+R classes: ('dgCMatrix',)

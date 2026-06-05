@@ -1,0 +1,20 @@
+{
+  "order": 3,
+  "part": "Introduction",
+  "toc_file": "introduction/raw_data_processing",
+  "title": "Raw data processing",
+  "source_type": "md",
+  "upstream_path": "jupyter-book/introduction/raw_data_processing.md",
+  "environment": "advanced_data_structures_and_frameworks",
+  "week_mapping": [
+    14
+  ],
+  "code_cell_count": 0,
+  "dataset_reference_count": 67,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/code_index.md"
+  }
+}

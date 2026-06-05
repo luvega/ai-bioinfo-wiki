@@ -1,0 +1,8 @@
+"hc_avg = HClust(distance_threshold=0,"
+"n_clusters=None,"
+linkage='average');
+hc_avg.fit(X)
+"hc_sing = HClust(distance_threshold=0,"
+"n_clusters=None,"
+linkage='single');
+hc_sing.fit(X);

@@ -1,0 +1,11 @@
+"fig_pois, (ax_month, ax_hr) = subplots(1, 2, figsize=(16,8))"
+"ax_month.plot(x_month, coef_month, marker='o', ms=10)"
+ax_month.set_xticks(x_month)
+"ax_month.set_xticklabels([l[5] for l in coef_month.index], fontsize"
+=20)
+"ax_month.set_xlabel('Month', fontsize=20)"
+"ax_month.set_ylabel('Coefficient', fontsize=20)"
+"ax_hr.plot(x_hr, coef_hr, marker='o', ms=10)"
+"ax_hr.set_xticklabels(range(24)[::2], fontsize=20)"
+"ax_hr.set_xlabel('Hour', fontsize=20)"
+"ax_hr.set_ylabel('Coefficient', fontsize=20);"

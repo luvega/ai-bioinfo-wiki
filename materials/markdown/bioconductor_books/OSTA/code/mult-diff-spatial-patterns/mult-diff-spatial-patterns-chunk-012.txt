@@ -1,0 +1,12 @@
+##                        gene_id logFC.condition20DPI.cluster_id2
+##  AMEX60DD014721 AMEX60DD014721                       -0.5803072
+##  AMEX60DD045083 AMEX60DD045083                       -1.0629944
+##  AMEX60DD055246 AMEX60DD055246                       -0.2626440
+##                 logFC.condition2DPI.cluster_id2   logCPM        F
+##  AMEX60DD014721                       1.2700321 9.582333 79.67672
+##  AMEX60DD045083                       0.9056552 8.266790 41.02294
+##  AMEX60DD055246                      -2.2986675 5.661946 36.89376
+##                       PValue          FDR
+##  AMEX60DD014721 7.294354e-08 0.0003647177
+##  AMEX60DD045083 3.106511e-06 0.0072044008
+##  AMEX60DD055246 5.517131e-06 0.0072044008

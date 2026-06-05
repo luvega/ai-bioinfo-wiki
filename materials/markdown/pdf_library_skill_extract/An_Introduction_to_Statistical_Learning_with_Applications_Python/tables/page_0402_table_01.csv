@@ -1,0 +1,2 @@
+"confusion_table(khan_linear.predict(Khan['xtest']),"
+Khan['ytest'])

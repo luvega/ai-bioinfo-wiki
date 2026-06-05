@@ -1,0 +1,7 @@
+gam_full = LinearGAM(s_gam(0) +
+"s_gam(1, n_splines=7) +"
+"f_gam(2, lam=0))"
+"Xgam = np.column_stack([age,"
+"Wage['year'],"
+Wage['education'].cat.codes])
+"gam_full = gam_full.fit(Xgam, y)"

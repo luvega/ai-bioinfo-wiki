@@ -1,0 +1,9 @@
+## class: SummarizedExperiment 
+## dim: 92 2 
+## metadata(0):
+## assays(1): counts
+## rownames(92): ERCC-00002 ERCC-00003 ... ERCC-00170 ERCC-00171
+## rowData names(0):
+## colnames(2): SLX-9555.N701_S502.C89V9ANXX.s_1.r_1
+##   SLX-9555.N701_S503.C89V9ANXX.s_1.r_1
+## colData names(0):

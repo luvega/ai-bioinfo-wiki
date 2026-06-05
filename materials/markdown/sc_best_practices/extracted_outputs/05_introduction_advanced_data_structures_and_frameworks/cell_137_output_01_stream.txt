@@ -1,0 +1,2 @@
+CPU times: user 2min 6s, sys: 3.94 s, total: 2min 10s
+Wall time: 2min 10s

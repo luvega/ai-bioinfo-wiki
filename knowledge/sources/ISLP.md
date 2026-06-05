@@ -5,7 +5,8 @@ authors: [Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, Jonath
 year: 2023
 raw_path:
   - materials/raw/pdf_originals/An Introduction to Statistical Learning_ with Applications Python.pdf
-  - materials/markdown/pdf_library_legacy/An_Introduction_to_Statistical_Learning_with_Applications_Python.md
+  - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python/book.mineru.md
+  - materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python/book.course.md
 ingested: 2026-05-21
 language: en
 kind: textbook
@@ -82,5 +83,5 @@ AIDD 在第 9 章直接进入 DESeq2 调用，缺“为什么是负二项分布�
 
 ## 勘误 / 注意
 
-- PDF→Markdown 转换在前 30 页保留了一些 `(cid:NN)` 字形码（封面 / 致谢页），属于已知现象，不影响正文检索。
+- MinerU 转换结果以 `book.mineru.md` 为完整解析层，`book.course.md` 为备课整理层；旧版轻量转换已退役。
 - 引用具体公式或图表时，请回到 `materials/raw/pdf_originals/An Introduction to Statistical Learning_ with Applications Python.pdf` 找页码。

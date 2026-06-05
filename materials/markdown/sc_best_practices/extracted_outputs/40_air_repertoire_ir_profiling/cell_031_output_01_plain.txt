@@ -1,0 +1,65 @@
+                           is_cell high_confidence multi_chain extra_chains  \
+cell_id                                                                       
+AAACCTGAGAAACCTA-MH9179824    True            True       False           []   
+AAACCTGAGAACAATC-MH9143324    True            True       False           []   
+AAACCTGAGAACTCGG-MH8919329    True            True       False           []   
+AAACCTGAGAAGCCCA-MH9143373    True            True       False           []   
+AAACCTGAGAAGGACA-MH9143274    True            True       False           []   
+
+                           IR_VJ_1_c_call IR_VJ_2_c_call IR_VDJ_1_c_call  \
+cell_id                                                                    
+AAACCTGAGAAACCTA-MH9179824           TRAC            NaN           TRBC2   
+AAACCTGAGAACAATC-MH9143324            NaN            NaN           TRBC1   
+AAACCTGAGAACTCGG-MH8919329           TRAC            NaN           TRBC2   
+AAACCTGAGAAGCCCA-MH9143373           TRAC            NaN             NaN   
+AAACCTGAGAAGGACA-MH9143274           TRAC            NaN           TRBC2   
+
+                           IR_VDJ_2_c_call  IR_VJ_1_consensus_count  \
+cell_id                                                               
+AAACCTGAGAAACCTA-MH9179824             NaN                    960.0   
+AAACCTGAGAACAATC-MH9143324             NaN                      NaN   
+AAACCTGAGAACTCGG-MH8919329             NaN                   5122.0   
+AAACCTGAGAAGCCCA-MH9143373             NaN                  25914.0   
+AAACCTGAGAAGGACA-MH9143274             NaN                   3212.0   
+
+                            IR_VJ_2_consensus_count  ...  IR_VDJ_2_locus  \
+cell_id                                              ...                   
+AAACCTGAGAAACCTA-MH9179824                      NaN  ...             NaN   
+AAACCTGAGAACAATC-MH9143324                      NaN  ...             NaN   
+AAACCTGAGAACTCGG-MH8919329                      NaN  ...             NaN   
+AAACCTGAGAAGCCCA-MH9143373                      NaN  ...             NaN   
+AAACCTGAGAAGGACA-MH9143274                      NaN  ...             NaN   
+
+                            IR_VJ_1_productive IR_VJ_2_productive  \
+cell_id                                                             
+AAACCTGAGAAACCTA-MH9179824                True               None   
+AAACCTGAGAACAATC-MH9143324                None               None   
+AAACCTGAGAACTCGG-MH8919329                True               None   
+AAACCTGAGAAGCCCA-MH9143373                True               None   
+AAACCTGAGAAGGACA-MH9143274                True               None   
+
+                           IR_VDJ_1_productive IR_VDJ_2_productive  \
+cell_id                                                              
+AAACCTGAGAAACCTA-MH9179824                True                None   
+AAACCTGAGAACAATC-MH9143324                True                None   
+AAACCTGAGAACTCGG-MH8919329                True                None   
+AAACCTGAGAAGCCCA-MH9143373                None                None   
+AAACCTGAGAAGGACA-MH9143274                True                None   
+
+                           IR_VJ_1_v_call  IR_VJ_2_v_call  IR_VDJ_1_v_call  \
+cell_id                                                                      
+AAACCTGAGAAACCTA-MH9179824        TRAV8-4             NaN          TRBV5-1   
+AAACCTGAGAACAATC-MH9143324            NaN             NaN           TRBV19   
+AAACCTGAGAACTCGG-MH8919329         TRAV34             NaN          TRBV5-1   
+AAACCTGAGAAGCCCA-MH9143373         TRAV16             NaN              NaN   
+AAACCTGAGAAGGACA-MH9143274        TRAV8-1             NaN          TRBV7-6   
+
+                            IR_VDJ_2_v_call  has_ir  
+cell_id                                              
+AAACCTGAGAAACCTA-MH9179824              NaN    True  
+AAACCTGAGAACAATC-MH9143324              NaN    True  
+AAACCTGAGAACTCGG-MH8919329              NaN    True  
+AAACCTGAGAAGCCCA-MH9143373              NaN    True  
+AAACCTGAGAAGGACA-MH9143274              NaN    True  
+
+[5 rows x 45 columns]

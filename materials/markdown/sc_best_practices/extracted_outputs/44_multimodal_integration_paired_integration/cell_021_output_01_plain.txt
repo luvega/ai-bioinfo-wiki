@@ -1,0 +1,17 @@
+MuData object with n_obs × n_vars = 16294 × 4136
+  var:	'feature_types'
+  2 modalities
+    rna:	16294 x 4000
+      obs:	'GEX_n_genes_by_counts', 'GEX_pct_counts_mt', 'GEX_size_factors', 'GEX_phase', 'ADT_n_antibodies_by_counts', 'ADT_total_counts', 'ADT_iso_count', 'cell_type', 'batch', 'ADT_pseudotime_order', 'GEX_pseudotime_order', 'Samplename', 'Site', 'DonorNumber', 'Modality', 'VendorLot', 'DonorID', 'DonorAge', 'DonorBMI', 'DonorBloodType', 'DonorRace', 'Ethnicity', 'DonorGender', 'QCMeds', 'DonorSmoker', 'is_train'
+      var:	'feature_types', 'gene_id', 'highly_variable', 'means', 'dispersions', 'dispersions_norm'
+      uns:	'dataset_id', 'genome', 'hvg', 'organism'
+      obsm:	'ADT_X_pca', 'ADT_X_umap', 'ADT_isotype_controls', 'GEX_X_pca', 'GEX_X_umap'
+      layers:	'counts'
+    adt:	16294 x 136
+      obs:	'donor', 'batch', 'n_genes_by_counts', 'log1p_n_genes_by_counts', 'total_counts', 'log1p_total_counts', 'n_counts', 'outliers'
+      var:	'gene_ids', 'feature_types', 'n_cells_by_counts', 'mean_counts', 'log1p_mean_counts', 'pct_dropout_by_counts', 'total_counts', 'log1p_total_counts'
+      uns:	'batch_colors', 'donor_colors', 'neighbors', 'pca', 'umap'
+      obsm:	'X_isotypes', 'X_pca', 'X_pcahm', 'X_umap'
+      varm:	'PCs'
+      layers:	'counts'
+      obsp:	'connectivities', 'distances'

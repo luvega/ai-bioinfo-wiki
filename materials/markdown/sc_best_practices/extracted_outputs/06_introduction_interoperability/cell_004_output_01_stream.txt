@@ -1,0 +1,2 @@
+[92m→[0m connected lamindb: theislab/sc-best-practices
+[92m→[0m created Transform('QaILJZMpZyJ40000'), started new Run('1YEGroVZ...') at 2025-03-26 12:58:46 UTC

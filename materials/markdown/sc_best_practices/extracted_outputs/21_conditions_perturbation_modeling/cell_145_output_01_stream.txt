@@ -1,0 +1,4 @@
+WARNING: dendrogram data not found (using key=dendrogram_mixscape_class). Running `sc.tl.dendrogram` with default parameters. For fine tuning it is recommended to run `sc.tl.dendrogram` independently.
+WARNING: Groups are not reordered because the `groupby` categories and the `var_group_labels` are different.
+categories: IFNGR2 KO, IFNGR2 NP, NT
+var_group_labels: NT

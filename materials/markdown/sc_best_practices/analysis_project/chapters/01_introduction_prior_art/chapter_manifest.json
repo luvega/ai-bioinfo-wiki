@@ -1,0 +1,18 @@
+{
+  "order": 1,
+  "part": "Introduction",
+  "toc_file": "introduction/prior_art",
+  "title": "Prior art",
+  "source_type": "md",
+  "upstream_path": "jupyter-book/introduction/prior_art.md",
+  "environment": "advanced_data_structures_and_frameworks",
+  "week_mapping": [],
+  "code_cell_count": 0,
+  "dataset_reference_count": 3,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/01_introduction_prior_art",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/01_introduction_prior_art/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/01_introduction_prior_art/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/01_introduction_prior_art/code_index.md"
+  }
+}

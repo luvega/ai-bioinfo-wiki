@@ -1,0 +1,6 @@
+          contrast    name    logFCs         pvals adj_pvals
+13236  CD8 T cells  SAMD9L  3.592979  1.818029e-10  0.000001
+13237  CD8 T cells   IFIT3  6.486142  6.843872e-10  0.000002
+13238  CD8 T cells    IFI6  5.555549  1.835813e-09  0.000003
+13239  CD8 T cells    OAS1  5.479982  7.165866e-09  0.000008
+13240  CD8 T cells   IFIT1  6.617856  1.149598e-08   0.00001

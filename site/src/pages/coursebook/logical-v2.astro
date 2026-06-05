@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/paths';
+
+const redirectUrl = withBase('/coursebook');
+---
+
+<BaseLayout title="Coursebook 路径已更新" description="教材 v2 已成为 Coursebook 正式入口">
+  <meta http-equiv="refresh" content={`0; url=${redirectUrl}`} />
+  <section class="section">
+    <div class="section-inner">
+      <article class="info-panel">
+        <h1>路径已更新</h1>
+        <p>12 章教材已进入 Coursebook 正式目录。</p>
+        <p><a class="text-link" href={redirectUrl}>打开 Coursebook</a></p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

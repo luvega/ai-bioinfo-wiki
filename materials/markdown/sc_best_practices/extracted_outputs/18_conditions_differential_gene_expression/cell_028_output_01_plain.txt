@@ -1,0 +1,4 @@
+AnnData object with n_obs × n_vars = 128 × 15701
+    obs: 'sample', 'cell_type', 'label', 'replicate', 'psbulk_cells', 'psbulk_counts'
+    var: 'name', 'n_cells'
+    layers: 'psbulk_props'

@@ -1,0 +1,8 @@
+single pair        196957
+orphan VDJ          45266
+extra VJ            19034
+orphan VJ            7937
+extra VDJ            7473
+two full chains      3356
+no IR                  22
+Name: chain_pairing, dtype: int64

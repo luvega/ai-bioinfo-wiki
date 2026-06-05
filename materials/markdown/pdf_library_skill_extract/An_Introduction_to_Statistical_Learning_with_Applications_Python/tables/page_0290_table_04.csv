@@ -1,0 +1,9 @@
+"pls_fig, ax = subplots(figsize=(8,8))"
+n_comp = param_grid['n_components']
+"ax.errorbar(n_comp,"
+"-grid.cv_results_['mean_test_score'],"
+grid.cv_results_['std_test_score'] / np.sqrt(K))
+"ax.set_ylabel('Cross-validated MSE', fontsize=20)"
+"ax.set_xlabel('# principal components', fontsize=20)"
+ax.set_xticks(n_comp[::2])
+"ax.set_ylim([50000,250000]);"

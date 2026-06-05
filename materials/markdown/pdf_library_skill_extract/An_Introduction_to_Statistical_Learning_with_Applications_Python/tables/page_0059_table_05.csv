@@ -1,0 +1,5 @@
+"fig, ax = subplots(figsize=(8, 8))"
+"ax.scatter(x, y, marker='o')"
+"ax.set_xlabel(""this is the x-axis"")"
+"ax.set_ylabel(""this is the y-axis"")"
+"ax.set_title(""Plot of X vs Y"");"

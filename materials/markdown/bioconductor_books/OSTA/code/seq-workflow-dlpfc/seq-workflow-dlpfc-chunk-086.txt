@@ -1,0 +1,2 @@
+##     Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##      537    2400    3442    3849    4921   15862

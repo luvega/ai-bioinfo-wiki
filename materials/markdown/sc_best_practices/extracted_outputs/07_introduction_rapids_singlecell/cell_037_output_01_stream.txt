@@ -1,0 +1,8 @@
+2026-05-06 11:21:24 | [INFO] To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2026-05-06 11:21:24 | [INFO] State start
+2026-05-06 11:21:24 | [INFO] Found stale lock file and directory '/tmp/dask-scratch-space/scheduler-91l8od54', purging
+2026-05-06 11:21:24 | [INFO] Found stale lock file and directory '/tmp/dask-scratch-space/worker-dmwfgw5g', purging
+2026-05-06 11:21:24 | [WARNING] A CUDA context for device 0 (GPU-740d12cd-9ded-6e44-a5b5-5cd90037aebe) already exists on process ID 537888. This is often the result of a CUDA-enabled library calling a CUDA runtime function before Dask-CUDA can spawn worker processes. Please make sure any such function calls don't happen at import time or in the global scope of a program.
+2026-05-06 11:21:24 | [INFO]   Scheduler at:     ucx://127.0.0.1:53865
+2026-05-06 11:21:24 | [INFO]   dashboard at:  http://127.0.0.1:8787/status
+2026-05-06 11:21:24 | [INFO] Registering Worker plugin shuffle

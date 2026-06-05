@@ -1,0 +1,10 @@
+flowchart LR
+    accTitle: Week 05 数据读取与整理
+    accDescr: 原始表 -> 字段字典 -> 整形计划。
+    n1["原始表"]
+    n2["字段字典"]
+    n3["整形计划"]
+    n1 --> n2
+    n2 --> n3
+    ai["AI 审计"] -.-> n1
+    boundary["证据边界"] -.-> n3

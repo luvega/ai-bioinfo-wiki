@@ -1,0 +1,3 @@
+      A     B     C Disease status
+1  2000  2000  2000        Healthy
+2  4000  2000  2000       Diseased

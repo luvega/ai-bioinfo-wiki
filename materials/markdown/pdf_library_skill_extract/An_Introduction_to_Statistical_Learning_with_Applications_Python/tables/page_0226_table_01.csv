@@ -1,0 +1,9 @@
+"hp_model = sklearn_sm(sm.OLS,"
+MS(['horsepower']))
+"X, Y = Auto.drop(columns=['mpg']), Auto['mpg']"
+"cv_results = cross_validate(hp_model,"
+"X,"
+"Y,"
+cv=Auto.shape[0])
+cv_err = np.mean(cv_results['test_score'])
+cv_err

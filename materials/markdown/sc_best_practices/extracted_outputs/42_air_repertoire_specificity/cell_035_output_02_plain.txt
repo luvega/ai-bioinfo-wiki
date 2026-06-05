@@ -1,0 +1,10 @@
+CMV            87
+InfluenzaA     26
+EBV            21
+ambiguous      16
+HomoSapiens     5
+HIV-1           4
+YFV             3
+SIV             1
+SARS-CoV-2      1
+Name: antigen.species_fullIR, dtype: int64

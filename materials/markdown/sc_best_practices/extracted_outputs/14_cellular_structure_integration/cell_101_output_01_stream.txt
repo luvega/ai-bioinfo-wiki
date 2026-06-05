@@ -1,0 +1,5 @@
+An object of class Seurat 
+4000 features across 10270 samples within 2 assays 
+Active assay: integrated (2000 features, 2000 variable features)
+ 1 layer present: data
+ 1 other assay present: originalexp

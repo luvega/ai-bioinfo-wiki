@@ -1,0 +1,5 @@
+"ax = subplots(figsize=(12, 12))[1]"
+best_ = grid.best_estimator_
+"plot_tree(best_,"
+"feature_names=feature_names,"
+ax=ax);

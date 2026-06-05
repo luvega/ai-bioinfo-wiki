@@ -1,0 +1,7 @@
+Variables persist in the Python prompt
+""
+"We assigned in the earlier batch of code. Why can we keep referring to it? Any vari-
+age
+able declared during a session of programming with your Python prompt will stick around
+until you quit. That’s just how variables work in programs, too. They’re available as soon
+as you assign a value to them."

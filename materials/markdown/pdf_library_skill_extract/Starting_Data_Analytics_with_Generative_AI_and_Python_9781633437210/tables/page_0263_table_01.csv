@@ -1,0 +1,23 @@
+Factor,Generative AI,Traditional NLP methods
+,"Extractive
+ When prompted correctly can generate
+extractive summaries, however it tends to
+drift toward abstractive summaries
+Abstractive
+ Processes the entire document, understands
+the key points and relationships, and gener-
+ates a summary that conveys the essential
+meaning in its own words
+ Can rephrase ideas, use synonyms, and
+change the sentence structure
+ Can incorporate the overall sentiment or tone
+of the original text, or change it on demand
+according to the needs
+Low
+ Computationally expensive training and
+inference
+Low
+ May struggle with long documents
+ May require significant resources to process
+complex summaries
+ Using an API is slow and expensive",

@@ -1,0 +1,11 @@
+class MNIST_MLR(nn.Module):
+def __init__(self):
+"super(MNIST_MLR, self).__init__()"
+"self.linear = nn.Sequential(nn.Flatten(),"
+"nn.Linear(784, 10))"
+"def forward(self, x):"
+return self.linear(x)
+""
+mlr_model = MNIST_MLR()
+mlr_module = SimpleModule.classification(mlr_model)
+"mlr_logger = CSVLogger('logs', name='MNIST_MLR')"

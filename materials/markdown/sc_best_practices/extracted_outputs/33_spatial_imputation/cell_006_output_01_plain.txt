@@ -1,0 +1,2 @@
+AnnData object with n_obs × n_vars = 9448 × 28692
+    var: 'chozen_isoform', 'code'

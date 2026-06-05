@@ -1,0 +1,12 @@
+metadata
+(merged)
+$
+merge.info[,
+c
+(
+"left"
+, 
+"right"
+, 
+"lost.var"
+)]

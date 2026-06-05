@@ -1,0 +1,8 @@
+"lassoCV = skl.ElasticNetCV(n_alphas=100,"
+"l1_ratio=1,"
+cv=kfold)
+"pipeCV = Pipeline(steps=[('scaler', scaler),"
+"('lasso', lassoCV)])"
+"pipeCV.fit(X, Y)"
+tuned_lasso = pipeCV.named_steps['lasso']
+tuned_lasso.alpha_

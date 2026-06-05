@@ -1,0 +1,7 @@
+sample_id,group,PC1,PC2,cluster
+Ctrl_1,Control,-1.9,0.2,1
+Ctrl_2,Control,-1.7,-0.1,1
+Ctrl_3,Control,-2.0,0.0,1
+Drug_1,Drug,1.8,0.1,2
+Drug_2,Drug,1.6,-0.3,2
+Drug_3,Drug,2.2,0.1,2

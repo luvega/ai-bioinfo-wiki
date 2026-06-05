@@ -1,0 +1,2 @@
+<Compressed Sparse Row sparse matrix of dtype 'float32'
+	with 14348115 stored elements and shape (10270, 13431)>

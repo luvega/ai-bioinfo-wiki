@@ -1,0 +1,3 @@
+"true_beta = np.array([0.04, -0.3, 0, 0.2, -0.2])"
+true_linpred = X.dot(true_beta)
+hazard = lambda t: 1e-5 * t

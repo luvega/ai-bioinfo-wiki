@@ -1,0 +1,3 @@
+WARNING: Please specify a valid `library_id` or set it permanently in `adata.uns['spatial']`
+CPU times: user 112 ms, sys: 6.02 ms, total: 118 ms
+Wall time: 117 ms

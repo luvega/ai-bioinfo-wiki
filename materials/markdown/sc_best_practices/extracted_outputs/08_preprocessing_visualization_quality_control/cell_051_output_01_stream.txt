@@ -1,0 +1,2 @@
+Total number of genes: 36601
+Number of genes after cell filter: 20109

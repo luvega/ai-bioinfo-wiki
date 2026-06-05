@@ -1,0 +1,20 @@
+{
+  "order": 30,
+  "part": "Spatial omics",
+  "toc_file": "spatial/domains",
+  "title": "Spatial domains",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/spatial/domains.ipynb",
+  "environment": "spatial",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 23,
+  "dataset_reference_count": 2,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/30_spatial_domains",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/30_spatial_domains/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/30_spatial_domains/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/30_spatial_domains/code_index.md"
+  }
+}

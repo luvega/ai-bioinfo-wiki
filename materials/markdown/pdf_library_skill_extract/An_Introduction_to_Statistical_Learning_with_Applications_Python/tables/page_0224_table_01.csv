@@ -1,0 +1,4 @@
+Auto = load_data('Auto')
+"Auto_train, Auto_valid = train_test_split(Auto,"
+"test_size=196,"
+random_state=0)

@@ -1,0 +1,7 @@
+"m, B = 100, 10000"
+"idx = rng.choice(Khan['xtest'].columns, m, replace=False)"
+T_vals = np.empty(m)
+"Tnull_vals = np.empty((m, B))"
+""
+for j in range(m):
+col = idx[j]

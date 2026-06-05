@@ -1,0 +1,4 @@
+/opt/python/lib/python3.8/site-packages/rpy2/robjects/pandas2ri.py:59: UserWarning: Error while trying to convert the column "productive". Fall back to string conversion. The error is: Series can only be of one type, or None (and here we have <class 'str'> and <class 'bool'>).
+R[write to console]: Error in (function (db, sequenceColumn = "junction", vCallColumn = "v_call",  : 
+  The locus column contains invalid loci annotations.
+

@@ -1,0 +1,12 @@
+## class: SingleCellExperiment 
+## dim: 33694 4182 
+## metadata(0):
+## assays(2): counts logcounts
+## rownames(33694): ENSG00000243485 ENSG00000237613 ... ENSG00000277475
+##   ENSG00000268674
+## rowData names(3): ENSEMBL_ID Symbol_TENx Symbol
+## colnames: NULL
+## colData names(13): Sample Barcode ... sizeFactor label
+## reducedDimNames(3): PCA TSNE UMAP
+## mainExpName: NULL
+## altExpNames(0):

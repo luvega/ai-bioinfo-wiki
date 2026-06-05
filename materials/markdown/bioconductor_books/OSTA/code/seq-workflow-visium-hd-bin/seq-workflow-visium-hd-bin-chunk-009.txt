@@ -1,0 +1,14 @@
+##  class: SpatialExperiment 
+##  dim: 18085 137051 
+##  metadata(2): resouces spatialList
+##  assays(1): counts
+##  rownames(18085): SAMD11 NOC2L ... MT-ND6 MT-CYB
+##  rowData names(3): ID Symbol Type
+##  colnames(137051): s_016um_00052_00082-1 s_016um_00010_00367-1 ...
+##    s_016um_00037_00193-1 s_016um_00144_00329-1
+##  colData names(12): barcode in_tissue ... in_cell sample_id
+##  reducedDimNames(0):
+##  mainExpName: Gene Expression
+##  altExpNames(0):
+##  spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+##  imgData names(4): sample_id image_id data scaleFactor

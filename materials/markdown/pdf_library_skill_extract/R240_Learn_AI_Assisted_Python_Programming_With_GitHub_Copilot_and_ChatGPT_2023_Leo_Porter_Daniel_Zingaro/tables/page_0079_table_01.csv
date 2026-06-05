@@ -1,0 +1,8 @@
+Importing modules
+""
+"There are a number of useful modules available in Python. We saw how powerful mat-
+plotlib is in chapter 2. But for Python code to take advantage of a module, we have to
+import that module. You might ask why we don’t have modules available to us without
+importing them, but that would massively increase the complexity of the code and what
+Python has to do to run code behind the scenes. Instead, the model is to include mod-
+ules if you want to use them, and they aren’t included by default."

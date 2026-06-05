@@ -1,0 +1,14 @@
+class: SingleCellExperiment 
+dim: 2000 10270 
+metadata(0):
+assays(3): X counts logcounts
+rownames(2000): GPR153 TNFRSF25 ... TMLHE-AS1 MT-ND3
+rowData names(9): feature_types gene_id ... highly_variable_nbatches
+  highly_variable_intersection
+colnames(10270): TCACCTGGTTAGGTTG-3-s1d3 CGTTAACAGGTGTCCA-3-s1d3 ...
+  AGCAGGTAGGCTATGT-12-s3d7 GCCATGATCCCTTGCG-12-s3d7
+colData names(28): GEX_pct_counts_mt GEX_n_counts ... QCMeds
+  DonorSmoker
+reducedDimNames(8): ATAC_gene_activity ATAC_lsi_full ... PCA UMAP
+mainExpName: NULL
+altExpNames(0):

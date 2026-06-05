@@ -1,0 +1,2 @@
+/Users/seohyon/miniconda3/envs/interoperability/lib/python3.12/site-packages/session_info/main.py:213: UserWarning: The '__version__' attribute is deprecated and will be removed in MarkupSafe 3.1. Use feature detection, or `importlib.metadata.version("markupsafe")`, instead.
+  mod_version = _find_version(mod.__version__)

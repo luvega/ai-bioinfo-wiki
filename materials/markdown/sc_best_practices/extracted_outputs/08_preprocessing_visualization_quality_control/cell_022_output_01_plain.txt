@@ -1,0 +1,4 @@
+outlier
+False    16065
+True       869
+Name: count, dtype: int64

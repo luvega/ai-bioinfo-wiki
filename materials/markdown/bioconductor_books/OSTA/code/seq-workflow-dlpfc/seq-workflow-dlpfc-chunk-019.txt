@@ -1,0 +1,3 @@
+##        qc_lib_size qc_detected qc_mito
+##  FALSE        3631        3632    3622
+##  TRUE            8           7      17

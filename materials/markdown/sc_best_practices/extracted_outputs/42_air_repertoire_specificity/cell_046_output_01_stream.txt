@@ -1,0 +1,5 @@
+/home/icb/felix.drost/miniconda/envs/bestPractice/lib/python3.8/site-packages/tcrdist/repertoire.py:159: UserWarning: cell_df needs a counts column to track clonal number of frequency
+
+  self._validate_cell_df()
+/home/icb/felix.drost/miniconda/envs/bestPractice/lib/python3.8/site-packages/tcrdist/repertoire.py:791: UserWarning: No 'count' column provided; count column set to 1
+  warnings.warn("No 'count' column provided; count column set to 1")

@@ -1,0 +1,30 @@
+##  Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+##  lmerModLmerTest]
+##  Formula: f
+##     Data: allIslets
+##  
+##  REML criterion at convergence: 9028
+##  
+##  Scaled residuals: 
+##      Min      1Q  Median      3Q     Max 
+##  -2.6027 -0.6199  0.0265  0.6129  3.0764 
+##  
+##  Random effects:
+##   Groups     Name        Variance Std.Dev.
+##   image_name (Intercept) 1.4628   1.2095  
+##   patient_id (Intercept) 0.5426   0.7366  
+##   Residual               7.3230   2.7061  
+##  Number of obs: 1806, groups:  image_name, 844; patient_id, 12
+##  
+##  Fixed effects:
+##                             Estimate Std. Error      df t value Pr(>|t|)    
+##  (Intercept)                  9.5935     0.3924  8.8393  24.447 2.01e-09 ***
+##  patient_stageOnset          -0.5624     0.5557  8.8860  -1.012    0.338    
+##  patient_stageLong-duration  -1.5404     0.5563  8.9198  -2.769    0.022 *  
+##  ---
+##  Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+##  
+##  Correlation of Fixed Effects:
+##              (Intr) ptnt_O
+##  ptnt_stgOns -0.706       
+##  ptnt_stgLn- -0.705  0.498

@@ -1,0 +1,14 @@
+## class: SingleCellLoomExperiment 
+## dim: 20 20 
+## metadata(4): CreatedWith LOOM_SPEC_VERSION LoomExperiment-class
+##   MatrixName
+## assays(1): matrix
+## rownames: NULL
+## rowData names(7): Accession Gene ... X_Total X_Valid
+## colnames: NULL
+## colData names(103): Age AnalysisPool ... cDNA_Lib_Ok ngperul_cDNA
+## reducedDimNames(0):
+## mainExpName: NULL
+## altExpNames(0):
+## rowGraphs(0): NULL
+## colGraphs(2): KNN MKNN

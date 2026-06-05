@@ -1,0 +1,6 @@
+null_distribution chi squared
+degrees_freedom 1
+test_name log-likelihood ratio test
+""
+test_statistic p -log2(p)
+1.44 0.23 2.12

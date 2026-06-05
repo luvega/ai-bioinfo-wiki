@@ -1,0 +1,13 @@
+                    nFrags  uniqFrags  nAbove2  total.nAbove2   p.value  \
+AAACAGCCAAGCTTAT-1  1696.0     1696.0      0.0            0.0  0.994851   
+AAACAGCCATGAAATG-1  2536.0     2536.0      0.0            1.0  0.994851   
+AAACAGCCATGTTTGG-1  3464.0     3464.0      1.0            6.0  0.967723   
+AAACATGCAACGTGCT-1  3602.0     3602.0      0.0            2.0  0.994851   
+AAACATGCAATATAGG-1  3893.0     3893.0      1.0            3.0  0.967723   
+
+                     q.value  
+AAACAGCCAAGCTTAT-1  0.994851  
+AAACAGCCATGAAATG-1  0.994851  
+AAACAGCCATGTTTGG-1  0.994851  
+AAACATGCAACGTGCT-1  0.994851  
+AAACATGCAATATAGG-1  0.994851  

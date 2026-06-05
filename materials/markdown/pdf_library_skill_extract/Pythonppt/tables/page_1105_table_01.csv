@@ -1,0 +1,7 @@
+函数,描述
+os.getlogin(),"获得当前系统登录用户名称
+>>>os.getlogin()
+'Tian Song'"
+os.cpu_count(),"获得当前系统的CPU数量
+>>>os.cpu_count()
+8"

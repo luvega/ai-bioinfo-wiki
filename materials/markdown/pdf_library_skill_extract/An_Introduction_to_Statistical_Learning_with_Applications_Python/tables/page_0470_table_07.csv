@@ -1,0 +1,5 @@
+"nyse_optimizer = RMSprop(nyse_model.parameters(),"
+lr=0.001)
+"nyse_module = SimpleModule.regression(nyse_model,"
+"optimizer=nyse_optimizer,"
+metrics={'r2':R2Score()})

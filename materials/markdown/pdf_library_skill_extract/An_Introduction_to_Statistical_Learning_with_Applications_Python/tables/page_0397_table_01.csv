@@ -1,0 +1,3 @@
+"svm_ = SVC(C=0.1, kernel='linear').fit(X, y)"
+y_hat = svm_.predict(X)
+"confusion_table(y_hat, y)"

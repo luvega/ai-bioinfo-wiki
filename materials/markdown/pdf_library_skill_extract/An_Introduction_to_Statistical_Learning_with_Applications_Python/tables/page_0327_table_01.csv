@@ -1,0 +1,13 @@
+"facecolor='gray',"
+alpha=0.3)
+"for df in [1,3,4,8,15]:"
+"lam = approx_lam(X_age, age_term, df+1)"
+age_term.lam = lam
+"gam.fit(X_age, y)"
+"ax.plot(age_grid,"
+"gam.predict(age_grid),"
+"label='{:d}'.format(df),"
+linewidth=4)
+"ax.set_xlabel('Age', fontsize=20)"
+"ax.set_ylabel('Wage', fontsize=20);"
+ax.legend(title='Degrees of freedom');

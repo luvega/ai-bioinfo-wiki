@@ -1,0 +1,6 @@
+highly_variable_nbatches
+0    9931
+1    1824
+2     852
+3     824
+Name: count, dtype: int64

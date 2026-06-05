@@ -1,0 +1,6 @@
+AnnData object with n_obs × n_vars = 41663 × 29046
+    obs: 'sample', 'n_counts', 'n_genes', 'percent_mito', 'doublet_score', 'dissociation_score', 'patient_region_id', 'donor_id', 'patient_group', 'major_labl', 'assay', 'disease', 'organism', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'cell_type', 'cell_type_original'
+    var: 'feature_is_filtered', 'feature_name', 'feature_reference', 'feature_biotype'
+    uns: 'X_approximate_distribution', 'batch_condition', 'cell_type_colors', 'cell_type_original_colors', 'default_embedding', 'schema_version', 'title'
+    obsm: 'X_harmony', 'X_pca', 'X_umap'
+    layers: 'counts', 'normalized_counts'

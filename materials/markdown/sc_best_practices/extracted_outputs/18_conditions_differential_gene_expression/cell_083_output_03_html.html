@@ -1,0 +1,62 @@
+
+    <style>
+        .output.text_html {
+            --pst-color-text-base: transparent !important;
+        }
+        .mcq-box {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 12px;
+            width: 340px;
+            text-align: left;
+            font-size: 15px;
+            margin-bottom: 8px;
+            background-color: #3965a3;
+            border-radius: 8px;
+            color: white;
+        }
+    </style>
+
+    <div class="mcq-box">
+        <p><strong>What does an interaction term like `cell_type:label` in a design matrix allow you to test?</strong></p>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq8" value="Whether cell types differ in total read counts"
+            onclick="checkAnswer(this, 'Whether the effect of treatment differs across cell types', '', 'feedback-q8')"> Whether cell types differ in total read counts
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq8" value="Whether the effect of treatment differs across cell types"
+            onclick="checkAnswer(this, 'Whether the effect of treatment differs across cell types', '', 'feedback-q8')"> Whether the effect of treatment differs across cell types
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq8" value="Whether replicates are correlated within patients"
+            onclick="checkAnswer(this, 'Whether the effect of treatment differs across cell types', '', 'feedback-q8')"> Whether replicates are correlated within patients
+        </label><br>
+        
+        <label style="color: white;">
+            <input type="radio" name="qq8" value="Whether batch effects are present in the data"
+            onclick="checkAnswer(this, 'Whether the effect of treatment differs across cell types', '', 'feedback-q8')"> Whether batch effects are present in the data
+        </label><br>
+        
+        <p id="feedback-q8" style="font-weight: bold;"></p>
+        <p class="mcq-answer-q8" style="display: none; font-weight: bold; color: red;">
+            ✔ Correct Answer: Whether the effect of treatment differs across cell types
+        </p>
+    </div>
+
+    <script>
+    function checkAnswer(element, correct, explanation, feedbackId) {
+        let feedback = document.getElementById(feedbackId);
+        if (element.value === correct) {
+            feedback.innerHTML = "✅ Correct!";
+            feedback.style.color = "#a8d480";
+        } else {
+            feedback.innerHTML = "❌ Incorrect! " + explanation;
+            feedback.style.color = "#EE4B2B";
+        }
+    }
+    </script>
+    

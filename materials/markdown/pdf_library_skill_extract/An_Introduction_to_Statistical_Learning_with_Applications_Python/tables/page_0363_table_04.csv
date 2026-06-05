@@ -1,0 +1,22 @@
+|--- ShelveLoc[Good] <= 0.50
+| |--- Price <= 92.50
+| | |--- Income <= 57.00
+"| | | |--- weights: [7.00, 3.00] class: No"
+| | |--- Income > 57.00
+"| | | |--- weights: [7.00, 29.00] class: Yes"
+| |--- Price > 92.50
+| | |--- Advertising <= 13.50
+"| | | |--- weights: [183.00, 41.00] class: No"
+| | |--- Advertising > 13.50
+"| | | |--- weights: [20.00, 25.00] class: Yes"
+|--- ShelveLoc[Good] > 0.50
+| |--- Price <= 135.00
+| | |--- US[Yes] <= 0.50
+"| | | |--- weights: [6.00, 11.00] class: Yes"
+| | |--- US[Yes] > 0.50
+"| | | |--- weights: [2.00, 49.00] class: Yes"
+| |--- Price > 135.00
+| | |--- Income <= 46.00
+"| | | |--- weights: [6.00, 0.00] class: No"
+| | |--- Income > 46.00
+"| | | |--- weights: [5.00, 6.00] class: Yes"

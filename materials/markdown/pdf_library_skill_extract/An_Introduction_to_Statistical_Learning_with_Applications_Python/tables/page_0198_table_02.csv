@@ -1,0 +1,8 @@
+"X = MS(['mnth',"
+"'hr',"
+"'workingday',"
+"'temp',"
+'weathersit']).fit_transform(Bike)
+Y = Bike['bikers']
+"M_lm = sm.OLS(Y, X).fit()"
+summarize(M_lm)

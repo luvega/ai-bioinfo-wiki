@@ -1,0 +1,1 @@
+... storing 'manual_celltype_annotation' as categorical

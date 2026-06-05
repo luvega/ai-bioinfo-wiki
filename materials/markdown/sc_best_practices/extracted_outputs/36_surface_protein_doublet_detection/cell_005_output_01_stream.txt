@@ -1,0 +1,3 @@
+[92m→[0m loaded Transform('xo1WtNUmrJCK0003', key='doublet_detection.ipynb'), re-started Run('hDXP6BIj1dnyLVwy') at 2026-04-10 17:27:34 UTC
+[92m→[0m notebook imports: lamindb-core==2.3.1 muon==0.1.7 scanpy==1.12
+[94m•[0m recommendation: to identify the notebook across renames, pass the uid: ln.track("xo1WtNUmrJCK")

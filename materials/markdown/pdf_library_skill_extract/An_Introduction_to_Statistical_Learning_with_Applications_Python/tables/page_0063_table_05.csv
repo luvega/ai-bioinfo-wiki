@@ -1,0 +1,2 @@
+"keep_rows = np.zeros(A.shape[0], bool)"
+keep_rows

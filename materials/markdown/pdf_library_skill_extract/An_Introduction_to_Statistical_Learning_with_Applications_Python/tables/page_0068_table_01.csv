@@ -1,0 +1,2 @@
+"rows = ['amc rebel sst', 'ford torino']"
+Auto_re.loc[rows]

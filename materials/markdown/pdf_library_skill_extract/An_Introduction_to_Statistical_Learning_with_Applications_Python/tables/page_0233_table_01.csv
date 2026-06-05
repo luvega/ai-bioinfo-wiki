@@ -1,0 +1,6 @@
+rng = np.random.default_rng(10)
+store = np.empty(10000)
+for i in range(10000):
+"store[i] = np.sum(rng.choice(100, replace=True) == 4)"
+> 0
+np.mean(store)

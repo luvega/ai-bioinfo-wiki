@@ -1,0 +1,4 @@
+from ISLP import load_data
+"from ISLP.models import (ModelSpec as MS,"
+"summarize,"
+poly)

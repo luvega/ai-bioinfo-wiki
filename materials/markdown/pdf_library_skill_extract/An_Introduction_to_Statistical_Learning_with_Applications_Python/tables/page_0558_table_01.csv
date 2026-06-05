@@ -1,0 +1,16 @@
+"hc_pca = HClust(n_clusters=None,"
+"distance_threshold=0,"
+linkage='complete'
+").fit(nci_scores[:,:5])"
+linkage_pca = compute_linkage(hc_pca)
+"fig, ax = plt.subplots(figsize=(8,8))"
+"dendrogram(linkage_pca,"
+"labels=np.asarray(nci_labs),"
+"leaf_font_size=10,"
+"ax=ax,"
+**cargs)
+"ax.set_title(""Hier. Clust. on First Five Score Vectors"")"
+"pca_labels = pd.Series(cut_tree(linkage_pca,"
+"n_clusters=4).reshape(-1),"
+name='Complete-PCA')
+"pd.crosstab(nci_labs['label'], pca_labels)"

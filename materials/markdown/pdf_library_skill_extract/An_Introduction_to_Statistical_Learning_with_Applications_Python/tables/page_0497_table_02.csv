@@ -1,0 +1,8 @@
+t_0 -1
+null_distribution chi squared
+degrees_of_freedom 1
+test_name logrank_test
+""
+""
+test_statistic p -log2(p)
+1.44 0.23 2.12

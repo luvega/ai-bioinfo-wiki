@@ -1,0 +1,6 @@
+"def nCp(sigma2, estimator, X, Y):"
+"""Negative Cp statistic"""
+"n, p = X.shape"
+Yhat = estimator.predict(X)
+RSS = np.sum((Y - Yhat)**2)
+return -(RSS + 2 * p * sigma2) / n

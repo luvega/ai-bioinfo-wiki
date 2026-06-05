@@ -1,0 +1,7 @@
+ns_age = NaturalSpline(df=4).fit(age)
+ns_year = NaturalSpline(df=5).fit(Wage['year'])
+"Xs = [ns_age.transform(age),"
+"ns_year.transform(Wage['year']),"
+pd.get_dummies(Wage['education']).values]
+X_bh = np.hstack(Xs)
+"gam_bh = sm.OLS(y, X_bh).fit()"

@@ -1,0 +1,20 @@
+{
+  "order": 15,
+  "part": "Inferring trajectories",
+  "toc_file": "trajectories/pseudotemporal",
+  "title": "Pseudotemporal ordering",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/trajectories/pseudotemporal.ipynb",
+  "environment": "lineage-tracing",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 9,
+  "dataset_reference_count": 3,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/15_trajectories_pseudotemporal",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/15_trajectories_pseudotemporal/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/15_trajectories_pseudotemporal/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/15_trajectories_pseudotemporal/code_index.md"
+  }
+}

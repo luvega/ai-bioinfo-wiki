@@ -1,0 +1,4 @@
+"pd.crosstab(decision,"
+"truth,"
+"rownames=['Decision'],"
+colnames=['H0'])

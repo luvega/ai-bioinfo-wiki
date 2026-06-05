@@ -1,0 +1,5 @@
+"for idx, (X_ ,Y_) in enumerate(mnist_dm.train_dataloader()):"
+"print('X: ', X_.shape)"
+"print('Y: ', Y_.shape)"
+if idx >= 1:
+break

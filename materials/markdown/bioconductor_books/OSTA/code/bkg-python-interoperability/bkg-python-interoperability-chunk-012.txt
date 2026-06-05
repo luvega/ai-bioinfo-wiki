@@ -1,0 +1,12 @@
+##  class: SingleCellExperiment 
+##  dim: 32285 3355 
+##  metadata(1): spatial
+##  assays(1): counts
+##  rownames(32285): Xkr4 Gm1992 ... AC234645.1 AC149090.1
+##  rowData names(3): gene_ids feature_types genome
+##  colnames(3355): AAACAAGTATCTCCCA-1 AAACACCAATAACTGC-1 ...
+##    TTGTTTCATTAGTCTA-1 TTGTTTCCATACAACT-1
+##  colData names(3): in_tissue array_row array_col
+##  reducedDimNames(1): spatial
+##  mainExpName: NULL
+##  altExpNames(0):

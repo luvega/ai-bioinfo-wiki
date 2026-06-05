@@ -1,0 +1,9 @@
+"Xs = X - X.mean(0)[None,:]"
+X_scale = X.std(0)
+"Xs = Xs / X_scale[None,:]"
+"lambdas = 10**np.linspace(8, -2, 100) / Y.std()"
+"soln_array = skl.ElasticNet.path(Xs,"
+"Y,"
+"l1_ratio=0.,"
+alphas=lambdas)[1]
+soln_array.shape

@@ -1,0 +1,5 @@
+"model = MS(Publication.columns.drop('mech'),"
+intercept=False)
+"coxph().fit(model.fit_transform(Publication),"
+"'time',"
+"'status').summary[['coef', 'se(coef)', 'p']]"

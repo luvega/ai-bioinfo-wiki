@@ -1,0 +1,5 @@
+hp_mm = MS(['horsepower'])
+X_train = hp_mm.fit_transform(Auto_train)
+y_train = Auto_train['mpg']
+"model = sm.OLS(y_train, X_train)"
+results = model.fit()

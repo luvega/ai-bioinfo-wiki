@@ -1,0 +1,3 @@
+"X_day = pd.merge(X,"
+"pd.get_dummies(NYSE['day_of_week']),"
+on='date')

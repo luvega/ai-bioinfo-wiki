@@ -1,0 +1,6 @@
+2026-05-06 11:21:24 | [INFO]         Start Nanny at: 'ucx://127.0.0.1:47175'
+2026-05-06 11:21:25 | [INFO] Register worker addr: ucx://127.0.0.1:52107 name: 0
+2026-05-06 11:21:25 | [INFO] Starting worker compute stream, ucx://127.0.0.1:52107
+2026-05-06 11:21:25 | [INFO] Starting established connection to ucx://127.0.0.1:53865
+2026-05-06 11:21:25 | [INFO] Receive client connection: Client-f48fc233-492c-11f1-b520-bcfce74fad1a
+2026-05-06 11:21:25 | [INFO] Starting established connection to ucx://127.0.0.1:53865

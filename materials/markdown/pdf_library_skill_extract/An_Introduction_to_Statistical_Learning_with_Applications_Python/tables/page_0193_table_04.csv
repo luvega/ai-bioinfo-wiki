@@ -1,0 +1,3 @@
+Caravan = load_data('Caravan')
+Purchase = Caravan.Purchase
+Purchase.value_counts()

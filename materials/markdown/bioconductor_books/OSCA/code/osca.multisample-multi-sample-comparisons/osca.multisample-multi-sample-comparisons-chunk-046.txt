@@ -1,0 +1,24 @@
+##                                -1    0  1    NA
+## Allantois                      20 4778 16  9886
+## Blood progenitors 2             8 2463  4 12225
+## Cardiomyocytes                  4 4364  5 10327
+## Caudal Mesoderm                 5 1736  3 12956
+## Def. endoderm                   5 1395  1 13299
+## Endothelium                     3 3219  9 11469
+## Erythroid1                      5 2793  6 11896
+## Erythroid2                      4 3390  9 11297
+## Erythroid3                     10 5058 10  9622
+## ExE mesoderm                    2 5098 10  9590
+## Forebrain/Midbrain/Hindbrain    8 6227 11  8454
+## Gut                             5 4483  6 10206
+## Haematoendothelial progenitors  5 4102 10 10583
+## Intermediate mesoderm           3 3073  4 11620
+## Mesenchyme                      8 5675  6  9011
+## NMP                             5 4108 11 10576
+## Neural crest                    6 3314  5 11375
+## Paraxial mesoderm               4 4757  5  9934
+## Pharyngeal mesoderm             3 5084  7  9606
+## Rostral neurectoderm            4 3336  3 11357
+## Somitic mesoderm                4 2959  5 11732
+## Spinal cord                     5 4595  6 10094
+## Surface ectoderm                4 5565  5  9126

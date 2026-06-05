@@ -1,0 +1,3 @@
+lam_max = np.abs(X_train.T * (Y_train - Y_train.mean())).max()
+"lam_val = lam_max * np.exp(np.linspace(np.log(1),"
+"np.log(1e-4), 50))"

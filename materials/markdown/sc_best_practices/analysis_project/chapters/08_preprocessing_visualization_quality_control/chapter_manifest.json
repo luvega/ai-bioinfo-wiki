@@ -1,0 +1,20 @@
+{
+  "order": 8,
+  "part": "Preprocessing and visualization",
+  "toc_file": "preprocessing_visualization/quality_control",
+  "title": "Quality Control",
+  "source_type": "ipynb",
+  "upstream_path": "jupyter-book/preprocessing_visualization/quality_control.ipynb",
+  "environment": "preprocessing",
+  "week_mapping": [
+    16
+  ],
+  "code_cell_count": 30,
+  "dataset_reference_count": 1,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/code_index.md"
+  }
+}

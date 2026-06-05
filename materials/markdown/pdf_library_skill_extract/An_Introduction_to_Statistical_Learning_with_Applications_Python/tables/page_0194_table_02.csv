@@ -1,0 +1,2 @@
+scaler.fit(feature_df)
+X_std = scaler.transform(feature_df)

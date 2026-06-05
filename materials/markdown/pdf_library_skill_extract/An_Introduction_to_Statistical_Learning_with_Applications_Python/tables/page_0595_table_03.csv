@@ -1,0 +1,10 @@
+sorted_ = np.sort(fund_pvalues)
+m = fund_pvalues.shape[0]
+q = 0.1
+"sorted_set_ = np.where(sorted_ < q * np.linspace(1, m, m) / m)[0]"
+if sorted_set_.shape[0] > 0:
+selected_ = fund_pvalues < sorted_[sorted_set_].max()
+sorted_set_ = np.arange(sorted_set_.max())
+else:
+selected_ = []
+sorted_set_ = []

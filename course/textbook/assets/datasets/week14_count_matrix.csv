@@ -1,0 +1,4 @@
+gene_id,Ctrl_1,Ctrl_2,Drug_1,Drug_2
+GeneA,120,118,240,230
+GeneB,88,91,70,68
+GeneC,40,44,82,85

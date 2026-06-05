@@ -1,0 +1,12 @@
+"X = np.random.standard_normal((30, 3))"
+corD = 1 - np.corrcoef(X)
+"hc_cor = HClust(linkage='complete',"
+"distance_threshold=0,"
+"n_clusters=None,"
+metric='precomputed')
+hc_cor.fit(corD)
+linkage_cor = compute_linkage(hc_cor)
+"fig, ax = plt.subplots(1, 1, figsize=(8, 8))"
+"dendrogram(linkage_cor, ax=ax, **cargs)"
+"ax.set_title(""Complete Linkage with Correlation-Based Dissimilarity"
+""");"

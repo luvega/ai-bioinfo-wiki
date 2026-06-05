@@ -1,0 +1,1 @@
+[92m→[0m writing the in-memory object into cache

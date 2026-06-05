@@ -1,0 +1,9 @@
+In addition: Warning messages:
+1: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.5 GiB
+2: Keys should be one or more alphanumeric characters followed by an underscore, setting key from ATAC_gene_activity_ to ATACgeneactivity_ 
+3: Keys should be one or more alphanumeric characters followed by an underscore, setting key from ATAC_lsi_full_ to ATAClsifull_ 
+4: Keys should be one or more alphanumeric characters followed by an underscore, setting key from ATAC_lsi_red_ to ATAClsired_ 
+5: Keys should be one or more alphanumeric characters followed by an underscore, setting key from ATAC_umap_ to ATACumap_ 
+6: Keys should be one or more alphanumeric characters followed by an underscore, setting key from GEX_X_pca_ to GEXXpca_ 
+7: Keys should be one or more alphanumeric characters followed by an underscore, setting key from GEX_X_umap_ to GEXXumap_ 

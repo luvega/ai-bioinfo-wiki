@@ -1,0 +1,27 @@
+                                                    NGenes Direction  \
+REACTOME_INTERFERON_ALPHA_BETA_SIGNALING                57        Up   
+REACTOME_INTERFERON_SIGNALING                          177        Up   
+REACTOME_INTERFERON_GAMMA_SIGNALING                     84        Up   
+REACTOME_MRNA_SPLICING_MINOR_PATHWAY                    50      Down   
+REACTOME_DDX58_IFIH1_MEDIATED_INDUCTION_OF_INTE...      67        Up   
+
+                                                          PValue  \
+REACTOME_INTERFERON_ALPHA_BETA_SIGNALING            3.836198e-24   
+REACTOME_INTERFERON_SIGNALING                       5.651011e-18   
+REACTOME_INTERFERON_GAMMA_SIGNALING                 6.080234e-13   
+REACTOME_MRNA_SPLICING_MINOR_PATHWAY                8.311795e-11   
+REACTOME_DDX58_IFIH1_MEDIATED_INDUCTION_OF_INTE...  1.555236e-09   
+
+                                                             FDR  \
+REACTOME_INTERFERON_ALPHA_BETA_SIGNALING            3.410380e-21   
+REACTOME_INTERFERON_SIGNALING                       2.511875e-15   
+REACTOME_INTERFERON_GAMMA_SIGNALING                 1.801776e-10   
+REACTOME_MRNA_SPLICING_MINOR_PATHWAY                1.847296e-08   
+REACTOME_DDX58_IFIH1_MEDIATED_INDUCTION_OF_INTE...  2.765210e-07   
+
+                                                    PValue.Mixed     FDR.Mixed  
+REACTOME_INTERFERON_ALPHA_BETA_SIGNALING            8.018820e-39  9.504975e-38  
+REACTOME_INTERFERON_SIGNALING                       3.888212e-51  1.047461e-49  
+REACTOME_INTERFERON_GAMMA_SIGNALING                 4.268886e-61  2.710743e-59  
+REACTOME_MRNA_SPLICING_MINOR_PATHWAY                5.137952e-20  2.003351e-19  
+REACTOME_DDX58_IFIH1_MEDIATED_INDUCTION_OF_INTE...  9.966640e-53  3.055291e-51  

@@ -1,0 +1,2 @@
+"bart_boston = BART(random_state=0, burnin=5, ndraw=15)"
+"bart_boston.fit(X_train, y_train)"

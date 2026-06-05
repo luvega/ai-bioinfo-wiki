@@ -1,0 +1,2 @@
+"fund_mini_pvals[i] = ttest_1samp(fund_mini.iloc[:,i], 0).pvalue"
+fund_mini_pvals

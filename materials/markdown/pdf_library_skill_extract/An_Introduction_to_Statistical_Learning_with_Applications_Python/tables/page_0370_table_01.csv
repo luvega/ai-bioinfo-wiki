@@ -1,0 +1,3 @@
+"var_inclusion = pd.Series(bart_boston.variable_inclusion_.mean(0),"
+index=D.columns)
+var_inclusion

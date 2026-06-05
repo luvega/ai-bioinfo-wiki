@@ -1,0 +1,18 @@
+{
+  "order": 48,
+  "part": "Glossary",
+  "toc_file": "glossary",
+  "title": "Glossary",
+  "source_type": "md",
+  "upstream_path": "jupyter-book/glossary.md",
+  "environment": "_config",
+  "week_mapping": [],
+  "code_cell_count": 0,
+  "dataset_reference_count": 4,
+  "paths": {
+    "chapter_dir": "materials/markdown/sc_best_practices/analysis_project/chapters/48_glossary",
+    "source_markdown": "materials/markdown/sc_best_practices/analysis_project/chapters/48_glossary/chapter.source.md",
+    "script": "materials/markdown/sc_best_practices/analysis_project/chapters/48_glossary/chapter.py",
+    "code_index": "materials/markdown/sc_best_practices/analysis_project/chapters/48_glossary/code_index.md"
+  }
+}

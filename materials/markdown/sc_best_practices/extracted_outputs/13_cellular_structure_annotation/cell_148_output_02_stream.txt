@@ -1,0 +1,1 @@
+Epoch 500/500: 100%|██████████| 500/500 [54:55<00:00,  4.48s/it, v_num=1, train_loss_step=961, train_loss_epoch=1e+3]     

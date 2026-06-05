@@ -1,0 +1,11 @@
+"ax.plot(ticks,"
+"nci_pca.explained_variance_ratio_,"
+marker='o')
+ax.set_xlabel('Principal Component');
+ax.set_ylabel('PVE')
+ax = axes[1]
+"ax.plot(ticks,"
+"nci_pca.explained_variance_ratio_.cumsum(),"
+marker='o');
+ax.set_xlabel('Principal Component')
+ax.set_ylabel('Cumulative PVE');

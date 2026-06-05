@@ -1,0 +1,7 @@
+Be careful with automation programs
+""
+"Programs like the one we’ve written to merge .pdf files can rip through hundreds or thou-
+sands of files very quickly. If they aren’t operating correctly, they can easily result in you
+damaging or losing files. Any time we use with or as the second parame-
+open 'w' 'wb'
+ter, it means that we are overwriting a file."

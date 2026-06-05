@@ -1,0 +1,2 @@
+beta_hat = soln_path.loc[soln_path.index[39]]
+"lambdas[39], beta_hat"

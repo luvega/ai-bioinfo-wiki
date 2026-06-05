@@ -1,0 +1,18 @@
+Merging dataset 3 into 2
+Extracting anchors for merged samples
+Finding integration vectors
+Finding integration vector weights
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Integrating data
+Warning: Layer counts isn't present in the assay object; returning NULL
+Merging dataset 1 into 2 3
+Extracting anchors for merged samples
+Finding integration vectors
+Finding integration vector weights
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Integrating data
+Warning: Layer counts isn't present in the assay object; returning NULL

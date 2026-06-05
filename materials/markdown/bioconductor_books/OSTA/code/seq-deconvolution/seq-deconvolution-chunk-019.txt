@@ -1,0 +1,6 @@
+##                        B DCIS1 DCIS2    T dendritic
+##  AACACCTACTATCGAA-1 0.00  0.00  0.00 0.00      0.01
+##  AACACGTGCATCGCAC-1 0.04  0.01  0.00 0.04      0.00
+##  AACACTTGGCAAGGAA-1 0.00  0.00  0.03 0.01      0.01
+##  AACAGGAAGAGCATAG-1 0.03  0.00  0.00 0.08      0.03
+##  AACAGGATTCATAGTT-1 0.00  0.00  0.01 0.00      0.00

@@ -1,0 +1,2 @@
+"hr_encode = contrast('hr', 'sum')"
+"mnth_encode = contrast('mnth', 'sum')"

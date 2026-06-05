@@ -1,0 +1,4 @@
+##                 sum_outliers           detected_outliers 
+##                         0.15                        0.17 
+##  subsets_mt_percent_outliers 
+##                         0.11

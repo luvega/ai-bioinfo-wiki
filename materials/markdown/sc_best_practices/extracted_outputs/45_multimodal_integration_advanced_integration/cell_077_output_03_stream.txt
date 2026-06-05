@@ -1,0 +1,4 @@
+Epoch 233/400:  58%|█████▊    | 233/400 [05:32<03:54,  1.40s/it, loss=546, v_num=1]Epoch 00233: reducing learning rate of group 0 to 2.4000e-03.
+Epoch 273/400:  68%|██████▊   | 273/400 [06:29<02:58,  1.40s/it, loss=548, v_num=1]Epoch 00273: reducing learning rate of group 0 to 1.4400e-03.
+Epoch 287/400:  72%|███████▏  | 287/400 [06:49<02:41,  1.43s/it, loss=542, v_num=1]
+Monitored metric elbo_validation did not improve in the last 45 records. Best score: 1102.225. Signaling Trainer to stop.

@@ -1,0 +1,2 @@
+AnnData object with n_obs × n_vars = 2700 × 32738
+    var: 'gene_ids'

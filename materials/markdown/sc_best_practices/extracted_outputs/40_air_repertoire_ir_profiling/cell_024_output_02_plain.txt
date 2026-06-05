@@ -1,0 +1,29 @@
+      Centre                     barcode  is_cell  \
+0  Newcastle  AAACCTGAGAAACCTA-MH9179824     True   
+1  Newcastle  AAACCTGAGAAACCTA-MH9179824     True   
+2  Newcastle  AAACCTGAGAACAATC-MH9143324     True   
+3  Newcastle  AAACCTGAGAACTCGG-MH8919329     True   
+4  Newcastle  AAACCTGAGAACTCGG-MH8919329     True   
+
+                     contig_id  high_confidence  length chain   v_gene d_gene  \
+0  AAACCTGAGAAACCTA-1_contig_2             True     512   TRB  TRBV5-1   None   
+1  AAACCTGAGAAACCTA-1_contig_1             True     573   TRA  TRAV8-4   None   
+2  AAACCTGAGAACAATC-1_contig_1             True     635   TRB   TRBV19   None   
+3  AAACCTGAGAACTCGG-1_contig_1             True     499   TRA   TRAV34   None   
+4  AAACCTGAGAACTCGG-1_contig_2             True     496   TRB  TRBV5-1   None   
+
+    j_gene  ... Days_from_onset  time_after_LPS  Worst_Clinical_Status  \
+0  TRBJ2-3  ...               8             NaN               Moderate   
+1   TRAJ31  ...               8             NaN               Moderate   
+2  TRBJ1-5  ...              16             NaN               Moderate   
+3   TRAJ30  ...               5             NaN                  Death   
+4  TRBJ2-5  ...               5             NaN                  Death   
+
+  Outcome leiden  consensus  initial_clustering   study_id  AgeRange Age  
+0    Home     26        CD8                 CD8  COVID-014  (50, 59]  54  
+1    Home     26        CD8                 CD8  COVID-014  (50, 59]  54  
+2    Home     25        gdT                 gdT  COVID-029  (20, 29]  26  
+3   Death     23       Treg                Treg  COVID-045  (70, 79]  77  
+4   Death     23       Treg                Treg  COVID-045  (70, 79]  77  
+
+[5 rows x 47 columns]

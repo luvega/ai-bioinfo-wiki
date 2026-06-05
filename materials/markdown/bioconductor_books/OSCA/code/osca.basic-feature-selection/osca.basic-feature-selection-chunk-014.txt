@@ -1,0 +1,9 @@
+## DataFrame with 6 rows and 6 columns
+##              mean     total      tech       bio   p.value       FDR
+##         <numeric> <numeric> <numeric> <numeric> <numeric> <numeric>
+## LYZ       1.98587   5.13788  0.628429   4.50945         0         0
+## S100A9    1.95667   4.60893  0.633955   3.97497         0         0
+## S100A8    1.73216   4.52022  0.671689   3.84854         0         0
+## HLA-DRA   2.10832   3.71606  0.604255   3.11180         0         0
+## CD74      2.89589   3.35549  0.443406   2.91208         0         0
+## CST3      1.48906   2.94985  0.696676   2.25317         0         0
