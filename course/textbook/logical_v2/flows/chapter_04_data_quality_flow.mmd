@@ -1,0 +1,4 @@
+flowchart TD
+    accTitle: 数据质量流程
+    accDescr: 本图展示原始表进入分析表前的质量控制路径。
+    raw[原始表] --> dict[数据字典] --> type[类型检查] --> miss[缺失与异常说明] --> clean[清洗日志] --> analytic[分析表]

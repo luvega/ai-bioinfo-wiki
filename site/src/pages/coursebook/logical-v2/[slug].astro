@@ -1,124 +1,28 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { existsSync, readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import { resolve } from 'node:path';
-import { cwd } from 'node:process';
-import { logicalV2ReviewChapters } from '../../../data/coursebook';
+import { coursebookChapters } from '../../../data/coursebook';
 import { withBase } from '../../../lib/paths';
-import { renderSimpleMarkdown } from '../../../lib/simpleMarkdown';
 
 export function getStaticPaths() {
-  return logicalV2ReviewChapters.map((chapter) => ({
+  return coursebookChapters.map((chapter) => ({
     params: { slug: chapter.slug },
     props: { chapter }
   }));
 }
 
 const { chapter } = Astro.props;
-const previousChapter = logicalV2ReviewChapters.filter((item) => item.chapter < chapter.chapter).at(-1);
-const nextChapter = logicalV2ReviewChapters.find((item) => item.chapter > chapter.chapter);
-const chapterSource = chapter.chapterSource ?? '';
-const repoRootCandidates = [
-  cwd(),
-  resolve(cwd(), '..'),
-  fileURLToPath(new URL('../../../../../', import.meta.url))
-];
-const chapterPath = repoRootCandidates
-  .map((root) => resolve(root, chapterSource))
-  .find((candidate) => existsSync(candidate));
-
-if (!chapterPath) {
-  throw new Error(`Missing logical v2 chapter source: ${chapterSource}`);
-}
-
-const chapterMarkdown = readFileSync(chapterPath, 'utf-8');
-const chapterHtml = renderSimpleMarkdown(chapterMarkdown);
+const redirectUrl = withBase(chapter.page);
 ---
 
-<BaseLayout title={`教材 v2 第 ${chapter.chapter} 章`} description={chapter.summary}>
-  <section class="week-hero sample-hero">
-    <div class="section-inner">
-      <p class="section-label">Coursebook · Logical v2 · Chapter {String(chapter.chapter).padStart(2, '0')}</p>
-      <h1>{chapter.title}</h1>
-      <p>{chapter.coreQuestion}</p>
-      <ul class="tag-list">
-        <li>{chapter.part}</li>
-        <li>{chapter.status}</li>
-        <li>{chapter.reviewFocus}</li>
-      </ul>
-    </div>
-  </section>
-
+<BaseLayout title="Coursebook 路径已更新" description="教材章节路径已更新">
+  <meta http-equiv="refresh" content={`0; url=${redirectUrl}`} />
   <section class="section">
-    <div class="section-inner split">
-      <article class="info-panel">
-        <h2>审查状态</h2>
-        <p><strong>正文状态：</strong>{chapter.status}</p>
-        <p><strong>审查状态：</strong>{chapter.reviewStatus ?? 'source_mapped'}</p>
-        <p><strong>正文源稿：</strong><code>{chapterSource}</code></p>
-        <p><strong>核心问题：</strong>{chapter.coreQuestion}</p>
-        <p><strong>审查重点：</strong>{chapter.reviewFocus}</p>
-      </article>
-      <article class="info-panel">
-        <h2>学习证据</h2>
-        <ul class="content-list">
-          {chapter.learningEvidence.map((item) => <li>{item}</li>)}
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section class="section alt">
     <div class="section-inner">
-      <article class="info-panel textbook-body">
-        <h2>教材正文</h2>
-        <div class="markdown-body" set:html={chapterHtml} />
-      </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-inner split">
       <article class="info-panel">
-        <h2>来源映射</h2>
-        <h3>来源周次</h3>
-        <ul class="content-list source-list">
-          {chapter.sourceWeeks.map((path) => <li><code>{path}</code></li>)}
-        </ul>
-        <h3 class="subhead">旧教材素材池</h3>
-        <ul class="content-list source-list">
-          {chapter.sourceChapters.map((path) => <li><code>{path}</code></li>)}
-        </ul>
-        <h3 class="subhead">知识支持层</h3>
-        <ul class="content-list source-list">
-          {chapter.knowledgeSources.map((path) => <li><code>{path}</code></li>)}
-        </ul>
+        <h1>路径已更新</h1>
+        <p>本章已进入新的 Coursebook 章节路径。</p>
+        <p><a class="text-link" href={redirectUrl}>打开第 {chapter.chapter} 章 {chapter.title}</a></p>
       </article>
-      <article class="info-panel">
-        <h2>素材与资产</h2>
-        <h3>素材支持层</h3>
-        <ul class="content-list source-list">
-          {chapter.materialSources.map((path) => <li><code>{path}</code></li>)}
-        </ul>
-        <h3 class="subhead">课程资产</h3>
-        <ul class="content-list source-list">
-          {chapter.assetSources.map((path) => <li><code>{path}</code></li>)}
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="section-inner">
-      <nav class="next-prev" aria-label="教材 v2 章节导航">
-        {previousChapter ? <a href={withBase(previousChapter.page ?? '/coursebook/logical-v2')}>← 第 {previousChapter.chapter} 章 {previousChapter.title}</a> : <a href={withBase('/coursebook/logical-v2')}>← logical v2 总览</a>}
-        {nextChapter ? <a href={withBase(nextChapter.page ?? '/coursebook/logical-v2')}>第 {nextChapter.chapter} 章 {nextChapter.title} →</a> : <a href={withBase('/coursebook/logical-v2')}>logical v2 总览 →</a>}
-      </nav>
-      <nav class="next-prev compact-nav" aria-label="Coursebook 导航">
-        <a href={withBase('/coursebook')}>返回 18 周 Coursebook</a>
-        <a href={withBase('/courseware')}>打开 Courseware 审核台</a>
-      </nav>
     </div>
   </section>
 </BaseLayout>

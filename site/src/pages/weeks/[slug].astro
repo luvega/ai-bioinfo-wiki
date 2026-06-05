@@ -85,16 +85,16 @@ const coursebookChapter = getCoursebookChapterByWeek(week.week);
         </article>
         <article class="resource-card">
           <h3>在线教材</h3>
-          {coursebookChapter?.sample ? (
+          {coursebookChapter ? (
             <>
-              <p>本周已有 Coursebook 样章和教材扩写稿；90 分钟教学计划和 40 页主干 storyboard 审核在 Courseware 中查看。</p>
-              <p><a class="text-link" href={withBase(coursebookChapter.page)}>打开 {getWeekLabel(week.week)} 教材样章</a></p>
+              <p>本周内容已映射到 12 章 Coursebook。教材章节用于系统复习知识结构，90 分钟教学计划和 40 页主干 storyboard 在 Courseware 中查看。</p>
+              <p><a class="text-link" href={withBase(coursebookChapter.page)}>打开第 {coursebookChapter.chapter} 章 {coursebookChapter.title}</a></p>
               <p><a class="text-link" href={withBase(`/courseware/${week.slug}`)}>打开 {getWeekLabel(week.week)} Courseware</a></p>
             </>
           ) : (
             <>
-              <p>本周已有 Coursebook 教材扩写稿；教学计划、Student action 和 40 页主干 storyboard 审核在 Courseware 中查看。</p>
-              <p><a class="text-link" href={withBase(coursebookChapter?.page ?? `/coursebook/week-${String(week.week).padStart(2, '0')}`)}>打开 {getWeekLabel(week.week)} 教材扩写稿</a></p>
+              <p>本周暂未映射到 Coursebook 章节；教学计划、Student action 和 40 页主干 storyboard 在 Courseware 中查看。</p>
+              <p><a class="text-link" href={withBase('/coursebook')}>打开 Coursebook 目录</a></p>
               <p><a class="text-link" href={withBase(`/courseware/${week.slug}`)}>打开 {getWeekLabel(week.week)} Courseware</a></p>
             </>
           )}

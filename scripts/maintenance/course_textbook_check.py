@@ -47,29 +47,22 @@ EXPANDED_TEXTBOOK_STATUS = "expanded_draft"
 EXPANDED_PPT_STATUS = "storyboard_expanded"
 FOCUS_WEEKS = {3, 11, 12, 13, 14, 15, 16}
 STATUS_CONFLATION_TERMS = {"pilot_candidate", "pilot_ready", "sample_ready", "evidence_review_pass", "storyboard", "pptx_trial_done"}
-LOGICAL_V2_STATUSES = {"source_mapped", "blueprint_ready", "draft_chapter", "review_ready"}
-LOGICAL_V2_REVIEW_CHAPTERS = {1, 2, 4, 8, 11, 12}
-LOGICAL_V2_REVIEW_STATUS = "review_ready"
-LOGICAL_V2_REVIEW_MIN_CHINESE = 3400
+LOGICAL_V2_STATUSES = {"coursebook_ready"}
+LOGICAL_V2_COURSEBOOK_CHAPTERS = set(range(1, 13))
+LOGICAL_V2_COURSEBOOK_STATUS = "coursebook_ready"
+LOGICAL_V2_COURSEBOOK_MIN_CHINESE = 8000
 LOGICAL_V2_REQUIRED_FIELDS = (
     "part",
     "title",
     "core_question",
     "status",
-    "source_weeks",
-    "source_chapters",
-    "knowledge_sources",
-    "material_sources",
-    "asset_sources",
-    "learning_evidence",
-)
-LOGICAL_V2_REVIEW_FIELDS = (
+    "coursebook_status",
     "page",
     "chapter_source",
-    "review_focus",
-    "review_status",
-)
-LOGICAL_V2_REVIEW_FRONTMATTER_LISTS = (
+    "chapter_focus",
+    "summary",
+    "knowledge_graph",
+    "knowledge_map_image",
     "source_weeks",
     "source_chapters",
     "knowledge_sources",
@@ -77,7 +70,15 @@ LOGICAL_V2_REVIEW_FRONTMATTER_LISTS = (
     "asset_sources",
     "learning_evidence",
 )
-LOGICAL_V2_REVIEW_HEADINGS = (
+LOGICAL_V2_COURSEBOOK_FRONTMATTER_LISTS = (
+    "source_weeks",
+    "source_chapters",
+    "knowledge_sources",
+    "material_sources",
+    "asset_sources",
+    "learning_evidence",
+)
+LOGICAL_V2_COURSEBOOK_HEADINGS = (
     "## 导入问题",
     "## 本章知识链",
     "## 核心概念",
@@ -90,6 +91,15 @@ LOGICAL_V2_REVIEW_HEADINGS = (
     "## 学习自查",
     "## 18 周反向映射",
     "## 待核验点",
+)
+LOGICAL_V2_FORBIDDEN_STYLE_TERMS = (
+    "教材写作口径",
+    "审查样章",
+    "上线审查",
+    "写给上课老师",
+    "不替换 18 周",
+    "并行审查",
+    "Dual Track",
 )
 LOGICAL_V2_COVERAGE_TERMS = (
     "AIDD",
@@ -259,7 +269,7 @@ def check_map(root: Path = ROOT) -> list[Issue]:
         issues.append(Issue("BAD_MAP_SIZE", MAP_PATH, f"Expected 18 mapped chapters, found {len(chapters)}"))
     for chapter in chapters:
         week = int(chapter.get("week", 0))
-        expected_page = f"/coursebook/week-{week:02d}"
+        expected_page = f"/weeks/week-{week:02d}"
         if chapter.get("page") != expected_page:
             issues.append(Issue("BAD_TEXTBOOK_ROUTE", MAP_PATH, f"Week {week:02d} should route to {expected_page}"))
         chapter_source = str(chapter.get("chapter_source", ""))
@@ -322,14 +332,16 @@ def check_knowledge_graph(root: Path = ROOT) -> list[Issue]:
 def check_site_data(root: Path = ROOT) -> list[Issue]:
     issues: list[Issue] = []
     text = read_text(root / "site" / "src" / "data" / "coursebook.ts")
-    for required in ("expanded_draft", "storyboard_expanded", "textbookChapterSource", "textbookAssetSources", "textbookStoryboardSource", "textbookTeachingPlanSource", "textbookChapters", "coursewareWeeks", "教材扩写稿"):
+    for required in ("coursebook_ready", "textbookChapterSource", "textbookAssetSources", "textbookStoryboardSource", "textbookTeachingPlanSource", "textbookChapters", "coursebookChapters", "coursewareWeeks", "weekToCoursebookChapter", "knowledgeMapImage", "processDiagrams"):
         if required not in text:
             issues.append(Issue("MISSING_SITE_TEXTBOOK_INTERFACE", SITE_DATA, f"Site data should expose {required}"))
     if "CoursebookStatus" in text:
         issues.append(Issue("STATUS_CONFLATION", SITE_DATA, "Site data should not use a single CoursebookStatus for textbook, teaching plan, and PPT axes"))
-    for week in range(1, 19):
-        if f"page: '/coursebook/week-{week:02d}'" not in text and f'page: "/coursebook/week-{week:02d}"' not in text:
-            issues.append(Issue("MISSING_SITE_ROUTE", SITE_DATA, f"Site data should route Week {week:02d} to textbook chapter page"))
+    for chapter in range(1, 13):
+        if f"page: '/coursebook/chapter-{chapter:02d}'" not in text and f'page: "/coursebook/chapter-{chapter:02d}"' not in text:
+            issues.append(Issue("MISSING_SITE_ROUTE", SITE_DATA, f"Site data should route Chapter {chapter:02d} to Coursebook page"))
+    if "page: '/coursebook/week-01'" in text or "review_ready" in text or "source_mapped" in text:
+        issues.append(Issue("STALE_SITE_TEXTBOOK_INTERFACE", SITE_DATA, "Site data still contains old dual-track Coursebook terms"))
     return issues
 
 
@@ -357,43 +369,60 @@ def check_logical_v2_paths(root: Path, map_path: Path, chapter: dict[str, object
     return issues
 
 
-def check_logical_v2_review_chapter(root: Path, map_path: Path, chapter: dict[str, object]) -> list[Issue]:
+def check_logical_v2_coursebook_chapter(root: Path, map_path: Path, chapter: dict[str, object]) -> list[Issue]:
     issues: list[Issue] = []
     chapter_no = int(chapter.get("chapter", 0))
     source = str(chapter.get("chapter_source", ""))
     expected_source = f"course/textbook/logical_v2/chapters/chapter_{chapter_no:02d}.md"
-    expected_page = f"/coursebook/logical-v2/chapter-{chapter_no:02d}"
+    expected_page = f"/coursebook/chapter-{chapter_no:02d}"
+    expected_graph = f"course/textbook/logical_v2/graphs/chapter_{chapter_no:02d}_knowledge_graph.mmd"
+    expected_image = f"/assets/coursebook/knowledge-maps/chapter-{chapter_no:02d}.svg"
     if source != expected_source:
         issues.append(Issue("LOGICAL_V2_BAD_CHAPTER_SOURCE", map_path, f"Chapter {chapter_no:02d} should use {expected_source}"))
         return issues
     if str(chapter.get("page", "")) != expected_page:
         issues.append(Issue("LOGICAL_V2_BAD_PAGE", map_path, f"Chapter {chapter_no:02d} should route to {expected_page}"))
-    if str(chapter.get("review_status", "")) != LOGICAL_V2_REVIEW_STATUS:
-        issues.append(Issue("LOGICAL_V2_BAD_REVIEW_STATUS", map_path, f"Chapter {chapter_no:02d} review_status should be {LOGICAL_V2_REVIEW_STATUS}"))
-    if not str(chapter.get("review_focus", "")).strip():
-        issues.append(Issue("LOGICAL_V2_EMPTY_REVIEW_FOCUS", map_path, f"Chapter {chapter_no:02d} should list review_focus"))
+    if str(chapter.get("coursebook_status", "")) != LOGICAL_V2_COURSEBOOK_STATUS:
+        issues.append(Issue("LOGICAL_V2_BAD_COURSEBOOK_STATUS", map_path, f"Chapter {chapter_no:02d} coursebook_status should be {LOGICAL_V2_COURSEBOOK_STATUS}"))
+    if str(chapter.get("knowledge_graph", "")) != expected_graph:
+        issues.append(Issue("LOGICAL_V2_BAD_KNOWLEDGE_GRAPH", map_path, f"Chapter {chapter_no:02d} should use {expected_graph}"))
+    if str(chapter.get("knowledge_map_image", "")) != expected_image:
+        issues.append(Issue("LOGICAL_V2_BAD_KNOWLEDGE_MAP_IMAGE", map_path, f"Chapter {chapter_no:02d} should expose {expected_image}"))
+    if not str(chapter.get("chapter_focus", "")).strip():
+        issues.append(Issue("LOGICAL_V2_EMPTY_CHAPTER_FOCUS", map_path, f"Chapter {chapter_no:02d} should list chapter_focus"))
 
     path = root / source
     if not path.exists():
-        issues.append(Issue("LOGICAL_V2_MISSING_REVIEW_CHAPTER", path, f"Chapter {chapter_no:02d} review draft is missing"))
+        issues.append(Issue("LOGICAL_V2_MISSING_COURSEBOOK_CHAPTER", path, f"Chapter {chapter_no:02d} Coursebook chapter is missing"))
         return issues
     text = read_text(path)
     fm = frontmatter(text)
     if has_forbidden_reference(text):
-        issues.append(Issue("LOGICAL_V2_FORBIDDEN_REFERENCE", path, "Logical v2 review chapters must not reference raw paths or Obsidian links"))
-    if frontmatter_scalar(fm, "status") != LOGICAL_V2_REVIEW_STATUS:
-        issues.append(Issue("LOGICAL_V2_CHAPTER_STATUS", path, f"frontmatter status should be {LOGICAL_V2_REVIEW_STATUS}"))
-    if frontmatter_scalar(fm, "review_status") != LOGICAL_V2_REVIEW_STATUS:
-        issues.append(Issue("LOGICAL_V2_CHAPTER_REVIEW_STATUS", path, f"frontmatter review_status should be {LOGICAL_V2_REVIEW_STATUS}"))
+        issues.append(Issue("LOGICAL_V2_FORBIDDEN_REFERENCE", path, "Logical v2 Coursebook chapters must not reference raw paths or Obsidian links"))
+    for term in LOGICAL_V2_FORBIDDEN_STYLE_TERMS:
+        if term in text:
+            issues.append(Issue("LOGICAL_V2_FORBIDDEN_STYLE", path, f"Coursebook chapter should not contain old review wording: {term}"))
+    if re.search(r"不是.{0,30}而是", text):
+        issues.append(Issue("LOGICAL_V2_BANNED_CONTRAST", path, "Avoid the 不是...而是 contrast pattern in Coursebook prose"))
+    if "“" in text or "”" in text:
+        issues.append(Issue("LOGICAL_V2_CHINESE_QUOTES", path, "Avoid Chinese quote marks in Coursebook prose"))
+    if frontmatter_scalar(fm, "status") != LOGICAL_V2_COURSEBOOK_STATUS:
+        issues.append(Issue("LOGICAL_V2_CHAPTER_STATUS", path, f"frontmatter status should be {LOGICAL_V2_COURSEBOOK_STATUS}"))
+    if frontmatter_scalar(fm, "coursebook_status") != LOGICAL_V2_COURSEBOOK_STATUS:
+        issues.append(Issue("LOGICAL_V2_CHAPTER_COURSEBOOK_STATUS", path, f"frontmatter coursebook_status should be {LOGICAL_V2_COURSEBOOK_STATUS}"))
     if frontmatter_scalar(fm, "core_question") != str(chapter.get("core_question", "")):
         issues.append(Issue("LOGICAL_V2_CORE_QUESTION_MISMATCH", path, "frontmatter core_question should match coursebook_map.yml"))
-    for heading in LOGICAL_V2_REVIEW_HEADINGS:
+    if frontmatter_scalar(fm, "knowledge_graph") != expected_graph:
+        issues.append(Issue("LOGICAL_V2_FRONTMATTER_GRAPH", path, "frontmatter knowledge_graph should match coursebook_map.yml"))
+    if frontmatter_scalar(fm, "knowledge_map_image") != expected_image:
+        issues.append(Issue("LOGICAL_V2_FRONTMATTER_IMAGE", path, "frontmatter knowledge_map_image should match coursebook_map.yml"))
+    for heading in LOGICAL_V2_COURSEBOOK_HEADINGS:
         if heading not in text:
-            issues.append(Issue("LOGICAL_V2_MISSING_REVIEW_SECTION", path, f"Missing required review section: {heading}"))
+            issues.append(Issue("LOGICAL_V2_MISSING_COURSEBOOK_SECTION", path, f"Missing required Coursebook section: {heading}"))
     count = chinese_count(text)
-    if count < LOGICAL_V2_REVIEW_MIN_CHINESE:
-        issues.append(Issue("LOGICAL_V2_SHORT_REVIEW_CHAPTER", path, f"Expected at least {LOGICAL_V2_REVIEW_MIN_CHINESE} Chinese chars, found {count}"))
-    for field in LOGICAL_V2_REVIEW_FRONTMATTER_LISTS:
+    if count < LOGICAL_V2_COURSEBOOK_MIN_CHINESE:
+        issues.append(Issue("LOGICAL_V2_SHORT_COURSEBOOK_CHAPTER", path, f"Expected at least {LOGICAL_V2_COURSEBOOK_MIN_CHINESE} Chinese chars, found {count}"))
+    for field in LOGICAL_V2_COURSEBOOK_FRONTMATTER_LISTS:
         values = frontmatter_list(fm, field)
         if not values:
             issues.append(Issue("LOGICAL_V2_EMPTY_FRONTMATTER_LIST", path, f"frontmatter {field} should not be empty"))
@@ -405,9 +434,17 @@ def check_logical_v2_review_chapter(root: Path, map_path: Path, chapter: dict[st
                     continue
                 if not (root / value).exists():
                     issues.append(Issue("LOGICAL_V2_MISSING_FRONTMATTER_SOURCE", path, f"frontmatter {field} path does not exist: {value}"))
+    if not (root / expected_graph).exists():
+        issues.append(Issue("LOGICAL_V2_MISSING_KNOWLEDGE_GRAPH", root / expected_graph, "Chapter knowledge graph source is missing"))
+    image_path = root / "site" / "public" / expected_image.lstrip("/")
+    if not image_path.exists():
+        issues.append(Issue("LOGICAL_V2_MISSING_KNOWLEDGE_MAP_IMAGE", image_path, "Chapter knowledge map SVG is missing"))
+    for diagram in list_value(chapter, "process_diagrams"):
+        if not (root / diagram).exists():
+            issues.append(Issue("LOGICAL_V2_MISSING_PROCESS_DIAGRAM", root / diagram, "Chapter process diagram source is missing"))
     for required_text in ("AI 协作", "学习证据", "待核验", "18 周反向映射", "证据边界"):
         if required_text not in text:
-            issues.append(Issue("LOGICAL_V2_REVIEW_CONTENT_GAP", path, f"Review chapter should include {required_text}"))
+            issues.append(Issue("LOGICAL_V2_COURSEBOOK_CONTENT_GAP", path, f"Coursebook chapter should include {required_text}"))
     return issues
 
 
@@ -425,7 +462,7 @@ def check_logical_v2(root: Path = ROOT) -> list[Issue]:
         return issues
 
     blueprint = read_text(LOGICAL_V2_BLUEPRINT)
-    for required in ("12 章", "不再按 18 周", "source_mapped", "course/syllabus/"):
+    for required in ("12 章", "Coursebook 全面采用", "coursebook_ready", "course/syllabus/"):
         if required not in blueprint:
             issues.append(Issue("LOGICAL_V2_BLUEPRINT_GAP", LOGICAL_V2_BLUEPRINT, f"Blueprint should state {required}"))
 
@@ -446,27 +483,20 @@ def check_logical_v2(root: Path = ROOT) -> list[Issue]:
         for field in LOGICAL_V2_REQUIRED_FIELDS:
             if field not in chapter:
                 issues.append(Issue("LOGICAL_V2_MISSING_FIELD", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} missing {field}"))
-        if chapter_no in LOGICAL_V2_REVIEW_CHAPTERS:
-            for field in LOGICAL_V2_REVIEW_FIELDS:
-                if field not in chapter:
-                    issues.append(Issue("LOGICAL_V2_MISSING_FIELD", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} review-ready chapter missing {field}"))
         status = str(chapter.get("status", ""))
         if status not in LOGICAL_V2_STATUSES:
             issues.append(Issue("LOGICAL_V2_BAD_STATUS", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} status is {status or 'missing'}"))
         if status in STATUS_CONFLATION_TERMS:
             issues.append(Issue("LOGICAL_V2_STATUS_CONFLATION", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} reuses non-textbook status {status}"))
-        if chapter_no in LOGICAL_V2_REVIEW_CHAPTERS and status != LOGICAL_V2_REVIEW_STATUS:
-            issues.append(Issue("LOGICAL_V2_EXPECTED_REVIEW_READY", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} should be {LOGICAL_V2_REVIEW_STATUS}"))
-        if chapter_no not in LOGICAL_V2_REVIEW_CHAPTERS and status != "source_mapped":
-            issues.append(Issue("LOGICAL_V2_UNEXPECTED_REVIEW_READY", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} should remain source_mapped in the first review batch"))
+        if status != LOGICAL_V2_COURSEBOOK_STATUS:
+            issues.append(Issue("LOGICAL_V2_EXPECTED_COURSEBOOK_READY", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} should be {LOGICAL_V2_COURSEBOOK_STATUS}"))
         if not str(chapter.get("core_question", "")).endswith("？"):
             issues.append(Issue("LOGICAL_V2_BAD_CORE_QUESTION", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} core_question should be a question"))
         for path_field in ("source_weeks", "source_chapters", "knowledge_sources", "material_sources", "asset_sources"):
             issues.extend(check_logical_v2_paths(root, LOGICAL_V2_MAP, chapter, path_field))
         if not list_value(chapter, "learning_evidence"):
             issues.append(Issue("LOGICAL_V2_EMPTY_FIELD", LOGICAL_V2_MAP, f"Chapter {chapter_no:02d} has empty learning_evidence"))
-        if chapter_no in LOGICAL_V2_REVIEW_CHAPTERS:
-            issues.extend(check_logical_v2_review_chapter(root, LOGICAL_V2_MAP, chapter))
+        issues.extend(check_logical_v2_coursebook_chapter(root, LOGICAL_V2_MAP, chapter))
     return issues
 
 

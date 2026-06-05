@@ -21,7 +21,7 @@ def test_textbook_check_current_repo():
     assert module.run_check(ROOT) == []
 
 
-def test_all_chapters_have_assets_and_sections():
+def test_legacy_textbook_chapters_remain_usable_source_pool():
     module = load_module()
     for week in range(1, 19):
         path = ROOT / "course" / "textbook" / "chapters" / f"chapter_{week:02d}.md"
@@ -30,32 +30,10 @@ def test_all_chapters_have_assets_and_sections():
         assert module.frontmatter_scalar(fm, "textbook_status") == "expanded_draft"
         assert module.frontmatter_scalar(fm, "teaching_plan_source") == f"course/weeks/week_{week:02d}/teaching_plan.md"
         assert module.frontmatter_scalar(fm, "storyboard_source") == f"course/weeks/week_{week:02d}/ppt_storyboard.md"
-        assert module.frontmatter_scalar(fm, "storyboard_pages") == "40"
-        assert module.chinese_count(text) >= (7000 if week in module.FOCUS_WEEKS else 5000)
         assert len(module.frontmatter_list(fm, "asset_sources")) >= 3
-        for heading in module.REQUIRED_HEADINGS:
-            assert heading in text
-        assert "这一页属于" not in text
-        assert "### Slide " not in text
 
 
-def test_map_exposes_textbook_interface():
-    module = load_module()
-    chapters = module.parse_map(ROOT / "course" / "textbook" / "coursebook_map.yml")
-    assert len(chapters) == 18
-    for chapter in chapters:
-        week = chapter["week"]
-        assert chapter["page"] == f"/coursebook/week-{week:02d}"
-        assert chapter["chapter_source"] == f"course/textbook/chapters/chapter_{week:02d}.md"
-        assert chapter["textbook_status"] == "expanded_draft"
-        assert chapter["teaching_plan_source"] == f"course/weeks/week_{week:02d}/teaching_plan.md"
-        assert chapter["storyboard_source"] == f"course/weeks/week_{week:02d}/ppt_storyboard.md"
-        assert chapter["storyboard_pages"] == 40
-        assert chapter["ppt_status"] == "storyboard_expanded"
-        assert len(chapter["asset_sources"]) >= 3
-
-
-def test_logical_v2_map_exposes_source_mapped_structure():
+def test_logical_v2_map_exposes_coursebook_ready_structure():
     module = load_module()
     path = ROOT / "course" / "textbook" / "logical_v2" / "coursebook_map.yml"
     chapters = module.parse_map(path)
@@ -63,14 +41,13 @@ def test_logical_v2_map_exposes_source_mapped_structure():
     assert [chapter["chapter"] for chapter in chapters] == list(range(1, 13))
     for chapter in chapters:
         chapter_no = chapter["chapter"]
-        if chapter_no in module.LOGICAL_V2_REVIEW_CHAPTERS:
-            assert chapter["status"] == "review_ready"
-            assert chapter["review_status"] == "review_ready"
-            assert chapter["page"] == f"/coursebook/logical-v2/chapter-{chapter_no:02d}"
-            assert chapter["chapter_source"] == f"course/textbook/logical_v2/chapters/chapter_{chapter_no:02d}.md"
-            assert chapter["review_focus"]
-        else:
-            assert chapter["status"] == "source_mapped"
+        assert chapter["status"] == "coursebook_ready"
+        assert chapter["coursebook_status"] == "coursebook_ready"
+        assert chapter["page"] == f"/coursebook/chapter-{chapter_no:02d}"
+        assert chapter["chapter_source"] == f"course/textbook/logical_v2/chapters/chapter_{chapter_no:02d}.md"
+        assert chapter["knowledge_graph"] == f"course/textbook/logical_v2/graphs/chapter_{chapter_no:02d}_knowledge_graph.mmd"
+        assert chapter["knowledge_map_image"] == f"/assets/coursebook/knowledge-maps/chapter-{chapter_no:02d}.svg"
+        assert chapter["chapter_focus"]
         assert chapter["core_question"].endswith("？")
         for field in module.LOGICAL_V2_REQUIRED_FIELDS:
             assert field in chapter
@@ -81,19 +58,21 @@ def test_logical_v2_map_exposes_source_mapped_structure():
         assert module.list_value(chapter, "learning_evidence")
 
 
-def test_logical_v2_review_chapters_have_review_ready_body():
+def test_logical_v2_coursebook_chapters_have_full_body_and_visuals():
     module = load_module()
-    for chapter_no in sorted(module.LOGICAL_V2_REVIEW_CHAPTERS):
+    for chapter_no in range(1, 13):
         path = ROOT / "course" / "textbook" / "logical_v2" / "chapters" / f"chapter_{chapter_no:02d}.md"
         text = path.read_text(encoding="utf-8")
         fm = module.frontmatter(text)
-        assert module.frontmatter_scalar(fm, "status") == "review_ready"
-        assert module.frontmatter_scalar(fm, "review_status") == "review_ready"
-        assert module.chinese_count(text) >= module.LOGICAL_V2_REVIEW_MIN_CHINESE
-        for heading in module.LOGICAL_V2_REVIEW_HEADINGS:
+        assert module.frontmatter_scalar(fm, "status") == "coursebook_ready"
+        assert module.frontmatter_scalar(fm, "coursebook_status") == "coursebook_ready"
+        assert module.chinese_count(text) >= module.LOGICAL_V2_COURSEBOOK_MIN_CHINESE
+        for heading in module.LOGICAL_V2_COURSEBOOK_HEADINGS:
             assert heading in text
-        for field in module.LOGICAL_V2_REVIEW_FRONTMATTER_LISTS:
+        for field in module.LOGICAL_V2_COURSEBOOK_FRONTMATTER_LISTS:
             assert module.frontmatter_list(fm, field)
+        assert (ROOT / f"course/textbook/logical_v2/graphs/chapter_{chapter_no:02d}_knowledge_graph.mmd").exists()
+        assert (ROOT / f"site/public/assets/coursebook/knowledge-maps/chapter-{chapter_no:02d}.svg").exists()
 
 
 def test_knowledge_graph_links_all_weeks():

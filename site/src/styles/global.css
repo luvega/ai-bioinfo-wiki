@@ -534,6 +534,19 @@ code {
   object-fit: cover;
 }
 
+.knowledge-map-panel {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.knowledge-map-panel img {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  object-fit: contain;
+}
+
 .data-table {
   width: 100%;
   border-collapse: collapse;

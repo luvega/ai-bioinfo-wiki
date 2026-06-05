@@ -1,119 +1,19 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import PageHeader from '../../components/PageHeader.astro';
-import { logicalV2Chapters, logicalV2ReviewChapters } from '../../data/coursebook';
 import { withBase } from '../../lib/paths';
 
-const totalChapters = logicalV2Chapters.length;
-const reviewReadyCount = logicalV2ReviewChapters.length;
+const redirectUrl = withBase('/coursebook');
 ---
 
-<BaseLayout title="Logical v2 Coursebook" description="教材 v2 逻辑章节审查入口">
-  <PageHeader
-    eyebrow="Coursebook · Logical v2"
-    title="教材 v2 逻辑章节审查入口"
-    intro="本入口并行于 18 周 Coursebook，用于审查按知识链重组后的教材 v2。第一批开放第 1、2、4、8、11、12 章，重点检查风格、证据边界和素材映射。"
-  />
-
+<BaseLayout title="Coursebook 路径已更新" description="教材 v2 已成为 Coursebook 正式入口">
+  <meta http-equiv="refresh" content={`0; url=${redirectUrl}`} />
   <section class="section">
-    <div class="section-inner split">
-      <div>
-        <div class="section-title">
-          <p class="section-label">Review Scope</p>
-          <h2>先审六章，不替换 18 周主线</h2>
-          <p>
-            logical v2 不按周次切章，而按“医药问题、数据结构、分析方法、图表表达、AI 协作、可复现证据”的知识链组织。
-            现有 <code>/coursebook/week-XX</code> 路由继续作为 18 周教材扩写稿入口。
-          </p>
-        </div>
-        <div class="metric-row" aria-label="教材 v2 审查状态">
-          <div class="metric-card">
-            <strong>{totalChapters}</strong>
-            <span>章逻辑规划</span>
-          </div>
-          <div class="metric-card">
-            <strong>{reviewReadyCount}</strong>
-            <span>章审查样章</span>
-          </div>
-          <div class="metric-card">
-            <strong>v2</strong>
-            <span>并行入口</span>
-          </div>
-        </div>
-      </div>
+    <div class="section-inner">
       <article class="info-panel">
-        <h2>审查口径</h2>
-        <ul class="content-list">
-          <li><strong>正文深度：</strong>第一批为审查样章，不是正式长章终稿。</li>
-          <li><strong>状态语义：</strong><code>review_ready</code> 只表示 v2 正文可进入人工审读，不提升周次、teaching plan 或 PPT 状态。</li>
-          <li><strong>证据边界：</strong>AI、图表、DE、单细胞和空间组学内容均保留人工核验边界。</li>
-          <li><strong>来源映射：</strong>每章保留来源周次、旧教材章节、知识页、素材页和资产路径。</li>
-        </ul>
+        <h1>路径已更新</h1>
+        <p>12 章教材已进入 Coursebook 正式目录。</p>
+        <p><a class="text-link" href={redirectUrl}>打开 Coursebook</a></p>
       </article>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="section-inner">
-      <div class="section-title">
-        <p class="section-label">Review Ready</p>
-        <h2>第一批六章</h2>
-        <p>这六章覆盖课程定位、可复现规范、数据质量、图表表达、差异表达和综合项目，是 v2 风格的第一轮压力测试。</p>
-      </div>
-      <div class="chapter-grid">
-        {logicalV2ReviewChapters.map((chapter) => (
-          <a class="chapter-card" href={withBase(chapter.page ?? '/coursebook/logical-v2')}>
-            <span class="week-kicker">Chapter {String(chapter.chapter).padStart(2, '0')} · {chapter.part}</span>
-            <h3>{chapter.title}</h3>
-            <p>{chapter.summary}</p>
-            <div class="status-row">
-              <span class="status-pill">{chapter.status}</span>
-              <span class="status-pill accent">{chapter.reviewFocus}</span>
-            </div>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-inner">
-      <div class="section-title">
-        <p class="section-label">12 Chapter Map</p>
-        <h2>logicalV2Chapters 全书状态</h2>
-        <p>未开放正文的章节仍保留为 <code>source_mapped</code>，用于确认后续来源覆盖，不作为已完成正文展示。</p>
-      </div>
-      <div class="chapter-table-wrap">
-        <table class="data-table chapter-table">
-          <thead>
-            <tr>
-              <th>章</th>
-              <th>标题</th>
-              <th>核心问题</th>
-              <th>状态</th>
-              <th>审查重点</th>
-              <th>入口</th>
-            </tr>
-          </thead>
-          <tbody>
-            {logicalV2Chapters.map((chapter) => (
-              <tr id={`chapter-${String(chapter.chapter).padStart(2, '0')}`}>
-                <td>{chapter.chapter}</td>
-                <td><strong>{chapter.title}</strong><p>{chapter.part}</p></td>
-                <td>{chapter.coreQuestion}</td>
-                <td><span class="status-pill">{chapter.status}</span></td>
-                <td>{chapter.reviewFocus}</td>
-                <td>
-                  {chapter.page ? <a class="text-link" href={withBase(chapter.page)}>打开样章</a> : <span class="muted-text">来源映射</span>}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <p class="spaced-list">
-        <a class="text-link" href={withBase('/coursebook')}>返回 18 周 Coursebook</a>
-      </p>
     </div>
   </section>
 </BaseLayout>

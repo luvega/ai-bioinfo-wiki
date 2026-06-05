@@ -1,0 +1,37 @@
+flowchart LR
+    accTitle: 第 10 章知识图谱
+    accDescr: 本图展示第 10 章从核心问题到概念、方法、证据和边界的关系。
+    q["核心问题<br/>FASTQ 如何走到 count matrix，metadata 为什么是底线？"]
+    b["证据边界<br/>本科教材只要求学生看懂流程和关键核验点，不要求独立复现完整上游 pipeline。"]
+    c1["概念<br/>测序 reads"]
+    q --> c1
+    c2["概念<br/>质量控制"]
+    q --> c2
+    c3["概念<br/>比对"]
+    q --> c3
+    c4["概念<br/>计数"]
+    q --> c4
+    c5["概念<br/>样本名"]
+    q --> c5
+    c6["概念<br/>分组变量"]
+    q --> c6
+    m1["方法<br/>流程定位"]
+    c1 --> m1
+    m2["方法<br/>文件格式识别"]
+    c2 --> m2
+    m3["方法<br/>总 reads 核验"]
+    c3 --> m3
+    m4["方法<br/>样本名对齐"]
+    c4 --> m4
+    m5["方法<br/>metadata 检查"]
+    c5 --> m5
+    e1["学习证据<br/>FASTQ 到 count matrix 流程图"]
+    m1 --> e1
+    e1 --> b
+    e2["学习证据<br/>count matrix 与 metadata 对齐表"]
+    m2 --> e2
+    e2 --> b
+    classDef question fill:#e6f1f6,stroke:#0b4f6c,stroke-width:2px,color:#14364a
+    classDef boundary fill:#f1f8f4,stroke:#029e73,stroke-width:2px,color:#164a2f
+    class q question
+    class b boundary

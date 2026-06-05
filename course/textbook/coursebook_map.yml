@@ -1,11 +1,11 @@
 version: 1
-title: 医药数据处理与可视化在线教材映射
-policy: course/syllabus and course/weeks are the course truth layer; knowledge is supporting context only.
+title: 医药数据处理与可视化 18 周旧教材素材池映射
+policy: Legacy 18-week expanded textbook drafts are retained as a source pool for logical v2; online Coursebook uses course/textbook/logical_v2/coursebook_map.yml.
 chapters:
   - chapter: 1
     week: 1
     title: 课程导论与医药数据特征
-    page: /coursebook/week-01
+    page: /weeks/week-01
     chapter_source: course/textbook/chapters/chapter_01.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_01/teaching_plan.md
@@ -33,7 +33,7 @@ chapters:
   - chapter: 2
     week: 2
     title: 数据分析流程、复现规范与人机协作规范
-    page: /coursebook/week-02
+    page: /weeks/week-02
     chapter_source: course/textbook/chapters/chapter_02.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_02/teaching_plan.md
@@ -67,7 +67,7 @@ chapters:
   - chapter: 3
     week: 3
     title: AI 辅助编程与 Python 快速入门
-    page: /coursebook/week-03
+    page: /weeks/week-03
     chapter_source: course/textbook/chapters/chapter_03.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_03/teaching_plan.md
@@ -98,7 +98,7 @@ chapters:
   - chapter: 4
     week: 4
     title: R 基础语法、数据框操作与 AI 代码核验
-    page: /coursebook/week-04
+    page: /weeks/week-04
     chapter_source: course/textbook/chapters/chapter_04.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_04/teaching_plan.md
@@ -127,7 +127,7 @@ chapters:
   - chapter: 5
     week: 5
     title: 数据读取与整理
-    page: /coursebook/week-05
+    page: /weeks/week-05
     chapter_source: course/textbook/chapters/chapter_05.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_05/teaching_plan.md
@@ -155,7 +155,7 @@ chapters:
   - chapter: 6
     week: 6
     title: 缺失值、异常值处理与分组汇总
-    page: /coursebook/week-06
+    page: /weeks/week-06
     chapter_source: course/textbook/chapters/chapter_06.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_06/teaching_plan.md
@@ -182,7 +182,7 @@ chapters:
   - chapter: 7
     week: 7
     title: 描述统计与分布可视化
-    page: /coursebook/week-07
+    page: /weeks/week-07
     chapter_source: course/textbook/chapters/chapter_07.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_07/teaching_plan.md
@@ -209,7 +209,7 @@ chapters:
   - chapter: 8
     week: 8
     title: 统计推断基础
-    page: /coursebook/week-08
+    page: /weeks/week-08
     chapter_source: course/textbook/chapters/chapter_08.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_08/teaching_plan.md
@@ -237,7 +237,7 @@ chapters:
   - chapter: 9
     week: 9
     title: 相关分析与线性回归
-    page: /coursebook/week-09
+    page: /weeks/week-09
     chapter_source: course/textbook/chapters/chapter_09.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_09/teaching_plan.md
@@ -265,7 +265,7 @@ chapters:
   - chapter: 10
     week: 10
     title: 分类问题与逻辑回归
-    page: /coursebook/week-10
+    page: /weeks/week-10
     chapter_source: course/textbook/chapters/chapter_10.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_10/teaching_plan.md
@@ -293,7 +293,7 @@ chapters:
   - chapter: 11
     week: 11
     title: 科研图表规范与 SCI 图表表达
-    page: /coursebook/week-11
+    page: /weeks/week-11
     chapter_source: course/textbook/chapters/chapter_11.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_11/teaching_plan.md
@@ -324,7 +324,7 @@ chapters:
   - chapter: 12
     week: 12
     title: 高维数据与数学直觉
-    page: /coursebook/week-12
+    page: /weeks/week-12
     chapter_source: course/textbook/chapters/chapter_12.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_12/teaching_plan.md
@@ -354,7 +354,7 @@ chapters:
   - chapter: 13
     week: 13
     title: PCA、聚类与热图
-    page: /coursebook/week-13
+    page: /weeks/week-13
     chapter_source: course/textbook/chapters/chapter_13.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_13/teaching_plan.md
@@ -391,7 +391,7 @@ chapters:
   - chapter: 14
     week: 14
     title: 转录组数据分析基础
-    page: /coursebook/week-14
+    page: /weeks/week-14
     chapter_source: course/textbook/chapters/chapter_14.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_14/teaching_plan.md
@@ -425,7 +425,7 @@ chapters:
   - chapter: 15
     week: 15
     title: 差异表达分析与功能解读
-    page: /coursebook/week-15
+    page: /weeks/week-15
     chapter_source: course/textbook/chapters/chapter_15.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_15/teaching_plan.md
@@ -459,7 +459,7 @@ chapters:
   - chapter: 16
     week: 16
     title: 单细胞转录组可视化
-    page: /coursebook/week-16
+    page: /weeks/week-16
     chapter_source: course/textbook/chapters/chapter_16.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_16/teaching_plan.md
@@ -493,7 +493,7 @@ chapters:
   - chapter: 17
     week: 17
     title: 综合项目工作坊：AI 协作分析与结果核验
-    page: /coursebook/week-17
+    page: /weeks/week-17
     chapter_source: course/textbook/chapters/chapter_17.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_17/teaching_plan.md
@@ -531,7 +531,7 @@ chapters:
   - chapter: 18
     week: 18
     title: 综合项目汇报与课程总结
-    page: /coursebook/week-18
+    page: /weeks/week-18
     chapter_source: course/textbook/chapters/chapter_18.md
     textbook_status: expanded_draft
     teaching_plan_source: course/weeks/week_18/teaching_plan.md
@@ -560,3 +560,4 @@ chapters:
       - course/evaluation/student_project_rubric.md
     ppt_status: storyboard_expanded
     review_status: pilot_candidate
+

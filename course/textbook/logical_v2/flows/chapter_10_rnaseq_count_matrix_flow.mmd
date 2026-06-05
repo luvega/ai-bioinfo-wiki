@@ -1,0 +1,6 @@
+flowchart LR
+    accTitle: RNA-seq 到表达矩阵
+    accDescr: 本图展示 FASTQ 到 count matrix 的上游链条和 metadata 对齐要求。
+    fastq[FASTQ] --> qc[QC] --> align[比对] --> count[计数] --> matrix[count matrix]
+    meta[metadata] --> aligncheck[样本名对齐]
+    matrix --> aligncheck

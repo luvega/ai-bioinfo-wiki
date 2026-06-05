@@ -1,0 +1,43 @@
+flowchart LR
+    accTitle: 第 2 章知识图谱
+    accDescr: 本图展示第 2 章从核心问题到概念、方法、证据和边界的关系。
+    q["核心问题<br/>一个分析为什么必须能追溯来源、代码、Prompt 和人工核验？"]
+    b["证据边界<br/>可复现记录只说明结果如何产生，不能替代结果正确性和医学解释。"]
+    c1["概念<br/>可复现"]
+    q --> c1
+    c2["概念<br/>项目根目录"]
+    q --> c2
+    c3["概念<br/>数据来源"]
+    q --> c3
+    c4["概念<br/>代码版本"]
+    q --> c4
+    c5["概念<br/>Prompt 记录"]
+    q --> c5
+    c6["概念<br/>人工核验"]
+    q --> c6
+    m1["方法<br/>目录分层"]
+    c1 --> m1
+    m2["方法<br/>来源登记"]
+    c2 --> m2
+    m3["方法<br/>小步提交"]
+    c3 --> m3
+    m4["方法<br/>运行记录"]
+    c4 --> m4
+    m5["方法<br/>协作声明"]
+    c5 --> m5
+    e1["学习证据<br/>项目 README 草稿"]
+    m1 --> e1
+    e1 --> b
+    e2["学习证据<br/>data_sources 文件"]
+    m2 --> e2
+    e2 --> b
+    e3["学习证据<br/>ai_use_statement 文件"]
+    m3 --> e3
+    e3 --> b
+    e4["学习证据<br/>一次小步提交记录"]
+    m4 --> e4
+    e4 --> b
+    classDef question fill:#e6f1f6,stroke:#0b4f6c,stroke-width:2px,color:#14364a
+    classDef boundary fill:#f1f8f4,stroke:#029e73,stroke-width:2px,color:#164a2f
+    class q question
+    class b boundary
