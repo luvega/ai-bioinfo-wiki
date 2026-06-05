@@ -54,11 +54,17 @@ E:\Codex_Projects\AI_Course\
 - `materials.md`
 - `outline.md`
 - `script.md`
+- `teaching_plan.md`
+- `ppt_storyboard.md`
 
 样板周 `week_03`、`week_14`、`week_15`、`week_16` 必须包含教学目标、药学场景、核心数据结构、课堂任务、AI协作边界、课后练习、素材来源和待核验点。
 
 状态语义必须分层判断：
 
+- `outline.md` 只代表周次大纲，回答“本周教什么、为什么教”。
+- `teaching_plan.md` 代表 2 课时教学组织，回答“90 分钟怎么教、学生做什么、如何评价”。
+- `ppt_storyboard.md` 代表页级课件源稿，回答“每页投屏源稿怎么呈现”。
+- `course/textbook/chapters/chapter_XX.md` 代表教材知识正文，回答“知识体系如何组织”，不得逐页复述 storyboard。
 - `script.md` 的 `status: formal_ready` 和 `depth: full-lecture` 只代表讲义深度达标。
 - `materials.md` 与 `outline.md` 的 `status` 才代表周次素材/大纲准备度；非样板周可保持 `draft`。
 - PPT 状态单独按 storyboard、evidence review、PPTX 生成和 PNG/contact sheet 视觉 QA 判断。
@@ -72,7 +78,7 @@ E:\Codex_Projects\AI_Course\
 4. 原始商业 PDF、外部 PPT/PDF、学生数据、日志、缓存、`site/node_modules/`、`site/dist/` 不进入 Git。
 5. 项目本地 `skills/` 只服务本项目；除非用户明确要求，不复制到全局 `$CODEX_HOME/skills`。
 6. 不使用 Obsidian `[[wiki link]]`；跨文件引用用标准 Markdown 链接。
-7. 不 push、不改远端可见性、不删除远端仓库，除非用户再次明确确认。
+7. 默认在完成一轮实现与本地验证后提交并推送当前分支，方便用户检查；改远端可见性、删除远端仓库或重写远端历史仍需用户再次明确确认。
 8. 面向药学本科生，不默认生信或统计背景；优先用药效、临床指标、表达矩阵、科研图表解释。
 9. AI 可用于解释、局部生成、核验和重构，不替代医学判断、统计判断或真实数据核验。
 
@@ -85,6 +91,9 @@ python scripts/maintenance/course_quality_check.py --check
 python scripts/maintenance/course_script_depth.py --write docs/course_script_depth_report.md
 python scripts/maintenance/course_skill_inventory.py --check
 python scripts/maintenance/course_online_book_check.py
+python scripts/maintenance/course_teaching_plan_check.py
+python scripts/maintenance/course_ppt_storyboard_check.py
+python scripts/maintenance/course_textbook_check.py
 python -m pytest -q
 Push-Location site; npm run build; Pop-Location
 ```

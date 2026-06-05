@@ -1,4 +1,4 @@
-export type CoursebookStatus = '目录占位' | '样章候选' | '试点候选' | '样章可读' | '全书初稿' | '教材扩写稿';
+export type TextbookDisplayStatus = '目录占位' | '样章候选' | '试点候选' | '样章可读' | '全书初稿' | '教材扩写稿';
 
 export type CoursebookSample = {
   introQuestion: string;
@@ -33,11 +33,12 @@ export type CoursebookChapter = {
   page: string;
   phase: string;
   summary: string;
-  status: CoursebookStatus;
+  status: TextbookDisplayStatus;
   reviewStatus: string;
   pptStatus: string;
   textbookStatus?: string;
   chapterSource?: string;
+  teachingPlanSource?: string;
   assetSources?: string[];
   storyboardSource?: string;
   storyboardPages?: number;
@@ -60,6 +61,9 @@ export const textbookChapterSource = (week: number) =>
 
 export const textbookStoryboardSource = (week: number) =>
   `course/weeks/week_${String(week).padStart(2, '0')}/ppt_storyboard.md`;
+
+export const textbookTeachingPlanSource = (week: number) =>
+  `course/weeks/week_${String(week).padStart(2, '0')}/teaching_plan.md`;
 
 export const textbookAssetSources = (week: number) => {
   const prefix = `course/textbook/assets`;
@@ -86,20 +90,12 @@ export const textbookAssetSources = (week: number) => {
   return (assetMap[week] ?? []).map((path) => `${prefix}/${path}`);
 };
 
-export const coursebookStatusPipeline = [
-  'catalog_only',
-  'textbook_full_draft',
-  'textbook_expanded_draft',
-  'sample_candidate',
-  'pilot_candidate',
-  'pilot_ready',
-  'sample_ready',
-  'storyboard',
-  'storyboard_expanded',
-  'evidence_review_assets_pending',
-  'evidence_review_pass',
-  'pptx_trial_done'
-];
+export const statusAxisTerms = {
+  textbook: ['draft_needs_assets', 'full_draft', 'expanded_draft'],
+  teachingPlan: ['teaching_plan_ready'],
+  ppt: ['not_started', 'storyboard', 'storyboard_expanded', 'storyboard_reviewed', 'pptx_trial_done'],
+  review: ['pilot_candidate', 'pilot_ready', 'sample_ready', 'evidence_review_pass']
+};
 
 const rawCoursebookChapters: CoursebookChapter[] = [
   {
@@ -146,7 +142,7 @@ const rawCoursebookChapters: CoursebookChapter[] = [
     summary: '用最小 Python 语法处理可手算核验的医药指标列表，并把 AI 提示词、运行结果和修订理由写入可复现记录。',
     status: '样章可读',
     reviewStatus: 'sample_ready',
-    pptStatus: 'pptx_trial_done',
+    pptStatus: 'storyboard_expanded',
     sourceWeekFiles: baseWeekFiles(3),
     knowledgeSources: ['knowledge/entities/Python.md', 'knowledge/entities/Biopython.md', 'knowledge/sources/Learn_AI_Assisted_Python_Programming.md', 'knowledge/sources/OWF_Learn_Git.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/openwaterfoundation_learning/git/README.md', 'materials/markdown/pdf_library_mineru/Pythonppt', 'materials/markdown/pdf_library_mineru/R240_Learn_AI_Assisted_Python_Programming_With_GitHub_Copilot_and_ChatGPT_2023_Leo_Porter_Daniel_Zingaro'],
@@ -182,9 +178,9 @@ const rawCoursebookChapters: CoursebookChapter[] = [
       },
       verificationPoints: ['课堂代码必须能本机运行。', '均值和高风险值必须能手算复核。', 'AI 输出必须明确提到 `None` 缺失值。', '可复现记录必须保留提示词、运行输出和人工修订理由。'],
       pptBridge: {
-        status: 'Week 03 已有 PPTX 试点样稿和 PNG 视觉验证记录。',
+        status: 'Week 03 曾有 12 页 PPTX 试点样稿和 PNG 视觉验证记录；当前 40 页新版主干源稿状态为 storyboard_expanded，尚未基于新版重新生成 PPTX。',
         entry: 'scripts/courseware/build_week03_pilot_ppt.py',
-        nextActions: ['复查代码示例和课件文字溢出。', '保留 speaker notes 或迁入 PPT 原生备注。', '进入正式模板前再次检查截图授权。']
+        nextActions: ['先在 Courseware 核对 40 页新版 Student action 与 Timing。', '若进入正式模板，需基于新版 storyboard 重新生成 PPTX。', '重新导出 PNG/contact sheet 后再确认文字溢出和截图授权。']
       }
     }
   },
@@ -219,7 +215,7 @@ const rawCoursebookChapters: CoursebookChapter[] = [
     sourceWeekFiles: [...baseWeekFiles(5), 'course/weeks/week_05/teaching_pack_v1.md'],
     knowledgeSources: ['knowledge/concepts/项目目录结构与可复现.md', 'knowledge/sources/Starting_Data_Analytics_GenAI.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/pdf_library_mineru/Starting_Data_Analytics_with_Generative_AI_and_Python_9781633437210'],
-    coursebookTopics: ['数据读取', '数据整形', '字段含义'],
+    coursebookTopics: ['数据读取', '数据整理', '字段含义'],
     badges: ['试讲包 v1']
   },
   {
@@ -351,7 +347,7 @@ const rawCoursebookChapters: CoursebookChapter[] = [
     summary: '把 PCA、聚类、热图和 UMAP 作为可复现教学图形，区分 bulk、single-cell、spatial 的观测单位和误读风险。',
     status: '样章可读',
     reviewStatus: 'pilot_ready',
-    pptStatus: 'storyboard_reviewed',
+    pptStatus: 'storyboard_expanded',
     sourceWeekFiles: [...baseWeekFiles(13), 'course/weeks/week_13/ppt_storyboard.md', 'course/weeks/week_13/teaching_assets.md', 'course/evaluation/week_13_ppt_evidence_review.md', 'scripts/courseware/build_week13_teaching_figures.py'],
     knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/11_preprocessing_visualization_dimensionality_reduction/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/12_cellular_structure_clustering/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md', 'materials/markdown/pdf_library_mineru/An_Introduction_to_Statistical_Learning_with_Applications_Python'],
@@ -405,7 +401,7 @@ const rawCoursebookChapters: CoursebookChapter[] = [
     summary: '解释 RNA-seq 从 FASTQ 到 count matrix 的链条，并用 SCBP/OSCA/OSTA 对照现代组学数据结构。',
     status: '样章可读',
     reviewStatus: 'evidence_review_pass',
-    pptStatus: 'storyboard',
+    pptStatus: 'storyboard_expanded',
     sourceWeekFiles: [...baseWeekFiles(14), 'course/weeks/week_14/ppt_storyboard.md'],
     knowledgeSources: ['knowledge/concepts/RNA-seq上游流程.md', 'knowledge/concepts/差异表达分析.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/07_NGS_data_Analysis_on_Bash_(Gene_Expression_Using_Command_Line)/chapter.course.md', 'materials/markdown/aidd_bioinformatics/aidd.course_index.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/03_introduction_raw_data_processing/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/04_introduction_fundamental_data_structures_and_frameworks/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
@@ -457,7 +453,7 @@ const rawCoursebookChapters: CoursebookChapter[] = [
     summary: '从 count matrix 和 metadata 进入 DESeq2 结果表、火山图、热图和功能解释核验，并明确 AI 核验边界和 bulk、single-cell、spatial 差异边界。',
     status: '样章可读',
     reviewStatus: 'evidence_review_pass',
-    pptStatus: 'storyboard_reviewed_and_pptx_trial_done',
+    pptStatus: 'storyboard_expanded',
     sourceWeekFiles: [...baseWeekFiles(15), 'course/weeks/week_15/ppt_storyboard.md'],
     knowledgeSources: ['knowledge/entities/DESeq2.md', 'knowledge/concepts/差异表达分析.md', 'knowledge/concepts/富集分析_GO_KEGG.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md', 'materials/markdown/aidd_bioinformatics/10_Microarray_Analysis_on_R/chapter.course.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/18_conditions_differential_gene_expression/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/20_conditions_gsea_pathway/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
@@ -494,9 +490,9 @@ const rawCoursebookChapters: CoursebookChapter[] = [
       },
       verificationPoints: ['所有模拟表格和图形需要标注教学模拟。', 'DESeq2 术语进入 PPT 前需核对官方文档或原始字幕。', 'SCBP/OSCA/OSTA 只用于比较不同差异问题，不混写成 bulk DESeq2 结论。', 'AI 核验只能生成待查清单和图注草稿，不能替代数据库、文献和课堂数据来源核对。', '基因功能和通路解释必须保留“需核验”状态。'],
       pptBridge: {
-        status: 'Week 15 已完成 storyboard、evidence review、SYSU 官方蓝模板 PPTX、PNG 导出和 contact sheet QA。',
+        status: 'Week 15 曾完成旧版 storyboard、evidence review、SYSU 官方蓝模板 PPTX、PNG 导出和 contact sheet QA；当前 40 页新版主干源稿状态为 storyboard_expanded，尚未基于新版重新生成 PPTX。',
         entry: 'course/weeks/week_15/ppt_storyboard.md',
-        nextActions: ['后续修改应先更新 storyboard。', '再运行 evidence review。', '最后重新生成 PPTX 并做 PNG/contact sheet 视觉 QA。']
+        nextActions: ['先审查 40 页新版 storyboard 和 teaching_plan.md。', '进入 PPTX 前重新运行 evidence review。', '基于新版重新生成 PPTX 后再做 PNG/contact sheet 视觉 QA。']
       }
     }
   },
@@ -510,7 +506,7 @@ const rawCoursebookChapters: CoursebookChapter[] = [
     summary: '用 QC、UMAP、cluster、marker 和空间组学图训练现代组学可视化解读和参数敏感性意识。',
     status: '样章可读',
     reviewStatus: 'evidence_review_pass',
-    pptStatus: 'storyboard',
+    pptStatus: 'storyboard_expanded',
     sourceWeekFiles: [...baseWeekFiles(16), 'course/weeks/week_16/ppt_storyboard.md'],
     knowledgeSources: ['knowledge/concepts/差异表达分析.md', 'knowledge/sources/ISLP.md', 'knowledge/sources/Single_Cell_Best_Practices.md', 'knowledge/sources/OSCA.md', 'knowledge/sources/OSTA.md'],
     materialSources: ['materials/markdown/aidd_bioinformatics/09_R_for_Bioinformatics/chapter.course.md', 'materials/markdown/sc_best_practices/scbp.course_index.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/08_preprocessing_visualization_quality_control/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/13_cellular_structure_annotation/chapter.source.md', 'materials/markdown/sc_best_practices/analysis_project/chapters/28_spatial_introduction/chapter.source.md', 'materials/markdown/bioconductor_books/workflow_case_catalog.md'],
@@ -588,9 +584,10 @@ const rawCoursebookChapters: CoursebookChapter[] = [
   }
 ];
 
-export const coursebookChapters: CoursebookChapter[] = rawCoursebookChapters.map((chapter) => {
+export const textbookChapters: CoursebookChapter[] = rawCoursebookChapters.map((chapter) => {
   const storyboardSource = textbookStoryboardSource(chapter.week);
-  const sourceWeekFiles = Array.from(new Set([...chapter.sourceWeekFiles, storyboardSource]));
+  const teachingPlanSource = textbookTeachingPlanSource(chapter.week);
+  const sourceWeekFiles = Array.from(new Set([...chapter.sourceWeekFiles, teachingPlanSource, storyboardSource]));
   const badges = Array.from(new Set([...(chapter.badges ?? []), '40 页主干 storyboard']));
   return {
     ...chapter,
@@ -598,6 +595,7 @@ export const coursebookChapters: CoursebookChapter[] = rawCoursebookChapters.map
     pptStatus: 'storyboard_expanded',
     textbookStatus: 'expanded_draft',
     chapterSource: chapter.chapterSource ?? textbookChapterSource(chapter.week),
+    teachingPlanSource,
     assetSources: chapter.assetSources ?? textbookAssetSources(chapter.week),
     storyboardSource,
     storyboardPages: 40,
@@ -606,12 +604,60 @@ export const coursebookChapters: CoursebookChapter[] = rawCoursebookChapters.map
   };
 });
 
-export const sampleChapters = coursebookChapters.filter((chapter) => chapter.sample);
+export const coursebookChapters = textbookChapters;
+
+export type CoursewareWeek = {
+  week: number;
+  slug: string;
+  title: string;
+  page: string;
+  coursebookPage: string;
+  phase: string;
+  summary: string;
+  reviewStatus: string;
+  pptStatus: string;
+  teachingPlanStatus: string;
+  teachingPlanSource: string;
+  storyboardSource: string;
+  storyboardPages: number;
+  sourceWeekFiles: string[];
+  assetSources: string[];
+  badges?: string[];
+};
+
+export const coursewareWeeks: CoursewareWeek[] = textbookChapters.map((chapter) => ({
+  week: chapter.week,
+  slug: chapter.slug,
+  title: chapter.title,
+  page: `/courseware/${chapter.slug}`,
+  coursebookPage: chapter.page,
+  phase: chapter.phase,
+  summary: chapter.summary,
+  reviewStatus: chapter.reviewStatus,
+  pptStatus: chapter.pptStatus,
+  teachingPlanStatus: 'teaching_plan_ready',
+  teachingPlanSource: chapter.teachingPlanSource ?? textbookTeachingPlanSource(chapter.week),
+  storyboardSource: chapter.storyboardSource ?? textbookStoryboardSource(chapter.week),
+  storyboardPages: chapter.storyboardPages ?? 40,
+  sourceWeekFiles: chapter.sourceWeekFiles,
+  assetSources: chapter.assetSources ?? textbookAssetSources(chapter.week),
+  badges: chapter.badges
+}));
+
+export const sampleChapters = textbookChapters.filter((chapter) => chapter.sample);
 
 export function getCoursebookChapterBySlug(slug: string) {
-  return coursebookChapters.find((chapter) => chapter.slug === slug);
+  return textbookChapters.find((chapter) => chapter.slug === slug);
 }
 
 export function getCoursebookChapterByWeek(week: number) {
-  return coursebookChapters.find((chapter) => chapter.week === week);
+  return textbookChapters.find((chapter) => chapter.week === week);
+}
+
+export function getCoursewareWeekBySlug(slug: string) {
+  return coursewareWeeks.find((week) => week.slug === slug);
+}
+
+export function getCoursewareWeekByWeek(week: number) {
+  return coursewareWeeks.find((coursewareWeek) => coursewareWeek.week === week);
 }

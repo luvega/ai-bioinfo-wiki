@@ -24,6 +24,7 @@ def test_parse_map_reads_all_chapters():
     assert all(chapter["textbook_status"] == "expanded_draft" for chapter in chapters)
     assert all(chapter["ppt_status"] == "storyboard_expanded" for chapter in chapters)
     assert all(chapter["storyboard_pages"] == 40 for chapter in chapters)
+    assert all(chapter["teaching_plan_source"] == f"course/weeks/week_{chapter['week']:02d}/teaching_plan.md" for chapter in chapters)
     week05 = next(chapter for chapter in chapters if chapter["week"] == 5)
     assert week05["title"] == "数据读取与整理"
 
@@ -45,14 +46,22 @@ def test_online_book_check_current_repo():
     assert module.run_check(ROOT) == []
 
 
-def test_coursebook_review_route_and_storyboard_table_are_present():
+def test_dual_track_coursebook_and_courseware_routes_are_present():
     review_route = ROOT / "site" / "src" / "pages" / "coursebook" / "review.astro"
     chapter_route = ROOT / "site" / "src" / "pages" / "coursebook" / "[slug].astro"
     index_route = ROOT / "site" / "src" / "pages" / "coursebook.astro"
+    courseware_index = ROOT / "site" / "src" / "pages" / "courseware.astro"
+    courseware_route = ROOT / "site" / "src" / "pages" / "courseware" / "[slug].astro"
     assert review_route.exists()
-    assert "Storyboard 人工精修审核台" in review_route.read_text(encoding="utf-8")
-    assert "Storyboard 审核表" in chapter_route.read_text(encoding="utf-8")
-    assert "/coursebook/review" in index_route.read_text(encoding="utf-8")
+    assert "兼容入口" in review_route.read_text(encoding="utf-8")
+    chapter_text = chapter_route.read_text(encoding="utf-8")
+    assert "教材正文" in chapter_text
+    assert "Storyboard 审核表" not in chapter_text
+    assert "/courseware" in index_route.read_text(encoding="utf-8")
+    assert "Teaching Plan 与 Storyboard 审核台" in courseware_index.read_text(encoding="utf-8")
+    route_text = courseware_route.read_text(encoding="utf-8")
+    assert "40 页主干 storyboard 审核表" in route_text
+    assert "studentAction" in route_text
 
 
 def test_full_week_pilot_candidate_statuses_are_enforced():

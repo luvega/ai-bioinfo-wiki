@@ -30,8 +30,16 @@ EXPECTED_EXCLUDES = {"practice_pages", "answer_pages", "review_pages", "backup_p
 FORBIDDEN_MODULE_TERMS = ("练习页", "参考答案页", "复盘页", "备用页", "拓展页")
 REQUIRED_ROW_FIELDS = ("Core content", "Teacher explanation", "Student action", "Timing", "Evidence/source note", "Risk/boundary note")
 STRICT_REVIEW_WEEKS = {3, 5, 8, 11, 12, 13, 15, 16, 18}
-OBSERVABLE_ACTION_TERMS = ("标出", "计算", "比较", "运行", "检查", "改写", "判断", "说出", "写出", "列出", "圈出", "补写", "读出", "打开", "查看")
+OBSERVABLE_ACTION_TERMS = ("标出", "计算", "比较", "运行", "检查", "改写", "判断", "说出", "写出", "列出", "圈出", "标注", "补写", "读出", "打开", "查看")
 GENERIC_EVIDENCE_NOTES = {"课程材料", "教材", "来源", "脚本", "知识支持层", "待核验"}
+EXPECTED_TEACHING_PLAN_BLOCKS = {
+    "课程定位与导入": ("8 min", "1-4"),
+    "核心概念展开": ("16 min", "5-12"),
+    "数据结构与案例": ("20 min", "13-20"),
+    "方法流程与代码": ("24 min", "21-30"),
+    "图表与结果解释": ("14 min", "31-36"),
+    "AI 协作与核验收束": ("8 min", "37-40"),
+}
 
 
 class Issue(NamedTuple):
@@ -104,6 +112,36 @@ def table_rows(text: str) -> list[dict[str, str]]:
     return rows
 
 
+def generic_table_headers(text: str, first_header: str) -> list[str]:
+    for line in text.splitlines():
+        cells = split_row(line)
+        if cells and cells[0] == first_header:
+            return cells
+    return []
+
+
+def generic_table_rows(text: str, first_header: str, first_column_values: set[str]) -> list[dict[str, str]]:
+    headers = generic_table_headers(text, first_header)
+    rows: list[dict[str, str]] = []
+    if not headers:
+        return rows
+    for line in text.splitlines():
+        cells = split_row(line)
+        if not cells or cells[0] not in first_column_values:
+            continue
+        if len(cells) != len(headers):
+            rows.append({"__bad_row__": line})
+            continue
+        rows.append(dict(zip(headers, cells)))
+    return rows
+
+
+def teaching_plan_rows(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    return generic_table_rows(read_text(path), "Block", set(EXPECTED_TEACHING_PLAN_BLOCKS))
+
+
 def timing_minutes(value: str) -> int | None:
     match = re.match(r"^\s*(\d+)\s*min\s*$", value)
     return int(match.group(1)) if match else None
@@ -111,6 +149,7 @@ def timing_minutes(value: str) -> int | None:
 
 def check_storyboard(root: Path, week: int) -> list[Issue]:
     path = root / "course" / "weeks" / f"week_{week:02d}" / "ppt_storyboard.md"
+    teaching_plan_path = root / "course" / "weeks" / f"week_{week:02d}" / "teaching_plan.md"
     issues: list[Issue] = []
     if not path.exists():
         return [Issue("MISSING_STORYBOARD", path, f"Week {week:02d} ppt_storyboard.md is missing")]
@@ -148,6 +187,11 @@ def check_storyboard(root: Path, week: int) -> list[Issue]:
     expected_chapter = f"course/textbook/chapters/chapter_{week:02d}.md"
     if expected_chapter not in sources:
         issues.append(Issue("MISSING_STORYBOARD_CHAPTER_SOURCE", path, f"source should include {expected_chapter}"))
+    if "teaching_plan.md" not in sources:
+        issues.append(Issue("MISSING_TEACHING_PLAN_SOURCE", path, "source should include teaching_plan.md"))
+    plan_rows = teaching_plan_rows(teaching_plan_path)
+    if not plan_rows:
+        issues.append(Issue("MISSING_TEACHING_PLAN_LINK", path, "Storyboard should be backed by a readable teaching_plan.md"))
 
     data_or_code_rows = 0
     chart_rows = 0
@@ -157,6 +201,8 @@ def check_storyboard(root: Path, week: int) -> list[Issue]:
     short_rows = 0
     generic_evidence_rows = 0
     timing_total = 0
+    module_timing: dict[str, int] = {}
+    module_slides: dict[str, list[int]] = {}
     for row in rows:
         if "__bad_row__" in row:
             continue
@@ -173,6 +219,11 @@ def check_storyboard(root: Path, week: int) -> list[Issue]:
             issues.append(Issue("BAD_TIMING_FORMAT", path, f"Slide {row.get('Slide', '?')} Timing should use '<int> min'"))
         else:
             timing_total += minutes
+            module = row.get("Module", "")
+            module_timing[module] = module_timing.get(module, 0) + minutes
+            slide_number = row.get("Slide", "")
+            if slide_number.isdigit():
+                module_slides.setdefault(module, []).append(int(slide_number))
         module_title = f"{row.get('Module', '')} {row.get('Action title', '')}"
         if any(term in module_title for term in FORBIDDEN_MODULE_TERMS):
             issues.append(Issue("FORBIDDEN_PAGE_MODULE", path, f"Slide {row.get('Slide', '?')} appears to be a deferred page type"))
@@ -201,6 +252,21 @@ def check_storyboard(root: Path, week: int) -> list[Issue]:
         issues.append(Issue("LOW_AI_BOUNDARY_COVERAGE", path, f"Expected at least 4 AI/boundary rows, found {ai_rows}"))
     if timing_total != 90:
         issues.append(Issue("BAD_TIMING_TOTAL", path, f"Expected Timing total to be 90 min, found {timing_total} min"))
+    if plan_rows:
+        plan_blocks = {row.get("Block", ""): row for row in plan_rows if "__bad_row__" not in row}
+        for module, (expected_minutes, expected_slide_range) in EXPECTED_TEACHING_PLAN_BLOCKS.items():
+            plan = plan_blocks.get(module)
+            if not plan:
+                issues.append(Issue("MISSING_TEACHING_PLAN_MODULE", teaching_plan_path, f"Teaching plan missing block {module}"))
+                continue
+            if plan.get("Minutes") != expected_minutes or plan.get("Storyboard slides") != expected_slide_range:
+                issues.append(Issue("BAD_TEACHING_PLAN_MODULE", teaching_plan_path, f"{module} should be {expected_minutes} and slides {expected_slide_range}"))
+            plan_minutes = timing_minutes(plan.get("Minutes", ""))
+            if plan_minutes is not None and module_timing.get(module, 0) != plan_minutes:
+                issues.append(Issue("STORYBOARD_PLAN_TIMING_MISMATCH", path, f"{module} storyboard timing {module_timing.get(module, 0)} min does not match teaching plan {plan_minutes} min"))
+        unknown_modules = set(module_timing) - set(EXPECTED_TEACHING_PLAN_BLOCKS)
+        for module in sorted(unknown_modules):
+            issues.append(Issue("UNKNOWN_STORYBOARD_MODULE", path, f"Storyboard module is not in teaching plan: {module}"))
     if week in STRICT_REVIEW_WEEKS:
         duplicate_titles = len(action_titles) - len(set(action_titles))
         if duplicate_titles:

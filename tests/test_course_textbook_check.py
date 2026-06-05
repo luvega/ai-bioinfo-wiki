@@ -28,12 +28,15 @@ def test_all_chapters_have_assets_and_sections():
         text = path.read_text(encoding="utf-8")
         fm = module.frontmatter(text)
         assert module.frontmatter_scalar(fm, "textbook_status") == "expanded_draft"
+        assert module.frontmatter_scalar(fm, "teaching_plan_source") == f"course/weeks/week_{week:02d}/teaching_plan.md"
         assert module.frontmatter_scalar(fm, "storyboard_source") == f"course/weeks/week_{week:02d}/ppt_storyboard.md"
         assert module.frontmatter_scalar(fm, "storyboard_pages") == "40"
         assert module.chinese_count(text) >= (7000 if week in module.FOCUS_WEEKS else 5000)
         assert len(module.frontmatter_list(fm, "asset_sources")) >= 3
         for heading in module.REQUIRED_HEADINGS:
             assert heading in text
+        assert "这一页属于" not in text
+        assert "### Slide " not in text
 
 
 def test_map_exposes_textbook_interface():
@@ -45,6 +48,7 @@ def test_map_exposes_textbook_interface():
         assert chapter["page"] == f"/coursebook/week-{week:02d}"
         assert chapter["chapter_source"] == f"course/textbook/chapters/chapter_{week:02d}.md"
         assert chapter["textbook_status"] == "expanded_draft"
+        assert chapter["teaching_plan_source"] == f"course/weeks/week_{week:02d}/teaching_plan.md"
         assert chapter["storyboard_source"] == f"course/weeks/week_{week:02d}/ppt_storyboard.md"
         assert chapter["storyboard_pages"] == 40
         assert chapter["ppt_status"] == "storyboard_expanded"

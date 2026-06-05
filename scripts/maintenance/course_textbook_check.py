@@ -20,11 +20,15 @@ GRAPH_MERMAID = ASSETS / "knowledge_graph" / "course_graph.mmd"
 
 REQUIRED_HEADINGS = (
     "## 本章导入",
+    "## 知识地图",
     "## 学习目标",
     "## Storyboard 对应表",
     "## 本章主线与课程位置",
+    "## 跨章衔接",
     "## 核心概念",
+    "## 概念展开与药学解释",
     "## 方法路线",
+    "## 案例数据与字段说明",
     "## 工具实现与代码样例",
     "## 方法流程与代码解读",
     "## 图表与结果解释",
@@ -154,6 +158,8 @@ def check_chapters(root: Path = ROOT) -> list[Issue]:
         for heading in REQUIRED_HEADINGS:
             if heading not in text:
                 issues.append(Issue("MISSING_CHAPTER_SECTION", path, f"Missing required section: {heading}"))
+        if re.search(r"^###\s+Slide\s+\d+", text, flags=re.M) or "这一页属于" in text:
+            issues.append(Issue("SLIDE_BY_SLIDE_TEXTBOOK", path, "Textbook chapter must not be a slide-by-slide storyboard expansion"))
         textbook_status = frontmatter_scalar(fm, "textbook_status")
         if textbook_status not in TEXTBOOK_STATUSES:
             issues.append(Issue("BAD_TEXTBOOK_STATUS", path, f"textbook_status must be one of {sorted(TEXTBOOK_STATUSES)}, found {textbook_status or 'missing'}"))
@@ -163,6 +169,8 @@ def check_chapters(root: Path = ROOT) -> list[Issue]:
             issues.append(Issue("STATUS_CONFLATION", path, "textbook_status must not reuse review_status or ppt_status values"))
         if frontmatter_scalar(fm, "storyboard_source") != f"course/weeks/week_{week:02d}/ppt_storyboard.md":
             issues.append(Issue("BAD_STORYBOARD_SOURCE", path, "Each expanded chapter must point to its weekly storyboard"))
+        if frontmatter_scalar(fm, "teaching_plan_source") != f"course/weeks/week_{week:02d}/teaching_plan.md":
+            issues.append(Issue("BAD_TEACHING_PLAN_SOURCE", path, "Each expanded chapter must point to its weekly teaching plan"))
         if frontmatter_scalar(fm, "storyboard_pages") != "40":
             issues.append(Issue("BAD_STORYBOARD_PAGES", path, "Each expanded chapter must list storyboard_pages: 40"))
         min_chars = 7000 if week in FOCUS_WEEKS else 5000
@@ -201,6 +209,11 @@ def check_map(root: Path = ROOT) -> list[Issue]:
             issues.append(Issue("STATUS_CONFLATION", MAP_PATH, f"Week {week:02d} textbook_status reuses non-textbook status"))
         if chapter.get("storyboard_source") != f"course/weeks/week_{week:02d}/ppt_storyboard.md":
             issues.append(Issue("BAD_MAP_STORYBOARD_SOURCE", MAP_PATH, f"Week {week:02d} storyboard_source is missing or wrong"))
+        if chapter.get("teaching_plan_source") != f"course/weeks/week_{week:02d}/teaching_plan.md":
+            issues.append(Issue("BAD_MAP_TEACHING_PLAN_SOURCE", MAP_PATH, f"Week {week:02d} teaching_plan_source is missing or wrong"))
+        teaching_plan_source = str(chapter.get("teaching_plan_source", ""))
+        if teaching_plan_source and not (root / teaching_plan_source).exists():
+            issues.append(Issue("MISSING_MAP_TEACHING_PLAN_SOURCE", MAP_PATH, f"Week {week:02d} teaching_plan_source does not exist"))
         if chapter.get("storyboard_pages") != 40:
             issues.append(Issue("BAD_MAP_STORYBOARD_PAGES", MAP_PATH, f"Week {week:02d} storyboard_pages should be 40"))
         if chapter.get("ppt_status") != EXPANDED_PPT_STATUS:
@@ -244,9 +257,11 @@ def check_knowledge_graph(root: Path = ROOT) -> list[Issue]:
 def check_site_data(root: Path = ROOT) -> list[Issue]:
     issues: list[Issue] = []
     text = read_text(root / "site" / "src" / "data" / "coursebook.ts")
-    for required in ("textbook_expanded_draft", "storyboard_expanded", "textbookChapterSource", "textbookAssetSources", "textbookStoryboardSource", "教材扩写稿"):
+    for required in ("expanded_draft", "storyboard_expanded", "textbookChapterSource", "textbookAssetSources", "textbookStoryboardSource", "textbookTeachingPlanSource", "textbookChapters", "coursewareWeeks", "教材扩写稿"):
         if required not in text:
             issues.append(Issue("MISSING_SITE_TEXTBOOK_INTERFACE", SITE_DATA, f"Site data should expose {required}"))
+    if "CoursebookStatus" in text:
+        issues.append(Issue("STATUS_CONFLATION", SITE_DATA, "Site data should not use a single CoursebookStatus for textbook, teaching plan, and PPT axes"))
     for week in range(1, 19):
         if f"page: '/coursebook/week-{week:02d}'" not in text and f'page: "/coursebook/week-{week:02d}"' not in text:
             issues.append(Issue("MISSING_SITE_ROUTE", SITE_DATA, f"Site data should route Week {week:02d} to textbook chapter page"))

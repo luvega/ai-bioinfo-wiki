@@ -8,6 +8,7 @@ chapters:
     page: /coursebook/week-01
     chapter_source: course/textbook/chapters/chapter_01.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_01/teaching_plan.md
     storyboard_source: course/weeks/week_01/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -20,6 +21,7 @@ chapters:
       - course/weeks/week_01/script.md
       - course/weeks/week_01/teaching_pack_v1.md
       - course/weeks/week_01/ppt_storyboard.md
+      - course/weeks/week_01/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/医药数据特征.md
       - knowledge/concepts/工具分工_Python_R_Bash.md
@@ -34,6 +36,7 @@ chapters:
     page: /coursebook/week-02
     chapter_source: course/textbook/chapters/chapter_02.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_02/teaching_plan.md
     storyboard_source: course/weeks/week_02/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -46,6 +49,7 @@ chapters:
       - course/weeks/week_02/script.md
       - course/weeks/week_02/teaching_pack_v1.md
       - course/weeks/week_02/ppt_storyboard.md
+      - course/weeks/week_02/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/concepts/AI协作边界.md
@@ -66,6 +70,7 @@ chapters:
     page: /coursebook/week-03
     chapter_source: course/textbook/chapters/chapter_03.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_03/teaching_plan.md
     storyboard_source: course/weeks/week_03/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -77,6 +82,7 @@ chapters:
       - course/weeks/week_03/outline.md
       - course/weeks/week_03/script.md
       - course/weeks/week_03/ppt_storyboard.md
+      - course/weeks/week_03/teaching_plan.md
     knowledge_sources:
       - knowledge/entities/Python.md
       - knowledge/entities/Biopython.md
@@ -95,6 +101,7 @@ chapters:
     page: /coursebook/week-04
     chapter_source: course/textbook/chapters/chapter_04.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_04/teaching_plan.md
     storyboard_source: course/weeks/week_04/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -107,6 +114,7 @@ chapters:
       - course/weeks/week_04/script.md
       - course/weeks/week_04/teaching_pack_v1.md
       - course/weeks/week_04/ppt_storyboard.md
+      - course/weeks/week_04/teaching_plan.md
     knowledge_sources:
       - knowledge/entities/R.md
       - knowledge/entities/ggplot2.md
@@ -122,6 +130,7 @@ chapters:
     page: /coursebook/week-05
     chapter_source: course/textbook/chapters/chapter_05.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_05/teaching_plan.md
     storyboard_source: course/weeks/week_05/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -134,6 +143,7 @@ chapters:
       - course/weeks/week_05/script.md
       - course/weeks/week_05/teaching_pack_v1.md
       - course/weeks/week_05/ppt_storyboard.md
+      - course/weeks/week_05/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/sources/Starting_Data_Analytics_GenAI.md
@@ -148,6 +158,7 @@ chapters:
     page: /coursebook/week-06
     chapter_source: course/textbook/chapters/chapter_06.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_06/teaching_plan.md
     storyboard_source: course/weeks/week_06/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -160,6 +171,7 @@ chapters:
       - course/weeks/week_06/script.md
       - course/weeks/week_06/teaching_pack_v1.md
       - course/weeks/week_06/ppt_storyboard.md
+      - course/weeks/week_06/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/sources/Starting_Data_Analytics_GenAI.md
@@ -173,6 +185,7 @@ chapters:
     page: /coursebook/week-07
     chapter_source: course/textbook/chapters/chapter_07.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_07/teaching_plan.md
     storyboard_source: course/weeks/week_07/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -185,6 +198,7 @@ chapters:
       - course/weeks/week_07/script.md
       - course/weeks/week_07/teaching_pack_v1.md
       - course/weeks/week_07/ppt_storyboard.md
+      - course/weeks/week_07/teaching_plan.md
     knowledge_sources:
       - knowledge/entities/ggplot2.md
       - knowledge/sources/Starting_Data_Analytics_GenAI.md
@@ -198,6 +212,7 @@ chapters:
     page: /coursebook/week-08
     chapter_source: course/textbook/chapters/chapter_08.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_08/teaching_plan.md
     storyboard_source: course/weeks/week_08/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -210,6 +225,7 @@ chapters:
       - course/weeks/week_08/script.md
       - course/weeks/week_08/teaching_pack_v1.md
       - course/weeks/week_08/ppt_storyboard.md
+      - course/weeks/week_08/teaching_plan.md
     knowledge_sources:
       - knowledge/sources/ISLP.md
       - knowledge/sources/ISLR.md
@@ -224,6 +240,7 @@ chapters:
     page: /coursebook/week-09
     chapter_source: course/textbook/chapters/chapter_09.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_09/teaching_plan.md
     storyboard_source: course/weeks/week_09/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -236,6 +253,7 @@ chapters:
       - course/weeks/week_09/script.md
       - course/weeks/week_09/teaching_pack_v1.md
       - course/weeks/week_09/ppt_storyboard.md
+      - course/weeks/week_09/teaching_plan.md
     knowledge_sources:
       - knowledge/sources/ISLP.md
       - knowledge/sources/ISLR.md
@@ -250,6 +268,7 @@ chapters:
     page: /coursebook/week-10
     chapter_source: course/textbook/chapters/chapter_10.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_10/teaching_plan.md
     storyboard_source: course/weeks/week_10/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -262,6 +281,7 @@ chapters:
       - course/weeks/week_10/script.md
       - course/weeks/week_10/teaching_pack_v1.md
       - course/weeks/week_10/ppt_storyboard.md
+      - course/weeks/week_10/teaching_plan.md
     knowledge_sources:
       - knowledge/sources/ISLP.md
       - knowledge/sources/ISLR.md
@@ -276,6 +296,7 @@ chapters:
     page: /coursebook/week-11
     chapter_source: course/textbook/chapters/chapter_11.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_11/teaching_plan.md
     storyboard_source: course/weeks/week_11/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -287,6 +308,7 @@ chapters:
       - course/weeks/week_11/outline.md
       - course/weeks/week_11/script.md
       - course/weeks/week_11/ppt_storyboard.md
+      - course/weeks/week_11/teaching_plan.md
     knowledge_sources:
       - knowledge/entities/ggplot2.md
       - knowledge/sources/ISLR.md
@@ -305,6 +327,7 @@ chapters:
     page: /coursebook/week-12
     chapter_source: course/textbook/chapters/chapter_12.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_12/teaching_plan.md
     storyboard_source: course/weeks/week_12/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -316,6 +339,7 @@ chapters:
       - course/weeks/week_12/outline.md
       - course/weeks/week_12/script.md
       - course/weeks/week_12/ppt_storyboard.md
+      - course/weeks/week_12/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
@@ -333,6 +357,7 @@ chapters:
     page: /coursebook/week-13
     chapter_source: course/textbook/chapters/chapter_13.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_13/teaching_plan.md
     storyboard_source: course/weeks/week_13/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -347,6 +372,7 @@ chapters:
       - course/weeks/week_13/teaching_assets.md
       - course/evaluation/week_13_ppt_evidence_review.md
       - scripts/courseware/build_week13_teaching_figures.py
+      - course/weeks/week_13/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
@@ -368,6 +394,7 @@ chapters:
     page: /coursebook/week-14
     chapter_source: course/textbook/chapters/chapter_14.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_14/teaching_plan.md
     storyboard_source: course/weeks/week_14/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -379,6 +406,7 @@ chapters:
       - course/weeks/week_14/outline.md
       - course/weeks/week_14/script.md
       - course/weeks/week_14/ppt_storyboard.md
+      - course/weeks/week_14/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/RNA-seq上游流程.md
       - knowledge/concepts/差异表达分析.md
@@ -400,6 +428,7 @@ chapters:
     page: /coursebook/week-15
     chapter_source: course/textbook/chapters/chapter_15.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_15/teaching_plan.md
     storyboard_source: course/weeks/week_15/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -411,6 +440,7 @@ chapters:
       - course/weeks/week_15/outline.md
       - course/weeks/week_15/script.md
       - course/weeks/week_15/ppt_storyboard.md
+      - course/weeks/week_15/teaching_plan.md
     knowledge_sources:
       - knowledge/entities/DESeq2.md
       - knowledge/concepts/差异表达分析.md
@@ -432,6 +462,7 @@ chapters:
     page: /coursebook/week-16
     chapter_source: course/textbook/chapters/chapter_16.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_16/teaching_plan.md
     storyboard_source: course/weeks/week_16/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -443,6 +474,7 @@ chapters:
       - course/weeks/week_16/outline.md
       - course/weeks/week_16/script.md
       - course/weeks/week_16/ppt_storyboard.md
+      - course/weeks/week_16/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/差异表达分析.md
       - knowledge/sources/ISLP.md
@@ -464,6 +496,7 @@ chapters:
     page: /coursebook/week-17
     chapter_source: course/textbook/chapters/chapter_17.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_17/teaching_plan.md
     storyboard_source: course/weeks/week_17/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -476,6 +509,7 @@ chapters:
       - course/weeks/week_17/script.md
       - course/weeks/week_17/teaching_pack_v1.md
       - course/weeks/week_17/ppt_storyboard.md
+      - course/weeks/week_17/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/项目目录结构与可复现.md
       - knowledge/entities/GitHub.md
@@ -500,6 +534,7 @@ chapters:
     page: /coursebook/week-18
     chapter_source: course/textbook/chapters/chapter_18.md
     textbook_status: expanded_draft
+    teaching_plan_source: course/weeks/week_18/teaching_plan.md
     storyboard_source: course/weeks/week_18/ppt_storyboard.md
     storyboard_pages: 40
     asset_sources:
@@ -512,6 +547,7 @@ chapters:
       - course/weeks/week_18/script.md
       - course/weeks/week_18/teaching_pack_v1.md
       - course/weeks/week_18/ppt_storyboard.md
+      - course/weeks/week_18/teaching_plan.md
     knowledge_sources:
       - knowledge/concepts/AI协作边界.md
       - knowledge/entities/GitHub.md

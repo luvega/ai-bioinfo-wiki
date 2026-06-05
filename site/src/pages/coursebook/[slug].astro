@@ -8,12 +8,12 @@ import {
   sampleChapters,
   textbookAssetSources,
   textbookChapterSource,
+  textbookTeachingPlanSource,
   textbookStoryboardSource
 } from '../../data/coursebook';
 import { getWeekLabel } from '../../data/weeks';
 import { withBase } from '../../lib/paths';
 import { renderSimpleMarkdown } from '../../lib/simpleMarkdown';
-import { parseStoryboardRows, storyboardReviewMetrics } from '../../lib/storyboard';
 
 export function getStaticPaths() {
   return coursebookChapters.map((chapter) => ({
@@ -32,6 +32,7 @@ const catalogPrevious = coursebookChapters.find((item) => item.week === chapter.
 const catalogNext = coursebookChapters.find((item) => item.week === chapter.week + 1);
 const repoRoot = fileURLToPath(new URL('../../../../', import.meta.url));
 const chapterSource = chapter.chapterSource ?? textbookChapterSource(chapter.week);
+const teachingPlanSource = chapter.teachingPlanSource ?? textbookTeachingPlanSource(chapter.week);
 const assetSources = chapter.assetSources ?? textbookAssetSources(chapter.week);
 const storyboardSource = chapter.storyboardSource ?? textbookStoryboardSource(chapter.week);
 const storyboardPages = chapter.storyboardPages ?? 40;
@@ -40,10 +41,6 @@ const chapterMarkdown = existsSync(chapterPath)
   ? readFileSync(chapterPath, 'utf-8')
   : `# ${chapter.title}\n\n本章教材源稿尚未生成。`;
 const chapterHtml = renderSimpleMarkdown(chapterMarkdown);
-const storyboardPath = resolve(repoRoot, storyboardSource);
-const storyboardMarkdown = existsSync(storyboardPath) ? readFileSync(storyboardPath, 'utf-8') : '';
-const storyboardRows = parseStoryboardRows(storyboardMarkdown);
-const storyboardMetrics = storyboardReviewMetrics(storyboardRows);
 ---
 
 <BaseLayout title={`${getWeekLabel(chapter.week)} 教材章节`} description={chapter.summary}>
@@ -66,8 +63,10 @@ const storyboardMetrics = storyboardReviewMetrics(storyboardRows);
         <p><strong>教材状态：</strong>{chapter.textbookStatus ?? 'expanded_draft'}</p>
         <p><strong>PPT 状态：</strong>{chapter.pptStatus}</p>
         <p><strong>源文件：</strong><code>{chapterSource}</code></p>
+        <p><strong>教学计划：</strong><code>{teachingPlanSource}</code></p>
         <p><strong>Storyboard：</strong><code>{storyboardSource}</code></p>
         <p><strong>页数：</strong>{storyboardPages} 页主干源稿</p>
+        <p><a class="text-link" href={withBase(`/courseware/${chapter.slug}`)}>打开对应 Courseware 审核页</a></p>
       </article>
       <article class="info-panel">
         <h2>素材资产</h2>
@@ -84,48 +83,6 @@ const storyboardMetrics = storyboardReviewMetrics(storyboardRows);
         <h2>教材正文</h2>
         <div class="markdown-body" set:html={chapterHtml} />
       </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-inner">
-      <div class="section-title">
-        <p class="section-label">Storyboard Review</p>
-        <h2>Storyboard 审核表</h2>
-        <p>
-          本表直接解析 <code>{storyboardSource}</code>。当前共 {storyboardMetrics.rowCount} 页，
-          学生动作 {storyboardMetrics.completeStudentActions}/40，时间预算 {storyboardMetrics.totalMinutes} min。
-          该表用于人工去模板化审查，不表示 PPTX 或视觉 QA 完成。
-        </p>
-      </div>
-      <div class="chapter-table-wrap">
-        <table class="data-table chapter-table review-table">
-          <thead>
-            <tr>
-              <th>页</th>
-              <th>模块</th>
-              <th>Action title</th>
-              <th>Student action</th>
-              <th>Timing</th>
-              <th>证据来源</th>
-              <th>风险边界</th>
-            </tr>
-          </thead>
-          <tbody>
-            {storyboardRows.map((row) => (
-              <tr>
-                <td>{row.slide}</td>
-                <td>{row.module}</td>
-                <td><strong>{row.actionTitle}</strong></td>
-                <td>{row.studentAction}</td>
-                <td>{row.timing}</td>
-                <td><code>{row.evidenceSourceNote}</code></td>
-                <td>{row.riskBoundaryNote}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
     </div>
   </section>
 
@@ -243,14 +200,16 @@ const storyboardMetrics = storyboardReviewMetrics(storyboardRows);
         </ul>
       </article>
       <article class="info-panel">
-        <h2>PPT storyboard 生成入口说明</h2>
-        <p>本章已生成 40 页主干 storyboard 源稿，可用于后续 PPTX 裁剪、教师备课和教材同步精修；这不表示 PPTX、PNG 预览或 contact sheet QA 已完成。</p>
+        <h2>教学计划与 PPT storyboard 入口</h2>
+        <p>本章只呈现教材知识体系。90 分钟教学组织和逐页 storyboard 审核请进入 Courseware；这不表示 PPTX、PNG 预览或 contact sheet QA 已完成。</p>
+        <p><strong>教学计划：</strong><code>{teachingPlanSource}</code></p>
         <p><strong>入口：</strong><code>{storyboardSource}</code></p>
         <ol class="content-list spaced-list">
-          <li>先围绕 storyboard 主干页继续核对案例、代码、图表和证据边界。</li>
-          <li>进入 PPTX 前应重新做 evidence review，并决定正式投屏页的裁剪范围。</li>
+          <li>先在 Courseware 中核对教学计划、Student action、Timing 和课堂产物。</li>
+          <li>进入 PPTX 前应重新做 evidence review，并从 40 页源稿中决定正式投屏裁剪范围。</li>
           <li>不得由 40 页源稿完成自动推断 PPTX 完成。</li>
         </ol>
+        <p><a class="text-link" href={withBase(`/courseware/${chapter.slug}`)}>打开 Courseware 审核页</a></p>
       </article>
     </div>
   </section>

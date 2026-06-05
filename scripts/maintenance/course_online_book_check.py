@@ -14,6 +14,8 @@ SITE_DATA = ROOT / "site" / "src" / "data" / "coursebook.ts"
 COURSEBOOK_INDEX = ROOT / "site" / "src" / "pages" / "coursebook.astro"
 COURSEBOOK_REVIEW = ROOT / "site" / "src" / "pages" / "coursebook" / "review.astro"
 COURSEBOOK_ROUTE = ROOT / "site" / "src" / "pages" / "coursebook" / "[slug].astro"
+COURSEWARE_INDEX = ROOT / "site" / "src" / "pages" / "courseware.astro"
+COURSEWARE_ROUTE = ROOT / "site" / "src" / "pages" / "courseware" / "[slug].astro"
 WEEK_ROUTE = ROOT / "site" / "src" / "pages" / "weeks" / "[slug].astro"
 SAMPLE_WEEKS = {3, 13, 14, 15, 16}
 MINIMUM_REVIEW_STATUSES = {"pilot_candidate", "pilot_ready", "sample_ready", "evidence_review_pass"}
@@ -56,7 +58,7 @@ REQUIRED_SAMPLE_HEADINGS = (
     "AI 协作边界",
     "来源",
     "待核验点",
-    "PPT storyboard 生成入口说明",
+    "教学计划与 PPT storyboard 入口",
 )
 WEEK13_TRANSITION_TERMS = (
     "表格矩阵",
@@ -202,6 +204,11 @@ def check_map(root: Path) -> list[Issue]:
             issues.append(Issue("TEXTBOOK_NOT_EXPANDED", MAP_PATH, f"Week {week:02d} textbook_status should be expanded_draft"))
         if str(chapter.get("storyboard_source", "")) != f"course/weeks/week_{int(week):02d}/ppt_storyboard.md":
             issues.append(Issue("BAD_STORYBOARD_SOURCE", MAP_PATH, f"Week {week:02d} should list a storyboard_source"))
+        if str(chapter.get("teaching_plan_source", "")) != f"course/weeks/week_{int(week):02d}/teaching_plan.md":
+            issues.append(Issue("BAD_TEACHING_PLAN_SOURCE", MAP_PATH, f"Week {week:02d} should list a teaching_plan_source"))
+        teaching_plan_source = str(chapter.get("teaching_plan_source", ""))
+        if teaching_plan_source and not (root / teaching_plan_source).exists():
+            issues.append(Issue("MISSING_TEACHING_PLAN_SOURCE", MAP_PATH, f"teaching_plan_source -> {teaching_plan_source}"))
         if chapter.get("storyboard_pages") != 40:
             issues.append(Issue("BAD_STORYBOARD_PAGES", MAP_PATH, f"Week {week:02d} storyboard_pages should be 40"))
         asset_sources = chapter.get("asset_sources", [])
@@ -276,10 +283,12 @@ def check_site_data(root: Path) -> list[Issue]:
         issues.append(Issue("LOW_REVIEW_STATUS", SITE_DATA, "Coursebook data should not leave any week at catalog_only after full-week pilot candidate review"))
     if re.search(r"status:\s*['\"]目录占位", text):
         issues.append(Issue("LOW_DISPLAY_STATUS", SITE_DATA, "Coursebook data should display expanded textbook draft status, not catalog placeholders"))
-    for required_text in ("textbook_expanded_draft", "storyboard_expanded", "textbookChapterSource", "textbookAssetSources", "textbookStoryboardSource", "教材扩写稿"):
+    for required_text in ("expanded_draft", "storyboard_expanded", "textbookChapterSource", "textbookAssetSources", "textbookStoryboardSource", "textbookTeachingPlanSource", "textbookChapters", "coursewareWeeks", "CoursewareWeek", "教材扩写稿"):
         if required_text not in text:
             issues.append(Issue("MISSING_TEXTBOOK_INTERFACE", SITE_DATA, f"Site data should expose {required_text}"))
-    for required_text in ("现代组学拓展", "试点候选", "pilot_candidate", "pilot_ready", "evidence_review_assets_pending", "evidence_review_pass", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
+    if "CoursebookStatus" in text:
+        issues.append(Issue("STATUS_CONFLATION", SITE_DATA, "Site data should split textbookChapters and coursewareWeeks instead of a single CoursebookStatus"))
+    for required_text in ("现代组学拓展", "试点候选", "pilot_candidate", "pilot_ready", "evidence_review_pass", "Single_Cell_Best_Practices", "OSCA", "OSTA"):
         if required_text not in text:
             issues.append(Issue("MISSING_MODERN_OMICS_DATA", SITE_DATA, f"Site data should expose {required_text}"))
     if "试讲包 v1" not in text:
@@ -343,7 +352,7 @@ def check_course_week_files(root: Path) -> list[Issue]:
 
 def check_routes() -> list[Issue]:
     issues: list[Issue] = []
-    route_files = (COURSEBOOK_INDEX, COURSEBOOK_REVIEW, COURSEBOOK_ROUTE, WEEK_ROUTE)
+    route_files = (COURSEBOOK_INDEX, COURSEBOOK_ROUTE, COURSEWARE_INDEX, COURSEWARE_ROUTE, WEEK_ROUTE)
     for path in route_files:
         if not path.exists():
             issues.append(Issue("MISSING_ROUTE", path, "Required Astro route is missing"))
@@ -358,25 +367,38 @@ def check_routes() -> list[Issue]:
                 issues.append(Issue("MISSING_SAMPLE_SECTION", COURSEBOOK_ROUTE, f"Missing rendered sample section: {heading}"))
         if "候选样章待完成事项" not in route_text:
             issues.append(Issue("MISSING_CANDIDATE_CHECKS", COURSEBOOK_ROUTE, "Sample route should render candidate chapter pending checks"))
-        for required_text in ("Storyboard 审核表", "studentAction", "storyboardMetrics"):
+        for forbidden_text in ("Storyboard 审核表", "studentAction", "storyboardMetrics"):
+            if forbidden_text in route_text:
+                issues.append(Issue("COURSEBOOK_STORYBOARD_CONFLATION", COURSEBOOK_ROUTE, f"Coursebook chapter route should not render page-level review table: {forbidden_text}"))
+        for required_text in ("教材正文", "Courseware 审核页", "教学计划与 PPT storyboard 入口"):
             if required_text not in route_text:
-                issues.append(Issue("MISSING_STORYBOARD_REVIEW_TABLE", COURSEBOOK_ROUTE, f"Chapter route should render {required_text}"))
+                issues.append(Issue("MISSING_COURSEBOOK_TEXTBOOK_VIEW", COURSEBOOK_ROUTE, f"Coursebook chapter route should expose {required_text}"))
     if COURSEBOOK_REVIEW.exists():
         review_text = read_text(COURSEBOOK_REVIEW)
-        for required_text in ("Storyboard 人工精修审核台", "Student action", "Timing", "duplicateActionTitles", "genericEvidenceRows"):
+        for required_text in ("Courseware", "/courseware", "兼容入口"):
             if required_text not in review_text:
-                issues.append(Issue("MISSING_COURSEBOOK_REVIEW_VIEW", COURSEBOOK_REVIEW, f"Coursebook review route should expose {required_text}"))
+                issues.append(Issue("STALE_COURSEBOOK_REVIEW_VIEW", COURSEBOOK_REVIEW, f"Coursebook review compatibility route should expose {required_text}"))
+    if COURSEWARE_INDEX.exists():
+        courseware_index_text = read_text(COURSEWARE_INDEX)
+        for required_text in ("Teaching Plan 与 Storyboard 审核台", "Student action", "Timing", "storyboardReviewMetrics", "coursewareWeeks"):
+            if required_text not in courseware_index_text:
+                issues.append(Issue("MISSING_COURSEWARE_INDEX", COURSEWARE_INDEX, f"Courseware index should expose {required_text}"))
+    if COURSEWARE_ROUTE.exists():
+        courseware_route_text = read_text(COURSEWARE_ROUTE)
+        for required_text in ("Teaching Plan", "Storyboard Review", "40 页主干 storyboard 审核表", "studentAction", "storyboardMetrics", "teachingPlanSource"):
+            if required_text not in courseware_route_text:
+                issues.append(Issue("MISSING_COURSEWARE_ROUTE", COURSEWARE_ROUTE, f"Courseware route should expose {required_text}"))
     if COURSEBOOK_INDEX.exists():
         index_text = read_text(COURSEBOOK_INDEX)
-        for required_text in ("状态流水线", "catalog_only", "sample_candidate", "pilot_candidate", "evidence_review_assets_pending", "evidence_review_pass", "pptx_trial_done"):
+        for required_text in ("在线教材目录", "教材与课件分工", "textbookChapters", "coursewareWeeks", "/courseware", "docs/course_status_dictionary.md"):
             if required_text not in index_text:
-                issues.append(Issue("MISSING_STATUS_PIPELINE", COURSEBOOK_INDEX, f"Coursebook index should explain {required_text}"))
-        if "/coursebook/review" not in index_text or "docs/course_status_dictionary.md" not in index_text:
-            issues.append(Issue("MISSING_REVIEW_ENTRY", COURSEBOOK_INDEX, "Coursebook index should link the review route and status dictionary"))
+                issues.append(Issue("MISSING_COURSEBOOK_INDEX", COURSEBOOK_INDEX, f"Coursebook index should explain {required_text}"))
     if WEEK_ROUTE.exists():
         week_route_text = read_text(WEEK_ROUTE)
         if "getCoursebookChapterByWeek" not in week_route_text or "/coursebook/" not in week_route_text:
             issues.append(Issue("MISSING_WEEK_BACKLINK", WEEK_ROUTE, "Week pages must link back to Coursebook chapter pages"))
+        if "/courseware/" not in week_route_text:
+            issues.append(Issue("MISSING_COURSEWARE_BACKLINK", WEEK_ROUTE, "Week pages should link to Courseware teaching-plan pages"))
     return issues
 
 

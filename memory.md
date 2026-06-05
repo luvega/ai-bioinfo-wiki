@@ -9,7 +9,7 @@
 - 旧根目录：`F:\AI_Course\` 已在 2026-05-31 清空并删除，不再作为回退点。
 - Obsidian Vault：从 `E:\Codex_Projects\AI_Course\` 打开。
 - 当前范式：courseware-first；`knowledge/` 是备课辅助层，`course/` 是课程生产主线。
-- 远端仓库：private GitHub；push、公开、改远端或删除远端前必须二次确认。
+- 远端仓库：private GitHub；默认在完成一轮实现与本地验证后提交并推送当前分支，方便用户检查；公开、改远端可见性、删除远端或重写远端历史前必须二次确认。
 
 ## 1. 用户偏好
 
@@ -132,10 +132,23 @@
 - 下一阶段 Coursebook 用作人工精修审核入口，重点检查 `Student action`、`Timing`、教师讲解重复度、证据 note 具体性和去模板化质量。
 - Week 03/05/08/11/12/13/15/16/18 是 storyboard 去模板化重点精修周。
 
+### [2026-06-05] D-028 · 教材与课件双主线入口
+
+- Coursebook 只作为教材章节、知识体系、知识图谱和素材资产入口。
+- Courseware / Teaching Plan 作为周次教学计划、90 分钟时间切分、PPT storyboard 和审核指标入口。
+- `outline.md` 回答“本周教什么”，`teaching_plan.md` 回答“90 分钟怎么教”，`ppt_storyboard.md` 回答“每页投屏源稿怎么呈现”，`chapter_XX.md` 回答“知识体系如何组织”。
+- 18 周均新增 `course/weeks/week_XX/teaching_plan.md`，并由 `course/textbook/coursebook_map.yml` 的 `teaching_plan_source` 字段显式引用。
+- 教材章节不再逐页复述 40 张 storyboard；`Storyboard 对应表` 只作为索引，不作为正文展开顺序。
+
+### [2026-06-05] D-029 · 默认提交并推送
+
+- 用户确认后续每轮实现默认提交并推送当前分支，便于线上检查和 PR 审阅。
+- 该默认规则只覆盖普通 commit/push；公开仓库、改变远端可见性、删除远端、强推或重写远端历史仍需再次明确确认。
+
 ## 3. 当前状态
 
-- `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md` 和 40 页主干 `ppt_storyboard.md`。
-- `course/textbook/chapters/chapter_01.md` 到 `chapter_18.md` 已进入 `expanded_draft`，并与 40 页 storyboard 建立对应表。
+- `course/weeks/week_01` 到 `week_18` 已有 `materials.md`、`outline.md`、`script.md`、`teaching_plan.md` 和 40 页主干 `ppt_storyboard.md`。
+- `course/textbook/chapters/chapter_01.md` 到 `chapter_18.md` 已进入 `expanded_draft`，并改为知识体系正文；与 40 页 storyboard 的关系只保留为索引表。
 - 样板周优先级：Week 03、Week 14、Week 15、Week 16 已进入可授课试点；Week 13 已进入试讲就绪样章。
 - 课程质量 rubric 已新增，位置为 `course/evaluation/courseware_rubric.md`。
 - Week 03 已有 PPT 试点样稿生成脚本和真实 PNG 页面验证记录。
@@ -144,14 +157,15 @@
 - 项目本地 `skills/` 已新增 course workflow 入口；全局技能白名单记录在 `docs/skill_loading_manifest_2026-06-03.md`。
 - 新增维护目标：索引/断链/Week 11-15 对齐检查，以及样板周质量区块检查。
 - 暂不批量生成 18 周 PPTX；当前 18 周仅推进到 40 页主干 storyboard 和教材扩写稿。
-- Coursebook 下一步作为人工精修审核台，重点处理 Student action、Timing、重复讲解、过短页和证据 note 泛化问题。
+- Courseware 下一步作为人工精修审核台，重点处理 Student action、Timing、重复讲解、过短页和证据 note 泛化问题。
+- Coursebook 下一步作为教材审读入口，重点检查概念体系、跨章衔接、案例支撑和知识图谱一致性。
 
 ## 4. 下一步
 
 1. 维护 `course/weeks/_index.md`、`materials/markdown/_index.md` 和 `knowledge/*/_index.md`。
 2. 通过 `course_quality_check.py` 检查所有周次三件套和样板周必备区块。
 3. 保持三层状态语义：讲义深度、周次 `materials/outline` 状态、PPT 生产线状态分开判断。
-4. 使用 Coursebook 审核视图逐周精修 40 页 storyboard，先处理 Week 03/05/08/11/12/13/15/16/18。
+4. 使用 Courseware / Teaching Plan 审核视图逐周精修 40 页 storyboard，先处理 Week 03/05/08/11/12/13/15/16/18。
 5. 按 `course/evaluation/` 中的试评记录逐项处理 PPT 前置问题。
 6. 进入 PPTX 试点前，先人工复核文字溢出、空页、乱码、页码、图表引用、学生动作和讲稿备注。
 
@@ -160,5 +174,5 @@
 - 不把 `knowledge/` 当作课程事实主线。
 - 不把 AI 输出当作权威结论直接写进讲稿。
 - 不写 awesome list 式资源堆砌。
-- 不在未确认前 push、公开、删除远端仓库。
+- 不在未确认前公开、删除远端仓库、改变远端可见性、强推或重写远端历史；普通实现轮默认提交并推送当前分支。
 - 不再引用或恢复 `F:\AI_Course\`。

@@ -36,6 +36,7 @@ def test_all_storyboards_have_40_mainline_rows():
         assert module.frontmatter_scalar(fm, "storyboard_kind") == "mainline_source"
         assert module.frontmatter_scalar(fm, "target_pages") == "40"
         assert set(module.frontmatter_inline_list(fm, "excludes")) == module.EXPECTED_EXCLUDES
+        assert "teaching_plan.md" in module.frontmatter_inline_list(fm, "source")
 
 
 def test_storyboard_rows_keep_required_fields_and_coverage():
@@ -47,6 +48,13 @@ def test_storyboard_rows_keep_required_fields_and_coverage():
         assert sum(any(term in f"{row['Visual intent']} {row['Core content']}" for term in ("图", "表", "结果", "图注", "matrix", "UMAP", "plot")) for row in rows) >= 6
         assert sum(any(term in " ".join(row.values()) for term in ("AI", "Prompt", "证据边界", "Claim-Evidence", "人工核验")) for row in rows) >= 4
         assert sum(module.timing_minutes(row["Timing"]) or 0 for row in rows) == 90
+        plan = ROOT / "course" / "weeks" / f"week_{week:02d}" / "teaching_plan.md"
+        plan_rows = module.teaching_plan_rows(plan)
+        assert len(plan_rows) == 6
+        for block, (minutes, _slides) in module.EXPECTED_TEACHING_PLAN_BLOCKS.items():
+            plan_minutes = module.timing_minutes(next(row["Minutes"] for row in plan_rows if row["Block"] == block))
+            storyboard_minutes = sum(module.timing_minutes(row["Timing"]) or 0 for row in rows if row["Module"] == block)
+            assert storyboard_minutes == plan_minutes
         for row in rows:
             for field in module.REQUIRED_ROW_FIELDS:
                 assert row[field]

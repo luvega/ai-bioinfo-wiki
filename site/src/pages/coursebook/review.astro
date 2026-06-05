@@ -1,97 +1,26 @@
 ---
-import { existsSync, readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import { resolve } from 'node:path';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import { coursebookChapters } from '../../data/coursebook';
-import { parseStoryboardRows, storyboardReviewMetrics } from '../../lib/storyboard';
 import { withBase } from '../../lib/paths';
-
-const repoRoot = fileURLToPath(new URL('../../../../', import.meta.url));
-const priorityWeeks = new Set([3, 5, 8, 11, 12, 13, 15, 16, 18]);
-
-const reviewRows = coursebookChapters.map((chapter) => {
-  const storyboardPath = resolve(repoRoot, chapter.storyboardSource ?? `course/weeks/week_${String(chapter.week).padStart(2, '0')}/ppt_storyboard.md`);
-  const storyboardMarkdown = existsSync(storyboardPath) ? readFileSync(storyboardPath, 'utf-8') : '';
-  const rows = parseStoryboardRows(storyboardMarkdown);
-  const metrics = storyboardReviewMetrics(rows);
-  const priority = priorityWeeks.has(chapter.week);
-  const needsAttention = metrics.rowCount !== 40
-    || metrics.completeStudentActions !== 40
-    || metrics.totalMinutes !== 90
-    || metrics.shortRows > 0
-    || metrics.genericEvidenceRows > 0
-    || (priority && (metrics.duplicateActionTitles > 0 || metrics.maxTeacherRepeat > 3));
-  return { chapter, metrics, priority, needsAttention };
-});
 ---
 
-<BaseLayout title="Coursebook 审核视图" description="按周审查 40 页 storyboard 的学生动作、时间预算和去模板化风险">
+<BaseLayout title="Coursebook Review 已迁移" description="Coursebook 审核入口迁移到 Courseware">
   <PageHeader
-    eyebrow="Coursebook Review"
-    title="Storyboard 人工精修审核台"
-    intro="本页直接解析每周 ppt_storyboard.md，用于人工检查 40 页主干源稿是否具备学生动作、时间预算、证据来源和去模板化基础。"
+    eyebrow="兼容入口"
+    title="Coursebook Review 已迁移到 Courseware"
+    intro="Coursebook 现在只承载教材章节、知识体系、知识图谱和素材资产。教学计划、Student action、Timing 与 40 页 storyboard 审核表统一进入 Courseware。"
   />
 
   <section class="section">
     <div class="section-inner split">
       <article class="info-panel">
-        <h2>审核口径</h2>
-        <ul class="content-list">
-          <li><strong>Student action：</strong>学生当场完成的可观察动作，如标出字段、计算结果、运行代码、改写图注或执行 Claim-Evidence Gate。</li>
-          <li><strong>Timing：</strong>按 2 课时 90 分钟分配到 40 页主干源稿，服务后续裁剪，不等于最终投屏页数。</li>
-          <li><strong>去模板化：</strong>重点看 Action title 是否重复、教师讲解是否重复、证据 note 是否具体。</li>
-        </ul>
+        <h2>新的审核入口</h2>
+        <p>请使用 <a class="text-link" href={withBase('/courseware')}>Courseware / Teaching Plan</a> 审核周次教学计划、90 分钟时间切分、PPT storyboard 和人工去模板化指标。</p>
       </article>
       <article class="info-panel">
-        <h2>重点精修周</h2>
-        <p>Week 03/05/08/11/12/13/15/16/18 先进入严格人工精修，其余周次先保证 schema 完整。</p>
+        <h2>保留本页的原因</h2>
+        <p>本页仅作为旧链接兼容入口，避免历史 Coursebook Review 链接失效；它不再渲染逐页 storyboard 审核表。</p>
       </article>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="section-inner">
-      <div class="section-title">
-        <p class="section-label">Review Matrix</p>
-        <h2>18 周 storyboard 审核矩阵</h2>
-      </div>
-      <div class="chapter-table-wrap">
-        <table class="data-table chapter-table review-table">
-          <thead>
-            <tr>
-              <th>周次</th>
-              <th>标题</th>
-              <th>优先级</th>
-              <th>页数</th>
-              <th>学生动作</th>
-              <th>时间</th>
-              <th>重复/短页</th>
-              <th>证据 note</th>
-              <th>入口</th>
-            </tr>
-          </thead>
-          <tbody>
-            {reviewRows.map(({ chapter, metrics, priority, needsAttention }) => (
-              <tr class={needsAttention ? 'needs-review' : ''}>
-                <td>Week {String(chapter.week).padStart(2, '0')}</td>
-                <td>
-                  <strong>{chapter.title}</strong>
-                  <p>{chapter.summary}</p>
-                </td>
-                <td><span class={`status-pill ${priority ? 'accent' : ''}`}>{priority ? '重点精修' : '字段完整'}</span></td>
-                <td>{metrics.rowCount}/40</td>
-                <td>{metrics.completeStudentActions}/40</td>
-                <td>{metrics.totalMinutes} min</td>
-                <td>标题重复 {metrics.duplicateActionTitles}；讲解最大重复 {metrics.maxTeacherRepeat}；短页 {metrics.shortRows}</td>
-                <td>泛化 {metrics.genericEvidenceRows}</td>
-                <td><a class="text-link" href={withBase(chapter.page)}>逐页审查</a></td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
     </div>
   </section>
 </BaseLayout>

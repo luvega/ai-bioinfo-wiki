@@ -82,7 +82,7 @@ export const weeks: Week[] = [
     practice: '读取不规范表格，统一列名，检查类型，并把重复测量宽表转换成长表。',
     aiBoundary: 'AI 可帮助排查读写错误和生成局部转换代码，不能决定字段删改。',
     sourcePaths: ['course/weeks/week_05', 'materials/markdown/pdf_library_mineru', 'materials/markdown/aidd_bioinformatics'],
-    coursebook: ['数据读取', '数据整形', '表格结构与文件格式']
+    coursebook: ['数据读取', '数据整理', '表格结构与文件格式']
   },
   {
     week: 6,

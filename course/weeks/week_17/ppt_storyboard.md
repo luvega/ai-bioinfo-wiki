@@ -6,12 +6,12 @@ ppt_status: storyboard_expanded
 storyboard_kind: mainline_source
 target_pages: 40
 excludes: [practice_pages, answer_pages, review_pages, backup_pages]
-source: [materials.md, outline.md, script.md, course/textbook/chapters/chapter_17.md]
+source: [materials.md, outline.md, script.md, teaching_plan.md, course/textbook/chapters/chapter_17.md]
 ---
 
 # Week 17 PPT Storyboard：综合项目工作坊：AI 协作分析与结果核验
 
-本 storyboard 是 40 页主干内容源稿，用于后续 PPTX 裁剪、教师备课和在线教材同步扩写。它不是最终课堂投屏页数，也不表示 PPTX、PNG 预览或 contact sheet QA 已完成。本轮只扩展主干讲授内容、案例、数据结构、代码、图表解释和 AI 核验边界；其他教学支持材料后续单独追加。
+本 storyboard 是 40 页主干内容源稿，用于后续 PPTX 裁剪；90 分钟教学组织以 `teaching_plan.md` 为准，教材知识体系以对应章节为准。它不是最终课堂投屏页数，也不表示 PPTX、PNG 预览或 contact sheet QA 已完成。本轮只扩展主干讲授内容、案例、数据结构、代码、图表解释和 AI 核验边界；其他教学支持材料后续单独追加。
 
 | Slide | Module | Action title | Core content | Visual intent | Data/code asset | Teacher explanation | Student action | Timing | Textbook section link | Evidence/source note | Risk/boundary note |
 | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

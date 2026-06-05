@@ -1,6 +1,15 @@
-# AI_Course 状态词典
+# AI_Course 状态与术语词典
 
-本文统一解释在线教材、PPT storyboard 和教学审查状态。状态只描述所属轴，不允许跨轴推断。
+本文统一解释课程大纲、教学计划、PPT storyboard、教材章节和教学审查状态。状态只描述所属轴，不允许跨轴推断。
+
+## 产物术语
+
+| 术语 | 对应文件 | 回答的问题 | 禁止误用 |
+|---|---|---|---|
+| 课程大纲 | `course/weeks/week_XX/outline.md` | 本周教什么、为什么教、放在 18 周主线中的位置。 | 不承担 90 分钟逐段教学组织。 |
+| 教学计划 | `course/weeks/week_XX/teaching_plan.md` | 90 分钟怎么教、学生每段做什么、课堂产物和评价证据是什么。 | 不替代教材正文，不作为 PPT 页级源稿。 |
+| PPT storyboard | `course/weeks/week_XX/ppt_storyboard.md` | 40 页主干投屏源稿如何呈现、每页 Student action 和 Timing 是什么。 | 不等于最终投屏页数，不表示 PPTX 或视觉 QA 完成。 |
+| 教材章节 | `course/textbook/chapters/chapter_XX.md` | 知识体系如何组织、学生如何课前预习和课后复习。 | 不逐页复述 storyboard，不承担课堂时间组织。 |
 
 ## textbook_status
 
@@ -33,5 +42,7 @@
 
 - 18 周 `textbook_status` 统一为 `expanded_draft`。
 - 18 周 `ppt_status` 统一为 `storyboard_expanded`。
+- 18 周均新增 `teaching_plan.md`，用于承载 90 分钟课堂组织、学生动作、课堂产物和评价证据。
+- Coursebook 只作为教材章节和知识体系入口；Courseware / Teaching Plan 入口承载教学计划和 storyboard 审核。
 - Week 03/05/08/11/12/13/15/16/18 是 storyboard 去模板化重点精修周。
 - 本轮不生成 PPTX、PNG、contact sheet，也不把 40 页主干源稿等同于最终投屏课件。
